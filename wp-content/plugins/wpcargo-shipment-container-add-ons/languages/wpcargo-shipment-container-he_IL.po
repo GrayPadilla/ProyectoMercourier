@@ -1,0 +1,1198 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPCargo Shipment Container Add-ons\n"
+"POT-Creation-Date: 2022-09-05 13:16+0800\n"
+"PO-Revision-Date: 2022-09-05 13:17+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: he_IL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n==2 ? 1 : n>10 && n%10==0 ? "
+"2 : 3);\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpcargo-shipment-container-add-ons.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: admin/classes/class-container-scripts.php:23
+#: admin/classes/class-container-scripts.php:80
+msgid "Something went wrong during process, Please reload the page."
+msgstr "משהו השתבש במהלך התהליך, נא טען מחדש את הדף."
+
+#: admin/classes/class-container-scripts.php:32
+msgid "Hide"
+msgstr "הסתר"
+
+#: admin/classes/class-container-scripts.php:33
+#: templates/container-form-shipments.tpl.php:6
+msgid "Show"
+msgstr "הצג"
+
+#: admin/classes/class-container-scripts.php:44
+msgid "Processing data to export"
+msgstr "עיבוד נתונים לייצוא"
+
+#: admin/classes/class-container-scripts.php:45
+msgid "Uploading file"
+msgstr "מעלה קובץ..."
+
+#: admin/classes/class-container-scripts.php:46
+msgid "Processing Data"
+msgstr "עיבוד נתונים"
+
+#: admin/classes/class-container-scripts.php:47
+msgid "Process Completed"
+msgstr "התהליך הושלם"
+
+#: admin/classes/class-container-scripts.php:48
+msgid "Downloading import template"
+msgstr "הורדת תבנית ייבוא"
+
+#: admin/classes/class-container-scripts.php:81
+#: admin/includes/translation.php:166
+msgid "Please select status to update."
+msgstr "נא בחר מצב לעדכון."
+
+#: admin/classes/class-container-scripts.php:82
+msgid "Please Select "
+msgstr "נא בחר "
+
+#: admin/classes/class-container-user.php:16
+#: templates/container-trackform-result.tpl.php:93
+msgid "Delivery Agent"
+msgstr "סוכן משלוח"
+
+#: admin/classes/class-container.php:450
+msgid ""
+"Container NOT Found. Please click update this shipment to unassign shipment."
+msgstr ""
+"הגורם המכיל לא נמצא. נא לחץ על עדכן משלוח זה כדי לבטל את ההקצאה של המשלוח."
+
+#: admin/includes/ajax-handler.php:39
+msgid "Something went wrong during process, Please try again."
+msgstr "משהו השתבש במהלך התהליך, אנא נסה שוב."
+
+#: admin/includes/ajax-handler.php:45 admin/includes/hooks.php:144
+#: admin/includes/translation.php:7
+msgid "Container"
+msgstr "מיכל"
+
+#: admin/includes/ajax-handler.php:45
+msgid "successfully deleted."
+msgstr "נמחק בהצלחה."
+
+#: admin/includes/ajax-handler.php:70 admin/includes/ajax-handler.php:113
+#, php-format
+msgid "Shipment %s already assign to container %s."
+msgstr "משלוח %s להקצות לגורמים %s."
+
+#: admin/includes/ajax-handler.php:96
+msgid "Selected Container not found! Please reload and try again."
+msgstr "הגורם המכיל שנבחר לא נמצא! נא טען מחדש ונסה שוב."
+
+#: admin/includes/ajax-handler.php:137 admin/includes/functions.php:291
+#: admin/templates/print.tpl.php:137
+#: templates/container-form-shipments.tpl.php:17
+msgid "Print"
+msgstr "הדפסה"
+
+#: admin/includes/ajax-handler.php:155
+#: templates/container-form-shipments.tpl.php:19
+#: templates/container-form-shipments.tpl.php:64
+msgid "Remove"
+msgstr "הסר"
+
+#: admin/includes/ajax-handler.php:253 admin/includes/functions.php:264
+msgid "Shipper"
+msgstr "השולח"
+
+#: admin/includes/ajax-handler.php:261 admin/includes/functions.php:270
+msgid "Receiver"
+msgstr "המקבל"
+
+#: admin/includes/ajax-handler.php:268
+msgid "No Available Shipments found."
+msgstr "לא נמצאו משלוחים זמינים."
+
+#: admin/includes/ajax-handler.php:310
+msgid "Permission denied"
+msgstr "גישה נדחתה"
+
+#: admin/includes/ajax-handler.php:324 admin/includes/ajax-handler.php:337
+msgid "Failed to delete data"
+msgstr "מחיקת נתונים נכשלה"
+
+#: admin/includes/ajax-handler.php:331
+#, php-format
+msgid "%s delete successfully"
+msgstr "%s למחוק בהצלחה"
+
+#: admin/includes/ajax-handler.php:342
+msgid "Delete process successfully completed"
+msgstr "תהליך המחיקה הושלם בהצלחה"
+
+#: admin/includes/ajax-handler.php:354 admin/includes/ajax-handler.php:513
+msgid "Permission Denied."
+msgstr "הרשות נדחתה."
+
+#: admin/includes/ajax-handler.php:466 admin/includes/ajax-handler.php:499
+msgid "Proccessing import completed."
+msgstr "הייבוא הושלם."
+
+#: admin/includes/ajax-handler.php:524
+msgid "File type is not allowed, required .CSV file format."
+msgstr "סוג הקובץ אינו מותר, נדרש . תבנית קובץ CSV."
+
+#: admin/includes/ajax-handler.php:556
+msgid "File header required"
+msgstr "דרושה כותרת קובץ"
+
+#: admin/includes/ajax-handler.php:581
+msgid "File import completed"
+msgstr "ייבוא קבצים הושלם"
+
+#: admin/includes/ajax-handler.php:614
+msgid "Failed to process."
+msgstr "לא הצליח לעבד."
+
+#: admin/includes/ajax-handler.php:646
+msgid "Successfully saved."
+msgstr "נשמר בהצלחה."
+
+#: admin/includes/functions.php:14
+msgid "View"
+msgstr "הצג"
+
+#: admin/includes/functions.php:20
+msgid "Edit"
+msgstr "ערוך"
+
+#: admin/includes/functions.php:25
+msgid "Trash"
+msgstr "פח"
+
+#: admin/includes/functions.php:25 admin/templates/history.tpl.php:43
+msgid "Delete"
+msgstr "מחק"
+
+#: admin/includes/functions.php:43
+msgid "There is no error, the file uploaded with success"
+msgstr "אין שגיאה, הקובץ שהועלה בהצלחה"
+
+#: admin/includes/functions.php:44
+msgid "The uploaded file exceeds the upload_max_filesize directive in php.ini"
+msgstr "הקובץ שהועלה חורג ההנחיה upload_max_filesize php. ini"
+
+#: admin/includes/functions.php:45
+msgid ""
+"The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in "
+"the HTML form"
+msgstr "הקובץ שהועלה עולה על גודל הקובץ המרבי שצוין בטופס ה HTML"
+
+#: admin/includes/functions.php:46
+msgid "The uploaded file was only partially uploaded"
+msgstr "הקובץ לא נשלח עד הסוף."
+
+#: admin/includes/functions.php:47
+msgid "No file was uploaded"
+msgstr "לא הועלה קובץ"
+
+#: admin/includes/functions.php:48
+msgid "Missing a temporary folder"
+msgstr "חסרה תיקיה זמנית"
+
+#: admin/includes/functions.php:49
+msgid "Failed to write file to disk."
+msgstr "נכשלתי בכתיבת קובץ לדיסק."
+
+#: admin/includes/functions.php:50
+msgid "A PHP extension stopped the file upload."
+msgstr "סיומת PHP עצרה את העלאת הקובץ."
+
+#: admin/includes/functions.php:123 admin/includes/translation.php:10
+msgid "Containers"
+msgstr "מכולות"
+
+#: admin/includes/functions.php:236 admin/includes/hooks.php:185
+#, php-format
+msgid "%s Shipment"
+msgid_plural "%s Shipments"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: admin/includes/functions.php:279
+msgid "Client"
+msgstr "לקוח"
+
+#: admin/includes/functions.php:280 admin/includes/functions.php:288
+msgid "Agent"
+msgstr "סוכן"
+
+#: admin/includes/functions.php:286
+msgid "Flight/ Container No."
+msgstr "טיסה / מיכל מס'"
+
+#: admin/includes/functions.php:289 admin/includes/helpers.php:81
+msgid "Driver"
+msgstr "נהג"
+
+#: admin/includes/functions.php:290 admin/includes/helpers.php:142
+#: admin/templates/print.tpl.php:103 admin/templates/print.tpl.php:258
+#: templates/container-filters.tpl.php:7
+#: templates/container-form-shipments.tpl.php:16
+#: templates/container-import-export.tpl.php:31
+#: templates/container-trackform-result.tpl.php:41
+#: templates/container-trackform-result.tpl.php:140
+msgid "Status"
+msgstr "סטטוס"
+
+#: admin/includes/functions.php:292
+msgid "Manifest"
+msgstr "מניפסט"
+
+#: admin/includes/functions.php:307 templates/container-trackform.tpl.php:4
+msgid "Enter Container No."
+msgstr "הזן מספר גורם מכיל"
+
+#: admin/includes/functions.php:310
+msgid "Ex. CO123456"
+msgstr "ג'י.פי."
+
+#: admin/includes/functions.php:736
+msgid "Sorry you are restricted to access this route."
+msgstr "מצטער שאתה מוגבל לגשת למסלול זה."
+
+#: admin/includes/helpers.php:10
+#: templates/container-trackform-result.tpl.php:78
+msgid "Flight/Container No."
+msgstr "טיסה/מיכל מס'"
+
+#: admin/includes/helpers.php:21
+msgid "Agent Name"
+msgstr "שם"
+
+#: admin/includes/helpers.php:32 admin/includes/helpers.php:92
+#: templates/container-trackform-result.tpl.php:82
+#: templates/container-trackform-result.tpl.php:95
+msgid "Telephone"
+msgstr "טלפון"
+
+#: admin/includes/helpers.php:43
+#: templates/container-trackform-result.tpl.php:84
+msgid "Passport"
+msgstr "דרכון"
+
+#: admin/includes/helpers.php:59
+msgid "Origin"
+msgstr "מקור המידע"
+
+#: admin/includes/helpers.php:70
+msgid "Destination"
+msgstr "יעד"
+
+#: admin/includes/helpers.php:109 admin/includes/helpers.php:187
+#: admin/templates/print.tpl.php:101 admin/templates/print.tpl.php:256
+#: templates/container-trackform-result.tpl.php:39
+#: templates/container-trackform-result.tpl.php:100
+#: templates/container-trackform-result.tpl.php:138
+msgid "Date"
+msgstr "תאריך"
+
+#: admin/includes/helpers.php:120 admin/includes/helpers.php:198
+#: templates/container-trackform-result.tpl.php:102
+msgid "Time"
+msgstr "זמן"
+
+#: admin/includes/helpers.php:131
+msgid "Current City"
+msgstr "העיר הנוכחית"
+
+#: admin/includes/helpers.php:153
+msgid "Updated By"
+msgstr "עודכן על ידי"
+
+#: admin/includes/helpers.php:164 admin/templates/print.tpl.php:104
+#: admin/templates/print.tpl.php:259
+#: templates/container-trackform-result.tpl.php:42
+#: templates/container-trackform-result.tpl.php:141
+msgid "Remarks"
+msgstr "הערות"
+
+#: admin/includes/helpers.php:209
+#: templates/container-trackform-result.tpl.php:104
+msgid "Expected Date"
+msgstr "תאריך צפוי"
+
+#: admin/includes/helpers.php:220
+#: templates/container-trackform-result.tpl.php:106
+msgid "Travel Mode"
+msgstr "מצב נסיעה"
+
+#: admin/includes/hooks.php:155
+msgid "Container NOT Found"
+msgstr "הגורם המכיל לא נמצא"
+
+#: admin/includes/hooks.php:251 templates/track-history.tpl.php:2
+msgid "History"
+msgstr "היסטוריה"
+
+#: admin/includes/hooks.php:345
+msgid "Container Details"
+msgstr "פרטי גורם מכיל"
+
+#: admin/includes/hooks.php:349 admin/includes/translation.php:49
+#: admin/includes/translation.php:142
+msgid "Shipment Container"
+msgstr "מכולה של משלוח"
+
+#: admin/includes/hooks.php:351 templates/bulk-assign-container.tpl.php:23
+msgid "-- Select Container --"
+msgstr "-- בחר גורם מכיל --"
+
+#: admin/includes/hooks.php:393
+msgid "Settings"
+msgstr "הגדרות"
+
+#: admin/includes/hooks.php:394
+msgid "License"
+msgstr "רישיון"
+
+#: admin/includes/hooks.php:471 admin/includes/translation.php:19
+#: templates/containers.tpl.php:10
+msgid "Container Number"
+msgstr "מספר גורם מכיל"
+
+#: admin/includes/translation.php:16
+msgid "Import/Export Container"
+msgstr "מיכל ייבוא/ייצוא"
+
+#: admin/includes/translation.php:22
+msgid "Import Container"
+msgstr "ייבוא מיכל"
+
+#: admin/includes/translation.php:25
+msgid "Export Container"
+msgstr "מיכל ייצוא"
+
+#: admin/includes/translation.php:28
+msgid "Shipping NO"
+msgstr "משלוח לא"
+
+#: admin/includes/translation.php:31
+msgid "Shipment"
+msgstr "משלוח"
+
+#: admin/includes/translation.php:34
+msgid "Shipments"
+msgstr "משלוחים"
+
+#: admin/includes/translation.php:37
+msgid "Container #"
+msgstr "מיכל #"
+
+#: admin/includes/translation.php:40
+msgid "Container for WPCargo Shipment"
+msgstr "מכולה למשלוח WPCargo"
+
+#: admin/includes/translation.php:43
+msgctxt "Post Type General Name"
+msgid "Containers"
+msgstr "מכולות"
+
+#: admin/includes/translation.php:46
+msgctxt "Post Type Singular Name"
+msgid "Container"
+msgstr "מיכל"
+
+#: admin/includes/translation.php:52
+msgid "Container Archives"
+msgstr "ארכיון גורמים מכילים"
+
+#: admin/includes/translation.php:55
+msgid "Container Attributes"
+msgstr "תכונות גורם מכיל"
+
+#: admin/includes/translation.php:58
+msgid "Parent Container:"
+msgstr "גורם מכיל של אב:"
+
+#: admin/includes/translation.php:61
+msgid "All Containers"
+msgstr "כל המכולות"
+
+#: admin/includes/translation.php:64
+msgid "Add New Container"
+msgstr "הוסף גורם מכיל חדש"
+
+#: admin/includes/translation.php:67
+msgid "Add Container"
+msgstr "הוסף גורם מכיל"
+
+#: admin/includes/translation.php:70
+msgid "New Container"
+msgstr "גורם מכיל חדש"
+
+#: admin/includes/translation.php:73
+msgid "Edit Container"
+msgstr "עריכת גורם מכיל"
+
+#: admin/includes/translation.php:76
+msgid "Update Container"
+msgstr "גורם מכיל של עדכון"
+
+#: admin/includes/translation.php:79
+msgid "View Container"
+msgstr "גורם מכיל של תצוגה"
+
+#: admin/includes/translation.php:82
+msgid "View Containers"
+msgstr "הצג גורמים מכילים"
+
+#: admin/includes/translation.php:85
+msgid "Search Container"
+msgstr "גורם מכיל של חיפוש"
+
+#: admin/includes/translation.php:88 admin/templates/container-info.tpl.php:5
+#: admin/templates/container.tpl.php:2 templates/container-track.tpl.php:11
+msgid "Container Information"
+msgstr "מידע אודות הגורם המכיל"
+
+#: admin/includes/translation.php:91 admin/templates/container-info.tpl.php:12
+#: admin/templates/container.tpl.php:22 admin/templates/print.tpl.php:213
+#: templates/container-track.tpl.php:25
+msgid "Trip Information"
+msgstr "מידע על הנסיעה"
+
+#: admin/includes/translation.php:94 admin/templates/container-info.tpl.php:19
+#: admin/templates/container.tpl.php:42 admin/templates/print.tpl.php:220
+#: templates/container-track.tpl.php:39
+msgid "Time Information"
+msgstr "מידע אודות זמן"
+
+#: admin/includes/translation.php:97
+msgid "Not found"
+msgstr "לא נמצא"
+
+#: admin/includes/translation.php:100
+msgid "Not found in Trash"
+msgstr "לא נמצא בפח זבל"
+
+#: admin/includes/translation.php:103
+msgid "Featured Image"
+msgstr "תמונה ראשית"
+
+#: admin/includes/translation.php:106
+msgid "Set featured image"
+msgstr "הגדר תמונה מייצגת"
+
+#: admin/includes/translation.php:109
+msgid "Remove featured image"
+msgstr "הסר תמונה מייצגת"
+
+#: admin/includes/translation.php:112
+msgid "Use as featured image"
+msgstr "השתמש כתמונה מייצגת"
+
+#: admin/includes/translation.php:115
+msgid "Insert into Container"
+msgstr "הוסף לגורם מכיל"
+
+#: admin/includes/translation.php:118
+msgid "Uploaded to this item"
+msgstr "הועלה לפריט זה"
+
+#: admin/includes/translation.php:121
+msgid "Assign to Container"
+msgstr "הקצה לגורם מכיל"
+
+#: admin/includes/translation.php:124
+msgid "Containers list"
+msgstr "רשימת גורמים מכילים"
+
+#: admin/includes/translation.php:127
+msgid "Containers list navigation"
+msgstr "ניווט ברשימת גורמים מכילים"
+
+#: admin/includes/translation.php:130
+msgid "Filter Containers list"
+msgstr "רשימת גורמים מכילים של מסננים"
+
+#: admin/includes/translation.php:133
+msgid "Assign Shipments"
+msgstr "הקצאת משלוחים"
+
+#: admin/includes/translation.php:136 admin/includes/translation.php:139
+#: admin/templates/print.tpl.php:232 admin/templates/shipment.tpl.php:2
+#: templates/container-trackform-result.tpl.php:113
+msgid "Assigned Shipments"
+msgstr "משלוחים שהוקצו"
+
+#: admin/includes/translation.php:145 admin/templates/print.tpl.php:249
+#: templates/container-trackform-result.tpl.php:133
+msgid "Container History"
+msgstr "היסטוריית גורמים מכילים"
+
+#: admin/includes/translation.php:148
+msgid "Container Settings"
+msgstr "הגדרות מיכל"
+
+#: admin/includes/translation.php:151
+msgid "Print Container Shipment"
+msgstr "הדפס משלוח גורם מכיל"
+
+#: admin/includes/translation.php:154
+msgid "Instructions on how to import shipment container"
+msgstr "הוראות כיצד לייבא מכולה למשלוח"
+
+#: admin/includes/translation.php:157
+msgid "Apply this update for all shipments in the Container."
+msgstr "החל עדכון זה עבור כל המשלוחים בגורם המכיל."
+
+#: admin/includes/translation.php:160
+msgid "This is an existing Container number."
+msgstr "זהו מספר גורם מכיל קיים."
+
+#: admin/includes/translation.php:163
+msgid "Please Select Containers to update."
+msgstr "נא בחר גורמים מכילים לעדכון."
+
+#: admin/includes/translation.php:169
+msgid "No container selected, Please select atleast one container."
+msgstr "לא נבחר מכולה, אנא בחר לפחות מכולה אחת."
+
+#: admin/includes/translation.php:172
+msgid "No shipment selected, Please select atleast one Shipment."
+msgstr "לא נבחר משלוח, אנא בחר לפחות משלוח אחד."
+
+#: admin/includes/translation.php:175
+msgid "Selected Shipments has been assigned"
+msgstr "משלוחים נבחרים הוקצו"
+
+#: admin/includes/translation.php:178
+msgid "Are you sure you want to delete containers?"
+msgstr "האם אתה בטוח שברצונך למחוק גורמים מכילים?"
+
+#: admin/includes/translation.php:181
+msgid "No shipment has been updated"
+msgstr "טרם עודכן המשלוח"
+
+#: admin/includes/translation.php:184
+msgid "Opss. Something went wrong!"
+msgstr "מבצעים . משהו השתבש !משהו השתבש!"
+
+#: admin/includes/translation.php:187
+msgid "No results found!"
+msgstr "לא נמצאו תוצאות"
+
+#: admin/includes/translation.php:190
+msgid "Not yet assigned to any container"
+msgstr "עדיין לא הוקצה לאף גורם מכיל"
+
+#: admin/includes/translation.php:193
+msgid "Please activate your license key"
+msgstr "הפעל את מפתח הרישיון שלך"
+
+#: admin/includes/translation.php:193 admin/templates/settings.tpl.php:53
+#: admin/templates/settings.tpl.php:67 admin/templates/settings.tpl.php:81
+msgid "here"
+msgstr "כאן"
+
+#: admin/includes/translation.php:196
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\" target=\"_blank"
+"\">WPTaskForce License Helper</a> plugin to be active!"
+msgstr ""
+"תוסף זה דורש תוסף <a href=\"http://wpcargo.com/\" target=\"_blank\">מסייע "
+"הרשיון של WPTaskForce</a> כדי להיות פעיל!"
+
+#: admin/includes/translation.php:199
+msgid ""
+"This plugin requires <a href=\"https://wordpress.org/plugins/wpcargo/\" "
+"target=\"_blank\">WPCargo</a> plugin to be active!"
+msgstr ""
+"תוסף זה דורש <a href=\"https://wordpress.org/plugins/wpcargo/\" target="
+"\"_blank\">תוסף WPCargo</a> להיות פעיל!"
+
+#: admin/includes/translation.php:202
+msgid ""
+"This plugin requires <strong>WPCargo Custom Field Add-ons</strong> plugin to "
+"be active!"
+msgstr ""
+"תוסף זה דורש <strong>תוסף הרחבות שדה מותאם אישית WPCargo</strong> להיות פעיל!"
+
+#: admin/includes/translation.php:205
+msgid ""
+"This plugin requires <strong>WPCargo Frontend Manager</strong> plugin to be "
+"active!"
+msgstr ""
+"תוסף זה דורש <strong>מתוסף WPCargo Frontend Manager</strong> להיות פעיל!"
+
+#: admin/includes/translation.php:208
+msgid ""
+"This plugin requires <strong>WPCargo Proof of Delivery Add-on</strong> "
+"plugin to be active!"
+msgstr ""
+"תוסף זה דורש <strong>WPCargo הוכחת תוספת משלוח</strong> תוסף להיות פעיל!"
+
+#: admin/includes/translation.php:211
+msgid "Cheating, uh?"
+msgstr "רמאות, אה?"
+
+#: admin/templates/container-info.tpl.php:2
+msgid "Shipment Container Information"
+msgstr "מידע על גורם מכיל של משלוח"
+
+#: admin/templates/container-status.tpl.php:2
+#: templates/container-form.tpl.php:60
+msgid "Current Status"
+msgstr "מצב נוכחי"
+
+#: admin/templates/container-status.tpl.php:23
+#: admin/templates/quick-edit-history.tpl.php:24
+msgid "Apply this update for all shipments in the container."
+msgstr "החל עדכון זה עבור כל המשלוחים בגורם המכיל."
+
+#: admin/templates/container.tpl.php:10
+msgid "No registered Agent."
+msgstr "אין סוכן רשום."
+
+#: admin/templates/container.tpl.php:10
+msgid "Add Agent"
+msgstr "הוסף מדריך"
+
+#: admin/templates/container.tpl.php:30
+msgid "No registered Driver."
+msgstr "אין נהג רשום."
+
+#: admin/templates/container.tpl.php:30
+msgid "Add Driver"
+msgstr "הוסף מנהל התקן"
+
+#: admin/templates/container.tpl.php:59
+msgid "No Options for Travel mode is registered."
+msgstr "לא נרשמו אפשרויות עבור מצב נסיעה."
+
+#: admin/templates/container.tpl.php:59
+msgid "Add Travel Mode"
+msgstr "הוסף מצב נסיעה"
+
+#: admin/templates/history.tpl.php:51
+msgid "No Shipment History Found."
+msgstr "לא נמצאה היסטוריית משלוחים."
+
+#: admin/templates/print.tpl.php:102 admin/templates/print.tpl.php:257
+#: templates/container-trackform-result.tpl.php:40
+#: templates/container-trackform-result.tpl.php:139
+msgid "Location"
+msgstr "מיקום"
+
+#: admin/templates/print.tpl.php:194
+msgid "Container No.:"
+msgstr "מיכל מס':"
+
+#: admin/templates/print.tpl.php:206
+msgid "Container Information : "
+msgstr "מידע אודות הגורם המכיל : "
+
+#: admin/templates/print.tpl.php:207
+msgid "Flight/Container No. : "
+msgstr "טיסה/מיכל מס': "
+
+#: admin/templates/print.tpl.php:208
+msgid "Agent name : "
+msgstr "שם"
+
+#: admin/templates/print.tpl.php:209 admin/templates/print.tpl.php:217
+msgid "Telephone : "
+msgstr "טלפון: "
+
+#: admin/templates/print.tpl.php:210
+msgid "Passport : "
+msgstr "דרכון"
+
+#: admin/templates/print.tpl.php:214
+msgid "Origin port : "
+msgstr "יציאת מוצא : "
+
+#: admin/templates/print.tpl.php:215
+msgid "Destination port : "
+msgstr "יציאת יעד : "
+
+#: admin/templates/print.tpl.php:216
+msgid "Delivery Agent : "
+msgstr "סוכן משלוח : "
+
+#: admin/templates/print.tpl.php:221
+msgid "Date : "
+msgstr "תאריך: "
+
+#: admin/templates/print.tpl.php:222
+msgid "Time : "
+msgstr "זמן: "
+
+#: admin/templates/print.tpl.php:223
+msgid "Expected Date : "
+msgstr "תאריך צפוי : "
+
+#: admin/templates/print.tpl.php:224
+msgid "Travel Mode : "
+msgstr "מצב נסיעה : "
+
+#: admin/templates/print.tpl.php:229
+msgid "Status : "
+msgstr "סטטוס:"
+
+#: admin/templates/print.tpl.php:244
+msgid "No assigned shipment."
+msgstr "אין משלוח שהוקצה."
+
+#: admin/templates/print.tpl.php:275
+msgid "No container history."
+msgstr "אין היסטוריית מכולות."
+
+#: admin/templates/quick-edit-agent.tpl.php:5
+msgid "Select Driver"
+msgstr "-- בחר מנהל התקן --"
+
+#: admin/templates/quick-edit-agent.tpl.php:7
+msgid "— No Change —"
+msgstr "— ללא שינוי —"
+
+#: admin/templates/quick-edit-agent.tpl.php:18
+msgid "Apply this Driver to all the shipments under this container."
+msgstr "החל מנהל התקן זה על כל המשלוחים תחת מכולה זו."
+
+#: admin/templates/quick-edit-history.tpl.php:4
+msgid "Container Status"
+msgstr "מצב מיכל"
+
+#: admin/templates/settings.tpl.php:7
+msgid "Enable Auto generate Container Title"
+msgstr "הפוך כותרת גורם מכיל להפעלה אוטומטית"
+
+#: admin/templates/settings.tpl.php:11
+msgid "Container Title Prefix"
+msgstr "קידומת כותרת גורם מכיל"
+
+#: admin/templates/settings.tpl.php:14
+msgid "Note: This will be apply when Auto generate Container Title is Enable."
+msgstr "הערה: אפשרות זו תחול כאשר כותרת גורם מכיל של הפעלה אוטומטית היא זמינה."
+
+#: admin/templates/settings.tpl.php:18
+msgid "Add Travel Mode Selection"
+msgstr "הוסף בחירה של מצב נסיעה"
+
+#: admin/templates/settings.tpl.php:21
+msgid "Must be comma(,) separated. Example : Normal, Express"
+msgstr "חייב להיות מופרד בפסיק. דוגמה : רגיל, אקספרס"
+
+#: admin/templates/settings.tpl.php:25
+msgid "Container Shipment Print Header / Footer"
+msgstr "גורם מכיל הדפסה - כותרת עליונה / כותרת תחתונה"
+
+#: admin/templates/settings.tpl.php:29
+msgid "Header additional content"
+msgstr "כותרת תוכן נוסף"
+
+#: admin/templates/settings.tpl.php:31
+msgid ""
+"This content will display in the shipment container print header layout. "
+"Accepts html tags."
+msgstr ""
+"תוכן זה יוצג בפריסת כותרת ההדפסה של הגורם המכיל של המשלוח. מקבל תגי html."
+
+#: admin/templates/settings.tpl.php:36
+msgid "Footer addidtional content"
+msgstr "תוכן הוספת כותרת תחתונה"
+
+#: admin/templates/settings.tpl.php:38
+msgid ""
+"This content will display in the shipment container print footer layout. "
+"Accepts html tags."
+msgstr ""
+"תוכן זה יוצג בפריסת הכותרת של הדפסת הגורם המכיל של המשלוח. מקבל תגי html."
+
+#: admin/templates/settings.tpl.php:42
+msgid "Container Shipment List Display Settings"
+msgstr "הגדרות תצוגה של רשימת משלוחי מכולות"
+
+#: admin/templates/settings.tpl.php:45
+msgid "Shipment Status to be included for adding in Shipment Container"
+msgstr "מצב משלוח שיש לכלול להוספה בגורם מכיל של משלוח"
+
+#: admin/templates/settings.tpl.php:53
+msgid "No registered shipment status. Please add shipment status"
+msgstr "אין מצב משלוח רשום. נא הוסף מצב משלוח"
+
+#: admin/templates/settings.tpl.php:59
+msgid "Select Shipper Field to be Display in the Shipment List"
+msgstr "בחר שדה שולח שיוצגו ברשימת המשלוחים"
+
+#: admin/templates/settings.tpl.php:67 admin/templates/settings.tpl.php:81
+msgid "No registered custom fields. Please add custom field"
+msgstr "אין שדות מותאמים אישית רשומים. נא הוסף שדה מותאם אישית"
+
+#: admin/templates/settings.tpl.php:73
+msgid "Select Receiver Field to be Display in the Shipment List"
+msgstr "בחר שדה מקלט שיוצגו ברשימת המשלוחים"
+
+#: admin/templates/settings.tpl.php:87
+msgid "Container Shipment Manifest Settings"
+msgstr "הגדרות מניפסט של משלוח גורם מכיל"
+
+#: admin/templates/settings.tpl.php:91
+msgid "Select field to display in shipments table"
+msgstr "בחר שדה להצגה בטבלת המשלוחים"
+
+#: admin/templates/settings.tpl.php:92
+msgid "Selected fields will be display in the manifest shipment table list."
+msgstr "שדות נבחרים יוצגו ברשימת טבלת המשלוחים המניפסט."
+
+#: admin/templates/settings.tpl.php:129
+msgid "Paper Size"
+msgstr "גודל נייר"
+
+#: admin/templates/settings.tpl.php:139
+msgid "Paper Orientation"
+msgstr "כיוון נייר של תביל"
+
+#: admin/templates/settings.tpl.php:142
+msgid "Portrait"
+msgstr "פורטרט"
+
+#: admin/templates/settings.tpl.php:143
+msgid "Landscape"
+msgstr "אופקי ‪(Landscape)‬"
+
+#: admin/templates/settings.tpl.php:149
+msgid "Manifest Acknowledgemant"
+msgstr "אישור מניפסט"
+
+#: admin/templates/settings.tpl.php:150
+msgid ""
+"I acknowledge that all information in the shipping manifest is true. "
+"Information falsification is a serious offense and may result in immediate "
+"dismissal/fines."
+msgstr ""
+"אני מכיר בכך שכל המידע במניפסט המשלוח נכון. זיוף מידע הוא עבירה חמורה עלול "
+"לגרום לפיטורים/קנסות מיידיים."
+
+#: admin/templates/settings.tpl.php:151
+msgid ""
+"This content will display in the container Acknowledgement section layout. "
+"Accepts html tags."
+msgstr "תוכן זה יוצג בפריסת מקטע אישור הגורם המכיל. מקבל תגי html."
+
+#: admin/templates/settings.tpl.php:156
+msgid "Save Container Settings"
+msgstr "שמירת הגדרות גורם מכיל"
+
+#: admin/templates/shipment-container-info.tpl.php:2
+msgid "Container No."
+msgstr "מיכל מס'"
+
+#: admin/templates/shipment.tpl.php:2
+#: templates/container-form-shipments.tpl.php:2
+msgid "Add Shipment"
+msgstr "הוסף משלוחים"
+
+#: admin/templates/shipment.tpl.php:34
+msgid "WPCargo Shipment List"
+msgstr "רשימת משלוחי WPCargo"
+
+#: admin/templates/shipment.tpl.php:46
+#: templates/container-form-modal.tpl.php:29
+msgid "Actions"
+msgstr "פעולות"
+
+#: templates/bulk-assign-container.tpl.php:6
+msgid "Bulk Assign Container"
+msgstr "גורם מכיל להקצאה בצובר"
+
+#: templates/bulk-assign-container.tpl.php:13
+msgid "Shipment List"
+msgstr "רשימת משלוחים"
+
+#: templates/bulk-assign-container.tpl.php:21
+msgid "Container List"
+msgstr "רשימת גורמים מכילים"
+
+#: templates/bulk-assign-container.tpl.php:37
+#: templates/container-form-modal.tpl.php:43
+#: templates/container-view-modal.tpl.php:14
+msgid "Close"
+msgstr "סגור"
+
+#: templates/bulk-assign-container.tpl.php:38
+msgid "Assign"
+msgstr "לשייך"
+
+#: templates/container-filters.tpl.php:9
+msgid "All Status"
+msgstr "סוג סטטוס"
+
+#: templates/container-filters.tpl.php:20
+msgid "Date Created"
+msgstr "תאריך יצירה"
+
+#: templates/container-filters.tpl.php:22 templates/containers.tpl.php:48
+msgid "to"
+msgstr "עד"
+
+#: templates/container-filters.tpl.php:28
+msgid "Filter"
+msgstr "סינון"
+
+#: templates/container-filters.tpl.php:38
+msgid "Search"
+msgstr "חיפוש"
+
+#: templates/container-filters.tpl.php:47
+msgid "Show entries"
+msgstr "הצג ערכים"
+
+#: templates/container-filters.tpl.php:49 templates/containers.tpl.php:52
+msgid "entries"
+msgstr "ערכים"
+
+#: templates/container-filters.tpl.php:55
+msgid "Bulk Delete"
+msgstr "מחיקה בתפזורת"
+
+#: templates/container-form-assign-role.tpl.php:10
+msgid "Assign shipment to"
+msgstr "הקצאת משלוח ל-"
+
+#: templates/container-form-misc.tpl.php:4
+msgid "Publish"
+msgstr "פרסם"
+
+#: templates/container-form-shipments.tpl.php:18
+msgid "Update Status"
+msgstr "מצב עדכון"
+
+#: templates/container-import-export.tpl.php:20
+msgid "Registered Shipper"
+msgstr "שולח רשום"
+
+#: templates/container-import-export.tpl.php:22
+msgid "-- Registered Shipper --"
+msgstr "--מוביל רשום-"
+
+#: templates/container-import-export.tpl.php:33
+msgid "-- Status --"
+msgstr "סטטוס:"
+
+#: templates/container-import-export.tpl.php:43
+#: templates/container-import-export.tpl.php:49
+msgid "YYYY-MM-DD"
+msgstr "יום-חודש-שנה"
+
+#: templates/container-import-export.tpl.php:44
+msgid "Start"
+msgstr "התחל"
+
+#: templates/container-import-export.tpl.php:50
+msgid "End"
+msgstr "סיום"
+
+#: templates/container-import-export.tpl.php:62
+msgid "Import CSV File"
+msgstr "ייבוא אירועים (קובץ csv)"
+
+#: templates/container-import-export.tpl.php:80
+msgid "Download CSV template"
+msgstr "הורד תבנית CSV"
+
+#: templates/container-import-export.tpl.php:80
+msgid "as template for Importing data."
+msgstr "כתבנית לייבוא נתונים."
+
+#: templates/container-import-export.tpl.php:81
+msgid ""
+"Delete Column(s) that are not needed, make sure no empty header column this "
+"cause data mapping error."
+msgstr ""
+"מחק עמודות שאין צורך בהן, ודא שאין עמודת כותרת ריקה שגורמת לשגיית מיפוי "
+"נתונים."
+
+#: templates/container-import-export.tpl.php:82
+msgid "Add Data to each Cell."
+msgstr "הוסף נתונים לכל תא."
+
+#: templates/container-import-export.tpl.php:83
+msgid "Import CSV template."
+msgstr "יבא תבנית CSV."
+
+#: templates/container-trackform-result.tpl.php:69
+msgid "Container No: "
+msgstr "מיכל מס': "
+
+#: templates/container-trackform-result.tpl.php:80
+msgid "Agent name"
+msgstr ""
+"קיבלנו בקשת רישום של סוכן ב- %website_url!\n"
+"נא בצע את ההוראות הבאות כדי לאשר את הסוכן בהקדם האפשרי.\n"
+"שם הסוכן: %agent_name כתובת קישור של הסוכן: %agent_url"
+
+#: templates/container-trackform-result.tpl.php:89
+msgid "Origin port"
+msgstr "יציאת מקור"
+
+#: templates/container-trackform-result.tpl.php:91
+msgid "Destination port"
+msgstr "יציאת יעד"
+
+#: templates/container-trackform-result.tpl.php:154
+msgid "Result"
+msgstr "תוצאה"
+
+#: templates/container-trackform-result.tpl.php:154
+msgid "No registered history found."
+msgstr "לא נמצאה היסטוריה רשומה."
+
+#: templates/container-trackform.tpl.php:6
+msgid "Track Container"
+msgstr "גורם מכיל של מעקב"
+
+#: templates/container-view-modal.tpl.php:5
+msgid "Assigned Shipment list"
+msgstr "רשימת משלוחים מוקצים"
+
+#: templates/containers.tpl.php:26
+msgid "Track"
+msgstr "בדוק מצב"
+
+#: templates/containers.tpl.php:46
+msgid "Showing"
+msgstr "מציג"
+
+#: templates/containers.tpl.php:50
+msgid "of"
+msgstr "מתוך"
+
+#: templates/manifest.php:4
+msgid "Shipping Manifest"
+msgstr "מניפסט משלוח"
+
+#: templates/manifest/content.php:8
+msgid "No"
+msgstr "לא"
+
+#: templates/manifest/content.php:10
+msgid "Barcode"
+msgstr "ברקוד"
+
+#: templates/manifest/header.php:4
+msgid "ROUTE"
+msgstr "אין מסלול נמצאה התאמת השיטה URL ובקשה"
+
+#: templates/manifest/header.php:5
+msgid "DELIVERY MANIFEST"
+msgstr "מניפסט משלוח"
+
+#: templates/manifest/header.php:8
+msgid "DRIVER NAME"
+msgstr "שם הנהג"
+
+#: templates/manifest/header.php:9
+msgid "DATE"
+msgstr "DATE"
+
+#: templates/manifest/header.php:13
+msgid "NO."
+msgstr "לא."
+
+#: templates/manifest/header.php:17
+msgid "VEHICLE NO."
+msgstr "הרכב"
+
+#: templates/manifest/header.php:20
+msgid "EMPLOYEE NAME"
+msgstr "שם עובד"
+
+#: templates/manifest/header.php:30
+msgid "EMPLOYEE SIGNATURE"
+msgstr "חתימת עובד"
+
+#: templates/no-shipment.php:3
+msgid "Error 404"
+msgstr "שגיאה 404"
+
+#: templates/no-shipment.php:4
+msgid "Shipment not found!"
+msgstr "המשלוח לא נמצא!"
+
+#: templates/restricted.tpl.php:3
+msgid "Sorry your are not allowed to access this page!"
+msgstr "מצטער שאתה לא מורשה לגשת לדף זה!"
+
+#: templates/restricted.tpl.php:3
+msgid "Please contact administrator for your permission."
+msgstr "אנא צור קשר עם מנהל המערכת לקבלת רשותך."
+
+#: wpcargo-shipment-container-add-ons.php:30
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\">WPCargo</a> Free "
+"Version to activate"
+msgstr ""
+"תוסף זה דורש <a href=\"http://wpcargo.com/\">WPCargo</a> גרסה חינם כדי להפעיל"
+
+#: wpcargo-shipment-container-add-ons.php:34
+msgid "This plugin requires WPCargo Custom Field Addons to activate"
+msgstr "תוסף זה דורש הפעלה של תוספות שדה מותאמות אישית של WPCargo"
+
+#: wpcargo-shipment-container-add-ons.php:47
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\">WPTaskForce License "
+"Helper</a> plugin to activate!"
+msgstr ""
+"תוסף זה דורש תוסף <a href=\"http://wpcargo.com/\">מסייע הרשיון של "
+"WPTaskForce</a> כדי להפעיל!"
+
+#. Plugin Name of the plugin/theme
+msgid "WPCargo Shipment Container Add-ons"
+msgstr "תוספות למכל משלוח WPCargo"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wptaskforce.com/"
+msgstr "http://wptaskforce.com/"
+
+#. Description of the plugin/theme
+msgid ""
+"WPCargo Shipment Container Add-ons helps manage shipment into container. "
+"Shorcode available for frontend [wpcargo-container-track-form pageredirect="
+"\"page_id\"], [wpcargo-container-track-result]"
+msgstr ""
+"הרחבות מכולה של משלוח WPCargo מסייעות בניהול משלוח לתוך מכולה. Shorcode זמין "
+"עבור frontend [wpcargo-מיכל-מסלול-טופס pageredirect =\"page_id\"], [wpcargo-"
+"מיכל-מסלול-תוצאה]"
+
+#. Author of the plugin/theme
+msgid "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"
+msgstr "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"
+
+#~ msgid "Action"
+#~ msgstr "פעולה"
+
+#~ msgid "Update"
+#~ msgstr "עדכון"
+
+#~ msgid "Assigned Container"
+#~ msgstr "גורם מכיל מוקצה"
+
+#~ msgid "Shipment Number"
+#~ msgstr "מספר משלוח"
+
+#~ msgid "DEVICE ID"
+#~ msgstr "מזהה התקן"

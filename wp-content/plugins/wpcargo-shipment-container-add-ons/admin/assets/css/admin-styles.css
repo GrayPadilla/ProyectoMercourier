@@ -1,0 +1,585 @@
+.post-type-shipment_container #postbox-container-2 #normal-sortables,
+#shipment-container-id .handlediv,
+#shipment-info-id .handlediv,
+#shipment-info-id .hndle.ui-sortable-handle,
+#shipment-container-id .hndle.ui-sortable-handle{
+	display:none;
+}
+#shipment-list .action{
+	cursor:pointer;
+}
+#container-shipment-list-wrapper .dashicons-dismiss{
+	cursor:pointer;
+}
+/* Shipment list styles */
+#container-history thead th{
+    line-height: 3em;
+}
+#add-shipment-form #shipment-list li:nth-child(even) {
+    background-color: #f1f1f1;
+}
+#add-shipment-form #shipment-list li {
+    padding: 12px;
+    margin: 0;
+}
+#shipment-dialog input#search-shipment {
+    padding: 8px 12px;
+    font-size: 14px;
+    width: 98%;
+}
+#wpc-pagination #nxt {
+    float: right;
+}
+.subsubsub .bulk-update-container-status {
+    display: block;
+    padding: 6px;
+    margin: 12px 0px;
+    background-color: #f9f9f9;
+    border: 1px solid #eaeaea;
+}
+/* Modal POP UP*/
+/* The Modal (background) */
+.wpcargo-modal.wpcargo-show-modal{
+	display: block;
+}
+.wpcargo-modal {
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 999999;
+	/* Sit on top */
+	padding-top: 60px;
+	/* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	overflow: auto;
+	/* Enable scroll if needed */
+	background-color: rgb(0,0,0);
+	/* Fallback color */
+	background-color: rgba(0,0,0,0.4);
+	/* Black w/ opacity */
+}
+/* Modal Content */
+.wpcargo-modal .modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	border: 1px solid #888;
+	width: 80%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	-webkit-animation-name: wpcargoanimatetop;
+	-webkit-animation-duration: 0.4s;
+	animation-name: wpcargoanimatetop;
+	animation-duration: 0.4s
+}
+/* Add Animation */
+@-webkit-keyframes wpcargoanimatetop {
+	from {
+		top:-300px;
+		opacity:0
+	} 
+	to {
+		top:0;
+		opacity:1
+	}
+}
+@keyframes wpcargoanimatetop {
+	from {
+		top:-300px;
+		opacity:0
+	}
+	to {
+		top:0;
+		opacity:1
+	}
+}
+/* Data Table Styles */
+.text-center{
+    text-align:center !important;
+}
+.text-info {
+    color: #33b5e5!important;
+}
+.shipment-assign-icon{
+    cursor: pointer;
+}
+.dataTable {
+    width: 100% !important;
+}
+.dataTable thead th {
+    text-align: left;
+}
+.dataTable thead th, .dataTable tbody td {
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+}
+/* pagination */
+.dataTables_wrapper .pagination.pagination-circle li {
+    display: inline-block;
+}
+.dataTables_wrapper  .pagination.pagination-circle .page-item .page-link {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.dataTables_wrapper  .pagination .page-item.disabled .page-link {
+    color: #868e96;
+}
+.dataTables_wrapper  .pagination .page-item .page-link {
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    font-size: .9rem;
+    color: #212529;
+}
+.dataTables_wrapper  .page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #fff;
+    border-color: #dee2e6;
+}
+.dataTables_wrapper  .page-item:first-child .page-link {
+    margin-left: 0;
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+}
+.dataTables_wrapper  .page-link:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+.dataTables_wrapper  .page-link {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+.dataTables_wrapper  a.page-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: #007bff;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.dataTables_wrapper  .pagination.pagination-circle .page-item .page-link {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.dataTables_wrapper  .pagination .page-item.active .page-link {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    background-color: #4285f4;
+    color: #fff;
+}
+/* The Close Button */
+.wpcargo-modal .close {
+	color: #7a7d7f;
+	float: right;
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 1;
+}
+.wpcargo-modal .close:hover,
+.wpcargo-modal .close:focus {
+	color: #999;
+	text-decoration: none;
+	cursor: pointer;
+}
+.wpcargo-modal .modal-header {
+	padding: 2px 12px;
+	background-color: var(--wpcargo);
+	display: block;
+    overflow: hidden;
+    border-bottom: 1px solid #7a7d7f;
+}
+.wpcargo-modal .modal-header .modal-title {
+    display: inline-block;
+    font-size: 18px !important;
+}
+.wpcargo-modal .modal-body {padding: 18px 16px;
+}
+.wpcargo-modal .modal-footer {
+	padding: 2px 16px;
+	background-color: var(--wpcargo);
+}
+/* Absolute Center Spinner */
+.wpc-loading {
+  position: fixed;
+  z-index: 999999;
+  height: 2em;
+  width: 2em;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+/* Transparent Overlay */
+.wpc-loading:before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+}
+/* :not(:required) hides these rules from IE9 and below */
+.wpc-loading:not(:required) {
+  /* hide "loading..." text */
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.wpc-loading:not(:required):after {
+  content: '';
+  display: block;
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  margin-top: -0.5em;
+  -webkit-animation: spinner 1500ms infinite linear;
+  -moz-animation: spinner 1500ms infinite linear;
+  -ms-animation: spinner 1500ms infinite linear;
+  -o-animation: spinner 1500ms infinite linear;
+  animation: spinner 1500ms infinite linear;
+  border-radius: 0.5em;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.5) -1.5em 0 0 0, rgba(0, 0, 0, 0.5) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+  box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) -1.5em 0 0 0, rgba(0, 0, 0, 0.75) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+}
+/* Animation */
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+/*SHIPMENT CONTAINER - ADD EDIT*/
+#add-shipment,
+#container-history input.button.button-primary {
+    border-radius: 0;
+    border: 0;
+    box-shadow: none;
+    font-size: 14px;
+    background-color: #00a924;
+    text-shadow: none;
+    padding: 0 15px;
+    height: 35px;
+	  line-height: 35px;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+}
+.shipment-top-title span {
+    margin-right: 30px;
+    height: 35px;
+    line-height: 35px;
+    text-transform: uppercase;
+    color: #00a924;
+}
+#shipment-container-id .inside h1 {
+	text-transform: uppercase;
+    color: #00a924;
+}
+#container-shipment-list-wrapper .selected-shipment h3.shipment-title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+#container-shipment-list-wrapper .selected-shipment .dashicons-dismiss {
+    position: absolute;
+    left: 5px;
+    z-index: 99;
+    top: 10px;
+}
+#container-shipment-list-wrapper .selected-shipment {
+    padding: 20px 0 20px 0px;
+    clear: both;
+    width: 33%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    border: 1px dashed #ccd0d4;
+    margin-bottom: 4px;
+}
+#container-shipment-list-wrapper .selected-shipment:nth-child(odd) {
+    background-color: rgb(245, 245, 245);
+}
+#container-shipment-list-wrapper .selected-shipment .dashicons-dismiss:before {
+    color: #f93636;
+}
+
+#container-history input.delete-history.button.button-secondary {
+    background-color: #f93636;
+    border: 0;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 0;
+    box-shadow: none;
+    min-height: 36px;
+}
+#container-history input[type=text],
+#container-history input[type=time], 
+#container-history input[type=date] {
+    line-height: 29px;
+    width: 95%;
+}
+#container-history select {
+    line-height: 37px;
+    height: 37px;
+    width: 95%;
+}
+#shipment-container-id input[type="text"],
+#shipment-container-id select, 
+#shipment-container-id .select2.select2-container {
+    width: calc(100% - 45px)!important;
+    line-height: 37px;
+    height: 37px;
+}
+#shipment-container-id .select2-selection.select2-selection--single,
+#shipment-container-id #select2-container_agent-ov-container,
+#shipment-container-id .select2-container--default .select2-selection--single .select2-selection__arrow {
+    line-height: 37px;
+    height: 37px;
+    border-radius: 0!important;
+}
+#shipment-container-id .select2-container--default .select2-selection--single .select2-selection__rendered{
+    line-height: 36px;
+    height: 36px;
+}
+#shipment-container-id .select2-selection.select2-selection--single {
+    border: 1px solid #ddd;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+}
+#shipment-container-id .form-table td {
+    padding: 10px 10px 10px;
+}
+#container-shipment-list-wrapper .selected-shipment img {
+    position: relative;
+    padding-left: 10px;
+}
+#container-shipment-list-wrapper {
+    overflow: hidden;
+    display: block;
+    margin-top:18px;
+}
+
+/*ADDRESS BOOK - RECEIVER BOOK*/
+#address-list #book thead th {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #e0e0e0;
+    padding: 10px;
+}
+#address-list #book tbody td {
+    background-color: #f7f7f7;
+    padding: 8px 10px;
+    font-size: 14px;
+}
+#address-list #book {
+    margin-top: 15px;
+}
+#address-list #book .update .edit-address.button.button-quotation,
+#address-list #book .delete a.wpc-delete-address {
+    border: 0;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 0;
+    box-shadow: none;
+    height: 31px;
+    line-height: 31px;
+}
+#address-list #book .update .edit-address.button.button-quotation {
+    background-color: #00a924;
+}
+#address-list #book .delete a.wpc-delete-address {
+    background-color: #f93636;
+    display:inline-block;
+    padding: 0 10px 1px;
+    text-decoration: none;
+}
+
+/*POPUP*/
+.book-submit input.button.button-primary.button-wpcargo.button-submit {
+    border-radius: 0;
+    border: 0;
+    box-shadow: none;
+    font-size: 14px;
+    background-color: #00a924;
+    text-shadow: none;
+    margin: 0px 0 0 156px;
+    padding: 0 15px;
+    min-height: 35px;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+    width: auto!important;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+#add-address-book-form input,
+#edit-address-book-form input{
+    line-height: 30px;
+    height: 30px;
+    width: calc(100% - 800px);
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+#add-address-book-form .wpc-book-address-fields,
+#edit-address-book-form .wpc-book-address-fields {
+    padding-bottom: 5px;
+}
+#add-address-book-form label,
+#edit-address-book-form label {
+    display: inline-block;
+    width: 150px;
+    letter-spacing: 0px!important;
+    
+}
+#add-address-book-form,
+#edit-address-book-form {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    padding: 15px 0;
+}
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front {
+    border-radius: 0!important;
+	position: fixed!important;
+}
+.ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix {
+    border-radius: 0!important;
+    padding: 0.6em 1em;
+    border: 1px solid #c5c3c3;
+}
+.ui-dialog .ui-dialog-title {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-weight:500;
+    font-size:14px;
+}
+
+#add-shipment-form input[type=checkbox]:checked:before{
+    margin: -1px 0 0 -1px;
+    background: #0db932;
+    text-shadow: 1px 1px 1px #148D44;
+    border: 1px solid #1A9E51;
+    font-size: 25px;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    text-align: center;
+    width: 24px;
+}
+#add-shipment-form input[type="checkbox"] {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+	  margin-bottom:5px;
+    background: #dbf5e0;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    border: 1px solid #B2BFCA;
+}
+#add-shipment-form input.button.wpcargo-button {
+    border-radius: 0;
+    border: 0;
+    box-shadow: none;
+    font-size: 14px;
+    background-color: #00a924;
+    text-shadow: none;
+    margin-bottom: 15px;
+    line-height: 32px;
+    padding: 0 15px;
+    min-height: 32px;
+    color: #fff;
+    float: right;
+    clear: both;
+}
+.admin_page_wpc-container-settings .field-section {
+    float: left;
+    width: 32%;
+    margin-right: 2%;
+}
+.admin_page_wpc-container-settings #manifest-receiver-fields.field-section {
+    margin-right: 0;
+}

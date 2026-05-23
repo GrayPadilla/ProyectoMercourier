@@ -1,0 +1,1197 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPCargo Shipment Container Add-ons\n"
+"POT-Creation-Date: 2022-11-25 16:17+0800\n"
+"PO-Revision-Date: 2022-11-25 16:18+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: id_ID\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpcargo-shipment-container-add-ons.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: admin/classes/class-container-scripts.php:23
+#: admin/classes/class-container-scripts.php:80
+msgid "Something went wrong during process, Please reload the page."
+msgstr "Ada yang tidak beres selama proses, Silakan muat ulang halaman."
+
+#: admin/classes/class-container-scripts.php:32
+msgid "Hide"
+msgstr "Sembunyikan"
+
+#: admin/classes/class-container-scripts.php:33
+#: templates/container-form-shipments.tpl.php:6
+msgid "Show"
+msgstr "Tampilkan"
+
+#: admin/classes/class-container-scripts.php:44
+msgid "Processing data to export"
+msgstr "Memproses data untuk diekspor"
+
+#: admin/classes/class-container-scripts.php:45
+msgid "Uploading file"
+msgstr "Mengunggah berkas"
+
+#: admin/classes/class-container-scripts.php:46
+msgid "Processing Data"
+msgstr "Memproses Data"
+
+#: admin/classes/class-container-scripts.php:47
+msgid "Process Completed"
+msgstr "Proses Selesai"
+
+#: admin/classes/class-container-scripts.php:48
+msgid "Downloading import template"
+msgstr "Mengunduh templat impor"
+
+#: admin/classes/class-container-scripts.php:81
+#: admin/includes/translation.php:166
+msgid "Please select status to update."
+msgstr "Silakan pilih status untuk memperbarui."
+
+#: admin/classes/class-container-scripts.php:82
+msgid "Please Select "
+msgstr "Silakan Pilih "
+
+#: admin/classes/class-container-user.php:16
+#: templates/container-trackform-result.tpl.php:93
+msgid "Delivery Agent"
+msgstr "Agen Pengiriman"
+
+#: admin/classes/class-container.php:450
+msgid ""
+"Container NOT Found. Please click update this shipment to unassign shipment."
+msgstr ""
+"Kontainer TIDAK Ditemukan. Silakan klik perbarui pengiriman ini untuk "
+"membatalkan penetapan pengiriman."
+
+#: admin/includes/ajax-handler.php:39
+msgid "Something went wrong during process, Please try again."
+msgstr "Ada yang tidak beres selama proses, Silakan coba lagi."
+
+#: admin/includes/ajax-handler.php:45 admin/includes/hooks.php:144
+#: admin/includes/translation.php:7
+msgid "Container"
+msgstr "Kontainer"
+
+#: admin/includes/ajax-handler.php:45
+msgid "successfully deleted."
+msgstr "berhasil dihapus."
+
+#: admin/includes/ajax-handler.php:70 admin/includes/ajax-handler.php:113
+#, php-format
+msgid "Shipment %s already assign to container %s."
+msgstr "Pengiriman %s sudah ditetapkan ke kontainer %s."
+
+#: admin/includes/ajax-handler.php:96
+msgid "Selected Container not found! Please reload and try again."
+msgstr "Kontainer yang dipilih tidak ditemukan! Silakan reload dan coba lagi."
+
+#: admin/includes/ajax-handler.php:137 admin/includes/functions.php:291
+#: admin/templates/print.tpl.php:137
+#: templates/container-form-shipments.tpl.php:17
+msgid "Print"
+msgstr "Cetak"
+
+#: admin/includes/ajax-handler.php:155
+#: templates/container-form-shipments.tpl.php:19
+#: templates/container-form-shipments.tpl.php:64
+msgid "Remove"
+msgstr "Hapus"
+
+#: admin/includes/ajax-handler.php:253 admin/includes/functions.php:264
+msgid "Shipper"
+msgstr "Pengirim"
+
+#: admin/includes/ajax-handler.php:261 admin/includes/functions.php:270
+msgid "Receiver"
+msgstr "Penerima"
+
+#: admin/includes/ajax-handler.php:268
+msgid "No Available Shipments found."
+msgstr "Tidak ada Pengiriman yang Tersedia yang ditemukan."
+
+#: admin/includes/ajax-handler.php:310
+msgid "Permission denied"
+msgstr "Izin ditolak"
+
+#: admin/includes/ajax-handler.php:324 admin/includes/ajax-handler.php:337
+msgid "Failed to delete data"
+msgstr "Gagal menghapus data"
+
+#: admin/includes/ajax-handler.php:331
+#, php-format
+msgid "%s delete successfully"
+msgstr "%s berhasil dihapus"
+
+#: admin/includes/ajax-handler.php:342
+msgid "Delete process successfully completed"
+msgstr "Proses penghapusan berhasil diselesaikan"
+
+#: admin/includes/ajax-handler.php:354 admin/includes/ajax-handler.php:513
+msgid "Permission Denied."
+msgstr "Izin Ditolak."
+
+#: admin/includes/ajax-handler.php:466 admin/includes/ajax-handler.php:499
+msgid "Proccessing import completed."
+msgstr "Proccessing import selesai."
+
+#: admin/includes/ajax-handler.php:524
+msgid "File type is not allowed, required .CSV file format."
+msgstr "Jenis file tidak diperbolehkan, diperlukan . Format file CSV."
+
+#: admin/includes/ajax-handler.php:556
+msgid "File header required"
+msgstr "Header file diperlukan"
+
+#: admin/includes/ajax-handler.php:581
+msgid "File import completed"
+msgstr "Impor file selesai"
+
+#: admin/includes/ajax-handler.php:614
+msgid "Failed to process."
+msgstr "Gagal diproses."
+
+#: admin/includes/ajax-handler.php:646
+msgid "Successfully saved."
+msgstr "Berhasil disimpan."
+
+#: admin/includes/functions.php:14
+msgid "View"
+msgstr "Lihat"
+
+#: admin/includes/functions.php:20
+msgid "Edit"
+msgstr "Edit"
+
+#: admin/includes/functions.php:25
+msgid "Trash"
+msgstr "Sampah"
+
+#: admin/includes/functions.php:25 admin/templates/history.tpl.php:43
+msgid "Delete"
+msgstr "Hapus"
+
+#: admin/includes/functions.php:43
+msgid "There is no error, the file uploaded with success"
+msgstr "Tidak ada kesalahan, file diunggah dengan sukses"
+
+#: admin/includes/functions.php:44
+msgid "The uploaded file exceeds the upload_max_filesize directive in php.ini"
+msgstr ""
+"Ukuran berkas yang di-upload melebihi upload_max_filesize yang "
+"diinstruksikan dalam php.ini"
+
+#: admin/includes/functions.php:45
+msgid ""
+"The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in "
+"the HTML form"
+msgstr ""
+"Ukuran berkas yang di-upload melebihi MAX_FILE_SIZE yang dispesifikasikan "
+"dalam form HTML."
+
+#: admin/includes/functions.php:46
+msgid "The uploaded file was only partially uploaded"
+msgstr "Hanya sebagian file yang terunggah"
+
+#: admin/includes/functions.php:47
+msgid "No file was uploaded"
+msgstr "Tidak ada file yang terunggah"
+
+#: admin/includes/functions.php:48
+msgid "Missing a temporary folder"
+msgstr "Folder temporary hilang"
+
+#: admin/includes/functions.php:49
+msgid "Failed to write file to disk."
+msgstr "Gagal menulis file ke disk."
+
+#: admin/includes/functions.php:50
+msgid "A PHP extension stopped the file upload."
+msgstr "Ekstensi PHP menghentikan unggahan file."
+
+#: admin/includes/functions.php:123 admin/includes/translation.php:10
+msgid "Containers"
+msgstr "Muatan"
+
+#: admin/includes/functions.php:236 admin/includes/hooks.php:185
+#, php-format
+msgid "%s Shipment"
+msgid_plural "%s Shipments"
+msgstr[0] "%s Pengiriman"
+
+#: admin/includes/functions.php:279
+msgid "Client"
+msgstr "Klien"
+
+#: admin/includes/functions.php:280 admin/includes/functions.php:288
+msgid "Agent"
+msgstr "Agen"
+
+#: admin/includes/functions.php:286
+msgid "Flight/ Container No."
+msgstr "Penerbangan/ Kontainer No."
+
+#: admin/includes/functions.php:289 admin/includes/helpers.php:81
+msgid "Driver"
+msgstr "Driver"
+
+#: admin/includes/functions.php:290 admin/includes/helpers.php:142
+#: admin/templates/print.tpl.php:103 admin/templates/print.tpl.php:258
+#: templates/container-filters.tpl.php:7
+#: templates/container-form-shipments.tpl.php:16
+#: templates/container-import-export.tpl.php:31
+#: templates/container-trackform-result.tpl.php:41
+#: templates/container-trackform-result.tpl.php:140
+msgid "Status"
+msgstr "Status"
+
+#: admin/includes/functions.php:292
+msgid "Manifest"
+msgstr "Manifes"
+
+#: admin/includes/functions.php:307 templates/container-trackform.tpl.php:4
+msgid "Enter Container No."
+msgstr "Masukkan Kontainer No."
+
+#: admin/includes/functions.php:310
+msgid "Ex. CO123456"
+msgstr "Misal. 89996"
+
+#: admin/includes/functions.php:736
+msgid "Sorry you are restricted to access this route."
+msgstr "Maaf Anda dibatasi untuk mengakses rute ini."
+
+#: admin/includes/helpers.php:10
+#: templates/container-trackform-result.tpl.php:78
+msgid "Flight/Container No."
+msgstr "Penerbangan/Kontainer No."
+
+#: admin/includes/helpers.php:21
+msgid "Agent Name"
+msgstr "Nama Agen"
+
+#: admin/includes/helpers.php:32 admin/includes/helpers.php:92
+#: templates/container-trackform-result.tpl.php:82
+#: templates/container-trackform-result.tpl.php:95
+msgid "Telephone"
+msgstr "Telepon"
+
+#: admin/includes/helpers.php:43
+#: templates/container-trackform-result.tpl.php:84
+msgid "Passport"
+msgstr "Paspor"
+
+#: admin/includes/helpers.php:59
+msgid "Origin"
+msgstr "Asal"
+
+#: admin/includes/helpers.php:70
+msgid "Destination"
+msgstr "Tujuan"
+
+#: admin/includes/helpers.php:109 admin/includes/helpers.php:187
+#: admin/templates/print.tpl.php:101 admin/templates/print.tpl.php:256
+#: templates/container-trackform-result.tpl.php:39
+#: templates/container-trackform-result.tpl.php:100
+#: templates/container-trackform-result.tpl.php:138
+msgid "Date"
+msgstr "Tanggal"
+
+#: admin/includes/helpers.php:120 admin/includes/helpers.php:198
+#: templates/container-trackform-result.tpl.php:102
+msgid "Time"
+msgstr "Waktu"
+
+#: admin/includes/helpers.php:131
+msgid "Current City"
+msgstr "Kota saat ini"
+
+#: admin/includes/helpers.php:153
+msgid "Updated By"
+msgstr "Diperbarui oleh"
+
+#: admin/includes/helpers.php:164 admin/templates/print.tpl.php:104
+#: admin/templates/print.tpl.php:259
+#: templates/container-trackform-result.tpl.php:42
+#: templates/container-trackform-result.tpl.php:141
+msgid "Remarks"
+msgstr "Keterangan"
+
+#: admin/includes/helpers.php:209
+#: templates/container-trackform-result.tpl.php:104
+msgid "Expected Date"
+msgstr "Perkiraan Tanggal"
+
+#: admin/includes/helpers.php:220
+#: templates/container-trackform-result.tpl.php:106
+msgid "Travel Mode"
+msgstr "Mode Perjalanan"
+
+#: admin/includes/hooks.php:155
+msgid "Container NOT Found"
+msgstr "Muatab TIDAK Ditemukan"
+
+#: admin/includes/hooks.php:251 templates/track-history.tpl.php:2
+msgid "History"
+msgstr "Riwayat"
+
+#: admin/includes/hooks.php:345
+msgid "Container Details"
+msgstr "Detail Muatan"
+
+#: admin/includes/hooks.php:349 admin/includes/translation.php:49
+#: admin/includes/translation.php:142
+msgid "Shipment Container"
+msgstr "Kontainer Pengiriman"
+
+#: admin/includes/hooks.php:351 templates/bulk-assign-container.tpl.php:23
+msgid "-- Select Container --"
+msgstr "-- Pilih Muatan --"
+
+#: admin/includes/hooks.php:393
+msgid "Settings"
+msgstr "Pengaturan"
+
+#: admin/includes/hooks.php:394
+msgid "License"
+msgstr "Lisensi"
+
+#: admin/includes/hooks.php:471 admin/includes/translation.php:19
+#: templates/containers.tpl.php:10
+msgid "Container Number"
+msgstr "Nomor Kontainer"
+
+#: admin/includes/translation.php:16
+msgid "Import/Export Container"
+msgstr "Kontainer Impor/Ekspor"
+
+#: admin/includes/translation.php:22
+msgid "Import Container"
+msgstr "Impor Kontainer"
+
+#: admin/includes/translation.php:25
+msgid "Export Container"
+msgstr "Kontainer Ekspor"
+
+#: admin/includes/translation.php:28
+msgid "Shipping NO"
+msgstr "Pengiriman NO"
+
+#: admin/includes/translation.php:31
+msgid "Shipment"
+msgstr "Pengiriman"
+
+#: admin/includes/translation.php:34
+msgid "Shipments"
+msgstr "Pengiriman"
+
+#: admin/includes/translation.php:37
+msgid "Container #"
+msgstr "Wadah #"
+
+#: admin/includes/translation.php:40
+msgid "Container for WPCargo Shipment"
+msgstr "Kontainer untuk Pengiriman WPCargo"
+
+#: admin/includes/translation.php:43
+msgctxt "Post Type General Name"
+msgid "Containers"
+msgstr "Muatan"
+
+#: admin/includes/translation.php:46
+msgctxt "Post Type Singular Name"
+msgid "Container"
+msgstr "Kontainer"
+
+#: admin/includes/translation.php:52
+msgid "Container Archives"
+msgstr "Arsip Kontainer"
+
+#: admin/includes/translation.php:55
+msgid "Container Attributes"
+msgstr "Atribut Kontainer"
+
+#: admin/includes/translation.php:58
+msgid "Parent Container:"
+msgstr "Wadah Induk:"
+
+#: admin/includes/translation.php:61
+msgid "All Containers"
+msgstr "Semua Kontainer"
+
+#: admin/includes/translation.php:64
+msgid "Add New Container"
+msgstr "Tambahkan Kontainer Baru"
+
+#: admin/includes/translation.php:67
+msgid "Add Container"
+msgstr "Tambahkan Kontainer"
+
+#: admin/includes/translation.php:70
+msgid "New Container"
+msgstr "Kontainer Baru"
+
+#: admin/includes/translation.php:73
+msgid "Edit Container"
+msgstr "Edit Kontainer"
+
+#: admin/includes/translation.php:76
+msgid "Update Container"
+msgstr "Perbarui Kontainer"
+
+#: admin/includes/translation.php:79
+msgid "View Container"
+msgstr "Lihat Kontainer"
+
+#: admin/includes/translation.php:82
+msgid "View Containers"
+msgstr "Lihat Kontainer"
+
+#: admin/includes/translation.php:85
+msgid "Search Container"
+msgstr "Cari Kontainer"
+
+#: admin/includes/translation.php:88 admin/templates/container-info.tpl.php:5
+#: admin/templates/container.tpl.php:2 templates/container-track.tpl.php:11
+msgid "Container Information"
+msgstr "Informasi Kontainer"
+
+#: admin/includes/translation.php:91 admin/templates/container-info.tpl.php:12
+#: admin/templates/container.tpl.php:22 admin/templates/print.tpl.php:213
+#: templates/container-track.tpl.php:25
+msgid "Trip Information"
+msgstr "Informasi Perjalanan"
+
+#: admin/includes/translation.php:94 admin/templates/container-info.tpl.php:19
+#: admin/templates/container.tpl.php:42 admin/templates/print.tpl.php:220
+#: templates/container-track.tpl.php:39
+msgid "Time Information"
+msgstr "Informasi Waktu"
+
+#: admin/includes/translation.php:97
+msgid "Not found"
+msgstr "Tidak ditemukan"
+
+#: admin/includes/translation.php:100
+msgid "Not found in Trash"
+msgstr "Tidak ditemukan di tong sampah"
+
+#: admin/includes/translation.php:103
+msgid "Featured Image"
+msgstr "Gambar Unggulan"
+
+#: admin/includes/translation.php:106
+msgid "Set featured image"
+msgstr "Jadikan gambar fitur"
+
+#: admin/includes/translation.php:109
+msgid "Remove featured image"
+msgstr "Hapus gambar yang ditampilkan"
+
+#: admin/includes/translation.php:112
+msgid "Use as featured image"
+msgstr "Gunakan sebagai gambar unggulan"
+
+#: admin/includes/translation.php:115
+msgid "Insert into Container"
+msgstr "Masukkan ke dalam Kontainer"
+
+#: admin/includes/translation.php:118
+msgid "Uploaded to this item"
+msgstr "Diunggah ke barang ini"
+
+#: admin/includes/translation.php:121
+msgid "Assign to Container"
+msgstr "Tetapkan ke Kontainer"
+
+#: admin/includes/translation.php:124
+msgid "Containers list"
+msgstr "Daftar kontainer"
+
+#: admin/includes/translation.php:127
+msgid "Containers list navigation"
+msgstr "Navigasi daftar kontainer"
+
+#: admin/includes/translation.php:130
+msgid "Filter Containers list"
+msgstr "Daftar Kontainer Filter"
+
+#: admin/includes/translation.php:133
+msgid "Assign Shipments"
+msgstr "Tetapkan Pengiriman"
+
+#: admin/includes/translation.php:136 admin/includes/translation.php:139
+#: admin/templates/print.tpl.php:232 admin/templates/shipment.tpl.php:2
+#: templates/container-trackform-result.tpl.php:113
+msgid "Assigned Shipments"
+msgstr "Pengiriman yang Ditugaskan"
+
+#: admin/includes/translation.php:145 admin/templates/print.tpl.php:249
+#: templates/container-trackform-result.tpl.php:133
+msgid "Container History"
+msgstr "Riwayat Kontainer"
+
+#: admin/includes/translation.php:148
+msgid "Container Settings"
+msgstr "Pengaturan Kontainer"
+
+#: admin/includes/translation.php:151
+msgid "Print Container Shipment"
+msgstr "Cetak Pengiriman Kontainer"
+
+#: admin/includes/translation.php:154
+msgid "Instructions on how to import shipment container"
+msgstr "Petunjuk tentang cara mengimpor kontainer pengiriman"
+
+#: admin/includes/translation.php:157
+msgid "Apply this update for all shipments in the Container."
+msgstr "Terapkan pembaruan ini untuk semua pengiriman dalam Kontainer."
+
+#: admin/includes/translation.php:160
+msgid "This is an existing Container number."
+msgstr "Ini adalah nomor Kontainer yang ada."
+
+#: admin/includes/translation.php:163
+msgid "Please Select Containers to update."
+msgstr "Silakan Pilih Kontainer untuk diperbarui."
+
+#: admin/includes/translation.php:169
+msgid "No container selected, Please select atleast one container."
+msgstr "Tidak ada wadah yang dipilih, Silakan pilih setidaknya satu wadah."
+
+#: admin/includes/translation.php:172
+msgid "No shipment selected, Please select atleast one Shipment."
+msgstr ""
+"Tidak ada pengiriman yang dipilih, Silakan pilih setidaknya satu Pengiriman."
+
+#: admin/includes/translation.php:175
+msgid "Selected Shipments has been assigned"
+msgstr "Pengiriman Terpilih telah ditetapkan"
+
+#: admin/includes/translation.php:178
+msgid "Are you sure you want to delete containers?"
+msgstr "Apakah Anda yakin ingin menghapus kontainer?"
+
+#: admin/includes/translation.php:181
+msgid "No shipment has been updated"
+msgstr "Tidak ada pengiriman yang diperbarui"
+
+#: admin/includes/translation.php:184
+msgid "Opss. Something went wrong!"
+msgstr "Opss. Ada yang tidak beres!"
+
+#: admin/includes/translation.php:187
+msgid "No results found!"
+msgstr "Tidak ada hasil yang ditemukan!"
+
+#: admin/includes/translation.php:190
+msgid "Not yet assigned to any container"
+msgstr "Belum ditetapkan ke muatan apa pun"
+
+#: admin/includes/translation.php:193
+msgid "Please activate your license key"
+msgstr "Silakan aktifkan kunci lisensi Anda"
+
+#: admin/includes/translation.php:193 admin/templates/settings.tpl.php:53
+#: admin/templates/settings.tpl.php:67 admin/templates/settings.tpl.php:81
+msgid "here"
+msgstr "disini"
+
+#: admin/includes/translation.php:196
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\" target=\"_blank"
+"\">WPTaskForce License Helper</a> plugin to be active!"
+msgstr ""
+"Plugin ini membutuhkan <a href=\"http://wpcargo.com/\" target=\"_blank"
+"\">WPTaskForce License Helper</a> plugin untuk aktif!"
+
+#: admin/includes/translation.php:199
+msgid ""
+"This plugin requires <a href=\"https://wordpress.org/plugins/wpcargo/\" "
+"target=\"_blank\">WPCargo</a> plugin to be active!"
+msgstr ""
+"Plugin ini membutuhkan <a href=\"http://wpcargo.com/\" target=\"_blank"
+"\">WPTaskForce License Helper</a> plugin untuk aktif!"
+
+#: admin/includes/translation.php:202
+msgid ""
+"This plugin requires <strong>WPCargo Custom Field Add-ons</strong> plugin to "
+"be active!"
+msgstr ""
+"Plugin ini membutuhkan plugin <strong>WPCargo Custom Field Add-ons</strong> "
+"agar aktif!"
+
+#: admin/includes/translation.php:205
+msgid ""
+"This plugin requires <strong>WPCargo Frontend Manager</strong> plugin to be "
+"active!"
+msgstr ""
+"Plugin ini membutuhkan plugin <strong>WPCargo Frontend Manager</strong> "
+"untuk aktif!"
+
+#: admin/includes/translation.php:208
+msgid ""
+"This plugin requires <strong>WPCargo Proof of Delivery Add-on</strong> "
+"plugin to be active!"
+msgstr ""
+"Plugin ini membutuhkan <strong>plugin WPCargo Proof of Delivery Add-on</"
+"strong> agar aktif!"
+
+#: admin/includes/translation.php:211
+msgid "Cheating, uh?"
+msgstr "Kecurangan, eh?"
+
+#: admin/templates/container-info.tpl.php:2
+msgid "Shipment Container Information"
+msgstr "Informasi Kontainer Pengiriman"
+
+#: admin/templates/container-status.tpl.php:2
+#: templates/container-form.tpl.php:60
+msgid "Current Status"
+msgstr "Status Saat Ini"
+
+#: admin/templates/container-status.tpl.php:23
+#: admin/templates/quick-edit-history.tpl.php:24
+msgid "Apply this update for all shipments in the container."
+msgstr "Terapkan pembaruan ini untuk semua pengiriman dalam muatan."
+
+#: admin/templates/container.tpl.php:10
+msgid "No registered Agent."
+msgstr "Tidak ada Agen terdaftar."
+
+#: admin/templates/container.tpl.php:10
+msgid "Add Agent"
+msgstr "Tambah Agen"
+
+#: admin/templates/container.tpl.php:30
+msgid "No registered Driver."
+msgstr "Tidak ada Driver terdaftar."
+
+#: admin/templates/container.tpl.php:30
+msgid "Add Driver"
+msgstr "Tambah Driver"
+
+#: admin/templates/container.tpl.php:59
+msgid "No Options for Travel mode is registered."
+msgstr "Tidak Ada Opsi untuk mode Perjalanan yang didaftarkan"
+
+#: admin/templates/container.tpl.php:59
+msgid "Add Travel Mode"
+msgstr "Tambah Mode Perjalanan"
+
+#: admin/templates/history.tpl.php:51
+msgid "No Shipment History Found."
+msgstr "Tidak ada riwayat pengiriman yang ditemukan."
+
+#: admin/templates/print.tpl.php:102 admin/templates/print.tpl.php:257
+#: templates/container-trackform-result.tpl.php:40
+#: templates/container-trackform-result.tpl.php:139
+msgid "Location"
+msgstr "Lokasi"
+
+#: admin/templates/print.tpl.php:194
+msgid "Container No.:"
+msgstr "Kontainer No.:"
+
+#: admin/templates/print.tpl.php:206
+msgid "Container Information : "
+msgstr "Informasi Kontainer : "
+
+#: admin/templates/print.tpl.php:207
+msgid "Flight/Container No. : "
+msgstr "Penerbangan/Kontainer No. : "
+
+#: admin/templates/print.tpl.php:208
+msgid "Agent name : "
+msgstr "Nama agen : "
+
+#: admin/templates/print.tpl.php:209 admin/templates/print.tpl.php:217
+msgid "Telephone : "
+msgstr "Telepon :"
+
+#: admin/templates/print.tpl.php:210
+msgid "Passport : "
+msgstr "Paspor :"
+
+#: admin/templates/print.tpl.php:214
+msgid "Origin port : "
+msgstr "Tempat asal :"
+
+#: admin/templates/print.tpl.php:215
+msgid "Destination port : "
+msgstr "Tempat Tujuan :"
+
+#: admin/templates/print.tpl.php:216
+msgid "Delivery Agent : "
+msgstr "Agen Pengiriman : "
+
+#: admin/templates/print.tpl.php:221
+msgid "Date : "
+msgstr "Tanggal: "
+
+#: admin/templates/print.tpl.php:222
+msgid "Time : "
+msgstr "Jam :"
+
+#: admin/templates/print.tpl.php:223
+msgid "Expected Date : "
+msgstr "Perkiraan Tanggal :"
+
+#: admin/templates/print.tpl.php:224
+msgid "Travel Mode : "
+msgstr "Mode Perjalanan : "
+
+#: admin/templates/print.tpl.php:229
+msgid "Status : "
+msgstr "Keadaan: "
+
+#: admin/templates/print.tpl.php:244
+msgid "No assigned shipment."
+msgstr "Tidak ada pengiriman yang ditugaskan."
+
+#: admin/templates/print.tpl.php:275
+msgid "No container history."
+msgstr "Tidak ada riwayat muatan."
+
+#: admin/templates/quick-edit-agent.tpl.php:5
+msgid "Select Driver"
+msgstr "Pilih Driver"
+
+#: admin/templates/quick-edit-agent.tpl.php:7
+msgid "— No Change —"
+msgstr "— Tidak berubah —"
+
+#: admin/templates/quick-edit-agent.tpl.php:18
+msgid "Apply this Driver to all the shipments under this container."
+msgstr "Terapkan Driver ini ke semua pengiriman di bawah kontainer ini."
+
+#: admin/templates/quick-edit-history.tpl.php:4
+msgid "Container Status"
+msgstr "Status Kontainer"
+
+#: admin/templates/settings.tpl.php:7
+msgid "Enable Auto generate Container Title"
+msgstr "Aktifkan Buat Otomatis Judul Kontainer"
+
+#: admin/templates/settings.tpl.php:11
+msgid "Container Title Prefix"
+msgstr "Awalan Judul Kontainer"
+
+#: admin/templates/settings.tpl.php:14
+msgid "Note: This will be apply when Auto generate Container Title is Enable."
+msgstr ""
+"Catatan: Ini akan diterapkan saat Judul Kontainer pembuatan otomatis "
+"diaktifkan."
+
+#: admin/templates/settings.tpl.php:18
+msgid "Add Travel Mode Selection"
+msgstr "Menambahkan pilihan mode perjalanan"
+
+#: admin/templates/settings.tpl.php:21
+msgid "Must be comma(,) separated. Example : Normal, Express"
+msgstr "Harus koma(,) dipisahkan. Contoh : Normal, Express"
+
+#: admin/templates/settings.tpl.php:25
+msgid "Container Shipment Print Header / Footer"
+msgstr "Pengiriman Kontainer Print Header / Footer"
+
+#: admin/templates/settings.tpl.php:29
+msgid "Header additional content"
+msgstr "Konten tambahan header"
+
+#: admin/templates/settings.tpl.php:31
+msgid ""
+"This content will display in the shipment container print header layout. "
+"Accepts html tags."
+msgstr ""
+"Konten ini akan ditampilkan dalam tata letak header cetak kontainer "
+"pengiriman. Menerima tag html."
+
+#: admin/templates/settings.tpl.php:36
+msgid "Footer addidtional content"
+msgstr "Konten tambahan footer"
+
+#: admin/templates/settings.tpl.php:38
+msgid ""
+"This content will display in the shipment container print footer layout. "
+"Accepts html tags."
+msgstr ""
+"Konten ini akan ditampilkan dalam tata letak footer cetak kontainer "
+"pengiriman. Menerima tag html."
+
+#: admin/templates/settings.tpl.php:42
+msgid "Container Shipment List Display Settings"
+msgstr "Pengaturan Tampilan Daftar Pengiriman Kontainer"
+
+#: admin/templates/settings.tpl.php:45
+msgid "Shipment Status to be included for adding in Shipment Container"
+msgstr ""
+"Status Pengiriman yang akan disertakan untuk ditambahkan dalam Kontainer "
+"Pengiriman"
+
+#: admin/templates/settings.tpl.php:53
+msgid "No registered shipment status. Please add shipment status"
+msgstr ""
+"Tidak ada status pengiriman terdaftar. Silakan tambahkan status pengiriman"
+
+#: admin/templates/settings.tpl.php:59
+msgid "Select Shipper Field to be Display in the Shipment List"
+msgstr "Pilih Bidang Pengirim yang akan Ditampilkan dalam Daftar Pengiriman"
+
+#: admin/templates/settings.tpl.php:67 admin/templates/settings.tpl.php:81
+msgid "No registered custom fields. Please add custom field"
+msgstr "Tidak ada bidang kustom terdaftar. Silakan tambahkan bidang khusus"
+
+#: admin/templates/settings.tpl.php:73
+msgid "Select Receiver Field to be Display in the Shipment List"
+msgstr "Pilih Bidang Penerima yang akan Ditampilkan dalam Daftar Pengiriman"
+
+#: admin/templates/settings.tpl.php:87
+msgid "Container Shipment Manifest Settings"
+msgstr "Pengaturan Manifes Pengiriman Kontainer"
+
+#: admin/templates/settings.tpl.php:91
+msgid "Select field to display in shipments table"
+msgstr "Pilih bidang untuk ditampilkan dalam tabel pengiriman"
+
+#: admin/templates/settings.tpl.php:92
+msgid "Selected fields will be display in the manifest shipment table list."
+msgstr ""
+"Bidang yang dipilih akan ditampilkan dalam daftar tabel pengiriman manifes."
+
+#: admin/templates/settings.tpl.php:129
+msgid "Paper Size"
+msgstr "Paper Size"
+
+#: admin/templates/settings.tpl.php:139
+msgid "Paper Orientation"
+msgstr "Paper Orientation"
+
+#: admin/templates/settings.tpl.php:142
+msgid "Portrait"
+msgstr "Portrait"
+
+#: admin/templates/settings.tpl.php:143
+msgid "Landscape"
+msgstr "Landsekap"
+
+#: admin/templates/settings.tpl.php:149
+msgid "Manifest Acknowledgemant"
+msgstr "Surat Manifes"
+
+#: admin/templates/settings.tpl.php:150
+msgid ""
+"I acknowledge that all information in the shipping manifest is true. "
+"Information falsification is a serious offense and may result in immediate "
+"dismissal/fines."
+msgstr ""
+"Saya mengakui bahwa semua informasi dalam manifest pengiriman adalah benar. "
+"Pemalsuan informasi adalah pelanggaran serius dan dapat mengakibatkan "
+"pemecatan / denda segera."
+
+#: admin/templates/settings.tpl.php:151
+msgid ""
+"This content will display in the container Acknowledgement section layout. "
+"Accepts html tags."
+msgstr ""
+"Konten ini akan ditampilkan dalam tata letak bagian Pengakuan Kontainer. "
+"Menerima tag html."
+
+#: admin/templates/settings.tpl.php:156
+msgid "Save Container Settings"
+msgstr "Simpan Pengaturan Kontainer"
+
+#: admin/templates/shipment-container-info.tpl.php:2
+msgid "Container No."
+msgstr "Wadah No."
+
+#: admin/templates/shipment.tpl.php:2
+#: templates/container-form-shipments.tpl.php:2
+msgid "Add Shipment"
+msgstr "Tambah Pengiriman"
+
+#: admin/templates/shipment.tpl.php:34
+msgid "WPCargo Shipment List"
+msgstr "Daftar Pengiriman WPCargo"
+
+#: admin/templates/shipment.tpl.php:46
+#: templates/container-form-modal.tpl.php:29
+msgid "Actions"
+msgstr "Tindakan"
+
+#: templates/bulk-assign-container.tpl.php:6
+msgid "Bulk Assign Container"
+msgstr "Tetapkan Muatan Massal"
+
+#: templates/bulk-assign-container.tpl.php:13
+msgid "Shipment List"
+msgstr "Daftar Pengiriman"
+
+#: templates/bulk-assign-container.tpl.php:21
+msgid "Container List"
+msgstr "Daftar Kontainer"
+
+#: templates/bulk-assign-container.tpl.php:37
+#: templates/container-form-modal.tpl.php:43
+#: templates/container-view-modal.tpl.php:14
+msgid "Close"
+msgstr "Tutup"
+
+#: templates/bulk-assign-container.tpl.php:38
+msgid "Assign"
+msgstr "Tentukan"
+
+#: templates/container-filters.tpl.php:9
+msgid "All Status"
+msgstr "Semua status"
+
+#: templates/container-filters.tpl.php:20
+msgid "Date Created"
+msgstr "Tanggal Dibuat"
+
+#: templates/container-filters.tpl.php:22 templates/containers.tpl.php:48
+msgid "to"
+msgstr "untuk"
+
+#: templates/container-filters.tpl.php:28
+msgid "Filter"
+msgstr "Filter"
+
+#: templates/container-filters.tpl.php:38
+msgid "Search"
+msgstr "Cari"
+
+#: templates/container-filters.tpl.php:47
+msgid "Show entries"
+msgstr "Tampilkan data"
+
+#: templates/container-filters.tpl.php:49 templates/containers.tpl.php:52
+msgid "entries"
+msgstr "Entri"
+
+#: templates/container-filters.tpl.php:55
+msgid "Bulk Delete"
+msgstr "Hapus Massal"
+
+#: templates/container-form-assign-role.tpl.php:10
+msgid "Assign shipment to"
+msgstr "Tetapkan pengiriman ke"
+
+#: templates/container-form-misc.tpl.php:4
+msgid "Publish"
+msgstr "Publikasikan"
+
+#: templates/container-form-shipments.tpl.php:18
+msgid "Update Status"
+msgstr "Update Status"
+
+#: templates/container-import-export.tpl.php:20
+msgid "Registered Shipper"
+msgstr "Pengirim Terdaftar"
+
+#: templates/container-import-export.tpl.php:22
+msgid "-- Registered Shipper --"
+msgstr "-- Pengirim Terdaftar --"
+
+#: templates/container-import-export.tpl.php:33
+msgid "-- Status --"
+msgstr "--Keadaan--"
+
+#: templates/container-import-export.tpl.php:43
+#: templates/container-import-export.tpl.php:49
+msgid "YYYY-MM-DD"
+msgstr "YYYY-MM-DD"
+
+#: templates/container-import-export.tpl.php:44
+msgid "Start"
+msgstr "Mulai"
+
+#: templates/container-import-export.tpl.php:50
+msgid "End"
+msgstr "Selesai"
+
+#: templates/container-import-export.tpl.php:62
+msgid "Import CSV File"
+msgstr "Impor File CSV"
+
+#: templates/container-import-export.tpl.php:80
+msgid "Download CSV template"
+msgstr "Unduh template CSV"
+
+#: templates/container-import-export.tpl.php:80
+msgid "as template for Importing data."
+msgstr "sebagai templat untuk Mengimpor data."
+
+#: templates/container-import-export.tpl.php:81
+msgid ""
+"Delete Column(s) that are not needed, make sure no empty header column this "
+"cause data mapping error."
+msgstr ""
+"Hapus Kolom yang tidak diperlukan, pastikan tidak ada kolom header kosong "
+"yang menyebabkan kesalahan pemetaan data."
+
+#: templates/container-import-export.tpl.php:82
+msgid "Add Data to each Cell."
+msgstr "Tambahkan Data ke setiap Sel."
+
+#: templates/container-import-export.tpl.php:83
+msgid "Import CSV template."
+msgstr "Impor template CSV."
+
+#: templates/container-trackform-result.tpl.php:69
+msgid "Container No: "
+msgstr "Wadah No: "
+
+#: templates/container-trackform-result.tpl.php:80
+msgid "Agent name"
+msgstr "Nama agen"
+
+#: templates/container-trackform-result.tpl.php:89
+msgid "Origin port"
+msgstr "Tempat asal"
+
+#: templates/container-trackform-result.tpl.php:91
+msgid "Destination port"
+msgstr "Port tujuan"
+
+#: templates/container-trackform-result.tpl.php:154
+msgid "Result"
+msgstr "Hasil"
+
+#: templates/container-trackform-result.tpl.php:154
+msgid "No registered history found."
+msgstr "Tidak ditemukan riwayat terdaftar."
+
+#: templates/container-trackform.tpl.php:6
+msgid "Track Container"
+msgstr "Lacak Kontainer"
+
+#: templates/container-view-modal.tpl.php:5
+msgid "Assigned Shipment list"
+msgstr "Daftar Pengiriman yang Ditetapkan"
+
+#: templates/containers.tpl.php:26
+msgid "Track"
+msgstr "Lacak"
+
+#: templates/containers.tpl.php:46
+msgid "Showing"
+msgstr "Menampilkan"
+
+#: templates/containers.tpl.php:50
+msgid "of"
+msgstr "dari"
+
+#: templates/manifest.php:4
+msgid "Shipping Manifest"
+msgstr "Manifes Pengiriman"
+
+#: templates/manifest/content.php:8
+msgid "No"
+msgstr "Tidak"
+
+#: templates/manifest/content.php:10
+msgid "Barcode"
+msgstr "Barcode"
+
+#: templates/manifest/header.php:4
+msgid "ROUTE"
+msgstr "RUTE"
+
+#: templates/manifest/header.php:5
+msgid "DELIVERY MANIFEST"
+msgstr "MANIFES PENGIRIMAN"
+
+#: templates/manifest/header.php:8
+msgid "DRIVER NAME"
+msgstr "NAMA PENGEMUDI"
+
+#: templates/manifest/header.php:9
+msgid "DATE"
+msgstr "TANGGAL"
+
+#: templates/manifest/header.php:13
+msgid "NO."
+msgstr "NO."
+
+#: templates/manifest/header.php:17
+msgid "VEHICLE NO."
+msgstr "KENDARAAN NO."
+
+#: templates/manifest/header.php:20
+msgid "EMPLOYEE NAME"
+msgstr "NAMA KARYAWAN"
+
+#: templates/manifest/header.php:30
+msgid "EMPLOYEE SIGNATURE"
+msgstr "TANDA TANGAN KARYAWAN"
+
+#: templates/no-shipment.php:3
+msgid "Error 404"
+msgstr "Kesalahan 404"
+
+#: templates/no-shipment.php:4
+msgid "Shipment not found!"
+msgstr "Pengiriman tidak ditemukan!"
+
+#: templates/restricted.tpl.php:3
+msgid "Sorry your are not allowed to access this page!"
+msgstr "Maaf Anda tidak diizinkan untuk mengakses halaman ini!"
+
+#: templates/restricted.tpl.php:3
+msgid "Please contact administrator for your permission."
+msgstr "Silakan hubungi administrator untuk izin Anda."
+
+#: wpcargo-shipment-container-add-ons.php:30
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\">WPCargo</a> Free "
+"Version to activate"
+msgstr ""
+"Plugin ini membutuhkan <a href=\"http://wpcargo.com/\">WPCargo</a> Free "
+"Version untuk mengaktifkan"
+
+#: wpcargo-shipment-container-add-ons.php:34
+msgid "This plugin requires WPCargo Custom Field Addons to activate"
+msgstr "Plugin ini membutuhkan WPCargo Custom Field Addons untuk diaktifkan"
+
+#: wpcargo-shipment-container-add-ons.php:47
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\">WPTaskForce License "
+"Helper</a> plugin to activate!"
+msgstr ""
+"Plugin ini membutuhkan plugin <a href=\"http://wpcargo.com/\">WPTaskForce "
+"License Helper</a> untuk diaktifkan!"
+
+#. Plugin Name of the plugin/theme
+msgid "WPCargo Shipment Container Add-ons"
+msgstr "WPCargo Shipment Container Add-ons"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wptaskforce.com/"
+msgstr "http://wptaskforce.com/"
+
+#. Description of the plugin/theme
+msgid ""
+"WPCargo Shipment Container Add-ons helps manage shipment into container. "
+"Shorcode available for frontend [wpcargo-container-track-form pageredirect="
+"\"page_id\"], [wpcargo-container-track-result]"
+msgstr ""
+"Add-on Kontainer Pengiriman WPCargo membantu mengelola pengiriman ke dalam "
+"kontainer. Shorcode tersedia untuk frontend [wpcargo-container-track-form "
+"pageredirect=\"page_id\"], [wpcargo-container-track-result]"
+
+#. Author of the plugin/theme
+msgid "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"
+msgstr "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"

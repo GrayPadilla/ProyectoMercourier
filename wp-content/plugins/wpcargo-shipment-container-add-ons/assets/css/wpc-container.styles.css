@@ -1,0 +1,230 @@
+/* =Column Classes
+------------------------------------------------------------ */
+.five-sixths,
+.four-fifths,
+.four-sixths,
+.one-fifth,
+.one-fourth,
+.one-half,
+.one-sixth,
+.one-third,
+.three-fifths,
+.three-fourths,
+.three-sixths,
+.two-fifths,
+.two-fourths,
+.two-sixths,
+.two-thirds {
+    float: left;
+    margin: 0 0 20px;
+    padding-left: 3%;
+}
+.one-half,
+.three-sixths,
+.two-fourths {
+    width: 48%;
+}
+.one-third,
+.two-sixths {
+    width: 31%;
+}
+.four-sixths,
+.two-thirds {
+    width: 65%;
+}
+#home-info > .widget,
+.one-fourth {
+    width: 22.5%;
+}
+.three-fourths {
+    width: 73.5%;
+}
+.one-fifth {
+    width: 17.4%;
+}
+.two-fifths {
+    width: 37.8%;
+}
+.three-fifths {
+    width: 58.2%;
+}
+.four-fifths {
+    width: 78.6%;
+}
+.one-sixth {
+    width: 14%;
+}
+.five-sixths {
+    width: 82%;
+}
+.first {
+    clear: both;
+    padding-left: 0;
+}
+#container-list .wpcsc-action-row{
+    opacity: 0;
+}
+#container-list .container-row:hover .wpcsc-action-row{
+    opacity: 1 !important;
+}
+#assgnShipmentModal #assgListWrapper img{
+    margin: 0 auto;
+    display: block;
+}
+.openAssShipmentModal {
+    cursor: pointer;
+}
+#container-track-result #history #container-history-table td,
+#container-track-result #history #container-history-table th,
+#container-track-result #shipments .shipment-section .shipment-id,
+#container-track-result #shipments .shipment-section,
+#container-track-result #shipments .shipment-section .shipment-id,
+#container-track-result #container-details p.section-header,
+#container-track-result #container-details p.label,
+#container-track-result #container-details p,
+.wpcargo-wrap-details #container-info #container-header,
+.wpcargo-wrap-details #container-info {
+    font-family: 'open_sansregular';
+}
+.wpcargo-wrap-details #container-info {
+    padding: 15px 20px 15px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, .05);
+    border: 1px solid rgb(244, 244, 244);
+    margin-top: 30px;
+    display: inline-block;
+    width: 100%;
+    font-family: 'open_sansregular';
+}
+.wpcargo-wrap-details #container-info #container-header {
+    font-size: 20px;
+    font-weight: bold;
+}
+/*SHIPMENT FROM END*/
+#container-track-result #container-details p {
+    margin-bottom: 0px;
+    font-size: 14px;
+    padding: 6px 15px 6px;
+}
+#container-track-result #container-details p.label {
+    margin-bottom: 0px;
+    padding: 0px 15px 0px;
+    font-weight: bold;
+}
+#container-track-result #container-details p.section-header {
+    font-size: 15px;
+    margin-bottom: 0px;
+    padding: 6px 15px 6px;
+    border-bottom: 1px solid #858585;
+}
+#container-track-result #container-details .one-third {
+    width: 33.33%;
+    margin-left: 0;
+}
+#container-track-result #container-details,
+#container-track-result #shipments {
+    margin-bottom: 30px;
+}
+#container-track-result #shipments .shipment-section {
+    width: 33%;
+    display: inline-block;
+    padding: 12px 10px;
+}
+#container-track-result #shipments .shipment-section .shipment-id {
+    padding-left: 10px;
+    font-size: 15px;
+}
+#container-track-result #shipments .section-header {
+    margin-bottom: 20px;
+}
+#container-track-result #shipments .shipment-section .shipment-id {
+    margin-bottom: 0;
+}
+#container-track-result #shipments,
+#container-track-result #history,
+#container-track-result #container-details  {
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 10px rgba(0,0,0,.05);
+    border: 1px solid rgb(244,244,244);
+    padding: 15px;
+    
+}
+#container-track-result #history #container-history-table th {
+    font-size: 15px;
+    padding: 10px 10px;
+    line-height: 1.3;
+}
+#container-track-result #history #container-history-table td {
+    border: 1px solid #fff;
+    padding: 10px 10px;
+    line-height: 1.3;
+    font-size: 14px;
+}
+#container-track-result #history #container-history-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+#container-track-result #container-info {
+    text-align: right;
+}
+#container-track-result #container-header {
+    margin-bottom: 10px;
+}
+#container-track-result #container-info p {
+    font-weight: 600;
+}
+/*
+*  WPCargo Track Template styles
+*/
+#wpcargo-result-print  #container-info {
+    padding: 15px 20px 15px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, .05);
+    border: 1px solid rgb(244, 244, 244);
+    margin-top: 30px;
+    width: 100%;
+}
+#wpcargo-result-print  #container-info  #container-header {
+    color: #5d5d5d;
+    line-height: 1.9;
+    font-weight: 400;
+    font-size: 20px !important;
+    font-family: 'open_sansregular' !important;
+}
+#shipment-list .shipment-section .form-check-input{
+    position: unset;
+}
+.shipment-container-wrapper .shipments-container-list {
+    list-style: none;
+    padding: 0;
+}
+/* Shipment popup options */
+table#shipment-options-table {
+    width: 100% !important;
+}
+.shipment-assign-icon,
+.unassigned-shipment{
+    cursor: pointer;
+}
+.display-none{
+    display: none !important;
+}
+@media only screen and (max-width: 600px) {
+    .five-sixths,
+    .four-fifths,
+    .four-sixths,
+    .one-fifth,
+    .one-fourth,
+    .one-half,
+    .one-sixth,
+    .one-third,
+    .three-fifths,
+    .three-fourths,
+    .three-sixths,
+    .two-fifths,
+    .two-fourths,
+    .two-sixths,
+    .two-thirds {
+        padding: 0;
+        width: 100% !important;
+    }
+}
