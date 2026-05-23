@@ -1,0 +1,89 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPTaskForce License Helper\n"
+"POT-Creation-Date: 2021-02-15 13:07+0800\n"
+"PO-Revision-Date: 2021-02-15 13:07+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wptaskforce-license-helper.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: admin/functions.php:31 admin/functions.php:118
+msgid "Unexpected Error! The query returned with an error."
+msgstr "意外错误！查询返回时出错。"
+
+#: admin/functions.php:38 admin/functions.php:45
+msgid "The following message was returned from the server"
+msgstr "从服务器返回以下消息"
+
+#: admin/functions.php:77 admin/functions.php:80
+msgid "The following message was returned from the server: "
+msgstr "从服务器返回以下消息："
+
+#: admin/functions.php:197
+msgid ""
+"Please enter the license key for this product to activate it. You were given "
+"a license key when you purchased this item."
+msgstr ""
+"请输入你所得到的主题序列号以激活主题。当你购买此主题时，卖方会提供此序列号。"
+
+#: admin/functions.php:203
+msgid "WPCargo Add-ons"
+msgstr "WPCargo 附加组件"
+
+#: admin/functions.php:204 admin/functions.php:254
+msgid "Version"
+msgstr "版本"
+
+#: admin/functions.php:205 admin/functions.php:255
+msgid "License Key"
+msgstr "许可证密钥"
+
+#: admin/functions.php:206 admin/functions.php:256
+msgid "Action"
+msgstr "动作"
+
+#: admin/functions.php:222
+msgid "Show more details"
+msgstr "显示更多细节"
+
+#: admin/functions.php:253
+msgid "Product"
+msgstr "产品"
+
+#: admin/functions.php:266
+msgid "Every  Week"
+msgstr "每周"
+
+#. Plugin Name of the plugin/theme
+msgid "WPTaskForce License Helper"
+msgstr "WPTaskForce 许可证帮助程序"
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.wpcargo.com/"
+msgstr "http://www.wpcargo.com"
+
+#. Description of the plugin/theme
+msgid "This is to help you manage license for your WPCargo Add-ons."
+msgstr "这是为了帮助您管理 WPCargo 加载项的许可证。"
+
+#. Author of the plugin/theme
+msgid "WPTaskForce"
+msgstr "WptaskForce"
+
+#. Author URI of the plugin/theme
+msgid "http://www.wptaskforce.com/"
+msgstr "http://www.wptaskforce.com/"

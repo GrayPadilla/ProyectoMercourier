@@ -1,0 +1,96 @@
+#load_addons{width:1140px; margin: 0 auto; padding-top: 40px;}
+.other_add_wrap {width:1140px;}
+.other_add_wrap h2.add-on-title {font-weight: 400; font-size:2em; text-align:center;}
+.other_add_wrap .product-title, .other_add_wrap .product-footer, .other_add_wrap .product-desc{padding: 10px;}
+.other_add_wrap .product-title{height: 90px; font-size: 1rem; background-color: #01BA7C; color: #fff; text-align: center;}
+.other_add_wrap .product-title h3{color: #fff;}
+.other_add_wrap .product-title .red-desc{font-size: 0.8rem;}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:nth-child(3n +4),
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.00%; }
+.span_1_of_3 { width: 32.00%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
+
+
+.other_add_wrap .product-footer p{float:left;}
+.other_add_wrap .product-footer .prod-btn{float: right;}
+.other_add_wrap .product-footer .price{font-weight: 600; font-size: 1.2rem;}
+
+.other_add_wrap .product-wrapper {border: 1px solid #01BA7C;}
+.other_add_wrap .prod-btn{background-color: #01BA7C; color: #fff; padding: 10px;}
+.other_add_wrap .prod-btn p{margin: 0;}
+
+.other_add_wrap .theme-title, .other_add_wrap .add-on-title{margin-top: 50px; margin-bottom: 20px; text-align: center;}
+.other_add_wrap div.p_table_1 div.column_1{width: 240px;}
+
+
+.other_add_wrap h2.other-services-title{margin-top: 50px; margin-bottom: 30px; text-align: center;}
+.other_add_wrap .td_wpcargo{text-align: left;}
+.other_add_wrap .th_wpcargo{background-color: #01BA7C; border: none; font-size: 1.2rem; text-align:left;}
+.other_add_wrap .th_wpcargo h3{color: #fff; margin: 7px 0; text-align:left;}
+
+
+.wptf-loading {
+
+  height: 2em;
+  width: 2em;
+  margin: auto;
+  font-size:30px;
+  font-weight:400;
+}
+/* Transparent Overlay */
+.wptf-loading:before {
+  background-color: #01BA7C;
+}
+/* :not(:required) hides these rules from IE9 and below */
+.wptf-loading:not(:required) {
+  /* hide "loading..." text */
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.wptf-loading:not(:required):after {
+  content: '';
+  display: block;
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  margin-top: -0.5em;
+  -webkit-animation: spinner 1500ms infinite linear;
+  -moz-animation: spinner 1500ms infinite linear;
+  -ms-animation: spinner 1500ms infinite linear;
+  -o-animation: spinner 1500ms infinite linear;
+  animation: spinner 1500ms infinite linear;
+  border-radius: 0.5em;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.5) -1.5em 0 0 0, rgba(0, 0, 0, 0.5) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+  box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) -1.5em 0 0 0, rgba(0, 0, 0, 0.75) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+}
