@@ -1,0 +1,82 @@
+/*
+Search Form
+*-----------------------------*/
+td.track_form_td_label {
+	background: #FAFAFA;
+	text-align: center;
+	padding: 0px;
+	border: #fafafa solid;
+}
+.track_form_tr .track_form_td select {
+	background: #f7f7f7;
+	background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+	border: 1px solid #d1d1d1;
+	border-radius: 2px;
+	color: #686868;
+	padding: 0.625em 0.4375em;
+	width: 100%;
+}
+.track_form_td_label p.wpcargo-label {
+	margin: 0px;
+}
+.track_form_table .track_form_tr_label .track_form_td_label p.wpcargo-label {
+	font-size: 18px;
+	font-weight: 600;
+}
+#wpcargo-result-print .file-wrap {
+    margin: 20px;
+}
+/*
+ * Upload styles
+ */
+.wpccf_uploads {
+    padding: 0;
+    margin: 18px 0 18px 0;
+    list-style: none;
+}
+.wpccf_uploads li {
+    cursor: pointer;
+    background-color: #eee;
+    display: inline-block;
+    position: relative;
+    padding: 6px 12px;
+    margin-bottom: 18px;
+    margin-right: 18px;
+    color: #000;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.75);
+}
+.wpccf_uploads li span.img-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 6px 15px;
+    background-color: #ffffff9c;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #595959;
+}
+.wpccf_uploads li span.actions {
+    position: absolute;
+    top: 0;
+    right: 3px;
+    font-weight: 600;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    background-color: #eee;
+}
+.wpccf_uploads li span.actions a.delete {
+    color: #ff3547;
+}
+.form-group .field-desc,
+.form-check .field-desc {
+    font-style: italic;
+    font-size: 12px;
+}

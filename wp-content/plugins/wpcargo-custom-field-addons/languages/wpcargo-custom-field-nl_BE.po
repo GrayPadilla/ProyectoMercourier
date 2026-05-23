@@ -1,0 +1,793 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPCargo Custom Field Add-ons\n"
+"POT-Creation-Date: 2021-09-28 11:46+0800\n"
+"PO-Revision-Date: 2021-09-28 11:51+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: nl_BE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpcargo-custom-field.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: admin/admin.php:107 admin/classes/wpccf-fields.php:251
+msgid "URL Label"
+msgstr "URL-label"
+
+#: admin/admin.php:109 admin/classes/wpccf-fields.php:252
+msgid "http://www.sample.com"
+msgstr "http://www.sample.com"
+
+#: admin/admin.php:111 admin/classes/wpccf-fields.php:253
+msgid "Open new window?"
+msgstr "Nieuw raam openen?"
+
+#: admin/admin.php:193 admin/admin.php:223 admin/classes/wpccf-fields.php:190
+msgid "-- Select One --"
+msgstr "-- Selecteer er een --"
+
+#: admin/admin.php:203 admin/admin.php:257 admin/admin.php:288
+#: admin/admin.php:327
+msgid "No Selection setup, Please add selection"
+msgstr "Geen selectie-instelling, voeg selectie toe"
+
+#: admin/admin.php:203 admin/admin.php:233 admin/admin.php:257
+#: admin/admin.php:288 admin/admin.php:327
+msgid "Here"
+msgstr "Hier."
+
+#: admin/admin.php:233
+msgid "No WPCargo agents, Please add Agents"
+msgstr "Geen WPCargo-agenten, voeg agenten toe"
+
+#: admin/admin.php:233
+msgid "make sure the role assign is \"WPCargo Agent\"."
+msgstr "zorg ervoor dat de toegewezen rol \"WPCargo Agent\" is."
+
+#: admin/admin.php:353 admin/classes/wpccf-fields.php:298
+msgid " -- Select Country -- "
+msgstr " -- Selecteer land -- "
+
+#: admin/admin.php:397
+msgid "Delete image"
+msgstr "Verwijder afbeelding"
+
+#: admin/admin.php:407 admin/classes/wpccf-fields.php:278
+msgid "Add Images / Upload Files"
+msgstr "Afbeeldingen toevoegen / Bestanden uploaden"
+
+#: admin/classes/wpc-cf-check-installed-plugin.php:13
+msgid ""
+"WPCargo Custom Field Add-ons plugin requires <a href=\"http://wpcargo.com/"
+"\">WPCargo</a> Free Version to activate"
+msgstr ""
+"WPCargo Custom Field Add-ons plugin vereist <a href=\"http://wpcargo.com/"
+"\">WPCargo</a> Free Version om te activeren"
+
+#: admin/classes/wpc-cf-check-installed-plugin.php:21
+msgid ""
+"WPCargo Custom Field Add-ons plugin requires <a href=\"http://wpcargo.com/"
+"\">WPTaskForce License Helper</a> plugin to activate!"
+msgstr ""
+"WPCargo Custom Field Add-ons plugin vereist <a href=\"http://wpcargo.com/"
+"\">WPTaskForce License Helper</a> plugin om te activeren!"
+
+#: admin/classes/wpc-cf-form-builder.php:351
+msgid "You do not have permissions to view this data."
+msgstr "U hebt geen machtigingen om deze gegevens weer te geven."
+
+#: admin/classes/wpc-cf-install-db.php:32
+msgid "Shipper Name"
+msgstr "Naam verzender"
+
+#: admin/classes/wpc-cf-install-db.php:44
+#: admin/classes/wpc-cf-install-db.php:91
+msgid "Phone Number"
+msgstr "Telefoon nummer"
+
+#: admin/classes/wpc-cf-install-db.php:55
+#: admin/classes/wpc-cf-install-db.php:102 admin/includes/functions.php:185
+#: admin/templates/label-settings.tpl.php:114
+msgid "Address"
+msgstr "Adres"
+
+#: admin/classes/wpc-cf-install-db.php:66
+#: admin/classes/wpc-cf-install-db.php:113 admin/includes/functions.php:184
+#: admin/templates/label-settings.tpl.php:114
+#: admin/templates/label-settings.tpl.php:117
+msgid "Email"
+msgstr "E-mail"
+
+#: admin/classes/wpc-cf-install-db.php:79
+msgid "Receiver Name"
+msgstr "Naam ontvanger"
+
+#: admin/classes/wpc-cf-install-db.php:135
+#: admin/templates/label-settings.tpl.php:125
+msgid "Type of Shipment"
+msgstr "Type zending"
+
+#: admin/classes/wpc-cf-install-db.php:146
+#: admin/templates/label-settings.tpl.php:87
+msgid "Courier"
+msgstr "Koerier"
+
+#: admin/classes/wpc-cf-install-db.php:166
+msgid "Mode"
+msgstr "Modus"
+
+#: admin/classes/wpc-cf-install-db.php:186
+msgid "Payment Mode"
+msgstr "Betalingswijze"
+
+#: admin/classes/wpc-cf-install-db.php:197
+msgid "Total Freight"
+msgstr "Totale vracht"
+
+#: admin/classes/wpc-cf-install-db.php:217
+#: admin/templates/label-settings.tpl.php:92
+msgid "Carrier"
+msgstr "Vervoerder"
+
+#: admin/classes/wpc-cf-install-db.php:228
+#: admin/templates/label-settings.tpl.php:95
+msgid "Carrier Reference No."
+msgstr "Referentienummer vervoerder."
+
+#: admin/classes/wpc-cf-install-db.php:239
+#: admin/templates/label-settings.tpl.php:98
+msgid "Departure Time"
+msgstr "Vertrektijd"
+
+#: admin/classes/wpc-cf-install-db.php:259
+#: admin/templates/label-settings.tpl.php:81
+msgid "Origin"
+msgstr "Herkomst"
+
+#: admin/classes/wpc-cf-install-db.php:270
+#: admin/templates/label-settings.tpl.php:84
+msgid "Destination"
+msgstr "Bestemming"
+
+#: admin/classes/wpc-cf-install-db.php:281
+#: admin/templates/label-settings.tpl.php:70
+msgid "Pickup Date"
+msgstr "Ophaaldatum"
+
+#: admin/classes/wpc-cf-install-db.php:292
+#: admin/templates/label-settings.tpl.php:73
+msgid "Pickup Time"
+msgstr "Ophaaltijd"
+
+#: admin/classes/wpc-cf-install-db.php:313
+msgid "Expected Delivery Date"
+msgstr "Levering verwacht op"
+
+#: admin/classes/wpc-cf-install-db.php:324
+msgid "Comments"
+msgstr "Reacties"
+
+#: admin/classes/wpc-cf-settings.php:14 admin/classes/wpc-cf-settings.php:15
+msgid "Custom Field Setting"
+msgstr "Aangepaste veldinstelling"
+
+#: admin/classes/wpc-cf-settings.php:22 admin/classes/wpc-cf-settings.php:23
+msgid "CF Setting"
+msgstr "CF-instelling"
+
+#: admin/classes/wpc-cf-settings.php:39 wpcargo-custom-field.php:47
+msgid "Custom Field Settings"
+msgstr "Aangepaste veldinstellingen"
+
+#: admin/classes/wpccf-fields.php:151 admin/classes/wpccf-fields.php:173
+#: admin/classes/wpccf-fields.php:199 admin/classes/wpccf-fields.php:222
+msgid "No options available"
+msgstr "Geen opties beschikbaar"
+
+#: admin/includes/functions.php:113 admin/includes/functions.php:223
+msgid "Shipment Information"
+msgstr "Verzendinformatie"
+
+#: admin/includes/functions.php:172
+msgid "Street Address"
+msgstr "Straat"
+
+#: admin/includes/functions.php:173
+msgid "City"
+msgstr "Stad"
+
+#: admin/includes/functions.php:174
+msgid "State/Province/Region"
+msgstr "Staat/Provincie/Regio"
+
+#: admin/includes/functions.php:175
+msgid "Zip/PostCode"
+msgstr "Postcode"
+
+#: admin/includes/functions.php:176
+msgid "Country"
+msgstr "Land"
+
+#: admin/includes/functions.php:182
+msgid "Text"
+msgstr "Tekst"
+
+#: admin/includes/functions.php:183
+msgid "Textarea"
+msgstr "Tekstgebied"
+
+#: admin/includes/functions.php:186
+msgid "Number"
+msgstr "Nummer"
+
+#: admin/includes/functions.php:187
+#: templates/wpc-cf-add-track-fields.tpl.php:48
+#: templates/wpc-cf-add-track-fields.tpl.php:70
+msgid "Select"
+msgstr "Selecteer"
+
+#: admin/includes/functions.php:188
+msgid "Multiselect"
+msgstr "Multiselectie"
+
+#: admin/includes/functions.php:189
+msgid "Radio"
+msgstr "Radio"
+
+#: admin/includes/functions.php:190
+msgid "Checkbox"
+msgstr "Checkbox"
+
+#: admin/includes/functions.php:191
+msgid "File"
+msgstr "Dossier"
+
+#: admin/includes/functions.php:192
+msgid "Date"
+msgstr "Datum"
+
+#: admin/includes/functions.php:193
+msgid "Time"
+msgstr "Tijd"
+
+#: admin/includes/functions.php:194
+msgid "Date Time"
+msgstr "Datumtijd"
+
+#: admin/includes/functions.php:195
+msgid "URL"
+msgstr "URL"
+
+#: admin/includes/functions.php:219 admin/templates/form-field-add.tpl.php:74
+#: admin/templates/form-field-edit.tpl.php:83
+msgid "Shipper Information"
+msgstr "Informatie verlader"
+
+#: admin/includes/functions.php:221 admin/templates/form-field-add.tpl.php:75
+#: admin/templates/form-field-edit.tpl.php:84
+msgid "Receiver Information"
+msgstr "Ontvanger informatie"
+
+#: admin/includes/functions.php:269
+msgid "Shipment Number"
+msgstr "Verzendnummer"
+
+#: admin/includes/functions.php:270
+msgid "Status"
+msgstr "Status"
+
+#: admin/includes/functions.php:271
+msgid "Location"
+msgstr "Locatie"
+
+#: admin/includes/functions.php:272
+msgid "Admin Email"
+msgstr "E-mail beheerder"
+
+#: admin/includes/functions.php:273
+msgid "Website Name"
+msgstr "Websitenaam"
+
+#: admin/includes/functions.php:274
+msgid "Website URL"
+msgstr "Website URL"
+
+#: admin/includes/functions.php:275
+msgid "Registered Client Email"
+msgstr "E-mail geregistreerde klant"
+
+#: admin/includes/functions.php:385
+msgid "Please activate your license key"
+msgstr "Activeer uw licentiesleutel"
+
+#: admin/includes/functions.php:385
+msgid "here"
+msgstr "hier"
+
+#: admin/includes/functions.php:388
+msgid "Manage Form Fields"
+msgstr "Formuliervelden beheren"
+
+#: admin/includes/functions.php:391
+msgid "Print Waybill"
+msgstr "Vrachtbrief afdrukken"
+
+#: admin/includes/functions.php:394
+msgid "CF Print Waybill"
+msgstr "CF Vrachtbrief afdrukken"
+
+#: admin/includes/functions.php:397
+msgid "Field Successfully Added!"
+msgstr "Veld succesvol toegevoegd!"
+
+#: admin/includes/functions.php:400
+msgid "Something went wrong in adding field!"
+msgstr "Er is iets misgegaan bij het toevoegen van veld!"
+
+#: admin/includes/functions.php:403
+#, php-format
+msgid "Can't process your request, metakey '%s' is a reserved metakey."
+msgstr ""
+"Kan uw aanvraag niet verwerken, metakey '%s' is een gereserveerde metakey."
+
+#: admin/includes/functions.php:406
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\" target=\"_blank"
+"\">WPTaskForce License Helper</a> plugin to be active!"
+msgstr ""
+"Deze plugin vereist <a href=\"http://wpcargo.com/\" target=\"_blank"
+"\">WPTaskForce License Helper</a> plugin om actief te zijn!"
+
+#: admin/includes/functions.php:409
+msgid ""
+"This plugin requires <a href=\"https://wordpress.org/plugins/wpcargo/\" "
+"target=\"_blank\">WPCargo</a> plugin to be active!"
+msgstr ""
+"Deze plugin vereist <a href=\"https://wordpress.org/plugins/wpcargo/\" "
+"target=\"_blank\">WPCargo</a> plugin om actief te zijn!"
+
+#: admin/includes/functions.php:412
+msgid "Cheating, uh?"
+msgstr "Vreemdgaan, uh?"
+
+#: admin/templates/form-field-add.tpl.php:3
+#: admin/templates/form-navigation.tpl.php:11
+msgid "Add Form Field"
+msgstr "Formulierveld toevoegen"
+
+#: admin/templates/form-field-add.tpl.php:9
+#: admin/templates/form-field-edit.tpl.php:19
+msgid "Field Type (required)"
+msgstr "Veldtype (verplicht)"
+
+#: admin/templates/form-field-add.tpl.php:12
+#: admin/templates/form-field-add.tpl.php:45
+#: admin/templates/form-field-edit.tpl.php:22
+#: admin/templates/form-field-edit.tpl.php:54
+msgid "--Select One--"
+msgstr "--Kies een--"
+
+#: admin/templates/form-field-add.tpl.php:22
+#: admin/templates/form-field-edit.tpl.php:32
+msgid "Field Label (required)"
+msgstr "Veldlabel (vereist)"
+
+#: admin/templates/form-field-add.tpl.php:26
+#: admin/templates/form-field-edit.tpl.php:36
+msgid "Field description (optional)"
+msgstr "Veldbeschrijving (optioneel)"
+
+#: admin/templates/form-field-add.tpl.php:30
+#: admin/templates/form-field-edit.tpl.php:41
+msgid "Field Options for select lists, radio buttons and checkboxes(required)"
+msgstr ""
+"Veldopties voor geselecteerde lijsten, keuzerondjes en selectievakjes "
+"(verplicht)"
+
+#: admin/templates/form-field-add.tpl.php:33
+#: admin/templates/form-field-edit.tpl.php:44
+msgid "Comma (,) separated list of options"
+msgstr "Komma (,) gescheiden lijst met opties"
+
+#: admin/templates/form-field-add.tpl.php:37
+#: admin/templates/form-field-edit.tpl.php:48
+msgid "Field meta key"
+msgstr "Veldmetasleutel"
+
+#: admin/templates/form-field-add.tpl.php:40
+#: admin/templates/form-field-edit.tpl.php:50
+msgid "Existing"
+msgstr "Bestaand"
+
+#: admin/templates/form-field-add.tpl.php:41
+#: admin/templates/form-field-edit.tpl.php:51
+msgid "New"
+msgstr "Nieuw"
+
+#: admin/templates/form-field-add.tpl.php:62
+#: admin/templates/form-field-edit.tpl.php:71
+msgid "Is Field required?"
+msgstr "Is Veld vereist?"
+
+#: admin/templates/form-field-add.tpl.php:67
+#: admin/templates/form-field-edit.tpl.php:76
+msgid "Field display options"
+msgstr "Opties voor veldweergave"
+
+#: admin/templates/form-field-add.tpl.php:71
+#: admin/templates/form-field-edit.tpl.php:80
+msgid "What Section do you want to display?"
+msgstr "Welke sectie wilt u weergeven?"
+
+#: admin/templates/form-field-add.tpl.php:88
+#: admin/templates/form-field-edit.tpl.php:97
+msgid "Class"
+msgstr "Klasse"
+
+#: admin/templates/form-field-add.tpl.php:91
+#: admin/templates/form-field-edit.tpl.php:100
+msgid "HTML class attribute"
+msgstr "HTML-klassekenmerk"
+
+#: admin/templates/form-field-add.tpl.php:95
+#: admin/templates/form-field-edit.tpl.php:109
+msgid "Do you want to display on tracking page form?"
+msgstr "Wilt u het formulier trackingpagina weergeven?"
+
+#: admin/templates/form-field-add.tpl.php:99
+#: admin/templates/form-field-edit.tpl.php:113
+msgid "Is field required on tracking page form?"
+msgstr "Is veld vereist op het formulier van de trackingpagina?"
+
+#: admin/templates/form-field-add.tpl.php:103
+#: admin/templates/form-field-edit.tpl.php:117
+msgid "Do you want to display it on result page?"
+msgstr "Wilt u het weergeven op de resultaatpagina?"
+
+#: admin/templates/form-field-add.tpl.php:107
+msgid "Select user to NOT access this field"
+msgstr "Selecteer gebruiker om GEEN toegang te krijgen tot dit veld"
+
+#: admin/templates/form-field-add.tpl.php:109
+#: admin/templates/form-field-edit.tpl.php:123
+msgid "Not Logged In"
+msgstr "Niet ingelogd"
+
+#: admin/templates/form-field-add.tpl.php:113
+#: admin/templates/form-field-edit.tpl.php:127
+msgid ""
+"Note: This option applies only in the front end form using custom field "
+"manager."
+msgstr ""
+"Opmerking: Deze optie is alleen van toepassing in het front-endformulier "
+"met behulp van aangepaste veldbeheer."
+
+#: admin/templates/form-field-add.tpl.php:118
+msgid "Add Field"
+msgstr "Veld toevoegen"
+
+#: admin/templates/form-field-edit.tpl.php:5
+msgid "Sorry you can't access this page directly."
+msgstr "Sorry dat u deze pagina niet rechtstreeks kunt openen."
+
+#: admin/templates/form-field-edit.tpl.php:13
+#: admin/templates/form-navigation.tpl.php:13
+msgid "Edit Form Field"
+msgstr "Formulierveld bewerken"
+
+#: admin/templates/form-field-edit.tpl.php:121
+msgid "Select user NOT to access this field"
+msgstr "Selecteer gebruiker GEEN toegang tot dit veld"
+
+#: admin/templates/form-field-edit.tpl.php:133
+msgid "Edit Field"
+msgstr "Veld bewerken"
+
+#: admin/templates/form-field-settings.tpl.php:3
+msgid "Settings"
+msgstr "Instellingen"
+
+#: admin/templates/form-field-settings.tpl.php:16
+msgid "Select Field to display in Shipper Name Column"
+msgstr "Veld selecteren dat moet worden weergegeven in de kolom Verzendernaam"
+
+#: admin/templates/form-field-settings.tpl.php:19
+#: admin/templates/form-field-settings.tpl.php:34
+msgid "Select Field"
+msgstr "Veld selecteren"
+
+#: admin/templates/form-field-settings.tpl.php:31
+msgid "Select Field to display in Receiver Name Column"
+msgstr "Veld selecteren dat moet worden weergegeven in de kolom Ontvangernaam"
+
+#: admin/templates/form-field-settings.tpl.php:46
+msgid "Save Settings"
+msgstr "Instellingen opslaan"
+
+#: admin/templates/form-fields-list.tpl.php:2
+#: admin/templates/form-navigation.tpl.php:10
+msgid "Form Field List"
+msgstr "Formulierveldenlijst"
+
+#: admin/templates/form-fields-list.tpl.php:7
+msgid "Label / Association"
+msgstr "Label / Associatie"
+
+#: admin/templates/form-fields-list.tpl.php:8
+msgid "Field Key"
+msgstr "Veldsleutel"
+
+#: admin/templates/form-fields-list.tpl.php:9
+msgid "Type"
+msgstr "Type"
+
+#: admin/templates/form-fields-list.tpl.php:10
+msgid "Required"
+msgstr "Verplicht"
+
+#: admin/templates/form-fields-list.tpl.php:11
+msgid "Field Attributes"
+msgstr "Veldkenmerken"
+
+#: admin/templates/form-fields-list.tpl.php:12
+msgid "Class Attributes"
+msgstr "Klassekenmerken"
+
+#: admin/templates/form-fields-list.tpl.php:19
+msgid "Edit"
+msgstr "Bewerk"
+
+#: admin/templates/form-fields-list.tpl.php:19
+msgid "Delete"
+msgstr "Verwijder"
+
+#: admin/templates/form-navigation.tpl.php:9
+msgid "Field Settings"
+msgstr "Veldinstellingen"
+
+#: admin/templates/label-settings.tpl.php:54
+msgid "Print Label Settings"
+msgstr "Labelinstellingen afdrukken"
+
+#: admin/templates/label-settings.tpl.php:67
+#: admin/templates/print-label.tpl.php:24
+msgid "Accounts Copy"
+msgstr "Accounts kopiëren"
+
+#: admin/templates/label-settings.tpl.php:76
+msgid "Delivery Date"
+msgstr "Leveringsdatum"
+
+#: admin/templates/label-settings.tpl.php:106
+#: admin/templates/print-label.tpl.php:78
+msgid "Shipper"
+msgstr "Verzender"
+
+#: admin/templates/label-settings.tpl.php:108
+#: admin/templates/print-label.tpl.php:80
+msgid "Consignee"
+msgstr "Geadresseerde"
+
+#: admin/templates/label-settings.tpl.php:110
+msgid "Status: Pending"
+msgstr "Status: In behandeling"
+
+#: admin/templates/label-settings.tpl.php:114
+#: admin/templates/label-settings.tpl.php:117
+msgid "Phone"
+msgstr "Telefoon"
+
+#: admin/templates/label-settings.tpl.php:120
+msgid "Comment"
+msgstr "Reactie"
+
+#: admin/templates/label-settings.tpl.php:128
+msgid "Product"
+msgstr "Product"
+
+#: admin/templates/label-settings.tpl.php:133
+msgid "Save Label"
+msgstr "Label opslaan"
+
+#: admin/templates/label-settings.tpl.php:137
+msgid "Custom Field Code List"
+msgstr "Lijst met aangepaste veldcode"
+
+#: admin/templates/label-settings.tpl.php:138
+msgid "Note: User Metakey Code to display dynamic data in print label."
+msgstr ""
+"Opmerking: Metakey-code voor gebruikers om dynamische gegevens weer te "
+"geven in het afdruklabel."
+
+#: admin/templates/label-settings.tpl.php:141
+msgid "Available Shipper Fields"
+msgstr "Beschikbare verzendervelden"
+
+#: admin/templates/label-settings.tpl.php:144
+#: admin/templates/label-settings.tpl.php:165
+#: admin/templates/label-settings.tpl.php:186
+msgid "Field Label"
+msgstr "Veld Label"
+
+#: admin/templates/label-settings.tpl.php:144
+#: admin/templates/label-settings.tpl.php:165
+#: admin/templates/label-settings.tpl.php:186
+msgid "Metakey Code"
+msgstr "Metakey-code"
+
+#: admin/templates/label-settings.tpl.php:156
+msgid "No Field found for Shipper"
+msgstr "Geen veld gevonden voor verzender"
+
+#: admin/templates/label-settings.tpl.php:162
+msgid "Available Receiver Fields"
+msgstr "Beschikbare ontvangervelden"
+
+#: admin/templates/label-settings.tpl.php:177
+msgid "No Field found for Receiver"
+msgstr "Geen veld gevonden voor ontvanger"
+
+#: admin/templates/label-settings.tpl.php:183
+msgid "Available Shipment Information Fields"
+msgstr "Beschikbare verzendinformatievelden"
+
+#: admin/templates/label-settings.tpl.php:198
+msgid "No Field found for Shipment Information"
+msgstr "Geen veld gevonden voor verzendgegevens"
+
+#: admin/templates/print-cf-shipper.tpl.php:10
+#: templates/wpc-cf-track-shipper.tpl.php:10
+msgid "Shipper Address"
+msgstr "Verzendadres"
+
+#: admin/templates/print-cf-shipper.tpl.php:39
+#: templates/wpc-cf-track-shipper.tpl.php:61
+msgid "Receiver Address"
+msgstr "Adres ontvanger"
+
+#: admin/templates/print-label.tpl.php:25
+msgid "Consignee Copy"
+msgstr "Kopie geadresseerde"
+
+#: admin/templates/print-label.tpl.php:26
+msgid "Shippers Copy"
+msgstr "Verzenders kopiëren"
+
+#: admin/templates/print-label.tpl.php:101
+msgid "Package Information"
+msgstr "Pakketinformatie"
+
+#: admin/templates/print-label.tpl.php:105
+msgid "Description"
+msgstr "Omschrijving"
+
+#: admin/templates/print-label.tpl.php:106
+msgid "Qty."
+msgstr "Hoev."
+
+#: admin/templates/print-label.tpl.php:107
+msgid "Piece Type"
+msgstr "Stuktype"
+
+#: admin/templates/print-label.tpl.php:109
+msgid "Length"
+msgstr "Lengte"
+
+#: admin/templates/print-label.tpl.php:110
+msgid "Width"
+msgstr "Breedte"
+
+#: admin/templates/print-label.tpl.php:111
+msgid "Height"
+msgstr "Hoogte"
+
+#: admin/templates/print-label.tpl.php:113
+msgid "Weight"
+msgstr "Gewicht"
+
+#: admin/templates/receiver-metabox.tpl.php:2
+msgid "Receiver Details"
+msgstr "Details ontvanger"
+
+#: admin/templates/shipper-metabox.tpl.php:2
+msgid "Shipper Details"
+msgstr "Verzendergegevens"
+
+#: admin/templates/wpc-cf-settings.tpl.php:6
+msgid "Disable Shipper Details Section?"
+msgstr "Sectie Verzendergegevens uitschakelen?"
+
+#: admin/templates/wpc-cf-settings.tpl.php:9
+msgid "This settings will remove Shipper Details Section"
+msgstr "Met deze instellingen wordt de sectie Verzendergegevens verwijderd"
+
+#: admin/templates/wpc-cf-settings.tpl.php:13
+msgid "Disable Receiver Details Section?"
+msgstr "Sectie Ontvangergegevens uitschakelen?"
+
+#: admin/templates/wpc-cf-settings.tpl.php:16
+msgid "This settings will remove Receiver Details Section"
+msgstr "Met deze instellingen wordt de sectie Ontvangergegevens verwijderd"
+
+#: admin/templates/wpc-cf-settings.tpl.php:20
+msgid "Disable Shipment Details Section?"
+msgstr "Sectie Verzendgegevens uitschakelen?"
+
+#: admin/templates/wpc-cf-settings.tpl.php:23
+msgid "This settings will remove Shipment Details Section"
+msgstr "Met deze instellingen wordt de sectie Verzendgegevens verwijderd"
+
+#: admin/templates/wpc-cf-settings.tpl.php:27
+msgid "Add Field display options"
+msgstr "Opties voor veldweergave toevoegen"
+
+#: admin/templates/wpc-cf-settings.tpl.php:29
+msgid "Ex. Option 1, Option 2, Option 3"
+msgstr "Bijvoorbeeld optie 1, optie 2, optie 3"
+
+#: admin/templates/wpc-cf-settings.tpl.php:30
+msgid ""
+"This settings will add additional section for \"Field display options\" in "
+"\"Add Form Field\" page. Must be comma separated"
+msgstr ""
+"Deze instellingen voegen een extra sectie toe voor \"Veldweergaveopties\" "
+"op de pagina \"Formulierveld toevoegen\". Moet komma gescheiden zijn"
+
+#: includes/dropzone.php:30
+msgid "(remove)"
+msgstr "(verwijderen)"
+
+#: includes/dropzone.php:58
+msgid "Drop files here or click to upload."
+msgstr "Sleep bestanden hier of klik om te uploaden"
+
+#: includes/dropzone.php:59
+msgid "Accepted file type : "
+msgstr "Geaccepteerd bestandstype : "
+
+#: includes/dropzone.php:60
+msgid "Max Filesize: "
+msgstr "Maximale bestandsgrootte: "
+
+#: includes/dropzone.php:60
+msgid "MB."
+msgstr "LBO"
+
+#: templates/script.tpl.php:18
+msgid "Upload File"
+msgstr "Uploaden bestand"
+
+#: templates/script.tpl.php:20
+msgid "Select File"
+msgstr "Selecteer bestand"
+
+#. Plugin Name of the plugin/theme
+msgid "WPCargo Custom Field Add-ons"
+msgstr "WPCargo Aangepaste Veld Add-ons"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wpcargo.com/"
+msgstr "http://wpcargo.com/"
+
+#. Description of the plugin/theme
+msgid ""
+"Allows you to customized the fields and your needs to display at the front-"
+"end. Requires WPCargo plugin to work."
+msgstr ""
+"Hiermee kunt u de velden en uw behoeften aanpassen om aan de voorkant weer "
+"te geven. Vereist WPCargo plugin om te werken."
+
+#. Author of the plugin/theme
+msgid "<a href=\"http://wptaskforce.com/\">WPTaskForce</a>"
+msgstr "<a href=\"http://wptaskforce.com/\">WPTaskForce</a>"

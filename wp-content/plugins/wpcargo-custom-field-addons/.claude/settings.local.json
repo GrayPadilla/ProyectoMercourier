@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"c:\\Users\\Administrador\\Documents\\Trabajo\\TrabajoDavid\\wpcargo-custom-field-addons\\wpcargo-custom-field-addons\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

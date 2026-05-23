@@ -1,0 +1,796 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPCargo Custom Field Add-ons\n"
+"POT-Creation-Date: 2021-09-28 13:09+0800\n"
+"PO-Revision-Date: 2021-09-28 13:13+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ro_RO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n==0 || (n!=1 && n%100>=1 && n"
+"%100<=19) ? 1 : 2);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpcargo-custom-field.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: admin/admin.php:107 admin/classes/wpccf-fields.php:251
+msgid "URL Label"
+msgstr "Etichetă URL"
+
+#: admin/admin.php:109 admin/classes/wpccf-fields.php:252
+msgid "http://www.sample.com"
+msgstr "http://www.sample.com"
+
+#: admin/admin.php:111 admin/classes/wpccf-fields.php:253
+msgid "Open new window?"
+msgstr "Deschideți o fereastră nouă?"
+
+#: admin/admin.php:193 admin/admin.php:223 admin/classes/wpccf-fields.php:190
+msgid "-- Select One --"
+msgstr "-- Selectați unul --"
+
+#: admin/admin.php:203 admin/admin.php:257 admin/admin.php:288
+#: admin/admin.php:327
+msgid "No Selection setup, Please add selection"
+msgstr "Fără configurare de selecție, vă rugăm să adăugați selecția"
+
+#: admin/admin.php:203 admin/admin.php:233 admin/admin.php:257
+#: admin/admin.php:288 admin/admin.php:327
+msgid "Here"
+msgstr "aici:"
+
+#: admin/admin.php:233
+msgid "No WPCargo agents, Please add Agents"
+msgstr "Fără agenți WPCargo, vă rugăm să adăugați agenți"
+
+#: admin/admin.php:233
+msgid "make sure the role assign is \"WPCargo Agent\"."
+msgstr "asigurați-vă că rolul atribuit este \"WPCargo Agent\"."
+
+#: admin/admin.php:353 admin/classes/wpccf-fields.php:298
+msgid " -- Select Country -- "
+msgstr " -- Selectați țara -- "
+
+#: admin/admin.php:397
+msgid "Delete image"
+msgstr "Ștergeți imagini"
+
+#: admin/admin.php:407 admin/classes/wpccf-fields.php:278
+msgid "Add Images / Upload Files"
+msgstr "Adăugare imagini / Încărcare fișiere"
+
+#: admin/classes/wpc-cf-check-installed-plugin.php:13
+msgid ""
+"WPCargo Custom Field Add-ons plugin requires <a href=\"http://wpcargo.com/"
+"\">WPCargo</a> Free Version to activate"
+msgstr ""
+"WPCargo Custom Field Add-on-uri plug-in necesită <a href=\"http://wpcargo."
+"com/\">WPCargo</a> Free Version pentru a activa"
+
+#: admin/classes/wpc-cf-check-installed-plugin.php:21
+msgid ""
+"WPCargo Custom Field Add-ons plugin requires <a href=\"http://wpcargo.com/"
+"\">WPTaskForce License Helper</a> plugin to activate!"
+msgstr ""
+"WPCargo Custom Field Add-on-uri plug-in necesită <a href=\"http://wpcargo."
+"com/\">WPTaskForce Licenț Helper</a> plug-in pentru a activa!"
+
+#: admin/classes/wpc-cf-form-builder.php:351
+msgid "You do not have permissions to view this data."
+msgstr "Nu aveți permisiuni pentru a vizualiza aceste date."
+
+#: admin/classes/wpc-cf-install-db.php:32
+msgid "Shipper Name"
+msgstr "Numele expeditorului"
+
+#: admin/classes/wpc-cf-install-db.php:44
+#: admin/classes/wpc-cf-install-db.php:91
+msgid "Phone Number"
+msgstr "Număr de telefon"
+
+#: admin/classes/wpc-cf-install-db.php:55
+#: admin/classes/wpc-cf-install-db.php:102 admin/includes/functions.php:185
+#: admin/templates/label-settings.tpl.php:114
+msgid "Address"
+msgstr "Adresa"
+
+#: admin/classes/wpc-cf-install-db.php:66
+#: admin/classes/wpc-cf-install-db.php:113 admin/includes/functions.php:184
+#: admin/templates/label-settings.tpl.php:114
+#: admin/templates/label-settings.tpl.php:117
+msgid "Email"
+msgstr "E-mail"
+
+#: admin/classes/wpc-cf-install-db.php:79
+msgid "Receiver Name"
+msgstr "Numele receptorului"
+
+#: admin/classes/wpc-cf-install-db.php:135
+#: admin/templates/label-settings.tpl.php:125
+msgid "Type of Shipment"
+msgstr "Tipul expedierii"
+
+#: admin/classes/wpc-cf-install-db.php:146
+#: admin/templates/label-settings.tpl.php:87
+msgid "Courier"
+msgstr "Curier"
+
+#: admin/classes/wpc-cf-install-db.php:166
+msgid "Mode"
+msgstr "Mod"
+
+#: admin/classes/wpc-cf-install-db.php:186
+msgid "Payment Mode"
+msgstr "Metoda de plată"
+
+#: admin/classes/wpc-cf-install-db.php:197
+msgid "Total Freight"
+msgstr "Transport total"
+
+#: admin/classes/wpc-cf-install-db.php:217
+#: admin/templates/label-settings.tpl.php:92
+msgid "Carrier"
+msgstr "Transportator"
+
+#: admin/classes/wpc-cf-install-db.php:228
+#: admin/templates/label-settings.tpl.php:95
+msgid "Carrier Reference No."
+msgstr "Numărul de referință al transportatorului."
+
+#: admin/classes/wpc-cf-install-db.php:239
+#: admin/templates/label-settings.tpl.php:98
+msgid "Departure Time"
+msgstr "Ora de plecare"
+
+#: admin/classes/wpc-cf-install-db.php:259
+#: admin/templates/label-settings.tpl.php:81
+msgid "Origin"
+msgstr "Origine"
+
+#: admin/classes/wpc-cf-install-db.php:270
+#: admin/templates/label-settings.tpl.php:84
+msgid "Destination"
+msgstr "Destinație"
+
+#: admin/classes/wpc-cf-install-db.php:281
+#: admin/templates/label-settings.tpl.php:70
+msgid "Pickup Date"
+msgstr "Data preluării"
+
+#: admin/classes/wpc-cf-install-db.php:292
+#: admin/templates/label-settings.tpl.php:73
+msgid "Pickup Time"
+msgstr "Ora preluării"
+
+#: admin/classes/wpc-cf-install-db.php:313
+msgid "Expected Delivery Date"
+msgstr "Data de livrare preconizată"
+
+#: admin/classes/wpc-cf-install-db.php:324
+msgid "Comments"
+msgstr "Comentarii"
+
+#: admin/classes/wpc-cf-settings.php:14 admin/classes/wpc-cf-settings.php:15
+msgid "Custom Field Setting"
+msgstr "Setarea câmpului particularizat"
+
+#: admin/classes/wpc-cf-settings.php:22 admin/classes/wpc-cf-settings.php:23
+msgid "CF Setting"
+msgstr "Setarea CF"
+
+#: admin/classes/wpc-cf-settings.php:39 wpcargo-custom-field.php:47
+msgid "Custom Field Settings"
+msgstr "Setări de câmp particularizate"
+
+#: admin/classes/wpccf-fields.php:151 admin/classes/wpccf-fields.php:173
+#: admin/classes/wpccf-fields.php:199 admin/classes/wpccf-fields.php:222
+msgid "No options available"
+msgstr "Nu există opțiuni disponibile"
+
+#: admin/includes/functions.php:113 admin/includes/functions.php:223
+msgid "Shipment Information"
+msgstr "Informații despre expediere"
+
+#: admin/includes/functions.php:172
+msgid "Street Address"
+msgstr "Adresa"
+
+#: admin/includes/functions.php:173
+msgid "City"
+msgstr "Oraș"
+
+#: admin/includes/functions.php:174
+msgid "State/Province/Region"
+msgstr "Județ/Comună/Regiune"
+
+#: admin/includes/functions.php:175
+msgid "Zip/PostCode"
+msgstr "Zip / PostCode"
+
+#: admin/includes/functions.php:176
+msgid "Country"
+msgstr "Țară"
+
+#: admin/includes/functions.php:182
+msgid "Text"
+msgstr "Text"
+
+#: admin/includes/functions.php:183
+msgid "Textarea"
+msgstr "Zonă de text"
+
+#: admin/includes/functions.php:186
+msgid "Number"
+msgstr "Număr"
+
+#: admin/includes/functions.php:187
+#: templates/wpc-cf-add-track-fields.tpl.php:48
+#: templates/wpc-cf-add-track-fields.tpl.php:70
+msgid "Select"
+msgstr "Selectează"
+
+#: admin/includes/functions.php:188
+msgid "Multiselect"
+msgstr "Caseta de selectare multipla"
+
+#: admin/includes/functions.php:189
+msgid "Radio"
+msgstr "Radio"
+
+#: admin/includes/functions.php:190
+msgid "Checkbox"
+msgstr "Căsuță de bifat"
+
+#: admin/includes/functions.php:191
+msgid "File"
+msgstr "Fişier"
+
+#: admin/includes/functions.php:192
+msgid "Date"
+msgstr "Data"
+
+#: admin/includes/functions.php:193
+msgid "Time"
+msgstr "Timp"
+
+#: admin/includes/functions.php:194
+msgid "Date Time"
+msgstr "Data Timp"
+
+#: admin/includes/functions.php:195
+msgid "URL"
+msgstr "URL"
+
+#: admin/includes/functions.php:219 admin/templates/form-field-add.tpl.php:74
+#: admin/templates/form-field-edit.tpl.php:83
+msgid "Shipper Information"
+msgstr "Informații despre expeditor"
+
+#: admin/includes/functions.php:221 admin/templates/form-field-add.tpl.php:75
+#: admin/templates/form-field-edit.tpl.php:84
+msgid "Receiver Information"
+msgstr "Informații despre destinatar"
+
+#: admin/includes/functions.php:269
+msgid "Shipment Number"
+msgstr "Numărul expedierii"
+
+#: admin/includes/functions.php:270
+msgid "Status"
+msgstr "Stare"
+
+#: admin/includes/functions.php:271
+msgid "Location"
+msgstr "Locatie"
+
+#: admin/includes/functions.php:272
+msgid "Admin Email"
+msgstr "Email Admin"
+
+#: admin/includes/functions.php:273
+msgid "Website Name"
+msgstr "Numele site-ului"
+
+#: admin/includes/functions.php:274
+msgid "Website URL"
+msgstr ""
+"Introdu o adresă de email sau un link către pagina de contact a site-ului "
+"tău"
+
+#: admin/includes/functions.php:275
+msgid "Registered Client Email"
+msgstr "E-mail client înregistrat"
+
+#: admin/includes/functions.php:385
+msgid "Please activate your license key"
+msgstr "Vă rugăm să activați cheia de licență"
+
+#: admin/includes/functions.php:385
+msgid "here"
+msgstr "aici"
+
+#: admin/includes/functions.php:388
+msgid "Manage Form Fields"
+msgstr "Editeaza campurile listarii"
+
+#: admin/includes/functions.php:391
+msgid "Print Waybill"
+msgstr "Foaie de parcurs pentru imprimare"
+
+#: admin/includes/functions.php:394
+msgid "CF Print Waybill"
+msgstr "CF Print Waybill"
+
+#: admin/includes/functions.php:397
+msgid "Field Successfully Added!"
+msgstr "Câmp adăugat cu succes!"
+
+#: admin/includes/functions.php:400
+msgid "Something went wrong in adding field!"
+msgstr "Ceva nu a mers bine în adăugarea de câmp!"
+
+#: admin/includes/functions.php:403
+#, php-format
+msgid "Can't process your request, metakey '%s' is a reserved metakey."
+msgstr "Nu vă poate procesa cererea, metakey'%s' este un metakey rezervat."
+
+#: admin/includes/functions.php:406
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\" target=\"_blank"
+"\">WPTaskForce License Helper</a> plugin to be active!"
+msgstr ""
+"Acest plugin necesită <a href=\"http://wpcargo.com/\" target=\"_blank"
+"\">plugin wpTaskForce License Helper</a> pentru a fi activ!"
+
+#: admin/includes/functions.php:409
+msgid ""
+"This plugin requires <a href=\"https://wordpress.org/plugins/wpcargo/\" "
+"target=\"_blank\">WPCargo</a> plugin to be active!"
+msgstr ""
+"Acest plugin necesită <a href=\"https://wordpress.org/plugins/wpcargo/\" "
+"target=\"_blank\">wpCargo</a> plug-in pentru a fi activ!"
+
+#: admin/includes/functions.php:412
+msgid "Cheating, uh?"
+msgstr "Cheating, uh?"
+
+#: admin/templates/form-field-add.tpl.php:3
+#: admin/templates/form-navigation.tpl.php:11
+msgid "Add Form Field"
+msgstr "Adăugare câmp formular"
+
+#: admin/templates/form-field-add.tpl.php:9
+#: admin/templates/form-field-edit.tpl.php:19
+msgid "Field Type (required)"
+msgstr "Tip de câmp (obligatoriu)"
+
+#: admin/templates/form-field-add.tpl.php:12
+#: admin/templates/form-field-add.tpl.php:45
+#: admin/templates/form-field-edit.tpl.php:22
+#: admin/templates/form-field-edit.tpl.php:54
+msgid "--Select One--"
+msgstr "--Selectați unul--"
+
+#: admin/templates/form-field-add.tpl.php:22
+#: admin/templates/form-field-edit.tpl.php:32
+msgid "Field Label (required)"
+msgstr "Etichetă de câmp (obligatoriu)"
+
+#: admin/templates/form-field-add.tpl.php:26
+#: admin/templates/form-field-edit.tpl.php:36
+msgid "Field description (optional)"
+msgstr "Descrierea câmpului (opțional)"
+
+#: admin/templates/form-field-add.tpl.php:30
+#: admin/templates/form-field-edit.tpl.php:41
+msgid "Field Options for select lists, radio buttons and checkboxes(required)"
+msgstr ""
+"Opțiuni de câmp pentru liste de selectare, butoane radio și casete de "
+"selectare (obligatoriu)"
+
+#: admin/templates/form-field-add.tpl.php:33
+#: admin/templates/form-field-edit.tpl.php:44
+msgid "Comma (,) separated list of options"
+msgstr "Listă separată de opțiuni prin virgulă (,)"
+
+#: admin/templates/form-field-add.tpl.php:37
+#: admin/templates/form-field-edit.tpl.php:48
+msgid "Field meta key"
+msgstr "Meta-cheie de câmp"
+
+#: admin/templates/form-field-add.tpl.php:40
+#: admin/templates/form-field-edit.tpl.php:50
+msgid "Existing"
+msgstr "Existent"
+
+#: admin/templates/form-field-add.tpl.php:41
+#: admin/templates/form-field-edit.tpl.php:51
+msgid "New"
+msgstr "Nou"
+
+#: admin/templates/form-field-add.tpl.php:62
+#: admin/templates/form-field-edit.tpl.php:71
+msgid "Is Field required?"
+msgstr "Este necesar Field?"
+
+#: admin/templates/form-field-add.tpl.php:67
+#: admin/templates/form-field-edit.tpl.php:76
+msgid "Field display options"
+msgstr "Opțiuni de afișare a câmpurilor"
+
+#: admin/templates/form-field-add.tpl.php:71
+#: admin/templates/form-field-edit.tpl.php:80
+msgid "What Section do you want to display?"
+msgstr "Ce secțiune doriți să afișați?"
+
+#: admin/templates/form-field-add.tpl.php:88
+#: admin/templates/form-field-edit.tpl.php:97
+msgid "Class"
+msgstr "Clasă"
+
+#: admin/templates/form-field-add.tpl.php:91
+#: admin/templates/form-field-edit.tpl.php:100
+msgid "HTML class attribute"
+msgstr "Atributul clasei HTML"
+
+#: admin/templates/form-field-add.tpl.php:95
+#: admin/templates/form-field-edit.tpl.php:109
+msgid "Do you want to display on tracking page form?"
+msgstr "Afișați în formularul de pagină de urmărire?"
+
+#: admin/templates/form-field-add.tpl.php:99
+#: admin/templates/form-field-edit.tpl.php:113
+msgid "Is field required on tracking page form?"
+msgstr "Câmpul este obligatoriu în formularul de pagină de urmărire?"
+
+#: admin/templates/form-field-add.tpl.php:103
+#: admin/templates/form-field-edit.tpl.php:117
+msgid "Do you want to display it on result page?"
+msgstr "Doriți să-l afișați pe pagina cu rezultate?"
+
+#: admin/templates/form-field-add.tpl.php:107
+msgid "Select user to NOT access this field"
+msgstr "Selectați utilizatorul pentru a NU accesa acest câmp"
+
+#: admin/templates/form-field-add.tpl.php:109
+#: admin/templates/form-field-edit.tpl.php:123
+msgid "Not Logged In"
+msgstr "Nu sunteți conectat(ă)"
+
+#: admin/templates/form-field-add.tpl.php:113
+#: admin/templates/form-field-edit.tpl.php:127
+msgid ""
+"Note: This option applies only in the front end form using custom field "
+"manager."
+msgstr ""
+"Notă: Această opțiune se aplică numai în formularul front-end utilizând "
+"manager de câmpuri particularizat."
+
+#: admin/templates/form-field-add.tpl.php:118
+msgid "Add Field"
+msgstr "Adăugare câmp"
+
+#: admin/templates/form-field-edit.tpl.php:5
+msgid "Sorry you can't access this page directly."
+msgstr "Ne pare rău că nu puteți accesa această pagină direct."
+
+#: admin/templates/form-field-edit.tpl.php:13
+#: admin/templates/form-navigation.tpl.php:13
+msgid "Edit Form Field"
+msgstr "Editarea câmpului de formular"
+
+#: admin/templates/form-field-edit.tpl.php:121
+msgid "Select user NOT to access this field"
+msgstr "Selectați NOT utilizator pentru a accesa acest câmp"
+
+#: admin/templates/form-field-edit.tpl.php:133
+msgid "Edit Field"
+msgstr "Editați câmpul"
+
+#: admin/templates/form-field-settings.tpl.php:3
+msgid "Settings"
+msgstr "Setări"
+
+#: admin/templates/form-field-settings.tpl.php:16
+msgid "Select Field to display in Shipper Name Column"
+msgstr "Selectați Câmpul de afișat în coloana Nume expeditor"
+
+#: admin/templates/form-field-settings.tpl.php:19
+#: admin/templates/form-field-settings.tpl.php:34
+msgid "Select Field"
+msgstr "Selectare câmp"
+
+#: admin/templates/form-field-settings.tpl.php:31
+msgid "Select Field to display in Receiver Name Column"
+msgstr "Selectați Câmpul de afișat în coloana Nume receptor"
+
+#: admin/templates/form-field-settings.tpl.php:46
+msgid "Save Settings"
+msgstr "Salveaza setari"
+
+#: admin/templates/form-fields-list.tpl.php:2
+#: admin/templates/form-navigation.tpl.php:10
+msgid "Form Field List"
+msgstr "Listă de câmpuri de formular"
+
+#: admin/templates/form-fields-list.tpl.php:7
+msgid "Label / Association"
+msgstr "Etichetă / Asociație"
+
+#: admin/templates/form-fields-list.tpl.php:8
+msgid "Field Key"
+msgstr "Cheie de câmp"
+
+#: admin/templates/form-fields-list.tpl.php:9
+msgid "Type"
+msgstr "Tip"
+
+#: admin/templates/form-fields-list.tpl.php:10
+msgid "Required"
+msgstr "Necesar"
+
+#: admin/templates/form-fields-list.tpl.php:11
+msgid "Field Attributes"
+msgstr "Atribute de câmp"
+
+#: admin/templates/form-fields-list.tpl.php:12
+msgid "Class Attributes"
+msgstr "Atributele clasei"
+
+#: admin/templates/form-fields-list.tpl.php:19
+msgid "Edit"
+msgstr "Editeaza"
+
+#: admin/templates/form-fields-list.tpl.php:19
+msgid "Delete"
+msgstr "Șterge"
+
+#: admin/templates/form-navigation.tpl.php:9
+msgid "Field Settings"
+msgstr "Setări câmp"
+
+#: admin/templates/label-settings.tpl.php:54
+msgid "Print Label Settings"
+msgstr "Setări etichetă de imprimare"
+
+#: admin/templates/label-settings.tpl.php:67
+#: admin/templates/print-label.tpl.php:24
+msgid "Accounts Copy"
+msgstr "Copiere conturi"
+
+#: admin/templates/label-settings.tpl.php:76
+msgid "Delivery Date"
+msgstr "Data estimată de livrare"
+
+#: admin/templates/label-settings.tpl.php:106
+#: admin/templates/print-label.tpl.php:78
+msgid "Shipper"
+msgstr "Expeditor"
+
+#: admin/templates/label-settings.tpl.php:108
+#: admin/templates/print-label.tpl.php:80
+msgid "Consignee"
+msgstr "Destinatar"
+
+#: admin/templates/label-settings.tpl.php:110
+msgid "Status: Pending"
+msgstr "Stare: În așteptare"
+
+#: admin/templates/label-settings.tpl.php:114
+#: admin/templates/label-settings.tpl.php:117
+msgid "Phone"
+msgstr "Telefon"
+
+#: admin/templates/label-settings.tpl.php:120
+msgid "Comment"
+msgstr "Comentariu"
+
+#: admin/templates/label-settings.tpl.php:128
+msgid "Product"
+msgstr "Produs"
+
+#: admin/templates/label-settings.tpl.php:133
+msgid "Save Label"
+msgstr "Salvare etichetă"
+
+#: admin/templates/label-settings.tpl.php:137
+msgid "Custom Field Code List"
+msgstr "Listă de coduri de câmp particularizată"
+
+#: admin/templates/label-settings.tpl.php:138
+msgid "Note: User Metakey Code to display dynamic data in print label."
+msgstr ""
+"Notă: Cod Metakey utilizator pentru a afișa date dinamice în eticheta de "
+"imprimare."
+
+#: admin/templates/label-settings.tpl.php:141
+msgid "Available Shipper Fields"
+msgstr "Câmpuri disponibile pentru expeditori"
+
+#: admin/templates/label-settings.tpl.php:144
+#: admin/templates/label-settings.tpl.php:165
+#: admin/templates/label-settings.tpl.php:186
+msgid "Field Label"
+msgstr "Etichetă de câmp"
+
+#: admin/templates/label-settings.tpl.php:144
+#: admin/templates/label-settings.tpl.php:165
+#: admin/templates/label-settings.tpl.php:186
+msgid "Metakey Code"
+msgstr "Codul Metakey"
+
+#: admin/templates/label-settings.tpl.php:156
+msgid "No Field found for Shipper"
+msgstr "Nici un câmp găsit pentru expeditor"
+
+#: admin/templates/label-settings.tpl.php:162
+msgid "Available Receiver Fields"
+msgstr "Câmpuri receptor disponibile"
+
+#: admin/templates/label-settings.tpl.php:177
+msgid "No Field found for Receiver"
+msgstr "Nici un câmp găsit pentru receptor"
+
+#: admin/templates/label-settings.tpl.php:183
+msgid "Available Shipment Information Fields"
+msgstr "Câmpuri cu informații despre expediere disponibile"
+
+#: admin/templates/label-settings.tpl.php:198
+msgid "No Field found for Shipment Information"
+msgstr "Nu s-a găsit niciun câmp pentru informații despre expediere"
+
+#: admin/templates/print-cf-shipper.tpl.php:10
+#: templates/wpc-cf-track-shipper.tpl.php:10
+msgid "Shipper Address"
+msgstr "Adresa expeditorului"
+
+#: admin/templates/print-cf-shipper.tpl.php:39
+#: templates/wpc-cf-track-shipper.tpl.php:61
+msgid "Receiver Address"
+msgstr "Adresa destinatarului"
+
+#: admin/templates/print-label.tpl.php:25
+msgid "Consignee Copy"
+msgstr "Copie destinatar"
+
+#: admin/templates/print-label.tpl.php:26
+msgid "Shippers Copy"
+msgstr "Expeditorii Copie"
+
+#: admin/templates/print-label.tpl.php:101
+msgid "Package Information"
+msgstr "Informații"
+
+#: admin/templates/print-label.tpl.php:105
+msgid "Description"
+msgstr "Descriere"
+
+#: admin/templates/print-label.tpl.php:106
+msgid "Qty."
+msgstr "Cant."
+
+#: admin/templates/print-label.tpl.php:107
+msgid "Piece Type"
+msgstr "Tip piesă"
+
+#: admin/templates/print-label.tpl.php:109
+msgid "Length"
+msgstr "Lungime"
+
+#: admin/templates/print-label.tpl.php:110
+msgid "Width"
+msgstr "Lăţime"
+
+#: admin/templates/print-label.tpl.php:111
+msgid "Height"
+msgstr "Înălțime"
+
+#: admin/templates/print-label.tpl.php:113
+msgid "Weight"
+msgstr "Greutate"
+
+#: admin/templates/receiver-metabox.tpl.php:2
+msgid "Receiver Details"
+msgstr "Detalii receptor"
+
+#: admin/templates/shipper-metabox.tpl.php:2
+msgid "Shipper Details"
+msgstr "Detalii expeditor"
+
+#: admin/templates/wpc-cf-settings.tpl.php:6
+msgid "Disable Shipper Details Section?"
+msgstr "Dezactivați secțiunea Detalii expeditor?"
+
+#: admin/templates/wpc-cf-settings.tpl.php:9
+msgid "This settings will remove Shipper Details Section"
+msgstr "Aceste setări vor elimina secțiunea Detalii expeditor"
+
+#: admin/templates/wpc-cf-settings.tpl.php:13
+msgid "Disable Receiver Details Section?"
+msgstr "Dezactivați secțiunea Detalii receptor?"
+
+#: admin/templates/wpc-cf-settings.tpl.php:16
+msgid "This settings will remove Receiver Details Section"
+msgstr "Aceste setări vor elimina secțiunea Detalii receptor"
+
+#: admin/templates/wpc-cf-settings.tpl.php:20
+msgid "Disable Shipment Details Section?"
+msgstr "Dezactivați secțiunea Detalii expediere?"
+
+#: admin/templates/wpc-cf-settings.tpl.php:23
+msgid "This settings will remove Shipment Details Section"
+msgstr "Aceste setări vor elimina secțiunea Detalii expediere"
+
+#: admin/templates/wpc-cf-settings.tpl.php:27
+msgid "Add Field display options"
+msgstr "Adăugarea opțiunilor de afișare a câmpului"
+
+#: admin/templates/wpc-cf-settings.tpl.php:29
+msgid "Ex. Option 1, Option 2, Option 3"
+msgstr "Ex. Opțiunea 1, Opțiunea 2, Opțiunea 3"
+
+#: admin/templates/wpc-cf-settings.tpl.php:30
+msgid ""
+"This settings will add additional section for \"Field display options\" in "
+"\"Add Form Field\" page. Must be comma separated"
+msgstr ""
+"Aceste setări vor adăuga o secțiune suplimentară pentru \"Opțiuni de "
+"afișare a câmpului\" în pagina \"Adăugare câmp formular\". Trebuie să fie "
+"separate prin virgulă"
+
+#: includes/dropzone.php:30
+msgid "(remove)"
+msgstr "(elimină)"
+
+#: includes/dropzone.php:58
+msgid "Drop files here or click to upload."
+msgstr "Trage fotografii aici sau da click pentru incarcare."
+
+#: includes/dropzone.php:59
+msgid "Accepted file type : "
+msgstr "Tip de fișier acceptat: "
+
+#: includes/dropzone.php:60
+msgid "Max Filesize: "
+msgstr "Max Filesize: "
+
+#: includes/dropzone.php:60
+msgid "MB."
+msgstr "MB."
+
+#: templates/script.tpl.php:18
+msgid "Upload File"
+msgstr "Încarcă fișier"
+
+#: templates/script.tpl.php:20
+msgid "Select File"
+msgstr "Selectați Fișier"
+
+#. Plugin Name of the plugin/theme
+msgid "WPCargo Custom Field Add-ons"
+msgstr "Programe de completare WPCargo custom field"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wpcargo.com/"
+msgstr "http://wpcargo.com/"
+
+#. Description of the plugin/theme
+msgid ""
+"Allows you to customized the fields and your needs to display at the front-"
+"end. Requires WPCargo plugin to work."
+msgstr ""
+"Vă permite să personalizați câmpurile și nevoile dumneavoastră de a afișa "
+"la front-end. Necesită wpCargo plug-in pentru a lucra."
+
+#. Author of the plugin/theme
+msgid "<a href=\"http://wptaskforce.com/\">WPTaskForce</a>"
+msgstr "<a href=\"http://wptaskforce.com/\">WPTaskForce</a>"

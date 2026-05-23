@@ -1,0 +1,783 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPCargo Custom Field Add-ons\n"
+"POT-Creation-Date: 2021-09-28 11:43+0800\n"
+"PO-Revision-Date: 2021-09-28 11:46+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpcargo-custom-field.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: admin/admin.php:107 admin/classes/wpccf-fields.php:251
+msgid "URL Label"
+msgstr "网址标签"
+
+#: admin/admin.php:109 admin/classes/wpccf-fields.php:252
+msgid "http://www.sample.com"
+msgstr "http://www.sample.com"
+
+#: admin/admin.php:111 admin/classes/wpccf-fields.php:253
+msgid "Open new window?"
+msgstr "打开新窗口？"
+
+#: admin/admin.php:193 admin/admin.php:223 admin/classes/wpccf-fields.php:190
+msgid "-- Select One --"
+msgstr "——请选择一个——"
+
+#: admin/admin.php:203 admin/admin.php:257 admin/admin.php:288
+#: admin/admin.php:327
+msgid "No Selection setup, Please add selection"
+msgstr "无选择设置，请添加选择"
+
+#: admin/admin.php:203 admin/admin.php:233 admin/admin.php:257
+#: admin/admin.php:288 admin/admin.php:327
+msgid "Here"
+msgstr "这里"
+
+#: admin/admin.php:233
+msgid "No WPCargo agents, Please add Agents"
+msgstr "没有 WP 卡戈代理，请添加代理"
+
+#: admin/admin.php:233
+msgid "make sure the role assign is \"WPCargo Agent\"."
+msgstr "确保角色分配为\"WP卡戈代理\"。"
+
+#: admin/admin.php:353 admin/classes/wpccf-fields.php:298
+msgid " -- Select Country -- "
+msgstr "-- 选择国家 / 地区 -"
+
+#: admin/admin.php:397
+msgid "Delete image"
+msgstr "删除图片"
+
+#: admin/admin.php:407 admin/classes/wpccf-fields.php:278
+msgid "Add Images / Upload Files"
+msgstr "添加图像 / 上传文件"
+
+#: admin/classes/wpc-cf-check-installed-plugin.php:13
+msgid ""
+"WPCargo Custom Field Add-ons plugin requires <a href=\"http://wpcargo.com/"
+"\">WPCargo</a> Free Version to activate"
+msgstr ""
+"WP 卡戈自定义字段插件需要 <a href=\"http://wpcargo.com/\">WP 卡戈</a> 免费版"
+"本才能激活"
+
+#: admin/classes/wpc-cf-check-installed-plugin.php:21
+msgid ""
+"WPCargo Custom Field Add-ons plugin requires <a href=\"http://wpcargo.com/"
+"\">WPTaskForce License Helper</a> plugin to activate!"
+msgstr ""
+"WPCargo 自定义字段附加插件需要 <a href=\"http://wpcargo.com/\">WPTaskForce "
+"许可证帮手</a> 插件才能激活！"
+
+#: admin/classes/wpc-cf-form-builder.php:351
+msgid "You do not have permissions to view this data."
+msgstr "您没有查看此数据的权限。"
+
+#: admin/classes/wpc-cf-install-db.php:32
+msgid "Shipper Name"
+msgstr "发货人姓名"
+
+#: admin/classes/wpc-cf-install-db.php:44
+#: admin/classes/wpc-cf-install-db.php:91
+msgid "Phone Number"
+msgstr "电话号码"
+
+#: admin/classes/wpc-cf-install-db.php:55
+#: admin/classes/wpc-cf-install-db.php:102 admin/includes/functions.php:185
+#: admin/templates/label-settings.tpl.php:114
+msgid "Address"
+msgstr "地址"
+
+#: admin/classes/wpc-cf-install-db.php:66
+#: admin/classes/wpc-cf-install-db.php:113 admin/includes/functions.php:184
+#: admin/templates/label-settings.tpl.php:114
+#: admin/templates/label-settings.tpl.php:117
+msgid "Email"
+msgstr "邮箱"
+
+#: admin/classes/wpc-cf-install-db.php:79
+msgid "Receiver Name"
+msgstr "接收方名称"
+
+#: admin/classes/wpc-cf-install-db.php:135
+#: admin/templates/label-settings.tpl.php:125
+msgid "Type of Shipment"
+msgstr "装运类型"
+
+#: admin/classes/wpc-cf-install-db.php:146
+#: admin/templates/label-settings.tpl.php:87
+msgid "Courier"
+msgstr "配送员"
+
+#: admin/classes/wpc-cf-install-db.php:166
+msgid "Mode"
+msgstr "模式"
+
+#: admin/classes/wpc-cf-install-db.php:186
+msgid "Payment Mode"
+msgstr "付款方式"
+
+#: admin/classes/wpc-cf-install-db.php:197
+msgid "Total Freight"
+msgstr "货运总额"
+
+#: admin/classes/wpc-cf-install-db.php:217
+#: admin/templates/label-settings.tpl.php:92
+msgid "Carrier"
+msgstr "运送人"
+
+#: admin/classes/wpc-cf-install-db.php:228
+#: admin/templates/label-settings.tpl.php:95
+msgid "Carrier Reference No."
+msgstr "承运人参考编号"
+
+#: admin/classes/wpc-cf-install-db.php:239
+#: admin/templates/label-settings.tpl.php:98
+msgid "Departure Time"
+msgstr "出发时间"
+
+#: admin/classes/wpc-cf-install-db.php:259
+#: admin/templates/label-settings.tpl.php:81
+msgid "Origin"
+msgstr "起源"
+
+#: admin/classes/wpc-cf-install-db.php:270
+#: admin/templates/label-settings.tpl.php:84
+msgid "Destination"
+msgstr "目的地"
+
+#: admin/classes/wpc-cf-install-db.php:281
+#: admin/templates/label-settings.tpl.php:70
+msgid "Pickup Date"
+msgstr "自取日期"
+
+#: admin/classes/wpc-cf-install-db.php:292
+#: admin/templates/label-settings.tpl.php:73
+msgid "Pickup Time"
+msgstr "自取时间"
+
+#: admin/classes/wpc-cf-install-db.php:313
+msgid "Expected Delivery Date"
+msgstr "预计交货日期"
+
+#: admin/classes/wpc-cf-install-db.php:324
+msgid "Comments"
+msgstr "评论"
+
+#: admin/classes/wpc-cf-settings.php:14 admin/classes/wpc-cf-settings.php:15
+msgid "Custom Field Setting"
+msgstr "自定义字段设置"
+
+#: admin/classes/wpc-cf-settings.php:22 admin/classes/wpc-cf-settings.php:23
+msgid "CF Setting"
+msgstr "CF 设置"
+
+#: admin/classes/wpc-cf-settings.php:39 wpcargo-custom-field.php:47
+msgid "Custom Field Settings"
+msgstr "自定义字段设置"
+
+#: admin/classes/wpccf-fields.php:151 admin/classes/wpccf-fields.php:173
+#: admin/classes/wpccf-fields.php:199 admin/classes/wpccf-fields.php:222
+msgid "No options available"
+msgstr "没有可用的选项"
+
+#: admin/includes/functions.php:113 admin/includes/functions.php:223
+msgid "Shipment Information"
+msgstr "装运信息"
+
+#: admin/includes/functions.php:172
+msgid "Street Address"
+msgstr "街道地址"
+
+#: admin/includes/functions.php:173
+msgid "City"
+msgstr "城市"
+
+#: admin/includes/functions.php:174
+msgid "State/Province/Region"
+msgstr "州/省/地区"
+
+#: admin/includes/functions.php:175
+msgid "Zip/PostCode"
+msgstr "邮编/邮政编码"
+
+#: admin/includes/functions.php:176
+msgid "Country"
+msgstr "国家"
+
+#: admin/includes/functions.php:182
+msgid "Text"
+msgstr "文本"
+
+#: admin/includes/functions.php:183
+msgid "Textarea"
+msgstr "文本区域"
+
+#: admin/includes/functions.php:186
+msgid "Number"
+msgstr "数量"
+
+#: admin/includes/functions.php:187
+#: templates/wpc-cf-add-track-fields.tpl.php:48
+#: templates/wpc-cf-add-track-fields.tpl.php:70
+msgid "Select"
+msgstr "选择"
+
+#: admin/includes/functions.php:188
+msgid "Multiselect"
+msgstr "多选"
+
+#: admin/includes/functions.php:189
+msgid "Radio"
+msgstr "无线电"
+
+#: admin/includes/functions.php:190
+msgid "Checkbox"
+msgstr "复选框"
+
+#: admin/includes/functions.php:191
+msgid "File"
+msgstr "文件"
+
+#: admin/includes/functions.php:192
+msgid "Date"
+msgstr "日期"
+
+#: admin/includes/functions.php:193
+msgid "Time"
+msgstr "时间"
+
+#: admin/includes/functions.php:194
+msgid "Date Time"
+msgstr "日期时间"
+
+#: admin/includes/functions.php:195
+msgid "URL"
+msgstr "URL"
+
+#: admin/includes/functions.php:219 admin/templates/form-field-add.tpl.php:74
+#: admin/templates/form-field-edit.tpl.php:83
+msgid "Shipper Information"
+msgstr "发货人信息"
+
+#: admin/includes/functions.php:221 admin/templates/form-field-add.tpl.php:75
+#: admin/templates/form-field-edit.tpl.php:84
+msgid "Receiver Information"
+msgstr "收件人信息"
+
+#: admin/includes/functions.php:269
+msgid "Shipment Number"
+msgstr "装运号"
+
+#: admin/includes/functions.php:270
+msgid "Status"
+msgstr "状态"
+
+#: admin/includes/functions.php:271
+msgid "Location"
+msgstr "位置"
+
+#: admin/includes/functions.php:272
+msgid "Admin Email"
+msgstr "管理员电子邮件"
+
+#: admin/includes/functions.php:273
+msgid "Website Name"
+msgstr "网站名称"
+
+#: admin/includes/functions.php:274
+msgid "Website URL"
+msgstr "网址"
+
+#: admin/includes/functions.php:275
+msgid "Registered Client Email"
+msgstr "注册客户电子邮件"
+
+#: admin/includes/functions.php:385
+msgid "Please activate your license key"
+msgstr "请激活您的许可证密钥"
+
+#: admin/includes/functions.php:385
+msgid "here"
+msgstr "这里"
+
+#: admin/includes/functions.php:388
+msgid "Manage Form Fields"
+msgstr "管理表单字段"
+
+#: admin/includes/functions.php:391
+msgid "Print Waybill"
+msgstr "打印路比尔"
+
+#: admin/includes/functions.php:394
+msgid "CF Print Waybill"
+msgstr "CF 打印路比尔"
+
+#: admin/includes/functions.php:397
+msgid "Field Successfully Added!"
+msgstr "字段成功添加！"
+
+#: admin/includes/functions.php:400
+msgid "Something went wrong in adding field!"
+msgstr "添加字段时出了问题！"
+
+#: admin/includes/functions.php:403
+#, php-format
+msgid "Can't process your request, metakey '%s' is a reserved metakey."
+msgstr "无法处理您的请求， 我接受 \"%s\" 是一个保留的我。"
+
+#: admin/includes/functions.php:406
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\" target=\"_blank"
+"\">WPTaskForce License Helper</a> plugin to be active!"
+msgstr ""
+"此插件需要 <a href=\"http://wpcargo.com/\" target=\"_blank\">WPTaskForce 许"
+"可证帮助器</a> 插件才能激活！"
+
+#: admin/includes/functions.php:409
+msgid ""
+"This plugin requires <a href=\"https://wordpress.org/plugins/wpcargo/\" "
+"target=\"_blank\">WPCargo</a> plugin to be active!"
+msgstr ""
+"此插件需要 <a href=\"https://wordpress.org/plugins/wpcargo/\" target="
+"\"_blank\">WP 卡戈</a> 插件才能激活！"
+
+#: admin/includes/functions.php:412
+msgid "Cheating, uh?"
+msgstr "作弊， 嗯？"
+
+#: admin/templates/form-field-add.tpl.php:3
+#: admin/templates/form-navigation.tpl.php:11
+msgid "Add Form Field"
+msgstr "添加表单字段"
+
+#: admin/templates/form-field-add.tpl.php:9
+#: admin/templates/form-field-edit.tpl.php:19
+msgid "Field Type (required)"
+msgstr "字段类型（需要）"
+
+#: admin/templates/form-field-add.tpl.php:12
+#: admin/templates/form-field-add.tpl.php:45
+#: admin/templates/form-field-edit.tpl.php:22
+#: admin/templates/form-field-edit.tpl.php:54
+msgid "--Select One--"
+msgstr "--选择一个"
+
+#: admin/templates/form-field-add.tpl.php:22
+#: admin/templates/form-field-edit.tpl.php:32
+msgid "Field Label (required)"
+msgstr "现场标签（必需）"
+
+#: admin/templates/form-field-add.tpl.php:26
+#: admin/templates/form-field-edit.tpl.php:36
+msgid "Field description (optional)"
+msgstr "字段描述（可选）"
+
+#: admin/templates/form-field-add.tpl.php:30
+#: admin/templates/form-field-edit.tpl.php:41
+msgid "Field Options for select lists, radio buttons and checkboxes(required)"
+msgstr "选定列表、无线电按钮和复选框的字段选项（必需）"
+
+#: admin/templates/form-field-add.tpl.php:33
+#: admin/templates/form-field-edit.tpl.php:44
+msgid "Comma (,) separated list of options"
+msgstr "逗应 （，） 分离的选项列表"
+
+#: admin/templates/form-field-add.tpl.php:37
+#: admin/templates/form-field-edit.tpl.php:48
+msgid "Field meta key"
+msgstr "字段元键"
+
+#: admin/templates/form-field-add.tpl.php:40
+#: admin/templates/form-field-edit.tpl.php:50
+msgid "Existing"
+msgstr "现有"
+
+#: admin/templates/form-field-add.tpl.php:41
+#: admin/templates/form-field-edit.tpl.php:51
+msgid "New"
+msgstr "新的"
+
+#: admin/templates/form-field-add.tpl.php:62
+#: admin/templates/form-field-edit.tpl.php:71
+msgid "Is Field required?"
+msgstr "需要字段吗？"
+
+#: admin/templates/form-field-add.tpl.php:67
+#: admin/templates/form-field-edit.tpl.php:76
+msgid "Field display options"
+msgstr "字段显示选项"
+
+#: admin/templates/form-field-add.tpl.php:71
+#: admin/templates/form-field-edit.tpl.php:80
+msgid "What Section do you want to display?"
+msgstr "要显示什么部分？"
+
+#: admin/templates/form-field-add.tpl.php:88
+#: admin/templates/form-field-edit.tpl.php:97
+msgid "Class"
+msgstr "类"
+
+#: admin/templates/form-field-add.tpl.php:91
+#: admin/templates/form-field-edit.tpl.php:100
+msgid "HTML class attribute"
+msgstr "HTML 类属性"
+
+#: admin/templates/form-field-add.tpl.php:95
+#: admin/templates/form-field-edit.tpl.php:109
+msgid "Do you want to display on tracking page form?"
+msgstr "您想在跟踪页面表单上显示吗？"
+
+#: admin/templates/form-field-add.tpl.php:99
+#: admin/templates/form-field-edit.tpl.php:113
+msgid "Is field required on tracking page form?"
+msgstr "跟踪页面表单是否需要字段？"
+
+#: admin/templates/form-field-add.tpl.php:103
+#: admin/templates/form-field-edit.tpl.php:117
+msgid "Do you want to display it on result page?"
+msgstr "您想在结果页面上显示它吗？"
+
+#: admin/templates/form-field-add.tpl.php:107
+msgid "Select user to NOT access this field"
+msgstr "选择用户不要访问此字段"
+
+#: admin/templates/form-field-add.tpl.php:109
+#: admin/templates/form-field-edit.tpl.php:123
+msgid "Not Logged In"
+msgstr "尚未登录"
+
+#: admin/templates/form-field-add.tpl.php:113
+#: admin/templates/form-field-edit.tpl.php:127
+msgid ""
+"Note: This option applies only in the front end form using custom field "
+"manager."
+msgstr "注意：此选项仅适用于使用自定义字段管理器的前端表单。"
+
+#: admin/templates/form-field-add.tpl.php:118
+msgid "Add Field"
+msgstr "添加字段"
+
+#: admin/templates/form-field-edit.tpl.php:5
+msgid "Sorry you can't access this page directly."
+msgstr "对不起，您无法直接访问此页面。"
+
+#: admin/templates/form-field-edit.tpl.php:13
+#: admin/templates/form-navigation.tpl.php:13
+msgid "Edit Form Field"
+msgstr "编辑表单字段"
+
+#: admin/templates/form-field-edit.tpl.php:121
+msgid "Select user NOT to access this field"
+msgstr "选择用户不要访问此字段"
+
+#: admin/templates/form-field-edit.tpl.php:133
+msgid "Edit Field"
+msgstr "编辑字段"
+
+#: admin/templates/form-field-settings.tpl.php:3
+msgid "Settings"
+msgstr "设置"
+
+#: admin/templates/form-field-settings.tpl.php:16
+msgid "Select Field to display in Shipper Name Column"
+msgstr "选择要在发货人名称列中显示的字段"
+
+#: admin/templates/form-field-settings.tpl.php:19
+#: admin/templates/form-field-settings.tpl.php:34
+msgid "Select Field"
+msgstr "选择字段"
+
+#: admin/templates/form-field-settings.tpl.php:31
+msgid "Select Field to display in Receiver Name Column"
+msgstr "选择字段以在接收器名称列中显示"
+
+#: admin/templates/form-field-settings.tpl.php:46
+msgid "Save Settings"
+msgstr "保存设置"
+
+#: admin/templates/form-fields-list.tpl.php:2
+#: admin/templates/form-navigation.tpl.php:10
+msgid "Form Field List"
+msgstr "表单字段列表"
+
+#: admin/templates/form-fields-list.tpl.php:7
+msgid "Label / Association"
+msgstr "标签/相关"
+
+#: admin/templates/form-fields-list.tpl.php:8
+msgid "Field Key"
+msgstr "字段键"
+
+#: admin/templates/form-fields-list.tpl.php:9
+msgid "Type"
+msgstr "类型"
+
+#: admin/templates/form-fields-list.tpl.php:10
+msgid "Required"
+msgstr "需要"
+
+#: admin/templates/form-fields-list.tpl.php:11
+msgid "Field Attributes"
+msgstr "字段属性"
+
+#: admin/templates/form-fields-list.tpl.php:12
+msgid "Class Attributes"
+msgstr "类属性"
+
+#: admin/templates/form-fields-list.tpl.php:19
+msgid "Edit"
+msgstr "编辑"
+
+#: admin/templates/form-fields-list.tpl.php:19
+msgid "Delete"
+msgstr "删除"
+
+#: admin/templates/form-navigation.tpl.php:9
+msgid "Field Settings"
+msgstr "字段设置"
+
+#: admin/templates/label-settings.tpl.php:54
+msgid "Print Label Settings"
+msgstr "打印标签设置"
+
+#: admin/templates/label-settings.tpl.php:67
+#: admin/templates/print-label.tpl.php:24
+msgid "Accounts Copy"
+msgstr "帐户复制"
+
+#: admin/templates/label-settings.tpl.php:76
+msgid "Delivery Date"
+msgstr "交货日期"
+
+#: admin/templates/label-settings.tpl.php:106
+#: admin/templates/print-label.tpl.php:78
+msgid "Shipper"
+msgstr "发货人"
+
+#: admin/templates/label-settings.tpl.php:108
+#: admin/templates/print-label.tpl.php:80
+msgid "Consignee"
+msgstr "收货人副本"
+
+#: admin/templates/label-settings.tpl.php:110
+msgid "Status: Pending"
+msgstr "状态：待定"
+
+#: admin/templates/label-settings.tpl.php:114
+#: admin/templates/label-settings.tpl.php:117
+msgid "Phone"
+msgstr "电话"
+
+#: admin/templates/label-settings.tpl.php:120
+msgid "Comment"
+msgstr "评论"
+
+#: admin/templates/label-settings.tpl.php:128
+msgid "Product"
+msgstr "产品"
+
+#: admin/templates/label-settings.tpl.php:133
+msgid "Save Label"
+msgstr "保存标签"
+
+#: admin/templates/label-settings.tpl.php:137
+msgid "Custom Field Code List"
+msgstr "自定义字段代码列表"
+
+#: admin/templates/label-settings.tpl.php:138
+msgid "Note: User Metakey Code to display dynamic data in print label."
+msgstr "注意：用户梅塔基代码，以在打印标签中显示动态数据。"
+
+#: admin/templates/label-settings.tpl.php:141
+msgid "Available Shipper Fields"
+msgstr "可用托运人字段"
+
+#: admin/templates/label-settings.tpl.php:144
+#: admin/templates/label-settings.tpl.php:165
+#: admin/templates/label-settings.tpl.php:186
+msgid "Field Label"
+msgstr "字段标签"
+
+#: admin/templates/label-settings.tpl.php:144
+#: admin/templates/label-settings.tpl.php:165
+#: admin/templates/label-settings.tpl.php:186
+msgid "Metakey Code"
+msgstr "梅塔基代码"
+
+#: admin/templates/label-settings.tpl.php:156
+msgid "No Field found for Shipper"
+msgstr "没有为发货人找到任何字段"
+
+#: admin/templates/label-settings.tpl.php:162
+msgid "Available Receiver Fields"
+msgstr "可用接收器字段"
+
+#: admin/templates/label-settings.tpl.php:177
+msgid "No Field found for Receiver"
+msgstr "未为接收器找到字段"
+
+#: admin/templates/label-settings.tpl.php:183
+msgid "Available Shipment Information Fields"
+msgstr "可用装运信息字段"
+
+#: admin/templates/label-settings.tpl.php:198
+msgid "No Field found for Shipment Information"
+msgstr "未找到货物信息字段"
+
+#: admin/templates/print-cf-shipper.tpl.php:10
+#: templates/wpc-cf-track-shipper.tpl.php:10
+msgid "Shipper Address"
+msgstr "发货人地址"
+
+#: admin/templates/print-cf-shipper.tpl.php:39
+#: templates/wpc-cf-track-shipper.tpl.php:61
+msgid "Receiver Address"
+msgstr "接收方地址"
+
+#: admin/templates/print-label.tpl.php:25
+msgid "Consignee Copy"
+msgstr "收货人副本"
+
+#: admin/templates/print-label.tpl.php:26
+msgid "Shippers Copy"
+msgstr "托运人复制"
+
+#: admin/templates/print-label.tpl.php:101
+msgid "Package Information"
+msgstr "套餐详情"
+
+#: admin/templates/print-label.tpl.php:105
+msgid "Description"
+msgstr "描述"
+
+#: admin/templates/print-label.tpl.php:106
+msgid "Qty."
+msgstr "数量"
+
+#: admin/templates/print-label.tpl.php:107
+msgid "Piece Type"
+msgstr "件类型"
+
+#: admin/templates/print-label.tpl.php:109
+msgid "Length"
+msgstr "长度"
+
+#: admin/templates/print-label.tpl.php:110
+msgid "Width"
+msgstr "宽度"
+
+#: admin/templates/print-label.tpl.php:111
+msgid "Height"
+msgstr "高度"
+
+#: admin/templates/print-label.tpl.php:113
+msgid "Weight"
+msgstr "重量"
+
+#: admin/templates/receiver-metabox.tpl.php:2
+msgid "Receiver Details"
+msgstr "接收器详细信息"
+
+#: admin/templates/shipper-metabox.tpl.php:2
+msgid "Shipper Details"
+msgstr "发货人详细信息"
+
+#: admin/templates/wpc-cf-settings.tpl.php:6
+msgid "Disable Shipper Details Section?"
+msgstr "禁用托运人详细信息部分？"
+
+#: admin/templates/wpc-cf-settings.tpl.php:9
+msgid "This settings will remove Shipper Details Section"
+msgstr "此设置将删除发货人详细信息部分"
+
+#: admin/templates/wpc-cf-settings.tpl.php:13
+msgid "Disable Receiver Details Section?"
+msgstr "禁用接收器详细信息部分？"
+
+#: admin/templates/wpc-cf-settings.tpl.php:16
+msgid "This settings will remove Receiver Details Section"
+msgstr "此设置将删除接收器详细信息部分"
+
+#: admin/templates/wpc-cf-settings.tpl.php:20
+msgid "Disable Shipment Details Section?"
+msgstr "禁用装运详细信息部分？"
+
+#: admin/templates/wpc-cf-settings.tpl.php:23
+msgid "This settings will remove Shipment Details Section"
+msgstr "此设置将删除\"装运详细信息\"部分"
+
+#: admin/templates/wpc-cf-settings.tpl.php:27
+msgid "Add Field display options"
+msgstr "添加字段显示选项"
+
+#: admin/templates/wpc-cf-settings.tpl.php:29
+msgid "Ex. Option 1, Option 2, Option 3"
+msgstr "前选项 1、选项 2、选项 3"
+
+#: admin/templates/wpc-cf-settings.tpl.php:30
+msgid ""
+"This settings will add additional section for \"Field display options\" in "
+"\"Add Form Field\" page. Must be comma separated"
+msgstr ""
+"此设置将在\"添加表单字段\"页面中为\"字段显示选项\"添加附加部分。必须逗毛分离"
+
+#: includes/dropzone.php:30
+msgid "(remove)"
+msgstr "移除"
+
+#: includes/dropzone.php:58
+msgid "Drop files here or click to upload."
+msgstr "将文件拖放或单击以上传。"
+
+#: includes/dropzone.php:59
+msgid "Accepted file type : "
+msgstr "接受的文件类型 ："
+
+#: includes/dropzone.php:60
+msgid "Max Filesize: "
+msgstr "最大文件化："
+
+#: includes/dropzone.php:60
+msgid "MB."
+msgstr "MB."
+
+#: templates/script.tpl.php:18
+msgid "Upload File"
+msgstr "上传文件"
+
+#: templates/script.tpl.php:20
+msgid "Select File"
+msgstr "选择文件"
+
+#. Plugin Name of the plugin/theme
+msgid "WPCargo Custom Field Add-ons"
+msgstr "WP卡戈自定义字段附加组件"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wpcargo.com/"
+msgstr "http://wpcargo.com/"
+
+#. Description of the plugin/theme
+msgid ""
+"Allows you to customized the fields and your needs to display at the front-"
+"end. Requires WPCargo plugin to work."
+msgstr "允许您自定义字段和在前端显示的需要。需要 WP 卡戈插件才能工作。"
+
+#. Author of the plugin/theme
+msgid "<a href=\"http://wptaskforce.com/\">WPTaskForce</a>"
+msgstr "<a href=\"http://wptaskforce.com/\">瓦普塔斯克力量</a>"
