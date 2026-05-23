@@ -1,0 +1,2371 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPCargo Frontend Manager\n"
+"POT-Creation-Date: 2022-08-12 14:44+0800\n"
+"PO-Revision-Date: 2022-08-12 14:44+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpcargo-frontend-manager.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: admin/classes/class-core.php:54 admin/includes/hooks.php:78
+msgid "WPCargo Dashboard"
+msgstr "Panel de control de WPCargo"
+
+#: admin/classes/class-fields.php:136
+msgid "-- Select One --"
+msgstr "-- Seleccione Uno --"
+
+#: admin/classes/class-fields.php:228
+msgid "Add Images / Upload Files"
+msgstr "Añadir imágenes / Subir archivos"
+
+#: admin/classes/class-fields.php:298 admin/includes/functions.php:1274
+msgid "Email"
+msgstr "Email"
+
+#: admin/classes/class-scripts.php:65
+msgid "Are you sure you want to delete this selected Shipment?"
+msgstr "¿Está seguro de que desea eliminar este envío seleccionado?"
+
+#: admin/classes/class-scripts.php:66 admin/classes/class-scripts.php:118
+msgid "No shipment selected, Please select atleast one Shipment."
+msgstr "No se ha seleccionado ningún envío, seleccione al menos un envío."
+
+#: admin/classes/class-scripts.php:67 admin/classes/class-scripts.php:119
+msgid ""
+"Something went wrong while processing your request, please reload and try "
+"again."
+msgstr ""
+"Algo salió mal al procesar su solicitud, vuelva a cargar e inténtelo de "
+"nuevo."
+
+#: admin/classes/class-scripts.php:68
+msgid "Please enter more characters"
+msgstr "Por favor, introduzca más caracteres"
+
+#: admin/classes/class-scripts.php:69
+msgid "Please delete some character"
+msgstr "Por favor, elimine algún carácter"
+
+#: admin/classes/class-scripts.php:70 admin/classes/class-scripts.php:74
+msgid "Error loading results"
+msgstr "Error al cargar los resultados"
+
+#: admin/classes/class-scripts.php:71
+msgid "Loading more results"
+msgstr "Cargando más resultados"
+
+#: admin/classes/class-scripts.php:72
+msgid "No results found"
+msgstr "No se han encontrado resultados"
+
+#: admin/classes/class-scripts.php:73
+msgid "Searching..."
+msgstr "Buscando..."
+
+#: admin/classes/class-scripts.php:76
+msgid "Incorrect Email Format."
+msgstr "Formato de correo electrónico incorrecto."
+
+#: admin/classes/class-scripts.php:77
+msgid "Email already Exist."
+msgstr "El correo electrónico ya existe."
+
+#: admin/classes/class-scripts.php:78
+msgid "Password NOT matched."
+msgstr "Contraseña NO coincide."
+
+#: admin/classes/class-scripts.php:79
+msgid "Password must at least 6 Characters."
+msgstr "La contraseña debe tener al menos 6 caracteres."
+
+#: admin/classes/class-scripts.php:81
+msgid "Username"
+msgstr "Nombre de usuario"
+
+#: admin/classes/class-scripts.php:82 templates/login.php:31
+#: templates/registration-form.tpl.php:33
+msgid "Password"
+msgstr "Contraseña"
+
+#: admin/classes/class-scripts.php:83
+msgid "Download"
+msgstr "Descargar"
+
+#: admin/classes/class-scripts.php:84
+msgid "Are you sure you want to delete section?"
+msgstr "¿Está seguro de que desea eliminar la sección?"
+
+#: admin/classes/class-scripts.php:85
+msgid "No shipment has been updated"
+msgstr "No se ha actualizado ningún envío"
+
+#: admin/classes/class-scripts.php:86
+msgid "Selected Shipements has been updated"
+msgstr "Selected Shipements ha sido actualizado"
+
+#: admin/classes/class-scripts.php:105 admin/includes/functions.php:102
+#: templates/profile.tpl.php:72
+msgid "-- Select Type --"
+msgstr "Seleccionar Tipo"
+
+#: admin/classes/class-scripts.php:116
+msgid "Select an option"
+msgstr "Selecciona una opción"
+
+#: admin/includes/ajax.php:14
+msgid "Something went wrong during process, Please try again."
+msgstr "Algo salió mal durante el proceso, inténtelo de nuevo."
+
+#: admin/includes/ajax.php:21 admin/includes/ajax.php:73
+msgid "Opsss! Sorry you are not allow to delete shipments"
+msgstr "¡Operaciones! Lamento que no se le permita eliminar envíos"
+
+#: admin/includes/ajax.php:32
+msgid "Shipment"
+msgstr "Envío"
+
+#: admin/includes/ajax.php:32
+msgid "successfully deleted."
+msgstr "eliminado exitosamente."
+
+#: admin/includes/ajax.php:89
+#, php-format
+msgid "You successfully deleted %s shipment."
+msgid_plural "You successfully deleted %s shipments."
+msgstr[0] "Eliminó correctamente %s envío."
+msgstr[1] "Eliminó correctamente %s envíos."
+
+#: admin/includes/ajax.php:182
+msgid "This is an existing shipment number."
+msgstr "Este es un número de envío existente."
+
+#: admin/includes/ajax.php:195
+msgid ""
+"N Sequence reset success, please update the Shipment Number Start for your "
+"new shipment number starting sequence."
+msgstr ""
+"N Secuencia de restablecimiento correcta, actualice el Inicio del número de "
+"envío para su nueva secuencia de inicio de número de envío."
+
+#: admin/includes/ajax.php:201
+msgid "N Sequence reset failed, please reload the page and try again."
+msgstr ""
+"N Error en el restablecimiento de secuencia, vuelva a cargar la página e "
+"inténtelo de nuevo."
+
+#: admin/includes/country-list.php:7
+msgid "Afghanistan"
+msgstr "Afganistán"
+
+#: admin/includes/country-list.php:8
+msgid "&#197;land Islands"
+msgstr "Islas &#197;land"
+
+#: admin/includes/country-list.php:9
+msgid "Albania"
+msgstr "Albania"
+
+#: admin/includes/country-list.php:10
+msgid "Algeria"
+msgstr "Argelia"
+
+#: admin/includes/country-list.php:11
+msgid "American Samoa"
+msgstr "Samoa Americana"
+
+#: admin/includes/country-list.php:12
+msgid "Andorra"
+msgstr "Andorra"
+
+#: admin/includes/country-list.php:13
+msgid "Angola"
+msgstr "Angola"
+
+#: admin/includes/country-list.php:14
+msgid "Anguilla"
+msgstr "Anguilla"
+
+#: admin/includes/country-list.php:15
+msgid "Antarctica"
+msgstr "Antártida"
+
+#: admin/includes/country-list.php:16
+msgid "Antigua and Barbuda"
+msgstr "Antigua y Barbuda"
+
+#: admin/includes/country-list.php:17
+msgid "Argentina"
+msgstr "Argentina"
+
+#: admin/includes/country-list.php:18
+msgid "Armenia"
+msgstr "Armenia"
+
+#: admin/includes/country-list.php:19
+msgid "Aruba"
+msgstr "Aruba"
+
+#: admin/includes/country-list.php:20
+msgid "Australia"
+msgstr "Australia"
+
+#: admin/includes/country-list.php:21
+msgid "Austria"
+msgstr "Austria"
+
+#: admin/includes/country-list.php:22
+msgid "Azerbaijan"
+msgstr "Azerbaiyán"
+
+#: admin/includes/country-list.php:23
+msgid "Bahamas"
+msgstr "Bahamas"
+
+#: admin/includes/country-list.php:24
+msgid "Bahrain"
+msgstr "Baréin"
+
+#: admin/includes/country-list.php:25
+msgid "Bangladesh"
+msgstr "Bangladesh"
+
+#: admin/includes/country-list.php:26
+msgid "Barbados"
+msgstr "Barbados"
+
+#: admin/includes/country-list.php:27
+msgid "Belarus"
+msgstr "Bielorrusia"
+
+#: admin/includes/country-list.php:28
+msgid "Belgium"
+msgstr "Bélgica"
+
+#: admin/includes/country-list.php:29
+msgid "Belau"
+msgstr "Belau"
+
+#: admin/includes/country-list.php:30
+msgid "Belize"
+msgstr "Belice"
+
+#: admin/includes/country-list.php:31
+msgid "Benin"
+msgstr "Benín"
+
+#: admin/includes/country-list.php:32
+msgid "Bermuda"
+msgstr "Bermuda"
+
+#: admin/includes/country-list.php:33
+msgid "Bhutan"
+msgstr "Bután"
+
+#: admin/includes/country-list.php:34
+msgid "Bolivia"
+msgstr "Bolivia"
+
+#: admin/includes/country-list.php:35
+msgid "Bonaire, Saint Eustatius and Saba"
+msgstr "Caribe Neerlandés"
+
+#: admin/includes/country-list.php:36
+msgid "Bosnia and Herzegovina"
+msgstr "Bosnia y Herzegovina"
+
+#: admin/includes/country-list.php:37
+msgid "Botswana"
+msgstr "Botsuana"
+
+#: admin/includes/country-list.php:38
+msgid "Bouvet Island"
+msgstr "Isla Bouvet"
+
+#: admin/includes/country-list.php:39
+msgid "Brazil"
+msgstr "Brasil"
+
+#: admin/includes/country-list.php:40
+msgid "British Indian Ocean Territory"
+msgstr "Territorio Británico del Océano Índico"
+
+#: admin/includes/country-list.php:41
+msgid "British Virgin Islands"
+msgstr "Islas Vírgenes Británicas"
+
+#: admin/includes/country-list.php:42
+msgid "Brunei"
+msgstr "Brunéi"
+
+#: admin/includes/country-list.php:43
+msgid "Bulgaria"
+msgstr "Bulgaria"
+
+#: admin/includes/country-list.php:44
+msgid "Burkina Faso"
+msgstr "Burkina Faso"
+
+#: admin/includes/country-list.php:45
+msgid "Burundi"
+msgstr "Burundi"
+
+#: admin/includes/country-list.php:46
+msgid "Cambodia"
+msgstr "Camboya"
+
+#: admin/includes/country-list.php:47
+msgid "Cameroon"
+msgstr "Camerún"
+
+#: admin/includes/country-list.php:48
+msgid "Canada"
+msgstr "Canadá"
+
+#: admin/includes/country-list.php:49
+msgid "Cape Verde"
+msgstr "Cabo Verde"
+
+#: admin/includes/country-list.php:50
+msgid "Cayman Islands"
+msgstr "Islas Caimán"
+
+#: admin/includes/country-list.php:51
+msgid "Central African Republic"
+msgstr "República Centroafricana"
+
+#: admin/includes/country-list.php:52
+msgid "Chad"
+msgstr "Chad"
+
+#: admin/includes/country-list.php:53
+msgid "Chile"
+msgstr "Chile"
+
+#: admin/includes/country-list.php:54
+msgid "China"
+msgstr "China"
+
+#: admin/includes/country-list.php:55
+msgid "Christmas Island"
+msgstr "Isla de Pascua"
+
+#: admin/includes/country-list.php:56
+msgid "Cocos (Keeling) Islands"
+msgstr "Islas Cocos"
+
+#: admin/includes/country-list.php:57
+msgid "Colombia"
+msgstr "Colombia"
+
+#: admin/includes/country-list.php:58
+msgid "Comoros"
+msgstr "Comoras"
+
+#: admin/includes/country-list.php:59
+msgid "Congo (Brazzaville)"
+msgstr "Congo (Brazzaville)"
+
+#: admin/includes/country-list.php:60
+msgid "Congo (Kinshasa)"
+msgstr "Congo (Kinshasa)"
+
+#: admin/includes/country-list.php:61
+msgid "Cook Islands"
+msgstr "Islas Cook"
+
+#: admin/includes/country-list.php:62
+msgid "Costa Rica"
+msgstr "Costa Rica"
+
+#: admin/includes/country-list.php:63
+msgid "Croatia"
+msgstr "Croacia"
+
+#: admin/includes/country-list.php:64
+msgid "Cuba"
+msgstr "Cuba"
+
+#: admin/includes/country-list.php:65
+msgid "Cura&ccedil;ao"
+msgstr "Cura&ccedil;ao"
+
+#: admin/includes/country-list.php:66
+msgid "Cyprus"
+msgstr "Chipre"
+
+#: admin/includes/country-list.php:67
+msgid "Czech Republic"
+msgstr "República Checa"
+
+#: admin/includes/country-list.php:68
+msgid "Denmark"
+msgstr "Dinamarca"
+
+#: admin/includes/country-list.php:69
+msgid "Djibouti"
+msgstr "Yibuti"
+
+#: admin/includes/country-list.php:70
+msgid "Dominica"
+msgstr "Dominica"
+
+#: admin/includes/country-list.php:71
+msgid "Dominican Republic"
+msgstr "República Dominicana"
+
+#: admin/includes/country-list.php:72
+msgid "Ecuador"
+msgstr "Ecuador"
+
+#: admin/includes/country-list.php:73
+msgid "Egypt"
+msgstr "Egipto"
+
+#: admin/includes/country-list.php:74
+msgid "El Salvador"
+msgstr "El Salvador"
+
+#: admin/includes/country-list.php:75
+msgid "Equatorial Guinea"
+msgstr "Guinea Ecuatorial"
+
+#: admin/includes/country-list.php:76
+msgid "Eritrea"
+msgstr "Eritrea"
+
+#: admin/includes/country-list.php:77
+msgid "Estonia"
+msgstr "Estonia"
+
+#: admin/includes/country-list.php:78
+msgid "Ethiopia"
+msgstr "Etiopía"
+
+#: admin/includes/country-list.php:79
+msgid "Falkland Islands"
+msgstr "Islas Malvinas"
+
+#: admin/includes/country-list.php:80
+msgid "Faroe Islands"
+msgstr "Islas Feroe"
+
+#: admin/includes/country-list.php:81
+msgid "Fiji"
+msgstr "Fiji"
+
+#: admin/includes/country-list.php:82
+msgid "Finland"
+msgstr "Finlandia"
+
+#: admin/includes/country-list.php:83
+msgid "France"
+msgstr "Francia"
+
+#: admin/includes/country-list.php:84
+msgid "French Guiana"
+msgstr "Guyana Francesa"
+
+#: admin/includes/country-list.php:85
+msgid "French Polynesia"
+msgstr "Polinesia Francesa"
+
+#: admin/includes/country-list.php:86
+msgid "French Southern Territories"
+msgstr "Territorios Australes Franceses"
+
+#: admin/includes/country-list.php:87
+msgid "Gabon"
+msgstr "Gabón"
+
+#: admin/includes/country-list.php:88
+msgid "Gambia"
+msgstr "Gambia"
+
+#: admin/includes/country-list.php:89
+msgid "Georgia"
+msgstr "Georgia"
+
+#: admin/includes/country-list.php:90
+msgid "Germany"
+msgstr "Alemania"
+
+#: admin/includes/country-list.php:91
+msgid "Ghana"
+msgstr "Ghana"
+
+#: admin/includes/country-list.php:92
+msgid "Gibraltar"
+msgstr "Gibraltar"
+
+#: admin/includes/country-list.php:93
+msgid "Greece"
+msgstr "Grecia"
+
+#: admin/includes/country-list.php:94
+msgid "Greenland"
+msgstr "Groenlandia"
+
+#: admin/includes/country-list.php:95
+msgid "Grenada"
+msgstr "Granada"
+
+#: admin/includes/country-list.php:96
+msgid "Guadeloupe"
+msgstr "Guadalupe"
+
+#: admin/includes/country-list.php:97
+msgid "Guam"
+msgstr "Guam"
+
+#: admin/includes/country-list.php:98
+msgid "Guatemala"
+msgstr "Guatemala"
+
+#: admin/includes/country-list.php:99
+msgid "Guernsey"
+msgstr "Guernsey"
+
+#: admin/includes/country-list.php:100
+msgid "Guinea"
+msgstr "Guinea"
+
+#: admin/includes/country-list.php:101
+msgid "Guinea-Bissau"
+msgstr "Guinea-Bissau"
+
+#: admin/includes/country-list.php:102
+msgid "Guyana"
+msgstr "Guyana"
+
+#: admin/includes/country-list.php:103
+msgid "Haiti"
+msgstr "Haití"
+
+#: admin/includes/country-list.php:104
+msgid "Heard Island and McDonald Islands"
+msgstr "Islas Heard y McDonald"
+
+#: admin/includes/country-list.php:105
+msgid "Honduras"
+msgstr "Honduras"
+
+#: admin/includes/country-list.php:106
+msgid "Hong Kong"
+msgstr "Hong Kong"
+
+#: admin/includes/country-list.php:107
+msgid "Hungary"
+msgstr "Hungría"
+
+#: admin/includes/country-list.php:108
+msgid "Iceland"
+msgstr "Islandia"
+
+#: admin/includes/country-list.php:109
+msgid "India"
+msgstr "India"
+
+#: admin/includes/country-list.php:110
+msgid "Indonesia"
+msgstr "Indonesia"
+
+#: admin/includes/country-list.php:111
+msgid "Iran"
+msgstr "Irán"
+
+#: admin/includes/country-list.php:112
+msgid "Iraq"
+msgstr "Irak"
+
+#: admin/includes/country-list.php:113
+msgid "Ireland"
+msgstr "Irlanda"
+
+#: admin/includes/country-list.php:114
+msgid "Isle of Man"
+msgstr "Isla de Man"
+
+#: admin/includes/country-list.php:115
+msgid "Israel"
+msgstr "Israel"
+
+#: admin/includes/country-list.php:116
+msgid "Italy"
+msgstr "Italia"
+
+#: admin/includes/country-list.php:117
+msgid "Ivory Coast"
+msgstr "Costa de Marfil"
+
+#: admin/includes/country-list.php:118
+msgid "Jamaica"
+msgstr "Jamaica"
+
+#: admin/includes/country-list.php:119
+msgid "Japan"
+msgstr "Japón"
+
+#: admin/includes/country-list.php:120
+msgid "Jersey"
+msgstr "Jersey"
+
+#: admin/includes/country-list.php:121
+msgid "Jordan"
+msgstr "Jordania"
+
+#: admin/includes/country-list.php:122
+msgid "Kazakhstan"
+msgstr "Kazajistán"
+
+#: admin/includes/country-list.php:123
+msgid "Kenya"
+msgstr "Kenia"
+
+#: admin/includes/country-list.php:124
+msgid "Kiribati"
+msgstr "Kiribati"
+
+#: admin/includes/country-list.php:125
+msgid "Kuwait"
+msgstr "Kuwait"
+
+#: admin/includes/country-list.php:126
+msgid "Kyrgyzstan"
+msgstr "Kirguistán"
+
+#: admin/includes/country-list.php:127
+msgid "Laos"
+msgstr "Laos"
+
+#: admin/includes/country-list.php:128
+msgid "Latvia"
+msgstr "Letonia"
+
+#: admin/includes/country-list.php:129
+msgid "Lebanon"
+msgstr "Líbano"
+
+#: admin/includes/country-list.php:130
+msgid "Lesotho"
+msgstr "Lesoto"
+
+#: admin/includes/country-list.php:131
+msgid "Liberia"
+msgstr "Liberia"
+
+#: admin/includes/country-list.php:132
+msgid "Libya"
+msgstr "Libia"
+
+#: admin/includes/country-list.php:133
+msgid "Liechtenstein"
+msgstr "Liechtenstein"
+
+#: admin/includes/country-list.php:134
+msgid "Lithuania"
+msgstr "Lituania"
+
+#: admin/includes/country-list.php:135
+msgid "Luxembourg"
+msgstr "Luxemburgo"
+
+#: admin/includes/country-list.php:136
+msgid "Macao S.A.R., China"
+msgstr "Macao"
+
+#: admin/includes/country-list.php:137
+msgid "Macedonia"
+msgstr "Macedonia"
+
+#: admin/includes/country-list.php:138
+msgid "Madagascar"
+msgstr "Madagascar"
+
+#: admin/includes/country-list.php:139
+msgid "Malawi"
+msgstr "Malaui"
+
+#: admin/includes/country-list.php:140
+msgid "Malaysia"
+msgstr "Malasia"
+
+#: admin/includes/country-list.php:141
+msgid "Maldives"
+msgstr "Maldivas"
+
+#: admin/includes/country-list.php:142
+msgid "Mali"
+msgstr "Malí"
+
+#: admin/includes/country-list.php:143
+msgid "Malta"
+msgstr "Malta"
+
+#: admin/includes/country-list.php:144
+msgid "Marshall Islands"
+msgstr "Islas Marshall"
+
+#: admin/includes/country-list.php:145
+msgid "Martinique"
+msgstr "Martinica"
+
+#: admin/includes/country-list.php:146
+msgid "Mauritania"
+msgstr "Mauritania"
+
+#: admin/includes/country-list.php:147
+msgid "Mauritius"
+msgstr "Mauricio"
+
+#: admin/includes/country-list.php:148
+msgid "Mayotte"
+msgstr "Mayotte"
+
+#: admin/includes/country-list.php:149
+msgid "Mexico"
+msgstr "México"
+
+#: admin/includes/country-list.php:150
+msgid "Micronesia"
+msgstr "Micronesia"
+
+#: admin/includes/country-list.php:151
+msgid "Moldova"
+msgstr "Moldavia"
+
+#: admin/includes/country-list.php:152
+msgid "Monaco"
+msgstr "Mónaco"
+
+#: admin/includes/country-list.php:153
+msgid "Mongolia"
+msgstr "Mongolia"
+
+#: admin/includes/country-list.php:154
+msgid "Montenegro"
+msgstr "Montenegro"
+
+#: admin/includes/country-list.php:155
+msgid "Montserrat"
+msgstr "Montserrat"
+
+#: admin/includes/country-list.php:156
+msgid "Morocco"
+msgstr "Marruecos"
+
+#: admin/includes/country-list.php:157
+msgid "Mozambique"
+msgstr "Mozambique"
+
+#: admin/includes/country-list.php:158
+msgid "Myanmar"
+msgstr "Myanmar"
+
+#: admin/includes/country-list.php:159
+msgid "Namibia"
+msgstr "Namibia"
+
+#: admin/includes/country-list.php:160
+msgid "Nauru"
+msgstr "Nauru"
+
+#: admin/includes/country-list.php:161
+msgid "Nepal"
+msgstr "Nepal"
+
+#: admin/includes/country-list.php:162
+msgid "Netherlands"
+msgstr "Países Bajos"
+
+#: admin/includes/country-list.php:163
+msgid "New Caledonia"
+msgstr "Nueva Caledonia"
+
+#: admin/includes/country-list.php:164
+msgid "New Zealand"
+msgstr "Nueva Zelanda"
+
+#: admin/includes/country-list.php:165
+msgid "Nicaragua"
+msgstr "Nicaragua"
+
+#: admin/includes/country-list.php:166
+msgid "Niger"
+msgstr "Níger"
+
+#: admin/includes/country-list.php:167
+msgid "Nigeria"
+msgstr "Nigeria"
+
+#: admin/includes/country-list.php:168
+msgid "Niue"
+msgstr "Niue"
+
+#: admin/includes/country-list.php:169
+msgid "Norfolk Island"
+msgstr "Isla Norfolk"
+
+#: admin/includes/country-list.php:170
+msgid "Northern Mariana Islands"
+msgstr "Islas Marianas del Norte"
+
+#: admin/includes/country-list.php:171
+msgid "North Korea"
+msgstr "Corea del Norte"
+
+#: admin/includes/country-list.php:172
+msgid "Norway"
+msgstr "Noruega"
+
+#: admin/includes/country-list.php:173
+msgid "Oman"
+msgstr "Omán"
+
+#: admin/includes/country-list.php:174
+msgid "Pakistan"
+msgstr "Pakistán"
+
+#: admin/includes/country-list.php:175
+msgid "Palestinian Territory"
+msgstr "Territorio Palestino"
+
+#: admin/includes/country-list.php:176
+msgid "Panama"
+msgstr "Panamá"
+
+#: admin/includes/country-list.php:177
+msgid "Papua New Guinea"
+msgstr "Papua Nueva Guinea"
+
+#: admin/includes/country-list.php:178
+msgid "Paraguay"
+msgstr "Paraguay"
+
+#: admin/includes/country-list.php:179
+msgid "Peru"
+msgstr "Perú"
+
+#: admin/includes/country-list.php:180
+msgid "Philippines"
+msgstr "Filipinas"
+
+#: admin/includes/country-list.php:181
+msgid "Pitcairn"
+msgstr "Pitcairn"
+
+#: admin/includes/country-list.php:182
+msgid "Poland"
+msgstr "Polonia"
+
+#: admin/includes/country-list.php:183
+msgid "Portugal"
+msgstr "Portugal"
+
+#: admin/includes/country-list.php:184
+msgid "Puerto Rico"
+msgstr "Puerto Rico"
+
+#: admin/includes/country-list.php:185
+msgid "Qatar"
+msgstr "Qatar"
+
+#: admin/includes/country-list.php:186
+msgid "Reunion"
+msgstr "Reunión"
+
+#: admin/includes/country-list.php:187
+msgid "Romania"
+msgstr "Rumania"
+
+#: admin/includes/country-list.php:188
+msgid "Russia"
+msgstr "Rusia"
+
+#: admin/includes/country-list.php:189
+msgid "Rwanda"
+msgstr "Ruanda"
+
+#: admin/includes/country-list.php:190
+msgid "Saint Barth&eacute;lemy"
+msgstr "San Bartolomé"
+
+#: admin/includes/country-list.php:191
+msgid "Saint Helena"
+msgstr "Santa Elena"
+
+#: admin/includes/country-list.php:192
+msgid "Saint Kitts and Nevis"
+msgstr "San Cristóbal y Nieves"
+
+#: admin/includes/country-list.php:193
+msgid "Saint Lucia"
+msgstr "Santa Lucía"
+
+#: admin/includes/country-list.php:194
+msgid "Saint Martin (French part)"
+msgstr "San Martin (Parte Francesa)"
+
+#: admin/includes/country-list.php:195
+msgid "Saint Martin (Dutch part)"
+msgstr "San Martín (parte de Holanda)"
+
+#: admin/includes/country-list.php:196
+msgid "Saint Pierre and Miquelon"
+msgstr "San Pedro y Miquelón"
+
+#: admin/includes/country-list.php:197
+msgid "Saint Vincent and the Grenadines"
+msgstr "San Vicente y las Granadinas"
+
+#: admin/includes/country-list.php:198
+msgid "San Marino"
+msgstr "San Marino"
+
+#: admin/includes/country-list.php:199
+msgid "S&atilde;o Tom&eacute; and Pr&iacute;ncipe"
+msgstr "Santo Tomé y Príncipe"
+
+#: admin/includes/country-list.php:200
+msgid "Saudi Arabia"
+msgstr "Arabia Saudita"
+
+#: admin/includes/country-list.php:201
+msgid "Senegal"
+msgstr "Senegal"
+
+#: admin/includes/country-list.php:202
+msgid "Serbia"
+msgstr "Serbia"
+
+#: admin/includes/country-list.php:203
+msgid "Seychelles"
+msgstr "Seychelles"
+
+#: admin/includes/country-list.php:204
+msgid "Sierra Leone"
+msgstr "Sierra Leona"
+
+#: admin/includes/country-list.php:205
+msgid "Singapore"
+msgstr "Singapur"
+
+#: admin/includes/country-list.php:206
+msgid "Slovakia"
+msgstr "Eslovaquia"
+
+#: admin/includes/country-list.php:207
+msgid "Slovenia"
+msgstr "Eslovenia"
+
+#: admin/includes/country-list.php:208
+msgid "Solomon Islands"
+msgstr "Islas Salomón"
+
+#: admin/includes/country-list.php:209
+msgid "Somalia"
+msgstr "Somalia"
+
+#: admin/includes/country-list.php:210
+msgid "South Africa"
+msgstr "Sudáfrica"
+
+#: admin/includes/country-list.php:211
+msgid "South Georgia/Sandwich Islands"
+msgstr "Islas Georgias y Sandwich del Sur"
+
+#: admin/includes/country-list.php:212
+msgid "South Korea"
+msgstr "Corea del Sur"
+
+#: admin/includes/country-list.php:213
+msgid "South Sudan"
+msgstr "Sudán del Sur"
+
+#: admin/includes/country-list.php:214
+msgid "Spain"
+msgstr "España"
+
+#: admin/includes/country-list.php:215
+msgid "Sri Lanka"
+msgstr "Sri Lanka"
+
+#: admin/includes/country-list.php:216
+msgid "Sudan"
+msgstr "Sudán"
+
+#: admin/includes/country-list.php:217
+msgid "Suriname"
+msgstr "Surinam"
+
+#: admin/includes/country-list.php:218
+msgid "Svalbard and Jan Mayen"
+msgstr "Islas Svalbard y Jan Mayen"
+
+#: admin/includes/country-list.php:219
+msgid "Swaziland"
+msgstr "Suazilandia"
+
+#: admin/includes/country-list.php:220
+msgid "Sweden"
+msgstr "Suecia"
+
+#: admin/includes/country-list.php:221
+msgid "Switzerland"
+msgstr "Suiza"
+
+#: admin/includes/country-list.php:222
+msgid "Syria"
+msgstr "Siria"
+
+#: admin/includes/country-list.php:223
+msgid "Taiwan"
+msgstr "Taiwan"
+
+#: admin/includes/country-list.php:224
+msgid "Tajikistan"
+msgstr "Tayikistán"
+
+#: admin/includes/country-list.php:225
+msgid "Tanzania"
+msgstr "Tanzania"
+
+#: admin/includes/country-list.php:226
+msgid "Thailand"
+msgstr "Tailandia"
+
+#: admin/includes/country-list.php:227
+msgid "Timor-Leste"
+msgstr "Timor Oriental"
+
+#: admin/includes/country-list.php:228
+msgid "Togo"
+msgstr "Togo"
+
+#: admin/includes/country-list.php:229
+msgid "Tokelau"
+msgstr "Tokelau"
+
+#: admin/includes/country-list.php:230
+msgid "Tonga"
+msgstr "Tonga"
+
+#: admin/includes/country-list.php:231
+msgid "Trinidad and Tobago"
+msgstr "Trinidad y Tobago"
+
+#: admin/includes/country-list.php:232
+msgid "Tunisia"
+msgstr "Túnez"
+
+#: admin/includes/country-list.php:233
+msgid "Turkey"
+msgstr "Turquía"
+
+#: admin/includes/country-list.php:234
+msgid "Turkmenistan"
+msgstr "Turkmenistán"
+
+#: admin/includes/country-list.php:235
+msgid "Turks and Caicos Islands"
+msgstr "Islas Turcas y Caicos"
+
+#: admin/includes/country-list.php:236
+msgid "Tuvalu"
+msgstr "Tuvalu"
+
+#: admin/includes/country-list.php:237
+msgid "Uganda"
+msgstr "Uganda"
+
+#: admin/includes/country-list.php:238
+msgid "Ukraine"
+msgstr "Ucrania"
+
+#: admin/includes/country-list.php:239
+msgid "United Arab Emirates"
+msgstr "Emiratos Árabes Unidos"
+
+#: admin/includes/country-list.php:240
+msgid "United Kingdom (UK)"
+msgstr "Reino Unido (UK)"
+
+#: admin/includes/country-list.php:241
+msgid "United States (US)"
+msgstr "Estados Unidos (US)"
+
+#: admin/includes/country-list.php:242
+msgid "United States (US) Minor Outlying Islands"
+msgstr "Islas menores de los EE.UU."
+
+#: admin/includes/country-list.php:243
+msgid "United States (US) Virgin Islands"
+msgstr "Estados Unidos (EE.UU.) Islas Vírgenes"
+
+#: admin/includes/country-list.php:244
+msgid "Uruguay"
+msgstr "Uruguay"
+
+#: admin/includes/country-list.php:245
+msgid "Uzbekistan"
+msgstr "Uzbekistán"
+
+#: admin/includes/country-list.php:246
+msgid "Vanuatu"
+msgstr "Vanuatu"
+
+#: admin/includes/country-list.php:247
+msgid "Vatican"
+msgstr "Vaticano"
+
+#: admin/includes/country-list.php:248
+msgid "Venezuela"
+msgstr "Venezuela"
+
+#: admin/includes/country-list.php:249
+msgid "Vietnam"
+msgstr "Vietnam"
+
+#: admin/includes/country-list.php:250
+msgid "Wallis and Futuna"
+msgstr "Wallis y Futuna"
+
+#: admin/includes/country-list.php:251
+msgid "Western Sahara"
+msgstr "Sahara Occidental"
+
+#: admin/includes/country-list.php:252
+msgid "Samoa"
+msgstr "Samoa"
+
+#: admin/includes/country-list.php:253
+msgid "Yemen"
+msgstr "Yemen"
+
+#: admin/includes/country-list.php:254
+msgid "Zambia"
+msgstr "Zambia"
+
+#: admin/includes/country-list.php:255
+msgid "Zimbabwe"
+msgstr "Zimbabue"
+
+#: admin/includes/functions.php:16
+msgid "January"
+msgstr "Enero"
+
+#: admin/includes/functions.php:17
+msgid "February"
+msgstr "Febrero"
+
+#: admin/includes/functions.php:18
+msgid "March"
+msgstr "Marzo"
+
+#: admin/includes/functions.php:19
+msgid "April"
+msgstr "Abril"
+
+#: admin/includes/functions.php:20
+msgid "May"
+msgstr "Mayo"
+
+#: admin/includes/functions.php:21
+msgid "June"
+msgstr "Junio"
+
+#: admin/includes/functions.php:22
+msgid "July "
+msgstr "Julio "
+
+#: admin/includes/functions.php:23
+msgid "August"
+msgstr "Agosto"
+
+#: admin/includes/functions.php:24
+msgid "September"
+msgstr "Septiembre"
+
+#: admin/includes/functions.php:25
+msgid "October"
+msgstr "Octubre"
+
+#: admin/includes/functions.php:26
+msgid "November"
+msgstr "Noviembre"
+
+#: admin/includes/functions.php:27
+msgid "December"
+msgstr "Diciembre"
+
+#: admin/includes/functions.php:164
+msgid "Invoice"
+msgstr "Factura"
+
+#: admin/includes/functions.php:165
+msgid "Label"
+msgstr "Etiqueta"
+
+#: admin/includes/functions.php:166
+msgid "Waybill"
+msgstr "Porte"
+
+#: admin/includes/functions.php:305
+msgid "Shipper Information"
+msgstr "Información Remitente"
+
+#: admin/includes/functions.php:307
+msgid "Receiver Information"
+msgstr "Información del destinatario"
+
+#: admin/includes/functions.php:309 templates/waybill.tpl.php:74
+msgid "Shipment Information"
+msgstr "Información de envío"
+
+#: admin/includes/functions.php:321 admin/includes/functions.php:734
+msgid "Default"
+msgstr "Por defecto"
+
+#: admin/includes/functions.php:335
+msgid "Current page"
+msgstr "Página actual"
+
+#: admin/includes/functions.php:336
+msgid "Total page"
+msgstr "Total de páginas"
+
+#: admin/includes/functions.php:523 admin/includes/hooks.php:113
+msgid "Pending Client"
+msgstr "Cliente pendiente"
+
+#: admin/includes/functions.php:758 admin/includes/functions.php:804
+msgid "Something went wrong saving your shipment. Please reload and try again"
+msgstr "Algo salió mal salvando su envío. Vuelva a cargar e inténtelo de nuevo"
+
+#: admin/includes/functions.php:798
+msgid "Shipment "
+msgstr "Envío "
+
+#: admin/includes/functions.php:798
+msgid " has been successfully saved."
+msgstr " se ha guardado correctamente."
+
+#: admin/includes/functions.php:820
+msgid "Shipper Name"
+msgstr "Nombre del Remitente"
+
+#: admin/includes/functions.php:825
+msgid "Receiver Name"
+msgstr "Nombre del destinatario"
+
+#: admin/includes/functions.php:1044
+msgid "Previous"
+msgstr "Anterior"
+
+#: admin/includes/functions.php:1045
+msgid "Next"
+msgstr "Siguiente"
+
+#: admin/includes/functions.php:1046
+msgid "Shipment Pagination"
+msgstr "Paginación de envíos"
+
+#: admin/includes/functions.php:1090
+msgid "First"
+msgstr "Primero"
+
+#: admin/includes/functions.php:1092
+msgid "previous"
+msgstr "anterior"
+
+#: admin/includes/functions.php:1107
+msgid "next"
+msgstr "siguiente"
+
+#: admin/includes/functions.php:1111
+msgid "Last"
+msgstr "Último"
+
+#: admin/includes/functions.php:1239 templates/account.tpl.php:73
+msgid "First Name"
+msgstr "Nombre"
+
+#: admin/includes/functions.php:1249 templates/account.tpl.php:77
+msgid "Last Name"
+msgstr "Apellido"
+
+#: admin/includes/functions.php:1259 templates/account.tpl.php:51
+#: templates/account.tpl.php:81
+msgid "Phone"
+msgstr "Teléfono:"
+
+#: admin/includes/functions.php:1284
+msgid "Company"
+msgstr "Empresa"
+
+#: admin/includes/functions.php:1294
+msgid "Address line 1"
+msgstr "Dirección"
+
+#: admin/includes/functions.php:1304
+msgid "Address line 2"
+msgstr "Dirección línea 2"
+
+#: admin/includes/functions.php:1314
+msgid "City"
+msgstr "Ciudad"
+
+#: admin/includes/functions.php:1324
+msgid "Postcode / ZIP"
+msgstr "Código postal"
+
+#: admin/includes/functions.php:1334
+msgid "Country"
+msgstr "País"
+
+#: admin/includes/functions.php:1344
+msgid "State / County"
+msgstr "Estado / Provincia"
+
+#: admin/includes/functions.php:1403 admin/includes/functions.php:1458
+msgid "Orders"
+msgstr "Pedidos"
+
+#: admin/includes/functions.php:1424
+msgid "Profile"
+msgstr "Perfil"
+
+#: admin/includes/functions.php:1443
+msgid "Shipments"
+msgstr "Envíos"
+
+#: admin/includes/functions.php:1445
+#, php-format
+msgid ""
+"Shipments <span class=\"badge badge-pill bg-danger align-top\">%s</span>"
+msgstr "Envíos <span class=\"badge badge-pill bg-danger align-top\">%s</span>"
+
+#: admin/includes/hooks-shipment.php:10 templates/orders.tpl.php:33
+msgid "View"
+msgstr "Ver"
+
+#: admin/includes/hooks-shipment.php:16
+msgid "Edit"
+msgstr "Editar"
+
+#: admin/includes/hooks-shipment.php:21
+msgid "Trash"
+msgstr "Papelera"
+
+#: admin/includes/hooks-shipment.php:21 templates/shipment-history.tpl.php:64
+#: templates/shipments.php:37 templates/shipments.php:97
+msgid "Delete"
+msgstr "Borrar"
+
+#: admin/includes/hooks-shipment.php:44
+msgid "Tracking Number"
+msgstr "Número de seguimiento"
+
+#: admin/includes/hooks-shipment.php:51
+msgid "New"
+msgstr "Nuevo"
+
+#: admin/includes/hooks-shipment.php:67 admin/includes/map.php:153
+#: templates/filter-shipment.php:17
+msgid "Status"
+msgstr "Estado"
+
+#: admin/includes/hooks-shipment.php:74 templates/orders.tpl.php:8
+msgid "Shipment Type"
+msgstr "Tipo de envío"
+
+#: admin/includes/hooks-shipment.php:82 admin/includes/hooks.php:846
+#: templates/shipments.php:27 templates/shipments.php:87
+msgid "Print"
+msgstr "Imprimir"
+
+#: admin/includes/hooks.php:103
+msgid "Client Approval"
+msgstr "Aprobación del cliente"
+
+#: admin/includes/hooks.php:110
+msgid "Disabled"
+msgstr "Desactivado"
+
+#: admin/includes/hooks.php:115
+msgid "Approved"
+msgstr "Aprobado"
+
+#: admin/includes/hooks.php:140 admin/includes/hooks.php:795
+msgid "Hi there,"
+msgstr "Hola,"
+
+#: admin/includes/hooks.php:141 admin/includes/hooks.php:796
+#, php-format
+msgid "Welcome to %s! Here's how to log in:"
+msgstr "Bienvenido a %s! Aquí puedes iniciar sesión:"
+
+#: admin/includes/hooks.php:142
+#, php-format
+msgid "Login URL:  %s"
+msgstr "URL de inicio de sesión: %s"
+
+#: admin/includes/hooks.php:143 admin/includes/hooks.php:798
+#: admin/includes/hooks.php:818
+#, php-format
+msgid "Username: %s"
+msgstr "Nombre de usuario: %s"
+
+#: admin/includes/hooks.php:144
+#, php-format
+msgid "Password: %s"
+msgstr "Contraseña: %s"
+
+#: admin/includes/hooks.php:145
+#, php-format
+msgid "If you have any problems, please contact our support at %s."
+msgstr ""
+"Si tiene algún problema, póngase en contacto con nuestro soporte en %s."
+
+#: admin/includes/hooks.php:146 admin/includes/hooks.php:802
+msgid "Thank you for trusting us!"
+msgstr "¡Gracias por confiar en nosotros!"
+
+#: admin/includes/hooks.php:165 admin/includes/hooks.php:565
+msgid "Client"
+msgstr "Cliente"
+
+#: admin/includes/hooks.php:167
+msgid "-- Select Client --"
+msgstr "-- Seleccione Cliente --"
+
+#: admin/includes/hooks.php:183 admin/includes/hooks.php:592
+msgid "Agent"
+msgstr "Agente"
+
+#: admin/includes/hooks.php:185
+msgid "-- Select Agent --"
+msgstr "-- Seleccione Agente --"
+
+#: admin/includes/hooks.php:201 admin/includes/hooks.php:576
+msgid "Employee"
+msgstr "Empleado"
+
+#: admin/includes/hooks.php:203
+msgid "-- Select Employee --"
+msgstr "-- Seleccione Empleado --"
+
+#: admin/includes/hooks.php:224
+msgid "Date Created"
+msgstr "Fecha de creación"
+
+#: admin/includes/hooks.php:226 templates/graph.php:55
+msgid "to"
+msgstr "a"
+
+#: admin/includes/hooks.php:278
+#, php-format
+msgid "Date Created: %s to %s"
+msgstr "Fecha de creación: %s a %s"
+
+#: admin/includes/hooks.php:285
+msgid "Dashboard"
+msgstr "Escritorio"
+
+#: admin/includes/hooks.php:312 admin/includes/hooks.php:328
+#: admin/includes/hooks.php:331 templates/filter-shipment.php:61
+#: templates/filter-shipment.php:62 templates/orders.tpl.php:7
+msgid "Shipment Number"
+msgstr "Nombre del Remitente"
+
+#: admin/includes/hooks.php:360
+msgid "Bulk Assign"
+msgstr "Asignación masiva"
+
+#: admin/includes/hooks.php:462
+msgid "Select Template"
+msgstr "Selecciona una plantilla"
+
+#: admin/includes/hooks.php:494
+msgid "BOL"
+msgstr "ES  BOL"
+
+#: admin/includes/hooks.php:543
+msgid "Not a member?"
+msgstr "¿Aún no eres miembro?"
+
+#: admin/includes/hooks.php:543 templates/registration.tpl.php:3
+#: templates/registration.tpl.php:9
+msgid "Registration"
+msgstr "Registro"
+
+#: admin/includes/hooks.php:543 templates/registration-form.tpl.php:44
+msgid "Register"
+msgstr "Registrarse"
+
+#: admin/includes/hooks.php:793 admin/includes/hooks.php:814
+msgid "From: "
+msgstr "De: "
+
+#: admin/includes/hooks.php:799 admin/includes/hooks.php:819
+#, php-format
+msgid "Email: %s"
+msgstr "Correo electrónico: %s"
+
+#: admin/includes/hooks.php:800
+msgid ""
+"Password: The one you entered in the registration form. (For security "
+"reason, we save encripted password)"
+msgstr ""
+"Contraseña: La que ingresó en el formulario de registro. (Por razones de "
+"seguridad, guardamos la contraseña encriptada)"
+
+#: admin/includes/hooks.php:801
+#, php-format
+msgid "If you have any problems, please contact me at %s."
+msgstr "Si tiene algún problema, póngase en contacto conmigo en % s."
+
+#: admin/includes/hooks.php:816
+msgid "Hi Admin,"
+msgstr "Hola Admin,"
+
+#: admin/includes/hooks.php:817
+#, php-format
+msgid "New user registration on your site %s:"
+msgstr "Nuevo registro de usuario en su sitio %s:"
+
+#: admin/includes/language.php:9
+msgid "Please activate your license key for WPCargo Frontend Manager"
+msgstr "Active su clave de licencia para WPCargo Frontend Manager"
+
+#: admin/includes/language.php:12
+msgid "Warning: Frontend Manager Dashboard found, please set up."
+msgstr ""
+"Advertencia: Se ha encontrado el panel de Frontend Manager, configúrelo."
+
+#: admin/includes/language.php:12
+msgid "Frontend Manager Dashboard"
+msgstr "Panel de frontend Manager"
+
+#: admin/includes/language.php:12
+msgid "Set up Dashboard"
+msgstr "Configurar el panel"
+
+#: admin/includes/language.php:15
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\" target=\"_blank"
+"\">WPTaskForce License Helper</a> plugin to be active!"
+msgstr ""
+"Este plugin requiere <a href=\"http://wpcargo.com/\" target=\"_blank"
+"\">WPTaskForce License Helper</a> plugin para estar activo!"
+
+#: admin/includes/language.php:18
+msgid ""
+"This plugin requires <a href=\"https://wordpress.org/plugins/wpcargo/\" "
+"target=\"_blank\">WPCargo</a> plugin to be active!"
+msgstr ""
+"Este plugin requiere <a href=\"https://wordpress.org/plugins/wpcargo/\" "
+"target=\"_blank\">WPCargo</a> plugin para estar activo!"
+
+#: admin/includes/language.php:21
+msgid ""
+"This plugin requires <strong>WPCargo Custom Field Add-ons</strong> plugin to "
+"be active!"
+msgstr ""
+"Este plugin requiere <strong>WPCargo Custom Field Add-ons</strong> plugin "
+"para estar activo!"
+
+#: admin/includes/language.php:24
+msgid "Cheating, uh?"
+msgstr "Engañando, ¿eh?"
+
+#: admin/includes/language.php:27
+msgid "Frontend Dashboard Settings"
+msgstr "Configuración del panel frontend"
+
+#: admin/includes/language.php:30 admin/includes/settings.php:55
+msgid "Frontend Dashboard"
+msgstr "Panel de control delantero"
+
+#: admin/includes/language.php:33
+msgid "WPCargo Dashboard Sidebar Menu"
+msgstr "Menú de la barra lateral del panel de control de WPCargo"
+
+#: admin/includes/language.php:36
+msgid "WPCargo Dashboard Top Menu"
+msgstr "WpCargo Dashboard Menú superior"
+
+#: admin/includes/language.php:39
+msgid "No order has been made."
+msgstr "No se ha realizado ningún pedido."
+
+#: admin/includes/language.php:42
+msgid "You have been successfully registered."
+msgstr "Te has registrado correctamente."
+
+#: admin/includes/language.php:45
+msgid ""
+"You have been successfully registered. We'll check your account for approval "
+"and send you notification in your registered email with registration status."
+msgstr ""
+"Se ha registrado correctamente. Verificaremos la aprobación de su cuenta y "
+"le enviaremos una notificación en su correo electrónico registrado con el "
+"estado de registro."
+
+#: admin/includes/language.php:48
+msgid "Something went wrong in your registration. Please reload and try again"
+msgstr "Algo salió mal en su registro. Vuelva a cargar e inténtelo de nuevo"
+
+#: admin/includes/language.php:51
+msgid "You do not have permissions to view this data."
+msgstr "No tiene permisos para ver estos datos."
+
+#: admin/includes/language.php:54
+msgid "Removing License failed, License not registered in domain"
+msgstr "Eliminación de la licencia falló, licencia no registrada en el dominio"
+
+#: admin/includes/language.php:57
+msgid "License has been successfully removed from"
+msgstr "La licencia se ha eliminado con éxito de"
+
+#: admin/includes/map.php:151 templates/orders.tpl.php:6
+msgid "Date"
+msgstr "Fecha"
+
+#: admin/includes/map.php:152
+msgid "Location"
+msgstr "Ubicación"
+
+#: admin/includes/print-hooks.php:50
+msgid "From:"
+msgstr "De: "
+
+#: admin/includes/print-hooks.php:57
+msgid "To:"
+msgstr "Para:"
+
+#: admin/includes/print-hooks.php:113
+msgid "SHIPPER DETAILS:"
+msgstr "DETALLES DEL REMITENTE:"
+
+#: admin/includes/print-hooks.php:120
+msgid "RECEIVER DETAILS:"
+msgstr "DETALLES DEL RECEPTOR:"
+
+#: admin/includes/print-hooks.php:142
+msgid "PACKAGE DETAILS:"
+msgstr "DETALLES DEL PAQUETE:"
+
+#: admin/includes/print-hooks.php:195
+msgid "Bill of Lading"
+msgstr "ES Bill of Lading"
+
+#: admin/includes/print-hooks.php:202
+msgid "SHIP FROM"
+msgstr "ENVIAR DESDE"
+
+#: admin/includes/print-hooks.php:211
+msgid "SHIP TO"
+msgstr "ENVIAR A"
+
+#: admin/includes/print-hooks.php:233
+msgid "ADDITIONAL INFORMATION"
+msgstr "INFORMACIÓN ADICIONAL"
+
+#: admin/includes/print-hooks.php:306
+msgid "PACKAGE DETAILS"
+msgstr "DETALLES DEL PAQUETE"
+
+#: admin/includes/settings.php:44
+msgid "WPCargo Dashboard Attributes"
+msgstr "Atributos del panel de WPCargo"
+
+#: admin/includes/settings.php:65
+msgid "Menu Icon Class"
+msgstr "Icono para"
+
+#: admin/includes/settings.php:67
+msgid ""
+"Note: This menu icon will display only in WPCargo Dashboard Template. You "
+"can find icons available in"
+msgstr ""
+"Nota: Este icono de menú solo se mostrará en la plantilla de panel de "
+"WPCargo. Puedes encontrar iconos disponibles en"
+
+#: admin/includes/settings.php:67
+msgid "ei. dashboard"
+msgstr "Ie. salpicadero"
+
+#: admin/includes/widgets.php:10
+msgid "FM Dashboard- Top"
+msgstr "Tablero de FM- Arriba"
+
+#: admin/includes/widgets.php:12
+msgid ""
+"This widget display in the Frontend Manager dashboard report top area page."
+msgstr ""
+"Este widget se muestra en la página del área superior del informe del panel "
+"de Frontend Manager."
+
+#: admin/includes/widgets.php:19
+msgid "FM Dashboard- Middle"
+msgstr "Tablero de FM- Medio"
+
+#: admin/includes/widgets.php:21
+msgid ""
+"This widget display in the Frontend Manager dashboard report middle area "
+"page."
+msgstr ""
+"Este widget se muestra en la página del área central del informe del panel "
+"de Frontend Manager."
+
+#: admin/includes/widgets.php:28
+msgid "FM Dashboard- Bottom"
+msgstr "Tablero de FM- Parte inferior"
+
+#: admin/includes/widgets.php:30
+msgid ""
+"This widget display in the Frontend Manager dashboard report bottom area "
+"page."
+msgstr ""
+"Este widget se muestra en la página inferior del informe del panel de "
+"Frontend Manager."
+
+#: admin/includes/widgets.php:37
+msgid "FM Shipment - Top"
+msgstr "Envío FM - Arriba"
+
+#: admin/includes/widgets.php:39
+msgid ""
+"This widget display in the Frontend Manager dashboard shipment top area page."
+msgstr ""
+"Este widget se muestra en la página del área superior de envío del panel de "
+"Frontend Manager."
+
+#: admin/includes/widgets.php:46
+msgid "FM Shipment - Bottom"
+msgstr "Envío FM - Abajo"
+
+#: admin/includes/widgets.php:48
+msgid ""
+"This widget display in the Frontend Manager dashboard shipment bottom area "
+"page."
+msgstr ""
+"Este widget se muestra en la página del área inferior del panel de control "
+"de Frontend Manager."
+
+#: admin/templates/address-mapping.tpl.php:1
+msgid "Add registration info to address book"
+msgstr "Agregar información de registro a la libreta de direcciones"
+
+#: admin/templates/address-mapping.tpl.php:2
+msgid "Note: This data while add to the address book if plugin is installed."
+msgstr ""
+"Nota: Estos datos mientras se agregan a la libreta de direcciones si el "
+"complemento está instalado."
+
+#: admin/templates/address-mapping.tpl.php:10
+msgid "Select Field"
+msgstr "Seleccionar campo"
+
+#: admin/templates/print-settings.tpl.php:1
+msgid "Print Setup"
+msgstr "Configuración de impresión"
+
+#: admin/templates/print-settings.tpl.php:4
+msgid "Enable Chinese Fonts"
+msgstr "Habilitar fuentes chinas"
+
+#: admin/templates/print-settings.tpl.php:7
+msgid ""
+"Note: This will add additional font family for simplified chinese fonts. "
+"Enable this option only if you use simplified chinese fonts in you site."
+msgstr ""
+"Nota: Esto agregará una familia de fuentes adicional para las fuentes chinas "
+"simplificadas. Habilite esta opción solo si usa fuentes de chino "
+"simplificado en su sitio."
+
+#: admin/templates/print-settings.tpl.php:11
+msgid "Enable Print BOL"
+msgstr "Habilitar BOL de impresión"
+
+#: admin/templates/print-settings.tpl.php:14
+msgid "Note: This will add additional print functionality for BOL."
+msgstr "Nota: Esto agregará funcionalidad de impresión adicional para BOL."
+
+#: admin/templates/print-settings.tpl.php:18
+msgid "Waybill Paper Size"
+msgstr "Tamaño del papel de la carta de porte"
+
+#: admin/templates/print-settings.tpl.php:21
+msgid "Select Size"
+msgstr "Selecciona el tamaño"
+
+#: admin/templates/print-settings.tpl.php:22
+msgid "A1"
+msgstr "A1"
+
+#: admin/templates/print-settings.tpl.php:23
+msgid "A2"
+msgstr "A2"
+
+#: admin/templates/print-settings.tpl.php:24
+msgid "A3"
+msgstr "A3"
+
+#: admin/templates/print-settings.tpl.php:25
+msgid "A4"
+msgstr "A4"
+
+#: admin/templates/print-settings.tpl.php:26
+msgid "A5"
+msgstr "A5"
+
+#: admin/templates/print-settings.tpl.php:27
+msgid "Letter"
+msgstr ""
+
+#: admin/templates/print-settings.tpl.php:28
+msgid "Legal"
+msgstr "Legal"
+
+#: admin/templates/print-settings.tpl.php:29
+#: admin/templates/print-settings.tpl.php:32
+msgid "Tabloid"
+msgstr "Tabloide"
+
+#: admin/templates/print-settings.tpl.php:30
+msgid "Executive"
+msgstr "Ejecutivo"
+
+#: admin/templates/print-settings.tpl.php:31
+msgid "Folio"
+msgstr "Cuentas"
+
+#: admin/templates/print-settings.tpl.php:37
+msgid "Waybill Paper Orientation"
+msgstr "Orientación del papel de la carta de porte"
+
+#: admin/templates/print-settings.tpl.php:40
+msgid "Select Orientation"
+msgstr "Seleccionar orientación"
+
+#: admin/templates/print-settings.tpl.php:41
+msgid "Landscape"
+msgstr "Paisaje"
+
+#: admin/templates/print-settings.tpl.php:42
+msgid "Portrait"
+msgstr "Retrato"
+
+#: admin/templates/print-settings.tpl.php:48
+msgid "Print documents on checkout"
+msgstr "Imprimir documentos en el proceso de pago"
+
+#: admin/templates/print-settings.tpl.php:63
+msgid "Label print per package setup"
+msgstr "Impresión de etiquetas por configuración de paquete"
+
+#: admin/templates/print-settings.tpl.php:66
+msgid "Enable label multi print"
+msgstr "Habilitar la impresión múltiple de etiquetas"
+
+#: admin/templates/print-settings.tpl.php:69
+msgid "Note: This will print the label per shipment package."
+msgstr "Nota: Esto imprimirá la etiqueta por paquete de envío."
+
+#: admin/templates/print-settings.tpl.php:73
+msgid "Label pagination template"
+msgstr "Plantilla de paginación de etiquetas"
+
+#: admin/templates/print-settings.tpl.php:76
+msgid "Default template {current_page} of {total_page}."
+msgstr "Plantilla predeterminada {current_page} de {total_page}."
+
+#: admin/templates/print-settings.tpl.php:79
+msgid "Available Shortcodes"
+msgstr "Shortcodes disponibles"
+
+#: admin/templates/sequence-settings.tpl.php:1
+msgid "Shipment Number Sequence"
+msgstr "Secuencia de números de envío"
+
+#: admin/templates/sequence-settings.tpl.php:4
+msgid "Enable Sequence Number?"
+msgstr "¿Habilitar el número de secuencia?"
+
+#: admin/templates/sequence-settings.tpl.php:7
+msgid "Note: This will generate a shipment sequence number."
+msgstr "Nota: Esto generará un número de secuencia de envío."
+
+#: admin/templates/sequence-settings.tpl.php:11
+msgid "Shipment Number Start"
+msgstr "Inicio del número de envío"
+
+#: admin/templates/sequence-settings.tpl.php:14
+msgid "Note: This will be the starting shipment number."
+msgstr "Nota: Este será el número de envío inicial."
+
+#: admin/templates/sequence-settings.tpl.php:18
+msgid "Shipment Number Digit"
+msgstr "Dígito del número de envío"
+
+#: admin/templates/sequence-settings.tpl.php:21
+msgid "Note: This will be the N of shipment Number digit."
+msgstr "Nota: Este será el N del dígito del número de envío."
+
+#: admin/templates/sequence-settings.tpl.php:27
+msgid "Reset Sequence Number"
+msgstr "Restablecer número de secuencia"
+
+#: admin/templates/settings.tpl.php:8
+msgid "Number of Days Filtered"
+msgstr "Número de días filtrados"
+
+#: admin/templates/settings.tpl.php:11
+msgid ""
+"Note: This is the number of days for the date range to be filtered and "
+"displayed in the shipments list table."
+msgstr ""
+"Nota: Este es el número de días para que el intervalo de fechas se filtre y "
+"se muestre en la tabla de la lista de envíos."
+
+#: admin/templates/settings.tpl.php:15
+msgid "Enable Registration Approval"
+msgstr "Habilitar la aprobación de registro"
+
+#: admin/templates/settings.tpl.php:18
+msgid "Note: This will need the registration to approve the account."
+msgstr "Nota: Esto necesitará el registro para aprobar la cuenta."
+
+#: admin/templates/settings.tpl.php:22
+msgid "Disable Registration"
+msgstr "Deshabilitar registro"
+
+#: admin/templates/settings.tpl.php:25
+msgid ""
+"Note: This will remove member registration functionality in the login page."
+msgstr ""
+"Nota: Esto eliminará la funcionalidad de registro de miembros en la página "
+"de inicio de sesión."
+
+#: admin/templates/settings.tpl.php:29
+msgid "Disable Create Order"
+msgstr "Deshabilitar Crear pedido"
+
+#: admin/templates/settings.tpl.php:32
+msgid ""
+"Note: This will remove the Create Shipment functionality in the front-end "
+"dashboard."
+msgstr ""
+"Nota: Esto eliminará la funcionalidad Crear envío en el panel front-end."
+
+#: admin/templates/settings.tpl.php:36
+msgid "Allow Employee Access all Shipment?"
+msgstr "¿Permitir que los empleados accedan a todos los envíos?"
+
+#: admin/templates/settings.tpl.php:39
+msgid "Note: This will allow wpcargo employee access all the shipment."
+msgstr ""
+"Nota: Esto permitirá que el empleado de wpcargo acceda a todo el envío."
+
+#: admin/templates/settings.tpl.php:43
+msgid "Allow Client to Add Shipment?"
+msgstr "¿Permitir que el cliente agregue el envío?"
+
+#: admin/templates/settings.tpl.php:46
+msgid ""
+"Note: This will allow wpcargo client to add shipment in the dashboard page."
+msgstr ""
+"Nota: Esto permitirá al cliente de wpcargo agregar el envío en la página del "
+"tablero."
+
+#: admin/templates/settings.tpl.php:50
+msgid "Set default shipment status"
+msgstr "Establecer el estado predeterminado del envío"
+
+#: admin/templates/settings.tpl.php:55
+msgid "Select Status"
+msgstr "Seleccione Estado"
+
+#: admin/templates/settings.tpl.php:61
+msgid "NO Status found."
+msgstr "NO se ha encontrado ningún estado."
+
+#: admin/templates/settings.tpl.php:67
+msgid "Set Page as Frontend Dashboard admin"
+msgstr "Establecer página como administrador del panel frontend"
+
+#: admin/templates/settings.tpl.php:72
+msgid "Select Page"
+msgstr "Seleccionar página"
+
+#: admin/templates/settings.tpl.php:78
+msgid "NO pages found."
+msgstr "NO se han encontrado páginas."
+
+#: admin/templates/settings.tpl.php:84
+msgid "Access Frontend Dashboard Roles"
+msgstr "Acceder a los roles del panel de frontend"
+
+#: admin/templates/settings.tpl.php:95 admin/templates/settings.tpl.php:110
+#: admin/templates/settings.tpl.php:125
+msgid "Note: This options applicable only in front end dashboard."
+msgstr "Nota: Esta opción solo se aplica en el panel de control front-end."
+
+#: admin/templates/settings.tpl.php:99
+msgid "Update Shipments Roles"
+msgstr "Actualizar roles de envíos"
+
+#: admin/templates/settings.tpl.php:114
+msgid "Delete Shipments Roles"
+msgstr "Eliminar roles de envíos"
+
+#: admin/templates/settings.tpl.php:132
+msgid "Save Settings"
+msgstr "Guardar ajustes"
+
+#: templates/account.tpl.php:3 templates/account.tpl.php:9
+msgid "My Account"
+msgstr "Mi cuenta"
+
+#: templates/account.tpl.php:10 templates/bulk-assign-shipment.tpl.php:25
+#: templates/registration.tpl.php:10
+msgid "Close"
+msgstr "Cerrar"
+
+#: templates/account.tpl.php:28 templates/profile.tpl.php:18
+msgid "Upload Avatar"
+msgstr "Cargar Avatar"
+
+#: templates/account.tpl.php:29 templates/profile.tpl.php:19
+msgid "Save Avatar"
+msgstr "Guardar Avatar"
+
+#: templates/account.tpl.php:34
+msgid "Email:"
+msgstr "Email:"
+
+#: templates/account.tpl.php:42 templates/registration-address.tpl.php:1
+msgid "Address Information"
+msgstr "Datos del Domicilio"
+
+#: templates/account.tpl.php:100 templates/registration-address.tpl.php:15
+msgid "Select"
+msgstr "Seleccionar"
+
+#: templates/account.tpl.php:134 templates/bulk-assign-shipment.tpl.php:26
+#: templates/profile.tpl.php:90
+msgid "Update"
+msgstr "Actualizar"
+
+#: templates/add-shipment.php:58
+msgid "Add Shipment"
+msgstr "Añadir envío"
+
+#: templates/assign-shipment.tpl.php:10
+msgid "Assign shipment to"
+msgstr "Asignar envío a"
+
+#: templates/bulk-assign-shipment.tpl.php:6
+msgid "Bulk Shipment Update"
+msgstr "Actualización de envíos a granel"
+
+#: templates/bulk-assign-shipment.tpl.php:13
+msgid "Shipment List"
+msgstr "Lista de envíos"
+
+#: templates/dashboard.php:159
+msgid "Copyright"
+msgstr "Copyright"
+
+#: templates/filter-shipment.php:19
+msgid "All Status"
+msgstr "Todos los Estados"
+
+#: templates/filter-shipment.php:32 templates/filter-shipment.php:42
+msgid "All"
+msgstr "Todo"
+
+#: templates/filter-shipment.php:50 templates/graph.php:59
+msgid "Filter"
+msgstr "Filtro"
+
+#: templates/filter-shipment.php:52
+msgid "Reset"
+msgstr "Reiniciar"
+
+#: templates/filter-shipment.php:63
+msgid "Search"
+msgstr "Buscar"
+
+#: templates/graph.php:53
+msgid "Date Range"
+msgstr "Rango de Fecha"
+
+#: templates/graph.php:85
+#, php-format
+msgid "%s of 100%s"
+msgstr "%s de 100%s"
+
+#: templates/graph.php:103
+#, php-format
+msgid "Report from %s to %s"
+msgstr "Informe de %s a %s"
+
+#: templates/graph.php:104
+msgid "Total shipment updates"
+msgstr "Actualizaciones totales de envíos"
+
+#: templates/history.tpl.php:7
+msgid "History"
+msgstr "Historial"
+
+#: templates/login.php:8
+msgid "Error"
+msgstr "Error"
+
+#: templates/login.php:8
+msgid "Please check your Username or Password."
+msgstr "Por favor, compruebe su nombre de usuario o contraseña."
+
+#: templates/login.php:13
+msgid "Sign in"
+msgstr "Iniciar sesión"
+
+#: templates/login.php:26
+msgid "Username/E-mail"
+msgstr "Nombre de usuario/Correo electrónico"
+
+#: templates/login.php:44
+msgid "Remember me"
+msgstr "Recuérdame"
+
+#: templates/login.php:48
+msgid "Forgot password?"
+msgstr "¿Olvidaste tu contraseña?"
+
+#: templates/login.php:53
+msgid "Login"
+msgstr "Iniciar sesión"
+
+#: templates/multiple-package.tpl.php:8
+msgid "Packages"
+msgstr "Paquetes"
+
+#: templates/multiple-package.tpl.php:66
+msgid "Add Package"
+msgstr "Agregar Paquete"
+
+#: templates/navigation.tpl.php:9 templates/navigation.tpl.php:121
+msgid "Site Logo"
+msgstr "Logo del sitio"
+
+#: templates/navigation.tpl.php:24 templates/navigation.tpl.php:25
+msgid "Track Shipment"
+msgstr "Localiza el envío"
+
+#: templates/navigation.tpl.php:50 templates/navigation.tpl.php:131
+msgid "Create Shipment"
+msgstr "Crear envío"
+
+#: templates/navigation.tpl.php:106
+msgid "My Profile"
+msgstr "Mi Perfil"
+
+#: templates/navigation.tpl.php:108
+msgid "Notifications"
+msgstr "Notificaciones"
+
+#: templates/navigation.tpl.php:110
+msgid "Logout"
+msgstr "Cerrar sesión"
+
+#: templates/no-shipment.php:5
+msgid "Error 404"
+msgstr "Error 404"
+
+#: templates/no-shipment.php:6
+msgid "Shipment not found!"
+msgstr "¡Envío no encontrado!"
+
+#: templates/nocf-error.tpl.php:7
+msgid "Error Found!"
+msgstr "¡Error encontrado!"
+
+#: templates/nocf-error.tpl.php:10
+msgid ""
+"Cannot find WPCargo Custom Field Add-ons plugin activated in your system."
+msgstr ""
+"No puede encontrar el complemento WPCargo Custom Field Add-ons activado en "
+"su sistema."
+
+#: templates/nocf-error.tpl.php:14
+msgid "Please purchase"
+msgstr "Por favor, compre"
+
+#: templates/nocf-error.tpl.php:14
+msgid "WPCargo Custom Field Add-ons"
+msgstr "Complementos de campo personalizados de WPCargo"
+
+#: templates/nocf-error.tpl.php:14
+msgid "https://www.wpcargo.com/product/wpcargo-custom-field-add-ons/"
+msgstr "https://www.wpcargo.com/product/wpcargo-custom-field-add-ons/"
+
+#: templates/orders.tpl.php:5
+msgid "Order ID"
+msgstr "ID del pedido"
+
+#: templates/orders.tpl.php:9
+msgid "Order Status"
+msgstr "Estado del pedido"
+
+#: templates/orders.tpl.php:10
+msgid "Shipment Status"
+msgstr "ES Shipment Status"
+
+#: templates/orders.tpl.php:11
+msgid "Amount"
+msgstr "Cantidad"
+
+#: templates/orders.tpl.php:26
+msgid "Orders Account"
+msgstr "Cuenta de pedidos"
+
+#: templates/profile.tpl.php:29 templates/registration-form.tpl.php:7
+msgid "Personal Information"
+msgstr "Información personal"
+
+#: templates/profile.tpl.php:53 templates/registration-form.tpl.php:19
+msgid "Billing Information"
+msgstr "Datos de facturación"
+
+#: templates/profile.tpl.php:95 templates/profile.tpl.php:111
+msgid "Change Password"
+msgstr "Cambiar Contraseña"
+
+#: templates/profile.tpl.php:100
+msgid "New Password"
+msgstr "Nueva contraseña"
+
+#: templates/profile.tpl.php:105 templates/registration-form.tpl.php:38
+msgid "Confirm Password"
+msgstr "Confirmar contraseña"
+
+#: templates/register-email-notification.tpl.php:4
+msgid "Dear"
+msgstr "Estimado"
+
+#: templates/register-email-notification.tpl.php:5
+msgid "You have successfully registered!"
+msgstr "¡Se ha registrado con éxito!"
+
+#: templates/register-notification-admin.tpl.php:4
+msgid "A new user has registered!"
+msgstr "¡Un nuevo usuario se ha registrado!"
+
+#: templates/register-notification-admin.tpl.php:5
+msgid "Name: "
+msgstr "Nombre: "
+
+#: templates/restricted.tpl.php:4
+msgid "Sorry your are not allowed to access this page!"
+msgstr "¡Lo sentimos, no se le permite acceder a esta página!"
+
+#: templates/restricted.tpl.php:5
+msgid "Please contact administrator for your permission."
+msgstr "Póngase en contacto con el administrador para obtener su permiso."
+
+#: templates/shipment-history.tpl.php:4
+msgid "History Records"
+msgstr "Registros de la historia"
+
+#: templates/shipment-history.tpl.php:73
+msgid "No Shipment History Found."
+msgstr "No se ha encontrado el historial de envíos."
+
+#: templates/shipments.php:16
+msgid "Show entries"
+msgstr "Mostrar entradas"
+
+#: templates/shipments.php:18
+msgid "entries"
+msgstr "entradas"
+
+#: templates/shipments.php:115
+msgid "No shipment found."
+msgstr "No se encontró ningún envío."
+
+#: templates/shipments.php:117
+#, php-format
+msgid "Searched:  \"%s\""
+msgstr "Buscado: \"%s\""
+
+#: templates/shipments.php:119
+#, php-format
+msgid "%s to %s"
+msgstr "%s a %s"
+
+#: templates/update-shipment.php:66
+msgid "Update Shipment"
+msgstr "Actualizar envío"
+
+#: templates/waybill.tpl.php:66
+msgid "Shipper Address"
+msgstr "Dirección del remitente"
+
+#: templates/waybill.tpl.php:70
+msgid "Receiver Address"
+msgstr "Dirección del receptor"
+
+#. Plugin Name of the plugin/theme
+msgid "WPCargo Frontend Manager"
+msgstr "WPCargo Frontend Manager"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wptaskforce.com/"
+msgstr "http://wptaskforce.com/"
+
+#. Description of the plugin/theme
+msgid ""
+"WPCargo Frontend Manager provides user dashboard in the frontend of your "
+"site and mobile responsive ready. Available shortcode [wpcfe_registration]"
+msgstr ""
+"WPCargo Frontend Manager proporciona un panel de control de usuario en el "
+"frontend de su sitio y listo para la recepción móvil. Código corto "
+"disponible [wpcfe_registration]"
+
+#. Author of the plugin/theme
+msgid "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"
+msgstr "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"
+
+#~ msgid "N Sequence is not yet set. N Sequence reset failed."
+#~ msgstr ""
+#~ "La secuencia N aún no está configurada. Error en el restablecimiento de "
+#~ "la secuencia N."
+
+#~ msgid "Month"
+#~ msgstr "Mes"
+
+#~ msgid "-- Select Month --"
+#~ msgstr "-- Seleccionar mes --"
+
+#~ msgid "Year"
+#~ msgstr "Año"
+
+#~ msgid "-- Select Year --"
+#~ msgstr "-- Seleccionar año --"

@@ -1,0 +1,115 @@
+html[dir="rtl"] #shipment-list td {
+    text-align: right;
+}
+.sidebar-fixed {
+	height: 100vh;
+	width: 270px;
+	-webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	z-index: 1050;
+	background-color: #fff;
+	padding: 1.5rem;
+	padding-top: 0;
+}
+.sidebar-fixed .list-group .active {
+	-webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.sidebar-fixed .logo-wrapper {
+	padding: 1rem;
+}
+.sidebar-fixed .logo-wrapper img {
+	max-height: 50px;
+}
+
+
+span.toggle-password {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    right: 1.5rem;
+    top: 2.6rem;
+    z-index: 2;
+    color: #8e8e8e;
+}
+.modal span.toggle-password{
+	top: 2.1rem;
+}
+@media (max-width: 991px){
+	.sidebar-fixed {
+		display: none;
+	}
+	.navbar .img-fluid {
+		width: 150px!important;
+	}
+	.navbar-collapse.collapse.show .dashboard-page-menu{
+		border: none;
+		border-bottom: 1px solid rgba(0,0,0,.125);
+	}
+	.navbar-collapse .nav-section {
+		width: 100%!important;
+	}
+	.navbar-collapse.collapse.show .dashboard-page-menu{
+		border: none;
+		border-bottom: 1px solid rgba(0,0,0,.125);
+	}
+	.search-nav input {
+		border: none!important;
+	}
+	.search-nav form {
+		border-bottom: 1px solid rgba(0,0,0,.125);
+	}
+}
+@media (max-width: 1534px){
+	#shipment-filters form {
+		width: 100%!important;
+		margin-top: 20px;
+		padding: 0 15px;
+		max-width: 100%!important;
+    	flex: unset;
+	}
+	#wpcfe-search #search-shipment {
+		width: 100%!important;
+	}
+	#wpcfe-search .btn{
+	  margin-left: 15px!important;
+	}
+}
+@media (max-width: 1024px){
+	#wpcfe-filters .wpcfe-filter {
+		width: 100%!important;
+		margin-bottom: 10px;
+		max-width: 100%!important;
+	}
+	#wpcfe-filters .select2-container {
+		width: 100%!important;
+	}
+}
+@media (min-width: 992px) {
+	.navbar, .page-footer, main {
+		padding-left: 270px;
+	} 
+	.not-logged.navbar, .not-logged.page-footer, main.not-logged {
+		padding-left: 0; 
+	} 
+}
+@media (max-width: 480px) {
+	.table-top #shipment-sort {
+		float: unset!important;
+		margin: 0 5px!important;
+	}
+}
+@media (max-width: 768px) {
+	.update-shipment .row,
+	.add-shipment .row {
+		margin: 0;
+	}
+	#shipment_info .card-body div[id^="form-"]:not(:nth-last-child(-n+3)) {
+		width: 100%!important;
+	}
+	#wpcfe-packages-repeater th {
+		min-width: 100px;
+	}
+}

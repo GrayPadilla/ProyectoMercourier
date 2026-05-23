@@ -1,0 +1,2329 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPCargo Frontend Manager\n"
+"POT-Creation-Date: 2022-08-12 14:35+0800\n"
+"PO-Revision-Date: 2022-08-12 14:36+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpcargo-frontend-manager.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: admin/classes/class-core.php:54 admin/includes/hooks.php:78
+msgid "WPCargo Dashboard"
+msgstr "WP卡戈仪表板"
+
+#: admin/classes/class-fields.php:136
+msgid "-- Select One --"
+msgstr "——请选择一个——"
+
+#: admin/classes/class-fields.php:228
+msgid "Add Images / Upload Files"
+msgstr "添加图像 / 上传文件"
+
+#: admin/classes/class-fields.php:298 admin/includes/functions.php:1274
+msgid "Email"
+msgstr "邮箱"
+
+#: admin/classes/class-scripts.php:65
+msgid "Are you sure you want to delete this selected Shipment?"
+msgstr "您确定要删除此选定的装运吗？"
+
+#: admin/classes/class-scripts.php:66 admin/classes/class-scripts.php:118
+msgid "No shipment selected, Please select atleast one Shipment."
+msgstr "未选择发货，请选择最一个装运。"
+
+#: admin/classes/class-scripts.php:67 admin/classes/class-scripts.php:119
+msgid ""
+"Something went wrong while processing your request, please reload and try "
+"again."
+msgstr "处理请求时出了问题，请重新加载并重新尝试。"
+
+#: admin/classes/class-scripts.php:68
+msgid "Please enter more characters"
+msgstr "请输入1个或多个字符"
+
+#: admin/classes/class-scripts.php:69
+msgid "Please delete some character"
+msgstr "请删除一些字符"
+
+#: admin/classes/class-scripts.php:70 admin/classes/class-scripts.php:74
+msgid "Error loading results"
+msgstr "错误加载结果"
+
+#: admin/classes/class-scripts.php:71
+msgid "Loading more results"
+msgstr "正在载入更多结果……"
+
+#: admin/classes/class-scripts.php:72
+msgid "No results found"
+msgstr "未找到结果"
+
+#: admin/classes/class-scripts.php:73
+msgid "Searching..."
+msgstr "搜索中..."
+
+#: admin/classes/class-scripts.php:76
+msgid "Incorrect Email Format."
+msgstr "不正确的电子邮件格式。"
+
+#: admin/classes/class-scripts.php:77
+msgid "Email already Exist."
+msgstr "电子邮件已经存在。"
+
+#: admin/classes/class-scripts.php:78
+msgid "Password NOT matched."
+msgstr "密码不匹配。"
+
+#: admin/classes/class-scripts.php:79
+msgid "Password must at least 6 Characters."
+msgstr "密码必须至少 6 个字符。"
+
+#: admin/classes/class-scripts.php:81
+msgid "Username"
+msgstr "用户名"
+
+#: admin/classes/class-scripts.php:82 templates/login.php:31
+#: templates/registration-form.tpl.php:33
+msgid "Password"
+msgstr "密码"
+
+#: admin/classes/class-scripts.php:83
+msgid "Download"
+msgstr "下载"
+
+#: admin/classes/class-scripts.php:84
+msgid "Are you sure you want to delete section?"
+msgstr "您确定要删除部分吗？"
+
+#: admin/classes/class-scripts.php:85
+msgid "No shipment has been updated"
+msgstr "尚未更新任何装运"
+
+#: admin/classes/class-scripts.php:86
+msgid "Selected Shipements has been updated"
+msgstr "已更新选定的船舶"
+
+#: admin/classes/class-scripts.php:105 admin/includes/functions.php:102
+#: templates/profile.tpl.php:72
+msgid "-- Select Type --"
+msgstr "-选择类型-"
+
+#: admin/classes/class-scripts.php:116
+msgid "Select an option"
+msgstr "选择一个选项"
+
+#: admin/includes/ajax.php:14
+msgid "Something went wrong during process, Please try again."
+msgstr "过程中出了问题，请再试一次。"
+
+#: admin/includes/ajax.php:21 admin/includes/ajax.php:73
+msgid "Opsss! Sorry you are not allow to delete shipments"
+msgstr "行动！很抱歉，您不允许删除货件"
+
+#: admin/includes/ajax.php:32
+msgid "Shipment"
+msgstr "货件"
+
+#: admin/includes/ajax.php:32
+msgid "successfully deleted."
+msgstr "信息已被成功删除."
+
+#: admin/includes/ajax.php:89
+#, php-format
+msgid "You successfully deleted %s shipment."
+msgid_plural "You successfully deleted %s shipments."
+msgstr[0] "您已成功删除%s货。"
+
+#: admin/includes/ajax.php:182
+msgid "This is an existing shipment number."
+msgstr "这是一个现有的装运号。"
+
+#: admin/includes/ajax.php:195
+msgid ""
+"N Sequence reset success, please update the Shipment Number Start for your "
+"new shipment number starting sequence."
+msgstr "N 序列号重置成功，请更新新货件编号开始序列的货件编号开始时间。"
+
+#: admin/includes/ajax.php:201
+msgid "N Sequence reset failed, please reload the page and try again."
+msgstr "N 序列重置失败，请重新加载页面，然后重试。"
+
+#: admin/includes/country-list.php:7
+msgid "Afghanistan"
+msgstr "阿富汗"
+
+#: admin/includes/country-list.php:8
+msgid "&#197;land Islands"
+msgstr "&#197;奥兰群岛"
+
+#: admin/includes/country-list.php:9
+msgid "Albania"
+msgstr "阿尔巴尼亚"
+
+#: admin/includes/country-list.php:10
+msgid "Algeria"
+msgstr "阿尔及利亚"
+
+#: admin/includes/country-list.php:11
+msgid "American Samoa"
+msgstr "美属萨摩亚"
+
+#: admin/includes/country-list.php:12
+msgid "Andorra"
+msgstr "安道尔"
+
+#: admin/includes/country-list.php:13
+msgid "Angola"
+msgstr "安哥拉"
+
+#: admin/includes/country-list.php:14
+msgid "Anguilla"
+msgstr "安圭拉"
+
+#: admin/includes/country-list.php:15
+msgid "Antarctica"
+msgstr "南极洲"
+
+#: admin/includes/country-list.php:16
+msgid "Antigua and Barbuda"
+msgstr "安提瓜和巴布达"
+
+#: admin/includes/country-list.php:17
+msgid "Argentina"
+msgstr "阿根廷"
+
+#: admin/includes/country-list.php:18
+msgid "Armenia"
+msgstr "亚美尼亚"
+
+#: admin/includes/country-list.php:19
+msgid "Aruba"
+msgstr "阿鲁巴"
+
+#: admin/includes/country-list.php:20
+msgid "Australia"
+msgstr "澳大利亚"
+
+#: admin/includes/country-list.php:21
+msgid "Austria"
+msgstr "奥地利"
+
+#: admin/includes/country-list.php:22
+msgid "Azerbaijan"
+msgstr "阿塞拜疆"
+
+#: admin/includes/country-list.php:23
+msgid "Bahamas"
+msgstr "巴哈马"
+
+#: admin/includes/country-list.php:24
+msgid "Bahrain"
+msgstr "巴林"
+
+#: admin/includes/country-list.php:25
+msgid "Bangladesh"
+msgstr "孟加拉国"
+
+#: admin/includes/country-list.php:26
+msgid "Barbados"
+msgstr "巴巴多斯"
+
+#: admin/includes/country-list.php:27
+msgid "Belarus"
+msgstr "白俄罗斯"
+
+#: admin/includes/country-list.php:28
+msgid "Belgium"
+msgstr "比利时"
+
+#: admin/includes/country-list.php:29
+msgid "Belau"
+msgstr "贝劳"
+
+#: admin/includes/country-list.php:30
+msgid "Belize"
+msgstr "伯利兹"
+
+#: admin/includes/country-list.php:31
+msgid "Benin"
+msgstr "贝宁"
+
+#: admin/includes/country-list.php:32
+msgid "Bermuda"
+msgstr "百慕大"
+
+#: admin/includes/country-list.php:33
+msgid "Bhutan"
+msgstr "不丹"
+
+#: admin/includes/country-list.php:34
+msgid "Bolivia"
+msgstr "玻利维亚"
+
+#: admin/includes/country-list.php:35
+msgid "Bonaire, Saint Eustatius and Saba"
+msgstr "博内尔岛，圣尤斯特歇斯和萨巴"
+
+#: admin/includes/country-list.php:36
+msgid "Bosnia and Herzegovina"
+msgstr "波斯尼亚和黑塞哥维那"
+
+#: admin/includes/country-list.php:37
+msgid "Botswana"
+msgstr "博茨瓦纳"
+
+#: admin/includes/country-list.php:38
+msgid "Bouvet Island"
+msgstr "布维岛"
+
+#: admin/includes/country-list.php:39
+msgid "Brazil"
+msgstr "巴西"
+
+#: admin/includes/country-list.php:40
+msgid "British Indian Ocean Territory"
+msgstr "英属印度洋领地"
+
+#: admin/includes/country-list.php:41
+msgid "British Virgin Islands"
+msgstr "英属维尔京群岛"
+
+#: admin/includes/country-list.php:42
+msgid "Brunei"
+msgstr "文莱"
+
+#: admin/includes/country-list.php:43
+msgid "Bulgaria"
+msgstr "保加利亚"
+
+#: admin/includes/country-list.php:44
+msgid "Burkina Faso"
+msgstr "布基纳法索"
+
+#: admin/includes/country-list.php:45
+msgid "Burundi"
+msgstr "布隆迪"
+
+#: admin/includes/country-list.php:46
+msgid "Cambodia"
+msgstr "柬埔寨"
+
+#: admin/includes/country-list.php:47
+msgid "Cameroon"
+msgstr "喀麦隆"
+
+#: admin/includes/country-list.php:48
+msgid "Canada"
+msgstr "加拿大"
+
+#: admin/includes/country-list.php:49
+msgid "Cape Verde"
+msgstr "佛得角"
+
+#: admin/includes/country-list.php:50
+msgid "Cayman Islands"
+msgstr "开曼群岛"
+
+#: admin/includes/country-list.php:51
+msgid "Central African Republic"
+msgstr "中非共和国"
+
+#: admin/includes/country-list.php:52
+msgid "Chad"
+msgstr "乍得"
+
+#: admin/includes/country-list.php:53
+msgid "Chile"
+msgstr "智利"
+
+#: admin/includes/country-list.php:54
+msgid "China"
+msgstr "中国"
+
+#: admin/includes/country-list.php:55
+msgid "Christmas Island"
+msgstr "圣诞岛"
+
+#: admin/includes/country-list.php:56
+msgid "Cocos (Keeling) Islands"
+msgstr "科科斯（基林）群岛"
+
+#: admin/includes/country-list.php:57
+msgid "Colombia"
+msgstr "哥伦比亚"
+
+#: admin/includes/country-list.php:58
+msgid "Comoros"
+msgstr "科摩罗"
+
+#: admin/includes/country-list.php:59
+msgid "Congo (Brazzaville)"
+msgstr "刚果（布）"
+
+#: admin/includes/country-list.php:60
+msgid "Congo (Kinshasa)"
+msgstr "刚果（金）"
+
+#: admin/includes/country-list.php:61
+msgid "Cook Islands"
+msgstr "库克群岛"
+
+#: admin/includes/country-list.php:62
+msgid "Costa Rica"
+msgstr "哥斯达黎加"
+
+#: admin/includes/country-list.php:63
+msgid "Croatia"
+msgstr "克罗地亚"
+
+#: admin/includes/country-list.php:64
+msgid "Cuba"
+msgstr "古巴"
+
+#: admin/includes/country-list.php:65
+msgid "Cura&ccedil;ao"
+msgstr "Cura&ccedil;ao"
+
+#: admin/includes/country-list.php:66
+msgid "Cyprus"
+msgstr "塞浦路斯"
+
+#: admin/includes/country-list.php:67
+msgid "Czech Republic"
+msgstr "捷克共和国"
+
+#: admin/includes/country-list.php:68
+msgid "Denmark"
+msgstr "丹麦"
+
+#: admin/includes/country-list.php:69
+msgid "Djibouti"
+msgstr "吉布提"
+
+#: admin/includes/country-list.php:70
+msgid "Dominica"
+msgstr "多米尼加"
+
+#: admin/includes/country-list.php:71
+msgid "Dominican Republic"
+msgstr "多明尼加共和国"
+
+#: admin/includes/country-list.php:72
+msgid "Ecuador"
+msgstr "厄瓜多尔"
+
+#: admin/includes/country-list.php:73
+msgid "Egypt"
+msgstr "埃及"
+
+#: admin/includes/country-list.php:74
+msgid "El Salvador"
+msgstr "萨尔瓦多"
+
+#: admin/includes/country-list.php:75
+msgid "Equatorial Guinea"
+msgstr "赤道几内亚"
+
+#: admin/includes/country-list.php:76
+msgid "Eritrea"
+msgstr "厄立特里亚"
+
+#: admin/includes/country-list.php:77
+msgid "Estonia"
+msgstr "爱沙尼亚"
+
+#: admin/includes/country-list.php:78
+msgid "Ethiopia"
+msgstr "埃塞俄比亚"
+
+#: admin/includes/country-list.php:79
+msgid "Falkland Islands"
+msgstr "福克兰群岛"
+
+#: admin/includes/country-list.php:80
+msgid "Faroe Islands"
+msgstr "法罗群岛"
+
+#: admin/includes/country-list.php:81
+msgid "Fiji"
+msgstr "斐济"
+
+#: admin/includes/country-list.php:82
+msgid "Finland"
+msgstr "芬兰"
+
+#: admin/includes/country-list.php:83
+msgid "France"
+msgstr "法国"
+
+#: admin/includes/country-list.php:84
+msgid "French Guiana"
+msgstr "法属圭亚那"
+
+#: admin/includes/country-list.php:85
+msgid "French Polynesia"
+msgstr "法属波利尼西亚"
+
+#: admin/includes/country-list.php:86
+msgid "French Southern Territories"
+msgstr "法属南部领地"
+
+#: admin/includes/country-list.php:87
+msgid "Gabon"
+msgstr "加蓬"
+
+#: admin/includes/country-list.php:88
+msgid "Gambia"
+msgstr "冈比亚"
+
+#: admin/includes/country-list.php:89
+msgid "Georgia"
+msgstr "格鲁吉亚"
+
+#: admin/includes/country-list.php:90
+msgid "Germany"
+msgstr "德国"
+
+#: admin/includes/country-list.php:91
+msgid "Ghana"
+msgstr "加纳"
+
+#: admin/includes/country-list.php:92
+msgid "Gibraltar"
+msgstr "直布罗陀"
+
+#: admin/includes/country-list.php:93
+msgid "Greece"
+msgstr "希腊"
+
+#: admin/includes/country-list.php:94
+msgid "Greenland"
+msgstr "格陵兰"
+
+#: admin/includes/country-list.php:95
+msgid "Grenada"
+msgstr "格林纳达"
+
+#: admin/includes/country-list.php:96
+msgid "Guadeloupe"
+msgstr "瓜德罗普岛"
+
+#: admin/includes/country-list.php:97
+msgid "Guam"
+msgstr "关岛"
+
+#: admin/includes/country-list.php:98
+msgid "Guatemala"
+msgstr "危地马拉"
+
+#: admin/includes/country-list.php:99
+msgid "Guernsey"
+msgstr "根西岛"
+
+#: admin/includes/country-list.php:100
+msgid "Guinea"
+msgstr "几内亚"
+
+#: admin/includes/country-list.php:101
+msgid "Guinea-Bissau"
+msgstr "几内亚比绍"
+
+#: admin/includes/country-list.php:102
+msgid "Guyana"
+msgstr "圭亚那"
+
+#: admin/includes/country-list.php:103
+msgid "Haiti"
+msgstr "海地"
+
+#: admin/includes/country-list.php:104
+msgid "Heard Island and McDonald Islands"
+msgstr "赫德岛和麦克唐纳群岛"
+
+#: admin/includes/country-list.php:105
+msgid "Honduras"
+msgstr "洪都拉斯"
+
+#: admin/includes/country-list.php:106
+msgid "Hong Kong"
+msgstr "香港"
+
+#: admin/includes/country-list.php:107
+msgid "Hungary"
+msgstr "匈牙利"
+
+#: admin/includes/country-list.php:108
+msgid "Iceland"
+msgstr "冰岛"
+
+#: admin/includes/country-list.php:109
+msgid "India"
+msgstr "印度"
+
+#: admin/includes/country-list.php:110
+msgid "Indonesia"
+msgstr "印度尼西亚"
+
+#: admin/includes/country-list.php:111
+msgid "Iran"
+msgstr "伊朗"
+
+#: admin/includes/country-list.php:112
+msgid "Iraq"
+msgstr "伊拉克"
+
+#: admin/includes/country-list.php:113
+msgid "Ireland"
+msgstr "爱尔兰"
+
+#: admin/includes/country-list.php:114
+msgid "Isle of Man"
+msgstr "马恩岛"
+
+#: admin/includes/country-list.php:115
+msgid "Israel"
+msgstr "以色列"
+
+#: admin/includes/country-list.php:116
+msgid "Italy"
+msgstr "意大利"
+
+#: admin/includes/country-list.php:117
+msgid "Ivory Coast"
+msgstr "象牙海岸"
+
+#: admin/includes/country-list.php:118
+msgid "Jamaica"
+msgstr "牙买加"
+
+#: admin/includes/country-list.php:119
+msgid "Japan"
+msgstr "日本"
+
+#: admin/includes/country-list.php:120
+msgid "Jersey"
+msgstr "泽西"
+
+#: admin/includes/country-list.php:121
+msgid "Jordan"
+msgstr "约旦"
+
+#: admin/includes/country-list.php:122
+msgid "Kazakhstan"
+msgstr "哈萨克斯坦"
+
+#: admin/includes/country-list.php:123
+msgid "Kenya"
+msgstr "肯尼亚"
+
+#: admin/includes/country-list.php:124
+msgid "Kiribati"
+msgstr "基里巴斯"
+
+#: admin/includes/country-list.php:125
+msgid "Kuwait"
+msgstr "科威特"
+
+#: admin/includes/country-list.php:126
+msgid "Kyrgyzstan"
+msgstr "吉尔吉斯斯坦"
+
+#: admin/includes/country-list.php:127
+msgid "Laos"
+msgstr "老挝"
+
+#: admin/includes/country-list.php:128
+msgid "Latvia"
+msgstr "拉脱维亚"
+
+#: admin/includes/country-list.php:129
+msgid "Lebanon"
+msgstr "黎巴嫩"
+
+#: admin/includes/country-list.php:130
+msgid "Lesotho"
+msgstr "莱索托"
+
+#: admin/includes/country-list.php:131
+msgid "Liberia"
+msgstr "利比里亚"
+
+#: admin/includes/country-list.php:132
+msgid "Libya"
+msgstr "利比亚"
+
+#: admin/includes/country-list.php:133
+msgid "Liechtenstein"
+msgstr "列支敦士登"
+
+#: admin/includes/country-list.php:134
+msgid "Lithuania"
+msgstr "立陶宛"
+
+#: admin/includes/country-list.php:135
+msgid "Luxembourg"
+msgstr "卢森堡"
+
+#: admin/includes/country-list.php:136
+msgid "Macao S.A.R., China"
+msgstr "中国澳门特别行政区"
+
+#: admin/includes/country-list.php:137
+msgid "Macedonia"
+msgstr "马其顿"
+
+#: admin/includes/country-list.php:138
+msgid "Madagascar"
+msgstr "马达加斯加"
+
+#: admin/includes/country-list.php:139
+msgid "Malawi"
+msgstr "马拉维"
+
+#: admin/includes/country-list.php:140
+msgid "Malaysia"
+msgstr "马来西亚"
+
+#: admin/includes/country-list.php:141
+msgid "Maldives"
+msgstr "马尔代夫"
+
+#: admin/includes/country-list.php:142
+msgid "Mali"
+msgstr "马里"
+
+#: admin/includes/country-list.php:143
+msgid "Malta"
+msgstr "马耳他"
+
+#: admin/includes/country-list.php:144
+msgid "Marshall Islands"
+msgstr "马绍尔群岛"
+
+#: admin/includes/country-list.php:145
+msgid "Martinique"
+msgstr "马提尼克"
+
+#: admin/includes/country-list.php:146
+msgid "Mauritania"
+msgstr "毛里塔尼亚"
+
+#: admin/includes/country-list.php:147
+msgid "Mauritius"
+msgstr "毛里求斯"
+
+#: admin/includes/country-list.php:148
+msgid "Mayotte"
+msgstr "马约特"
+
+#: admin/includes/country-list.php:149
+msgid "Mexico"
+msgstr "墨西哥"
+
+#: admin/includes/country-list.php:150
+msgid "Micronesia"
+msgstr "密克罗尼西亚"
+
+#: admin/includes/country-list.php:151
+msgid "Moldova"
+msgstr "摩尔多瓦"
+
+#: admin/includes/country-list.php:152
+msgid "Monaco"
+msgstr "摩纳哥"
+
+#: admin/includes/country-list.php:153
+msgid "Mongolia"
+msgstr "蒙古"
+
+#: admin/includes/country-list.php:154
+msgid "Montenegro"
+msgstr "黑山"
+
+#: admin/includes/country-list.php:155
+msgid "Montserrat"
+msgstr "蒙特塞拉特"
+
+#: admin/includes/country-list.php:156
+msgid "Morocco"
+msgstr "摩洛哥"
+
+#: admin/includes/country-list.php:157
+msgid "Mozambique"
+msgstr "莫桑比克"
+
+#: admin/includes/country-list.php:158
+msgid "Myanmar"
+msgstr "缅甸"
+
+#: admin/includes/country-list.php:159
+msgid "Namibia"
+msgstr "纳米比亚"
+
+#: admin/includes/country-list.php:160
+msgid "Nauru"
+msgstr "瑙鲁"
+
+#: admin/includes/country-list.php:161
+msgid "Nepal"
+msgstr "尼泊尔"
+
+#: admin/includes/country-list.php:162
+msgid "Netherlands"
+msgstr "荷兰"
+
+#: admin/includes/country-list.php:163
+msgid "New Caledonia"
+msgstr "新喀里多尼亚"
+
+#: admin/includes/country-list.php:164
+msgid "New Zealand"
+msgstr "新西兰"
+
+#: admin/includes/country-list.php:165
+msgid "Nicaragua"
+msgstr "尼加拉瓜"
+
+#: admin/includes/country-list.php:166
+msgid "Niger"
+msgstr "尼日尔"
+
+#: admin/includes/country-list.php:167
+msgid "Nigeria"
+msgstr "尼日利亚"
+
+#: admin/includes/country-list.php:168
+msgid "Niue"
+msgstr "纽埃"
+
+#: admin/includes/country-list.php:169
+msgid "Norfolk Island"
+msgstr "诺福克岛"
+
+#: admin/includes/country-list.php:170
+msgid "Northern Mariana Islands"
+msgstr "北马里亚纳群岛"
+
+#: admin/includes/country-list.php:171
+msgid "North Korea"
+msgstr "朝鲜"
+
+#: admin/includes/country-list.php:172
+msgid "Norway"
+msgstr "挪威"
+
+#: admin/includes/country-list.php:173
+msgid "Oman"
+msgstr "阿曼"
+
+#: admin/includes/country-list.php:174
+msgid "Pakistan"
+msgstr "巴基斯坦"
+
+#: admin/includes/country-list.php:175
+msgid "Palestinian Territory"
+msgstr "巴勒斯坦领土"
+
+#: admin/includes/country-list.php:176
+msgid "Panama"
+msgstr "巴拿马"
+
+#: admin/includes/country-list.php:177
+msgid "Papua New Guinea"
+msgstr "巴布亚新几内亚"
+
+#: admin/includes/country-list.php:178
+msgid "Paraguay"
+msgstr "巴拉圭"
+
+#: admin/includes/country-list.php:179
+msgid "Peru"
+msgstr "秘鲁"
+
+#: admin/includes/country-list.php:180
+msgid "Philippines"
+msgstr "菲律宾"
+
+#: admin/includes/country-list.php:181
+msgid "Pitcairn"
+msgstr "皮特凯恩"
+
+#: admin/includes/country-list.php:182
+msgid "Poland"
+msgstr "波兰"
+
+#: admin/includes/country-list.php:183
+msgid "Portugal"
+msgstr "葡萄牙"
+
+#: admin/includes/country-list.php:184
+msgid "Puerto Rico"
+msgstr "波多黎各"
+
+#: admin/includes/country-list.php:185
+msgid "Qatar"
+msgstr "卡塔尔"
+
+#: admin/includes/country-list.php:186
+msgid "Reunion"
+msgstr "留尼汪"
+
+#: admin/includes/country-list.php:187
+msgid "Romania"
+msgstr "罗马尼亚"
+
+#: admin/includes/country-list.php:188
+msgid "Russia"
+msgstr "俄罗斯"
+
+#: admin/includes/country-list.php:189
+msgid "Rwanda"
+msgstr "卢旺达"
+
+#: admin/includes/country-list.php:190
+msgid "Saint Barth&eacute;lemy"
+msgstr "圣巴泰勒米"
+
+#: admin/includes/country-list.php:191
+msgid "Saint Helena"
+msgstr "圣赫勒拿"
+
+#: admin/includes/country-list.php:192
+msgid "Saint Kitts and Nevis"
+msgstr "圣基茨和尼维斯"
+
+#: admin/includes/country-list.php:193
+msgid "Saint Lucia"
+msgstr "圣卢西亚"
+
+#: admin/includes/country-list.php:194
+msgid "Saint Martin (French part)"
+msgstr "圣马丁（法语部分）"
+
+#: admin/includes/country-list.php:195
+msgid "Saint Martin (Dutch part)"
+msgstr "圣马丁（荷兰）"
+
+#: admin/includes/country-list.php:196
+msgid "Saint Pierre and Miquelon"
+msgstr "圣皮埃尔和密克隆"
+
+#: admin/includes/country-list.php:197
+msgid "Saint Vincent and the Grenadines"
+msgstr "圣文森特和格林纳丁斯"
+
+#: admin/includes/country-list.php:198
+msgid "San Marino"
+msgstr "圣马力诺"
+
+#: admin/includes/country-list.php:199
+msgid "S&atilde;o Tom&eacute; and Pr&iacute;ncipe"
+msgstr "圣多美及普林西比"
+
+#: admin/includes/country-list.php:200
+msgid "Saudi Arabia"
+msgstr "沙特阿拉伯"
+
+#: admin/includes/country-list.php:201
+msgid "Senegal"
+msgstr "塞内加尔"
+
+#: admin/includes/country-list.php:202
+msgid "Serbia"
+msgstr "塞尔维亚"
+
+#: admin/includes/country-list.php:203
+msgid "Seychelles"
+msgstr "塞舌尔"
+
+#: admin/includes/country-list.php:204
+msgid "Sierra Leone"
+msgstr "塞拉利昂"
+
+#: admin/includes/country-list.php:205
+msgid "Singapore"
+msgstr "新加坡"
+
+#: admin/includes/country-list.php:206
+msgid "Slovakia"
+msgstr "斯洛伐克"
+
+#: admin/includes/country-list.php:207
+msgid "Slovenia"
+msgstr "斯洛文尼亚"
+
+#: admin/includes/country-list.php:208
+msgid "Solomon Islands"
+msgstr "所罗门群岛"
+
+#: admin/includes/country-list.php:209
+msgid "Somalia"
+msgstr "索马里"
+
+#: admin/includes/country-list.php:210
+msgid "South Africa"
+msgstr "南非"
+
+#: admin/includes/country-list.php:211
+msgid "South Georgia/Sandwich Islands"
+msgstr "南格鲁吉亚/桑威奇群岛"
+
+#: admin/includes/country-list.php:212
+msgid "South Korea"
+msgstr "韩国"
+
+#: admin/includes/country-list.php:213
+msgid "South Sudan"
+msgstr "南苏丹"
+
+#: admin/includes/country-list.php:214
+msgid "Spain"
+msgstr "西班牙"
+
+#: admin/includes/country-list.php:215
+msgid "Sri Lanka"
+msgstr "斯里兰卡"
+
+#: admin/includes/country-list.php:216
+msgid "Sudan"
+msgstr "苏丹"
+
+#: admin/includes/country-list.php:217
+msgid "Suriname"
+msgstr "苏里南"
+
+#: admin/includes/country-list.php:218
+msgid "Svalbard and Jan Mayen"
+msgstr "斯瓦尔巴和揚馬延"
+
+#: admin/includes/country-list.php:219
+msgid "Swaziland"
+msgstr "斯威士兰"
+
+#: admin/includes/country-list.php:220
+msgid "Sweden"
+msgstr "瑞典"
+
+#: admin/includes/country-list.php:221
+msgid "Switzerland"
+msgstr "瑞士"
+
+#: admin/includes/country-list.php:222
+msgid "Syria"
+msgstr "叙利亚"
+
+#: admin/includes/country-list.php:223
+msgid "Taiwan"
+msgstr "台湾"
+
+#: admin/includes/country-list.php:224
+msgid "Tajikistan"
+msgstr "塔吉克斯坦"
+
+#: admin/includes/country-list.php:225
+msgid "Tanzania"
+msgstr "坦桑尼亚"
+
+#: admin/includes/country-list.php:226
+msgid "Thailand"
+msgstr "泰国"
+
+#: admin/includes/country-list.php:227
+msgid "Timor-Leste"
+msgstr "东帝汶"
+
+#: admin/includes/country-list.php:228
+msgid "Togo"
+msgstr "多哥"
+
+#: admin/includes/country-list.php:229
+msgid "Tokelau"
+msgstr "托克劳"
+
+#: admin/includes/country-list.php:230
+msgid "Tonga"
+msgstr "汤加"
+
+#: admin/includes/country-list.php:231
+msgid "Trinidad and Tobago"
+msgstr "特立尼达和多巴哥"
+
+#: admin/includes/country-list.php:232
+msgid "Tunisia"
+msgstr "突尼斯"
+
+#: admin/includes/country-list.php:233
+msgid "Turkey"
+msgstr "土耳其"
+
+#: admin/includes/country-list.php:234
+msgid "Turkmenistan"
+msgstr "土库曼斯坦"
+
+#: admin/includes/country-list.php:235
+msgid "Turks and Caicos Islands"
+msgstr "特克斯和凯科斯群岛"
+
+#: admin/includes/country-list.php:236
+msgid "Tuvalu"
+msgstr "图瓦卢"
+
+#: admin/includes/country-list.php:237
+msgid "Uganda"
+msgstr "乌干达"
+
+#: admin/includes/country-list.php:238
+msgid "Ukraine"
+msgstr "乌克兰"
+
+#: admin/includes/country-list.php:239
+msgid "United Arab Emirates"
+msgstr "阿拉伯联合酋长国"
+
+#: admin/includes/country-list.php:240
+msgid "United Kingdom (UK)"
+msgstr "英国"
+
+#: admin/includes/country-list.php:241
+msgid "United States (US)"
+msgstr "美国"
+
+#: admin/includes/country-list.php:242
+msgid "United States (US) Minor Outlying Islands"
+msgstr "美国本土外小岛屿"
+
+#: admin/includes/country-list.php:243
+msgid "United States (US) Virgin Islands"
+msgstr "美国（US）维尔京群岛"
+
+#: admin/includes/country-list.php:244
+msgid "Uruguay"
+msgstr "乌拉圭"
+
+#: admin/includes/country-list.php:245
+msgid "Uzbekistan"
+msgstr "乌兹别克斯坦"
+
+#: admin/includes/country-list.php:246
+msgid "Vanuatu"
+msgstr "瓦努阿图"
+
+#: admin/includes/country-list.php:247
+msgid "Vatican"
+msgstr "梵蒂冈"
+
+#: admin/includes/country-list.php:248
+msgid "Venezuela"
+msgstr "委内瑞拉"
+
+#: admin/includes/country-list.php:249
+msgid "Vietnam"
+msgstr "越南"
+
+#: admin/includes/country-list.php:250
+msgid "Wallis and Futuna"
+msgstr "瓦利斯和富图纳"
+
+#: admin/includes/country-list.php:251
+msgid "Western Sahara"
+msgstr "西撒哈拉"
+
+#: admin/includes/country-list.php:252
+msgid "Samoa"
+msgstr "萨摩亚"
+
+#: admin/includes/country-list.php:253
+msgid "Yemen"
+msgstr "也门"
+
+#: admin/includes/country-list.php:254
+msgid "Zambia"
+msgstr "赞比亚"
+
+#: admin/includes/country-list.php:255
+msgid "Zimbabwe"
+msgstr "津巴布韦"
+
+#: admin/includes/functions.php:16
+msgid "January"
+msgstr "一月"
+
+#: admin/includes/functions.php:17
+msgid "February"
+msgstr "二月"
+
+#: admin/includes/functions.php:18
+msgid "March"
+msgstr "三月"
+
+#: admin/includes/functions.php:19
+msgid "April"
+msgstr "四月"
+
+#: admin/includes/functions.php:20
+msgid "May"
+msgstr "五月"
+
+#: admin/includes/functions.php:21
+msgid "June"
+msgstr "六月"
+
+#: admin/includes/functions.php:22
+msgid "July "
+msgstr "七月"
+
+#: admin/includes/functions.php:23
+msgid "August"
+msgstr "八月"
+
+#: admin/includes/functions.php:24
+msgid "September"
+msgstr "九月"
+
+#: admin/includes/functions.php:25
+msgid "October"
+msgstr "十月"
+
+#: admin/includes/functions.php:26
+msgid "November"
+msgstr "十一月"
+
+#: admin/includes/functions.php:27
+msgid "December"
+msgstr "十二月"
+
+#: admin/includes/functions.php:164
+msgid "Invoice"
+msgstr "发票"
+
+#: admin/includes/functions.php:165
+msgid "Label"
+msgstr "标签"
+
+#: admin/includes/functions.php:166
+msgid "Waybill"
+msgstr "运单"
+
+#: admin/includes/functions.php:305
+msgid "Shipper Information"
+msgstr "发货人信息"
+
+#: admin/includes/functions.php:307
+msgid "Receiver Information"
+msgstr "收件人信息"
+
+#: admin/includes/functions.php:309 templates/waybill.tpl.php:74
+msgid "Shipment Information"
+msgstr "装运信息"
+
+#: admin/includes/functions.php:321 admin/includes/functions.php:734
+msgid "Default"
+msgstr "默认"
+
+#: admin/includes/functions.php:335
+msgid "Current page"
+msgstr "当前页面"
+
+#: admin/includes/functions.php:336
+msgid "Total page"
+msgstr "总页数"
+
+#: admin/includes/functions.php:523 admin/includes/hooks.php:113
+msgid "Pending Client"
+msgstr "待定客户"
+
+#: admin/includes/functions.php:758 admin/includes/functions.php:804
+msgid "Something went wrong saving your shipment. Please reload and try again"
+msgstr "保存您的货物出了问题。请重新加载并重新尝试"
+
+#: admin/includes/functions.php:798
+msgid "Shipment "
+msgstr "装船"
+
+#: admin/includes/functions.php:798
+msgid " has been successfully saved."
+msgstr "已成功保存。"
+
+#: admin/includes/functions.php:820
+msgid "Shipper Name"
+msgstr "发货人姓名"
+
+#: admin/includes/functions.php:825
+msgid "Receiver Name"
+msgstr "接收方名称"
+
+#: admin/includes/functions.php:1044
+msgid "Previous"
+msgstr "上一个"
+
+#: admin/includes/functions.php:1045
+msgid "Next"
+msgstr "下一页"
+
+#: admin/includes/functions.php:1046
+msgid "Shipment Pagination"
+msgstr "装运"
+
+#: admin/includes/functions.php:1090
+msgid "First"
+msgstr "第一"
+
+#: admin/includes/functions.php:1092
+msgid "previous"
+msgstr "上一个"
+
+#: admin/includes/functions.php:1107
+msgid "next"
+msgstr "下一个"
+
+#: admin/includes/functions.php:1111
+msgid "Last"
+msgstr "最后"
+
+#: admin/includes/functions.php:1239 templates/account.tpl.php:73
+msgid "First Name"
+msgstr "名字"
+
+#: admin/includes/functions.php:1249 templates/account.tpl.php:77
+msgid "Last Name"
+msgstr "姓"
+
+#: admin/includes/functions.php:1259 templates/account.tpl.php:51
+#: templates/account.tpl.php:81
+msgid "Phone"
+msgstr "电话"
+
+#: admin/includes/functions.php:1284
+msgid "Company"
+msgstr "公司"
+
+#: admin/includes/functions.php:1294
+msgid "Address line 1"
+msgstr "地址行1"
+
+#: admin/includes/functions.php:1304
+msgid "Address line 2"
+msgstr "地址行2"
+
+#: admin/includes/functions.php:1314
+msgid "City"
+msgstr "城市"
+
+#: admin/includes/functions.php:1324
+msgid "Postcode / ZIP"
+msgstr "邮编"
+
+#: admin/includes/functions.php:1334
+msgid "Country"
+msgstr "国家"
+
+#: admin/includes/functions.php:1344
+msgid "State / County"
+msgstr "州/县"
+
+#: admin/includes/functions.php:1403 admin/includes/functions.php:1458
+msgid "Orders"
+msgstr "订单"
+
+#: admin/includes/functions.php:1424
+msgid "Profile"
+msgstr "个人资料"
+
+#: admin/includes/functions.php:1443
+msgid "Shipments"
+msgstr "貨件"
+
+#: admin/includes/functions.php:1445
+#, php-format
+msgid ""
+"Shipments <span class=\"badge badge-pill bg-danger align-top\">%s</span>"
+msgstr "发货 <span class=\"badge badge-pill bg-danger align-top\">%s</span>"
+
+#: admin/includes/hooks-shipment.php:10 templates/orders.tpl.php:33
+msgid "View"
+msgstr "查看"
+
+#: admin/includes/hooks-shipment.php:16
+msgid "Edit"
+msgstr "编辑"
+
+#: admin/includes/hooks-shipment.php:21
+msgid "Trash"
+msgstr "回收站"
+
+#: admin/includes/hooks-shipment.php:21 templates/shipment-history.tpl.php:64
+#: templates/shipments.php:37 templates/shipments.php:97
+msgid "Delete"
+msgstr "删除"
+
+#: admin/includes/hooks-shipment.php:44
+msgid "Tracking Number"
+msgstr "快递单号"
+
+#: admin/includes/hooks-shipment.php:51
+msgid "New"
+msgstr "新的"
+
+#: admin/includes/hooks-shipment.php:67 admin/includes/map.php:153
+#: templates/filter-shipment.php:17
+msgid "Status"
+msgstr "状态"
+
+#: admin/includes/hooks-shipment.php:74 templates/orders.tpl.php:8
+msgid "Shipment Type"
+msgstr "装运类型"
+
+#: admin/includes/hooks-shipment.php:82 admin/includes/hooks.php:846
+#: templates/shipments.php:27 templates/shipments.php:87
+msgid "Print"
+msgstr "打印"
+
+#: admin/includes/hooks.php:103
+msgid "Client Approval"
+msgstr "客户批准"
+
+#: admin/includes/hooks.php:110
+msgid "Disabled"
+msgstr "禁用"
+
+#: admin/includes/hooks.php:115
+msgid "Approved"
+msgstr "批准"
+
+#: admin/includes/hooks.php:140 admin/includes/hooks.php:795
+msgid "Hi there,"
+msgstr "你好,"
+
+#: admin/includes/hooks.php:141 admin/includes/hooks.php:796
+#, php-format
+msgid "Welcome to %s! Here's how to log in:"
+msgstr "欢迎来到 %s！ 以下是如何登录："
+
+#: admin/includes/hooks.php:142
+#, php-format
+msgid "Login URL:  %s"
+msgstr "登录网址：%s"
+
+#: admin/includes/hooks.php:143 admin/includes/hooks.php:798
+#: admin/includes/hooks.php:818
+#, php-format
+msgid "Username: %s"
+msgstr "用户名: %s"
+
+#: admin/includes/hooks.php:144
+#, php-format
+msgid "Password: %s"
+msgstr "密码: %s"
+
+#: admin/includes/hooks.php:145
+#, php-format
+msgid "If you have any problems, please contact our support at %s."
+msgstr "如果您有任何问题，请联系我们的支持，%s。"
+
+#: admin/includes/hooks.php:146 admin/includes/hooks.php:802
+msgid "Thank you for trusting us!"
+msgstr "谢谢你信任我们！"
+
+#: admin/includes/hooks.php:165 admin/includes/hooks.php:565
+msgid "Client"
+msgstr "客户"
+
+#: admin/includes/hooks.php:167
+msgid "-- Select Client --"
+msgstr "-- 选择客户端 -"
+
+#: admin/includes/hooks.php:183 admin/includes/hooks.php:592
+msgid "Agent"
+msgstr "代理"
+
+#: admin/includes/hooks.php:185
+msgid "-- Select Agent --"
+msgstr "--选择代理 -"
+
+#: admin/includes/hooks.php:201 admin/includes/hooks.php:576
+msgid "Employee"
+msgstr "员工"
+
+#: admin/includes/hooks.php:203
+msgid "-- Select Employee --"
+msgstr "--选择员工 -"
+
+#: admin/includes/hooks.php:224
+msgid "Date Created"
+msgstr "创建日期"
+
+#: admin/includes/hooks.php:226 templates/graph.php:55
+msgid "to"
+msgstr "到"
+
+#: admin/includes/hooks.php:278
+#, php-format
+msgid "Date Created: %s to %s"
+msgstr "创建日期：%s到%s"
+
+#: admin/includes/hooks.php:285
+msgid "Dashboard"
+msgstr "仪表盘"
+
+#: admin/includes/hooks.php:312 admin/includes/hooks.php:328
+#: admin/includes/hooks.php:331 templates/filter-shipment.php:61
+#: templates/filter-shipment.php:62 templates/orders.tpl.php:7
+msgid "Shipment Number"
+msgstr "装运号"
+
+#: admin/includes/hooks.php:360
+msgid "Bulk Assign"
+msgstr "批量分配"
+
+#: admin/includes/hooks.php:462
+msgid "Select Template"
+msgstr "选择模板"
+
+#: admin/includes/hooks.php:494
+msgid "BOL"
+msgstr "博尔"
+
+#: admin/includes/hooks.php:543
+msgid "Not a member?"
+msgstr "不是会员？"
+
+#: admin/includes/hooks.php:543 templates/registration.tpl.php:3
+#: templates/registration.tpl.php:9
+msgid "Registration"
+msgstr "注册"
+
+#: admin/includes/hooks.php:543 templates/registration-form.tpl.php:44
+msgid "Register"
+msgstr "注册"
+
+#: admin/includes/hooks.php:793 admin/includes/hooks.php:814
+msgid "From: "
+msgstr "从："
+
+#: admin/includes/hooks.php:799 admin/includes/hooks.php:819
+#, php-format
+msgid "Email: %s"
+msgstr "邮箱：%s"
+
+#: admin/includes/hooks.php:800
+msgid ""
+"Password: The one you entered in the registration form. (For security "
+"reason, we save encripted password)"
+msgstr "密码：您在注册表中输入的密码。（出于安全原因，我们保存加密密码）"
+
+#: admin/includes/hooks.php:801
+#, php-format
+msgid "If you have any problems, please contact me at %s."
+msgstr "如遇问题，请联系我 %s。"
+
+#: admin/includes/hooks.php:816
+msgid "Hi Admin,"
+msgstr "嗨管理员，"
+
+#: admin/includes/hooks.php:817
+#, php-format
+msgid "New user registration on your site %s:"
+msgstr "新用户注册您的网站 %s:"
+
+#: admin/includes/language.php:9
+msgid "Please activate your license key for WPCargo Frontend Manager"
+msgstr "请为 WP 卡戈前端经理激活您的许可证密钥"
+
+#: admin/includes/language.php:12
+msgid "Warning: Frontend Manager Dashboard found, please set up."
+msgstr "警告：前端管理器仪表板已找到，请进行设置。"
+
+#: admin/includes/language.php:12
+msgid "Frontend Manager Dashboard"
+msgstr "前端管理器仪表板"
+
+#: admin/includes/language.php:12
+msgid "Set up Dashboard"
+msgstr "设置仪表板"
+
+#: admin/includes/language.php:15
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\" target=\"_blank"
+"\">WPTaskForce License Helper</a> plugin to be active!"
+msgstr ""
+"此插件需要 <a href=\"http://wpcargo.com/\" target=\"_blank\">WPTaskForce 许可"
+"证帮助器</a> 插件才能激活！"
+
+#: admin/includes/language.php:18
+msgid ""
+"This plugin requires <a href=\"https://wordpress.org/plugins/wpcargo/\" "
+"target=\"_blank\">WPCargo</a> plugin to be active!"
+msgstr ""
+"此插件需要 <a href=\"https://wordpress.org/plugins/wpcargo/\" target=\"_blank"
+"\">WP 卡戈</a> 插件才能激活！"
+
+#: admin/includes/language.php:21
+msgid ""
+"This plugin requires <strong>WPCargo Custom Field Add-ons</strong> plugin to "
+"be active!"
+msgstr "此插件需要 <strong>WPCargo 自定义字段插</strong> 件才能激活！"
+
+#: admin/includes/language.php:24
+msgid "Cheating, uh?"
+msgstr "作弊， 嗯？"
+
+#: admin/includes/language.php:27
+msgid "Frontend Dashboard Settings"
+msgstr "前端仪表板设置"
+
+#: admin/includes/language.php:30 admin/includes/settings.php:55
+msgid "Frontend Dashboard"
+msgstr "前端仪表板"
+
+#: admin/includes/language.php:33
+msgid "WPCargo Dashboard Sidebar Menu"
+msgstr "WP卡戈仪表板侧边栏菜单"
+
+#: admin/includes/language.php:36
+msgid "WPCargo Dashboard Top Menu"
+msgstr "WP卡戈仪表板顶部菜单"
+
+#: admin/includes/language.php:39
+msgid "No order has been made."
+msgstr "尚未下订单。"
+
+#: admin/includes/language.php:42
+msgid "You have been successfully registered."
+msgstr "您已成功注册。"
+
+#: admin/includes/language.php:45
+msgid ""
+"You have been successfully registered. We'll check your account for approval "
+"and send you notification in your registered email with registration status."
+msgstr ""
+"您已成功注册。我们将检查您的帐户以获得批准，并在您的注册电子邮件中向您发送具"
+"有注册状态的通知。"
+
+#: admin/includes/language.php:48
+msgid "Something went wrong in your registration. Please reload and try again"
+msgstr "您的注册出了问题。请重新加载并重新尝试"
+
+#: admin/includes/language.php:51
+msgid "You do not have permissions to view this data."
+msgstr "您没有查看此数据的权限。"
+
+#: admin/includes/language.php:54
+msgid "Removing License failed, License not registered in domain"
+msgstr "删除许可证失败，许可证未在域中注册"
+
+#: admin/includes/language.php:57
+msgid "License has been successfully removed from"
+msgstr "已成功从"
+
+#: admin/includes/map.php:151 templates/orders.tpl.php:6
+msgid "Date"
+msgstr "日期"
+
+#: admin/includes/map.php:152
+msgid "Location"
+msgstr "位置"
+
+#: admin/includes/print-hooks.php:50
+msgid "From:"
+msgstr "来自: "
+
+#: admin/includes/print-hooks.php:57
+msgid "To:"
+msgstr "至："
+
+#: admin/includes/print-hooks.php:113
+msgid "SHIPPER DETAILS:"
+msgstr "发货人详情："
+
+#: admin/includes/print-hooks.php:120
+msgid "RECEIVER DETAILS:"
+msgstr "接收器详细信息："
+
+#: admin/includes/print-hooks.php:142
+msgid "PACKAGE DETAILS:"
+msgstr "包详细信息："
+
+#: admin/includes/print-hooks.php:195
+msgid "Bill of Lading"
+msgstr "拉丁法案"
+
+#: admin/includes/print-hooks.php:202
+msgid "SHIP FROM"
+msgstr "船舶从"
+
+#: admin/includes/print-hooks.php:211
+msgid "SHIP TO"
+msgstr "运输到"
+
+#: admin/includes/print-hooks.php:233
+msgid "ADDITIONAL INFORMATION"
+msgstr "其他信息"
+
+#: admin/includes/print-hooks.php:306
+msgid "PACKAGE DETAILS"
+msgstr "包详细信息"
+
+#: admin/includes/settings.php:44
+msgid "WPCargo Dashboard Attributes"
+msgstr "WP卡戈仪表板属性"
+
+#: admin/includes/settings.php:65
+msgid "Menu Icon Class"
+msgstr "菜单图标类"
+
+#: admin/includes/settings.php:67
+msgid ""
+"Note: This menu icon will display only in WPCargo Dashboard Template. You "
+"can find icons available in"
+msgstr "注意：此菜单图标仅在 WPCargo 仪表板模板中显示。您可以在"
+
+#: admin/includes/settings.php:67
+msgid "ei. dashboard"
+msgstr "艾.挡泥板"
+
+#: admin/includes/widgets.php:10
+msgid "FM Dashboard- Top"
+msgstr "调频仪表板 - 顶部"
+
+#: admin/includes/widgets.php:12
+msgid ""
+"This widget display in the Frontend Manager dashboard report top area page."
+msgstr "此小部件显示在前端管理器仪表板报告顶部区域页面中。"
+
+#: admin/includes/widgets.php:19
+msgid "FM Dashboard- Middle"
+msgstr "调频仪表板- 中"
+
+#: admin/includes/widgets.php:21
+msgid ""
+"This widget display in the Frontend Manager dashboard report middle area "
+"page."
+msgstr "此小部件显示在前端管理器仪表板报告中间区域页面中。"
+
+#: admin/includes/widgets.php:28
+msgid "FM Dashboard- Bottom"
+msgstr "调频仪表板- 底部"
+
+#: admin/includes/widgets.php:30
+msgid ""
+"This widget display in the Frontend Manager dashboard report bottom area "
+"page."
+msgstr "此小部件显示在前端管理器仪表板报告底部区域页面中。"
+
+#: admin/includes/widgets.php:37
+msgid "FM Shipment - Top"
+msgstr "调频装运 - 顶部"
+
+#: admin/includes/widgets.php:39
+msgid ""
+"This widget display in the Frontend Manager dashboard shipment top area page."
+msgstr "此小部件显示在前端经理仪表板装运顶部区域页面中。"
+
+#: admin/includes/widgets.php:46
+msgid "FM Shipment - Bottom"
+msgstr "调频装运 - 底部"
+
+#: admin/includes/widgets.php:48
+msgid ""
+"This widget display in the Frontend Manager dashboard shipment bottom area "
+"page."
+msgstr "此小部件显示在前端经理仪表板装运底部区域页面中。"
+
+#: admin/templates/address-mapping.tpl.php:1
+msgid "Add registration info to address book"
+msgstr "添加注册信息以访问帐簿"
+
+#: admin/templates/address-mapping.tpl.php:2
+msgid "Note: This data while add to the address book if plugin is installed."
+msgstr "注意：如果安装插件，此数据将添加到通讯簿中。"
+
+#: admin/templates/address-mapping.tpl.php:10
+msgid "Select Field"
+msgstr "选择字段"
+
+#: admin/templates/print-settings.tpl.php:1
+msgid "Print Setup"
+msgstr "打印设置"
+
+#: admin/templates/print-settings.tpl.php:4
+msgid "Enable Chinese Fonts"
+msgstr "启用中文字体"
+
+#: admin/templates/print-settings.tpl.php:7
+msgid ""
+"Note: This will add additional font family for simplified chinese fonts. "
+"Enable this option only if you use simplified chinese fonts in you site."
+msgstr ""
+"注：这将为简体字体添加额外的字体系列。只有在网站中使用简化的中文字体时，才能"
+"启用此选项。"
+
+#: admin/templates/print-settings.tpl.php:11
+msgid "Enable Print BOL"
+msgstr "启用打印 BOL"
+
+#: admin/templates/print-settings.tpl.php:14
+msgid "Note: This will add additional print functionality for BOL."
+msgstr "注意：这将为 BOL 添加额外的打印功能。"
+
+#: admin/templates/print-settings.tpl.php:18
+msgid "Waybill Paper Size"
+msgstr "威比尔纸张尺寸"
+
+#: admin/templates/print-settings.tpl.php:21
+msgid "Select Size"
+msgstr "选择尺寸"
+
+#: admin/templates/print-settings.tpl.php:22
+msgid "A1"
+msgstr "A1"
+
+#: admin/templates/print-settings.tpl.php:23
+msgid "A2"
+msgstr "A2"
+
+#: admin/templates/print-settings.tpl.php:24
+msgid "A3"
+msgstr "A3"
+
+#: admin/templates/print-settings.tpl.php:25
+msgid "A4"
+msgstr "A4"
+
+#: admin/templates/print-settings.tpl.php:26
+msgid "A5"
+msgstr "A5"
+
+#: admin/templates/print-settings.tpl.php:27
+msgid "Letter"
+msgstr "字母"
+
+#: admin/templates/print-settings.tpl.php:28
+msgid "Legal"
+msgstr "法律"
+
+#: admin/templates/print-settings.tpl.php:29
+#: admin/templates/print-settings.tpl.php:32
+msgid "Tabloid"
+msgstr "小报"
+
+#: admin/templates/print-settings.tpl.php:30
+msgid "Executive"
+msgstr "执行的"
+
+#: admin/templates/print-settings.tpl.php:31
+msgid "Folio"
+msgstr "账单"
+
+#: admin/templates/print-settings.tpl.php:37
+msgid "Waybill Paper Orientation"
+msgstr "威比尔纸张方向"
+
+#: admin/templates/print-settings.tpl.php:40
+msgid "Select Orientation"
+msgstr "选择坐标系  Select Orientation"
+
+#: admin/templates/print-settings.tpl.php:41
+msgid "Landscape"
+msgstr "景观"
+
+#: admin/templates/print-settings.tpl.php:42
+msgid "Portrait"
+msgstr "肖像"
+
+#: admin/templates/print-settings.tpl.php:48
+msgid "Print documents on checkout"
+msgstr "结账时打印文档"
+
+#: admin/templates/print-settings.tpl.php:63
+msgid "Label print per package setup"
+msgstr "每个封装设置的标签打印"
+
+#: admin/templates/print-settings.tpl.php:66
+msgid "Enable label multi print"
+msgstr "启用标签多打印"
+
+#: admin/templates/print-settings.tpl.php:69
+msgid "Note: This will print the label per shipment package."
+msgstr "注意：这将打印每个装运包装的标签。"
+
+#: admin/templates/print-settings.tpl.php:73
+msgid "Label pagination template"
+msgstr "标签铺垫模板"
+
+#: admin/templates/print-settings.tpl.php:76
+msgid "Default template {current_page} of {total_page}."
+msgstr "默认模板{current_page}{total_page}。"
+
+#: admin/templates/print-settings.tpl.php:79
+msgid "Available Shortcodes"
+msgstr "可用的短代码"
+
+#: admin/templates/sequence-settings.tpl.php:1
+msgid "Shipment Number Sequence"
+msgstr "货件编号规则"
+
+#: admin/templates/sequence-settings.tpl.php:4
+msgid "Enable Sequence Number?"
+msgstr "是否启用序列号？"
+
+#: admin/templates/sequence-settings.tpl.php:7
+msgid "Note: This will generate a shipment sequence number."
+msgstr "注意： 这将生成货件序列号。"
+
+#: admin/templates/sequence-settings.tpl.php:11
+msgid "Shipment Number Start"
+msgstr "货件编号开始"
+
+#: admin/templates/sequence-settings.tpl.php:14
+msgid "Note: This will be the starting shipment number."
+msgstr "注意： 这将是起始装运编号。"
+
+#: admin/templates/sequence-settings.tpl.php:18
+msgid "Shipment Number Digit"
+msgstr "货件编号数字"
+
+#: admin/templates/sequence-settings.tpl.php:21
+msgid "Note: This will be the N of shipment Number digit."
+msgstr "注意： 这将是货件编号的 N 位。"
+
+#: admin/templates/sequence-settings.tpl.php:27
+msgid "Reset Sequence Number"
+msgstr "重置序列号"
+
+#: admin/templates/settings.tpl.php:8
+msgid "Number of Days Filtered"
+msgstr "过滤天数"
+
+#: admin/templates/settings.tpl.php:11
+msgid ""
+"Note: This is the number of days for the date range to be filtered and "
+"displayed in the shipments list table."
+msgstr "注意： 这是要过滤日期范围并显示在货件列表表格中的天数。"
+
+#: admin/templates/settings.tpl.php:15
+msgid "Enable Registration Approval"
+msgstr "启用注册审批"
+
+#: admin/templates/settings.tpl.php:18
+msgid "Note: This will need the registration to approve the account."
+msgstr "注意：这需要注册才能批准帐户。"
+
+#: admin/templates/settings.tpl.php:22
+msgid "Disable Registration"
+msgstr "禁用注册"
+
+#: admin/templates/settings.tpl.php:25
+msgid ""
+"Note: This will remove member registration functionality in the login page."
+msgstr "注意：这将删除登录页中的成员注册功能。"
+
+#: admin/templates/settings.tpl.php:29
+msgid "Disable Create Order"
+msgstr "禁用创建订单"
+
+#: admin/templates/settings.tpl.php:32
+msgid ""
+"Note: This will remove the Create Shipment functionality in the front-end "
+"dashboard."
+msgstr "注意：这将删除前端仪表板中的创建发货功能。"
+
+#: admin/templates/settings.tpl.php:36
+msgid "Allow Employee Access all Shipment?"
+msgstr "允许员工访问所有装运？"
+
+#: admin/templates/settings.tpl.php:39
+msgid "Note: This will allow wpcargo employee access all the shipment."
+msgstr "注意：这将允许 wpcargo 员工访问所有货物。"
+
+#: admin/templates/settings.tpl.php:43
+msgid "Allow Client to Add Shipment?"
+msgstr "允许客户添加装运？"
+
+#: admin/templates/settings.tpl.php:46
+msgid ""
+"Note: This will allow wpcargo client to add shipment in the dashboard page."
+msgstr "注意：这将允许 wpcargo 客户端在仪表板页面中添加出货量。"
+
+#: admin/templates/settings.tpl.php:50
+msgid "Set default shipment status"
+msgstr "设置默认装运状态"
+
+#: admin/templates/settings.tpl.php:55
+msgid "Select Status"
+msgstr "--选择状态-"
+
+#: admin/templates/settings.tpl.php:61
+msgid "NO Status found."
+msgstr "未找到状态。"
+
+#: admin/templates/settings.tpl.php:67
+msgid "Set Page as Frontend Dashboard admin"
+msgstr "将页面设置为前端仪表板管理员"
+
+#: admin/templates/settings.tpl.php:72
+msgid "Select Page"
+msgstr "选择页面"
+
+#: admin/templates/settings.tpl.php:78
+msgid "NO pages found."
+msgstr "未找到任何页面。"
+
+#: admin/templates/settings.tpl.php:84
+msgid "Access Frontend Dashboard Roles"
+msgstr "访问前端仪表板角色"
+
+#: admin/templates/settings.tpl.php:95 admin/templates/settings.tpl.php:110
+#: admin/templates/settings.tpl.php:125
+msgid "Note: This options applicable only in front end dashboard."
+msgstr "注意：此选项仅适用于前端仪表板。"
+
+#: admin/templates/settings.tpl.php:99
+msgid "Update Shipments Roles"
+msgstr "更新装运角色"
+
+#: admin/templates/settings.tpl.php:114
+msgid "Delete Shipments Roles"
+msgstr "删除装运角色"
+
+#: admin/templates/settings.tpl.php:132
+msgid "Save Settings"
+msgstr "保存设置"
+
+#: templates/account.tpl.php:3 templates/account.tpl.php:9
+msgid "My Account"
+msgstr "我的账户"
+
+#: templates/account.tpl.php:10 templates/bulk-assign-shipment.tpl.php:25
+#: templates/registration.tpl.php:10
+msgid "Close"
+msgstr "关闭"
+
+#: templates/account.tpl.php:28 templates/profile.tpl.php:18
+msgid "Upload Avatar"
+msgstr "上传头像"
+
+#: templates/account.tpl.php:29 templates/profile.tpl.php:19
+msgid "Save Avatar"
+msgstr "保存头像"
+
+#: templates/account.tpl.php:34
+msgid "Email:"
+msgstr "电子邮件："
+
+#: templates/account.tpl.php:42 templates/registration-address.tpl.php:1
+msgid "Address Information"
+msgstr "地址信息"
+
+#: templates/account.tpl.php:100 templates/registration-address.tpl.php:15
+msgid "Select"
+msgstr "选择"
+
+#: templates/account.tpl.php:134 templates/bulk-assign-shipment.tpl.php:26
+#: templates/profile.tpl.php:90
+msgid "Update"
+msgstr "更新"
+
+#: templates/add-shipment.php:58
+msgid "Add Shipment"
+msgstr "添加装运"
+
+#: templates/assign-shipment.tpl.php:10
+msgid "Assign shipment to"
+msgstr "分配发货到"
+
+#: templates/bulk-assign-shipment.tpl.php:6
+msgid "Bulk Shipment Update"
+msgstr "批量装运更新"
+
+#: templates/bulk-assign-shipment.tpl.php:13
+msgid "Shipment List"
+msgstr "装运清单"
+
+#: templates/dashboard.php:159
+msgid "Copyright"
+msgstr "版权"
+
+#: templates/filter-shipment.php:19
+msgid "All Status"
+msgstr "所有状态"
+
+#: templates/filter-shipment.php:32 templates/filter-shipment.php:42
+msgid "All"
+msgstr "所有"
+
+#: templates/filter-shipment.php:50 templates/graph.php:59
+msgid "Filter"
+msgstr "筛选"
+
+#: templates/filter-shipment.php:52
+msgid "Reset"
+msgstr "重置"
+
+#: templates/filter-shipment.php:63
+msgid "Search"
+msgstr "搜索"
+
+#: templates/graph.php:53
+msgid "Date Range"
+msgstr "日期范围"
+
+#: templates/graph.php:85
+#, php-format
+msgid "%s of 100%s"
+msgstr "%s100%s"
+
+#: templates/graph.php:103
+#, php-format
+msgid "Report from %s to %s"
+msgstr "从%s到%s的报告"
+
+#: templates/graph.php:104
+msgid "Total shipment updates"
+msgstr "货件总数更新"
+
+#: templates/history.tpl.php:7
+msgid "History"
+msgstr "历史"
+
+#: templates/login.php:8
+msgid "Error"
+msgstr "错误"
+
+#: templates/login.php:8
+msgid "Please check your Username or Password."
+msgstr "请检查您的用户名或密码。"
+
+#: templates/login.php:13
+msgid "Sign in"
+msgstr "登录"
+
+#: templates/login.php:26
+msgid "Username/E-mail"
+msgstr "用户名/电子邮件"
+
+#: templates/login.php:44
+msgid "Remember me"
+msgstr "记住我"
+
+#: templates/login.php:48
+msgid "Forgot password?"
+msgstr "忘记密码？"
+
+#: templates/login.php:53
+msgid "Login"
+msgstr "登录"
+
+#: templates/multiple-package.tpl.php:8
+msgid "Packages"
+msgstr "软件包"
+
+#: templates/multiple-package.tpl.php:66
+msgid "Add Package"
+msgstr "添加套餐"
+
+#: templates/navigation.tpl.php:9 templates/navigation.tpl.php:121
+msgid "Site Logo"
+msgstr "网站LOGO"
+
+#: templates/navigation.tpl.php:24 templates/navigation.tpl.php:25
+msgid "Track Shipment"
+msgstr "跟踪物流"
+
+#: templates/navigation.tpl.php:50 templates/navigation.tpl.php:131
+msgid "Create Shipment"
+msgstr "创建货件"
+
+#: templates/navigation.tpl.php:106
+msgid "My Profile"
+msgstr "我的资料"
+
+#: templates/navigation.tpl.php:108
+msgid "Notifications"
+msgstr "通知"
+
+#: templates/navigation.tpl.php:110
+msgid "Logout"
+msgstr "注销"
+
+#: templates/no-shipment.php:5
+msgid "Error 404"
+msgstr "错误404"
+
+#: templates/no-shipment.php:6
+msgid "Shipment not found!"
+msgstr "未找到货物！"
+
+#: templates/nocf-error.tpl.php:7
+msgid "Error Found!"
+msgstr "发现错误！"
+
+#: templates/nocf-error.tpl.php:10
+msgid ""
+"Cannot find WPCargo Custom Field Add-ons plugin activated in your system."
+msgstr "无法找到在系统中激活的 WPCargo 自定义字段插件。"
+
+#: templates/nocf-error.tpl.php:14
+msgid "Please purchase"
+msgstr "请采购"
+
+#: templates/nocf-error.tpl.php:14
+msgid "WPCargo Custom Field Add-ons"
+msgstr "WP卡戈自定义字段附加组件"
+
+#: templates/nocf-error.tpl.php:14
+msgid "https://www.wpcargo.com/product/wpcargo-custom-field-add-ons/"
+msgstr "https://www.wpcargo.com/product/wpcargo-custom-field-add-ons/"
+
+#: templates/orders.tpl.php:5
+msgid "Order ID"
+msgstr "订单ID"
+
+#: templates/orders.tpl.php:9
+msgid "Order Status"
+msgstr "订单状态"
+
+#: templates/orders.tpl.php:10
+msgid "Shipment Status"
+msgstr "发货状态"
+
+#: templates/orders.tpl.php:11
+msgid "Amount"
+msgstr "数量"
+
+#: templates/orders.tpl.php:26
+msgid "Orders Account"
+msgstr "订单帐户"
+
+#: templates/profile.tpl.php:29 templates/registration-form.tpl.php:7
+msgid "Personal Information"
+msgstr "个人信息"
+
+#: templates/profile.tpl.php:53 templates/registration-form.tpl.php:19
+msgid "Billing Information"
+msgstr "账单信息"
+
+#: templates/profile.tpl.php:95 templates/profile.tpl.php:111
+msgid "Change Password"
+msgstr "更改密码"
+
+#: templates/profile.tpl.php:100
+msgid "New Password"
+msgstr "新密码"
+
+#: templates/profile.tpl.php:105 templates/registration-form.tpl.php:38
+msgid "Confirm Password"
+msgstr "确认密码"
+
+#: templates/register-email-notification.tpl.php:4
+msgid "Dear"
+msgstr "亲爱的"
+
+#: templates/register-email-notification.tpl.php:5
+msgid "You have successfully registered!"
+msgstr "注册成功!"
+
+#: templates/register-notification-admin.tpl.php:4
+msgid "A new user has registered!"
+msgstr "新用户已注册！"
+
+#: templates/register-notification-admin.tpl.php:5
+msgid "Name: "
+msgstr "名称："
+
+#: templates/restricted.tpl.php:4
+msgid "Sorry your are not allowed to access this page!"
+msgstr "对不起，您不允许访问此页面！"
+
+#: templates/restricted.tpl.php:5
+msgid "Please contact administrator for your permission."
+msgstr "请联系管理员以获得您的许可。"
+
+#: templates/shipment-history.tpl.php:4
+msgid "History Records"
+msgstr "历史记录"
+
+#: templates/shipment-history.tpl.php:73
+msgid "No Shipment History Found."
+msgstr "未找到装运历史记录。"
+
+#: templates/shipments.php:16
+msgid "Show entries"
+msgstr "显示条目"
+
+#: templates/shipments.php:18
+msgid "entries"
+msgstr "条目"
+
+#: templates/shipments.php:115
+msgid "No shipment found."
+msgstr "未找到货件。"
+
+#: templates/shipments.php:117
+#, php-format
+msgid "Searched:  \"%s\""
+msgstr "已搜索：\"%s\""
+
+#: templates/shipments.php:119
+#, php-format
+msgid "%s to %s"
+msgstr "%s到%s"
+
+#: templates/update-shipment.php:66
+msgid "Update Shipment"
+msgstr "更新装运"
+
+#: templates/waybill.tpl.php:66
+msgid "Shipper Address"
+msgstr "发货人地址"
+
+#: templates/waybill.tpl.php:70
+msgid "Receiver Address"
+msgstr "接收方地址"
+
+#. Plugin Name of the plugin/theme
+msgid "WPCargo Frontend Manager"
+msgstr "WP 卡戈前端经理"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wptaskforce.com/"
+msgstr "http://wptaskforce.com/"
+
+#. Description of the plugin/theme
+msgid ""
+"WPCargo Frontend Manager provides user dashboard in the frontend of your "
+"site and mobile responsive ready. Available shortcode [wpcfe_registration]"
+msgstr ""
+"WPCargo前端管理器在站点的前端提供用户仪表板，并准备好移动响应。可用短代码 "
+"[wpcfe_registration]"
+
+#. Author of the plugin/theme
+msgid "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"
+msgstr "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"
+
+#~ msgid "N Sequence is not yet set. N Sequence reset failed."
+#~ msgstr "N 序列尚未设置。N 序列重置失败。"
+
+#~ msgid "Month"
+#~ msgstr "月"
+
+#~ msgid "-- Select Month --"
+#~ msgstr "-选择月份 -"
+
+#~ msgid "Year"
+#~ msgstr "年"
+
+#~ msgid "-- Select Year --"
+#~ msgstr "--选择年份 -"

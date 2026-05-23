@@ -1,0 +1,23 @@
+{
+    "amiri": {
+        "normal": "amiri-normal_b3f4ba95dcf709e19d31688c5d7c0eb1"
+    },
+    "rubik": {
+        "normal": "rubik-normal_2643c390e378c6dc04b7519c4d2272d7"
+    },
+    "lato": {
+        "normal": "lato-normal_588cfc2bc3fffe8803ad9e4a8c0a5ff4"
+    },
+    "montserrat": {
+        "normal": "montserrat-normal_1670712df2f5748882e4babc80289e6c"
+    },
+    "roboto": {
+        "normal": "roboto-normal_9e96d9e23ad102bc05be47680b365314"
+    },
+    "petrona": {
+        "normal": "petrona-normal_c04a8dc22c623f8b7c8f752c36b40cd1"
+    },
+    "wpcfecustomfont": {
+        "normal": "wpcfecustomfont-normal_2e1db3dd5110c85fa02826155d284870"
+    }
+}

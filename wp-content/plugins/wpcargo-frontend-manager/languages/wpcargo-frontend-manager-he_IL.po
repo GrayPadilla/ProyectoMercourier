@@ -1,0 +1,2345 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPCargo Frontend Manager\n"
+"POT-Creation-Date: 2022-08-12 14:40+0800\n"
+"PO-Revision-Date: 2022-08-12 14:41+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: he_IL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n==2 ? 1 : n>10 && n%10==0 ? "
+"2 : 3);\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpcargo-frontend-manager.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: admin/classes/class-core.php:54 admin/includes/hooks.php:78
+msgid "WPCargo Dashboard"
+msgstr "לוח מחוונים של WPCargo"
+
+#: admin/classes/class-fields.php:136
+msgid "-- Select One --"
+msgstr "--בחר אחד--"
+
+#: admin/classes/class-fields.php:228
+msgid "Add Images / Upload Files"
+msgstr "הוספת תמונות / העלאת קבצים"
+
+#: admin/classes/class-fields.php:298 admin/includes/functions.php:1274
+msgid "Email"
+msgstr "אימייל"
+
+#: admin/classes/class-scripts.php:65
+msgid "Are you sure you want to delete this selected Shipment?"
+msgstr "האם אתה בטוח שברצונך למחוק משלוח נבחר זה?"
+
+#: admin/classes/class-scripts.php:66 admin/classes/class-scripts.php:118
+msgid "No shipment selected, Please select atleast one Shipment."
+msgstr "לא נבחר משלוח, נא בחר לפחות משלוח אחד."
+
+#: admin/classes/class-scripts.php:67 admin/classes/class-scripts.php:119
+msgid ""
+"Something went wrong while processing your request, please reload and try "
+"again."
+msgstr "משהו השתבש בעת עיבוד בקשתך, נא טען מחדש ונסה שוב."
+
+#: admin/classes/class-scripts.php:68
+msgid "Please enter more characters"
+msgstr "נא הזן תווים נוספים"
+
+#: admin/classes/class-scripts.php:69
+msgid "Please delete some character"
+msgstr "נא מחק תו מסוים"
+
+#: admin/classes/class-scripts.php:70 admin/classes/class-scripts.php:74
+msgid "Error loading results"
+msgstr "שגיאה בטעינת תוצאות"
+
+#: admin/classes/class-scripts.php:71
+msgid "Loading more results"
+msgstr "טוען תוצאות נוספות"
+
+#: admin/classes/class-scripts.php:72
+msgid "No results found"
+msgstr "לא נמצאו תוצאות"
+
+#: admin/classes/class-scripts.php:73
+msgid "Searching..."
+msgstr "מחפש..."
+
+#: admin/classes/class-scripts.php:76
+msgid "Incorrect Email Format."
+msgstr "תבנית דואר אלקטרוני שגויה."
+
+#: admin/classes/class-scripts.php:77
+msgid "Email already Exist."
+msgstr "דואר אלקטרוני כבר קיים."
+
+#: admin/classes/class-scripts.php:78
+msgid "Password NOT matched."
+msgstr "הסיסמה אינה תואמת."
+
+#: admin/classes/class-scripts.php:79
+msgid "Password must at least 6 Characters."
+msgstr "על הסיסמה ל- 6 תווים לפחות."
+
+#: admin/classes/class-scripts.php:81
+msgid "Username"
+msgstr "שם משתמש"
+
+#: admin/classes/class-scripts.php:82 templates/login.php:31
+#: templates/registration-form.tpl.php:33
+msgid "Password"
+msgstr "סיסמה"
+
+#: admin/classes/class-scripts.php:83
+msgid "Download"
+msgstr "הורדה"
+
+#: admin/classes/class-scripts.php:84
+msgid "Are you sure you want to delete section?"
+msgstr "האם אתה בטוח שברצונך למחוק מקטע?"
+
+#: admin/classes/class-scripts.php:85
+msgid "No shipment has been updated"
+msgstr "לא עודכן משלוח"
+
+#: admin/classes/class-scripts.php:86
+msgid "Selected Shipements has been updated"
+msgstr "שיגרים נבחרים עודכנו"
+
+#: admin/classes/class-scripts.php:105 admin/includes/functions.php:102
+#: templates/profile.tpl.php:72
+msgid "-- Select Type --"
+msgstr "-- בחירת סוג --"
+
+#: admin/classes/class-scripts.php:116
+msgid "Select an option"
+msgstr "בחר אפשרות"
+
+#: admin/includes/ajax.php:14
+msgid "Something went wrong during process, Please try again."
+msgstr "משהו השתבש במהלך התהליך, נא נסה שוב."
+
+#: admin/includes/ajax.php:21 admin/includes/ajax.php:73
+msgid "Opsss! Sorry you are not allow to delete shipments"
+msgstr "מבצעים !מבצעים! מצטערים, גם אתה לא מאפשר למחוק משלוחים"
+
+#: admin/includes/ajax.php:32
+msgid "Shipment"
+msgstr "משלוח"
+
+#: admin/includes/ajax.php:32
+msgid "successfully deleted."
+msgstr "נמחק בהצלחה."
+
+#: admin/includes/ajax.php:89
+#, php-format
+msgid "You successfully deleted %s shipment."
+msgid_plural "You successfully deleted %s shipments."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+
+#: admin/includes/ajax.php:182
+msgid "This is an existing shipment number."
+msgstr "זהו מספר משלוח קיים."
+
+#: admin/includes/ajax.php:195
+msgid ""
+"N Sequence reset success, please update the Shipment Number Start for your "
+"new shipment number starting sequence."
+msgstr ""
+"הצלחה של איפוס רצף N, נא עדכן את התחלת מספר המשלוח עבור רצף ההתחלה של מספר "
+"המשלוח החדש שלך."
+
+#: admin/includes/ajax.php:201
+msgid "N Sequence reset failed, please reload the page and try again."
+msgstr "איפוס N רצף נכשל, נא טען מחדש את הדף ונסה שוב."
+
+#: admin/includes/country-list.php:7
+msgid "Afghanistan"
+msgstr "אפגניסטן"
+
+#: admin/includes/country-list.php:8
+msgid "&#197;land Islands"
+msgstr "איי שטלנד"
+
+#: admin/includes/country-list.php:9
+msgid "Albania"
+msgstr "אלבניה"
+
+#: admin/includes/country-list.php:10
+msgid "Algeria"
+msgstr "אלג'יריה"
+
+#: admin/includes/country-list.php:11
+msgid "American Samoa"
+msgstr "סמואה האמריקנית"
+
+#: admin/includes/country-list.php:12
+msgid "Andorra"
+msgstr "אנדורה"
+
+#: admin/includes/country-list.php:13
+msgid "Angola"
+msgstr "אנגולה"
+
+#: admin/includes/country-list.php:14
+msgid "Anguilla"
+msgstr "אנגווילה"
+
+#: admin/includes/country-list.php:15
+msgid "Antarctica"
+msgstr "אנטארקטיקה"
+
+#: admin/includes/country-list.php:16
+msgid "Antigua and Barbuda"
+msgstr "אנטיגואה וברבודה"
+
+#: admin/includes/country-list.php:17
+msgid "Argentina"
+msgstr "ארגנטינה"
+
+#: admin/includes/country-list.php:18
+msgid "Armenia"
+msgstr "ארמניה"
+
+#: admin/includes/country-list.php:19
+msgid "Aruba"
+msgstr "ארובה"
+
+#: admin/includes/country-list.php:20
+msgid "Australia"
+msgstr "אוסטרליה"
+
+#: admin/includes/country-list.php:21
+msgid "Austria"
+msgstr "אוסטריה"
+
+#: admin/includes/country-list.php:22
+msgid "Azerbaijan"
+msgstr "אזרבייג’ן"
+
+#: admin/includes/country-list.php:23
+msgid "Bahamas"
+msgstr "איי בהאמה"
+
+#: admin/includes/country-list.php:24
+msgid "Bahrain"
+msgstr "בחריין"
+
+#: admin/includes/country-list.php:25
+msgid "Bangladesh"
+msgstr "בנגלדש"
+
+#: admin/includes/country-list.php:26
+msgid "Barbados"
+msgstr "ברבדוס"
+
+#: admin/includes/country-list.php:27
+msgid "Belarus"
+msgstr "בלארוס"
+
+#: admin/includes/country-list.php:28
+msgid "Belgium"
+msgstr "בלגיה"
+
+#: admin/includes/country-list.php:29
+msgid "Belau"
+msgstr "באילו"
+
+#: admin/includes/country-list.php:30
+msgid "Belize"
+msgstr "בליז"
+
+#: admin/includes/country-list.php:31
+msgid "Benin"
+msgstr "בנין"
+
+#: admin/includes/country-list.php:32
+msgid "Bermuda"
+msgstr "ברמודה"
+
+#: admin/includes/country-list.php:33
+msgid "Bhutan"
+msgstr "בהוטאן"
+
+#: admin/includes/country-list.php:34
+msgid "Bolivia"
+msgstr "בוליביה"
+
+#: admin/includes/country-list.php:35
+msgid "Bonaire, Saint Eustatius and Saba"
+msgstr "בונייר, סנט אוסטטיוס וסאבה"
+
+#: admin/includes/country-list.php:36
+msgid "Bosnia and Herzegovina"
+msgstr "בוסניה והרצגובינה"
+
+#: admin/includes/country-list.php:37
+msgid "Botswana"
+msgstr "בוטסואנה"
+
+#: admin/includes/country-list.php:38
+msgid "Bouvet Island"
+msgstr "איי בובה"
+
+#: admin/includes/country-list.php:39
+msgid "Brazil"
+msgstr "ברזיל"
+
+#: admin/includes/country-list.php:40
+msgid "British Indian Ocean Territory"
+msgstr "הטריטוריה הבריטית באוקיינוס ההודי"
+
+#: admin/includes/country-list.php:41
+msgid "British Virgin Islands"
+msgstr "איי הבתולה הבריטיים"
+
+#: admin/includes/country-list.php:42
+msgid "Brunei"
+msgstr "ברוניי"
+
+#: admin/includes/country-list.php:43
+msgid "Bulgaria"
+msgstr "בולגריה"
+
+#: admin/includes/country-list.php:44
+msgid "Burkina Faso"
+msgstr "בורקינה פאסו"
+
+#: admin/includes/country-list.php:45
+msgid "Burundi"
+msgstr "בורונדי"
+
+#: admin/includes/country-list.php:46
+msgid "Cambodia"
+msgstr "קמבודיה"
+
+#: admin/includes/country-list.php:47
+msgid "Cameroon"
+msgstr "קמרון"
+
+#: admin/includes/country-list.php:48
+msgid "Canada"
+msgstr "קנדה"
+
+#: admin/includes/country-list.php:49
+msgid "Cape Verde"
+msgstr "קייפ ורדה"
+
+#: admin/includes/country-list.php:50
+msgid "Cayman Islands"
+msgstr "איי קיימן"
+
+#: admin/includes/country-list.php:51
+msgid "Central African Republic"
+msgstr "הרפובליקה המרכז אפריקאית"
+
+#: admin/includes/country-list.php:52
+msgid "Chad"
+msgstr "צ'אד"
+
+#: admin/includes/country-list.php:53
+msgid "Chile"
+msgstr "צ'ילה"
+
+#: admin/includes/country-list.php:54
+msgid "China"
+msgstr "סין"
+
+#: admin/includes/country-list.php:55
+msgid "Christmas Island"
+msgstr "איי חג המולד"
+
+#: admin/includes/country-list.php:56
+msgid "Cocos (Keeling) Islands"
+msgstr "איי קוקוס (קילינג)"
+
+#: admin/includes/country-list.php:57
+msgid "Colombia"
+msgstr "קולומביה"
+
+#: admin/includes/country-list.php:58
+msgid "Comoros"
+msgstr "קומורוס"
+
+#: admin/includes/country-list.php:59
+msgid "Congo (Brazzaville)"
+msgstr "קונגו (ברזוויל)"
+
+#: admin/includes/country-list.php:60
+msgid "Congo (Kinshasa)"
+msgstr "קונגו (קינשאסה)"
+
+#: admin/includes/country-list.php:61
+msgid "Cook Islands"
+msgstr "איי קוק"
+
+#: admin/includes/country-list.php:62
+msgid "Costa Rica"
+msgstr "קוסטה ריקה"
+
+#: admin/includes/country-list.php:63
+msgid "Croatia"
+msgstr "קרואטיה"
+
+#: admin/includes/country-list.php:64
+msgid "Cuba"
+msgstr "קובה"
+
+#: admin/includes/country-list.php:65
+msgid "Cura&ccedil;ao"
+msgstr "קורקאו"
+
+#: admin/includes/country-list.php:66
+msgid "Cyprus"
+msgstr "קפריסין"
+
+#: admin/includes/country-list.php:67
+msgid "Czech Republic"
+msgstr "הרפובליקה הצ'כית"
+
+#: admin/includes/country-list.php:68
+msgid "Denmark"
+msgstr "דנמרק"
+
+#: admin/includes/country-list.php:69
+msgid "Djibouti"
+msgstr "ג'יבוטי"
+
+#: admin/includes/country-list.php:70
+msgid "Dominica"
+msgstr "דומיניקה"
+
+#: admin/includes/country-list.php:71
+msgid "Dominican Republic"
+msgstr "הרפובליקה הדומיניקנית"
+
+#: admin/includes/country-list.php:72
+msgid "Ecuador"
+msgstr "אקואדור"
+
+#: admin/includes/country-list.php:73
+msgid "Egypt"
+msgstr "Mısır"
+
+#: admin/includes/country-list.php:74
+msgid "El Salvador"
+msgstr "El Salvador"
+
+#: admin/includes/country-list.php:75
+msgid "Equatorial Guinea"
+msgstr "גינאה המשוונית"
+
+#: admin/includes/country-list.php:76
+msgid "Eritrea"
+msgstr "אריתריאה"
+
+#: admin/includes/country-list.php:77
+msgid "Estonia"
+msgstr "אסטוניה"
+
+#: admin/includes/country-list.php:78
+msgid "Ethiopia"
+msgstr "אתיופיה"
+
+#: admin/includes/country-list.php:79
+msgid "Falkland Islands"
+msgstr "איי פוקלנד"
+
+#: admin/includes/country-list.php:80
+msgid "Faroe Islands"
+msgstr "איי פארו"
+
+#: admin/includes/country-list.php:81
+msgid "Fiji"
+msgstr "פיג'י"
+
+#: admin/includes/country-list.php:82
+msgid "Finland"
+msgstr "פינלנד"
+
+#: admin/includes/country-list.php:83
+msgid "France"
+msgstr "צרפת"
+
+#: admin/includes/country-list.php:84
+msgid "French Guiana"
+msgstr "גיאנה הצרפתית"
+
+#: admin/includes/country-list.php:85
+msgid "French Polynesia"
+msgstr "פולינזיה הצרפתית"
+
+#: admin/includes/country-list.php:86
+msgid "French Southern Territories"
+msgstr "הטריטוריות הדרומיות של צרפת"
+
+#: admin/includes/country-list.php:87
+msgid "Gabon"
+msgstr "גבון"
+
+#: admin/includes/country-list.php:88
+msgid "Gambia"
+msgstr "גמביה"
+
+#: admin/includes/country-list.php:89
+msgid "Georgia"
+msgstr "גיאורגיה"
+
+#: admin/includes/country-list.php:90
+msgid "Germany"
+msgstr "גרמניה"
+
+#: admin/includes/country-list.php:91
+msgid "Ghana"
+msgstr "גאנה"
+
+#: admin/includes/country-list.php:92
+msgid "Gibraltar"
+msgstr "גיברלטר"
+
+#: admin/includes/country-list.php:93
+msgid "Greece"
+msgstr "יוון"
+
+#: admin/includes/country-list.php:94
+msgid "Greenland"
+msgstr "גרינלנד"
+
+#: admin/includes/country-list.php:95
+msgid "Grenada"
+msgstr "גרנדה"
+
+#: admin/includes/country-list.php:96
+msgid "Guadeloupe"
+msgstr "גוואדלופ"
+
+#: admin/includes/country-list.php:97
+msgid "Guam"
+msgstr "גואם"
+
+#: admin/includes/country-list.php:98
+msgid "Guatemala"
+msgstr "גואטמלה"
+
+#: admin/includes/country-list.php:99
+msgid "Guernsey"
+msgstr "גרנזי"
+
+#: admin/includes/country-list.php:100
+msgid "Guinea"
+msgstr "גינאה"
+
+#: admin/includes/country-list.php:101
+msgid "Guinea-Bissau"
+msgstr "גינאה - ביסאו"
+
+#: admin/includes/country-list.php:102
+msgid "Guyana"
+msgstr "גיאנה"
+
+#: admin/includes/country-list.php:103
+msgid "Haiti"
+msgstr "האיטי"
+
+#: admin/includes/country-list.php:104
+msgid "Heard Island and McDonald Islands"
+msgstr "איי הארד ומקדונלד"
+
+#: admin/includes/country-list.php:105
+msgid "Honduras"
+msgstr "הונדורס"
+
+#: admin/includes/country-list.php:106
+msgid "Hong Kong"
+msgstr "הונג קונג"
+
+#: admin/includes/country-list.php:107
+msgid "Hungary"
+msgstr "הונגריה"
+
+#: admin/includes/country-list.php:108
+msgid "Iceland"
+msgstr "İzlanda"
+
+#: admin/includes/country-list.php:109
+msgid "India"
+msgstr "הודו"
+
+#: admin/includes/country-list.php:110
+msgid "Indonesia"
+msgstr "אינדונזיה"
+
+#: admin/includes/country-list.php:111
+msgid "Iran"
+msgstr "איראן"
+
+#: admin/includes/country-list.php:112
+msgid "Iraq"
+msgstr "עיראק"
+
+#: admin/includes/country-list.php:113
+msgid "Ireland"
+msgstr "אירלנד"
+
+#: admin/includes/country-list.php:114
+msgid "Isle of Man"
+msgstr "איי מאן"
+
+#: admin/includes/country-list.php:115
+msgid "Israel"
+msgstr "ישראל"
+
+#: admin/includes/country-list.php:116
+msgid "Italy"
+msgstr "איטליה"
+
+#: admin/includes/country-list.php:117
+msgid "Ivory Coast"
+msgstr "חוף השנהב"
+
+#: admin/includes/country-list.php:118
+msgid "Jamaica"
+msgstr "ג'מייקה"
+
+#: admin/includes/country-list.php:119
+msgid "Japan"
+msgstr "יפן"
+
+#: admin/includes/country-list.php:120
+msgid "Jersey"
+msgstr "ג'רזי"
+
+#: admin/includes/country-list.php:121
+msgid "Jordan"
+msgstr "ירדן"
+
+#: admin/includes/country-list.php:122
+msgid "Kazakhstan"
+msgstr "קזחסטן"
+
+#: admin/includes/country-list.php:123
+msgid "Kenya"
+msgstr "קניה"
+
+#: admin/includes/country-list.php:124
+msgid "Kiribati"
+msgstr "קיריבאטי"
+
+#: admin/includes/country-list.php:125
+msgid "Kuwait"
+msgstr "כווית"
+
+#: admin/includes/country-list.php:126
+msgid "Kyrgyzstan"
+msgstr "קירגיזסטן"
+
+#: admin/includes/country-list.php:127
+msgid "Laos"
+msgstr "לאוס"
+
+#: admin/includes/country-list.php:128
+msgid "Latvia"
+msgstr "לטביה"
+
+#: admin/includes/country-list.php:129
+msgid "Lebanon"
+msgstr "לבנון"
+
+#: admin/includes/country-list.php:130
+msgid "Lesotho"
+msgstr "לסוטו"
+
+#: admin/includes/country-list.php:131
+msgid "Liberia"
+msgstr "ליבריה"
+
+#: admin/includes/country-list.php:132
+msgid "Libya"
+msgstr "לוב"
+
+#: admin/includes/country-list.php:133
+msgid "Liechtenstein"
+msgstr "ליכטנשטיין"
+
+#: admin/includes/country-list.php:134
+msgid "Lithuania"
+msgstr "ליטואניה"
+
+#: admin/includes/country-list.php:135
+msgid "Luxembourg"
+msgstr "Lüksemburg"
+
+#: admin/includes/country-list.php:136
+msgid "Macao S.A.R., China"
+msgstr "מקאו, אזור מנהלי מיוחד, סין"
+
+#: admin/includes/country-list.php:137
+msgid "Macedonia"
+msgstr "מקדוניה"
+
+#: admin/includes/country-list.php:138
+msgid "Madagascar"
+msgstr "מדגסקר"
+
+#: admin/includes/country-list.php:139
+msgid "Malawi"
+msgstr "Malawi"
+
+#: admin/includes/country-list.php:140
+msgid "Malaysia"
+msgstr "מלזיה"
+
+#: admin/includes/country-list.php:141
+msgid "Maldives"
+msgstr "האיים המלדיביים"
+
+#: admin/includes/country-list.php:142
+msgid "Mali"
+msgstr "מאלי"
+
+#: admin/includes/country-list.php:143
+msgid "Malta"
+msgstr "Malta"
+
+#: admin/includes/country-list.php:144
+msgid "Marshall Islands"
+msgstr "איי מרשאל"
+
+#: admin/includes/country-list.php:145
+msgid "Martinique"
+msgstr "מרטיניק"
+
+#: admin/includes/country-list.php:146
+msgid "Mauritania"
+msgstr "מאוריטניה"
+
+#: admin/includes/country-list.php:147
+msgid "Mauritius"
+msgstr "מאוריציוס"
+
+#: admin/includes/country-list.php:148
+msgid "Mayotte"
+msgstr "מיוט"
+
+#: admin/includes/country-list.php:149
+msgid "Mexico"
+msgstr "מקסיקו"
+
+#: admin/includes/country-list.php:150
+msgid "Micronesia"
+msgstr "מיקרונזיה"
+
+#: admin/includes/country-list.php:151
+msgid "Moldova"
+msgstr "מולדובה"
+
+#: admin/includes/country-list.php:152
+msgid "Monaco"
+msgstr "מונקו"
+
+#: admin/includes/country-list.php:153
+msgid "Mongolia"
+msgstr "מונגוליה"
+
+#: admin/includes/country-list.php:154
+msgid "Montenegro"
+msgstr "מונטנגרו"
+
+#: admin/includes/country-list.php:155
+msgid "Montserrat"
+msgstr "מונטסראט"
+
+#: admin/includes/country-list.php:156
+msgid "Morocco"
+msgstr "מרוקו"
+
+#: admin/includes/country-list.php:157
+msgid "Mozambique"
+msgstr "מוזמביק"
+
+#: admin/includes/country-list.php:158
+msgid "Myanmar"
+msgstr "מיאנמר"
+
+#: admin/includes/country-list.php:159
+msgid "Namibia"
+msgstr "נמיביה"
+
+#: admin/includes/country-list.php:160
+msgid "Nauru"
+msgstr "נאורו"
+
+#: admin/includes/country-list.php:161
+msgid "Nepal"
+msgstr "נפאל"
+
+#: admin/includes/country-list.php:162
+msgid "Netherlands"
+msgstr "הולנד"
+
+#: admin/includes/country-list.php:163
+msgid "New Caledonia"
+msgstr "קלדוניה החדשה"
+
+#: admin/includes/country-list.php:164
+msgid "New Zealand"
+msgstr "ניו זילנד"
+
+#: admin/includes/country-list.php:165
+msgid "Nicaragua"
+msgstr "ניקרגואה"
+
+#: admin/includes/country-list.php:166
+msgid "Niger"
+msgstr "ניג'ר"
+
+#: admin/includes/country-list.php:167
+msgid "Nigeria"
+msgstr "ניגריה"
+
+#: admin/includes/country-list.php:168
+msgid "Niue"
+msgstr "ניואה"
+
+#: admin/includes/country-list.php:169
+msgid "Norfolk Island"
+msgstr "האי נורפוק"
+
+#: admin/includes/country-list.php:170
+msgid "Northern Mariana Islands"
+msgstr "איי מריאנה הצפוניים"
+
+#: admin/includes/country-list.php:171
+msgid "North Korea"
+msgstr "צפון קוריאה"
+
+#: admin/includes/country-list.php:172
+msgid "Norway"
+msgstr "נורבגיה"
+
+#: admin/includes/country-list.php:173
+msgid "Oman"
+msgstr "אומן"
+
+#: admin/includes/country-list.php:174
+msgid "Pakistan"
+msgstr "פקיסטן"
+
+#: admin/includes/country-list.php:175
+msgid "Palestinian Territory"
+msgstr "הרשות הפלשטחית"
+
+#: admin/includes/country-list.php:176
+msgid "Panama"
+msgstr "פנמה"
+
+#: admin/includes/country-list.php:177
+msgid "Papua New Guinea"
+msgstr "גינאה החדשה (פאפואה)"
+
+#: admin/includes/country-list.php:178
+msgid "Paraguay"
+msgstr "פרגוואי"
+
+#: admin/includes/country-list.php:179
+msgid "Peru"
+msgstr "פרו"
+
+#: admin/includes/country-list.php:180
+msgid "Philippines"
+msgstr "הפיליפינים"
+
+#: admin/includes/country-list.php:181
+msgid "Pitcairn"
+msgstr "פיטקרן"
+
+#: admin/includes/country-list.php:182
+msgid "Poland"
+msgstr "פולין"
+
+#: admin/includes/country-list.php:183
+msgid "Portugal"
+msgstr "פורטוגל"
+
+#: admin/includes/country-list.php:184
+msgid "Puerto Rico"
+msgstr "פורטו ריקו"
+
+#: admin/includes/country-list.php:185
+msgid "Qatar"
+msgstr "קטאר"
+
+#: admin/includes/country-list.php:186
+msgid "Reunion"
+msgstr "איחוד"
+
+#: admin/includes/country-list.php:187
+msgid "Romania"
+msgstr "רומניה"
+
+#: admin/includes/country-list.php:188
+msgid "Russia"
+msgstr "רוסיה"
+
+#: admin/includes/country-list.php:189
+msgid "Rwanda"
+msgstr "רואנדה"
+
+#: admin/includes/country-list.php:190
+msgid "Saint Barth&eacute;lemy"
+msgstr "סנט ברתלמי"
+
+#: admin/includes/country-list.php:191
+msgid "Saint Helena"
+msgstr "סנט הלנה"
+
+#: admin/includes/country-list.php:192
+msgid "Saint Kitts and Nevis"
+msgstr "סיינט קיטס ונביס"
+
+#: admin/includes/country-list.php:193
+msgid "Saint Lucia"
+msgstr "סיינט לוסיה"
+
+#: admin/includes/country-list.php:194
+msgid "Saint Martin (French part)"
+msgstr "סנט מרטין (החלק הצרפתי)"
+
+#: admin/includes/country-list.php:195
+msgid "Saint Martin (Dutch part)"
+msgstr "סנט מרטין (חלק הולנדי)"
+
+#: admin/includes/country-list.php:196
+msgid "Saint Pierre and Miquelon"
+msgstr "סנט פייר ומיקלון"
+
+#: admin/includes/country-list.php:197
+msgid "Saint Vincent and the Grenadines"
+msgstr "סיינט וינסנט והגרנדינים"
+
+#: admin/includes/country-list.php:198
+msgid "San Marino"
+msgstr "סן מרינו"
+
+#: admin/includes/country-list.php:199
+msgid "S&atilde;o Tom&eacute; and Pr&iacute;ncipe"
+msgstr "סאו טומה ופרינסיפה"
+
+#: admin/includes/country-list.php:200
+msgid "Saudi Arabia"
+msgstr "ערב הסעודית"
+
+#: admin/includes/country-list.php:201
+msgid "Senegal"
+msgstr "סנגל"
+
+#: admin/includes/country-list.php:202
+msgid "Serbia"
+msgstr "סרביה"
+
+#: admin/includes/country-list.php:203
+msgid "Seychelles"
+msgstr "איי סיישל"
+
+#: admin/includes/country-list.php:204
+msgid "Sierra Leone"
+msgstr "Sierra Leone"
+
+#: admin/includes/country-list.php:205
+msgid "Singapore"
+msgstr "סינגפור"
+
+#: admin/includes/country-list.php:206
+msgid "Slovakia"
+msgstr "סלובאקיה"
+
+#: admin/includes/country-list.php:207
+msgid "Slovenia"
+msgstr "סלובניה"
+
+#: admin/includes/country-list.php:208
+msgid "Solomon Islands"
+msgstr "איי שלמה"
+
+#: admin/includes/country-list.php:209
+msgid "Somalia"
+msgstr "סומאליה"
+
+#: admin/includes/country-list.php:210
+msgid "South Africa"
+msgstr "דרום אפריקה"
+
+#: admin/includes/country-list.php:211
+msgid "South Georgia/Sandwich Islands"
+msgstr "ג'ורג'יה הדרומית/איים סנדוויץ'"
+
+#: admin/includes/country-list.php:212
+msgid "South Korea"
+msgstr "קוריאה דרומית"
+
+#: admin/includes/country-list.php:213
+msgid "South Sudan"
+msgstr "דרום סודאן"
+
+#: admin/includes/country-list.php:214
+msgid "Spain"
+msgstr "ספרד"
+
+#: admin/includes/country-list.php:215
+msgid "Sri Lanka"
+msgstr "סרי לנקה"
+
+#: admin/includes/country-list.php:216
+msgid "Sudan"
+msgstr "סודאן"
+
+#: admin/includes/country-list.php:217
+msgid "Suriname"
+msgstr "סורינאם"
+
+#: admin/includes/country-list.php:218
+msgid "Svalbard and Jan Mayen"
+msgstr "איי סבלברד ויאן מאיין"
+
+#: admin/includes/country-list.php:219
+msgid "Swaziland"
+msgstr "סווזילנד"
+
+#: admin/includes/country-list.php:220
+msgid "Sweden"
+msgstr "שוודיה"
+
+#: admin/includes/country-list.php:221
+msgid "Switzerland"
+msgstr "שוויץ"
+
+#: admin/includes/country-list.php:222
+msgid "Syria"
+msgstr "סוריה"
+
+#: admin/includes/country-list.php:223
+msgid "Taiwan"
+msgstr "טאיוואן"
+
+#: admin/includes/country-list.php:224
+msgid "Tajikistan"
+msgstr "טג'יקיסטאן"
+
+#: admin/includes/country-list.php:225
+msgid "Tanzania"
+msgstr "טנזניה"
+
+#: admin/includes/country-list.php:226
+msgid "Thailand"
+msgstr "תאילנד"
+
+#: admin/includes/country-list.php:227
+msgid "Timor-Leste"
+msgstr "טימור-לסטה"
+
+#: admin/includes/country-list.php:228
+msgid "Togo"
+msgstr "טוגו"
+
+#: admin/includes/country-list.php:229
+msgid "Tokelau"
+msgstr "טוקלאו"
+
+#: admin/includes/country-list.php:230
+msgid "Tonga"
+msgstr "טונגה"
+
+#: admin/includes/country-list.php:231
+msgid "Trinidad and Tobago"
+msgstr "טרינידד וטובגו"
+
+#: admin/includes/country-list.php:232
+msgid "Tunisia"
+msgstr "טוניס"
+
+#: admin/includes/country-list.php:233
+msgid "Turkey"
+msgstr "טורקיה"
+
+#: admin/includes/country-list.php:234
+msgid "Turkmenistan"
+msgstr "טורקמניסטן"
+
+#: admin/includes/country-list.php:235
+msgid "Turks and Caicos Islands"
+msgstr "איי טורקיה וקייקוס"
+
+#: admin/includes/country-list.php:236
+msgid "Tuvalu"
+msgstr "טובאלו"
+
+#: admin/includes/country-list.php:237
+msgid "Uganda"
+msgstr "אוגנדה"
+
+#: admin/includes/country-list.php:238
+msgid "Ukraine"
+msgstr "אוקראינה"
+
+#: admin/includes/country-list.php:239
+msgid "United Arab Emirates"
+msgstr "איחוד האמירויות"
+
+#: admin/includes/country-list.php:240
+msgid "United Kingdom (UK)"
+msgstr "אנגליה (UK)"
+
+#: admin/includes/country-list.php:241
+msgid "United States (US)"
+msgstr "ארה&quot;ב"
+
+#: admin/includes/country-list.php:242
+msgid "United States (US) Minor Outlying Islands"
+msgstr "האיים החיצוניים של ארצות הברית (ארה\"ב)"
+
+#: admin/includes/country-list.php:243
+msgid "United States (US) Virgin Islands"
+msgstr "איי הבתולה (ארה\"ב)"
+
+#: admin/includes/country-list.php:244
+msgid "Uruguay"
+msgstr "אורוגוואי"
+
+#: admin/includes/country-list.php:245
+msgid "Uzbekistan"
+msgstr "אוזבקיסטן"
+
+#: admin/includes/country-list.php:246
+msgid "Vanuatu"
+msgstr "ונואטו"
+
+#: admin/includes/country-list.php:247
+msgid "Vatican"
+msgstr "הוותיקן"
+
+#: admin/includes/country-list.php:248
+msgid "Venezuela"
+msgstr "ונצואלה"
+
+#: admin/includes/country-list.php:249
+msgid "Vietnam"
+msgstr "ויאטנם"
+
+#: admin/includes/country-list.php:250
+msgid "Wallis and Futuna"
+msgstr "איי ווליס ופוטונה"
+
+#: admin/includes/country-list.php:251
+msgid "Western Sahara"
+msgstr "סהרה המערבית"
+
+#: admin/includes/country-list.php:252
+msgid "Samoa"
+msgstr "סמואה"
+
+#: admin/includes/country-list.php:253
+msgid "Yemen"
+msgstr "תימן"
+
+#: admin/includes/country-list.php:254
+msgid "Zambia"
+msgstr "זמביה"
+
+#: admin/includes/country-list.php:255
+msgid "Zimbabwe"
+msgstr "זימבבואה"
+
+#: admin/includes/functions.php:16
+msgid "January"
+msgstr "ינואר"
+
+#: admin/includes/functions.php:17
+msgid "February"
+msgstr "פברואר"
+
+#: admin/includes/functions.php:18
+msgid "March"
+msgstr "מרץ"
+
+#: admin/includes/functions.php:19
+msgid "April"
+msgstr "אפריל"
+
+#: admin/includes/functions.php:20
+msgid "May"
+msgstr "מאי"
+
+#: admin/includes/functions.php:21
+msgid "June"
+msgstr "יוני"
+
+#: admin/includes/functions.php:22
+msgid "July "
+msgstr "יולי "
+
+#: admin/includes/functions.php:23
+msgid "August"
+msgstr "אוגוסט"
+
+#: admin/includes/functions.php:24
+msgid "September"
+msgstr "ספטמבר"
+
+#: admin/includes/functions.php:25
+msgid "October"
+msgstr "אוקטובר"
+
+#: admin/includes/functions.php:26
+msgid "November"
+msgstr "נובמבר"
+
+#: admin/includes/functions.php:27
+msgid "December"
+msgstr "דצמבר"
+
+#: admin/includes/functions.php:164
+msgid "Invoice"
+msgstr "חשבונית"
+
+#: admin/includes/functions.php:165
+msgid "Label"
+msgstr "תווית"
+
+#: admin/includes/functions.php:166
+msgid "Waybill"
+msgstr "ש-300 ש\"ר"
+
+#: admin/includes/functions.php:305
+msgid "Shipper Information"
+msgstr "מידע השולח"
+
+#: admin/includes/functions.php:307
+msgid "Receiver Information"
+msgstr "פרטי מקלט"
+
+#: admin/includes/functions.php:309 templates/waybill.tpl.php:74
+msgid "Shipment Information"
+msgstr "פרטי משלוח"
+
+#: admin/includes/functions.php:321 admin/includes/functions.php:734
+msgid "Default"
+msgstr "ברירת מחדל"
+
+#: admin/includes/functions.php:335
+msgid "Current page"
+msgstr "העמוד הנוכחי"
+
+#: admin/includes/functions.php:336
+msgid "Total page"
+msgstr "דף סה\"כ"
+
+#: admin/includes/functions.php:523 admin/includes/hooks.php:113
+msgid "Pending Client"
+msgstr "לקוח ממתין"
+
+#: admin/includes/functions.php:758 admin/includes/functions.php:804
+msgid "Something went wrong saving your shipment. Please reload and try again"
+msgstr "משהו השתבש כשהציל את המשלוח שלך. נא טען מחדש ונסה שוב"
+
+#: admin/includes/functions.php:798
+msgid "Shipment "
+msgstr "משלוח "
+
+#: admin/includes/functions.php:798
+msgid " has been successfully saved."
+msgstr " נשמר בהצלחה."
+
+#: admin/includes/functions.php:820
+msgid "Shipper Name"
+msgstr "שם השולח"
+
+#: admin/includes/functions.php:825
+msgid "Receiver Name"
+msgstr "שם מקלט"
+
+#: admin/includes/functions.php:1044
+msgid "Previous"
+msgstr "הקודם"
+
+#: admin/includes/functions.php:1045
+msgid "Next"
+msgstr "הבא"
+
+#: admin/includes/functions.php:1046
+msgid "Shipment Pagination"
+msgstr "חלוקה לעמודי משלוח"
+
+#: admin/includes/functions.php:1090
+msgid "First"
+msgstr "ראשון"
+
+#: admin/includes/functions.php:1092
+msgid "previous"
+msgstr "הקודם"
+
+#: admin/includes/functions.php:1107
+msgid "next"
+msgstr "הבא"
+
+#: admin/includes/functions.php:1111
+msgid "Last"
+msgstr "אחרון"
+
+#: admin/includes/functions.php:1239 templates/account.tpl.php:73
+msgid "First Name"
+msgstr "שם פרטי"
+
+#: admin/includes/functions.php:1249 templates/account.tpl.php:77
+msgid "Last Name"
+msgstr "שם משפחה"
+
+#: admin/includes/functions.php:1259 templates/account.tpl.php:51
+#: templates/account.tpl.php:81
+msgid "Phone"
+msgstr "טלפון"
+
+#: admin/includes/functions.php:1284
+msgid "Company"
+msgstr "חברה"
+
+#: admin/includes/functions.php:1294
+msgid "Address line 1"
+msgstr "כתובת רחוב"
+
+#: admin/includes/functions.php:1304
+msgid "Address line 2"
+msgstr "כתובת 2"
+
+#: admin/includes/functions.php:1314
+msgid "City"
+msgstr "עיר"
+
+#: admin/includes/functions.php:1324
+msgid "Postcode / ZIP"
+msgstr "מיקוד"
+
+#: admin/includes/functions.php:1334
+msgid "Country"
+msgstr "מדינה"
+
+#: admin/includes/functions.php:1344
+msgid "State / County"
+msgstr "מדינה / ארץ"
+
+#: admin/includes/functions.php:1403 admin/includes/functions.php:1458
+msgid "Orders"
+msgstr "הזמנות"
+
+#: admin/includes/functions.php:1424
+msgid "Profile"
+msgstr "פרופיל"
+
+#: admin/includes/functions.php:1443
+msgid "Shipments"
+msgstr "משלוחים"
+
+#: admin/includes/functions.php:1445
+#, php-format
+msgid ""
+"Shipments <span class=\"badge badge-pill bg-danger align-top\">%s</span>"
+msgstr "משלוחים <span class=\"badge badge-pill bg-danger align-top\">%s</span>"
+
+#: admin/includes/hooks-shipment.php:10 templates/orders.tpl.php:33
+msgid "View"
+msgstr "הצג"
+
+#: admin/includes/hooks-shipment.php:16
+msgid "Edit"
+msgstr "ערוך"
+
+#: admin/includes/hooks-shipment.php:21
+msgid "Trash"
+msgstr "פח"
+
+#: admin/includes/hooks-shipment.php:21 templates/shipment-history.tpl.php:64
+#: templates/shipments.php:37 templates/shipments.php:97
+msgid "Delete"
+msgstr "מחק"
+
+#: admin/includes/hooks-shipment.php:44
+msgid "Tracking Number"
+msgstr "מספר מעקב"
+
+#: admin/includes/hooks-shipment.php:51
+msgid "New"
+msgstr "חדש"
+
+#: admin/includes/hooks-shipment.php:67 admin/includes/map.php:153
+#: templates/filter-shipment.php:17
+msgid "Status"
+msgstr "סטטוס"
+
+#: admin/includes/hooks-shipment.php:74 templates/orders.tpl.php:8
+msgid "Shipment Type"
+msgstr "סוג משלוח"
+
+#: admin/includes/hooks-shipment.php:82 admin/includes/hooks.php:846
+#: templates/shipments.php:27 templates/shipments.php:87
+msgid "Print"
+msgstr "הדפסה"
+
+#: admin/includes/hooks.php:103
+msgid "Client Approval"
+msgstr "אישור לקוח"
+
+#: admin/includes/hooks.php:110
+msgid "Disabled"
+msgstr "לא זמין"
+
+#: admin/includes/hooks.php:115
+msgid "Approved"
+msgstr "אושר"
+
+#: admin/includes/hooks.php:140 admin/includes/hooks.php:795
+msgid "Hi there,"
+msgstr "שלום,"
+
+#: admin/includes/hooks.php:141 admin/includes/hooks.php:796
+#, php-format
+msgid "Welcome to %s! Here's how to log in:"
+msgstr "ברוכים הבאים ל %s! נא להיכנס:"
+
+#: admin/includes/hooks.php:142
+#, php-format
+msgid "Login URL:  %s"
+msgstr "כתובת URL של כניסה: %s"
+
+#: admin/includes/hooks.php:143 admin/includes/hooks.php:798
+#: admin/includes/hooks.php:818
+#, php-format
+msgid "Username: %s"
+msgstr "שם משתמש: %s"
+
+#: admin/includes/hooks.php:144
+#, php-format
+msgid "Password: %s"
+msgstr "סיסמה: %s"
+
+#: admin/includes/hooks.php:145
+#, php-format
+msgid "If you have any problems, please contact our support at %s."
+msgstr "אם יש לך בעיות כלשהן, אנא צור קשר עם התמיכה שלנו %s."
+
+#: admin/includes/hooks.php:146 admin/includes/hooks.php:802
+msgid "Thank you for trusting us!"
+msgstr "תודה שסמכת עלינו!"
+
+#: admin/includes/hooks.php:165 admin/includes/hooks.php:565
+msgid "Client"
+msgstr "לקוח"
+
+#: admin/includes/hooks.php:167
+msgid "-- Select Client --"
+msgstr "-- בחר לקוח --"
+
+#: admin/includes/hooks.php:183 admin/includes/hooks.php:592
+msgid "Agent"
+msgstr "סוכן"
+
+#: admin/includes/hooks.php:185
+msgid "-- Select Agent --"
+msgstr "-- בחר סוכן --"
+
+#: admin/includes/hooks.php:201 admin/includes/hooks.php:576
+msgid "Employee"
+msgstr "עובד"
+
+#: admin/includes/hooks.php:203
+msgid "-- Select Employee --"
+msgstr "-- בחר עובד --"
+
+#: admin/includes/hooks.php:224
+msgid "Date Created"
+msgstr "תאריך יצירה"
+
+#: admin/includes/hooks.php:226 templates/graph.php:55
+msgid "to"
+msgstr "עד"
+
+#: admin/includes/hooks.php:278
+#, php-format
+msgid "Date Created: %s to %s"
+msgstr "תאריך יצירה: %s %s"
+
+#: admin/includes/hooks.php:285
+msgid "Dashboard"
+msgstr "לוח בקרה"
+
+#: admin/includes/hooks.php:312 admin/includes/hooks.php:328
+#: admin/includes/hooks.php:331 templates/filter-shipment.php:61
+#: templates/filter-shipment.php:62 templates/orders.tpl.php:7
+msgid "Shipment Number"
+msgstr "מספר משלוח"
+
+#: admin/includes/hooks.php:360
+msgid "Bulk Assign"
+msgstr "הקצאה בצובר"
+
+#: admin/includes/hooks.php:462
+msgid "Select Template"
+msgstr "בחירת תבנית"
+
+#: admin/includes/hooks.php:494
+msgid "BOL"
+msgstr "בול"
+
+#: admin/includes/hooks.php:543
+msgid "Not a member?"
+msgstr "לא רשום?"
+
+#: admin/includes/hooks.php:543 templates/registration.tpl.php:3
+#: templates/registration.tpl.php:9
+msgid "Registration"
+msgstr "רישום"
+
+#: admin/includes/hooks.php:543 templates/registration-form.tpl.php:44
+msgid "Register"
+msgstr "הירשם"
+
+#: admin/includes/hooks.php:793 admin/includes/hooks.php:814
+msgid "From: "
+msgstr "מאת: "
+
+#: admin/includes/hooks.php:799 admin/includes/hooks.php:819
+#, php-format
+msgid "Email: %s"
+msgstr "אימייל: %s"
+
+#: admin/includes/hooks.php:800
+msgid ""
+"Password: The one you entered in the registration form. (For security "
+"reason, we save encripted password)"
+msgstr "סיסמה: זו שהזנת בטופס ההרשמה. (מטעמי אבטחה, אנו שומרים סיסמה מוקפת)"
+
+#: admin/includes/hooks.php:801
+#, php-format
+msgid "If you have any problems, please contact me at %s."
+msgstr "אם יש לך בעיות, אנא צור איתי קשר %s."
+
+#: admin/includes/hooks.php:816
+msgid "Hi Admin,"
+msgstr "שלום אדמין"
+
+#: admin/includes/hooks.php:817
+#, php-format
+msgid "New user registration on your site %s:"
+msgstr "רישום משתמש חדש באתר שלך %s:"
+
+#: admin/includes/language.php:9
+msgid "Please activate your license key for WPCargo Frontend Manager"
+msgstr "נא הפעל את מפתח הרשיון שלך עבור מנהל החזית של WPCargo"
+
+#: admin/includes/language.php:12
+msgid "Warning: Frontend Manager Dashboard found, please set up."
+msgstr "אזהרה: נמצא לוח המחוונים של מנהל Frontend, אנא הגדר."
+
+#: admin/includes/language.php:12
+msgid "Frontend Manager Dashboard"
+msgstr "לוח המחוונים של מנהל Frontend"
+
+#: admin/includes/language.php:12
+msgid "Set up Dashboard"
+msgstr "הגדרת לוח מחוונים"
+
+#: admin/includes/language.php:15
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\" target=\"_blank"
+"\">WPTaskForce License Helper</a> plugin to be active!"
+msgstr ""
+"תוסף זה דורש תוסף <a href=\"http://wpcargo.com/\" target=\"_blank\">עוזר "
+"רישיון WPTaskForce</a> להיות פעיל!"
+
+#: admin/includes/language.php:18
+msgid ""
+"This plugin requires <a href=\"https://wordpress.org/plugins/wpcargo/\" "
+"target=\"_blank\">WPCargo</a> plugin to be active!"
+msgstr ""
+"תוסף זה דורש תוסף <a href=\"https://wordpress.org/plugins/wpcargo/\" target="
+"\"_blank\">WPCargo</a> להיות פעיל!"
+
+#: admin/includes/language.php:21
+msgid ""
+"This plugin requires <strong>WPCargo Custom Field Add-ons</strong> plugin to "
+"be active!"
+msgstr ""
+"תוסף זה דורש תוסף <strong>הרחבות שדה מותאם אישית WPCargo</strong> להיות פעיל!"
+
+#: admin/includes/language.php:24
+msgid "Cheating, uh?"
+msgstr "רמאות, אה?"
+
+#: admin/includes/language.php:27
+msgid "Frontend Dashboard Settings"
+msgstr "הגדרות לוח בקרה קדמי"
+
+#: admin/includes/language.php:30 admin/includes/settings.php:55
+msgid "Frontend Dashboard"
+msgstr "לוח מחוונים חזיתי"
+
+#: admin/includes/language.php:33
+msgid "WPCargo Dashboard Sidebar Menu"
+msgstr "תפריט סרגל צידי של לוח מחוונים של WPCargo"
+
+#: admin/includes/language.php:36
+msgid "WPCargo Dashboard Top Menu"
+msgstr "התפריט העליון של לוח המחוונים של WPCargo"
+
+#: admin/includes/language.php:39
+msgid "No order has been made."
+msgstr "לא נעשתה כל הזמנה."
+
+#: admin/includes/language.php:42
+msgid "You have been successfully registered."
+msgstr "נרשמת בהצלחה."
+
+#: admin/includes/language.php:45
+msgid ""
+"You have been successfully registered. We'll check your account for approval "
+"and send you notification in your registered email with registration status."
+msgstr ""
+"נרשמת בהצלחה. אנו נבדוק את אישור החשבון שלך ונשלח לך הודעה בדוא\"ל הרשום שלך "
+"עם סטטוס ההרשמה."
+
+#: admin/includes/language.php:48
+msgid "Something went wrong in your registration. Please reload and try again"
+msgstr "משהו השתבש ברישום שלך. נא טען מחדש ונסה שוב"
+
+#: admin/includes/language.php:51
+msgid "You do not have permissions to view this data."
+msgstr "אין לך הרשאות להציג נתונים אלה."
+
+#: admin/includes/language.php:54
+msgid "Removing License failed, License not registered in domain"
+msgstr "הסרת הרשיון נכשלה, הרשיון אינו רשום בתחום"
+
+#: admin/includes/language.php:57
+msgid "License has been successfully removed from"
+msgstr "הרשיון הוסר בהצלחה מ"
+
+#: admin/includes/map.php:151 templates/orders.tpl.php:6
+msgid "Date"
+msgstr "תאריך"
+
+#: admin/includes/map.php:152
+msgid "Location"
+msgstr "מיקום"
+
+#: admin/includes/print-hooks.php:50
+msgid "From:"
+msgstr "מאת:"
+
+#: admin/includes/print-hooks.php:57
+msgid "To:"
+msgstr "אל:"
+
+#: admin/includes/print-hooks.php:113
+msgid "SHIPPER DETAILS:"
+msgstr "פרטי השולח:"
+
+#: admin/includes/print-hooks.php:120
+msgid "RECEIVER DETAILS:"
+msgstr "פרטי מקלט:"
+
+#: admin/includes/print-hooks.php:142
+msgid "PACKAGE DETAILS:"
+msgstr "פרטי חבילה:"
+
+#: admin/includes/print-hooks.php:195
+msgid "Bill of Lading"
+msgstr "שטר המטען"
+
+#: admin/includes/print-hooks.php:202
+msgid "SHIP FROM"
+msgstr "שלח מ"
+
+#: admin/includes/print-hooks.php:211
+msgid "SHIP TO"
+msgstr "שלח אל"
+
+#: admin/includes/print-hooks.php:233
+msgid "ADDITIONAL INFORMATION"
+msgstr "מידע נוסף"
+
+#: admin/includes/print-hooks.php:306
+msgid "PACKAGE DETAILS"
+msgstr "פרטי חבילה"
+
+#: admin/includes/settings.php:44
+msgid "WPCargo Dashboard Attributes"
+msgstr "תכונות לוח מחוונים של WPCargo"
+
+#: admin/includes/settings.php:65
+msgid "Menu Icon Class"
+msgstr "מחלקת סמל תפריט"
+
+#: admin/includes/settings.php:67
+msgid ""
+"Note: This menu icon will display only in WPCargo Dashboard Template. You "
+"can find icons available in"
+msgstr ""
+"הערה: סמל תפריט זה יוצג רק בתבנית לוח המחוונים של WPCargo. באפשרותך למצוא "
+"סמלים זמינים ב-"
+
+#: admin/includes/settings.php:67
+msgid "ei. dashboard"
+msgstr "איי. לוח המחוונים"
+
+#: admin/includes/widgets.php:10
+msgid "FM Dashboard- Top"
+msgstr "לוח מחוונים FM - למעלה"
+
+#: admin/includes/widgets.php:12
+msgid ""
+"This widget display in the Frontend Manager dashboard report top area page."
+msgstr "תצוגת ווידג'ט זה בדף העליון של לוח המחוונים של Frontend Manager."
+
+#: admin/includes/widgets.php:19
+msgid "FM Dashboard- Middle"
+msgstr "לוח מחוונים FM - אמצע"
+
+#: admin/includes/widgets.php:21
+msgid ""
+"This widget display in the Frontend Manager dashboard report middle area "
+"page."
+msgstr ""
+"תצוגת ווידג'ט זו בעמוד אזור הביניים של לוח המחוונים של Frontend Manager."
+
+#: admin/includes/widgets.php:28
+msgid "FM Dashboard- Bottom"
+msgstr "לוח מחוונים FM - למטה"
+
+#: admin/includes/widgets.php:30
+msgid ""
+"This widget display in the Frontend Manager dashboard report bottom area "
+"page."
+msgstr ""
+"תצוגת ווידג'ט זו בדף האזור התחתון של דוח לוח המחוונים של Frontend Manager."
+
+#: admin/includes/widgets.php:37
+msgid "FM Shipment - Top"
+msgstr "משלוח FM - למעלה"
+
+#: admin/includes/widgets.php:39
+msgid ""
+"This widget display in the Frontend Manager dashboard shipment top area page."
+msgstr ""
+"תצוגת ווידג'ט זו בדף האזור העליון של משלוח לוח המחוונים של Frontend Manager."
+
+#: admin/includes/widgets.php:46
+msgid "FM Shipment - Bottom"
+msgstr "משלוח FM - למטה"
+
+#: admin/includes/widgets.php:48
+msgid ""
+"This widget display in the Frontend Manager dashboard shipment bottom area "
+"page."
+msgstr ""
+"תצוגת ווידג'ט זו בדף האזור התחתון של משלוח לוח המחוונים של Frontend Manager."
+
+#: admin/templates/address-mapping.tpl.php:1
+msgid "Add registration info to address book"
+msgstr "הוספת פרטי רישום ליומן הכתובות"
+
+#: admin/templates/address-mapping.tpl.php:2
+msgid "Note: This data while add to the address book if plugin is installed."
+msgstr "הערה: נתונים אלה בעת הוספה לפונקס הכתובות אם התוסף מותקן."
+
+#: admin/templates/address-mapping.tpl.php:10
+msgid "Select Field"
+msgstr "בחר שדה"
+
+#: admin/templates/print-settings.tpl.php:1
+msgid "Print Setup"
+msgstr "הגדרת הדפסה"
+
+#: admin/templates/print-settings.tpl.php:4
+msgid "Enable Chinese Fonts"
+msgstr "הפיכת גופנים סיניים לזמינים"
+
+#: admin/templates/print-settings.tpl.php:7
+msgid ""
+"Note: This will add additional font family for simplified chinese fonts. "
+"Enable this option only if you use simplified chinese fonts in you site."
+msgstr ""
+"הערה: פעולה זו תוסיף משפחת גופנים נוספת עבור גופנים סיניים פשוטים. הפוך "
+"אפשרות זו לזמינה רק אם אתה משתמש בגופנים סיניים פשוטים באתר שלך."
+
+#: admin/templates/print-settings.tpl.php:11
+msgid "Enable Print BOL"
+msgstr "הפוך BOL של הדפסה לזמין"
+
+#: admin/templates/print-settings.tpl.php:14
+msgid "Note: This will add additional print functionality for BOL."
+msgstr "הערה: פעולה זו תוסיף פונקציונליות הדפסה נוספת עבור BOL."
+
+#: admin/templates/print-settings.tpl.php:18
+msgid "Waybill Paper Size"
+msgstr "גודל נייר של טרנביל"
+
+#: admin/templates/print-settings.tpl.php:21
+msgid "Select Size"
+msgstr "בחר גודל"
+
+#: admin/templates/print-settings.tpl.php:22
+msgid "A1"
+msgstr "A1"
+
+#: admin/templates/print-settings.tpl.php:23
+msgid "A2"
+msgstr ""
+
+#: admin/templates/print-settings.tpl.php:24
+msgid "A3"
+msgstr ""
+
+#: admin/templates/print-settings.tpl.php:25
+msgid "A4"
+msgstr ""
+
+#: admin/templates/print-settings.tpl.php:26
+msgid "A5"
+msgstr ""
+
+#: admin/templates/print-settings.tpl.php:27
+msgid "Letter"
+msgstr ""
+
+#: admin/templates/print-settings.tpl.php:28
+msgid "Legal"
+msgstr ""
+
+#: admin/templates/print-settings.tpl.php:29
+#: admin/templates/print-settings.tpl.php:32
+msgid "Tabloid"
+msgstr "טבלואיד"
+
+#: admin/templates/print-settings.tpl.php:30
+msgid "Executive"
+msgstr "אקזקיוטיב"
+
+#: admin/templates/print-settings.tpl.php:31
+msgid "Folio"
+msgstr "מהדורת הפוליו"
+
+#: admin/templates/print-settings.tpl.php:37
+msgid "Waybill Paper Orientation"
+msgstr "כיוון נייר של טרנום"
+
+#: admin/templates/print-settings.tpl.php:40
+msgid "Select Orientation"
+msgstr "בחר כיוון"
+
+#: admin/templates/print-settings.tpl.php:41
+msgid "Landscape"
+msgstr "אופקי ‪(Landscape)‬"
+
+#: admin/templates/print-settings.tpl.php:42
+msgid "Portrait"
+msgstr "פורטרט"
+
+#: admin/templates/print-settings.tpl.php:48
+msgid "Print documents on checkout"
+msgstr "הדפסת מסמכים בעת ביצוע הוצאה"
+
+#: admin/templates/print-settings.tpl.php:63
+msgid "Label print per package setup"
+msgstr "הדפסת תווית לכל כיוונון חבילה"
+
+#: admin/templates/print-settings.tpl.php:66
+msgid "Enable label multi print"
+msgstr "הפוך הדפסה מרובת תוויות לזמינה"
+
+#: admin/templates/print-settings.tpl.php:69
+msgid "Note: This will print the label per shipment package."
+msgstr "הערה: פעולה זו תדפיס את התווית לכל חבילת משלוח."
+
+#: admin/templates/print-settings.tpl.php:73
+msgid "Label pagination template"
+msgstr "תבנית חלוקה לעמודי התוויות"
+
+#: admin/templates/print-settings.tpl.php:76
+msgid "Default template {current_page} of {total_page}."
+msgstr "תבנית {current_page} ברירת מחדל של {total_page}."
+
+#: admin/templates/print-settings.tpl.php:79
+msgid "Available Shortcodes"
+msgstr "שורטקודים זמינים"
+
+#: admin/templates/sequence-settings.tpl.php:1
+msgid "Shipment Number Sequence"
+msgstr "רצף מספר משלוח"
+
+#: admin/templates/sequence-settings.tpl.php:4
+msgid "Enable Sequence Number?"
+msgstr "האם להפוך מספר רצף לזמין?"
+
+#: admin/templates/sequence-settings.tpl.php:7
+msgid "Note: This will generate a shipment sequence number."
+msgstr "הערה: פעולה זו תיצור מספר רצף משלוחים."
+
+#: admin/templates/sequence-settings.tpl.php:11
+msgid "Shipment Number Start"
+msgstr "התחלת מספר משלוח"
+
+#: admin/templates/sequence-settings.tpl.php:14
+msgid "Note: This will be the starting shipment number."
+msgstr "הערה: זה יהיה מספר המשלוח ההתחלתי."
+
+#: admin/templates/sequence-settings.tpl.php:18
+msgid "Shipment Number Digit"
+msgstr "ספרת מספר משלוח"
+
+#: admin/templates/sequence-settings.tpl.php:21
+msgid "Note: This will be the N of shipment Number digit."
+msgstr "הערה: זו תהיה ספרת מספר המשלוח N של המשלוח."
+
+#: admin/templates/sequence-settings.tpl.php:27
+msgid "Reset Sequence Number"
+msgstr "איפוס מספר רצף"
+
+#: admin/templates/settings.tpl.php:8
+msgid "Number of Days Filtered"
+msgstr "מספר הימים המסוננים"
+
+#: admin/templates/settings.tpl.php:11
+msgid ""
+"Note: This is the number of days for the date range to be filtered and "
+"displayed in the shipments list table."
+msgstr ""
+"הערה: זהו מספר הימים שבהם יש לסנן את טווח התאריכים ולהציגו בטבלת רשימת "
+"המשלוחים."
+
+#: admin/templates/settings.tpl.php:15
+msgid "Enable Registration Approval"
+msgstr "אפשר אישור רישום"
+
+#: admin/templates/settings.tpl.php:18
+msgid "Note: This will need the registration to approve the account."
+msgstr "הערה: יהיה צורך ברישום כדי לאשר את החשבון."
+
+#: admin/templates/settings.tpl.php:22
+msgid "Disable Registration"
+msgstr "הפוך רישום ללא זמין"
+
+#: admin/templates/settings.tpl.php:25
+msgid ""
+"Note: This will remove member registration functionality in the login page."
+msgstr "הערה: פעולה זו תסיר פונקציונליות רישום חבר בדף הכניסה."
+
+#: admin/templates/settings.tpl.php:29
+msgid "Disable Create Order"
+msgstr "הפוך סדר יצירה ללא זמין"
+
+#: admin/templates/settings.tpl.php:32
+msgid ""
+"Note: This will remove the Create Shipment functionality in the front-end "
+"dashboard."
+msgstr "הערה: פעולה זו תסיר את הפונקציונליות יצירת משלוח בלוח המחוונים החזיתי."
+
+#: admin/templates/settings.tpl.php:36
+msgid "Allow Employee Access all Shipment?"
+msgstr "האם לאפשר גישה לעובדים בכל המשלוח?"
+
+#: admin/templates/settings.tpl.php:39
+msgid "Note: This will allow wpcargo employee access all the shipment."
+msgstr "הערה: פעולה זו תאפשר לעובד wpcargo לגשת לכל המשלוח."
+
+#: admin/templates/settings.tpl.php:43
+msgid "Allow Client to Add Shipment?"
+msgstr "האם לאפשר ללקוח להוסיף משלוח?"
+
+#: admin/templates/settings.tpl.php:46
+msgid ""
+"Note: This will allow wpcargo client to add shipment in the dashboard page."
+msgstr "הערה: פעולה זו תאפשר ללקוח wpcargo להוסיף משלוח בדף לוח המחוונים."
+
+#: admin/templates/settings.tpl.php:50
+msgid "Set default shipment status"
+msgstr "הגדרת מצב משלוח המהווה ברירת מחדל"
+
+#: admin/templates/settings.tpl.php:55
+msgid "Select Status"
+msgstr "בחר יד"
+
+#: admin/templates/settings.tpl.php:61
+msgid "NO Status found."
+msgstr "לא נמצא מצב."
+
+#: admin/templates/settings.tpl.php:67
+msgid "Set Page as Frontend Dashboard admin"
+msgstr "הגדרת דף כמנהל לוח מחוונים חזיתי"
+
+#: admin/templates/settings.tpl.php:72
+msgid "Select Page"
+msgstr "בחר עמוד"
+
+#: admin/templates/settings.tpl.php:78
+msgid "NO pages found."
+msgstr "לא נמצאו דפים."
+
+#: admin/templates/settings.tpl.php:84
+msgid "Access Frontend Dashboard Roles"
+msgstr "גישה לתפקידי לוח מחוונים חזיתיים"
+
+#: admin/templates/settings.tpl.php:95 admin/templates/settings.tpl.php:110
+#: admin/templates/settings.tpl.php:125
+msgid "Note: This options applicable only in front end dashboard."
+msgstr "הערה: אפשרויות אלה ישימות רק בלוח המחוונים הקדמי."
+
+#: admin/templates/settings.tpl.php:99
+msgid "Update Shipments Roles"
+msgstr "עדכן תפקידי משלוחים"
+
+#: admin/templates/settings.tpl.php:114
+msgid "Delete Shipments Roles"
+msgstr "מחיקת תפקידי משלוחים"
+
+#: admin/templates/settings.tpl.php:132
+msgid "Save Settings"
+msgstr "שמור שינויים"
+
+#: templates/account.tpl.php:3 templates/account.tpl.php:9
+msgid "My Account"
+msgstr "החשבון שלי"
+
+#: templates/account.tpl.php:10 templates/bulk-assign-shipment.tpl.php:25
+#: templates/registration.tpl.php:10
+msgid "Close"
+msgstr "סגור"
+
+#: templates/account.tpl.php:28 templates/profile.tpl.php:18
+msgid "Upload Avatar"
+msgstr "העלה אווטר"
+
+#: templates/account.tpl.php:29 templates/profile.tpl.php:19
+msgid "Save Avatar"
+msgstr "שמור אווטר"
+
+#: templates/account.tpl.php:34
+msgid "Email:"
+msgstr "אימייל:"
+
+#: templates/account.tpl.php:42 templates/registration-address.tpl.php:1
+msgid "Address Information"
+msgstr "פרטי כתובת"
+
+#: templates/account.tpl.php:100 templates/registration-address.tpl.php:15
+msgid "Select"
+msgstr "בחר"
+
+#: templates/account.tpl.php:134 templates/bulk-assign-shipment.tpl.php:26
+#: templates/profile.tpl.php:90
+msgid "Update"
+msgstr "עדכון"
+
+#: templates/add-shipment.php:58
+msgid "Add Shipment"
+msgstr "הוסף משלוח"
+
+#: templates/assign-shipment.tpl.php:10
+msgid "Assign shipment to"
+msgstr "הקצה משלוח ל-"
+
+#: templates/bulk-assign-shipment.tpl.php:6
+msgid "Bulk Shipment Update"
+msgstr "עדכון משלוח בצובר"
+
+#: templates/bulk-assign-shipment.tpl.php:13
+msgid "Shipment List"
+msgstr "רשימת משלוחים"
+
+#: templates/dashboard.php:159
+msgid "Copyright"
+msgstr "זכויות יוצרים"
+
+#: templates/filter-shipment.php:19
+msgid "All Status"
+msgstr "סוג סטטוס"
+
+#: templates/filter-shipment.php:32 templates/filter-shipment.php:42
+msgid "All"
+msgstr "הכל"
+
+#: templates/filter-shipment.php:50 templates/graph.php:59
+msgid "Filter"
+msgstr "סינון"
+
+#: templates/filter-shipment.php:52
+msgid "Reset"
+msgstr "איפוס"
+
+#: templates/filter-shipment.php:63
+msgid "Search"
+msgstr "חיפוש"
+
+#: templates/graph.php:53
+msgid "Date Range"
+msgstr "טווח תאריכים"
+
+#: templates/graph.php:85
+#, php-format
+msgid "%s of 100%s"
+msgstr "%s של 100%s"
+
+#: templates/graph.php:103
+#, php-format
+msgid "Report from %s to %s"
+msgstr "דווח %s %s"
+
+#: templates/graph.php:104
+msgid "Total shipment updates"
+msgstr "סה\"כ עדכוני משלוח"
+
+#: templates/history.tpl.php:7
+msgid "History"
+msgstr "היסטוריה"
+
+#: templates/login.php:8
+msgid "Error"
+msgstr "שגיאה"
+
+#: templates/login.php:8
+msgid "Please check your Username or Password."
+msgstr "נא בדוק את שם המשתמש או הסיסמה שלך."
+
+#: templates/login.php:13
+msgid "Sign in"
+msgstr "סימן"
+
+#: templates/login.php:26
+msgid "Username/E-mail"
+msgstr "שם משתמש/דואר אלקטרוני"
+
+#: templates/login.php:44
+msgid "Remember me"
+msgstr "זכור אותי"
+
+#: templates/login.php:48
+msgid "Forgot password?"
+msgstr "שכחת סיסמא?"
+
+#: templates/login.php:53
+msgid "Login"
+msgstr "התחבר"
+
+#: templates/multiple-package.tpl.php:8
+msgid "Packages"
+msgstr "חבילות"
+
+#: templates/multiple-package.tpl.php:66
+msgid "Add Package"
+msgstr "הוסף חבילה"
+
+#: templates/navigation.tpl.php:9 templates/navigation.tpl.php:121
+msgid "Site Logo"
+msgstr "לוגו האתר"
+
+#: templates/navigation.tpl.php:24 templates/navigation.tpl.php:25
+msgid "Track Shipment"
+msgstr "מעקב אחר המשלוח"
+
+#: templates/navigation.tpl.php:50 templates/navigation.tpl.php:131
+msgid "Create Shipment"
+msgstr "צור משלוח"
+
+#: templates/navigation.tpl.php:106
+msgid "My Profile"
+msgstr "הפרופיל שלי"
+
+#: templates/navigation.tpl.php:108
+msgid "Notifications"
+msgstr "התראות"
+
+#: templates/navigation.tpl.php:110
+msgid "Logout"
+msgstr "התנתק"
+
+#: templates/no-shipment.php:5
+msgid "Error 404"
+msgstr "שגיאה 404"
+
+#: templates/no-shipment.php:6
+msgid "Shipment not found!"
+msgstr "המשלוח לא נמצא!"
+
+#: templates/nocf-error.tpl.php:7
+msgid "Error Found!"
+msgstr "נמצאה שגיאה!"
+
+#: templates/nocf-error.tpl.php:10
+msgid ""
+"Cannot find WPCargo Custom Field Add-ons plugin activated in your system."
+msgstr ""
+"אין אפשרות למצוא תוסף הרחבות שדה מותאם אישית של WPCargo המופעל במערכת שלך."
+
+#: templates/nocf-error.tpl.php:14
+msgid "Please purchase"
+msgstr "נא לרכוש"
+
+#: templates/nocf-error.tpl.php:14
+msgid "WPCargo Custom Field Add-ons"
+msgstr "הרחבות שדה מותאמות אישית של WPCargo"
+
+#: templates/nocf-error.tpl.php:14
+msgid "https://www.wpcargo.com/product/wpcargo-custom-field-add-ons/"
+msgstr "https://www.wpcargo.com/product/wpcargo-custom-field-add-ons/"
+
+#: templates/orders.tpl.php:5
+msgid "Order ID"
+msgstr "מזהה ההזמנה"
+
+#: templates/orders.tpl.php:9
+msgid "Order Status"
+msgstr "סטטוס ההזמנה"
+
+#: templates/orders.tpl.php:10
+msgid "Shipment Status"
+msgstr "מצב משלוח"
+
+#: templates/orders.tpl.php:11
+msgid "Amount"
+msgstr "סכום"
+
+#: templates/orders.tpl.php:26
+msgid "Orders Account"
+msgstr "חשבון הזמנות"
+
+#: templates/profile.tpl.php:29 templates/registration-form.tpl.php:7
+msgid "Personal Information"
+msgstr "מידע אישי"
+
+#: templates/profile.tpl.php:53 templates/registration-form.tpl.php:19
+msgid "Billing Information"
+msgstr "פרטי חיוב"
+
+#: templates/profile.tpl.php:95 templates/profile.tpl.php:111
+msgid "Change Password"
+msgstr "שנה סיסמה"
+
+#: templates/profile.tpl.php:100
+msgid "New Password"
+msgstr "סיסמה חדשה"
+
+#: templates/profile.tpl.php:105 templates/registration-form.tpl.php:38
+msgid "Confirm Password"
+msgstr "אשר סיסמא"
+
+#: templates/register-email-notification.tpl.php:4
+msgid "Dear"
+msgstr "שלום"
+
+#: templates/register-email-notification.tpl.php:5
+msgid "You have successfully registered!"
+msgstr "נרשמת בהצלחה!"
+
+#: templates/register-notification-admin.tpl.php:4
+msgid "A new user has registered!"
+msgstr "משתמש חדש נרשם!"
+
+#: templates/register-notification-admin.tpl.php:5
+msgid "Name: "
+msgstr "שם: "
+
+#: templates/restricted.tpl.php:4
+msgid "Sorry your are not allowed to access this page!"
+msgstr "מצטערים שאסור לך לגשת לדף הזה!"
+
+#: templates/restricted.tpl.php:5
+msgid "Please contact administrator for your permission."
+msgstr "נא פנה למנהל המערכת לקבלת רשותך."
+
+#: templates/shipment-history.tpl.php:4
+msgid "History Records"
+msgstr "רשומות היסטוריה"
+
+#: templates/shipment-history.tpl.php:73
+msgid "No Shipment History Found."
+msgstr "לא נמצאה היסטוריית משלוחים."
+
+#: templates/shipments.php:16
+msgid "Show entries"
+msgstr "הצג ערכים"
+
+#: templates/shipments.php:18
+msgid "entries"
+msgstr "ערכים"
+
+#: templates/shipments.php:115
+msgid "No shipment found."
+msgstr "לא נמצא משלוח."
+
+#: templates/shipments.php:117
+#, php-format
+msgid "Searched:  \"%s\""
+msgstr "חיפשו: \"%s\""
+
+#: templates/shipments.php:119
+#, php-format
+msgid "%s to %s"
+msgstr "%s %s"
+
+#: templates/update-shipment.php:66
+msgid "Update Shipment"
+msgstr "עדכן קצב משלוחים"
+
+#: templates/waybill.tpl.php:66
+msgid "Shipper Address"
+msgstr "כתובת השולח"
+
+#: templates/waybill.tpl.php:70
+msgid "Receiver Address"
+msgstr "כתובת מגורים של המקבל"
+
+#. Plugin Name of the plugin/theme
+msgid "WPCargo Frontend Manager"
+msgstr "מנהל חזיתי WPCargo"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wptaskforce.com/"
+msgstr "http://wptaskforce.com/"
+
+#. Description of the plugin/theme
+msgid ""
+"WPCargo Frontend Manager provides user dashboard in the frontend of your "
+"site and mobile responsive ready. Available shortcode [wpcfe_registration]"
+msgstr ""
+"WPCargo Frontend Manager מספק לוח מחוונים של משתמשים בחזית האתר שלך ומוכן "
+"לתגובה ניידת. קוד קצר זמין [wpcfe_registration]"
+
+#. Author of the plugin/theme
+msgid "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"
+msgstr "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"
+
+#~ msgid "N Sequence is not yet set. N Sequence reset failed."
+#~ msgstr "רצף N עדיין לא הוגדר. איפוס N רצף נכשל."
+
+#~ msgid "Month"
+#~ msgstr "חודש"
+
+#~ msgid "-- Select Month --"
+#~ msgstr "-- בחר חודש --"
+
+#~ msgid "Year"
+#~ msgstr "שנה"
+
+#~ msgid "-- Select Year --"
+#~ msgstr "-- בחר שנה --"

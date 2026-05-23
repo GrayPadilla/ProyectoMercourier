@@ -1,0 +1,2382 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPCargo Frontend Manager\n"
+"POT-Creation-Date: 2022-08-12 14:42+0800\n"
+"PO-Revision-Date: 2022-08-12 14:42+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ro_RO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n==0 || (n!=1 && n%100>=1 && n"
+"%100<=19) ? 1 : 2);\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpcargo-frontend-manager.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: admin/classes/class-core.php:54 admin/includes/hooks.php:78
+msgid "WPCargo Dashboard"
+msgstr "Tablou de bord WPCargo"
+
+#: admin/classes/class-fields.php:136
+msgid "-- Select One --"
+msgstr "-- Selectați unul --"
+
+#: admin/classes/class-fields.php:228
+msgid "Add Images / Upload Files"
+msgstr "Adăugare imagini / Încărcare fișiere"
+
+#: admin/classes/class-fields.php:298 admin/includes/functions.php:1274
+msgid "Email"
+msgstr "E-mail"
+
+#: admin/classes/class-scripts.php:65
+msgid "Are you sure you want to delete this selected Shipment?"
+msgstr "Sunteți sigur că doriți să ștergeți această expediere selectată?"
+
+#: admin/classes/class-scripts.php:66 admin/classes/class-scripts.php:118
+msgid "No shipment selected, Please select atleast one Shipment."
+msgstr ""
+"Nu este selectată nicio expediere, vă rugăm să selectați cel puțin o "
+"expediere."
+
+#: admin/classes/class-scripts.php:67 admin/classes/class-scripts.php:119
+msgid ""
+"Something went wrong while processing your request, please reload and try "
+"again."
+msgstr ""
+"Ceva nu a mers bine în timp ce procesarea cererii dvs., vă rugăm să "
+"reîncărcați și încercați din nou."
+
+#: admin/classes/class-scripts.php:68
+msgid "Please enter more characters"
+msgstr "Vă rugăm să introduceți mai multe caractere"
+
+#: admin/classes/class-scripts.php:69
+msgid "Please delete some character"
+msgstr "Vă rugăm să ștergeți unele caracter"
+
+#: admin/classes/class-scripts.php:70 admin/classes/class-scripts.php:74
+msgid "Error loading results"
+msgstr "Rezultatele erorilor la încărcare"
+
+#: admin/classes/class-scripts.php:71
+msgid "Loading more results"
+msgstr "Încărcarea mai multor rezultate"
+
+#: admin/classes/class-scripts.php:72
+msgid "No results found"
+msgstr "Niciun rezultat găsit!"
+
+#: admin/classes/class-scripts.php:73
+msgid "Searching..."
+msgstr "In căutare..."
+
+#: admin/classes/class-scripts.php:76
+msgid "Incorrect Email Format."
+msgstr "Format de e-mail incorect."
+
+#: admin/classes/class-scripts.php:77
+msgid "Email already Exist."
+msgstr "E-mailul există deja."
+
+#: admin/classes/class-scripts.php:78
+msgid "Password NOT matched."
+msgstr "Parola NU se potrivește."
+
+#: admin/classes/class-scripts.php:79
+msgid "Password must at least 6 Characters."
+msgstr "Parola trebuie să aibă cel puțin 6 caractere."
+
+#: admin/classes/class-scripts.php:81
+msgid "Username"
+msgstr "Utilizator"
+
+#: admin/classes/class-scripts.php:82 templates/login.php:31
+#: templates/registration-form.tpl.php:33
+msgid "Password"
+msgstr "Parola"
+
+#: admin/classes/class-scripts.php:83
+msgid "Download"
+msgstr "Descarcă"
+
+#: admin/classes/class-scripts.php:84
+msgid "Are you sure you want to delete section?"
+msgstr "Sunteți sigur că doriți să ștergeți secțiunea?"
+
+#: admin/classes/class-scripts.php:85
+msgid "No shipment has been updated"
+msgstr "Nicio expediere nu a fost actualizată"
+
+#: admin/classes/class-scripts.php:86
+msgid "Selected Shipements has been updated"
+msgstr "Navele selectate au fost actualizate"
+
+#: admin/classes/class-scripts.php:105 admin/includes/functions.php:102
+#: templates/profile.tpl.php:72
+msgid "-- Select Type --"
+msgstr "-- Selectați tipul --"
+
+#: admin/classes/class-scripts.php:116
+msgid "Select an option"
+msgstr "Alege o optiune"
+
+#: admin/includes/ajax.php:14
+msgid "Something went wrong during process, Please try again."
+msgstr ""
+"Ceva nu a mers bine în timpul procesului, Vă rugăm să încercați din nou."
+
+#: admin/includes/ajax.php:21 admin/includes/ajax.php:73
+msgid "Opsss! Sorry you are not allow to delete shipments"
+msgstr "Opssss! Ne pare rău că nu vi se permite să ștergeți expedierile"
+
+#: admin/includes/ajax.php:32
+msgid "Shipment"
+msgstr "Expediere"
+
+#: admin/includes/ajax.php:32
+msgid "successfully deleted."
+msgstr "șterse cu succes."
+
+#: admin/includes/ajax.php:89
+#, php-format
+msgid "You successfully deleted %s shipment."
+msgid_plural "You successfully deleted %s shipments."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: admin/includes/ajax.php:182
+msgid "This is an existing shipment number."
+msgstr "Acesta este un număr de expediere existent."
+
+#: admin/includes/ajax.php:195
+msgid ""
+"N Sequence reset success, please update the Shipment Number Start for your "
+"new shipment number starting sequence."
+msgstr ""
+"N Secvență resetați succesul, vă rugăm să actualizați numărul de expediere "
+"Începe pentru noul număr de expediere secvența de pornire."
+
+#: admin/includes/ajax.php:201
+msgid "N Sequence reset failed, please reload the page and try again."
+msgstr ""
+"N secvență de resetare nu a reușit, vă rugăm să reîncărcați pagina și "
+"încercați din nou."
+
+#: admin/includes/country-list.php:7
+msgid "Afghanistan"
+msgstr "Afganistan"
+
+#: admin/includes/country-list.php:8
+msgid "&#197;land Islands"
+msgstr "&#197;land Islands"
+
+#: admin/includes/country-list.php:9
+msgid "Albania"
+msgstr "Albania"
+
+#: admin/includes/country-list.php:10
+msgid "Algeria"
+msgstr "Algeria"
+
+#: admin/includes/country-list.php:11
+msgid "American Samoa"
+msgstr "Samoa Americană"
+
+#: admin/includes/country-list.php:12
+msgid "Andorra"
+msgstr "Andorra"
+
+#: admin/includes/country-list.php:13
+msgid "Angola"
+msgstr "Angola"
+
+#: admin/includes/country-list.php:14
+msgid "Anguilla"
+msgstr "Anguilla"
+
+#: admin/includes/country-list.php:15
+msgid "Antarctica"
+msgstr "Antarctica"
+
+#: admin/includes/country-list.php:16
+msgid "Antigua and Barbuda"
+msgstr "Antigua si Barbuda"
+
+#: admin/includes/country-list.php:17
+msgid "Argentina"
+msgstr "Argentina"
+
+#: admin/includes/country-list.php:18
+msgid "Armenia"
+msgstr "Armenia"
+
+#: admin/includes/country-list.php:19
+msgid "Aruba"
+msgstr "Aruba"
+
+#: admin/includes/country-list.php:20
+msgid "Australia"
+msgstr "Australia"
+
+#: admin/includes/country-list.php:21
+msgid "Austria"
+msgstr "Austria"
+
+#: admin/includes/country-list.php:22
+msgid "Azerbaijan"
+msgstr "Azerbaidjan"
+
+#: admin/includes/country-list.php:23
+msgid "Bahamas"
+msgstr "Bahamas"
+
+#: admin/includes/country-list.php:24
+msgid "Bahrain"
+msgstr "Bahrain"
+
+#: admin/includes/country-list.php:25
+msgid "Bangladesh"
+msgstr "Bangladesh"
+
+#: admin/includes/country-list.php:26
+msgid "Barbados"
+msgstr "Barbados"
+
+#: admin/includes/country-list.php:27
+msgid "Belarus"
+msgstr "Belarus"
+
+#: admin/includes/country-list.php:28
+msgid "Belgium"
+msgstr "Belgia"
+
+#: admin/includes/country-list.php:29
+msgid "Belau"
+msgstr "Belau"
+
+#: admin/includes/country-list.php:30
+msgid "Belize"
+msgstr "Belize"
+
+#: admin/includes/country-list.php:31
+msgid "Benin"
+msgstr "Benin"
+
+#: admin/includes/country-list.php:32
+msgid "Bermuda"
+msgstr "Bermuda"
+
+#: admin/includes/country-list.php:33
+msgid "Bhutan"
+msgstr "Bhutan"
+
+#: admin/includes/country-list.php:34
+msgid "Bolivia"
+msgstr "Bolivia"
+
+#: admin/includes/country-list.php:35
+msgid "Bonaire, Saint Eustatius and Saba"
+msgstr "Bonaire, Saint Eustatius și Saba"
+
+#: admin/includes/country-list.php:36
+msgid "Bosnia and Herzegovina"
+msgstr "Bosnia și Herțegovina"
+
+#: admin/includes/country-list.php:37
+msgid "Botswana"
+msgstr "Botswana"
+
+#: admin/includes/country-list.php:38
+msgid "Bouvet Island"
+msgstr "Insula Bouvet"
+
+#: admin/includes/country-list.php:39
+msgid "Brazil"
+msgstr "Brazilia"
+
+#: admin/includes/country-list.php:40
+msgid "British Indian Ocean Territory"
+msgstr "Teritoriul Britanic din Oceanul Indian"
+
+#: admin/includes/country-list.php:41
+msgid "British Virgin Islands"
+msgstr "VG"
+
+#: admin/includes/country-list.php:42
+msgid "Brunei"
+msgstr "Brunei"
+
+#: admin/includes/country-list.php:43
+msgid "Bulgaria"
+msgstr "Bulgaria"
+
+#: admin/includes/country-list.php:44
+msgid "Burkina Faso"
+msgstr "Burkina Faso"
+
+#: admin/includes/country-list.php:45
+msgid "Burundi"
+msgstr "Burundi"
+
+#: admin/includes/country-list.php:46
+msgid "Cambodia"
+msgstr "Cambodgia"
+
+#: admin/includes/country-list.php:47
+msgid "Cameroon"
+msgstr "Camerun"
+
+#: admin/includes/country-list.php:48
+msgid "Canada"
+msgstr "Canada"
+
+#: admin/includes/country-list.php:49
+msgid "Cape Verde"
+msgstr "Capul Verde"
+
+#: admin/includes/country-list.php:50
+msgid "Cayman Islands"
+msgstr "Insulele Cayman"
+
+#: admin/includes/country-list.php:51
+msgid "Central African Republic"
+msgstr "Republica Centrafricană"
+
+#: admin/includes/country-list.php:52
+msgid "Chad"
+msgstr "Ciad"
+
+#: admin/includes/country-list.php:53
+msgid "Chile"
+msgstr "Chile"
+
+#: admin/includes/country-list.php:54
+msgid "China"
+msgstr "China"
+
+#: admin/includes/country-list.php:55
+msgid "Christmas Island"
+msgstr "Christmas Island"
+
+#: admin/includes/country-list.php:56
+msgid "Cocos (Keeling) Islands"
+msgstr "Cocos (Keeling) Islands"
+
+#: admin/includes/country-list.php:57
+msgid "Colombia"
+msgstr "Columbia"
+
+#: admin/includes/country-list.php:58
+msgid "Comoros"
+msgstr "Comore"
+
+#: admin/includes/country-list.php:59
+msgid "Congo (Brazzaville)"
+msgstr "Congo (Brazzaville)"
+
+#: admin/includes/country-list.php:60
+msgid "Congo (Kinshasa)"
+msgstr "Congo (Kinshasa)"
+
+#: admin/includes/country-list.php:61
+msgid "Cook Islands"
+msgstr "Insulele Cook"
+
+#: admin/includes/country-list.php:62
+msgid "Costa Rica"
+msgstr "Costa Rica"
+
+#: admin/includes/country-list.php:63
+msgid "Croatia"
+msgstr "Croația"
+
+#: admin/includes/country-list.php:64
+msgid "Cuba"
+msgstr "Cuba"
+
+#: admin/includes/country-list.php:65
+msgid "Cura&ccedil;ao"
+msgstr "Curaçao"
+
+#: admin/includes/country-list.php:66
+msgid "Cyprus"
+msgstr "Cipru"
+
+#: admin/includes/country-list.php:67
+msgid "Czech Republic"
+msgstr "Republica Cehă"
+
+#: admin/includes/country-list.php:68
+msgid "Denmark"
+msgstr "Danemarca"
+
+#: admin/includes/country-list.php:69
+msgid "Djibouti"
+msgstr "Djibouti"
+
+#: admin/includes/country-list.php:70
+msgid "Dominica"
+msgstr "Dominica"
+
+#: admin/includes/country-list.php:71
+msgid "Dominican Republic"
+msgstr "Republica Dominicană"
+
+#: admin/includes/country-list.php:72
+msgid "Ecuador"
+msgstr "Ecuador"
+
+#: admin/includes/country-list.php:73
+msgid "Egypt"
+msgstr "Egipt"
+
+#: admin/includes/country-list.php:74
+msgid "El Salvador"
+msgstr "El Salvador"
+
+#: admin/includes/country-list.php:75
+msgid "Equatorial Guinea"
+msgstr "Guineea Ecuatorială"
+
+#: admin/includes/country-list.php:76
+msgid "Eritrea"
+msgstr "Eritreea"
+
+#: admin/includes/country-list.php:77
+msgid "Estonia"
+msgstr "Estonia"
+
+#: admin/includes/country-list.php:78
+msgid "Ethiopia"
+msgstr "Etiopia"
+
+#: admin/includes/country-list.php:79
+msgid "Falkland Islands"
+msgstr "Insulele Falkland"
+
+#: admin/includes/country-list.php:80
+msgid "Faroe Islands"
+msgstr "Insulele Feroe"
+
+#: admin/includes/country-list.php:81
+msgid "Fiji"
+msgstr "Fiji"
+
+#: admin/includes/country-list.php:82
+msgid "Finland"
+msgstr "Finlanda"
+
+#: admin/includes/country-list.php:83
+msgid "France"
+msgstr "Franţa"
+
+#: admin/includes/country-list.php:84
+msgid "French Guiana"
+msgstr "Guiana Franceză"
+
+#: admin/includes/country-list.php:85
+msgid "French Polynesia"
+msgstr "Polinezia Franceză"
+
+#: admin/includes/country-list.php:86
+msgid "French Southern Territories"
+msgstr "Teritoriile franceze de sud"
+
+#: admin/includes/country-list.php:87
+msgid "Gabon"
+msgstr "Gabon"
+
+#: admin/includes/country-list.php:88
+msgid "Gambia"
+msgstr "Gambia"
+
+#: admin/includes/country-list.php:89
+msgid "Georgia"
+msgstr "Georgia"
+
+#: admin/includes/country-list.php:90
+msgid "Germany"
+msgstr "Germania"
+
+#: admin/includes/country-list.php:91
+msgid "Ghana"
+msgstr "Ghana"
+
+#: admin/includes/country-list.php:92
+msgid "Gibraltar"
+msgstr "Gibraltar"
+
+#: admin/includes/country-list.php:93
+msgid "Greece"
+msgstr "Grecia"
+
+#: admin/includes/country-list.php:94
+msgid "Greenland"
+msgstr "Groenlanda"
+
+#: admin/includes/country-list.php:95
+msgid "Grenada"
+msgstr "Granada"
+
+#: admin/includes/country-list.php:96
+msgid "Guadeloupe"
+msgstr "Guadelupa"
+
+#: admin/includes/country-list.php:97
+msgid "Guam"
+msgstr "Guam"
+
+#: admin/includes/country-list.php:98
+msgid "Guatemala"
+msgstr "Guatemala"
+
+#: admin/includes/country-list.php:99
+msgid "Guernsey"
+msgstr "Guernsey"
+
+#: admin/includes/country-list.php:100
+msgid "Guinea"
+msgstr "Guineea"
+
+#: admin/includes/country-list.php:101
+msgid "Guinea-Bissau"
+msgstr "Guineea-Bissau"
+
+#: admin/includes/country-list.php:102
+msgid "Guyana"
+msgstr "Guyana"
+
+#: admin/includes/country-list.php:103
+msgid "Haiti"
+msgstr "Haiti"
+
+#: admin/includes/country-list.php:104
+msgid "Heard Island and McDonald Islands"
+msgstr "Insula Heard şi Insulele McDonald, Insula Heard şi Insulele McDonald"
+
+#: admin/includes/country-list.php:105
+msgid "Honduras"
+msgstr "Honduras"
+
+#: admin/includes/country-list.php:106
+msgid "Hong Kong"
+msgstr "Hong Kong"
+
+#: admin/includes/country-list.php:107
+msgid "Hungary"
+msgstr "Ungaria"
+
+#: admin/includes/country-list.php:108
+msgid "Iceland"
+msgstr "Islanda"
+
+#: admin/includes/country-list.php:109
+msgid "India"
+msgstr "India"
+
+#: admin/includes/country-list.php:110
+msgid "Indonesia"
+msgstr "Indonezia"
+
+#: admin/includes/country-list.php:111
+msgid "Iran"
+msgstr "Iran"
+
+#: admin/includes/country-list.php:112
+msgid "Iraq"
+msgstr "Irak"
+
+#: admin/includes/country-list.php:113
+msgid "Ireland"
+msgstr "Irlanda"
+
+#: admin/includes/country-list.php:114
+msgid "Isle of Man"
+msgstr "Isle of Man"
+
+#: admin/includes/country-list.php:115
+msgid "Israel"
+msgstr "Israel"
+
+#: admin/includes/country-list.php:116
+msgid "Italy"
+msgstr "Italia"
+
+#: admin/includes/country-list.php:117
+msgid "Ivory Coast"
+msgstr "Coasta de Fildeș"
+
+#: admin/includes/country-list.php:118
+msgid "Jamaica"
+msgstr "Jamaica"
+
+#: admin/includes/country-list.php:119
+msgid "Japan"
+msgstr "Japonia"
+
+#: admin/includes/country-list.php:120
+msgid "Jersey"
+msgstr "Jersey"
+
+#: admin/includes/country-list.php:121
+msgid "Jordan"
+msgstr "Iordania"
+
+#: admin/includes/country-list.php:122
+msgid "Kazakhstan"
+msgstr "Kazahstan"
+
+#: admin/includes/country-list.php:123
+msgid "Kenya"
+msgstr "Kenya"
+
+#: admin/includes/country-list.php:124
+msgid "Kiribati"
+msgstr "Kiribati"
+
+#: admin/includes/country-list.php:125
+msgid "Kuwait"
+msgstr "Kuweit"
+
+#: admin/includes/country-list.php:126
+msgid "Kyrgyzstan"
+msgstr "Kârgâzstan"
+
+#: admin/includes/country-list.php:127
+msgid "Laos"
+msgstr "Republica Democrată Populară Laos"
+
+#: admin/includes/country-list.php:128
+msgid "Latvia"
+msgstr "Letonia"
+
+#: admin/includes/country-list.php:129
+msgid "Lebanon"
+msgstr "Liban"
+
+#: admin/includes/country-list.php:130
+msgid "Lesotho"
+msgstr "Lesotho"
+
+#: admin/includes/country-list.php:131
+msgid "Liberia"
+msgstr "Liberia"
+
+#: admin/includes/country-list.php:132
+msgid "Libya"
+msgstr "Marea Jamahirie Arabă Libiană Populară Socialistă"
+
+#: admin/includes/country-list.php:133
+msgid "Liechtenstein"
+msgstr "Liechtenstein"
+
+#: admin/includes/country-list.php:134
+msgid "Lithuania"
+msgstr "Lituania"
+
+#: admin/includes/country-list.php:135
+msgid "Luxembourg"
+msgstr "Luxemburg"
+
+#: admin/includes/country-list.php:136
+msgid "Macao S.A.R., China"
+msgstr "Macao, China"
+
+#: admin/includes/country-list.php:137
+msgid "Macedonia"
+msgstr "Macedonia"
+
+#: admin/includes/country-list.php:138
+msgid "Madagascar"
+msgstr "Madagascar"
+
+#: admin/includes/country-list.php:139
+msgid "Malawi"
+msgstr "Malawi"
+
+#: admin/includes/country-list.php:140
+msgid "Malaysia"
+msgstr "Malaezia"
+
+#: admin/includes/country-list.php:141
+msgid "Maldives"
+msgstr "Maldive"
+
+#: admin/includes/country-list.php:142
+msgid "Mali"
+msgstr "Mali"
+
+#: admin/includes/country-list.php:143
+msgid "Malta"
+msgstr "Malta"
+
+#: admin/includes/country-list.php:144
+msgid "Marshall Islands"
+msgstr "Insulele Marshall"
+
+#: admin/includes/country-list.php:145
+msgid "Martinique"
+msgstr "Martinica"
+
+#: admin/includes/country-list.php:146
+msgid "Mauritania"
+msgstr "Mauritania"
+
+#: admin/includes/country-list.php:147
+msgid "Mauritius"
+msgstr "Mauritius"
+
+#: admin/includes/country-list.php:148
+msgid "Mayotte"
+msgstr "Mayotte"
+
+#: admin/includes/country-list.php:149
+msgid "Mexico"
+msgstr "Mexic"
+
+#: admin/includes/country-list.php:150
+msgid "Micronesia"
+msgstr "Micronezia"
+
+#: admin/includes/country-list.php:151
+msgid "Moldova"
+msgstr "Republica Moldova"
+
+#: admin/includes/country-list.php:152
+msgid "Monaco"
+msgstr "Monaco"
+
+#: admin/includes/country-list.php:153
+msgid "Mongolia"
+msgstr "Mongolia"
+
+#: admin/includes/country-list.php:154
+msgid "Montenegro"
+msgstr "Muntenegru"
+
+#: admin/includes/country-list.php:155
+msgid "Montserrat"
+msgstr "Montserrat"
+
+#: admin/includes/country-list.php:156
+msgid "Morocco"
+msgstr "Maroc"
+
+#: admin/includes/country-list.php:157
+msgid "Mozambique"
+msgstr "Mozambic"
+
+#: admin/includes/country-list.php:158
+msgid "Myanmar"
+msgstr "Myanmar"
+
+#: admin/includes/country-list.php:159
+msgid "Namibia"
+msgstr "Namibia"
+
+#: admin/includes/country-list.php:160
+msgid "Nauru"
+msgstr "Nauru"
+
+#: admin/includes/country-list.php:161
+msgid "Nepal"
+msgstr "Nepal"
+
+#: admin/includes/country-list.php:162
+msgid "Netherlands"
+msgstr "Olanda"
+
+#: admin/includes/country-list.php:163
+msgid "New Caledonia"
+msgstr "Noua Caledonie"
+
+#: admin/includes/country-list.php:164
+msgid "New Zealand"
+msgstr "Noua Zeelandă"
+
+#: admin/includes/country-list.php:165
+msgid "Nicaragua"
+msgstr "Nicaragua"
+
+#: admin/includes/country-list.php:166
+msgid "Niger"
+msgstr "Niger"
+
+#: admin/includes/country-list.php:167
+msgid "Nigeria"
+msgstr "Nigeria"
+
+#: admin/includes/country-list.php:168
+msgid "Niue"
+msgstr "Niue"
+
+#: admin/includes/country-list.php:169
+msgid "Norfolk Island"
+msgstr "Insula Norfolk"
+
+#: admin/includes/country-list.php:170
+msgid "Northern Mariana Islands"
+msgstr "Insulele Mariane de Nord"
+
+#: admin/includes/country-list.php:171
+msgid "North Korea"
+msgstr "Coreea de Nord"
+
+#: admin/includes/country-list.php:172
+msgid "Norway"
+msgstr "Norvegia"
+
+#: admin/includes/country-list.php:173
+msgid "Oman"
+msgstr "Oman"
+
+#: admin/includes/country-list.php:174
+msgid "Pakistan"
+msgstr "Pakistan"
+
+#: admin/includes/country-list.php:175
+msgid "Palestinian Territory"
+msgstr "Teritoriul Palestinian"
+
+#: admin/includes/country-list.php:176
+msgid "Panama"
+msgstr "Panama"
+
+#: admin/includes/country-list.php:177
+msgid "Papua New Guinea"
+msgstr "Papua Noua Guinee"
+
+#: admin/includes/country-list.php:178
+msgid "Paraguay"
+msgstr "Paraguay"
+
+#: admin/includes/country-list.php:179
+msgid "Peru"
+msgstr "Peru"
+
+#: admin/includes/country-list.php:180
+msgid "Philippines"
+msgstr "Filipine"
+
+#: admin/includes/country-list.php:181
+msgid "Pitcairn"
+msgstr "Pitcairn"
+
+#: admin/includes/country-list.php:182
+msgid "Poland"
+msgstr "Polonia"
+
+#: admin/includes/country-list.php:183
+msgid "Portugal"
+msgstr "Portugalia"
+
+#: admin/includes/country-list.php:184
+msgid "Puerto Rico"
+msgstr "Puerto Rico"
+
+#: admin/includes/country-list.php:185
+msgid "Qatar"
+msgstr "Qatar"
+
+#: admin/includes/country-list.php:186
+msgid "Reunion"
+msgstr "Reunion"
+
+#: admin/includes/country-list.php:187
+msgid "Romania"
+msgstr "România"
+
+#: admin/includes/country-list.php:188
+msgid "Russia"
+msgstr "Rusia"
+
+#: admin/includes/country-list.php:189
+msgid "Rwanda"
+msgstr "Rwanda"
+
+#: admin/includes/country-list.php:190
+msgid "Saint Barth&eacute;lemy"
+msgstr "Saint Barth &eacute; lemy"
+
+#: admin/includes/country-list.php:191
+msgid "Saint Helena"
+msgstr "Saint Helena"
+
+#: admin/includes/country-list.php:192
+msgid "Saint Kitts and Nevis"
+msgstr "Sfântul Kitts și Nevis"
+
+#: admin/includes/country-list.php:193
+msgid "Saint Lucia"
+msgstr "Sfânta Lucia"
+
+#: admin/includes/country-list.php:194
+msgid "Saint Martin (French part)"
+msgstr "Sfântul Martin (partea franceză)"
+
+#: admin/includes/country-list.php:195
+msgid "Saint Martin (Dutch part)"
+msgstr "Sfântul Martin (partea olandeză)"
+
+#: admin/includes/country-list.php:196
+msgid "Saint Pierre and Miquelon"
+msgstr "Saint Pierre and Miquelon"
+
+#: admin/includes/country-list.php:197
+msgid "Saint Vincent and the Grenadines"
+msgstr "Saint Vincent și Grenadine"
+
+#: admin/includes/country-list.php:198
+msgid "San Marino"
+msgstr "San Marino"
+
+#: admin/includes/country-list.php:199
+msgid "S&atilde;o Tom&eacute; and Pr&iacute;ncipe"
+msgstr "S&atilde;o Tom&eacute; and Pr&iacute;ncipe"
+
+#: admin/includes/country-list.php:200
+msgid "Saudi Arabia"
+msgstr "Arabia Saudită"
+
+#: admin/includes/country-list.php:201
+msgid "Senegal"
+msgstr "Senegal"
+
+#: admin/includes/country-list.php:202
+msgid "Serbia"
+msgstr "Serbia"
+
+#: admin/includes/country-list.php:203
+msgid "Seychelles"
+msgstr "Seychelles"
+
+#: admin/includes/country-list.php:204
+msgid "Sierra Leone"
+msgstr "Sierra Leone"
+
+#: admin/includes/country-list.php:205
+msgid "Singapore"
+msgstr "Singapore"
+
+#: admin/includes/country-list.php:206
+msgid "Slovakia"
+msgstr "Slovacia"
+
+#: admin/includes/country-list.php:207
+msgid "Slovenia"
+msgstr "Slovenia"
+
+#: admin/includes/country-list.php:208
+msgid "Solomon Islands"
+msgstr "Insulele Solomon"
+
+#: admin/includes/country-list.php:209
+msgid "Somalia"
+msgstr "Somalia"
+
+#: admin/includes/country-list.php:210
+msgid "South Africa"
+msgstr "Africa de Sud"
+
+#: admin/includes/country-list.php:211
+msgid "South Georgia/Sandwich Islands"
+msgstr "South Georgia/Sandwich Islands"
+
+#: admin/includes/country-list.php:212
+msgid "South Korea"
+msgstr "Coreea de Sud"
+
+#: admin/includes/country-list.php:213
+msgid "South Sudan"
+msgstr "Sudanul de Sud"
+
+#: admin/includes/country-list.php:214
+msgid "Spain"
+msgstr "Spania"
+
+#: admin/includes/country-list.php:215
+msgid "Sri Lanka"
+msgstr "Sri Lanka"
+
+#: admin/includes/country-list.php:216
+msgid "Sudan"
+msgstr "Sudan"
+
+#: admin/includes/country-list.php:217
+msgid "Suriname"
+msgstr "Surinam"
+
+#: admin/includes/country-list.php:218
+msgid "Svalbard and Jan Mayen"
+msgstr "Svalbard and Jan Mayen"
+
+#: admin/includes/country-list.php:219
+msgid "Swaziland"
+msgstr "Swaziland"
+
+#: admin/includes/country-list.php:220
+msgid "Sweden"
+msgstr "Suedia"
+
+#: admin/includes/country-list.php:221
+msgid "Switzerland"
+msgstr "Elveţia"
+
+#: admin/includes/country-list.php:222
+msgid "Syria"
+msgstr "Siria"
+
+#: admin/includes/country-list.php:223
+msgid "Taiwan"
+msgstr "Taiwan"
+
+#: admin/includes/country-list.php:224
+msgid "Tajikistan"
+msgstr "Tadjikistan"
+
+#: admin/includes/country-list.php:225
+msgid "Tanzania"
+msgstr "Tanzania"
+
+#: admin/includes/country-list.php:226
+msgid "Thailand"
+msgstr "Thailanda"
+
+#: admin/includes/country-list.php:227
+msgid "Timor-Leste"
+msgstr "Timor-Leste"
+
+#: admin/includes/country-list.php:228
+msgid "Togo"
+msgstr "Togo"
+
+#: admin/includes/country-list.php:229
+msgid "Tokelau"
+msgstr "Tokelau"
+
+#: admin/includes/country-list.php:230
+msgid "Tonga"
+msgstr "Tonga"
+
+#: admin/includes/country-list.php:231
+msgid "Trinidad and Tobago"
+msgstr "Trinidad și Tobago"
+
+#: admin/includes/country-list.php:232
+msgid "Tunisia"
+msgstr "Tunisia"
+
+#: admin/includes/country-list.php:233
+msgid "Turkey"
+msgstr "Turcia"
+
+#: admin/includes/country-list.php:234
+msgid "Turkmenistan"
+msgstr "Turkmenistan"
+
+#: admin/includes/country-list.php:235
+msgid "Turks and Caicos Islands"
+msgstr "Insulele Turks și Caicos"
+
+#: admin/includes/country-list.php:236
+msgid "Tuvalu"
+msgstr "Tuvalu"
+
+#: admin/includes/country-list.php:237
+msgid "Uganda"
+msgstr "Uganda"
+
+#: admin/includes/country-list.php:238
+msgid "Ukraine"
+msgstr "Ucraina"
+
+#: admin/includes/country-list.php:239
+msgid "United Arab Emirates"
+msgstr "Emiratele Arabe Unite"
+
+#: admin/includes/country-list.php:240
+msgid "United Kingdom (UK)"
+msgstr "Regatul Unit (UK)"
+
+#: admin/includes/country-list.php:241
+msgid "United States (US)"
+msgstr "United States (US)"
+
+#: admin/includes/country-list.php:242
+msgid "United States (US) Minor Outlying Islands"
+msgstr "United States (US) Minor Outlying Islands"
+
+#: admin/includes/country-list.php:243
+msgid "United States (US) Virgin Islands"
+msgstr "United States (US) Virgin Islands"
+
+#: admin/includes/country-list.php:244
+msgid "Uruguay"
+msgstr "Uruguay"
+
+#: admin/includes/country-list.php:245
+msgid "Uzbekistan"
+msgstr "Uzbekistan"
+
+#: admin/includes/country-list.php:246
+msgid "Vanuatu"
+msgstr "Vanuatu"
+
+#: admin/includes/country-list.php:247
+msgid "Vatican"
+msgstr "Vatican"
+
+#: admin/includes/country-list.php:248
+msgid "Venezuela"
+msgstr "Venezuela"
+
+#: admin/includes/country-list.php:249
+msgid "Vietnam"
+msgstr "Vietnam"
+
+#: admin/includes/country-list.php:250
+msgid "Wallis and Futuna"
+msgstr "Wallis and Futuna"
+
+#: admin/includes/country-list.php:251
+msgid "Western Sahara"
+msgstr "Sahara Occidentală"
+
+#: admin/includes/country-list.php:252
+msgid "Samoa"
+msgstr "Samoa"
+
+#: admin/includes/country-list.php:253
+msgid "Yemen"
+msgstr "Yemen"
+
+#: admin/includes/country-list.php:254
+msgid "Zambia"
+msgstr "Zambia"
+
+#: admin/includes/country-list.php:255
+msgid "Zimbabwe"
+msgstr "Zimbabwe"
+
+#: admin/includes/functions.php:16
+msgid "January"
+msgstr "Ianuarie"
+
+#: admin/includes/functions.php:17
+msgid "February"
+msgstr "Februarie"
+
+#: admin/includes/functions.php:18
+msgid "March"
+msgstr "Martie"
+
+#: admin/includes/functions.php:19
+msgid "April"
+msgstr "Aprilie"
+
+#: admin/includes/functions.php:20
+msgid "May"
+msgstr "Mai"
+
+#: admin/includes/functions.php:21
+msgid "June"
+msgstr "Iunie"
+
+#: admin/includes/functions.php:22
+msgid "July "
+msgstr "Iulie "
+
+#: admin/includes/functions.php:23
+msgid "August"
+msgstr "August"
+
+#: admin/includes/functions.php:24
+msgid "September"
+msgstr "Septembrie"
+
+#: admin/includes/functions.php:25
+msgid "October"
+msgstr "Octombrie"
+
+#: admin/includes/functions.php:26
+msgid "November"
+msgstr "Noiembrie"
+
+#: admin/includes/functions.php:27
+msgid "December"
+msgstr "Decembrie"
+
+#: admin/includes/functions.php:164
+msgid "Invoice"
+msgstr "Factură"
+
+#: admin/includes/functions.php:165
+msgid "Label"
+msgstr "Etichetă"
+
+#: admin/includes/functions.php:166
+msgid "Waybill"
+msgstr "Trăsură"
+
+#: admin/includes/functions.php:305
+msgid "Shipper Information"
+msgstr "Informații despre expeditor"
+
+#: admin/includes/functions.php:307
+msgid "Receiver Information"
+msgstr "Informații despre destinatar"
+
+#: admin/includes/functions.php:309 templates/waybill.tpl.php:74
+msgid "Shipment Information"
+msgstr "Informații despre expediere"
+
+#: admin/includes/functions.php:321 admin/includes/functions.php:734
+msgid "Default"
+msgstr "Implicit"
+
+#: admin/includes/functions.php:335
+msgid "Current page"
+msgstr "Pagina curentă"
+
+#: admin/includes/functions.php:336
+msgid "Total page"
+msgstr "Pagina totală"
+
+#: admin/includes/functions.php:523 admin/includes/hooks.php:113
+msgid "Pending Client"
+msgstr "Client în așteptare"
+
+#: admin/includes/functions.php:758 admin/includes/functions.php:804
+msgid "Something went wrong saving your shipment. Please reload and try again"
+msgstr ""
+"Ceva nu a mers bine salvând expedierea. Vă rugăm să reîncărcați și să "
+"încercați din nou"
+
+#: admin/includes/functions.php:798
+msgid "Shipment "
+msgstr "Expediere "
+
+#: admin/includes/functions.php:798
+msgid " has been successfully saved."
+msgstr " a fost salvat cu succes."
+
+#: admin/includes/functions.php:820
+msgid "Shipper Name"
+msgstr "Numele expeditorului"
+
+#: admin/includes/functions.php:825
+msgid "Receiver Name"
+msgstr "Numele receptorului"
+
+#: admin/includes/functions.php:1044
+msgid "Previous"
+msgstr "Anterior"
+
+#: admin/includes/functions.php:1045
+msgid "Next"
+msgstr "Următor"
+
+#: admin/includes/functions.php:1046
+msgid "Shipment Pagination"
+msgstr "Paginarea expedierii"
+
+#: admin/includes/functions.php:1090
+msgid "First"
+msgstr "Primul"
+
+#: admin/includes/functions.php:1092
+msgid "previous"
+msgstr "inapoi"
+
+#: admin/includes/functions.php:1107
+msgid "next"
+msgstr "inainte"
+
+#: admin/includes/functions.php:1111
+msgid "Last"
+msgstr "Ultimul"
+
+#: admin/includes/functions.php:1239 templates/account.tpl.php:73
+msgid "First Name"
+msgstr "Prenume"
+
+#: admin/includes/functions.php:1249 templates/account.tpl.php:77
+msgid "Last Name"
+msgstr "Nume"
+
+#: admin/includes/functions.php:1259 templates/account.tpl.php:51
+#: templates/account.tpl.php:81
+msgid "Phone"
+msgstr "Telefon"
+
+#: admin/includes/functions.php:1284
+msgid "Company"
+msgstr "Companie"
+
+#: admin/includes/functions.php:1294
+msgid "Address line 1"
+msgstr "Adresa 1"
+
+#: admin/includes/functions.php:1304
+msgid "Address line 2"
+msgstr "Adresa 2"
+
+#: admin/includes/functions.php:1314
+msgid "City"
+msgstr "Oraș"
+
+#: admin/includes/functions.php:1324
+msgid "Postcode / ZIP"
+msgstr "Cod Poștal"
+
+#: admin/includes/functions.php:1334
+msgid "Country"
+msgstr "Țară"
+
+#: admin/includes/functions.php:1344
+msgid "State / County"
+msgstr "Județ"
+
+#: admin/includes/functions.php:1403 admin/includes/functions.php:1458
+msgid "Orders"
+msgstr "Comenzi"
+
+#: admin/includes/functions.php:1424
+msgid "Profile"
+msgstr "Profil"
+
+#: admin/includes/functions.php:1443
+msgid "Shipments"
+msgstr "Transporturile"
+
+#: admin/includes/functions.php:1445
+#, php-format
+msgid ""
+"Shipments <span class=\"badge badge-pill bg-danger align-top\">%s</span>"
+msgstr ""
+"Transporturile <span class=\"badge badge-pill bg-danger align-top\">%s</span>"
+
+#: admin/includes/hooks-shipment.php:10 templates/orders.tpl.php:33
+msgid "View"
+msgstr "Vezi"
+
+#: admin/includes/hooks-shipment.php:16
+msgid "Edit"
+msgstr "Editeaza"
+
+#: admin/includes/hooks-shipment.php:21
+msgid "Trash"
+msgstr "Gunoi"
+
+#: admin/includes/hooks-shipment.php:21 templates/shipment-history.tpl.php:64
+#: templates/shipments.php:37 templates/shipments.php:97
+msgid "Delete"
+msgstr "Șterge"
+
+#: admin/includes/hooks-shipment.php:44
+msgid "Tracking Number"
+msgstr "Număr de urmărire"
+
+#: admin/includes/hooks-shipment.php:51
+msgid "New"
+msgstr "Nou"
+
+#: admin/includes/hooks-shipment.php:67 admin/includes/map.php:153
+#: templates/filter-shipment.php:17
+msgid "Status"
+msgstr "Stare"
+
+#: admin/includes/hooks-shipment.php:74 templates/orders.tpl.php:8
+msgid "Shipment Type"
+msgstr "Tipul expedierii"
+
+#: admin/includes/hooks-shipment.php:82 admin/includes/hooks.php:846
+#: templates/shipments.php:27 templates/shipments.php:87
+msgid "Print"
+msgstr "Printare"
+
+#: admin/includes/hooks.php:103
+msgid "Client Approval"
+msgstr "Aprobarea clientului"
+
+#: admin/includes/hooks.php:110
+msgid "Disabled"
+msgstr "Dezactivat"
+
+#: admin/includes/hooks.php:115
+msgid "Approved"
+msgstr "Aprobat"
+
+#: admin/includes/hooks.php:140 admin/includes/hooks.php:795
+msgid "Hi there,"
+msgstr "Buna Ziua,"
+
+#: admin/includes/hooks.php:141 admin/includes/hooks.php:796
+#, php-format
+msgid "Welcome to %s! Here's how to log in:"
+msgstr "Bun venit la% s! Iată cum să vă conectați:"
+
+#: admin/includes/hooks.php:142
+#, php-format
+msgid "Login URL:  %s"
+msgstr "URL de conectare: %s"
+
+#: admin/includes/hooks.php:143 admin/includes/hooks.php:798
+#: admin/includes/hooks.php:818
+#, php-format
+msgid "Username: %s"
+msgstr "Nume utilizator: %s"
+
+#: admin/includes/hooks.php:144
+#, php-format
+msgid "Password: %s"
+msgstr "Parola: %s"
+
+#: admin/includes/hooks.php:145
+#, php-format
+msgid "If you have any problems, please contact our support at %s."
+msgstr "Dacă aveți probleme, vă rugăm să contactați asistența noastră la %s."
+
+#: admin/includes/hooks.php:146 admin/includes/hooks.php:802
+msgid "Thank you for trusting us!"
+msgstr "Vă mulțumim că ați avut încredere în noi!"
+
+#: admin/includes/hooks.php:165 admin/includes/hooks.php:565
+msgid "Client"
+msgstr "Client"
+
+#: admin/includes/hooks.php:167
+msgid "-- Select Client --"
+msgstr "-- Selectați Clientul --"
+
+#: admin/includes/hooks.php:183 admin/includes/hooks.php:592
+msgid "Agent"
+msgstr "Agent"
+
+#: admin/includes/hooks.php:185
+msgid "-- Select Agent --"
+msgstr "-- Selectați Agent --"
+
+#: admin/includes/hooks.php:201 admin/includes/hooks.php:576
+msgid "Employee"
+msgstr "Angajat"
+
+#: admin/includes/hooks.php:203
+msgid "-- Select Employee --"
+msgstr "-- Selectați angajatul --"
+
+#: admin/includes/hooks.php:224
+msgid "Date Created"
+msgstr "Data crearii"
+
+#: admin/includes/hooks.php:226 templates/graph.php:55
+msgid "to"
+msgstr "catre"
+
+#: admin/includes/hooks.php:278
+#, php-format
+msgid "Date Created: %s to %s"
+msgstr "Data creării: %s la %s"
+
+#: admin/includes/hooks.php:285
+msgid "Dashboard"
+msgstr "Panou de control"
+
+#: admin/includes/hooks.php:312 admin/includes/hooks.php:328
+#: admin/includes/hooks.php:331 templates/filter-shipment.php:61
+#: templates/filter-shipment.php:62 templates/orders.tpl.php:7
+msgid "Shipment Number"
+msgstr "Numărul expedierii"
+
+#: admin/includes/hooks.php:360
+msgid "Bulk Assign"
+msgstr "Atribuire în bloc"
+
+#: admin/includes/hooks.php:462
+msgid "Select Template"
+msgstr "Selectaţi şablonul"
+
+#: admin/includes/hooks.php:494
+msgid "BOL"
+msgstr "BOL"
+
+#: admin/includes/hooks.php:543
+msgid "Not a member?"
+msgstr "Nu sunteți înregistrat?"
+
+#: admin/includes/hooks.php:543 templates/registration.tpl.php:3
+#: templates/registration.tpl.php:9
+msgid "Registration"
+msgstr "Înregistrare"
+
+#: admin/includes/hooks.php:543 templates/registration-form.tpl.php:44
+msgid "Register"
+msgstr "Înregistrare"
+
+#: admin/includes/hooks.php:793 admin/includes/hooks.php:814
+msgid "From: "
+msgstr "De la: "
+
+#: admin/includes/hooks.php:799 admin/includes/hooks.php:819
+#, php-format
+msgid "Email: %s"
+msgstr "Email: %s"
+
+#: admin/includes/hooks.php:800
+msgid ""
+"Password: The one you entered in the registration form. (For security "
+"reason, we save encripted password)"
+msgstr ""
+"Parola: cea pe care ați introdus-o în formularul de înregistrare. (Din "
+"motive de securitate, salvăm parolacriptată)"
+
+#: admin/includes/hooks.php:801
+#, php-format
+msgid "If you have any problems, please contact me at %s."
+msgstr "Dacă aveți orice probleme, vă rugăm să mă contactați la %s."
+
+#: admin/includes/hooks.php:816
+msgid "Hi Admin,"
+msgstr "Bună Admin,"
+
+#: admin/includes/hooks.php:817
+#, php-format
+msgid "New user registration on your site %s:"
+msgstr "﻿Înregistrare utilizator nou pe site %s:"
+
+#: admin/includes/language.php:9
+msgid "Please activate your license key for WPCargo Frontend Manager"
+msgstr "Vă rugăm să activați cheia de licență pentru WPCargo Frontend Manager"
+
+#: admin/includes/language.php:12
+msgid "Warning: Frontend Manager Dashboard found, please set up."
+msgstr ""
+"Avertisment: Frontend Manager Tabloul de bord găsit, vă rugăm să configurați."
+
+#: admin/includes/language.php:12
+msgid "Frontend Manager Dashboard"
+msgstr "Tablou de bord Frontend Manager"
+
+#: admin/includes/language.php:12
+msgid "Set up Dashboard"
+msgstr "Configurarea tabloului de bord"
+
+#: admin/includes/language.php:15
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\" target=\"_blank"
+"\">WPTaskForce License Helper</a> plugin to be active!"
+msgstr ""
+"Acest plugin necesită <a href=\"http://wpcargo.com/\" target=\"_blank"
+"\">plugin wpTaskForce License Helper</a> pentru a fi activ!"
+
+#: admin/includes/language.php:18
+msgid ""
+"This plugin requires <a href=\"https://wordpress.org/plugins/wpcargo/\" "
+"target=\"_blank\">WPCargo</a> plugin to be active!"
+msgstr ""
+"Acest plugin necesită <a href=\"https://wordpress.org/plugins/wpcargo/\" "
+"target=\"_blank\">wpCargo</a> plug-in pentru a fi activ!"
+
+#: admin/includes/language.php:21
+msgid ""
+"This plugin requires <strong>WPCargo Custom Field Add-ons</strong> plugin to "
+"be active!"
+msgstr ""
+"Acest plug-in necesită <strong>WPCargo Custom Field Add-on-uri</strong> plug-"
+"in pentru a fi activ!"
+
+#: admin/includes/language.php:24
+msgid "Cheating, uh?"
+msgstr "Să trișezi?"
+
+#: admin/includes/language.php:27
+msgid "Frontend Dashboard Settings"
+msgstr "Setări tablou de bord frontend"
+
+#: admin/includes/language.php:30 admin/includes/settings.php:55
+msgid "Frontend Dashboard"
+msgstr "Frontend Tabloul de bord"
+
+#: admin/includes/language.php:33
+msgid "WPCargo Dashboard Sidebar Menu"
+msgstr "WpCargo Tabloul de bord Sidebar Meniu"
+
+#: admin/includes/language.php:36
+msgid "WPCargo Dashboard Top Menu"
+msgstr "WpCargo Tabloul de bord Meniu de top"
+
+#: admin/includes/language.php:39
+msgid "No order has been made."
+msgstr "Nu s-a făcut nicio comandă."
+
+#: admin/includes/language.php:42
+msgid "You have been successfully registered."
+msgstr "Contul Dvs., a fost creat cu succes."
+
+#: admin/includes/language.php:45
+msgid ""
+"You have been successfully registered. We'll check your account for approval "
+"and send you notification in your registered email with registration status."
+msgstr ""
+"Ați fost înregistrat cu succes. Vă vom verifica contul pentru aprobare și vă "
+"vom trimite notificări în e-mailul înregistrat cu starea înregistrării."
+
+#: admin/includes/language.php:48
+msgid "Something went wrong in your registration. Please reload and try again"
+msgstr ""
+"Ceva nu a mers bine în înregistrarea dumneavoastră. Vă rugăm să reîncărcați "
+"și să încercați din nou"
+
+#: admin/includes/language.php:51
+msgid "You do not have permissions to view this data."
+msgstr "Nu aveți permisiuni pentru a vizualiza aceste date."
+
+#: admin/includes/language.php:54
+msgid "Removing License failed, License not registered in domain"
+msgstr ""
+"Eliminarea licenței nu a reușit, licența nu a fost înregistrată în domeniu"
+
+#: admin/includes/language.php:57
+msgid "License has been successfully removed from"
+msgstr "Licența a fost eliminată cu succes din"
+
+#: admin/includes/map.php:151 templates/orders.tpl.php:6
+msgid "Date"
+msgstr "Data"
+
+#: admin/includes/map.php:152
+msgid "Location"
+msgstr "Locatie"
+
+#: admin/includes/print-hooks.php:50
+msgid "From:"
+msgstr "De la:"
+
+#: admin/includes/print-hooks.php:57
+msgid "To:"
+msgstr "La:"
+
+#: admin/includes/print-hooks.php:113
+msgid "SHIPPER DETAILS:"
+msgstr "DETALII EXPEDITOR:"
+
+#: admin/includes/print-hooks.php:120
+msgid "RECEIVER DETAILS:"
+msgstr "DETALII RECEPTOR:"
+
+#: admin/includes/print-hooks.php:142
+msgid "PACKAGE DETAILS:"
+msgstr "DETALII PACHET:"
+
+#: admin/includes/print-hooks.php:195
+msgid "Bill of Lading"
+msgstr "Conosavorul de lading"
+
+#: admin/includes/print-hooks.php:202
+msgid "SHIP FROM"
+msgstr "EXPEDIERE DE LA"
+
+#: admin/includes/print-hooks.php:211
+msgid "SHIP TO"
+msgstr "EXPEDIAȚI CĂTRE"
+
+#: admin/includes/print-hooks.php:233
+msgid "ADDITIONAL INFORMATION"
+msgstr "INFORMAȚII SUPLIMENTARE"
+
+#: admin/includes/print-hooks.php:306
+msgid "PACKAGE DETAILS"
+msgstr "DETALII PACHET"
+
+#: admin/includes/settings.php:44
+msgid "WPCargo Dashboard Attributes"
+msgstr "Atributele tabloului de bord WPCargo"
+
+#: admin/includes/settings.php:65
+msgid "Menu Icon Class"
+msgstr "Meniu Pictograma Clasa"
+
+#: admin/includes/settings.php:67
+msgid ""
+"Note: This menu icon will display only in WPCargo Dashboard Template. You "
+"can find icons available in"
+msgstr ""
+"Notă: Această pictogramă de meniu se va afișa numai în șablonul tabloului de "
+"bord WPCargo. Puteți găsi pictograme disponibile în"
+
+#: admin/includes/settings.php:67
+msgid "ei. dashboard"
+msgstr "Ei. Tablou"
+
+#: admin/includes/widgets.php:10
+msgid "FM Dashboard- Top"
+msgstr "Tabloul de bord FM- Top"
+
+#: admin/includes/widgets.php:12
+msgid ""
+"This widget display in the Frontend Manager dashboard report top area page."
+msgstr ""
+"Acest widget afișa în frontend Manager tabloul de bord raport pagina de sus "
+"zona de sus."
+
+#: admin/includes/widgets.php:19
+msgid "FM Dashboard- Middle"
+msgstr "Tablou de bord FM- Mijloc"
+
+#: admin/includes/widgets.php:21
+msgid ""
+"This widget display in the Frontend Manager dashboard report middle area "
+"page."
+msgstr ""
+"Acest widget se afișează în pagina de mijloc a tabloului de bord Frontend "
+"Manager raport."
+
+#: admin/includes/widgets.php:28
+msgid "FM Dashboard- Bottom"
+msgstr "Tablou de bord FM- Partea de jos"
+
+#: admin/includes/widgets.php:30
+msgid ""
+"This widget display in the Frontend Manager dashboard report bottom area "
+"page."
+msgstr ""
+"Acest widget de afișare în frontend Manager tabloul de bord raport pagina de "
+"jos zona de jos."
+
+#: admin/includes/widgets.php:37
+msgid "FM Shipment - Top"
+msgstr "Expediere FM - Top"
+
+#: admin/includes/widgets.php:39
+msgid ""
+"This widget display in the Frontend Manager dashboard shipment top area page."
+msgstr ""
+"Acest widget de afișare în frontend Manager bord expediere pagina de sus "
+"zona de sus."
+
+#: admin/includes/widgets.php:46
+msgid "FM Shipment - Bottom"
+msgstr "Expediere FM - Partea de jos"
+
+#: admin/includes/widgets.php:48
+msgid ""
+"This widget display in the Frontend Manager dashboard shipment bottom area "
+"page."
+msgstr ""
+"Acest widget afișa în frontend Manager bord expediere pagina zona de jos."
+
+#: admin/templates/address-mapping.tpl.php:1
+msgid "Add registration info to address book"
+msgstr "Adăugarea informațiilor de înregistrare în agendă"
+
+#: admin/templates/address-mapping.tpl.php:2
+msgid "Note: This data while add to the address book if plugin is installed."
+msgstr ""
+"Notă: Aceste date în timp ce se adaugă la agendă dacă plugin-ul este "
+"instalat."
+
+#: admin/templates/address-mapping.tpl.php:10
+msgid "Select Field"
+msgstr "Selectați câmpul"
+
+#: admin/templates/print-settings.tpl.php:1
+msgid "Print Setup"
+msgstr "Configurarea imprimării"
+
+#: admin/templates/print-settings.tpl.php:4
+msgid "Enable Chinese Fonts"
+msgstr "Activați fonturile chinezești"
+
+#: admin/templates/print-settings.tpl.php:7
+msgid ""
+"Note: This will add additional font family for simplified chinese fonts. "
+"Enable this option only if you use simplified chinese fonts in you site."
+msgstr ""
+"Notă: Aceasta va adăuga o familie de fonturi suplimentare pentru fonturile "
+"chinezești simplificate. Activați această opțiune numai dacă utilizați "
+"fonturi chinezești simplificate în site-ul dvs."
+
+#: admin/templates/print-settings.tpl.php:11
+msgid "Enable Print BOL"
+msgstr "Activați BOL de imprimare"
+
+#: admin/templates/print-settings.tpl.php:14
+msgid "Note: This will add additional print functionality for BOL."
+msgstr ""
+"Notă: Acest lucru va adăuga funcționalitate suplimentară de imprimare pentru "
+"BOL."
+
+#: admin/templates/print-settings.tpl.php:18
+msgid "Waybill Paper Size"
+msgstr "Dimensiunea hârtiei de foaie de parcurs"
+
+#: admin/templates/print-settings.tpl.php:21
+msgid "Select Size"
+msgstr "Selectare dimensiune"
+
+#: admin/templates/print-settings.tpl.php:22
+msgid "A1"
+msgstr "A1"
+
+#: admin/templates/print-settings.tpl.php:23
+msgid "A2"
+msgstr "A2"
+
+#: admin/templates/print-settings.tpl.php:24
+msgid "A3"
+msgstr "A3"
+
+#: admin/templates/print-settings.tpl.php:25
+msgid "A4"
+msgstr "A4"
+
+#: admin/templates/print-settings.tpl.php:26
+msgid "A5"
+msgstr "A5"
+
+#: admin/templates/print-settings.tpl.php:27
+msgid "Letter"
+msgstr ""
+
+#: admin/templates/print-settings.tpl.php:28
+msgid "Legal"
+msgstr "Legal"
+
+#: admin/templates/print-settings.tpl.php:29
+#: admin/templates/print-settings.tpl.php:32
+msgid "Tabloid"
+msgstr "Tabloid"
+
+#: admin/templates/print-settings.tpl.php:30
+msgid "Executive"
+msgstr "Executiv"
+
+#: admin/templates/print-settings.tpl.php:31
+msgid "Folio"
+msgstr "Folio"
+
+#: admin/templates/print-settings.tpl.php:37
+msgid "Waybill Paper Orientation"
+msgstr "Orientarea documentului de parcurs"
+
+#: admin/templates/print-settings.tpl.php:40
+msgid "Select Orientation"
+msgstr "Selectați Orientare"
+
+#: admin/templates/print-settings.tpl.php:41
+msgid "Landscape"
+msgstr "Peisaj"
+
+#: admin/templates/print-settings.tpl.php:42
+msgid "Portrait"
+msgstr "Portret"
+
+#: admin/templates/print-settings.tpl.php:48
+msgid "Print documents on checkout"
+msgstr "Imprimarea documentelor la finalizarea comenzii"
+
+#: admin/templates/print-settings.tpl.php:63
+msgid "Label print per package setup"
+msgstr "Imprimarea etichetelor per configurare a pachetului"
+
+#: admin/templates/print-settings.tpl.php:66
+msgid "Enable label multi print"
+msgstr "Activați imprimarea multiplă a etichetei"
+
+#: admin/templates/print-settings.tpl.php:69
+msgid "Note: This will print the label per shipment package."
+msgstr "Notă: Aceasta va imprima eticheta per colet de expediere."
+
+#: admin/templates/print-settings.tpl.php:73
+msgid "Label pagination template"
+msgstr "Șablon de paginare a etichetei"
+
+#: admin/templates/print-settings.tpl.php:76
+msgid "Default template {current_page} of {total_page}."
+msgstr "{current_page} implicită a șablonului de {total_page}."
+
+#: admin/templates/print-settings.tpl.php:79
+msgid "Available Shortcodes"
+msgstr "Disponibil shortcodes"
+
+#: admin/templates/sequence-settings.tpl.php:1
+msgid "Shipment Number Sequence"
+msgstr "Secvența numerelor de expediere"
+
+#: admin/templates/sequence-settings.tpl.php:4
+msgid "Enable Sequence Number?"
+msgstr "Activați numărul de secvență?"
+
+#: admin/templates/sequence-settings.tpl.php:7
+msgid "Note: This will generate a shipment sequence number."
+msgstr "Notă: Acest lucru va genera un număr de secvență de expediere."
+
+#: admin/templates/sequence-settings.tpl.php:11
+msgid "Shipment Number Start"
+msgstr "Numărul expedierii Start"
+
+#: admin/templates/sequence-settings.tpl.php:14
+msgid "Note: This will be the starting shipment number."
+msgstr "Notă: Acesta va fi numărul de expediere de pornire."
+
+#: admin/templates/sequence-settings.tpl.php:18
+msgid "Shipment Number Digit"
+msgstr "Cifra numărului expedierii"
+
+#: admin/templates/sequence-settings.tpl.php:21
+msgid "Note: This will be the N of shipment Number digit."
+msgstr "Notă: Aceasta va fi cifra N a numărului de expediere."
+
+#: admin/templates/sequence-settings.tpl.php:27
+msgid "Reset Sequence Number"
+msgstr "Resetarea numărului de secvență"
+
+#: admin/templates/settings.tpl.php:8
+msgid "Number of Days Filtered"
+msgstr "Numărul de zile filtrate"
+
+#: admin/templates/settings.tpl.php:11
+msgid ""
+"Note: This is the number of days for the date range to be filtered and "
+"displayed in the shipments list table."
+msgstr ""
+"Notă: Acesta este numărul de zile pentru intervalul de date care urmează să "
+"fie filtrat și afișat în tabelul listei de expedieri."
+
+#: admin/templates/settings.tpl.php:15
+msgid "Enable Registration Approval"
+msgstr "Activați aprobarea înregistrării"
+
+#: admin/templates/settings.tpl.php:18
+msgid "Note: This will need the registration to approve the account."
+msgstr ""
+"Notă: Acest lucru va avea nevoie de înregistrare pentru a aproba contul."
+
+#: admin/templates/settings.tpl.php:22
+msgid "Disable Registration"
+msgstr "Dezactivare înregistrare"
+
+#: admin/templates/settings.tpl.php:25
+msgid ""
+"Note: This will remove member registration functionality in the login page."
+msgstr ""
+"Notă: Aceasta va elimina funcționalitatea de înregistrare a membrilor din "
+"pagina de conectare."
+
+#: admin/templates/settings.tpl.php:29
+msgid "Disable Create Order"
+msgstr "Dezactivați crearea comenzii"
+
+#: admin/templates/settings.tpl.php:32
+msgid ""
+"Note: This will remove the Create Shipment functionality in the front-end "
+"dashboard."
+msgstr ""
+"Notă: Aceasta va elimina funcționalitatea Creare expediere din tabloul de "
+"bord front-end."
+
+#: admin/templates/settings.tpl.php:36
+msgid "Allow Employee Access all Shipment?"
+msgstr "Permiteți accesul angajaților la toate expedierile?"
+
+#: admin/templates/settings.tpl.php:39
+msgid "Note: This will allow wpcargo employee access all the shipment."
+msgstr ""
+"Notă: Acest lucru va permite angajaților wpcargo să acceseze toată "
+"expedierea."
+
+#: admin/templates/settings.tpl.php:43
+msgid "Allow Client to Add Shipment?"
+msgstr "Permiteți clientului să adauge o expediere?"
+
+#: admin/templates/settings.tpl.php:46
+msgid ""
+"Note: This will allow wpcargo client to add shipment in the dashboard page."
+msgstr ""
+"Notă: Acest lucru va permite clientului wpcargo să adauge expedierea în "
+"pagina tabloului de bord."
+
+#: admin/templates/settings.tpl.php:50
+msgid "Set default shipment status"
+msgstr "Setarea stării implicite a expedierii"
+
+#: admin/templates/settings.tpl.php:55
+msgid "Select Status"
+msgstr "Selectare statut"
+
+#: admin/templates/settings.tpl.php:61
+msgid "NO Status found."
+msgstr "NU Statutul găsit."
+
+#: admin/templates/settings.tpl.php:67
+msgid "Set Page as Frontend Dashboard admin"
+msgstr "Setarea paginii ca administrator al tabloului de bord Frontend"
+
+#: admin/templates/settings.tpl.php:72
+msgid "Select Page"
+msgstr "Selectați pagina"
+
+#: admin/templates/settings.tpl.php:78
+msgid "NO pages found."
+msgstr "NU s-au găsit pagini."
+
+#: admin/templates/settings.tpl.php:84
+msgid "Access Frontend Dashboard Roles"
+msgstr "Roluri tabloul de bord Frontend Access"
+
+#: admin/templates/settings.tpl.php:95 admin/templates/settings.tpl.php:110
+#: admin/templates/settings.tpl.php:125
+msgid "Note: This options applicable only in front end dashboard."
+msgstr "Notă: Aceste opțiuni se aplică numai în tabloul de bord frontal."
+
+#: admin/templates/settings.tpl.php:99
+msgid "Update Shipments Roles"
+msgstr "Actualizarea rolurilor expedierilor"
+
+#: admin/templates/settings.tpl.php:114
+msgid "Delete Shipments Roles"
+msgstr "Ștergerea rolurilor expedierilor"
+
+#: admin/templates/settings.tpl.php:132
+msgid "Save Settings"
+msgstr "Salveaza setari"
+
+#: templates/account.tpl.php:3 templates/account.tpl.php:9
+msgid "My Account"
+msgstr "Contul meu"
+
+#: templates/account.tpl.php:10 templates/bulk-assign-shipment.tpl.php:25
+#: templates/registration.tpl.php:10
+msgid "Close"
+msgstr "Închide"
+
+#: templates/account.tpl.php:28 templates/profile.tpl.php:18
+msgid "Upload Avatar"
+msgstr "Incarca avatar"
+
+#: templates/account.tpl.php:29 templates/profile.tpl.php:19
+msgid "Save Avatar"
+msgstr "Salvare avatar"
+
+#: templates/account.tpl.php:34
+msgid "Email:"
+msgstr "E-mail"
+
+#: templates/account.tpl.php:42 templates/registration-address.tpl.php:1
+msgid "Address Information"
+msgstr "Informații adresă"
+
+#: templates/account.tpl.php:100 templates/registration-address.tpl.php:15
+msgid "Select"
+msgstr "Selectează"
+
+#: templates/account.tpl.php:134 templates/bulk-assign-shipment.tpl.php:26
+#: templates/profile.tpl.php:90
+msgid "Update"
+msgstr "Actualizare"
+
+#: templates/add-shipment.php:58
+msgid "Add Shipment"
+msgstr "Adăugarea expedierii"
+
+#: templates/assign-shipment.tpl.php:10
+msgid "Assign shipment to"
+msgstr "Atribuirea expedierii la"
+
+#: templates/bulk-assign-shipment.tpl.php:6
+msgid "Bulk Shipment Update"
+msgstr "Actualizarea expedierii în masă"
+
+#: templates/bulk-assign-shipment.tpl.php:13
+msgid "Shipment List"
+msgstr "Lista de expedieri"
+
+#: templates/dashboard.php:159
+msgid "Copyright"
+msgstr "Copyright"
+
+#: templates/filter-shipment.php:19
+msgid "All Status"
+msgstr "Tip tranzactie"
+
+#: templates/filter-shipment.php:32 templates/filter-shipment.php:42
+msgid "All"
+msgstr "Toate"
+
+#: templates/filter-shipment.php:50 templates/graph.php:59
+msgid "Filter"
+msgstr "Filtru"
+
+#: templates/filter-shipment.php:52
+msgid "Reset"
+msgstr "Reset"
+
+#: templates/filter-shipment.php:63
+msgid "Search"
+msgstr "Caută"
+
+#: templates/graph.php:53
+msgid "Date Range"
+msgstr "Interval de date"
+
+#: templates/graph.php:85
+#, php-format
+msgid "%s of 100%s"
+msgstr "%s de 100%s"
+
+#: templates/graph.php:103
+#, php-format
+msgid "Report from %s to %s"
+msgstr "Raport de la %s la %s"
+
+#: templates/graph.php:104
+msgid "Total shipment updates"
+msgstr "Actualizări totale ale expedierii"
+
+#: templates/history.tpl.php:7
+msgid "History"
+msgstr "Istoric"
+
+#: templates/login.php:8
+msgid "Error"
+msgstr "Eroare"
+
+#: templates/login.php:8
+msgid "Please check your Username or Password."
+msgstr "Vă rugăm să verificați numele de utilizator sau parola."
+
+#: templates/login.php:13
+msgid "Sign in"
+msgstr "Conectați-vă aici"
+
+#: templates/login.php:26
+msgid "Username/E-mail"
+msgstr "Nume de utilizator/E-mail"
+
+#: templates/login.php:44
+msgid "Remember me"
+msgstr "Ține-mă minte"
+
+#: templates/login.php:48
+msgid "Forgot password?"
+msgstr "Ai uitat parola?"
+
+#: templates/login.php:53
+msgid "Login"
+msgstr "Autentificare"
+
+#: templates/multiple-package.tpl.php:8
+msgid "Packages"
+msgstr "Abonamente"
+
+#: templates/multiple-package.tpl.php:66
+msgid "Add Package"
+msgstr "Adăugare pachet"
+
+#: templates/navigation.tpl.php:9 templates/navigation.tpl.php:121
+msgid "Site Logo"
+msgstr "Logo"
+
+#: templates/navigation.tpl.php:24 templates/navigation.tpl.php:25
+msgid "Track Shipment"
+msgstr "Urmăriți traseul comenzii"
+
+#: templates/navigation.tpl.php:50 templates/navigation.tpl.php:131
+msgid "Create Shipment"
+msgstr "Crearea expedierii"
+
+#: templates/navigation.tpl.php:106
+msgid "My Profile"
+msgstr "Profilul meu"
+
+#: templates/navigation.tpl.php:108
+msgid "Notifications"
+msgstr "Notificări"
+
+#: templates/navigation.tpl.php:110
+msgid "Logout"
+msgstr "Deconectare"
+
+#: templates/no-shipment.php:5
+msgid "Error 404"
+msgstr "Eroare 404"
+
+#: templates/no-shipment.php:6
+msgid "Shipment not found!"
+msgstr "Expedierea nu a fost găsită!"
+
+#: templates/nocf-error.tpl.php:7
+msgid "Error Found!"
+msgstr "Eroare găsită!"
+
+#: templates/nocf-error.tpl.php:10
+msgid ""
+"Cannot find WPCargo Custom Field Add-ons plugin activated in your system."
+msgstr ""
+"Nu găsi WPCargo Custom Field Add-on-uri plug-in activat în sistemul "
+"dumneavoastră."
+
+#: templates/nocf-error.tpl.php:14
+msgid "Please purchase"
+msgstr "Vă rugăm să cumpere"
+
+#: templates/nocf-error.tpl.php:14
+msgid "WPCargo Custom Field Add-ons"
+msgstr "WpCargo Custom Field Add-on-uri"
+
+#: templates/nocf-error.tpl.php:14
+msgid "https://www.wpcargo.com/product/wpcargo-custom-field-add-ons/"
+msgstr "https://www.wpcargo.com/product/wpcargo-custom-field-add-ons/"
+
+#: templates/orders.tpl.php:5
+msgid "Order ID"
+msgstr "ID comanda"
+
+#: templates/orders.tpl.php:9
+msgid "Order Status"
+msgstr "Stare comanda"
+
+#: templates/orders.tpl.php:10
+msgid "Shipment Status"
+msgstr "Starea expedierii"
+
+#: templates/orders.tpl.php:11
+msgid "Amount"
+msgstr "Suma"
+
+#: templates/orders.tpl.php:26
+msgid "Orders Account"
+msgstr "Contul comenzilor"
+
+#: templates/profile.tpl.php:29 templates/registration-form.tpl.php:7
+msgid "Personal Information"
+msgstr "Informaţii personale"
+
+#: templates/profile.tpl.php:53 templates/registration-form.tpl.php:19
+msgid "Billing Information"
+msgstr "Informații de facturare"
+
+#: templates/profile.tpl.php:95 templates/profile.tpl.php:111
+msgid "Change Password"
+msgstr "Schimbă Parola"
+
+#: templates/profile.tpl.php:100
+msgid "New Password"
+msgstr "Parolă nouă"
+
+#: templates/profile.tpl.php:105 templates/registration-form.tpl.php:38
+msgid "Confirm Password"
+msgstr "Confirmați noua parolă"
+
+#: templates/register-email-notification.tpl.php:4
+msgid "Dear"
+msgstr "Scump"
+
+#: templates/register-email-notification.tpl.php:5
+msgid "You have successfully registered!"
+msgstr "V-ați înregistrat cu succes!"
+
+#: templates/register-notification-admin.tpl.php:4
+msgid "A new user has registered!"
+msgstr "Un utilizator nou s-a înregistrat!"
+
+#: templates/register-notification-admin.tpl.php:5
+msgid "Name: "
+msgstr "Nume :"
+
+#: templates/restricted.tpl.php:4
+msgid "Sorry your are not allowed to access this page!"
+msgstr "Ne pare rău dumneavoastră nu au voie pentru a accesa această pagină!"
+
+#: templates/restricted.tpl.php:5
+msgid "Please contact administrator for your permission."
+msgstr "Vă rugăm să contactați administratorul pentru permisiunea dvs."
+
+#: templates/shipment-history.tpl.php:4
+msgid "History Records"
+msgstr "Istoric Records"
+
+#: templates/shipment-history.tpl.php:73
+msgid "No Shipment History Found."
+msgstr "Nu s-a găsit niciun istoric al expedierilor."
+
+#: templates/shipments.php:16
+msgid "Show entries"
+msgstr "Afișare intrări"
+
+#: templates/shipments.php:18
+msgid "entries"
+msgstr "intrări"
+
+#: templates/shipments.php:115
+msgid "No shipment found."
+msgstr "Nu s-a găsit nicio expediere."
+
+#: templates/shipments.php:117
+#, php-format
+msgid "Searched:  \"%s\""
+msgstr "Percheziționat: \"%s\""
+
+#: templates/shipments.php:119
+#, php-format
+msgid "%s to %s"
+msgstr "%s la %s"
+
+#: templates/update-shipment.php:66
+msgid "Update Shipment"
+msgstr "Actualizați expedierea"
+
+#: templates/waybill.tpl.php:66
+msgid "Shipper Address"
+msgstr "Adresa expeditorului"
+
+#: templates/waybill.tpl.php:70
+msgid "Receiver Address"
+msgstr "Adresa destinatarului"
+
+#. Plugin Name of the plugin/theme
+msgid "WPCargo Frontend Manager"
+msgstr "WPCargo Frontend Manager"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wptaskforce.com/"
+msgstr "http://wptaskforce.com/"
+
+#. Description of the plugin/theme
+msgid ""
+"WPCargo Frontend Manager provides user dashboard in the frontend of your "
+"site and mobile responsive ready. Available shortcode [wpcfe_registration]"
+msgstr ""
+"WPCargo Frontend Manager oferă tabloul de bord al utilizatorului în frontend-"
+"ul site-ului și mobil receptiv gata. Cod scurt disponibil "
+"[wpcfe_registration]"
+
+#. Author of the plugin/theme
+msgid "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"
+msgstr "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"
+
+#~ msgid "N Sequence is not yet set. N Sequence reset failed."
+#~ msgstr "Secvența N nu este încă setată. N secvență de resetare nu a reușit."
+
+#~ msgid "Month"
+#~ msgstr "Luna"
+
+#~ msgid "-- Select Month --"
+#~ msgstr "-- Selectați luna --"
+
+#~ msgid "Year"
+#~ msgstr "Anul"
+
+#~ msgid "-- Select Year --"
+#~ msgstr "-- Selectați anul --"
