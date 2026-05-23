@@ -1,0 +1,20 @@
+[03-May-2026 07:23:48 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-05-03.log
+[03-May-2026 07:23:48 UTC] PHP Notice:  La función as_next_scheduled_action ha sido llamada <strong>de forma incorrecta</strong>. as_next_scheduled_action() was called before the Action Scheduler data store was initialized Por favor, ve <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">depuración en WordPress</a> para más información. (Este mensaje fue añadido en la versión 3.1.6). in /home/u727114368/domains/mercourier.com/public_html/wp-includes/functions.php on line 6121
+[03-May-2026 07:23:49 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-05-03.log
+[03-May-2026 07:23:49 UTC] 🌅 [RESETEO DIARIO AUTOMÁTICO] Ejecutado para 2026-05-03
+[03-May-2026 07:23:49 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-05-03.log
+[03-May-2026 07:23:49 UTC] 
+════════════════════════════════════════════════════════════
+[03-May-2026 07:23:49 UTC] 🧹 [LIMPIEZA DIARIA] Eliminando merc_motorizo_recojo_default de todos los usuarios
+[03-May-2026 07:23:49 UTC] ════════════════════════════════════════════════════════════
+[03-May-2026 07:23:49 UTC] 📊 Usuarios con motorizado_recojo_default: 0
+[03-May-2026 07:23:49 UTC] 🔄 Total usuarios limpios: 0
+[03-May-2026 07:23:49 UTC] ✅ [LIMPIEZA DIARIA COMPLETADA] Próxima ejecución en 24 horas
+[03-May-2026 07:23:49 UTC] ════════════════════════════════════════════════════════════
+
+[03-May-2026 07:23:50 UTC] PHP Notice:  La función as_next_scheduled_action ha sido llamada <strong>de forma incorrecta</strong>. as_next_scheduled_action() was called before the Action Scheduler data store was initialized Por favor, ve <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">depuración en WordPress</a> para más información. (Este mensaje fue añadido en la versión 3.1.6). in /home/u727114368/domains/mercourier.com/public_html/wp-includes/functions.php on line 6121
+[03-May-2026 07:23:50 UTC] 🌅 [RESETEO DIARIO AUTOMÁTICO] Ejecutado para 2026-05-03
+[03-May-2026 07:23:50 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-05-03.log
+[03-May-2026 07:23:51 UTC] MERC_DEBUG_META_UPDATE - meta_id=36263 post_id=3415 meta_key=_elementor_migrations_state_8b2d meta_value=4.0.5:4a099cf7c6769931ccb8ea1c3a34129a
+[03-May-2026 07:23:51 UTC] MERC_DEBUG_META_UPDATE - Ignorado (no es wpcargo_status)
+[03-May-2026 15:42:12 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-05-03.log

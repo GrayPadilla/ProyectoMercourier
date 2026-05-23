@@ -1,0 +1,649 @@
+[28-Apr-2026 13:12:23 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:12:24 UTC] 🌅 [RESETEO DIARIO AUTOMÁTICO] Ejecutado para 2026-04-28
+[28-Apr-2026 13:12:24 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:12:24 UTC] 
+════════════════════════════════════════════════════════════
+[28-Apr-2026 13:12:24 UTC] 🧹 [LIMPIEZA DIARIA] Eliminando merc_motorizo_recojo_default de todos los usuarios
+[28-Apr-2026 13:12:24 UTC] ════════════════════════════════════════════════════════════
+[28-Apr-2026 13:12:24 UTC] 📊 Usuarios con motorizado_recojo_default: 0
+[28-Apr-2026 13:12:24 UTC] 🔄 Total usuarios limpios: 0
+[28-Apr-2026 13:12:24 UTC] ✅ [LIMPIEZA DIARIA COMPLETADA] Próxima ejecución en 24 horas
+[28-Apr-2026 13:12:24 UTC] ════════════════════════════════════════════════════════════
+
+[28-Apr-2026 13:12:25 UTC] MERC_DEBUG_META_UPDATE - meta_id=36263 post_id=3415 meta_key=_elementor_migrations_state_8b2d meta_value=4.0.3:4a099cf7c6769931ccb8ea1c3a34129a
+[28-Apr-2026 13:12:25 UTC] MERC_DEBUG_META_UPDATE - Ignorado (no es wpcargo_status)
+[28-Apr-2026 13:12:54 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:12:54 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:12:55 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:12:55 UTC] PHP Notice:  La función as_next_scheduled_action ha sido llamada <strong>de forma incorrecta</strong>. as_next_scheduled_action() was called before the Action Scheduler data store was initialized Por favor, ve <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">depuración en WordPress</a> para más información. (Este mensaje fue añadido en la versión 3.1.6). in /home/u727114368/domains/mercourier.com/public_html/wp-includes/functions.php on line 6121
+[28-Apr-2026 13:13:01 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:13:01 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:13:02 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:13:02 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:13:08 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:13:16 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:13:19 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:13:20 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:13:29 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:13:31 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:13:32 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:13:35 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:13:35 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:13:37 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:13:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:13:41 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:14:39 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:14:39 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:15:37 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:15:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:16:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:16:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:17:37 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:17:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:18:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:18:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:19:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:19:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:20:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:20:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:21:26 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:21:30 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:21:31 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:21:34 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:21:37 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:21:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:21:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:21:49 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:21:53 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:21:54 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:22:53 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:22:54 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:23:54 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:23:54 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:26:33 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:26:33 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:26:48 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:26:48 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:26:51 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:26:52 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:26:55 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:26:58 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:26:59 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:27:32 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:27:33 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:27:34 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:28:12 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:28:12 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:28:14 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:28:15 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:29:15 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:29:15 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:29:39 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:29:39 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:29:42 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:29:43 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:30:01 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:30:03 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:30:04 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:30:43 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:30:43 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:30:46 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:30:48 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:31:06 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:31:08 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:31:09 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:31:18 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:31:20 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:31:21 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:31:52 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:31:52 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:31:55 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:31:56 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:31:58 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:32:00 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:32:00 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:32:01 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:32:04 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:32:06 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:32:07 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:32:14 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:32:16 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:32:17 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:33:17 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:33:18 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:34:16 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:34:17 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:35:17 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:35:17 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:36:17 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:36:17 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:37:17 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:37:17 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:38:17 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:38:17 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:39:17 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:39:17 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:39:19 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:39:25 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:39:25 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:39:31 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:39:34 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:39:36 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:39:36 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:39:39 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:39:42 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:39:43 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:39:45 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:39:48 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:39:49 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:40:49 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:40:50 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:41:58 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:41:58 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:42:57 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:42:58 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:43:57 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:43:58 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:44:58 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:44:58 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:45:49 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:45:49 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:45:53 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:45:55 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:45:58 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:45:59 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:46:00 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:46:31 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:46:34 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:46:35 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:46:35 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:46:39 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:46:40 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:46:41 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:47:41 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:47:41 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:48:41 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:48:41 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:49:42 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:49:43 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:50:22 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:50:26 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:50:28 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:50:43 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:50:43 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:50:45 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:50:46 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:50:52 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:50:54 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:50:54 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 13:50:58 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:52:20 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:52:21 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:52:34 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:52:35 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:52:35 UTC] PHP Notice:  La función as_next_scheduled_action ha sido llamada <strong>de forma incorrecta</strong>. as_next_scheduled_action() was called before the Action Scheduler data store was initialized Por favor, ve <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">depuración en WordPress</a> para más información. (Este mensaje fue añadido en la versión 3.1.6). in /home/u727114368/domains/mercourier.com/public_html/wp-includes/functions.php on line 6121
+[28-Apr-2026 14:52:35 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:52:39 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:52:40 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:52:45 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:52:47 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:52:47 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:52:58 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:53:02 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:53:03 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:53:35 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:53:36 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:53:39 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:53:40 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:54:15 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:54:19 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:54:20 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:54:36 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:54:37 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:54:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:54:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:55:28 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:55:32 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:55:32 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:56:24 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:56:24 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:56:26 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:56:26 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:56:45 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:56:45 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:56:46 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:56:46 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:56:59 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:57:02 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:57:03 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:57:32 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:57:37 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:57:37 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:57:39 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:57:39 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:57:43 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:57:44 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:58:07 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:58:09 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:58:09 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:58:59 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:58:59 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:59:03 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:59:04 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:59:05 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:59:27 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:59:30 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 14:59:30 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:00:10 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:00:10 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:00:14 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:00:15 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:00:26 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:00:29 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:00:30 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:01:30 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:01:31 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:02:30 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:02:30 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:02:41 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:02:41 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:02:53 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:02:54 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:03:54 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:03:54 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:04:08 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:04:15 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:04:15 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:04:18 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:04:34 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:04:35 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:04:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:04:39 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:04:51 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:04:56 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:04:56 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:04:59 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:05:08 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:05:12 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:05:14 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:05:26 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:05:30 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:05:31 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:05:55 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:05:55 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:05:58 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:05:59 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:06:08 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:06:12 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:06:12 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:06:32 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:06:37 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:06:37 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:06:39 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:06:53 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:07:00 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:07:02 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:07:18 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:07:22 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:07:23 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:07:43 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:07:43 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:07:46 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:07:47 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:08:36 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:08:36 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:08:41 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:08:42 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:09:02 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:09:07 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:09:08 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:09:19 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:09:25 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:09:26 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:09:28 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:09:37 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:09:37 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:09:46 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:09:47 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:10:00 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:10:07 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:10:07 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:10:09 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:10:40 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:10:40 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:10:46 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:10:47 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:11:00 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:11:03 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:11:04 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:11:16 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:11:20 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:11:21 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:11:22 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:11:37 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:11:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:11:42 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:11:43 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:11:44 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:11:59 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:12:01 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:12:02 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:12:12 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:12:16 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:12:16 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:12:28 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:12:32 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:12:34 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:12:44 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:12:44 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:12:47 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:12:48 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:12:59 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:13:03 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:13:04 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:13:32 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:13:37 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:13:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:13:40 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:14:14 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:14:18 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:14:19 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:14:37 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:14:37 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:14:40 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:14:41 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:14:53 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:14:57 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:15:00 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:15:24 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:15:27 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:15:29 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:15:42 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:15:42 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:15:47 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:15:49 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:16:07 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:16:11 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:16:12 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:16:40 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:16:40 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:16:49 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:16:50 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:16:52 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:17:02 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:17:02 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:17:07 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:17:08 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:17:22 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:17:27 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:17:28 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:17:39 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:17:39 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:17:44 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:17:45 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:17:58 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:18:03 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:18:04 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:18:17 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:18:21 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:18:22 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:18:36 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:18:36 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:18:41 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:18:46 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:19:12 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:19:18 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:19:21 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:19:41 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:19:41 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:19:46 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:19:47 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:20:11 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:20:16 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:20:17 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:21:11 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:21:12 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:21:14 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:21:15 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:22:15 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:22:15 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:22:35 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:22:35 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:22:39 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:22:39 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:23:39 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:23:39 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:24:19 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:24:21 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:24:21 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:24:21 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:24:24 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:24:26 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:24:26 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:24:35 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:24:35 UTC] Hostinger AI Assistant Log: JWT token generated for user ID: 37
+[28-Apr-2026 15:24:35 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:25:27 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:26:51 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:26:51 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:27:51 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:27:51 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:29:50 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:29:50 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:29:51 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[28-Apr-2026 15:29:51 UTC] 🔵 [FILTER] Usuario actual: 37
+[28-Apr-2026 15:29:51 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":10,"paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"date_query":[{"after":"2026-02-27","before":"2026-04-28","inclusive":true}]}
+[28-Apr-2026 15:29:51 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[28-Apr-2026 15:29:51 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-04-28
+[28-Apr-2026 15:29:51 UTC] 🔵 [FILTER] Fecha desde: '2026-04-28' | Fecha hasta: '2026-04-28'
+[28-Apr-2026 15:29:51 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[28-Apr-2026 15:29:51 UTC] 🔵 [FILTER] REMOVIENDO date_query para evitar conflicto
+[28-Apr-2026 15:29:51 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-04-28', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-04-28', '%Y-%m-%d'))
+        
+[28-Apr-2026 15:29:51 UTC] 🔵 [FILTER] IDs encontrados por fecha: 0
+[28-Apr-2026 15:29:51 UTC] 🔵 [FILTER] Sin resultados de fecha, forzando búsqueda vacía
+[28-Apr-2026 15:29:51 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":10,"paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"post__in":[0]}
+[28-Apr-2026 15:30:04 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:30:04 UTC] 📝 [EDIT_FORM_LOAD] Envío #3527 | Tipo:  | Costo envío: 0
+[28-Apr-2026 15:30:04 UTC] ⚠️ Tipo de envío no es full_fitment, saltando selector de productos
+[28-Apr-2026 15:30:04 UTC] 🔍 [CONTAINER_DETAILS] Envío # | tipo_envio desde POST: NO | tipo_envio desde meta:  | tipo_envio final:  | es_merc: NO
+[28-Apr-2026 15:30:05 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:30:05 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[28-Apr-2026 15:30:05 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:30:06 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[28-Apr-2026 15:30:09 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:30:09 UTC] 📝 [EDIT_FORM_LOAD] Envío #3527 | Tipo:  | Costo envío: 0
+[28-Apr-2026 15:30:09 UTC] ⚠️ Tipo de envío no es full_fitment, saltando selector de productos
+[28-Apr-2026 15:30:09 UTC] 🔍 [CONTAINER_DETAILS] Envío # | tipo_envio desde POST: NO | tipo_envio desde meta:  | tipo_envio final: normal | es_merc: YES
+[28-Apr-2026 15:30:10 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:30:10 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[28-Apr-2026 15:30:10 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:30:10 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[28-Apr-2026 15:30:10 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:30:10 UTC] 🔄 [RESETEO DIARIO] Usuario 37 | Fecha: 2026-04-28
+[28-Apr-2026 15:30:10 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:30:10 UTC] 🔍 [AJAX] Consultando desbloqueo parcial para NORMAL
+[28-Apr-2026 15:30:10 UTC]    Meta key: merc_desbloqueo_parcial_NORMAL
+[28-Apr-2026 15:30:10 UTC]    Unlock info: ""
+[28-Apr-2026 15:30:10 UTC]    Force date: 
+[28-Apr-2026 15:30:33 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:30:33 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:30:33 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:30:33 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[28-Apr-2026 15:30:33 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[28-Apr-2026 15:30:33 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[28-Apr-2026 15:30:36 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:30:36 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:30:36 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:30:36 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[28-Apr-2026 15:30:36 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[28-Apr-2026 15:30:36 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[28-Apr-2026 15:30:36 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:30:37 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:30:51 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:30:51 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:30:51 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[28-Apr-2026 15:30:51 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[28-Apr-2026 15:30:51 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:30:51 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[28-Apr-2026 15:30:51 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:30:51 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:30:51 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[28-Apr-2026 15:30:58 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:30:58 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:30:58 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[28-Apr-2026 15:30:58 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[28-Apr-2026 15:30:58 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:30:58 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:30:58 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[28-Apr-2026 15:31:20 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:31:20 UTC] 🔒 [PRE-INSERT] Verificando unicidad de tracking: MERC-000002
+[28-Apr-2026 15:31:20 UTC] ✅ [PRE-INSERT] Tracking único: MERC-000002
+[28-Apr-2026 15:31:20 UTC] 🔄 [guardar_tipo_envio_shipment] INICIADO - post_id: 6676
+[28-Apr-2026 15:31:20 UTC]    post_type: wpcargo_shipment
+[28-Apr-2026 15:31:20 UTC]    ✅ Es wpcargo_shipment, continuando...
+[28-Apr-2026 15:31:20 UTC] 📌 guardar_tipo_envio - GET[type]: normal
+[28-Apr-2026 15:31:20 UTC] ✅ guardar_tipo_envio ÉXITO - ID: 6676 | Tipo: normal
+[28-Apr-2026 15:31:20 UTC] 🔍 VERIFICANDO DECREMENTO: Cliente #37 | Envío #6676 | Fecha desbloqueo:  | Hoy: 2026-04-28 | Envíos permitidos: 0
+[28-Apr-2026 15:31:20 UTC] ❌ NO SE DECREMENTA: Desbloqueo no activo o sin envíos permitidos
+[28-Apr-2026 15:31:20 UTC] ✅ Iniciando guardado de producto para envío #6676
+[28-Apr-2026 15:31:20 UTC]    📝 Tipo obtenido desde REQUEST[type]: normal
+[28-Apr-2026 15:31:20 UTC] 📦 Datos recibidos - Producto ID: 0, Cantidad: 1, Tipo: 'normal', Es Full Fitment: NO
+[28-Apr-2026 15:31:20 UTC] 🔍 ASIGNACIÓN ESTADO - Iniciando para envío #6676
+[28-Apr-2026 15:31:20 UTC]    ✅ Tipo ya estaba en meta: normal
+[28-Apr-2026 15:31:20 UTC]    Tipo normalizado: 'normal'
+[28-Apr-2026 15:31:20 UTC] 📦 MERC EMPRENDEDOR detectado
+[28-Apr-2026 15:31:20 UTC]    Estados de recojo configurados: 1
+[28-Apr-2026 15:31:20 UTC]    Primer estado de recojo: 'PENDIENTE'
+[28-Apr-2026 15:31:20 UTC] ✅ ASIGNACIÓN ESTADO - EMPRENDEDOR detectado: '' → 'PENDIENTE' (verificado: 'PENDIENTE')
+[28-Apr-2026 15:31:20 UTC] 🔍 Full Fitment verificación #6676 - Tipo: 'normal' -> Es full fitment: NO
+[28-Apr-2026 15:31:20 UTC] ⏭️ Full Fitment #6676 - NO es full fitment, saltando
+[28-Apr-2026 15:31:20 UTC] 💰 [SAVE_FINANCIAL] === GUARDANDO DATOS FINANCIEROS - Envío #6676 ===
+[28-Apr-2026 15:31:20 UTC] 💰 [SAVE_FINANCIAL] Costo producto desde POST: 0.00
+[28-Apr-2026 15:31:20 UTC] 💰 [SAVE_FINANCIAL] Costo envío desde POST: 10.00
+[28-Apr-2026 15:31:20 UTC] 💰 [SAVE_FINANCIAL] Distrito destino: Independencia
+[28-Apr-2026 15:31:20 UTC] 💰 [SAVE_FINANCIAL] Costo envío GUARDADO en meta: 10.00
+[28-Apr-2026 15:31:20 UTC] 💰 [SAVE_FINANCIAL] Cargo remitente desde POST: 0
+[28-Apr-2026 15:31:20 UTC] 💰 [SAVE_FINANCIAL] === FIN GUARDADO DATOS FINANCIEROS ===
+[28-Apr-2026 15:31:20 UTC] 🔍 [SAVE_FINANCIAL] Verificación inmediata - Costo envío en DB: 10.00
+[28-Apr-2026 15:31:20 UTC] ✅ [MERC_FORCE_DECIMAL] Shipment #6676 wpcargo_total_cobrar forced to 10.00
+[28-Apr-2026 15:31:20 UTC] 🔍 AUTO-ASIGNACIÓN INICIADA - Envío #6676
+[28-Apr-2026 15:31:20 UTC] 📦 AUTO-ASIGNACIÓN - Tipo de envío: normal
+[28-Apr-2026 15:31:20 UTC] 🎯 AUTO-ASIGNACIÓN - EMPRENDEDOR detectado, distrito recojo: Comas → contenedor de RECOJO
+[28-Apr-2026 15:31:20 UTC] ✅ Auto-asignación - Envío #6676: shipment_container_recojo #3706 asignado
+[28-Apr-2026 15:31:20 UTC] 📍 Auto-asignación EMPRENDEDOR - Validando contenedores para RECOJO y ENTREGA...
+[28-Apr-2026 15:31:20 UTC] 📍 Auto-asignación EMPRENDEDOR - Asignando contenedor de ENTREGA para: Independencia
+[28-Apr-2026 15:31:20 UTC] ✅ Auto-asignación EMPRENDEDOR - Envío #6676: shipment_container_entrega #3706 asignado para entrega en Independencia
+[28-Apr-2026 15:31:20 UTC] 🔍 VERIFICACIÓN - shipment_container_entrega para envío #6676: ✅ Encontrado en BD: 3706
+[28-Apr-2026 15:31:20 UTC] 🔚 [FINAL_VERIFICATION] Envío #6676 | Tipo: normal | Distrito:  | Costo FINAL: 10.00
+[28-Apr-2026 15:31:20 UTC] 🔄 [guardar_tipo_envio_shipment] INICIADO - post_id: 6676
+[28-Apr-2026 15:31:20 UTC]    post_type: wpcargo_shipment
+[28-Apr-2026 15:31:20 UTC]    ✅ Es wpcargo_shipment, continuando...
+[28-Apr-2026 15:31:20 UTC] 📌 guardar_tipo_envio - GET[type]: normal
+[28-Apr-2026 15:31:20 UTC] ✅ guardar_tipo_envio ÉXITO - ID: 6676 | Tipo: normal
+[28-Apr-2026 15:31:20 UTC] PHP Warning:  Undefined array key "location" in /home/u727114368/domains/mercourier.com/public_html/wp-content/plugins/wpcargo-frontend-manager/admin/includes/hooks.php on line 729
+[28-Apr-2026 15:31:20 UTC] ✅ [FRONTEND SAVE] Envío #6676: tipo_envio = normal | es_merc = YES
+[28-Apr-2026 15:31:20 UTC] ✅ [FRONTEND SAVE] Envío #6676: shipment_container_recojo #3706 guardado desde frontend
+[28-Apr-2026 15:31:20 UTC] ✅ [FRONTEND SAVE] Envío #6676: shipment_container_entrega #3706 guardado desde frontend
+[28-Apr-2026 15:31:20 UTC] 
+🎯 [HOOK: after_wpcfe_save_shipment] DISPARADO para envío #6676
+[28-Apr-2026 15:31:20 UTC] 
+🔧 [ASIGNAR ESTADO FINAL] Ejecutando para envío #6676
+[28-Apr-2026 15:31:20 UTC]    📦 Tipo de envío: normal
+[28-Apr-2026 15:31:20 UTC]    📌 Estado actual en BD: PENDIENTE
+[28-Apr-2026 15:31:20 UTC]    📦 Tipo NORMAL/EMPRENDEDOR - Verificando estado
+[28-Apr-2026 15:31:20 UTC] 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🆕 AUTO-ASIGNAR MOTORIZADO (Nuevo Envío)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[28-Apr-2026 15:31:20 UTC] 📝 Hook ejecutado para envío: #6676
+[28-Apr-2026 15:31:20 UTC] 👤 Usuario (registered_shipper): 3
+[28-Apr-2026 15:31:20 UTC] 🔍 Buscando 'merc_motorizo_recojo_default' para usuario #3...
+[28-Apr-2026 15:31:20 UTC]    Valor encontrado: VACÍO/NO EXISTE
+[28-Apr-2026 15:31:20 UTC] ℹ️ Usuario #3 NO tiene motorizado default configurado
+[28-Apr-2026 15:31:20 UTC] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[28-Apr-2026 15:31:20 UTC] 📝 [EDIT_FORM_LOAD] Envío #3527 | Tipo:  | Costo envío: 0
+[28-Apr-2026 15:31:20 UTC] ⚠️ Tipo de envío no es full_fitment, saltando selector de productos
+[28-Apr-2026 15:31:20 UTC] 🔍 [CONTAINER_DETAILS] Envío # | tipo_envio desde POST: normal | tipo_envio desde meta:  | tipo_envio final: normal | es_merc: YES
+[28-Apr-2026 15:31:22 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:31:22 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:31:22 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[28-Apr-2026 15:31:22 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:31:22 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[28-Apr-2026 15:31:22 UTC] 🔍 [AJAX] Consultando desbloqueo parcial para NORMAL
+[28-Apr-2026 15:31:22 UTC]    Meta key: merc_desbloqueo_parcial_NORMAL
+[28-Apr-2026 15:31:22 UTC]    Unlock info: ""
+[28-Apr-2026 15:31:22 UTC]    Force date: 
+[28-Apr-2026 15:31:22 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:31:23 UTC] 🔄 [RESETEO DIARIO] Usuario 37 | Fecha: 2026-04-28
+[28-Apr-2026 15:31:24 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:31:25 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:31:25 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[28-Apr-2026 15:31:25 UTC] 🔵 [FILTER] Usuario actual: 37
+[28-Apr-2026 15:31:25 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":10,"paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"date_query":[{"after":"2026-02-27","before":"2026-04-28","inclusive":true}]}
+[28-Apr-2026 15:31:25 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[28-Apr-2026 15:31:25 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-04-28
+[28-Apr-2026 15:31:25 UTC] 🔵 [FILTER] Fecha desde: '2026-04-28' | Fecha hasta: '2026-04-28'
+[28-Apr-2026 15:31:25 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[28-Apr-2026 15:31:25 UTC] 🔵 [FILTER] REMOVIENDO date_query para evitar conflicto
+[28-Apr-2026 15:31:25 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-04-28', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-04-28', '%Y-%m-%d'))
+        
+[28-Apr-2026 15:31:25 UTC] 🔵 [FILTER] IDs encontrados por fecha: 1
+[28-Apr-2026 15:31:25 UTC] 🔵 [FILTER] Primeros 10 IDs: 6676
+[28-Apr-2026 15:31:25 UTC] 🔵 [FILTER] post__in no existe, creando nuevo
+[28-Apr-2026 15:31:25 UTC] 🔵 [FILTER] post_status cambiado a array para incluir estados normales (EXCLUYENDO trash)
+[28-Apr-2026 15:31:25 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":["publish","draft","pending","private"],"posts_per_page":10,"paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"post__in":["6676"]}
+[28-Apr-2026 15:31:27 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:31:29 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 15:49:49 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 21:02:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 21:02:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 21:02:39 UTC] 
+════════════════════════════════════════════════════════════
+[28-Apr-2026 21:02:39 UTC] 🧹 [LIMPIEZA DIARIA] Eliminando merc_motorizo_recojo_default de todos los usuarios
+[28-Apr-2026 21:02:39 UTC] ════════════════════════════════════════════════════════════
+[28-Apr-2026 21:02:39 UTC] 📊 Usuarios con motorizado_recojo_default: 0
+[28-Apr-2026 21:02:39 UTC] 🔄 Total usuarios limpios: 0
+[28-Apr-2026 21:02:39 UTC] ✅ [LIMPIEZA DIARIA COMPLETADA] Próxima ejecución en 24 horas
+[28-Apr-2026 21:02:39 UTC] ════════════════════════════════════════════════════════════
+
+[28-Apr-2026 21:02:43 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 21:02:57 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 21:02:57 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 21:02:57 UTC] PHP Notice:  La función as_next_scheduled_action ha sido llamada <strong>de forma incorrecta</strong>. as_next_scheduled_action() was called before the Action Scheduler data store was initialized Por favor, ve <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">depuración en WordPress</a> para más información. (Este mensaje fue añadido en la versión 3.1.6). in /home/u727114368/domains/mercourier.com/public_html/wp-includes/functions.php on line 6121
+[28-Apr-2026 21:03:02 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 21:03:02 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 21:03:17 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 21:03:19 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 21:03:20 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 21:04:21 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 21:04:21 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 21:05:21 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 21:05:22 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 21:06:21 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 21:06:21 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 21:06:27 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 21:06:34 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 21:06:34 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 21:06:39 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log
+[28-Apr-2026 21:06:39 UTC] Hostinger AI Assistant Log: JWT token generated for user ID: 37
+[28-Apr-2026 21:06:39 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-28.log

@@ -1,0 +1,30 @@
+[24-Apr-2026 15:33:09 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-24.log
+[24-Apr-2026 15:33:09 UTC] 🌅 [RESETEO DIARIO AUTOMÁTICO] Ejecutado para 2026-04-24
+[24-Apr-2026 18:59:27 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-24.log
+[24-Apr-2026 18:59:27 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-24.log
+[24-Apr-2026 18:59:27 UTC] PHP Notice:  La función as_next_scheduled_action ha sido llamada <strong>de forma incorrecta</strong>. as_next_scheduled_action() was called before the Action Scheduler data store was initialized Por favor, ve <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">depuración en WordPress</a> para más información. (Este mensaje fue añadido en la versión 3.1.6). in /home/u727114368/domains/mercourier.com/public_html/wp-includes/functions.php on line 6121
+[24-Apr-2026 18:59:27 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-24.log
+[24-Apr-2026 18:59:27 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-24.log
+[24-Apr-2026 18:59:28 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[24-Apr-2026 18:59:28 UTC] 🔵 [FILTER] Usuario actual: 1
+[24-Apr-2026 18:59:28 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"100","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"date_query":[{"after":"2026-02-23","before":"2026-04-24","inclusive":true}]}
+[24-Apr-2026 18:59:28 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[24-Apr-2026 18:59:28 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-04-24
+[24-Apr-2026 18:59:28 UTC] 🔵 [FILTER] Fecha desde: '2026-04-24' | Fecha hasta: '2026-04-24'
+[24-Apr-2026 18:59:28 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[24-Apr-2026 18:59:28 UTC] 🔵 [FILTER] REMOVIENDO date_query para evitar conflicto
+[24-Apr-2026 18:59:28 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-04-24', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-04-24', '%Y-%m-%d'))
+        
+[24-Apr-2026 18:59:28 UTC] 🔵 [FILTER] IDs encontrados por fecha: 0
+[24-Apr-2026 18:59:28 UTC] 🔵 [FILTER] Sin resultados de fecha, forzando búsqueda vacía
+[24-Apr-2026 18:59:28 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"100","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"post__in":[0]}
+[24-Apr-2026 18:59:30 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-04-24.log

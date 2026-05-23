@@ -1,0 +1,17 @@
+[06-Mar-2026 00:31:09 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-03-06.log
+[06-Mar-2026 00:31:09 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-03-06.log
+[06-Mar-2026 00:31:10 UTC] 
+════════════════════════════════════════════════════════════
+[06-Mar-2026 00:31:10 UTC] 🧹 [LIMPIEZA DIARIA] Eliminando merc_motorizo_recojo_default de todos los usuarios
+[06-Mar-2026 00:31:10 UTC] ════════════════════════════════════════════════════════════
+[06-Mar-2026 00:31:10 UTC] 📊 Usuarios con motorizado_recojo_default: 0
+[06-Mar-2026 00:31:10 UTC] 🔄 Total usuarios limpios: 0
+[06-Mar-2026 00:31:10 UTC] ✅ [LIMPIEZA DIARIA COMPLETADA] Próxima ejecución en 24 horas
+[06-Mar-2026 00:31:10 UTC] ════════════════════════════════════════════════════════════
+
+[06-Mar-2026 00:31:13 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-03-06.log
+[06-Mar-2026 04:18:21 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-03-06.log
+[06-Mar-2026 04:18:22 UTC] PHP Warning:  themes_api(): Ha ocurrido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es.wordpress.org/support/">foros de soporte</a>. (WordPress no ha podido establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor). in /home/u727114368/domains/mercourier.com/public_html/wp-includes/functions.php on line 6121
+[06-Mar-2026 06:57:15 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-03-06.log
+[06-Mar-2026 06:57:15 UTC] 🌅 [RESETEO DIARIO AUTOMÁTICO] Ejecutado para 2026-03-06
+[06-Mar-2026 06:57:16 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /home/u727114368/domains/mercourier.com/public_html/wp-content/merc_logs/merc-debug-2026-03-06.log
