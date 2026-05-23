@@ -1,0 +1,609 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPCargo Proof of Delivery Add-ons\n"
+"POT-Creation-Date: 2022-01-07 15:31+0800\n"
+"PO-Revision-Date: 2022-01-07 15:31+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: he_IL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n==2 ? 1 : n>10 && n%10==0 ? "
+"2 : 3);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpcargo-pod.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: admin/classes/class-api.php:550
+msgid "The API key used is not from any driver account."
+msgstr "מפתח ה- API בו נעשה שימוש אינו מכל חשבון מנהל התקן."
+
+#: admin/classes/class-api.php:555
+msgid " parameter is required for this request."
+msgstr " נדרש עבור בקשה זו."
+
+#: admin/classes/class-api.php:560
+msgid "No records found on this request."
+msgstr "לא נמצאו רשומות בבקשה זו."
+
+#: admin/classes/class-api.php:565
+msgid "You are not assigned to this shipment."
+msgstr "אינך מוקצה למשלוח זה."
+
+#: admin/classes/class-api.php:570
+msgid "Unregistered Status."
+msgstr "מצב לא רשום."
+
+#: admin/classes/class-api.php:575
+msgid "Account role denied."
+msgstr "תפקיד החשבון נדחה."
+
+#: admin/classes/class-api.php:584
+msgid "No data found from the request."
+msgstr "לא נמצאו נתונים מהבקשה."
+
+#: admin/classes/class-pod.php:290 admin/includes/dashboard.php:210
+#: admin/includes/dashboard.php:224 admin/includes/dashboard.php:239
+#: admin/templates/report.php:5 templates/driver-report.php:7
+msgid "Driver"
+msgstr "נהג"
+
+#: admin/classes/class-pod.php:293 admin/includes/dashboard.php:226
+#: admin/includes/dashboard.php:241 admin/templates/report.php:8
+#: templates/driver-report.php:9
+msgid "-- Select Driver --"
+msgstr "-- בחר מנהל התקן --"
+
+#: admin/classes/wpc-pod-settings.php:17 admin/classes/wpc-pod-settings.php:18
+#: admin/classes/wpc-pod-settings.php:24 admin/classes/wpc-pod-settings.php:25
+#: admin/classes/wpc-pod-settings.php:66 admin/classes/wpc-pod-settings.php:85
+#: admin/classes/wpc-pod-settings.php:108
+msgid "Proof of Delivery Settings"
+msgstr "הגדרות הוכחת מסירה"
+
+#: admin/classes/wpc-pod-settings.php:33 admin/classes/wpc-pod-settings.php:34
+#: admin/classes/wpc-pod-settings.php:40 admin/classes/wpc-pod-settings.php:41
+msgid "POD APP Settings"
+msgstr "הגדרות APP של POD"
+
+#: admin/classes/wpc-pod-settings.php:109
+msgid "POD APP"
+msgstr "POD APP"
+
+#: admin/includes/api.php:115
+msgid "POD APP settings is NOT set-up."
+msgstr "הגדרות POD APP אינן מוגדרות."
+
+#: admin/includes/api.php:115
+msgid "Click Here"
+msgstr "לחץ כאן"
+
+#: admin/includes/api.php:115
+msgid "This may affect your POD application."
+msgstr "הדבר עשוי להשפיע על יישום POD שלך."
+
+#: admin/includes/dashboard.php:26 admin/includes/dashboard.php:30
+#: templates/wpc-pod-account.tpl.php:56
+msgid "Sign"
+msgstr "סימן"
+
+#: admin/includes/dashboard.php:33
+msgid "Signed"
+msgstr "סימן"
+
+#: admin/includes/dashboard.php:45 templates/assigned-driver.tpl.php:5
+#: templates/wpc-pod-results.tpl.php:9
+msgid "Proof of Delivery"
+msgstr "הוכחת מסירה"
+
+#: admin/includes/dashboard.php:51
+msgid "Loading..."
+msgstr "טוען..."
+
+#: admin/includes/dashboard.php:88
+msgid ""
+"Something went wrong while processing your request, please reload the page "
+"and try again"
+msgstr "משהו השתבש בעת עיבוד הבקשה שלך, נא טען מחדש את הדף ונסה שוב"
+
+#: admin/includes/dashboard.php:155
+#, php-format
+msgid "Shipment %s successfully udpated!"
+msgstr "המשלוח %s בהצלחה!"
+
+#: admin/includes/dashboard.php:170
+#, php-format
+msgid "Attachment successfully removed in %s"
+msgstr "הקובץ המצורף הוסר בהצלחה %s"
+
+#: admin/includes/dashboard.php:170
+#, php-format
+msgid "Attachment failed removed in %s"
+msgstr "הקובץ המצורף הוסר %s"
+
+#: admin/includes/dashboard.php:192
+msgid "Your current captured images"
+msgstr "התמונות הנוכחיות שנלכדו"
+
+#: admin/includes/dashboard.php:258
+msgid "Disable Email for Driver?"
+msgstr "האם להפוך דואר אלקטרוני עבור מנהל התקן ללא זמין?"
+
+#: admin/includes/dashboard.php:298 admin/includes/dashboard.php:343
+#: admin/includes/functions.php:645 templates/driver-report.php:4
+#: templates/functions.php:512
+msgid "Driver Report"
+msgstr "דוח מנהל התקן"
+
+#: admin/includes/dashboard.php:308 admin/templates/wpc-pod-settings.tpl.php:63
+#: templates/route-planner.php:4
+msgid "Driver Route Planner"
+msgstr "מתכנן נתיבי מנהל התקן"
+
+#: admin/includes/dashboard.php:331
+msgid "Driver Route"
+msgstr "נתיב מנהל התקן"
+
+#: admin/includes/functions.php:199 templates/functions.php:123
+#: templates/route-planner-script.php:86
+msgid "Shipment Number"
+msgstr "מספר משלוח"
+
+#: admin/includes/functions.php:200 templates/functions.php:124
+msgid "Registered Shipper"
+msgstr "שולח רשום"
+
+#: admin/includes/functions.php:208 templates/functions.php:132
+#: templates/wpc-pod-sign-header-cf.tpl.php:36
+msgid "Shipment Status"
+msgstr "מצב משלוח"
+
+#: admin/includes/functions.php:486 templates/functions.php:402
+msgid "No shipment found to generate report"
+msgstr "לא נמצא משלוח להפקת דוח"
+
+#: admin/includes/functions.php:489 templates/functions.php:405
+msgid "Please wait while generating file..."
+msgstr "נא המתן בעת יצירת קובץ..."
+
+#: admin/includes/functions.php:507
+msgid "Sorry! You are not allowed to remove signature."
+msgstr "סליחה! אינך רשאי להסיר חתימה."
+
+#: admin/includes/functions.php:519
+msgid "Signature successfully removed!"
+msgstr "החתימה הוסרה בהצלחה!"
+
+#: admin/includes/functions.php:536 templates/functions.php:429
+#, php-format
+msgid ""
+"Google API key required to run the Driver Route Planner. Add API here <a "
+"href=\"%s\" class=\"btn btn-primary btn-sm\">Here</a>"
+msgstr ""
+"מפתח API של Google נדרש כדי להפעיל את מתכנן נתיבי הנהג. הוסף API <a href=\"%s"
+"\" class=\"btn btn-primary btn-sm\">כאן כאן</a>"
+
+#: admin/includes/functions.php:543 templates/functions.php:435
+msgid "No Delivery for route found."
+msgstr "לא נמצא משלוח עבור מסלול."
+
+#: admin/includes/functions.php:549 templates/functions.php:441
+msgid "Point of Orgin "
+msgstr "נקודת אורגין "
+
+#: admin/includes/functions.php:618
+msgid "Assign Driver"
+msgstr "הקצאת מנהל התקן"
+
+#: admin/includes/functions.php:648 templates/functions.php:515
+msgid "WPCargo Proof of Delivery"
+msgstr "הוכחת מסירה של WPCargo"
+
+#: admin/includes/functions.php:652
+#, php-format
+msgid ""
+"Please activate your license key <a href=\"%s\" title=\"WPCargo license page"
+"\">%s</a>."
+msgstr ""
+"נא הפעל את מפתח הרשיון שלך <a href=\"%s\" title=\"WPCargo license page\">%s</"
+"a> ."
+
+#: admin/includes/functions.php:654
+msgid "HERE"
+msgstr "התחבר כאן"
+
+#: admin/includes/functions.php:658 templates/functions.php:521
+msgid "Google Map API Key is not activated."
+msgstr "מפתח ה-API של מפת Google אינו מופעל."
+
+#: admin/includes/functions.php:661 templates/functions.php:524
+msgid ""
+"Sorry you are not allowed to access this page, This page are only for "
+"WPCargo Driver users."
+msgstr ""
+"מצטערים שאינך מורשה לגשת לדף זה, דף זה מיועד רק למשתמשי מנהל התקן WPCargo."
+
+#: admin/includes/functions.php:664 templates/functions.php:527
+msgid "Your current signature"
+msgstr "החתימה הנוכחית שלך"
+
+#: admin/includes/functions.php:667 templates/functions.php:530
+msgid "Signature Successfully Saved!"
+msgstr "החתימה נשמרה בהצלחה!"
+
+#: admin/includes/functions.php:670 templates/functions.php:533
+msgid "Error on saving!"
+msgstr "שגיאה בשמירה!"
+
+#: admin/includes/functions.php:673 templates/functions.php:536
+msgid "Sorry you don't have enough permission to access this page."
+msgstr "מצטער שאין לך מספיק הרשאה כדי לגשת לדף זה."
+
+#: admin/includes/functions.php:676 templates/functions.php:539
+msgid "Delivered"
+msgstr "נמסרו"
+
+#: admin/includes/functions.php:679 templates/functions.php:542
+msgid "Cancelled"
+msgstr "בוטל"
+
+#: admin/includes/functions.php:682 templates/functions.php:545
+msgid "Back to Dashboard"
+msgstr "בחזרה ללוח בקרה"
+
+#: admin/includes/functions.php:685 templates/functions.php:548
+msgid "Cheating, uh?"
+msgstr "רמאות, אה?"
+
+#: admin/includes/functions.php:688 templates/functions.php:551
+msgid ""
+"This plugin requires <a href=\"https://wordpress.org/plugins/wpcargo/\" "
+"target=\"_blank\">WPCargo</a> plugin to be active!"
+msgstr ""
+"תוסף זה דורש תוסף <a href=\"https://wordpress.org/plugins/wpcargo/\" target="
+"\"_blank\">WPCargo</a> להיות פעיל!"
+
+#: admin/includes/functions.php:691 templates/functions.php:554
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\" target=\"_blank"
+"\">WPTaskForce License Helper</a> plugin to be active!"
+msgstr ""
+"תוסף זה דורש תוסף <a href=\"http://wpcargo.com/\" target=\"_blank\">עוזר "
+"רישיון WPTaskForce</a> להיות פעיל!"
+
+#: admin/includes/functions.php:694 templates/functions.php:557
+msgid ""
+"This plugin requires <strong>WPCargo Frontend Manager</strong> plugin to be "
+"active!"
+msgstr "תוסף זה דורש תוסף <strong>מנהל חזית WPCargo</strong> להיות פעיל!"
+
+#: admin/templates/report.php:16 admin/templates/wpc-pod-settings.tpl.php:129
+#: templates/driver-report.php:17
+msgid "Status"
+msgstr "סטטוס"
+
+#: admin/templates/report.php:19 templates/driver-report.php:19
+msgid "-- Select Status --"
+msgstr "-- בחר מצב --"
+
+#: admin/templates/report.php:27 templates/driver-report.php:26
+msgid "Date Range"
+msgstr "טווח תאריכים"
+
+#: admin/templates/report.php:29 templates/driver-report.php:28
+msgid "From"
+msgstr "מ"
+
+#: admin/templates/report.php:30 templates/driver-report.php:31
+msgid "To"
+msgstr "אל"
+
+#: admin/templates/report.php:35 templates/driver-report.php:34
+msgid "Export Report"
+msgstr "יצא דוח"
+
+#: admin/templates/wpc-pod-add.tpl.php:7 admin/templates/wpc-pod-edit.tpl.php:7
+msgid "Do you want to display it on vehicles page?"
+msgstr "האם ברצונך להציג אותו בדף כלי רכב?"
+
+#: admin/templates/wpc-pod-settings.tpl.php:12
+msgid "Exclude Status for Driver"
+msgstr "אל תכלול מצב עבור מנהל התקן"
+
+#: admin/templates/wpc-pod-settings.tpl.php:30
+msgid ""
+"Note: This options applicable only in front end dashboard. It will exclude "
+"the shipment status in updating the shipment."
+msgstr ""
+"הערה: אפשרויות אלה ישימות רק בלוח המחוונים הקדמי. הוא לא יכלול את מצב המשלוח "
+"בעדכון המשלוח."
+
+#: admin/templates/wpc-pod-settings.tpl.php:34
+msgid "Select shipper fields to display when driver update shipment"
+msgstr "בחר שדות השולח שיוצגו בעת משלוח עדכון מנהל התקן"
+
+#: admin/templates/wpc-pod-settings.tpl.php:48
+msgid "Select receiver fields to display when driver update shipment"
+msgstr "בחר שדות מקלט שיוצגו בעת משלוח עדכון מנהל התקן"
+
+#: admin/templates/wpc-pod-settings.tpl.php:66
+msgid "Point of Orgin / Warehouse"
+msgstr "נקודת אורגין / מחסן"
+
+#: admin/templates/wpc-pod-settings.tpl.php:72
+msgid "Note: Dag the map marker to generate Point of Orgin / Warehouse Address"
+msgstr "הערה: Dag סמן המפה כדי ליצור נקודת אורגין / כתובת מחסן"
+
+#: admin/templates/wpc-pod-settings.tpl.php:78
+msgid "Display status to Map Route"
+msgstr "הצג מצב לנתיב מפה"
+
+#: admin/templates/wpc-pod-settings.tpl.php:96
+msgid "Note: This display the shipments in the Map Route."
+msgstr "הערה: פעולה זו מציגה את המשלוחים בנתיב המפה."
+
+#: admin/templates/wpc-pod-settings.tpl.php:100
+msgid "Receiver Address Field"
+msgstr "שדה כתובת מקלט"
+
+#: admin/templates/wpc-pod-settings.tpl.php:113
+msgid "Note: This field will serve as address for the map."
+msgstr "הערה: שדה זה ישמש ככתובת עבור המפה."
+
+#: admin/templates/wpc-pod-settings.tpl.php:117
+msgid "Additional Route Segment Information"
+msgstr "מידע נוסף על מקטע נתיב"
+
+#: admin/templates/wpc-pod-settings.tpl.php:131
+msgid "Note: Additional information for the route segment."
+msgstr "הערה: מידע נוסף עבור מקטע המסלול."
+
+#: admin/templates/wpc-pod-signature-metabox.tpl.php:5
+#: admin/templates/wpc-podapp-settings.tpl.php:39
+#: templates/assigned-driver.tpl.php:10
+msgid "Signature"
+msgstr "חתימה"
+
+#: admin/templates/wpc-pod-signature-metabox.tpl.php:11
+msgid "Proof of Acknowledgment"
+msgstr "הוכחת הכרה"
+
+#: admin/templates/wpc-pod-signature-metabox.tpl.php:13
+msgid "Remove Signature"
+msgstr "הסר חתימה"
+
+#: admin/templates/wpc-pod-signature-metabox.tpl.php:24
+msgid "POD Image"
+msgstr "תמונת POD"
+
+#: admin/templates/wpc-pod-signature-metabox.tpl.php:41
+msgid "Delete"
+msgstr "מחק"
+
+#: admin/templates/wpc-pod-signature-metabox.tpl.php:51
+msgid "Add Images / Upload Files"
+msgstr "הוספת תמונות / העלאת קבצים"
+
+#: admin/templates/wpc-podapp-settings.tpl.php:9
+msgid ""
+"Note: This settings are only use for the WPCargo Driver APP mobile "
+"Application."
+msgstr "הערה: הגדרות אלה משמשות רק עבור היישום הנייד של WPCargo Driver APP."
+
+#: admin/templates/wpc-podapp-settings.tpl.php:12
+msgid "Select Shipment status to display in Delivered Tab"
+msgstr "בחר מצב משלוח שיוצג בכרטיסיה 'נמסר'"
+
+#: admin/templates/wpc-podapp-settings.tpl.php:15
+#: admin/templates/wpc-podapp-settings.tpl.php:26
+msgid "Choose One"
+msgstr "בחר אחד"
+
+#: admin/templates/wpc-podapp-settings.tpl.php:23
+msgid "Select Shipment status to display in Cancelled Tab"
+msgstr "בחר מצב משלוח שיוצג בכרטיסיה 'בוטל'"
+
+#: admin/templates/wpc-podapp-settings.tpl.php:35
+msgid "Remove required attributes on the Following Fields"
+msgstr "הסר תכונות נדרשות בשדות הבאים"
+
+#: admin/templates/wpc-podapp-settings.tpl.php:43
+msgid "Photo"
+msgstr "תמונה"
+
+#: admin/templates/wpc-podapp-settings.tpl.php:47
+msgid "Location"
+msgstr "מיקום"
+
+#: admin/templates/wpc-podapp-settings.tpl.php:51
+msgid "Remarks"
+msgstr "הערות"
+
+#: templates/assigned-driver.tpl.php:16
+msgid "Images"
+msgstr "תמונות"
+
+#: templates/functions.php:518
+msgid "Please activate your license key <a href=\""
+msgstr "נא הפעל את מפתח הרישיון שלך <הי-רף=\""
+
+#: templates/route-planner-script.php:73
+msgid "Point of Origin"
+msgstr "נקודת מוצא"
+
+#: templates/route-planner-script.php:74 templates/route-planner-script.php:84
+msgid "Distance"
+msgstr "מרחק"
+
+#: templates/route-planner-script.php:75 templates/route-planner-script.php:85
+msgid "to"
+msgstr "עד"
+
+#: templates/route-planner-script.php:83
+msgid "Route Segment"
+msgstr "מקטע נתיב"
+
+#: templates/route-planner-script.php:104
+msgid "Directions request failed due to"
+msgstr "בקשת הוראות הגעה נכשלה עקב"
+
+#: templates/wpc-pod-account.tpl.php:9
+msgid "Search"
+msgstr "חיפוש"
+
+#: templates/wpc-pod-account.tpl.php:11
+msgid "Pending"
+msgstr "בהמתנה"
+
+#: templates/wpc-pod-account.tpl.php:22
+msgid "Tracking Number"
+msgstr "מספר מעקב"
+
+#: templates/wpc-pod-account.tpl.php:30
+msgid "Action"
+msgstr "פעולה"
+
+#: templates/wpc-pod-account.tpl.php:64
+msgid "No shipment assigned found."
+msgstr "לא נמצא משלוח."
+
+#: templates/wpc-pod-bcode.tpl.php:9
+msgid "Stop"
+msgstr "עצור"
+
+#: templates/wpc-pod-bcode.tpl.php:13
+msgid "Device Selection"
+msgstr "בחירת התקן"
+
+#: templates/wpc-pod-bcode.tpl.php:23
+msgid "Images will display here after the scan..."
+msgstr "תמונות יוצגו כאן לאחר הסריקה..."
+
+#: templates/wpc-pod-header-cf.tpl.php:11
+#: templates/wpc-pod-sign-header-cf.tpl.php:16
+#: templates/wpc-pod-sign-header.tpl.php:11
+msgid "Shipper"
+msgstr "השולח"
+
+#: templates/wpc-pod-header-cf.tpl.php:21
+#: templates/wpc-pod-sign-header-cf.tpl.php:26
+#: templates/wpc-pod-sign-header.tpl.php:18
+msgid "Receiver"
+msgstr "המקבל"
+
+#: templates/wpc-pod-header.tpl.php:11 templates/wpc-pod-sign-header.tpl.php:12
+msgid "Shipper Name:"
+msgstr "שם השולח:"
+
+#: templates/wpc-pod-header.tpl.php:12 templates/wpc-pod-header.tpl.php:18
+#: templates/wpc-pod-sign-header.tpl.php:13
+#: templates/wpc-pod-sign-header.tpl.php:20
+msgid "Phone:"
+msgstr "טלפון:"
+
+#: templates/wpc-pod-header.tpl.php:13 templates/wpc-pod-header.tpl.php:19
+#: templates/wpc-pod-sign-header.tpl.php:14
+#: templates/wpc-pod-sign-header.tpl.php:21
+msgid "Email:"
+msgstr "אימייל:"
+
+#: templates/wpc-pod-header.tpl.php:14 templates/wpc-pod-sign-header.tpl.php:15
+msgid "Shipper Address:"
+msgstr "כתובת השולח:"
+
+#: templates/wpc-pod-header.tpl.php:17 templates/wpc-pod-sign-header.tpl.php:19
+msgid "Receiver Name:"
+msgstr "שם המקבל:"
+
+#: templates/wpc-pod-header.tpl.php:20 templates/wpc-pod-sign-header.tpl.php:22
+msgid "Receiver Address:"
+msgstr "כתובת מקלט:"
+
+#: templates/wpc-pod-results.tpl.php:15
+msgid "POD Signature"
+msgstr "חתימת POD"
+
+#: templates/wpc-pod-results.tpl.php:21
+msgid "POD Images"
+msgstr "תמונות POD"
+
+#: templates/wpc-pod-sign.tpl.php:29
+msgid "ADD IMAGES"
+msgstr "הוספת תמונות"
+
+#: templates/wpc-pod-sign.tpl.php:31
+msgid "Your current captured images:"
+msgstr "התמונות הנוכחיות שלך שנלכדו:"
+
+#: templates/wpc-pod-sign.tpl.php:68
+msgid "Update"
+msgstr "עדכון"
+
+#: templates/wpc-pod-sign.tpl.php:110 templates/wpc-pod-sign.tpl.php:112
+msgid "Upload Images"
+msgstr "העלה תמונה"
+
+#: templates/wpc-pod-signature-form.tpl.php:14
+msgid "Sign below"
+msgstr "חתימה למטה"
+
+#: templates/wpc-pod-signature-form.tpl.php:15
+#, php-format
+msgid "Please click the <b>%s</b> button after you signed."
+msgstr "נא לחץ על <b>%s</b> הלחצן לאחר החתימה."
+
+#: templates/wpc-pod-signature-form.tpl.php:23
+msgid "Save"
+msgstr "שמור"
+
+#: templates/wpc-pod-signature-form.tpl.php:26
+msgid "Clear"
+msgstr "נקה"
+
+#: templates/wpc-pod-signature-form.tpl.php:38
+msgid "Generated signature"
+msgstr "חתימה שנוצרה"
+
+#: templates/wpc-pod-signature-form.tpl.php:42
+msgid "Your current signature:"
+msgstr "החתימה הנוכחית שלך:"
+
+#: templates/wpc-pod-signature-form.tpl.php:79
+msgid "Please provide signature first."
+msgstr "נא ספק תחילה חתימה."
+
+#: wpcargo-pod.php:32
+msgid "WPCargo Driver"
+msgstr "נהג WPCargo"
+
+#. Plugin Name of the plugin/theme
+msgid "WPCargo Proof of Delivery Add-ons"
+msgstr "הרחבות הוכחת מסירה של WPCargo"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wpcargo.com/"
+msgstr "http://wpcargo.com/"
+
+#. Description of the plugin/theme
+msgid ""
+"This Add-ons will let you add images and signature on your shipment. This "
+"offers the ability to record delivery and collection operations with proof "
+"using a computer, tablets or mobile devices running Android and iOS mobile "
+"systems/Operating systems. Available shortcode [wpc_driver_accounts]."
+msgstr ""
+"הרחבות אלה יאפשרו לך להוסיף תמונות וחתימה על המשלוח שלך. זה מציע את היכולת "
+"להקליט פעולות משלוח ואיסוף עם הוכחה באמצעות מחשב, טאבלטים או מכשירים ניידים "
+"שבהם פועלות מערכות / מערכות הפעלה ניידות של Android ו- iOS. קוד קצר זמין "
+"[wpc_driver_accounts]."
+
+#. Author of the plugin/theme
+msgid "<a href=\"http://wptaskforce.com/\">WPTaskForce</a>"
+msgstr "<a href=\"http://wptaskforce.com/\">WPTaskForce</a>"

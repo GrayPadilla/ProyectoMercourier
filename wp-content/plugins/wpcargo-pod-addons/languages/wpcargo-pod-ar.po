@@ -1,0 +1,614 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPCargo Proof of Delivery Add-ons\n"
+"POT-Creation-Date: 2022-01-07 15:25+0800\n"
+"PO-Revision-Date: 2022-01-07 15:26+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpcargo-pod.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: admin/classes/class-api.php:550
+msgid "The API key used is not from any driver account."
+msgstr "مفتاح API المستخدم ليس من أي حساب برنامج تشغيل."
+
+#: admin/classes/class-api.php:555
+msgid " parameter is required for this request."
+msgstr " مطلوب لهذا الطلب."
+
+#: admin/classes/class-api.php:560
+msgid "No records found on this request."
+msgstr "لم يتم العثور على سجلات في هذا الطلب."
+
+#: admin/classes/class-api.php:565
+msgid "You are not assigned to this shipment."
+msgstr "لم يتم تعيينك لهذه الشحنة."
+
+#: admin/classes/class-api.php:570
+msgid "Unregistered Status."
+msgstr "حالة غير مسجلة."
+
+#: admin/classes/class-api.php:575
+msgid "Account role denied."
+msgstr "تم رفض دور الحساب."
+
+#: admin/classes/class-api.php:584
+msgid "No data found from the request."
+msgstr "لم يتم العثور على أية بيانات من الطلب."
+
+#: admin/classes/class-pod.php:290 admin/includes/dashboard.php:210
+#: admin/includes/dashboard.php:224 admin/includes/dashboard.php:239
+#: admin/templates/report.php:5 templates/driver-report.php:7
+msgid "Driver"
+msgstr "سائق"
+
+#: admin/classes/class-pod.php:293 admin/includes/dashboard.php:226
+#: admin/includes/dashboard.php:241 admin/templates/report.php:8
+#: templates/driver-report.php:9
+msgid "-- Select Driver --"
+msgstr "-- حدد برنامج التشغيل --"
+
+#: admin/classes/wpc-pod-settings.php:17 admin/classes/wpc-pod-settings.php:18
+#: admin/classes/wpc-pod-settings.php:24 admin/classes/wpc-pod-settings.php:25
+#: admin/classes/wpc-pod-settings.php:66 admin/classes/wpc-pod-settings.php:85
+#: admin/classes/wpc-pod-settings.php:108
+msgid "Proof of Delivery Settings"
+msgstr "إثبات إعدادات التسليم"
+
+#: admin/classes/wpc-pod-settings.php:33 admin/classes/wpc-pod-settings.php:34
+#: admin/classes/wpc-pod-settings.php:40 admin/classes/wpc-pod-settings.php:41
+msgid "POD APP Settings"
+msgstr "إعدادات تطبيق POD"
+
+#: admin/classes/wpc-pod-settings.php:109
+msgid "POD APP"
+msgstr "POD التطبيق"
+
+#: admin/includes/api.php:115
+msgid "POD APP settings is NOT set-up."
+msgstr "لم يتم إعداد إعدادات POD APP."
+
+#: admin/includes/api.php:115
+msgid "Click Here"
+msgstr "اضغط هنا"
+
+#: admin/includes/api.php:115
+msgid "This may affect your POD application."
+msgstr "قد يؤثر هذا على تطبيق POD الخاص بك."
+
+#: admin/includes/dashboard.php:26 admin/includes/dashboard.php:30
+#: templates/wpc-pod-account.tpl.php:56
+msgid "Sign"
+msgstr "تسجيل الخروج"
+
+#: admin/includes/dashboard.php:33
+msgid "Signed"
+msgstr "تسجيل الخروج"
+
+#: admin/includes/dashboard.php:45 templates/assigned-driver.tpl.php:5
+#: templates/wpc-pod-results.tpl.php:9
+msgid "Proof of Delivery"
+msgstr "إثبات التسليم"
+
+#: admin/includes/dashboard.php:51
+msgid "Loading..."
+msgstr "جار التحميل..."
+
+#: admin/includes/dashboard.php:88
+msgid ""
+"Something went wrong while processing your request, please reload the page "
+"and try again"
+msgstr ""
+"حدث خطأ ما أثناء معالجة طلبك، يرجى إعادة تحميل الصفحة والمحاولة مرة أخرى"
+
+#: admin/includes/dashboard.php:155
+#, php-format
+msgid "Shipment %s successfully udpated!"
+msgstr "%s شحن udpated بنجاح!"
+
+#: admin/includes/dashboard.php:170
+#, php-format
+msgid "Attachment successfully removed in %s"
+msgstr "تمت إزالة المرفق بنجاح في %s"
+
+#: admin/includes/dashboard.php:170
+#, php-format
+msgid "Attachment failed removed in %s"
+msgstr "فشل إزالة المرفق في %s"
+
+#: admin/includes/dashboard.php:192
+msgid "Your current captured images"
+msgstr "الصور الملتقطة الحالية"
+
+#: admin/includes/dashboard.php:258
+msgid "Disable Email for Driver?"
+msgstr "تعطيل البريد الإلكتروني لبرنامج التشغيل؟"
+
+#: admin/includes/dashboard.php:298 admin/includes/dashboard.php:343
+#: admin/includes/functions.php:645 templates/driver-report.php:4
+#: templates/functions.php:512
+msgid "Driver Report"
+msgstr "تقرير السائق"
+
+#: admin/includes/dashboard.php:308 admin/templates/wpc-pod-settings.tpl.php:63
+#: templates/route-planner.php:4
+msgid "Driver Route Planner"
+msgstr "مخطط مسار السائق"
+
+#: admin/includes/dashboard.php:331
+msgid "Driver Route"
+msgstr "سائق"
+
+#: admin/includes/functions.php:199 templates/functions.php:123
+#: templates/route-planner-script.php:86
+msgid "Shipment Number"
+msgstr "رقم الشحنة"
+
+#: admin/includes/functions.php:200 templates/functions.php:124
+msgid "Registered Shipper"
+msgstr "الشاحن المسجل"
+
+#: admin/includes/functions.php:208 templates/functions.php:132
+#: templates/wpc-pod-sign-header-cf.tpl.php:36
+msgid "Shipment Status"
+msgstr "حالة الشحن"
+
+#: admin/includes/functions.php:486 templates/functions.php:402
+msgid "No shipment found to generate report"
+msgstr "لم يتم العثور على أي شحنة لإنشاء تقرير"
+
+#: admin/includes/functions.php:489 templates/functions.php:405
+msgid "Please wait while generating file..."
+msgstr "الرجاء الانتظار أثناء إنشاء ملف..."
+
+#: admin/includes/functions.php:507
+msgid "Sorry! You are not allowed to remove signature."
+msgstr "معذرة! لا يسمح لك بإزالة التوقيع."
+
+#: admin/includes/functions.php:519
+msgid "Signature successfully removed!"
+msgstr "تمت إزالة التوقيع بنجاح!"
+
+#: admin/includes/functions.php:536 templates/functions.php:429
+#, php-format
+msgid ""
+"Google API key required to run the Driver Route Planner. Add API here <a "
+"href=\"%s\" class=\"btn btn-primary btn-sm\">Here</a>"
+msgstr ""
+"مفتاح واجهة برمجة تطبيقات Google المطلوب لتشغيل مخطط مسار السائق. إضافة API "
+"<a href=\"%s\" class=\"btn btn-primary btn-sm\">هنا هنا</a>"
+
+#: admin/includes/functions.php:543 templates/functions.php:435
+msgid "No Delivery for route found."
+msgstr "لم يتم العثور على تسليم للطريق."
+
+#: admin/includes/functions.php:549 templates/functions.php:441
+msgid "Point of Orgin "
+msgstr "نقطة أورجين "
+
+#: admin/includes/functions.php:618
+msgid "Assign Driver"
+msgstr "تعيين برنامج التشغيل"
+
+#: admin/includes/functions.php:648 templates/functions.php:515
+msgid "WPCargo Proof of Delivery"
+msgstr "WPCargo إثبات التسليم"
+
+#: admin/includes/functions.php:652
+#, php-format
+msgid ""
+"Please activate your license key <a href=\"%s\" title=\"WPCargo license page"
+"\">%s</a>."
+msgstr ""
+"يرجى تفعيل مفتاح الترخيص الخاص <a href=\"%s\" title=\"WPCargo license page\">"
+"%s</a> بك."
+
+#: admin/includes/functions.php:654
+msgid "HERE"
+msgstr "هنا."
+
+#: admin/includes/functions.php:658 templates/functions.php:521
+msgid "Google Map API Key is not activated."
+msgstr "لم يتم تنشيط مفتاح API خريطة Google."
+
+#: admin/includes/functions.php:661 templates/functions.php:524
+msgid ""
+"Sorry you are not allowed to access this page, This page are only for "
+"WPCargo Driver users."
+msgstr ""
+"عذرا لا يسمح لك بالوصول إلى هذه الصفحة، هذه الصفحة هي فقط لمستخدمي WPCargo "
+"Driver."
+
+#: admin/includes/functions.php:664 templates/functions.php:527
+msgid "Your current signature"
+msgstr "توقيعك الحالي"
+
+#: admin/includes/functions.php:667 templates/functions.php:530
+msgid "Signature Successfully Saved!"
+msgstr "التوقيع المحفوظة بنجاح!"
+
+#: admin/includes/functions.php:670 templates/functions.php:533
+msgid "Error on saving!"
+msgstr "خطأ في الحفظ!"
+
+#: admin/includes/functions.php:673 templates/functions.php:536
+msgid "Sorry you don't have enough permission to access this page."
+msgstr "عذرا ليس لديك ما يكفي من الإذن للوصول إلى هذه الصفحة."
+
+#: admin/includes/functions.php:676 templates/functions.php:539
+msgid "Delivered"
+msgstr "تم التسليم"
+
+#: admin/includes/functions.php:679 templates/functions.php:542
+msgid "Cancelled"
+msgstr "ملغى"
+
+#: admin/includes/functions.php:682 templates/functions.php:545
+msgid "Back to Dashboard"
+msgstr "العودة إلى لوحة التحكم"
+
+#: admin/includes/functions.php:685 templates/functions.php:548
+msgid "Cheating, uh?"
+msgstr "الغش، اه؟"
+
+#: admin/includes/functions.php:688 templates/functions.php:551
+msgid ""
+"This plugin requires <a href=\"https://wordpress.org/plugins/wpcargo/\" "
+"target=\"_blank\">WPCargo</a> plugin to be active!"
+msgstr ""
+"هذا البرنامج المساعد يتطلب <a href=\"https://wordpress.org/plugins/wpcargo/"
+"\" target=\"_blank\">WPCargo</a> البرنامج المساعد لتكون نشطة!"
+
+#: admin/includes/functions.php:691 templates/functions.php:554
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\" target=\"_blank"
+"\">WPTaskForce License Helper</a> plugin to be active!"
+msgstr ""
+"هذا البرنامج المساعد يتطلب <a href=\"http://wpcargo.com/\" target=\"_blank"
+"\">WPTaskForce رخصة المساعد</a> المساعد لتكون نشطة!"
+
+#: admin/includes/functions.php:694 templates/functions.php:557
+msgid ""
+"This plugin requires <strong>WPCargo Frontend Manager</strong> plugin to be "
+"active!"
+msgstr ""
+"هذا البرنامج المساعد يتطلب <strong>WPCargo Frontend مدير</strong> البرنامج "
+"المساعد لتكون نشطة!"
+
+#: admin/templates/report.php:16 admin/templates/wpc-pod-settings.tpl.php:129
+#: templates/driver-report.php:17
+msgid "Status"
+msgstr "الحالة"
+
+#: admin/templates/report.php:19 templates/driver-report.php:19
+msgid "-- Select Status --"
+msgstr "-- حدد الحالة --"
+
+#: admin/templates/report.php:27 templates/driver-report.php:26
+msgid "Date Range"
+msgstr "تحديد التاريخ"
+
+#: admin/templates/report.php:29 templates/driver-report.php:28
+msgid "From"
+msgstr "من :"
+
+#: admin/templates/report.php:30 templates/driver-report.php:31
+msgid "To"
+msgstr "إلى"
+
+#: admin/templates/report.php:35 templates/driver-report.php:34
+msgid "Export Report"
+msgstr "تقرير التصدير"
+
+#: admin/templates/wpc-pod-add.tpl.php:7 admin/templates/wpc-pod-edit.tpl.php:7
+msgid "Do you want to display it on vehicles page?"
+msgstr "هل تريد عرضه على صفحة المركبات؟"
+
+#: admin/templates/wpc-pod-settings.tpl.php:12
+msgid "Exclude Status for Driver"
+msgstr "استبعاد حالة برنامج التشغيل"
+
+#: admin/templates/wpc-pod-settings.tpl.php:30
+msgid ""
+"Note: This options applicable only in front end dashboard. It will exclude "
+"the shipment status in updating the shipment."
+msgstr ""
+"ملاحظة: هذه الخيارات قابلة للتطبيق فقط في لوحة معلومات الواجهة الأمامية. "
+"وسوف تستبعد حالة الشحن في تحديث الشحنة."
+
+#: admin/templates/wpc-pod-settings.tpl.php:34
+msgid "Select shipper fields to display when driver update shipment"
+msgstr "تحديد حقول الشاحن لعرضها عند تحديث شحنة برنامج التشغيل"
+
+#: admin/templates/wpc-pod-settings.tpl.php:48
+msgid "Select receiver fields to display when driver update shipment"
+msgstr "تحديد حقول المستقبل لعرضها عند شحن تحديث برنامج التشغيل"
+
+#: admin/templates/wpc-pod-settings.tpl.php:66
+msgid "Point of Orgin / Warehouse"
+msgstr "نقطة أورجين / مستودع"
+
+#: admin/templates/wpc-pod-settings.tpl.php:72
+msgid "Note: Dag the map marker to generate Point of Orgin / Warehouse Address"
+msgstr "ملاحظة: داغ علامة الخريطة لتوليد نقطة Orgin / عنوان المستودع"
+
+#: admin/templates/wpc-pod-settings.tpl.php:78
+msgid "Display status to Map Route"
+msgstr "عرض الحالة إلى مسار الخريطة"
+
+#: admin/templates/wpc-pod-settings.tpl.php:96
+msgid "Note: This display the shipments in the Map Route."
+msgstr "ملاحظة: يعرض هذا الشحنات في مسار الخريطة."
+
+#: admin/templates/wpc-pod-settings.tpl.php:100
+msgid "Receiver Address Field"
+msgstr "حقل عنوان المتلقي"
+
+#: admin/templates/wpc-pod-settings.tpl.php:113
+msgid "Note: This field will serve as address for the map."
+msgstr "ملاحظة: سيعمل هذا الحقل كعنوان للخريطة."
+
+#: admin/templates/wpc-pod-settings.tpl.php:117
+msgid "Additional Route Segment Information"
+msgstr "معلومات إضافية عن قطاع المسار"
+
+#: admin/templates/wpc-pod-settings.tpl.php:131
+msgid "Note: Additional information for the route segment."
+msgstr "ملاحظة: معلومات إضافية لشريحة المسار."
+
+#: admin/templates/wpc-pod-signature-metabox.tpl.php:5
+#: admin/templates/wpc-podapp-settings.tpl.php:39
+#: templates/assigned-driver.tpl.php:10
+msgid "Signature"
+msgstr "التوقيع"
+
+#: admin/templates/wpc-pod-signature-metabox.tpl.php:11
+msgid "Proof of Acknowledgment"
+msgstr "إثبات الاعتراف"
+
+#: admin/templates/wpc-pod-signature-metabox.tpl.php:13
+msgid "Remove Signature"
+msgstr "إزالة التوقيع"
+
+#: admin/templates/wpc-pod-signature-metabox.tpl.php:24
+msgid "POD Image"
+msgstr "صورة جراب"
+
+#: admin/templates/wpc-pod-signature-metabox.tpl.php:41
+msgid "Delete"
+msgstr "حذف"
+
+#: admin/templates/wpc-pod-signature-metabox.tpl.php:51
+msgid "Add Images / Upload Files"
+msgstr "إضافة صور / تحميل الملفات"
+
+#: admin/templates/wpc-podapp-settings.tpl.php:9
+msgid ""
+"Note: This settings are only use for the WPCargo Driver APP mobile "
+"Application."
+msgstr ""
+"ملاحظة: يتم استخدام هذه الإعدادات فقط لتطبيق WPCargo Driver APP المحمول."
+
+#: admin/templates/wpc-podapp-settings.tpl.php:12
+msgid "Select Shipment status to display in Delivered Tab"
+msgstr "تحديد حالة الشحن لعرضها في علامة التبويب Delivered"
+
+#: admin/templates/wpc-podapp-settings.tpl.php:15
+#: admin/templates/wpc-podapp-settings.tpl.php:26
+msgid "Choose One"
+msgstr "اختر واحدة"
+
+#: admin/templates/wpc-podapp-settings.tpl.php:23
+msgid "Select Shipment status to display in Cancelled Tab"
+msgstr "تحديد حالة الشحن لعرضها في علامة التبويب \"ملغى\""
+
+#: admin/templates/wpc-podapp-settings.tpl.php:35
+msgid "Remove required attributes on the Following Fields"
+msgstr "إزالة السمات المطلوبة في الحقول التالية"
+
+#: admin/templates/wpc-podapp-settings.tpl.php:43
+msgid "Photo"
+msgstr "صورة"
+
+#: admin/templates/wpc-podapp-settings.tpl.php:47
+msgid "Location"
+msgstr "الموقع"
+
+#: admin/templates/wpc-podapp-settings.tpl.php:51
+msgid "Remarks"
+msgstr "ملاحظات"
+
+#: templates/assigned-driver.tpl.php:16
+msgid "Images"
+msgstr "الصور"
+
+#: templates/functions.php:518
+msgid "Please activate your license key <a href=\""
+msgstr "الرجاء تفعيل مفتاح الترخيص الخاص بك <a href =\""
+
+#: templates/route-planner-script.php:73
+msgid "Point of Origin"
+msgstr "نقطة المنشأ"
+
+#: templates/route-planner-script.php:74 templates/route-planner-script.php:84
+msgid "Distance"
+msgstr "المسافة"
+
+#: templates/route-planner-script.php:75 templates/route-planner-script.php:85
+msgid "to"
+msgstr "إلى"
+
+#: templates/route-planner-script.php:83
+msgid "Route Segment"
+msgstr "قطاع المسار"
+
+#: templates/route-planner-script.php:104
+msgid "Directions request failed due to"
+msgstr "فشل طلب الاتجاهات بسبب"
+
+#: templates/wpc-pod-account.tpl.php:9
+msgid "Search"
+msgstr "بحث"
+
+#: templates/wpc-pod-account.tpl.php:11
+msgid "Pending"
+msgstr "قيد الانتظار"
+
+#: templates/wpc-pod-account.tpl.php:22
+msgid "Tracking Number"
+msgstr "رقم تتبع الشحنة"
+
+#: templates/wpc-pod-account.tpl.php:30
+msgid "Action"
+msgstr "الإجراء"
+
+#: templates/wpc-pod-account.tpl.php:64
+msgid "No shipment assigned found."
+msgstr "لم يتم العثور على أي شحنة معينة."
+
+#: templates/wpc-pod-bcode.tpl.php:9
+msgid "Stop"
+msgstr "إيقاف"
+
+#: templates/wpc-pod-bcode.tpl.php:13
+msgid "Device Selection"
+msgstr "تحديد الجهاز"
+
+#: templates/wpc-pod-bcode.tpl.php:23
+msgid "Images will display here after the scan..."
+msgstr "سيتم عرض الصور هنا بعد الفحص..."
+
+#: templates/wpc-pod-header-cf.tpl.php:11
+#: templates/wpc-pod-sign-header-cf.tpl.php:16
+#: templates/wpc-pod-sign-header.tpl.php:11
+msgid "Shipper"
+msgstr "اسم الشاحن"
+
+#: templates/wpc-pod-header-cf.tpl.php:21
+#: templates/wpc-pod-sign-header-cf.tpl.php:26
+#: templates/wpc-pod-sign-header.tpl.php:18
+msgid "Receiver"
+msgstr "مستلم"
+
+#: templates/wpc-pod-header.tpl.php:11 templates/wpc-pod-sign-header.tpl.php:12
+msgid "Shipper Name:"
+msgstr "اسم الشاحن:"
+
+#: templates/wpc-pod-header.tpl.php:12 templates/wpc-pod-header.tpl.php:18
+#: templates/wpc-pod-sign-header.tpl.php:13
+#: templates/wpc-pod-sign-header.tpl.php:20
+msgid "Phone:"
+msgstr "الهاتف:"
+
+#: templates/wpc-pod-header.tpl.php:13 templates/wpc-pod-header.tpl.php:19
+#: templates/wpc-pod-sign-header.tpl.php:14
+#: templates/wpc-pod-sign-header.tpl.php:21
+msgid "Email:"
+msgstr "البريد الإلكتروني:"
+
+#: templates/wpc-pod-header.tpl.php:14 templates/wpc-pod-sign-header.tpl.php:15
+msgid "Shipper Address:"
+msgstr "عنوان الشاحن:"
+
+#: templates/wpc-pod-header.tpl.php:17 templates/wpc-pod-sign-header.tpl.php:19
+msgid "Receiver Name:"
+msgstr "اسم المتلقي:"
+
+#: templates/wpc-pod-header.tpl.php:20 templates/wpc-pod-sign-header.tpl.php:22
+msgid "Receiver Address:"
+msgstr "عنوان جهاز الاستقبال:"
+
+#: templates/wpc-pod-results.tpl.php:15
+msgid "POD Signature"
+msgstr "توقيع جراب"
+
+#: templates/wpc-pod-results.tpl.php:21
+msgid "POD Images"
+msgstr "صور POD"
+
+#: templates/wpc-pod-sign.tpl.php:29
+msgid "ADD IMAGES"
+msgstr "إضافة صور"
+
+#: templates/wpc-pod-sign.tpl.php:31
+msgid "Your current captured images:"
+msgstr "الصور الملتقطة الحالية:"
+
+#: templates/wpc-pod-sign.tpl.php:68
+msgid "Update"
+msgstr "تحديث"
+
+#: templates/wpc-pod-sign.tpl.php:110 templates/wpc-pod-sign.tpl.php:112
+msgid "Upload Images"
+msgstr "رفع الصور"
+
+#: templates/wpc-pod-signature-form.tpl.php:14
+msgid "Sign below"
+msgstr "التوقيع أدناه"
+
+#: templates/wpc-pod-signature-form.tpl.php:15
+#, php-format
+msgid "Please click the <b>%s</b> button after you signed."
+msgstr "الرجاء النقر فوق <b>%s</b> الزر بعد التوقيع."
+
+#: templates/wpc-pod-signature-form.tpl.php:23
+msgid "Save"
+msgstr "حفظ"
+
+#: templates/wpc-pod-signature-form.tpl.php:26
+msgid "Clear"
+msgstr "مسح"
+
+#: templates/wpc-pod-signature-form.tpl.php:38
+msgid "Generated signature"
+msgstr "التوقيع الذي تم إنشاؤه"
+
+#: templates/wpc-pod-signature-form.tpl.php:42
+msgid "Your current signature:"
+msgstr "توقيعك الحالي:"
+
+#: templates/wpc-pod-signature-form.tpl.php:79
+msgid "Please provide signature first."
+msgstr "يرجى تقديم التوقيع أولا."
+
+#: wpcargo-pod.php:32
+msgid "WPCargo Driver"
+msgstr "سائق WPCargo"
+
+#. Plugin Name of the plugin/theme
+msgid "WPCargo Proof of Delivery Add-ons"
+msgstr "WPCargo دليل على التسليم إضافات"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wpcargo.com/"
+msgstr "http://wpcargo.com/"
+
+#. Description of the plugin/theme
+msgid ""
+"This Add-ons will let you add images and signature on your shipment. This "
+"offers the ability to record delivery and collection operations with proof "
+"using a computer, tablets or mobile devices running Android and iOS mobile "
+"systems/Operating systems. Available shortcode [wpc_driver_accounts]."
+msgstr ""
+"تتيح لك هذه الإضافات إضافة صور وتوقيع على شحنتك. وهذا يوفر القدرة على تسجيل "
+"عمليات التسليم وجمع مع إثبات باستخدام جهاز كمبيوتر، أقراص أو الأجهزة النقالة "
+"التي تعمل بنظام التشغيل أندرويد و دائرة الرقابة الداخلية أنظمة المحمول / "
+"أنظمة التشغيل. الرمز القصير المتاح [wpc_driver_accounts]."
+
+#. Author of the plugin/theme
+msgid "<a href=\"http://wptaskforce.com/\">WPTaskForce</a>"
+msgstr "<a href=\"http://wptaskforce.com/\">WPTaskForce</a>"
