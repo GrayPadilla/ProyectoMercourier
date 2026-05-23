@@ -1,0 +1,14 @@
+/**
+ * Theme Name: Blocksy Child
+ * Description: Blocksy Child theme
+ * Author: Creative Themes
+ * Template: blocksy
+ * Text Domain: blocksy
+ */
+ 
+ /* FORZAR VISIBILIDAD DE CHECKBOX EN CONTENEDORES WP CARGO */
+#shipment-list .shipment-checkbox {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
