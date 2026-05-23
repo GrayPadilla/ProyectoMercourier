@@ -1,0 +1,2194 @@
+# Translation of Plugins - CMP &#8211; Coming Soon &amp; Maintenance Plugin by NiteoThemes - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - CMP &#8211; Coming Soon &amp; Maintenance Plugin by NiteoThemes - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-05-05 14:26:41+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - CMP &#8211; Coming Soon &amp; Maintenance Plugin by NiteoThemes - Stable (latest release)\n"
+
+#: niteo-cmp.php:1346
+msgid "File uploads are disabled on this site."
+msgstr "Las cargas de archivos están desactivadas en este sitio."
+
+#: cmp-advanced.php:832
+msgid "Load Font Awesome icons from a local server"
+msgstr "Cargar los iconos de Font Awesome desde un servidor local"
+
+#: cmp-advanced.php:826
+msgid "Font Awesome Icons"
+msgstr "Iconos de Font Awesome"
+
+#: cmp-advanced.php:821
+msgid "Misc Settings"
+msgstr "Otros ajustes"
+
+#: cmp-advanced.php:511
+msgid "You can set custom Bypass CMP Cookie expiration time in days. Default expiration time is 2 days."
+msgstr "Puedes establecer en días una omisión personalizada del tiempo de caducidad de la cookie de CMP. El tiempo de caducidad por defecto es de 2 días."
+
+#: inc/settings/settings-social-media.php:68
+msgid "IMDb"
+msgstr "IMDb"
+
+#: inc/settings/settings-social-media.php:61
+msgid "TikTok"
+msgstr "TikTok"
+
+#: niteo-cmp.php:3220
+msgid "JSON API is disabled by CMP – Coming Soon & Maintenance Plugin."
+msgstr "La API JSON ha sido desactivada por CMP - Coming Soon & Maintenance Plugin."
+
+#: niteo-cmp.php:1747
+msgid "This is auto generated message from CMP - Coming Soon & Maintenance WordPress Plugin. You can disable these emails under CMP Advanced Settings > Email Notifications."
+msgstr "Este es un mensaje autogenerado por el plugin de WordPress CMP - Coming Soon & Maintenance. Puedes desactivar estos correos electrónicos en Ajustes avanzados de CMP > Avisos por correo electrónico."
+
+#: niteo-cmp.php:1746
+msgid "You have a new Subscriber on %s!"
+msgstr "¡Tienes un nuevo suscriptor en %s!"
+
+#: cmp-advanced.php:611
+msgid "Enable Email notification if there is a new CMP Subscriber. Applies only for a default CMP Custom Subscribe list."
+msgstr "Activar avisos por correo electrónico cuando haya un nuevo suscriptor de CMP. Se aplica solo para la lista de suscripción personalizada de CMP por defecto."
+
+#: cmp-advanced.php:605
+msgid "New CMP Subscriber"
+msgstr "Nuevo suscriptor de CMP"
+
+#: cmp-settings.php:766
+msgid "CMP - Bundle & Add-ons Manager must be enabled to access the Customize Settings."
+msgstr "CMP - Bundle & Add-ons Manager debe estar activado para acceder a los ajustes de personalización."
+
+#: inc/settings/settings-subscribe.php:287
+msgid "Subscribe Popup Background Image"
+msgstr "Imagen de fondo de la ventana emergente de suscripción"
+
+#: inc/settings/settings-subscribe.php:285
+msgid "Display Lastname Input"
+msgstr "Mostrar el campo de apellidos"
+
+#: inc/settings/settings-subscribe.php:284
+msgid "Display Firstname Input"
+msgstr "Mostrar el campo de nombre"
+
+#: inc/settings/settings-subscribe.php:278
+msgid "Popup Subscribe Form message (can be GDPR or any custom message). Supports anchor HTML tags."
+msgstr "Mensaje de la ventana emergente del formulario de suscripción (puede ser sobre el RGPD o cualquier mensaje personalizado). Compatible con etiquetas HTML de anclaje."
+
+#: inc/settings/settings-subscribe.php:275
+msgid "Popup Title"
+msgstr "Título de la ventana emergente"
+
+#: inc/settings/settings-subscribe.php:272
+msgid "Automatic Popup Timing in Seconds"
+msgstr "Retraso de la ventana emergente automática en segundos"
+
+#: inc/settings/settings-subscribe.php:268
+msgid "Enable Automatic Subscribe Popup"
+msgstr "Activar ventana emergente automática de suscripción"
+
+#: inc/settings/settings-subscribe.php:238
+msgid "Enable In Page Subscribe Form"
+msgstr "Activar el formulario de suscripción en la página"
+
+#: cmp-advanced.php:547
+msgid "Allow REST API"
+msgstr "Permitir la API REST"
+
+#: cmp-advanced.php:543
+msgid "REST API"
+msgstr "API REST"
+
+#: cmp-advanced.php:537
+msgid "Allow RSS"
+msgstr "Permitir RSS"
+
+#: cmp-advanced.php:529
+msgid "RSS & REST API"
+msgstr "RSS y API REST"
+
+#: inc/settings/settings-social-media.php:128
+msgid "RSS Feed URL(if using your blog RSS feed, you must include this URL in %s to make it available.)"
+msgstr "URL del feed RSS (si estás usando el feed RSS de tu blog, debes incluir esta URL en la %s para que esté disponible)."
+
+#: cmp-advanced.php:533 inc/settings/settings-social-media.php:64
+msgid "RSS"
+msgstr "RSS"
+
+#: cmp-sidebar.php:33
+msgid "Follow us on %s."
+msgstr "Síguenos en %s."
+
+#: cmp-sidebar.php:24
+msgid "If you love our CMP plugin please donate few %s by clicking Donate button."
+msgstr "Si te encanta nuestro plugin CMP, dona un poco de %s haciendo clic en el botón «Donar»."
+
+#: inc/settings/settings-background.php:196
+msgid "Display different image on Mobile devices(upload button is below)"
+msgstr "Mostrar una imagen diferente en los dispositivos móviles (el botón para subir está abajo)"
+
+#: inc/settings/settings-progress-bar.php:92
+msgid "Select Ending Date.."
+msgstr "Selecciona una fecha de finalización..."
+
+#: inc/settings/settings-progress-bar.php:90
+msgid "Click to Set Ending Date"
+msgstr "Haz clic para establecer la fecha de finalización"
+
+#: inc/settings/settings-progress-bar.php:86
+msgid "Select Starting Date.."
+msgstr "Selecciona una fecha de inicio..."
+
+#: inc/settings/settings-progress-bar.php:84
+msgid "Click to Set Starting Date"
+msgstr "Haz clic para establecer la fecha de inicio"
+
+#: inc/settings/settings-progress-bar.php:77
+msgid "Progress"
+msgstr "Progreso"
+
+#: inc/settings/settings-progress-bar.php:72
+msgid "Set Automatic Progress Bar by Date"
+msgstr "Establecer una barra de progreso automática por fecha"
+
+#: inc/settings/settings-progress-bar.php:71
+msgid "Set Progress Bar Manually"
+msgstr "Establecer la barra de progreso manualmente"
+
+#: inc/settings/settings-progress-bar.php:65
+msgid "Progress Bar is disabled."
+msgstr "La barra de progreso está desactivada."
+
+#: inc/settings/settings-progress-bar.php:40
+#: inc/settings/settings-progress-bar.php:46
+msgid "Progress Bar"
+msgstr "Barra de progreso"
+
+#: inc/cmp-update-process.php:130 niteo-cmp.php:210
+msgid "Oops! Email is empty."
+msgstr "¡Vaya! El correo electrónico está en blanco."
+
+#: inc/cmp-update-process.php:129 niteo-cmp.php:209
+msgid "You must agree with our Terms and Conditions."
+msgstr "Debes aceptar nuestros términos y condiciones."
+
+#: cmp-sidebar.php:39
+msgid "Awesome plugin to customize WordPress Login Page!"
+msgstr "¡Un plugin genial para personalizar la página de acceso de WordPress!"
+
+#: cmp-sidebar.php:37
+msgid "Check out our other plugins!"
+msgstr "¡Echa un vistazo a nuestros otros plugins!"
+
+#: inc/settings/settings-subscribe.php:253
+msgid "Subscribe Container Background Image"
+msgstr "Imagen de fondo del contenedor del formulario de suscripción"
+
+#: inc/settings/settings-content.php:65
+msgid "Display Gallery as Slider"
+msgstr "Mostrar galería como carrusel"
+
+#: inc/settings/settings-social-media.php:116
+msgid "WhatsApp Full International Phone Number"
+msgstr "Número telefónico completo internacional de WhatsApp"
+
+#: inc/settings/settings-social-media.php:55
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+#: cmp-advanced.php:878
+msgid "Compatibility with %s plugin is disabled."
+msgstr "La compatibilidad con el plugin %s está desactivada."
+
+#: cmp-advanced.php:874
+msgid "If %s plugin is installed and activated then Cookie notice will be automatically displayed also on Coming Soon page."
+msgstr "Si el plugin %s está instalado y activo, el aviso de cookies se mostrará automáticamente también en la página de «Próximamente»."
+
+#: cmp-advanced.php:847 cmp-advanced.php:855
+msgid "Cookie Notice Compatibility"
+msgstr "Compatibilidad con Cookie Notice"
+
+#: inc/settings/settings-subscribe.php:221
+msgid "Subcribe Form Heading"
+msgstr "Cabecera del formulario de suscripción"
+
+#: inc/settings/settings-background.php:341
+msgid "YouTube background doesn`t work on mobile devices therefore only thumbnail will be displayed on mobile devices. You can upload custom thumbnail image by pressing button below. This Image will be also displayed as a placeholder before video is loaded. "
+msgstr "El fondo de YouTube no funciona en dispositivos móviles, por lo que en estos se mostrará solamente una miniatura. Puedes subir una imagen de miniatura personalizada pulsando el botón de abajo. Esta imagen también se mostrará como marcador de posición antes de que cargue el vídeo. "
+
+#: inc/settings/settings-subscribe.php:246
+#: inc/settings/settings-subscribe.php:281
+msgid "Display GDPR Checkbox"
+msgstr "Mostrar la casilla de verificación del RGPD"
+
+#: cmp-advanced.php:380
+msgid "Insert URL with http(s) separately at each line. Please make sure your Permalinks work correctly!<br> You can also use asterisk (*) as a wildcard to match any part of the URL."
+msgstr "Inserta las URL con http(s), una en cada línea. ¡Asegúrate de que tus enlaces permanentes funcionen correctamente!<br> También puedes utilizar el asterisco (*) como carácter comodín para que coincida con cualquier parte de la URL."
+
+#: inc/settings/settings-lang-switcher.php:79
+msgid "Display Country Name"
+msgstr "Mostrar el nombre del país"
+
+#: inc/settings/settings-lang-switcher.php:72
+msgid "Display Country Flag"
+msgstr "Mostrar la bandera del país"
+
+#: inc/settings/settings-lang-switcher.php:63
+msgid "Language Switcher is disabled"
+msgstr "El selector de idioma está desactivado"
+
+#: inc/settings/settings-lang-switcher-disabled.php:32
+msgid "You must install Polylang or WPML with String Translation add-on to enable Multilanguage functionality."
+msgstr "Debes instalar Polylang o WPML con la extensión String Translation para activar la funcionalidad de multilenguaje."
+
+#: inc/settings/settings-lang-switcher-disabled.php:5
+#: inc/settings/settings-lang-switcher-disabled.php:12
+#: inc/settings/settings-lang-switcher.php:36
+#: inc/settings/settings-lang-switcher.php:43
+msgid "Language Switcher"
+msgstr "Selector de idioma"
+
+#: inc/settings/settings-content.php:69
+msgid "If you are having trouble with 3rd-party shortcodes you can %1$s"
+msgstr "Si estás teniendo problemas con los shortcodes de terceros, puedes %1$s."
+
+#: inc/settings/settings-content.php:68
+msgid "WordPress embeds, custom HTML and 3rd party shortcodes are fully supported."
+msgstr "Totalmente compatible con incrustados de WordPress, HTML personalizado y shortcodes de terceros."
+
+#: inc/settings/settings-logo.php:67
+msgid "Custom Logo Link"
+msgstr "Enlace del logotipo personalizado"
+
+#: inc/settings/settings-logo.php:66
+msgid "Logo Link URL"
+msgstr "URL del enlace del logotipo"
+
+#: inc/settings/settings-background.php:202
+msgid "* original version of these images will be displayed on mobile devices. Please make sure they are not excessively large. We recommend max width of 1366px."
+msgstr "* Se mostrará la versión original de estas imágenes en los dispositivos móviles. Asegúrate de que no sean demasiado grandes. Recomendamos una anchura máxima de 1366&nbsp;px."
+
+#: inc/settings/settings-subscribe.php:418
+msgid "How to set reCAPTCHA v3?"
+msgstr "¿Cómo establecer reCAPTCHA v3?"
+
+#: inc/settings/settings-subscribe.php:418
+msgid "Google reCAPTCHA protects you against spam and other types of automated abuse. %1$s"
+msgstr "Google reCAPTCHA te protege contra el spam y otros tipos de abuso automatizado. %1$s"
+
+#: inc/settings/settings-subscribe.php:409
+msgid "Enable Google reCAPTCHA v3 Integration"
+msgstr "Activar la integración con Google reCAPTCHA v3"
+
+#: inc/settings/settings-content.php:69
+msgid "disable automatic paragraphs function."
+msgstr "desactivar la función de párrafos automáticos"
+
+#: cmp-advanced.php:731
+msgid "Automatic paragraphs are disabled."
+msgstr "Los párrafos automáticos están desactivados."
+
+#: cmp-advanced.php:727
+msgid "Paragraphs will be automatically created in the Content area. You can disable this if you have issues with rendering 3rd party shortcodes in the content."
+msgstr "Los párrafos se crearán automáticamente en el área de contenido. Puedes desactivarlos si tienes problemas con el procesamiento de shortcodes de terceros en el contenido."
+
+#: cmp-advanced.php:700 cmp-advanced.php:708
+msgid "Automatic paragraphs"
+msgstr "Párrafos automáticos"
+
+#: niteo-cmp.php:900
+msgid "Counter expired and and it is hidden on your website per settings."
+msgstr "El contador ha caducado, y se ha establecido que esté oculto en tu web."
+
+#: inc/settings/settings-counter.php:95
+msgid "Hide Counter"
+msgstr "Ocultar el contador"
+
+#: inc/settings/settings-login-icon.php:84
+msgid "Login Icon URL is set to standard WordPress wp-login.php. To Change the URL go to %s > Custom Login URL."
+msgstr "La URL del icono de acceso está establecida como el wp-login.php estándar de WordPress. Para cambiar la URL, ve a %s > URL de acceso personalizada."
+
+#: inc/settings/settings-login-icon.php:79
+msgid "Rouned Corners"
+msgstr "Esquinas redondeadas"
+
+#: inc/settings/settings-login-icon.php:74
+msgid "Icon Opacity"
+msgstr "Opacidad del icono"
+
+#: inc/settings/settings-login-icon.php:69
+msgid "Position from Top"
+msgstr "Posición desde arriba"
+
+#: inc/settings/settings-login-icon.php:57
+msgid "Login Icon is disabled"
+msgstr "El icono de acceso está desactivado."
+
+#: inc/settings/settings-login-icon.php:37
+msgid "Login Icons"
+msgstr "Iconos de acceso"
+
+#: inc/settings/settings-login-icon.php:30
+msgid "Login Icon"
+msgstr "Icono de acceso"
+
+#: cmp-settings.php:614
+msgid "Advanced"
+msgstr "Avanzado"
+
+#: inc/settings/settings-subscribe.php:416
+msgid "Insert Secret Key"
+msgstr "Inserta la clave secreta"
+
+#: inc/settings/settings-subscribe.php:413
+msgid "Insert Site Key"
+msgstr "Inserta la clave del sitio"
+
+#: inc/settings/settings-counter.php:111
+msgid "Change e-mail notification settings."
+msgstr "Cambiar ajustes de aviso por correo electrónico."
+
+#: inc/settings/settings-counter.php:107
+msgid "E-mail notification is disabled."
+msgstr "El aviso por correo electrónico está desactivado."
+
+#: inc/settings/settings-theme-selector.php:63
+msgid "Activate"
+msgstr "Activar"
+
+#: cmp-advanced.php:567
+msgid "Timer Expiration"
+msgstr "Caducidad del temporizador"
+
+#: cmp-sidebar.php:55
+msgid "We are always happy to help on %s in a case you run into some issues."
+msgstr "Siempre estamos dispuestos a ayudarte en el %s en el caso de que te encuentres con algún problema."
+
+#: inc/settings/settings-counter.php:96
+msgid "Disable Coming Soon / Maintenance page."
+msgstr "Desactivar la página de «Próximamente» / «En mantenimiento»"
+
+#: inc/settings/settings-counter.php:82
+msgid "Click on a date input to set timer"
+msgstr "Haz clic en el campo de fecha para establecer el temporizador."
+
+#: cmp-advanced.php:408
+msgid "Insert custom login URL if you are using plugins to change default WordPress login URL."
+msgstr "Inserta una URL de acceso personalizada si estás usando plugins que cambian la URL de acceso por defecto de WordPress."
+
+#: cmp-advanced.php:401 cmp-advanced.php:405
+msgid "Login URL"
+msgstr "URL de acceso"
+
+#: cmp-advanced.php:396
+msgid "Custom Login URL"
+msgstr "URL de acceso personalizada"
+
+#: niteo-cmp.php:657
+msgid "CMP Advanced Setup"
+msgstr "Configuración avanzada de CMP"
+
+#: inc/settings/settings-special_effects.php:42
+msgid "Let It Snow"
+msgstr "Nevada"
+
+#: inc/settings/settings-subscribe.php:466
+msgid "Install MailOptin plugin"
+msgstr "Instalar el plugin MailOptin"
+
+#: inc/settings/settings-subscribe.php:465
+msgid "Please Install MailOptin plugin first by clicking button below."
+msgstr "Instala primero el plugin MailOptin haciendo clic en el botón de abajo."
+
+#: inc/settings/settings-subscribe.php:455
+msgid "Activate MailOptin plugin"
+msgstr "Activar el plugin MailOptin"
+
+#: inc/settings/settings-subscribe.php:454
+msgid "Please activate MailOptin plugin first by clicking button below."
+msgstr "Activa primero el plugin MailOptin haciendo clic en el botón de abajo."
+
+#: inc/settings/settings-subscribe.php:445
+msgid "No MailOptin Campaign was found. Please make there is at least one Optin Campaign created."
+msgstr "No se han encontrado campañas de MailOptin. Asegúrate de que hay al menos una campaña de Optin creada."
+
+#: inc/settings/settings-subscribe.php:436
+msgid "Select MailOptin Campaigns."
+msgstr "Selecciona campañas de MailOptin."
+
+#: inc/settings/settings-subscribe.php:427
+msgid "MailOptin is a proven list building plugin that allows you to create popups and embedded forms so you can convert visitors to your coming soon site into subscribers. Supports all major email providers including. MailChimp, AWeber, Campaign Monitor, Constant Contact, Mailerlite."
+msgstr "MailOptin es un plugin comprobado de construcción de listas que te permite crear ventanas emergentes y formularios incrustados para que puedas convertir en suscriptores a los visitantes de tu sitio en construcción. Es compatible con los principales proveedores de correo electrónico, como: MailChimp, AWeber, Campaign Monitor, Constant Contact, Mailerlite."
+
+#: inc/settings/settings-subscribe.php:195
+msgid "MailOptin Integration"
+msgstr "Integración con MailOptin"
+
+#: cmp-advanced.php:678
+msgid "Compact - CMP Icon only "
+msgstr "Compacta: Solo el icono de CMP "
+
+#: cmp-advanced.php:677
+msgid "Full - CMP Icon with description"
+msgstr "Completa: Icono de CMP y descripción"
+
+#: cmp-advanced.php:675
+msgid "CMP Top Bar layout"
+msgstr "Estructura de la barra superior de CMP"
+
+#: cmp-advanced.php:633 cmp-advanced.php:641
+msgid "CMP Top Bar"
+msgstr "Barra superior de CMP"
+
+#: inc/settings/settings-slider.php:94
+msgid "Train"
+msgstr "Tren"
+
+#: inc/settings/settings-background.php:272
+msgid "Select Unsplash Featured Photos only"
+msgstr "Seleccionar solo fotos destacadas de Unsplash"
+
+#: inc/settings/settings-seo.php:139
+msgid "Insert your the code provided by your Analytics Plugin or Website."
+msgstr "Inserta el código suministrado por tu plugin o web de analítica."
+
+#: cmp-advanced.php:337
+msgid "CMP Whitelist - set CMP landing page to specific page(s) only"
+msgstr "Lista blanca de CMP: Establece la página de destino de CMP solo en páginas específicas"
+
+#: inc/settings/settings-background.php:338
+msgid "Loop video automatically"
+msgstr "Repetir vídeo automáticamente"
+
+#: inc/settings/settings-counter.php:104
+msgid "Notification e-mail will be sent to %s email address once counter expires."
+msgstr "Se enviará un aviso por correo electrónico a la dirección %s una vez que el contador caduque."
+
+#: inc/settings/settings-subscribe.php:400
+msgid "Enable Mailster Double Opt In"
+msgstr "Activar la suscripción doble de Mailster"
+
+#: inc/settings/settings-subscribe.php:395
+msgid "Could not retrieve Mailster subribers lists. Please make sure Mailster is correctly installed and configured."
+msgstr "No se pudieron recuperar las listas de suscriptores de Mailster. Asegúrate de que Mailster esté instalado y configurado correctamente."
+
+#: inc/settings/settings-subscribe.php:386
+msgid "Select Mailster subscriber`s list."
+msgstr "Selecciona una lista de suscriptores de Mailster."
+
+#: inc/settings/settings-subscribe.php:369
+msgid "Could not retrieve MailPoet subcribers lists. Please make sure MailPoet is correctly installed and configured."
+msgstr "No se pudieron recuperar las listas de suscriptores de MailPoet. Asegúrate de que MailPoet esté instalado y configurado correctamente."
+
+#: inc/settings/settings-subscribe.php:359
+msgid "Select MailPoet subscriber`s list."
+msgstr "Selecciona una lista de suscriptores de MailPoet."
+
+#: inc/settings/settings-subscribe.php:322
+msgid "Select MailChimp subscriber`s list."
+msgstr "Selecciona una lista de suscriptores de MailChimp."
+
+#: inc/settings/settings-subscribe.php:307
+msgid "Mailster Integration"
+msgstr "Integración con Mailster"
+
+#: cmp-advanced.php:592
+msgid "Enable Email notification if Coming Soon Mode is enabled or disabled by the user."
+msgstr "Activar avisos por correo electrónico cuando el usuario active o desactive el modo Próximamente."
+
+#: cmp-advanced.php:586
+msgid "CMP Status Change"
+msgstr "Cambio de estado de CMP"
+
+#: cmp-advanced.php:578 cmp-advanced.php:597 cmp-advanced.php:616
+msgid "Specify Email Address"
+msgstr "Especifica la dirección de correo electrónico"
+
+#: cmp-advanced.php:573
+msgid "Enable Email notification when Countdown timer expires to 0."
+msgstr "Activar avisos por correo electrónico cuando el temporizador de cuenta atrás caduque en 0."
+
+#: cmp-advanced.php:563
+msgid "Email Notifications"
+msgstr "Avisos por correo electrónico"
+
+#: cmp-advanced.php:289
+msgid "Notifications"
+msgstr "Avisos"
+
+#: niteo-cmp.php:3178
+msgid "Redirect"
+msgstr "Redirección"
+
+#: niteo-cmp.php:3175
+msgid "Coming Soon"
+msgstr "Próximamente"
+
+#: niteo-cmp.php:3172
+msgid "Maintenance"
+msgstr "Mantenimiento"
+
+#: inc/settings/settings-subscribe.php:306
+msgid "MailPoet Integration"
+msgstr "Integración con MailPoet"
+
+#: niteo-cmp.php:1919
+msgid "Fullname"
+msgstr "Nombre completo"
+
+#: niteo-cmp.php:1918
+msgid "Lastname"
+msgstr "Apellidos"
+
+#: niteo-cmp.php:1917
+msgid "Firstname"
+msgstr "Nombre"
+
+#: niteo-cmp.php:1801 niteo-cmp.php:1842
+msgid "Something went wrong please try again later."
+msgstr "Algo ha ido mal, inténtalo de nuevo más tarde."
+
+#: cmp-advanced.php:933
+msgid "Import Settings"
+msgstr "Importar ajustes"
+
+#: cmp-advanced.php:924
+msgid "Insert valid JSON file with CMP Settings to import complete CMP Settings. All current settings will be overwritten."
+msgstr "Inserta un archivo JSON válido con ajustes de CMP para importar todos los ajustes de CMP. Todos los ajustes actuales se sobrescribirán."
+
+#: cmp-advanced.php:921
+msgid "Import with media images"
+msgstr "Importar con imágenes de medios"
+
+#: cmp-advanced.php:916
+msgid "Select JSON file"
+msgstr "Seleccionar archivo JSON"
+
+#: cmp-advanced.php:909
+msgid "Import CMP Settings"
+msgstr "Importar ajustes de CMP"
+
+#: cmp-advanced.php:903
+msgid "You can export complete CMP Settings to external JSON file. Which can be used to backup or transfer CMP Settings to another website."
+msgstr "Puedes exportar todos los ajustes de CMP a un archivo JSON externo, el cual puede utilizarse como copia de seguridad o para transferir ajustes de CMP a otra web."
+
+#: cmp-advanced.php:902
+msgid "Export to JSON file"
+msgstr "Exportar a archivo JSON"
+
+#: cmp-advanced.php:898
+msgid "Export CMP Settings"
+msgstr "Exportar ajustes de CMP"
+
+#: cmp-advanced.php:893
+msgid "Export or Import CMP Settings"
+msgstr "Exportar o importar ajustes de CMP"
+
+#: cmp-advanced.php:293
+msgid "Import/Export"
+msgstr "Importar/Exportar"
+
+#: cmp-advanced.php:291
+msgid "Misc"
+msgstr "Miscelánea"
+
+#: cmp-advanced.php:287
+msgid "Bypass"
+msgstr "Omisión"
+
+#: niteo-cmp.php:3098
+msgid "Please insert valid JSON file and try again."
+msgstr "Inserta un archivo JSON válido e inténtalo de nuevo."
+
+#: niteo-cmp.php:3092
+msgid "JSON file is valid but it does not contain CMP Settings."
+msgstr "El archivo JSON es válido, pero no contiene ajustes de CMP."
+
+#: niteo-cmp.php:3052
+msgid "All done!"
+msgstr "¡Todo hecho!"
+
+#: niteo-cmp.php:1123
+msgid "CMP Advanced Settings"
+msgstr "Ajustes avanzados de CMP"
+
+#: niteo-cmp.php:1116
+msgid "CMP Basic Settings"
+msgstr "Ajustes básicos de CMP"
+
+#: inc/settings/settings-typography.php:119
+msgid "Uploaded custom fonts will be available in dropdown lists for Heading and Content. Font Preview works only with woff/woff2 formats."
+msgstr "Las fuentes personalizadas subidas estarán disponibles en las listas desplegables para la cabecera y el contenido. La vista previa de la fuente funciona solamente con los formatos woff/woff2."
+
+#: inc/settings/settings-typography.php:118
+msgid "All font formats are supported - we recommend to upload woff/woff2 for modern browsers and eot for IE compatibility."
+msgstr "Compatible con todos los formatos de fuentes. Recomendamos subir woff/woff2 para navegadores modernos y eot por compatibilidad con Internet Explorer."
+
+#: inc/settings/settings-typography.php:115
+msgid "Upload Custom Font"
+msgstr "Subir fuente personalizada"
+
+#: inc/settings/settings-typography.php:99
+msgid "Content Animation"
+msgstr "Animación del contenido"
+
+#: inc/settings/settings-typography.php:88
+msgid "Heading Animation"
+msgstr "Animación de la cabecera"
+
+#: inc/cmp-update-process.php:125 niteo-cmp.php:205
+msgid "Scroll"
+msgstr "Scroll"
+
+#: inc/cmp-update-process.php:124 niteo-cmp.php:204
+msgid "Submit"
+msgstr "Enviar"
+
+#: inc/cmp-update-process.php:122 niteo-cmp.php:202
+msgid "Oops! We need a valid email address. Please try again."
+msgstr "¡Vaya! Necesitamos una dirección de correo electrónico válida. Por favor, inténtalo de nuevo."
+
+#: inc/cmp-update-process.php:121 niteo-cmp.php:201
+msgid "Oops! This email address is already on our list."
+msgstr "¡Vaya! Este correo electrónico ya está en nuestra lista."
+
+#: inc/cmp-update-process.php:119 niteo-cmp.php:199
+msgid "Days"
+msgstr "Días"
+
+#: inc/cmp-update-process.php:118 niteo-cmp.php:198
+msgid "Hours"
+msgstr "Horas"
+
+#: inc/cmp-update-process.php:117 niteo-cmp.php:197
+msgid "Minutes"
+msgstr "Minutos"
+
+#: inc/cmp-update-process.php:116 niteo-cmp.php:196
+msgid "Seconds"
+msgstr "Segundos"
+
+#: cmp-advanced.php:349 cmp-advanced.php:371
+msgid "You can also add the page URLs manually."
+msgstr "También puedes añadir manualmente las URL de las páginas."
+
+#: inc/cmp-activation-notice.php:20
+msgid "You can customize the Coming Soon Page in %1$s or activate the Coming Soon Mode by Top bar CMP icon right away!"
+msgstr "¡Puedes personalizar la página de «Próximamente» en %1$s o activar de inmediato el modo Próximamente en el icono de CMP de la barra superior!"
+
+#: inc/cmp-activation-notice.php:19
+msgid "Thank you for installing CMP - Coming soon & Maintenance Plugin!"
+msgstr "¡Gracias por instalar CMP - Coming Soon & Maintenance.Plugin!"
+
+#: cmp-subscribers.php:26
+msgid "If you use MailChimp integration, you must check your Subscribers directly in MailChimp!"
+msgstr "Si utilizas la integración con MailChimp, ¡deberás comprobar tus suscriptores directamente en MailChimp!"
+
+#: inc/settings/settings-general.php:39
+msgid "CMP Mode"
+msgstr "Modo de CMP"
+
+#: cmp-advanced.php:285 inc/settings/settings-general.php:32
+msgid "Whitelist/Blacklist"
+msgstr "Lista blanca/Lista negra"
+
+#: inc/settings/settings-general.php:27
+msgid "Homepage only"
+msgstr "Solo en la página de inicio"
+
+#: inc/settings/settings-general.php:22
+msgid "Whole Website"
+msgstr "Toda la web"
+
+#: inc/settings/settings-general.php:10
+msgid "CMP Status"
+msgstr "Estado de CMP"
+
+#: cmp-translate.php:50
+msgid "You can edit any text on CMP landing page - button labels, countdown, subscription messages, etc."
+msgstr "Puedes editar cualquier texto de la página de destino de CMP: etiquetas de botones, cuentas regresivas, mensajes de suscripción, etc."
+
+#: inc/settings/settings-background.php:136
+msgid "Every CMP Theme is using unique default background."
+msgstr "Cada tema de CMP utiliza un fondo único por defecto."
+
+#: inc/settings/settings-special_effects.php:57
+msgid "Background effects are disabled"
+msgstr "Los efectos de fondo están desactivados."
+
+#: inc/settings/settings-logo.php:54
+msgid "Set custom logo height"
+msgstr "Establecer una altura personalizada para el logotipo"
+
+#: inc/class-cmp-subscribers.php:66
+msgid "Delete All"
+msgstr "Borrar todo"
+
+#: cmp-advanced.php:753 cmp-advanced.php:785
+msgid "Insert Javascript or CSS external file URL"
+msgstr "Inserta la URL de un archivo JavaScript o CSS externo"
+
+#: niteo-cmp.php:1465
+msgid "There was an error unzipping the file due to error: "
+msgstr "Ha habido un error al descomprimir el archivo debido al error: "
+
+#: cmp-help.php:15
+msgid "WordPress Support Forum"
+msgstr "Foro de soporte de WordPress"
+
+#: cmp-help.php:13
+msgid "If you have any questions or issue feel free to ask on Wordpress Support Forum! We are happy to help :)"
+msgstr "Si tienes alguna pregunta o algún problema, ¡no dudes en acudir al foro de soporte de WordPress! Estaremos encantados de ayudarte. :)"
+
+#: cmp-help.php:12
+msgid "Thank you for using our CMP – Coming Soon & Maintenance plugin"
+msgstr "Gracias por usar nuestro plugin CMP - Coming Soon & Maintenance."
+
+#: inc/settings/settings-special_effects.php:61
+msgid "Effect Color"
+msgstr "Color del efecto"
+
+#: inc/settings/settings-special_effects-disabled.php:24
+#: inc/settings/settings-special_effects.php:36
+msgid "Floating Bubbles"
+msgstr "Burbujas flotantes"
+
+#: cmp-advanced.php:781
+msgid "Footer Scripts"
+msgstr "Scripts de pie de página"
+
+#: cmp-advanced.php:774 cmp-advanced.php:806
+msgid "Add More"
+msgstr "Añadir más"
+
+#: cmp-advanced.php:749
+msgid "Head Scripts"
+msgstr "Scripts de cabecera"
+
+#: cmp-advanced.php:745
+msgid "Custom External Scripts"
+msgstr "Scripts externas personalizadas"
+
+#: inc/settings/settings-subscribe.php:229
+msgid "3rd Party Plugin Shortcode"
+msgstr "Shortcode de plugin de terceros"
+
+#: inc/settings/settings-special_effects-disabled.php:39
+msgid "Special Effects are not supported by the selected Theme. Please activate another Theme with Special Effects Support."
+msgstr "Los efectos especiales no son compatibles con el tema seleccionado. Activa otro tema compatible con los efectos especiales."
+
+#: inc/settings/settings-contact_form-disabled.php:32
+msgid "Contact Form is not supported by the selected Theme."
+msgstr "El formulario de contacto no es compatible con el tema seleccionado."
+
+#: inc/settings/settings-background.php:511
+msgid "Insert Valid URL"
+msgstr "Inserta una URL válida"
+
+#: inc/settings/settings-background.php:510
+msgid "Overlay Call To Action Button URL"
+msgstr "URL del botón de llamada a la acción de la ventana superpuesta"
+
+#: inc/settings/settings-background.php:507
+msgid "Overlay Call To Action Button Text"
+msgstr "Texto del botón de llamada a la acción de la ventana superpuesta"
+
+#: inc/settings/settings-background.php:504
+msgid "Overlay Text"
+msgstr "Texto de la ventana superpuesta"
+
+#: inc/settings/settings-background.php:501
+msgid "Overlay Heading"
+msgstr "Cabecera de la ventana superpuesta"
+
+#: inc/settings/settings-background.php:498
+msgid "Display Text Overlay"
+msgstr "Mostrar ventana superpuesta de texto"
+
+#: inc/settings/settings-background.php:495
+msgid "Text Overlay"
+msgstr "Ventana superpuesta de texto"
+
+#: inc/settings/settings-counter-disabled.php:27
+msgid "Countdown Timer is not supported by the selected Theme."
+msgstr "El temporizador de cuenta atrás no es compatible con el tema seleccionado."
+
+#: inc/settings/settings-subscribe-disabled.php:38
+msgid "Subscribe Form is not supported by the selected Theme."
+msgstr "El formulario de suscripción no es compatible con el tema seleccionado."
+
+#: inc/settings/settings-contact_form.php:61
+msgid "Contact Form Heading"
+msgstr "Cabecera del formulario de contacto"
+
+#: inc/settings/settings-footer.php:90
+msgid "Contact Address"
+msgstr "Dirección de contacto"
+
+#: inc/settings/settings-logo-disabled.php:36
+msgid "Logo settings is not supported by the selected Theme."
+msgstr "Los ajustes de logotipo no son compatibles con el tema seleccionado."
+
+#: inc/settings/settings-slider-disabled.php:30
+msgid "Slider settings is not supported by the selected Theme."
+msgstr "Los ajustes de carrusel no son compatibles con el tema seleccionado."
+
+#: cmp-upload.php:17
+msgid "Install New CMP Theme"
+msgstr "Instalar nuevo tema de CMP"
+
+#: inc/settings/settings-content.php:44
+msgid "Heading"
+msgstr "Encabezado"
+
+#: inc/settings/settings-content.php:40
+msgid "Main Content"
+msgstr "Contenido principal"
+
+#: niteo-cmp.php:1461
+msgid "Theme has been updated to latest version!"
+msgstr "¡El tema se ha actualizado correctamente a la última versión!"
+
+#: cmp-translate.php:49 niteo-cmp.php:659
+msgid "CMP Translation"
+msgstr "Traducción de CMP"
+
+#: niteo-cmp.php:658
+msgid "CMP Subscribers"
+msgstr "Suscriptores de CMP"
+
+#: niteo-cmp.php:656
+msgid "CMP Basic Setup"
+msgstr "Configuración básica de CMP"
+
+#: niteo-cmp.php:908
+msgid "Counter expired and your Website is redirected to external URL per settings."
+msgstr "El contador ha caducado, y se ha establecido que tu web redirija a una URL externa."
+
+#: niteo-cmp.php:904
+msgid "Counter expired and Coming soon / Maintanance mode was disabled."
+msgstr "El contador ha caducado, y el modo Próximamente / Mantenimiento se ha desactivado."
+
+#: niteo-cmp.php:897
+msgid "Counter expired but it is set to make no action - you should login to your Wordpress Admin and adjust the expired timer or disable Coming Soon / Maintenance Mode."
+msgstr "El contador ha caducado, pero no se ha establecido ninguna acción. Debes acceder al administrador de WordPress y ajustar el temporizador caducado o desactivar el modo Próximamente / Mantenimiento."
+
+#: cmp-settings.php:608
+msgid "Customize"
+msgstr "Personalizar"
+
+#: cmp-advanced.php:686
+msgid " Once enabled, you can quickly enable or disable Coming Soon Mode or check out CMP Preview without visiting CMP Settings Plugin page."
+msgstr " Una vez activada, puedes activar o desactivar rápidamente el modo Próximamente o acceder a la vista previa de CMP sin visitar la página de ajustes del plugin CMP."
+
+#: cmp-advanced.php:684
+msgid "CMP Top Bar is disabled."
+msgstr "La barra superior de CMP está desactivada."
+
+#: cmp-advanced.php:660
+msgid "You can specify which roles have access to CMP Top Bar"
+msgstr "Puedes especificar qué perfiles tienen acceso a la barra superior de CMP"
+
+#: cmp-advanced.php:427
+msgid "CMP Bypass by User Roles"
+msgstr "Omisión de CMP según perfiles de usuario"
+
+#: inc/settings/settings-seo.php:85
+msgid "Send no-cache headers. If you don't want the CMP page's preview to be cached by Facebook or other social media then enable this option."
+msgstr "Enviar cabeceras no-cache. Si no quieres que la vista previa de la página de CMP se almacene en la caché de Facebook o de otros medios sociales, activa esta opción."
+
+#: inc/settings/settings-seo.php:82
+msgid "No-cache Headers"
+msgstr "Cabeceras no-cache"
+
+#: inc/settings/settings-seo.php:75
+msgid "It is up to search engines to honor this request."
+msgstr "Depende de los motores de búsqueda atender esta petición o no."
+
+#: inc/settings/settings-seo.php:74
+msgid "Discourage search engines from indexing this site - applies only for CMP page."
+msgstr "Disuadir a los motores de búsqueda de indizar este sitio; se aplica solo a la página de CMP."
+
+#: inc/settings/settings-seo.php:71
+msgid "Search Engine Visibility"
+msgstr "Visibilidad en los motores de búsqueda"
+
+#: inc/settings/settings-seo.php:63
+msgid "By default selected Background image is displayed on Social Networks if your Website is shared. You can overwrite the image by selecting your custom image here."
+msgstr "Por defecto, la imagen de fondo seleccionada se mostrará en los medios sociales cuando se comparta tu web. Puedes sobrescribir esta imagen seleccionando aquí tu imagen personalizada."
+
+#: inc/settings/settings-seo.php:51
+msgid "SEO Image"
+msgstr "Imagen SEO"
+
+#: inc/settings/settings-seo.php:45
+msgid "It is recommended to keep description between 50–300 characters."
+msgstr "Se recomienda mantener la descripción entre los 50 y los 300 caracteres."
+
+#: inc/settings/settings-seo.php:41
+msgid "SEO Description"
+msgstr "Descripción SEO"
+
+#: inc/settings/settings-seo.php:35
+msgid "It is recommended to keep title under 60 characters."
+msgstr "Se recomienda mantener el título por debajo de los 60 caracteres."
+
+#: inc/settings/settings-seo.php:31
+msgid "SEO Title"
+msgstr "Título SEO"
+
+#: inc/settings/settings-seo.php:23
+msgid "By default your standard Favicon will be used but you can override it for CMP page by selecting different Favicon."
+msgstr "Por defecto, se usará tu favicon estándar, pero puedes reemplazarlo para la página de CMP seleccionando un favicon diferente."
+
+#: inc/settings/settings-theme-selector.php:122
+msgid "Get %s"
+msgstr "Obtener %s"
+
+#: cmp-settings.php:610
+msgid "SEO & Analytics"
+msgstr "SEO y analítica"
+
+#: inc/settings/settings-typography.php:14
+msgid "Google Fonts"
+msgstr "Google Fonts"
+
+#: niteo-cmp.php:1299
+msgid " click to update to %s version from NiteoThemes server now"
+msgstr " Haz clic para actualizar ahora a la versión %s desde el servidor de NiteoThemes."
+
+#: inc/settings/settings-subscribe.php:248
+msgid "* Did you know you can translate Subscribe form Labels and Placeholders to your language in %s Settings?"
+msgstr "* ¿Sabías que puedes traducir a tu idioma las etiquetas y marcadores de posición del formulario de suscripción en los ajustes de %s?"
+
+#: inc/settings/settings-subscribe.php:244
+msgid "Subscribe Form message (can be GDPR or any custom message). Supports anchor HTML tags."
+msgstr "Mensaje del formulario de suscripción (puede ser sobre el RGPD o cualquier mensaje personalizado). Compatible con etiquetas HTML de anclaje."
+
+#: inc/settings/settings-background.php:280
+msgid "Unsplash"
+msgstr "Unsplash"
+
+#: inc/settings/settings-slider.php:102
+msgid "Mask Transition Effect"
+msgstr "Efecto de transición de máscara"
+
+#: inc/settings/settings-slider.php:69
+msgid "Slider Effect"
+msgstr "Efecto del carrusel"
+
+#: inc/settings/settings-subscribe.php:343
+msgid "Enable MailChimp Double Opt In"
+msgstr "Activar la suscripción doble de MailChimp"
+
+#: inc/settings/settings-subscribe-disabled.php:18
+#: inc/settings/settings-subscribe.php:189
+msgid "CMP Subscribe Form"
+msgstr "Formulario de suscripción de CMP"
+
+#: cmp-sidebar.php:11
+msgid "Selected CMP Theme"
+msgstr "Tema de CMP seleccionado"
+
+#: themes/hardwork/hardwork-settings.php:54
+msgid "Footer Background Opacity"
+msgstr "Opacidad del fondo del pie de página"
+
+#: themes/hardwork/hardwork-settings.php:47
+msgid "Footer Background Color"
+msgstr "Color de fondo del pie de página"
+
+#: inc/settings/settings-background.php:483
+msgid "Background Blur Amount"
+msgstr "Cantidad de desenfoque del fondo"
+
+#: inc/settings/settings-background.php:477
+msgid "Background Overlay Opacity"
+msgstr "Opacidad de la superposición de fondo"
+
+#: inc/settings/settings-background.php:450
+msgid "Select Gradient Overlay"
+msgstr "Selecciona una superposición de degradado"
+
+#: inc/settings/settings-background.php:443
+msgid "Background Overlay Color"
+msgstr "Color de la superposición de fondo"
+
+#: inc/settings/settings-background.php:426
+msgid "Set Background Overlay"
+msgstr "Establece una superposición de fondo"
+
+#: inc/settings/settings-background.php:423
+msgid "Background Overlay"
+msgstr "Superposición de fondo"
+
+#: inc/settings/settings-background.php:190
+#: inc/settings/settings-background.php:229
+msgid "Delete Images"
+msgstr "Borrar imágenes"
+
+#: inc/settings/settings-typography.php:77
+msgid "Fonts preview"
+msgstr "Vista previa de las fuentes"
+
+#: inc/settings/settings-subscribe.php:232
+msgid "If you use 3rd party shortcode for subscribe or contact form, you might need to apply custom CSS to style the form correctly."
+msgstr "Si usas un shortcode de terceros para el formulario de suscripción o de contacto, puede que tengas que aplicar CSS personalizado para dar estilo correctamente al formulario."
+
+#: inc/settings/settings-special_effects-disabled.php:18
+#: inc/settings/settings-special_effects.php:30
+msgid "Constellation"
+msgstr "Constelación"
+
+#: inc/settings/settings-special_effects-disabled.php:6
+#: inc/settings/settings-special_effects-disabled.php:13
+#: inc/settings/settings-special_effects.php:18
+#: inc/settings/settings-special_effects.php:25
+msgid "Special Effects"
+msgstr "Efectos especiales"
+
+#: cmp-sidebar.php:62
+msgid "Are you missing a cool feature or do you have idea how to improve CMP plugin? You can %s on official Wordpress Support Forum."
+msgstr "¿Echas en falta alguna característica interesante o tienes alguna idea de cómo mejorar el plugin CMP? Puedes %s en el foro oficial de soporte de WordPress."
+
+#: inc/settings/settings-subscribe.php:338
+msgid "Please insert MailChimp API key to retrieve Lists."
+msgstr "Inserta la clave API de MailChimp para recuperar las listas."
+
+#: inc/settings/settings-subscribe.php:321
+msgid "You can find or create new API key in your %s."
+msgstr "Puedes encontrar tu clave API o crear una nueva en tu %s."
+
+#: inc/settings/settings-subscribe.php:320
+msgid "Retrieve Lists"
+msgstr "Recuperar listas"
+
+#: inc/settings/settings-subscribe.php:319
+msgid "MailChimp API Key"
+msgstr "Clave API de MailChimp"
+
+#: inc/settings/settings-subscribe.php:318
+msgid "MailChimp API key"
+msgstr "Clave API de MailChimp"
+
+#: inc/settings/settings-subscribe.php:312
+msgid "Emails will be stored in custom CMP list with CSV export support. If you ever delete CMP plugin then subscriber list will be purged as well."
+msgstr "Los correos electrónicos se almacenarán en una lista personalizada de CMP compatible con exportación a CSV. Si alguna vez borras el plugin CMP, la lista de suscriptores también se purgará."
+
+#: inc/settings/settings-subscribe.php:305
+msgid "MailChimp Integration"
+msgstr "Integración con MailChimp"
+
+#: inc/settings/settings-subscribe.php:304
+msgid "CMP Custom Subscribe List"
+msgstr "Lista de suscripción personalizada de CMP"
+
+#: inc/settings/settings-subscribe.php:302
+msgid "Select how to save your Subscribers"
+msgstr "Selecciona cómo se guardarán tus suscriptores"
+
+#: inc/settings/settings-subscribe.php:242
+msgid "CMP Subscribe form will be used. It is guaranteed to always match selected CMP Theme's style."
+msgstr "Se usará el formulario de suscripción de CMP, con la garantía de que su estilo coincidirá en todo momento con el del tema de CMP seleccionado."
+
+#: inc/class-cmp-feedback.php:196
+msgid "CMP - Coming Soon & Maintenance"
+msgstr "CMP - Coming Soon & Maintenance"
+
+#: inc/class-cmp-feedback.php:165 inc/cmp-activation-notice.php:22
+msgid "Dismiss"
+msgstr "Descartar"
+
+#: inc/class-cmp-feedback.php:164
+msgid "Leave feedback"
+msgstr "Dejar un comentario"
+
+#: inc/class-cmp-feedback.php:162
+msgid "You have been using %1$s plugin for %2$s now! Please leave a quick review or feedback to help us grow our little plugin. Thank you."
+msgstr "¡Has estado usando el plugin %1$s durante %2$s! Por favor, deja una reseña o comentario rápido para ayudarnos a hacer crecer nuestro pequeño plugin. Gracias."
+
+#: inc/class-cmp-feedback.php:161
+msgid "Do you like CMP - Coming soon & Maintenace Plugin?"
+msgstr "¿Te gusta CMP - Coming Soon & Maintenance Plugin?"
+
+#: inc/class-cmp-feedback.php:107
+msgid "a second"
+msgstr "un segundo"
+
+#: inc/class-cmp-feedback.php:105
+msgid "%s seconds"
+msgstr "%s segundos"
+
+#: inc/class-cmp-feedback.php:99
+msgid "a minute"
+msgstr "un minuto"
+
+#: inc/class-cmp-feedback.php:97
+msgid "%s minutes"
+msgstr "%s minutos"
+
+#: inc/class-cmp-feedback.php:91
+msgid "an hour"
+msgstr "una hora"
+
+#: inc/class-cmp-feedback.php:89
+msgid "%s hours"
+msgstr "%s horas"
+
+#: inc/class-cmp-feedback.php:83
+msgid "a day"
+msgstr "un día"
+
+#: inc/class-cmp-feedback.php:81
+msgid "%s days"
+msgstr "%s días"
+
+#: inc/class-cmp-feedback.php:75
+msgid "a week"
+msgstr "una semana"
+
+#: inc/class-cmp-feedback.php:73
+msgid "%s weeks"
+msgstr "%s semanas"
+
+#: inc/class-cmp-feedback.php:67
+msgid "a year"
+msgstr "un año"
+
+#: inc/class-cmp-feedback.php:65
+msgid "%s years"
+msgstr "%s años"
+
+#: cmp-sidebar.php:47
+msgid "Leave Feedback"
+msgstr "Dejar un comentario"
+
+#: inc/settings/settings-logo.php:39
+msgid "Click to set.."
+msgstr "Haz clic para establecer..."
+
+#: inc/settings/settings-contact_form.php:107
+msgid "If the list is empty, please make sure you have installed %s plugin and you have created a Contact Form. If not, you can create new Contact Form in %s > Contact > New"
+msgstr "Si la lista está vacía, comprueba que tienes instalado el plugin %s y has creado un formulario de contacto. De no ser así, puedes crear un nuevo formulario de contacto en %s > Contacto > Nuevo."
+
+#: inc/settings/settings-contact_form.php:85
+msgid "Please install Contact Form 7 plugin to select contact form."
+msgstr "Instala el plugin Contact Form 7 para seleccionar un formulario de contacto."
+
+#: inc/settings/settings-contact_form.php:81
+msgid "No contact forms detected. Please create a new Contact Form 7."
+msgstr "No se han detectado formularios de contacto. Crea un nuevo formulario de Contact Form 7."
+
+#: inc/settings/settings-contact_form.php:66
+msgid "Select your contact form"
+msgstr "Selecciona un formulario de contacto"
+
+#: inc/settings/settings-contact_form-disabled.php:18
+#: inc/settings/settings-contact_form.php:40
+msgid "3rd Party"
+msgstr "Origen externo"
+
+#: inc/settings/settings-contact_form-disabled.php:13
+#: inc/settings/settings-contact_form.php:35
+msgid "Contact Form Options"
+msgstr "Opciones del formulario de contacto"
+
+#: inc/settings/settings-contact_form-disabled.php:6
+#: inc/settings/settings-contact_form.php:27
+msgid "Contact Form"
+msgstr "Formulario de contacto"
+
+#: inc/class-cmp-subscribers.php:192 inc/cmp-update-process.php:127
+#: niteo-cmp.php:207
+msgid "Last Name"
+msgstr "Apellidos"
+
+#: inc/class-cmp-subscribers.php:191 inc/cmp-update-process.php:126
+#: niteo-cmp.php:206
+msgid "First Name"
+msgstr "Nombre"
+
+#: cmp-advanced.php:517
+msgid "You can Enable CMP Bypass where you can set custom URL parameter to bypass CMP page. You can send this URL to anyone who would like to sneak peak into your Website while it is under development or maintanence."
+msgstr "Puedes activar la omisión de CMP, donde puedes establecer una URL personalizada como parámetro para omitir la página de CMP. Puedes enviar esta URL a cualquiera que desee echar un vistazo a tu web mientras esté en construcción o en mantenimiento."
+
+#: cmp-advanced.php:513
+msgid "Please note this solution is using browser cookies which might not work correctly if you are using caching plugins."
+msgstr "Ten en cuenta que esta solución emplea cookies de navegador que podrían no funcionar correctamente si estás utilizando plugins de almacenamiento en caché."
+
+#: cmp-advanced.php:508
+msgid "Set bypass cookie Expiration Time in days"
+msgstr "Establece en días la omisión del tiempo de caducidad de la cookie"
+
+#: cmp-advanced.php:506
+msgid "You can use passphrase which contains letters, numbers, underscores or dashes only."
+msgstr "Puedes usar una frase de contraseña que contenga solamente letras, números, guiones o guiones bajos."
+
+#: cmp-advanced.php:503
+msgid "Set Bypass Passphrase"
+msgstr "Establece la frase de contraseña de omisión"
+
+#: cmp-advanced.php:501
+msgid "You can use this URL to bypass CMP maintenance page. Once you access your website with this URL, CMP Cookie will be set with default expiration of 2 days. If the cookie expires, you need to access your website again with this URL."
+msgstr "Puedes utilizar esta URL para omitir la página de «En mantenimiento» de CMP. Al acceder a tu web mediante esta URL, se establecerá la cookie de CMP con una caducidad por defecto de 2 días. Si la cookie caduca, deberás acceder a tu web otra vez mediante esta URL."
+
+#: cmp-advanced.php:497
+msgid "Bypass URL"
+msgstr "URL de omisión"
+
+#: cmp-advanced.php:467
+msgid "CMP Bypass URL"
+msgstr "URL de omisión de CMP"
+
+#: inc/settings/settings-slider.php:86
+msgid "Slice"
+msgstr "Rebanar"
+
+#: themes/construct/construct-settings.php:65
+msgid "Social Background Color"
+msgstr "Color de fondo de la interfaz social"
+
+#: inc/settings/settings-theme-selector.php:53
+#: inc/settings/settings-theme-selector.php:115
+msgid "PREVIEW"
+msgstr "VISTA PREVIA"
+
+#: cmp-advanced.php:673
+msgid "Administrator role can always access Top Bar"
+msgstr "El perfil de administrador puede acceder siempre a la barra superior."
+
+#: cmp-advanced.php:431
+msgid "Bypass User Roles"
+msgstr "Omisión según perfiles de usuario"
+
+#: niteo-cmp.php:1299
+msgid "There is a <b>recommended</b> update of <b>CMP Theme: %s</b> available:"
+msgstr "Hay una actualización <b>recomendada</b> disponible para el <b>tema CMP: %s</b>:"
+
+#: inc/render/social-icons.php:39
+msgid "Phone"
+msgstr "Teléfono"
+
+#: inc/settings/settings-social-media.php:51
+#: inc/settings/settings-social-media.php:112
+msgid "Phone Number"
+msgstr "Número telefónico"
+
+#: inc/settings/settings-social-media.php:47
+#: inc/settings/settings-social-media.php:100
+msgid "Email Address"
+msgstr "Dirección de correo electrónico"
+
+#: inc/settings/settings-seo.php:134
+msgid "Insert Google Analytics Tracking ID"
+msgstr "Inserta tu ID de seguimiento de Google Analytics"
+
+#: inc/settings/settings-seo.php:131
+msgid "Analytics is disabled"
+msgstr "La analítica está desactivada."
+
+#: inc/settings/settings-seo.php:121 inc/settings/settings-seo.php:122
+msgid "Other"
+msgstr "Otro"
+
+#: inc/settings/settings-seo.php:115 inc/settings/settings-seo.php:116
+msgid "Google Analytics"
+msgstr "Google Analytics"
+
+#: inc/settings/settings-seo.php:105
+msgid "Analytics"
+msgstr "Analítica"
+
+#: inc/settings/settings-seo.php:97
+msgid "Website Analytics"
+msgstr "Analítica de la web"
+
+#: inc/settings/settings-background.php:502
+#: inc/settings/settings-background.php:505
+#: inc/settings/settings-background.php:508
+#: inc/settings/settings-contact_form.php:62
+#: inc/settings/settings-content.php:47 inc/settings/settings-subscribe.php:245
+#: inc/settings/settings-subscribe.php:279
+msgid "Leave empty to disable"
+msgstr "Déjalo en blanco para que se desactive."
+
+#: inc/settings/settings-theme-selector.php:92
+msgid "Download more CMP Themes"
+msgstr "Descarga más temas de CMP"
+
+#: inc/settings/settings-theme-selector.php:7
+msgid "Available Themes"
+msgstr "Temas disponibles"
+
+#: cmp-advanced.php:452
+msgid "Administrator role always bypass CMP by default."
+msgstr "Por defecto, CMP se omite siempre para el perfil de administrador."
+
+#: inc/cmp-update-process.php:128 niteo-cmp.php:208
+msgid "Subscribe"
+msgstr "Suscríbete"
+
+#: cmp-advanced.php:435
+msgid "Select User Roles to bypass CMP landing page"
+msgstr "Selecciona los perfiles de usuario para los que se omitirá la página de destino de CMP"
+
+#: cmp-advanced.php:382
+msgid "CMP landing page is displayed on all pages by default. You can enable Page Whitelist to display CMP only on specific page(s) or Page Blacklist to exclude CMP landing page on specific page(s) by enabling Page Whitelist or Page Blacklist here."
+msgstr "Por defecto, la página de destino de CMP se muestra en todas las páginas. Puedes activar la lista blanca de páginas para que se muestre CMP solo en páginas específicas, o la lista negra de páginas para excluir la página de destino de CMP en páginas específicas, activando aquí Lista blanca de páginas o Lista negra de páginas."
+
+#: cmp-advanced.php:369
+msgid "If you want to exclude some pages from CMP you can select them here."
+msgstr "Si quieres excluir CMP en algunas páginas, puedes seleccionarlas aquí."
+
+#: cmp-advanced.php:359
+msgid "CMP Blacklist - select the pages to NOT display CMP landing page"
+msgstr "Lista negra de CMP: Selecciona las páginas donde NO se mostrará la página de destino de CMP"
+
+#: cmp-advanced.php:347
+msgid "By default CMP is enabled on all pages. Leave this field empty to use default settings."
+msgstr "Por defecto, CMP está activado en todas las páginas. Deja este campo en blanco para usar los ajustes por defecto."
+
+#: cmp-advanced.php:339 cmp-advanced.php:361
+msgid "Homepage"
+msgstr "Página de inicio"
+
+#: cmp-advanced.php:322
+msgid "Page Blacklist"
+msgstr "Lista negra de páginas"
+
+#: cmp-advanced.php:316
+msgid "Page Whitelist"
+msgstr "Lista blanca de páginas"
+
+#: cmp-advanced.php:311 cmp-advanced.php:475
+msgid "Whitelist Settings"
+msgstr "Ajustes de lista blanca"
+
+#: cmp-advanced.php:303
+msgid "CMP Page Whitelist and Blacklist Settings"
+msgstr "Ajustes de lista blanca y lista negra de páginas de CMP"
+
+#: inc/settings/settings-background.php:250
+msgid "Display Unsplash Photo"
+msgstr "Mostrar foto de Unsplash"
+
+#: inc/settings/settings-background.php:276
+msgid "Enter Unsplash User ID"
+msgstr "Escribe un ID de usuario de Unsplash"
+
+#: inc/settings/settings-background.php:269
+msgid "Limit photos to specific keyword (fashion, nature, technology..)"
+msgstr "Limitar fotos a una palabra clave específica (moda, naturaleza, tecnología...)"
+
+#: inc/settings/settings-background.php:263
+msgid "Enter <a href=\"%s\">Unsplash Collection</a> URL or Collection ID."
+msgstr "Escribe la URL o el ID de la <a href=\"%s\">colección de Unsplash</a>."
+
+#: inc/settings/settings-background.php:246
+msgid "Enter Unsplash Photo URL or Unsplash Photo ID"
+msgstr "Escribe la URL o el ID de la foto de Unsplash"
+
+#: inc/settings/settings-background.php:242
+msgid "Random from User"
+msgstr "Al azar a partir de un usuario"
+
+#: inc/settings/settings-footer.php:109
+msgid "Contact Phone"
+msgstr "Teléfono de contacto"
+
+#: inc/settings/settings-footer.php:25 inc/settings/settings-footer.php:100
+msgid "Contact Email"
+msgstr "Correo electrónico de contacto"
+
+#: inc/settings/settings-footer.php:72
+msgid "Contacts Title"
+msgstr "Título de la sección de contacto"
+
+#: inc/settings/settings-footer.php:59
+msgid "Extended Footer Content"
+msgstr "Contenido del pie de página extendido"
+
+#: inc/settings/settings-counter.php:76
+msgid "Counter Heading"
+msgstr "Encabezado del contador"
+
+#: inc/settings/settings-typography.php:73
+msgid "Line Height"
+msgstr "Alto de línea"
+
+#: inc/settings/settings-typography.php:14
+#: inc/settings/settings-typography.php:49
+msgid "Select Font Family from "
+msgstr "Selecciona una familia de fuente de "
+
+#: inc/settings/settings-typography.php:94
+#: inc/settings/settings-typography.php:105
+msgid "Fade In Right"
+msgstr "Fundido de entrada desde la derecha"
+
+#: inc/settings/settings-typography.php:93
+#: inc/settings/settings-typography.php:104
+msgid "Fade In Left"
+msgstr "Fundido de entrada desde la izquierda"
+
+#: inc/settings/settings-typography.php:92
+#: inc/settings/settings-typography.php:103
+msgid "Fade In Up"
+msgstr "Fundido de entrada desde arriba"
+
+#: inc/settings/settings-typography.php:91
+#: inc/settings/settings-typography.php:102
+msgid "Fade In Down"
+msgstr "Fundido de entrada desde abajo"
+
+#: inc/settings/settings-typography.php:90
+#: inc/settings/settings-typography.php:101
+msgid "No animation"
+msgstr "Sin animación"
+
+#: inc/settings/settings-typography.php:37
+#: inc/settings/settings-typography.php:68
+msgid "Letter Spacing"
+msgstr "Espaciado entre caracteres"
+
+#: inc/settings/settings-typography.php:31
+#: inc/settings/settings-typography.php:63
+msgid "Font Size"
+msgstr "Tamaño de fuente"
+
+#: inc/settings/settings-typography.php:21
+#: inc/settings/settings-typography.php:56
+msgid "Variant"
+msgstr "Variante"
+
+#: niteo-cmp.php:1131
+msgid "CMP Preview"
+msgstr "Vista previa de CMP"
+
+#: niteo-cmp.php:1090
+msgid "Redirect Mode:"
+msgstr "Modo Redirección:"
+
+#: niteo-cmp.php:1086
+msgid "Coming Soon Mode:"
+msgstr "Modo Próximamente:"
+
+#: niteo-cmp.php:1082
+msgid "Maintenance Mode:"
+msgstr "Modo Mantenimiento:"
+
+#: inc/settings/settings-background.php:432
+msgid "Gradient"
+msgstr "Degradado"
+
+#: niteo-cmp.php:660
+msgid "Upload CMP Theme"
+msgstr "Subir tema de CMP"
+
+#: niteo-cmp.php:610 niteo-cmp.php:655 niteo-cmp.php:1027
+msgid "CMP Settings"
+msgstr "Ajustes de CMP"
+
+#: inc/settings/settings-background.php:411
+#: inc/settings/settings-background.php:469
+msgid "Select second gradient color:"
+msgstr "Selecciona el segundo color del degradado:"
+
+#: inc/settings/settings-background.php:408
+#: inc/settings/settings-background.php:466
+msgid "Select first gradient color:"
+msgstr "Selecciona el primer color del degradado:"
+
+#: inc/settings/settings-background.php:403
+#: inc/settings/settings-background.php:460
+msgid "Custom Gradient"
+msgstr "Degradado personalizado"
+
+#: inc/settings/settings-background.php:51
+msgid "Dark grey"
+msgstr "Gris oscuro"
+
+#: inc/settings/settings-background.php:50
+msgid "Grey"
+msgstr "Gris"
+
+#: inc/settings/settings-background.php:49
+msgid "Light grey"
+msgstr "Gris claro"
+
+#: inc/settings/settings-background.php:48
+msgid "Violet"
+msgstr "Violeta"
+
+#: inc/settings/settings-background.php:47
+msgid "Purple"
+msgstr "Púrpura"
+
+#: inc/settings/settings-background.php:46
+msgid "Sky blue"
+msgstr "Celeste"
+
+#: inc/settings/settings-background.php:45
+msgid "Green Pastel"
+msgstr "Verde pastel"
+
+#: inc/settings/settings-background.php:44
+msgid "Green"
+msgstr "Verde"
+
+#: inc/settings/settings-background.php:43
+msgid "Yellow"
+msgstr "Amarillo"
+
+#: inc/settings/settings-background.php:42
+msgid "Orange"
+msgstr "Naranja"
+
+#: inc/settings/settings-background.php:41
+msgid "Red"
+msgstr "Rojo"
+
+#: inc/settings/settings-background.php:40
+msgid "Sublime Vivid"
+msgstr "Sublime vivo"
+
+#: inc/settings/settings-background.php:39
+msgid "Youtube"
+msgstr "YouTube"
+
+#: inc/settings/settings-background.php:38
+msgid "Horizon"
+msgstr "Horizonte"
+
+#: inc/settings/settings-background.php:37
+msgid "Rose Water"
+msgstr "Agua de rosas"
+
+#: inc/settings/settings-background.php:36
+msgid "Bloody Mary"
+msgstr "Cóctel sangriento"
+
+#: inc/settings/settings-background.php:35
+msgid "Aqua Marine"
+msgstr "Aguamarina"
+
+#: inc/settings/settings-background.php:34
+msgid "Purlple Paradise"
+msgstr "Paraíso púrpura"
+
+#: inc/settings/settings-background.php:33
+msgid "Shroom Haze"
+msgstr "Niebla alucinógena"
+
+#: inc/settings/settings-background.php:32
+msgid "Calm Darya"
+msgstr "Mar en calma"
+
+#: inc/settings/settings-background.php:31
+msgid "Influenza"
+msgstr "Influenza"
+
+#: inc/settings/settings-background.php:30
+msgid "Miaka"
+msgstr "Miaka"
+
+#: inc/settings/settings-background.php:29
+msgid "Blury Beach"
+msgstr "Playa borrosa"
+
+#: inc/settings/settings-background.php:393
+msgid "Select Gradient Background"
+msgstr "Selecciona un fondo degradado"
+
+#: inc/settings/settings-background.php:103
+msgid "Gradient Color"
+msgstr "Color degradado"
+
+#: inc/class-cmp-translate.php:94
+msgid "No Translation Variables!"
+msgstr "¡No hay variables de traducción!"
+
+#: inc/class-cmp-translate.php:49
+msgid "Translation"
+msgstr "Traducción"
+
+#: inc/class-cmp-translate.php:48
+msgid "String"
+msgstr "Cadena"
+
+#: inc/class-cmp-translate.php:20
+msgid "Tranlation String"
+msgstr "Cadena de traducción"
+
+#: inc/class-cmp-translate.php:19
+msgid "Translation string"
+msgstr "Cadena de traducción"
+
+#: inc/settings/settings-slider.php:109
+msgid "Number of Unplash media Slides (applies only for Unsplash photos)"
+msgstr "Número de diapositivas de medios de Unsplash (solo se aplica a las fotos de Unsplash)"
+
+#: inc/settings/settings-background.php:343
+msgid "Media Library"
+msgstr "Biblioteca de medios"
+
+#: inc/settings/settings-background.php:308
+msgid "Select or Upload custom Video file"
+msgstr "Selecciona o sube un archivo de vídeo personalizado"
+
+#: inc/settings/settings-background.php:291
+msgid "Custom Video File"
+msgstr "Archivo de vídeo personalizado"
+
+#: inc/settings/settings-background.php:88
+msgid "Video"
+msgstr "Vídeo"
+
+#: inc/settings/settings-general.php:56
+msgid "Delay Time in Seconds"
+msgstr "Tiempo de retraso en segundos"
+
+#: inc/settings/settings-slider-disabled.php:5
+#: inc/settings/settings-slider.php:34
+msgid "Image Slider Setup"
+msgstr "Configuración del carrusel de imágenes"
+
+#: inc/settings/settings-footer-disabled.php:8
+msgid "Footer is not supported by the selected Theme."
+msgstr "El pie de página no es compatible con el tema seleccionado."
+
+#: cmp-sidebar.php:61
+msgid "Request new features"
+msgstr "Solicita nuevas características"
+
+#: inc/settings/settings-background.php:303
+msgid "Enter Vimeo URL"
+msgstr "Escribe la URL de Vimeo"
+
+#: inc/settings/settings-background.php:297
+msgid "Enter Youtube URL"
+msgstr "Escribe la URL de YouTube"
+
+#: inc/settings/settings-background.php:292
+msgid "Vimeo (coming soon...)"
+msgstr "Vimeo (próximamente...)"
+
+#: inc/settings/settings-background.php:290
+#: inc/settings/settings-social-media.php:58
+msgid "YouTube"
+msgstr "YouTube"
+
+#: inc/settings/settings-background.php:287
+msgid "Select Video Source"
+msgstr "Selecciona el origen del vídeo"
+
+#: inc/settings/settings-background.php:77
+msgid "Custom Images"
+msgstr "Imágenes personalizadas"
+
+#. Author URI of the plugin
+#: niteo-cmp.php
+msgid "https://www.niteothemes.com"
+msgstr "https://www.niteothemes.com"
+
+#: niteo-cmp.php:1985
+msgid "CMP Settings Saved"
+msgstr "Se han guardado los ajustes de CMP"
+
+#: niteo-cmp.php:1915
+msgid "Date"
+msgstr "Fecha"
+
+#: inc/settings/settings-slider.php:107
+msgid "Slider Autostart"
+msgstr "Inicio automático del carrusel"
+
+#: inc/settings/settings-slider.php:79
+msgid "Fade"
+msgstr "Desvanecer"
+
+#: inc/settings/settings-slider.php:73
+msgid "Slide"
+msgstr "Deslizar"
+
+#: inc/settings/settings-slider.php:63
+msgid "To display Slider on CMP Landing page make sure you inserted two or more Custom Photos from Media Library. Slider is also disabled when Specific Unsplash photo or Default Media is selected."
+msgstr "Para mostrar el carrusel en la página de destino de CMP, asegúrate de haber insertado unas dos o más fotos personalizadas de la biblioteca de medios. El carrusel también se desactiva al seleccionarse Medios por defecto o una foto específica de Unsplash."
+
+#: inc/settings/settings-slider.php:59
+msgid "Slider is disabled."
+msgstr "El carrusel está desactivado."
+
+#: inc/settings/settings-slider-disabled.php:11
+#: inc/settings/settings-slider.php:40 inc/settings/settings-slider.php:66
+msgid "Slider setup"
+msgstr "Configuración del carrusel"
+
+#: inc/class-cmp-subscribers.php:279
+msgid "No subscribers yet!"
+msgstr "¡Sin suscriptores aún!"
+
+#: inc/class-cmp-subscribers.php:81
+msgid "Delete"
+msgstr "Borrar"
+
+#: inc/class-cmp-subscribers.php:195
+msgid "IP Address"
+msgstr "Dirección IP"
+
+#: inc/class-cmp-subscribers.php:194
+msgid "Time"
+msgstr "Hora"
+
+#: inc/class-cmp-subscribers.php:193 inc/render/social-icons.php:34
+#: niteo-cmp.php:1916
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: inc/class-cmp-subscribers.php:190 niteo-cmp.php:1914
+msgid "ID"
+msgstr "ID"
+
+#: inc/class-cmp-subscribers.php:65
+msgid "Delete Selected"
+msgstr "Borrar los seleccionados"
+
+#: inc/class-cmp-subscribers.php:16
+msgid "subscribers"
+msgstr "suscriptores"
+
+#: inc/class-cmp-subscribers.php:15
+msgid "subscriber"
+msgstr "suscriptor"
+
+#: cmp-subscribers.php:30
+msgid "Export All Subscribers"
+msgstr "Exportar todos los suscriptores"
+
+#: cmp-subscribers.php:25
+msgid "View / Edit CMP Subscribers"
+msgstr "Ver / Editar suscriptores de CMP"
+
+#: cmp-sidebar.php:44
+msgid "If you find our CMP plugin useful, please show us some love and give 5%s feedback by pressing button below."
+msgstr "Si nuestro plugin CMP te resulta útil, muéstranos un poco de amor y danos una valoración de 5 %s pulsando el botón de abajo."
+
+#: cmp-sidebar.php:43
+msgid "Thank you for rating us with five stars!"
+msgstr "¡Gracias por valorarnos con cinco estrellas!"
+
+#: inc/settings/settings-seo.php:11
+msgid "Favicon"
+msgstr "Favicon"
+
+#: inc/settings/settings-background.php:59
+msgid "Graphic Background"
+msgstr "Fondo gráfico"
+
+#: inc/settings/settings-logo.php:73
+msgid "Logo is disabled"
+msgstr "El logotipo está desactivado."
+
+#: inc/settings/settings-logo-disabled.php:22
+#: inc/settings/settings-logo-disabled.php:23 inc/settings/settings-logo.php:22
+#: inc/settings/settings-logo.php:23
+msgid "Graphic Logo"
+msgstr "Logotipo gráfico"
+
+#: inc/settings/settings-logo-disabled.php:16
+#: inc/settings/settings-logo-disabled.php:17 inc/settings/settings-logo.php:16
+#: inc/settings/settings-logo.php:17
+msgid "Text Logo"
+msgstr "Logotipo de texto"
+
+#: inc/settings/settings-logo-disabled.php:12 inc/settings/settings-logo.php:12
+msgid "Logo setup"
+msgstr "Configuración del logotipo"
+
+#: inc/settings/settings-logo-disabled.php:5 inc/settings/settings-logo.php:5
+msgid "Logo Setup"
+msgstr "Configuración del logotipo"
+
+#: inc/settings/settings-general.php:53
+msgid "Choose Redirect Mode if you want to redirect your website to another URL."
+msgstr "Selecciona el modo Redirección si deseas redirigir tu web a otra URL."
+
+#: inc/settings/settings-general.php:52
+msgid "Redirect Mode"
+msgstr "Modo Redirección"
+
+#. Author of the plugin
+#: niteo-cmp.php
+msgid "NiteoThemes"
+msgstr "NiteoThemes"
+
+#. Description of the plugin
+#: niteo-cmp.php
+msgid "Display customizable landing page for Coming Soon, Maintenance & Under Construction page."
+msgstr "Presenta una página de destino personalizable para las páginas de «Próximamente», «En mantenimiento» y «En construcción»."
+
+#. Plugin URI of the plugin
+#: niteo-cmp.php
+msgid "https://wordpress.org/plugins/cmp-coming-soon-maintenance/"
+msgstr "https://es.wordpress.org/plugins/cmp-coming-soon-maintenance/"
+
+#. Plugin Name of the plugin
+#: niteo-cmp.php
+msgid "CMP - Coming Soon & Maintenance Plugin"
+msgstr "CMP - Coming Soon & Maintenance Plugin"
+
+#: inc/cmp-update-process.php:120 niteo-cmp.php:200
+msgid "Insert your email address."
+msgstr "Inserta tu dirección de correo electrónico."
+
+#: themes/countdown/countdown-social_settings.php:11
+msgid "Footer (small icons)"
+msgstr "Pie de página (iconos pequeños)"
+
+#: themes/countdown/countdown-social_settings.php:10
+msgid "Below Content (big icons)"
+msgstr "Debajo del contenido (iconos grandes)"
+
+#: themes/countdown/countdown-social_settings.php:6
+msgid "Social Icons Location"
+msgstr "Ubicación de los iconos sociales"
+
+#: inc/settings/settings-counter.php:114
+msgid "Enter redirect URL"
+msgstr "Escribe la URL de redirección"
+
+#: inc/settings/settings-counter.php:97
+msgid "URL Redirect"
+msgstr "Redirigir a una URL"
+
+#: inc/settings/settings-counter.php:94
+msgid "No Action"
+msgstr "Ninguna acción"
+
+#: inc/settings/settings-counter.php:91
+msgid "Countdown action:"
+msgstr "Acción de cuenta regresiva:"
+
+#: inc/settings/settings-counter.php:89
+msgid "Select Date.."
+msgstr "Seleccionar fecha..."
+
+#: inc/settings/settings-counter.php:68
+msgid "Countdown timer is disabled."
+msgstr "El temporizador de cuenta atrás está desactivado."
+
+#: cmp-advanced.php:480 cmp-advanced.php:646 cmp-advanced.php:713
+#: cmp-advanced.php:860 inc/settings/settings-counter-disabled.php:13
+#: inc/settings/settings-counter.php:54
+#: inc/settings/settings-lang-switcher-disabled.php:17
+#: inc/settings/settings-lang-switcher.php:48
+#: inc/settings/settings-login-icon.php:42
+#: inc/settings/settings-progress-bar.php:51
+#: inc/settings/settings-slider-disabled.php:16
+#: inc/settings/settings-slider.php:45
+msgid "Enabled"
+msgstr "Activar"
+
+#: inc/settings/settings-counter-disabled.php:8
+#: inc/settings/settings-counter.php:49 inc/settings/settings-counter.php:86
+msgid "Counter setup"
+msgstr "Configuración del contador"
+
+#: inc/settings/settings-counter-disabled.php:2
+#: inc/settings/settings-counter.php:43
+msgid "Countdown Timer Setup"
+msgstr "Configuración del temporizador de cuenta atrás"
+
+#: inc/settings/settings-login-icon.php:64
+#: themes/construct/construct-settings.php:56
+msgid "Background Color"
+msgstr "Color de fondo"
+
+#: themes/construct/construct-settings.php:47
+#: themes/countdown/countdown-settings.php:49
+#: themes/hardwork/hardwork-settings.php:38
+msgid "Font Color"
+msgstr "Color de fuente"
+
+#: themes/construct/construct-settings.php:41
+msgid "Headings and active elements color (buttons, hover links, etc)."
+msgstr "Color de encabezados y elementos activos (botones, enlaces al pasar el cursor, etc.)."
+
+#: themes/construct/construct-settings.php:37
+#: themes/countdown/countdown-settings.php:39
+msgid "Active Color"
+msgstr "Color activo"
+
+#: themes/construct/construct-settings.php:34
+#: themes/countdown/countdown-settings.php:36
+#: themes/hardwork/hardwork-settings.php:34
+msgid "Customize Colors"
+msgstr "Personalizar colores"
+
+#: inc/cmp-update-process.php:123 niteo-cmp.php:203
+msgid "Thank you! Your sign up request was successful."
+msgstr "¡Gracias! Tu solicitud de registro se procesó correctamente."
+
+#: niteo-cmp.php:1488
+msgid "General Error during updating Theme files."
+msgstr "Error general durante la actualización de los archivos del tema."
+
+#: niteo-cmp.php:1480
+msgid "Error during updating Theme files:"
+msgstr "Error durante la actualización de los archivos del tema:"
+
+#: niteo-cmp.php:1405
+msgid " file extension is not supported. Please upload ZIP file containing CMP Theme."
+msgstr " es una extensión de archivo que no es compatible. Sube un archivo ZIP que contenga un tema de CMP."
+
+#: niteo-cmp.php:1405
+msgid "Unable to upload new Theme file ."
+msgstr "No se puede subir el nuevo archivo del tema."
+
+#: niteo-cmp.php:1393 niteo-cmp.php:1473
+msgid "Error creating Theme subdirectory!"
+msgstr "¡Error al crear el subdirectorio del tema!"
+
+#: niteo-cmp.php:1389
+msgid "There was an error unzipping the file!"
+msgstr "¡Ha habido un error al descomprimir el archivo!"
+
+#: niteo-cmp.php:1386
+msgid " theme was successfully installed!"
+msgstr " se ha instalado correctamente."
+
+#: cmp-upload.php:22
+msgid "Select CMP Theme ZIP file to upload"
+msgstr "Selecciona el archivo ZIP del tema CMP a subir"
+
+#: inc/settings/settings-css.php:7
+msgid "Enter Custom CSS"
+msgstr "Escribe el CSS personalizado"
+
+#: inc/settings/settings-seo.php:6
+msgid "SEO Settings"
+msgstr "Ajustes de SEO"
+
+#: inc/settings/settings-footer.php:15
+msgid "Copyright"
+msgstr "Copyright"
+
+#: inc/settings/settings-footer-disabled.php:2
+#: inc/settings/settings-footer.php:11
+msgid "Footer Content"
+msgstr "Contenido del pie de página"
+
+#: inc/settings/settings-social-media.php:88
+msgid "Website URL"
+msgstr "URL de la web"
+
+#: inc/settings/settings-social-media.php:88
+msgid "Position"
+msgstr "Posición"
+
+#: inc/settings/settings-social-media.php:28
+msgid "Click on Social Icons below to enable Social Media settings."
+msgstr "Haz clic en los iconos sociales de abajo para activar los ajustes de medios sociales."
+
+#: inc/settings/settings-social-media.php:26
+msgid "Social Media Icons"
+msgstr "Iconos de medios sociales"
+
+#: inc/settings/settings-social-media.php:15
+msgid "Social Section Title"
+msgstr "Título de la sección social"
+
+#: inc/settings/settings-social-media.php:7
+msgid "Social Media"
+msgstr "Medios sociales"
+
+#: inc/settings/settings-subscribe.php:313
+msgid "Total Subscribers: "
+msgstr "Total de suscriptores: "
+
+#: inc/settings/settings-subscribe.php:231
+msgid "You can find Shortode in your Contact Form Plugin settings. Should be something similar to code below: "
+msgstr "Puedes encontrar el shortcode en los ajustes del plugin Contact Form. Debe ser algo similar al siguiente código: "
+
+#: inc/settings/settings-contact_form.php:55
+#: inc/settings/settings-subscribe.php:215
+msgid "Subscribe Form is disabled."
+msgstr "El formulario de suscripción está desactivado."
+
+#: inc/settings/settings-subscribe-disabled.php:24
+#: inc/settings/settings-subscribe.php:201
+msgid "3rd Party Plugin"
+msgstr "Plugin de terceros"
+
+#: inc/settings/settings-subscribe-disabled.php:13
+#: inc/settings/settings-subscribe.php:184
+msgid "Subscribe Form Options"
+msgstr "Opciones del formulario de suscripción"
+
+#: inc/settings/settings-subscribe-disabled.php:6
+#: inc/settings/settings-subscribe.php:177
+msgid "Subscribe Form"
+msgstr "Formulario de suscripción"
+
+#: inc/settings/settings-typography.php:45
+msgid "Content Font"
+msgstr "Fuente del contenido"
+
+#: inc/settings/settings-typography.php:11
+msgid "Headings Font"
+msgstr "Fuente de los encabezados"
+
+#: inc/settings/settings-typography.php:7
+msgid "Customize Fonts"
+msgstr "Personalizar fuentes"
+
+#: inc/settings/settings-background.php:385
+msgid "Select Color"
+msgstr "Selecciona un color"
+
+#: inc/settings/settings-background.php:371
+msgid "Custom Pattern..."
+msgstr "Patrón personalizado..."
+
+#: inc/settings/settings-background.php:364
+msgid "Select Pattern"
+msgstr "Selecciona un patrón"
+
+#: inc/settings/settings-background.php:239
+msgid "Random Photo"
+msgstr "Foto al azar"
+
+#: inc/settings/settings-background.php:241
+msgid "Random from Collection"
+msgstr "Al azar a partir de una colección"
+
+#: inc/settings/settings-background.php:240
+msgid "Specific Photo"
+msgstr "Foto específica"
+
+#: inc/settings/settings-background.php:237
+msgid "Choose Unsplash Feed"
+msgstr "Elige un feed de Unsplash"
+
+#: inc/settings/settings-background.php:280
+msgid "is a world leading source for free to use high quality stock images. All of the images that are submitted and published on Unsplash fall under under the <a href=\"https://unsplash.com/license\"> Unsplash license</a>, which means you can use the image for any personal or commercial use."
+msgstr "es un repositorio líder mundial en imágenes de archivo de alta calidad y de uso libre. Todas las imágenes enviadas a Unsplash y publicadas allí se distribuyen con la <a href=\"https://unsplash.com/license\">licencia Unsplash</a>, lo que significa que puedes utilizar la imagen para cualquier finalidad personal o comercial."
+
+#: inc/settings/settings-background.php:145
+msgid "Pro Tip! You can select multiple Media from your library by holding CTRL+click (Command+click if you use MacOS) while selecting photos."
+msgstr "¡Consejo profesional! Puedes seleccionar varios medios de tu biblioteca manteniendo presionada la tecla Control mientras haces clic (Comando + clic si estás en MacOS) para seleccionar las fotos."
+
+#: inc/settings/settings-background.php:98
+#: inc/settings/settings-background.php:430
+msgid "Solid Color"
+msgstr "Color sólido"
+
+#: inc/settings/settings-background.php:93
+msgid "Graphic Pattern"
+msgstr "Patrón gráfico"
+
+#: inc/settings/settings-background.php:71
+msgid "Default Media"
+msgstr "Medios por defecto"
+
+#: inc/settings/settings-background.php:83
+msgid "Unsplash library"
+msgstr "Biblioteca de Unsplash"
+
+#: inc/settings/settings-background.php:66
+msgid "Banner Settings"
+msgstr "Ajustes del banner"
+
+#: inc/settings/settings-content.php:53
+msgid "Message"
+msgstr "Mensaje"
+
+#: inc/settings/settings-theme-selector.php:99
+msgid "Premium Themes"
+msgstr "Temas de pago"
+
+#: inc/settings/settings-theme-selector.php:55
+#: inc/settings/settings-theme-selector.php:117
+msgid "DETAILS"
+msgstr "DETALLES"
+
+#: inc/settings/settings-social-media.php:88
+#: inc/settings/settings-theme-selector.php:66
+msgid "Active"
+msgstr "Activo"
+
+#: inc/settings/settings-theme-selector.php:13
+msgid "Free Themes"
+msgstr "Temas gratuitos"
+
+#: cmp-translate.php:55 inc/class-cmp-render_settings.php:31
+msgid "Save All Changes"
+msgstr "Guardar todos los cambios"
+
+#: inc/settings/settings-general.php:48
+msgid "Returns 503 HTTP Service unavailable code to indexing robots. Set this option if your site is down due to maintanance and you want to display Maintanance page."
+msgstr "Devuelve el código HTTP 503 Servicio no disponible a los robots de indización. Establece esta opción si tu sitio está de baja por mantenimiento y quieres mostrar la página de «En mantenimiento»."
+
+#: inc/settings/settings-general.php:47
+msgid "Maintenance Mode"
+msgstr "Modo de mantenimiento"
+
+#: inc/settings/settings-general.php:43
+msgid "Returns standard 200 HTTP OK response code to indexing robots. Set this option if you want to use our plugin as \"Coming Soon\" page."
+msgstr "Devuelve el código de respuesta estándar HTTP 200 OK a los robots de indización. Establece esta opción si quieres utilizar nuestro plugin como página de «Próximamente»."
+
+#: inc/settings/settings-general.php:42
+msgid "Coming Soon & Landing Page"
+msgstr "Página de «Próximamente» y de destino"
+
+#: cmp-advanced.php:328 cmp-advanced.php:486 cmp-advanced.php:652
+#: cmp-advanced.php:719 cmp-advanced.php:866
+#: inc/settings/settings-background.php:434
+#: inc/settings/settings-contact_form-disabled.php:24
+#: inc/settings/settings-contact_form.php:46
+#: inc/settings/settings-counter-disabled.php:19
+#: inc/settings/settings-counter.php:60
+#: inc/settings/settings-footer-disabled.php:6
+#: inc/settings/settings-lang-switcher-disabled.php:23
+#: inc/settings/settings-lang-switcher.php:54
+#: inc/settings/settings-login-icon.php:48
+#: inc/settings/settings-logo-disabled.php:28
+#: inc/settings/settings-logo-disabled.php:29 inc/settings/settings-logo.php:28
+#: inc/settings/settings-logo.php:29 inc/settings/settings-progress-bar.php:57
+#: inc/settings/settings-seo.php:109 inc/settings/settings-seo.php:110
+#: inc/settings/settings-slider-disabled.php:22
+#: inc/settings/settings-slider.php:51
+#: inc/settings/settings-special_effects-disabled.php:30
+#: inc/settings/settings-special_effects.php:48
+#: inc/settings/settings-subscribe-disabled.php:30
+#: inc/settings/settings-subscribe.php:207
+msgid "Disabled"
+msgstr "Desactivar"
+
+#: inc/settings/settings-general.php:6
+msgid "General Settings"
+msgstr "Ajustes generales"
+
+#: cmp-settings.php:616
+msgid "Preview"
+msgstr "Vista previa"
+
+#: cmp-settings.php:612
+msgid "Custom CSS"
+msgstr "CSS personalizado"
+
+#: cmp-settings.php:606 inc/settings/settings-footer.php:63
+msgid "Content"
+msgstr "Contenido"
+
+#: cmp-settings.php:603
+msgid "Settings"
+msgstr "Ajustes"
+
+#: cmp-settings.php:581
+msgid "JavaScript appears to be disabled in your browser. For this plugin to work correctly, please enable JavaScript or switch to a more modern browser."
+msgstr "Parece que JavaScript está desactivado en tu navegador. Para que este plugin funcione correctamente, activa JavaScript o cambia a un navegador más moderno."
