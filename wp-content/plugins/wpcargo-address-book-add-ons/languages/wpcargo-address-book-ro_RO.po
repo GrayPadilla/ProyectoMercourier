@@ -1,0 +1,698 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPCargo Address Book Add-ons\n"
+"POT-Creation-Date: 2022-02-23 17:04+0800\n"
+"PO-Revision-Date: 2022-02-23 17:04+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ro_RO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n==0 || (n!=1 && n%100>=1 && n"
+"%100<=19) ? 1 : 2);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpcargo-address-book-add-ons.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: admin/classes/class-address-book-scripts.php:31
+#: admin/classes/class-address-book-scripts.php:82
+#: admin/includes/functions.php:556
+msgid "Search Address"
+msgstr "Cauta adresa"
+
+#: admin/classes/class-address-book-scripts.php:32
+#: admin/classes/class-address-book-scripts.php:83
+msgid "Please enter more characters"
+msgstr "Vă rugăm să introduceți mai multe caractere"
+
+#: admin/classes/class-address-book-scripts.php:33
+#: admin/classes/class-address-book-scripts.php:84
+msgid "Please delete some character"
+msgstr "Vă rugăm să ștergeți unele caracter"
+
+#: admin/classes/class-address-book-scripts.php:34
+#: admin/classes/class-address-book-scripts.php:38
+#: admin/classes/class-address-book-scripts.php:85
+#: admin/classes/class-address-book-scripts.php:89
+msgid "Error loading results"
+msgstr "Eroare la încărcarea rezultatelor"
+
+#: admin/classes/class-address-book-scripts.php:35
+#: admin/classes/class-address-book-scripts.php:86
+msgid "Loading more results"
+msgstr "Încărcarea mai multor rezultate"
+
+#: admin/classes/class-address-book-scripts.php:36
+#: admin/classes/class-address-book-scripts.php:87
+msgid "No results found"
+msgstr "Niciun rezultat găsit!"
+
+#: admin/classes/class-address-book-scripts.php:37
+#: admin/classes/class-address-book-scripts.php:88
+msgid "Searching..."
+msgstr "In căutare..."
+
+#: admin/classes/class-address-book-scripts.php:58
+#: admin/classes/class-address-book-scripts.php:109
+msgid "Are you sure you want to delete this Book Address?"
+msgstr "Sunteți sigur că doriți să ștergeți această adresă de carte?"
+
+#: admin/classes/class-address-book-scripts.php:102
+#: admin/classes/class-address-book-scripts.php:103
+msgid "Are you sure you want to Cancel Order?"
+msgstr "Sunteți sigur că doriți să anulați comanda?"
+
+#: admin/classes/class-address-book-scripts.php:104
+msgid "Something went wrong cannot cancel Quotation, Please contact support."
+msgstr ""
+"Ceva nu a mers bine nu poate anula Citat, Vă rugăm să contactați asistența."
+
+#: admin/classes/class-address-book-scripts.php:105
+msgid "Something went wrong during the process. Please try again later."
+msgstr ""
+"Ceva nu a mers bine în timpul procesului. Încercați din nou mai târziu."
+
+#: admin/classes/class-address-book-scripts.php:106
+msgid "Edit Book Address"
+msgstr "Editarea adresei cărții"
+
+#: admin/classes/class-address-book-scripts.php:107
+#: admin/templates/book.tpl.php:4 admin/templates/user-book.tpl.php:4
+msgid "Add"
+msgstr "Adaugă"
+
+#: admin/classes/class-address-book-scripts.php:107
+#: admin/templates/book.tpl.php:4 admin/templates/user-book.tpl.php:4
+#: templates/address-book.tpl.php:2
+msgid "Address"
+msgstr "Adresa"
+
+#: admin/classes/class-address-book-scripts.php:108
+msgid "Book List"
+msgstr "Lista de cărți"
+
+#: admin/classes/class-address-book-scripts.php:110
+msgid "Are you sure you want to set all in public?"
+msgstr "Ești sigur că doriți să setați toate în public?"
+
+#: admin/classes/class-address-book-scripts.php:111
+msgid "Are you sure you want to remove all from public?"
+msgstr "Sunteți sigur că doriți să eliminați totul din public?"
+
+#: admin/classes/class-address-book-table.php:38
+#: admin/classes/class-import-export.php:46
+msgid "User Name"
+msgstr "Nume de utilizator"
+
+#: admin/classes/class-address-book-table.php:39
+msgid "View Book Address"
+msgstr "Vezi adresa cărții"
+
+#: admin/classes/class-address-book-table.php:40
+msgid "Role"
+msgstr "Rol"
+
+#: admin/classes/class-address-book-table.php:41
+msgid "No. Shipper Address"
+msgstr "Nu. Adresa expeditorului"
+
+#: admin/classes/class-address-book-table.php:42
+msgid "No. Receiver Address"
+msgstr "Nu. Adresa destinatarului"
+
+#: admin/classes/class-import-export.php:13
+#: admin/classes/class-import-export.php:14
+msgid "Import/Export"
+msgstr "Import/Export"
+
+#: admin/classes/class-import-export.php:46
+#: admin/classes/class-import-export.php:104
+#: admin/classes/class-import-export.php:189
+msgid "userID"
+msgstr "userID"
+
+#: admin/classes/class-import-export.php:80
+msgid "Importing Address"
+msgstr "Importarea adresei"
+
+#: admin/classes/class-import-export.php:112
+msgid "Wrong File Format uploaded. It must be .CSV format."
+msgstr "Format de fișier greșit încărcat. Trebuie să fie . Format CSV."
+
+#: admin/classes/class-import-export.php:155
+msgid ""
+"Something went wrong! Please check your file header or Check Mac / "
+"International language settings compatibility issue"
+msgstr ""
+"Ceva nu a mers bine! Vă rugăm să verificați antetul fișierului sau "
+"verificați problema compatibilității setărilor de limbă Mac / Internațională"
+
+#: admin/classes/class-import-export.php:200
+msgid "Address Book Import/Export"
+msgstr "Import/Export agendă"
+
+#: admin/includes/functions.php:306
+msgid "There is no error, the file uploaded with success."
+msgstr "Nu există nici o eroare, fișierul încărcat cu succes."
+
+#: admin/includes/functions.php:307
+msgid "The uploaded file exceeds the upload_max_filesize directive in php.ini."
+msgstr "Fișierul încărcat depășește directiva upload_max_filesize în php.ini."
+
+#: admin/includes/functions.php:308
+msgid ""
+"The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in "
+"the HTML form."
+msgstr ""
+"Fișierul încărcat depășește MAX_FILE_SIZE directivă care a fost specificată "
+"în formularul HTML."
+
+#: admin/includes/functions.php:309
+msgid "The uploaded file was only partially uploaded."
+msgstr "Fișierul încărcat a fost încărcat doar parțial."
+
+#: admin/includes/functions.php:310
+msgid "No file was uploaded."
+msgstr "Nu a fost încărcat nici un fișier."
+
+#: admin/includes/functions.php:311
+msgid "Missing a temporary folder."
+msgstr "Lipsește dosarul temporar."
+
+#: admin/includes/functions.php:312
+msgid "Failed to write file to disk."
+msgstr "Nu a reușit să scrie fișier pe disc."
+
+#: admin/includes/functions.php:313
+msgid "A PHP extension stopped the file upload."
+msgstr "O extensie PHP a oprit încărcarea fișierului."
+
+#: admin/includes/functions.php:429 admin/includes/functions.php:520
+#: admin/includes/hooks.php:418
+msgid "Address Book"
+msgstr "Agenda"
+
+#: admin/includes/functions.php:490
+msgid "Please activate your license key <a href=\""
+msgstr "Vă rugăm să activați cheia de licență <a href=\""
+
+#: admin/includes/functions.php:493
+msgid ""
+"This user is not allowed to have Address Book, Please update user role with "
+"WPCargo user role."
+msgstr ""
+"Acest utilizator nu este permis să aibă Agendă, Vă rugăm să actualizați "
+"rolul de utilizator cu rolul de utilizator WPCargo."
+
+#: admin/includes/functions.php:496
+msgid "Sorry, You are not allowed to Access this page."
+msgstr "Ne pare rău, Nu aveți voie să accesați această pagină."
+
+#: admin/includes/functions.php:499
+msgid ""
+"Page access restricted, This page need to setup template to WPCargo "
+"Dashboard to make it work."
+msgstr ""
+"Acces la pagină restricționat, Această pagină trebuie să configurați "
+"șablonul la tabloul de bord WPCargo pentru a face să funcționeze."
+
+#: admin/includes/functions.php:502
+msgid "Address Book List"
+msgstr "Lista agendelor"
+
+#: admin/includes/functions.php:505
+msgid "Shipper and Receiver Address Book is Disabled. Please Enable"
+msgstr ""
+"Agenda expeditorului și a destinatarului este dezactivată. Vă rugăm să "
+"activați"
+
+#: admin/includes/functions.php:508
+msgid "Receiver Address Book is Disabled. Please Enable"
+msgstr "Receiver Address Book este dezactivat. Vă rugăm să activați"
+
+#: admin/includes/functions.php:511
+msgid "Shipper Address Book is Disabled. Please Enable"
+msgstr "Agenda expeditorului este dezactivată. Vă rugăm să activați"
+
+#: admin/includes/functions.php:514
+msgid "here"
+msgstr "aici"
+
+#: admin/includes/functions.php:517
+msgid "Please setup Address Book settings"
+msgstr "Vă rugăm să configurați setările Agendei"
+
+#: admin/includes/functions.php:523
+msgid "Address Book Description"
+msgstr "Descrierea agendei"
+
+#: admin/includes/functions.php:526
+msgid "Book Archives"
+msgstr "Arhivele de carte"
+
+#: admin/includes/functions.php:529
+msgid "Parent Book:"
+msgstr "Cartea părintelui:"
+
+#: admin/includes/functions.php:532
+msgid "All Books"
+msgstr "Toate cărțile"
+
+#: admin/includes/functions.php:535
+msgid "Add New Address"
+msgstr "Adăugare adresă nouă"
+
+#: admin/includes/functions.php:538 admin/templates/book.tpl.php:110
+#: admin/templates/user-book.tpl.php:102 templates/default-modal.tpl.php:9
+msgid "Add Address"
+msgstr "Adăugați adresă"
+
+#: admin/includes/functions.php:541
+msgid "New Address"
+msgstr "Adresă nouă"
+
+#: admin/includes/functions.php:544 admin/templates/book.tpl.php:4
+msgid "My Address Book"
+msgstr "Agenda mea"
+
+#: admin/includes/functions.php:547 templates/frontend-modal.tpl.php:36
+msgid "Edit Address"
+msgstr "Modifica adresa"
+
+#: admin/includes/functions.php:550 admin/templates/book.tpl.php:128
+#: admin/templates/user-book.tpl.php:120 templates/default-modal.tpl.php:24
+#: templates/frontend-modal.tpl.php:50
+msgid "Update Address"
+msgstr "Actualizează Adresă"
+
+#: admin/includes/functions.php:553
+msgid "View Address"
+msgstr "Vizualizare adresă"
+
+#: admin/includes/functions.php:559
+msgid "Not found"
+msgstr "Nu s-a găsit"
+
+#: admin/includes/functions.php:562
+msgid "Not found in Trash"
+msgstr "Nu a fost găsit în coșul de gunoi"
+
+#: admin/includes/functions.php:565
+msgid "Featured Image"
+msgstr "Imagine recomandată"
+
+#: admin/includes/functions.php:568
+msgid "Set featured image"
+msgstr "Setare imagine recomandate"
+
+#: admin/includes/functions.php:571
+msgid "Remove featured image"
+msgstr "Eliminare imagine evidențiată"
+
+#: admin/includes/functions.php:574
+msgid "Use as featured image"
+msgstr "Utilizare ca imagine evidențiată"
+
+#: admin/includes/functions.php:577
+msgid "Shipper Book Address Empty"
+msgstr "Adresa expeditorului Cartea gol"
+
+#: admin/includes/functions.php:580
+msgid "Insert into Address"
+msgstr "Inserare în Adresă"
+
+#: admin/includes/functions.php:583
+msgid "Uploaded to this Address"
+msgstr "Încărcat la această adresă"
+
+#: admin/includes/functions.php:586
+msgid "Address list"
+msgstr "Listă de adrese"
+
+#: admin/includes/functions.php:589
+msgid "Address list navigation"
+msgstr "Navigarea în lista de adrese"
+
+#: admin/includes/functions.php:592
+msgid "Filter Books list"
+msgstr "Lista cărților de filtrare"
+
+#: admin/includes/functions.php:595
+msgid "Receiver Book Address Empty"
+msgstr "Receiver Book Adresa gol"
+
+#: admin/includes/functions.php:598 admin/templates/settings.tpl.php:1
+msgid "Address Book Settings"
+msgstr "Setări agendă"
+
+#: admin/includes/functions.php:601
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\" target=\"_blank"
+"\">WPTaskForce License Helper</a> plugin to be active!"
+msgstr ""
+"Acest plugin necesită <a href=\"http://wpcargo.com/\" target=\"_blank"
+"\">plugin wpTaskForce License Helper</a> pentru a fi activ!"
+
+#: admin/includes/functions.php:604
+msgid ""
+"This plugin requires <a href=\"https://wordpress.org/plugins/wpcargo/\" "
+"target=\"_blank\">WPCargo</a> plugin to be active!"
+msgstr ""
+"Acest plugin necesită <a href=\"https://wordpress.org/plugins/wpcargo/\" "
+"target=\"_blank\">wpCargo</a> plug-in pentru a fi activ!"
+
+#: admin/includes/functions.php:607
+msgid ""
+"This plugin requires <strong>WPCargo Custom Field Add-ons</strong> plugin to "
+"be active!"
+msgstr ""
+"Acest plugin necesită <strong>wpCargo Custom Field Add-on-uri plug-in</"
+"strong> pentru a fi activ!"
+
+#: admin/includes/functions.php:610
+msgid ""
+"This plugin requires <strong>WPCargo Frontend Manager</strong> plugin to be "
+"active!"
+msgstr ""
+"Acest plug-in necesită <strong>WPCargo Frontend Manager</strong> plug-in "
+"pentru a fi activ!"
+
+#: admin/includes/functions.php:613
+msgid "Cheating, uh?"
+msgstr "Cheating, uh?"
+
+#: admin/includes/hooks.php:22 admin/includes/hooks.php:40
+msgid "Assigned To"
+msgstr "Atribuit la"
+
+#: admin/includes/hooks.php:42
+msgid "Select User"
+msgstr "Alege utilizator"
+
+#: admin/includes/hooks.php:71 admin/includes/hooks.php:91
+#, php-format
+msgid "Search %s"
+msgstr "Caută %s"
+
+#: admin/includes/hooks.php:71 admin/includes/hooks.php:91
+msgid "-- Select One --"
+msgstr "- Selectează Una -"
+
+#: admin/includes/hooks.php:79 admin/includes/hooks.php:99
+msgid "Add to Address Book?"
+msgstr "Adăugați la Agendă?"
+
+#: admin/includes/hooks.php:264
+msgid ""
+"Something went wrong while processing data, please reload the page and try "
+"again."
+msgstr ""
+"Ceva nu a mers bine în timpul procesării datelor, vă rugăm să reîncărcați "
+"pagina și să încercați din nou."
+
+#: admin/includes/hooks.php:348
+msgid "Insert"
+msgstr "Introduceți"
+
+#: admin/includes/hooks.php:353
+msgid "NO Book List Found!"
+msgstr "NICI O listă de carte găsit!"
+
+#: admin/includes/hooks.php:391
+msgid "-- Select Address --"
+msgstr "-- Selectați adresa --"
+
+#: admin/includes/hooks.php:396
+msgid " has no registered book address."
+msgstr " nu are o adresă de carte înregistrată."
+
+#: admin/includes/hooks.php:408 admin/templates/book.tpl.php:38
+#: admin/templates/book.tpl.php:107 admin/templates/book.tpl.php:124
+#: admin/templates/user-book.tpl.php:39 admin/templates/user-book.tpl.php:98
+#: admin/templates/user-book.tpl.php:116 templates/address-book.tpl.php:29
+#: templates/default-modal.tpl.php:7 templates/default-modal.tpl.php:21
+msgid "Default"
+msgstr "Implicit"
+
+#: admin/includes/hooks.php:485
+msgid "Settings"
+msgstr "Setări"
+
+#: admin/includes/hooks.php:486
+msgid "License"
+msgstr "Licență"
+
+#: admin/templates/book.tpl.php:9 admin/templates/user-book.tpl.php:9
+msgid "Receiver Book"
+msgstr "Receiver Rezervă"
+
+#: admin/templates/book.tpl.php:12 admin/templates/user-book.tpl.php:12
+msgid "Shipper Book"
+msgstr "Shipper Rezervă"
+
+#: admin/templates/book.tpl.php:23 admin/templates/user-book.tpl.php:24
+#: templates/address-book.tpl.php:8
+msgid "Search"
+msgstr "Caută"
+
+#: admin/templates/book.tpl.php:44 admin/templates/book.tpl.php:108
+#: admin/templates/book.tpl.php:125
+msgid "Public"
+msgstr "Public"
+
+#: admin/templates/book.tpl.php:85 admin/templates/user-book.tpl.php:73
+msgid "Update"
+msgstr "Actualizare"
+
+#: admin/templates/book.tpl.php:88 admin/templates/user-book.tpl.php:75
+msgid "Delete"
+msgstr "Șterge"
+
+#: admin/templates/book.tpl.php:92 admin/templates/user-book.tpl.php:81
+#: templates/address-book.tpl.php:74
+msgid "No Book Address Found!"
+msgstr "Nici o adresă de carte găsit!"
+
+#: admin/templates/import.tpl.php:3 admin/templates/import.tpl.php:42
+msgid "Export Address Book"
+msgstr "Export Agendă"
+
+#: admin/templates/import.tpl.php:13
+msgid "Select User Book to Export"
+msgstr "Selectați Carte utilizator de exportat"
+
+#: admin/templates/import.tpl.php:19
+msgid "All User"
+msgstr "Toți utilizatorii"
+
+#: admin/templates/import.tpl.php:32
+msgid "Select Book Type"
+msgstr "Selectați Tipul cărții"
+
+#: admin/templates/import.tpl.php:35 admin/templates/import.tpl.php:65
+msgid "Select Book"
+msgstr "Selectați Rezervare"
+
+#: admin/templates/import.tpl.php:36 admin/templates/import.tpl.php:66
+msgid "Receiver"
+msgstr "Destinatar"
+
+#: admin/templates/import.tpl.php:37 admin/templates/import.tpl.php:67
+msgid "Shipper"
+msgstr "Expeditor"
+
+#: admin/templates/import.tpl.php:48 admin/templates/import.tpl.php:79
+msgid "Import Address Book"
+msgstr "Import Agendă"
+
+#: admin/templates/import.tpl.php:49
+msgid ""
+"Note: Please download .csv format in importing address book based on Book "
+"Type."
+msgstr ""
+"Notă: Vă rugăm să descărcați formatul .csv în importul agendei pe baza "
+"tipului de carte."
+
+#: admin/templates/import.tpl.php:51
+msgid "Download Shipper CSV template"
+msgstr "Descărcați șablonul CSV al expeditorului"
+
+#: admin/templates/import.tpl.php:52
+msgid "Download Receiver CSV template"
+msgstr "Descărcați șablonul CSV receptor"
+
+#: admin/templates/import.tpl.php:58
+msgid "Upload Book"
+msgstr "Încărcați cartea"
+
+#: admin/templates/import.tpl.php:62
+msgid "Select Book Type to Import"
+msgstr "Selectare tip de carte de importat"
+
+#: admin/templates/import.tpl.php:72
+msgid "Mac / International language settings compatibility"
+msgstr "Compatibilitatea setărilor de limbă Mac / International"
+
+#: admin/templates/import.tpl.php:75
+msgid ""
+"Please this checkbox if you're using Mac OS or you're having issue importing "
+"due to international language settings setup."
+msgstr ""
+"Vă rugăm să această casetă de selectare dacă utilizați Mac OS sau "
+"întâmpinați probleme la import din cauza configurării setărilor de limbă "
+"internațională."
+
+#: admin/templates/settings.tpl.php:9
+msgid "Disable Search Shipper Address?"
+msgstr "Dezactivați adresa expeditorului de căutare?"
+
+#: admin/templates/settings.tpl.php:14
+msgid "Select Shipper Address Field Search Value"
+msgstr "Selectați Valoarea de căutare a câmpului adresă expeditorului"
+
+#: admin/templates/settings.tpl.php:18
+msgid "-- Select Shipper Search Value --"
+msgstr "-- Selectați Valoarea de căutare a expeditorului --"
+
+#: admin/templates/settings.tpl.php:28
+msgid ""
+"The selected options will be the key value for the search Shipper Book "
+"Address list in the form."
+msgstr ""
+"Opțiunile selectate vor fi valoarea cheie pentru lista de adrese de "
+"rezervare a expeditorului de căutare din formular."
+
+#: admin/templates/settings.tpl.php:33
+msgid "Select Fields to be display in Shipper Book Address List"
+msgstr "Selectați Câmpuri de afișat în Lista de adrese a expeditorilor"
+
+#: admin/templates/settings.tpl.php:48
+msgid ""
+"The selected options will display in the Shipper Book Address template list "
+"table."
+msgstr ""
+"Opțiunile selectate se vor afișa în tabelul listă de șabloane Adresă "
+"expeditor."
+
+#: admin/templates/settings.tpl.php:53
+msgid "Disable Search Receiver Address?"
+msgstr "Dezactivați adresa destinatarului de căutare?"
+
+#: admin/templates/settings.tpl.php:58
+msgid "Select Receiver Address Field Search Value"
+msgstr "Selectați Valoarea de căutare a câmpului adresă destinatar"
+
+#: admin/templates/settings.tpl.php:62
+msgid "-- Select Receiver Search Value --"
+msgstr "-- Selectați Valoarea de căutare a receptorului --"
+
+#: admin/templates/settings.tpl.php:72
+msgid ""
+"The selected options will be the key value for the search Receiver Book "
+"Address list in the form."
+msgstr ""
+"Opțiunile selectate vor fi valoarea cheie pentru lista de adrese de "
+"rezervare a destinatarului de căutare din formular."
+
+#: admin/templates/settings.tpl.php:77
+msgid "Select Fields to be display in Receiver Book Address List"
+msgstr "Selectați Câmpuri de afișat în Lista de adrese a cărții de destinatari"
+
+#: admin/templates/settings.tpl.php:92
+msgid ""
+"The selected options will display in the Receiver Book Address template list "
+"table."
+msgstr ""
+"Opțiunile selectate se vor afișa în tabelul listă de șabloane Adresă de "
+"carte destinatar."
+
+#: admin/templates/settings.tpl.php:97
+msgid "Save Address Book Settings"
+msgstr "Salvarea setărilor agendei"
+
+#: admin/templates/user-book.tpl.php:4
+msgid "User Address Book"
+msgstr "Agenda utilizatorului"
+
+#: templates/address-book.tpl.php:2 templates/frontend-modal.tpl.php:8
+msgid "Add New"
+msgstr "Adaugă nou"
+
+#: templates/address-book.tpl.php:13
+msgid "Shipper Book Address"
+msgstr "Adresa cărții expeditorului"
+
+#: templates/address-book.tpl.php:14
+msgid "Receiver Book Address"
+msgstr "Adresă de inventar receptor"
+
+#: templates/address-book.tpl.php:30
+msgid "Actions"
+msgstr "Acțiuni"
+
+#: templates/frontend-modal.tpl.php:9 templates/frontend-modal.tpl.php:20
+#: templates/frontend-modal.tpl.php:37 templates/frontend-modal.tpl.php:49
+msgid "Close"
+msgstr "Închide"
+
+#: templates/frontend-modal.tpl.php:21
+msgid "Save Address"
+msgstr "Salvează Adresa"
+
+#: wpcargo-address-book-add-ons.php:28
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\">WPCargo</a> Free "
+"Version to activate"
+msgstr ""
+"Acest plugin necesită versiunea gratuită <a href=\"http://wpcargo.com/"
+"\">WPCargo</a> pentru a activa"
+
+#: wpcargo-address-book-add-ons.php:32
+msgid "This plugin requires WPCargo Custom Field Addons to activate"
+msgstr "Acest plug-in necesită WPCargo Custom Field Addons pentru a activa"
+
+#: wpcargo-address-book-add-ons.php:45
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\">WPTaskForce License "
+"Helper</a> plugin to activate!"
+msgstr ""
+"Acest plugin necesită <a href=\"http://wpcargo.com/\">wpTaskForce License "
+"Helper</a> plug-in pentru a activa!"
+
+#. Plugin Name of the plugin/theme
+msgid "WPCargo Address Book Add-ons"
+msgstr "WpCargo Agenda Add-on-uri"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wptaskforce.com/"
+msgstr "http://wptaskforce.com/"
+
+#. Description of the plugin/theme
+msgid ""
+"WPCargo Address Book Add-ons helps you manage shipper/receiver address. "
+"Availble shortcode [wpc-address-book]"
+msgstr ""
+"WpCargo Address Book Add-on-uri vă ajută să gestionați adresa "
+"expeditorului / destinatarului. Cod scurt disponibil [wpc-address-book]"
+
+#. Author of the plugin/theme
+msgid "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"
+msgstr "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"
+
+#~ msgid "Disable Autogenerate Address?"
+#~ msgstr "Dezactivați adresa degenerare automată?"
+
+#~ msgid ""
+#~ "By default every create/update shipment it will generate new address if "
+#~ "it is not yet in the Address Book"
+#~ msgstr ""
+#~ "În mod implicit, fiecare expediere de creare/actualizare va genera o nouă "
+#~ "adresă dacă nu este încă în Agendă"

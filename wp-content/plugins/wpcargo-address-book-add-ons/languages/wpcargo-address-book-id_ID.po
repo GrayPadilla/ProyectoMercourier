@@ -1,0 +1,685 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPCargo Address Book Add-ons\n"
+"POT-Creation-Date: 2022-11-25 15:47+0800\n"
+"PO-Revision-Date: 2022-11-25 16:05+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: id_ID\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpcargo-address-book-add-ons.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: admin/classes/class-address-book-scripts.php:31
+#: admin/classes/class-address-book-scripts.php:83
+#: admin/includes/functions.php:556
+msgid "Search Address"
+msgstr "Cari Alamat"
+
+#: admin/classes/class-address-book-scripts.php:32
+#: admin/classes/class-address-book-scripts.php:84
+msgid "Please enter more characters"
+msgstr "Silakan masukkan lebih banyak karakter"
+
+#: admin/classes/class-address-book-scripts.php:33
+#: admin/classes/class-address-book-scripts.php:85
+msgid "Please delete some character"
+msgstr "Harap hapus beberapa karakter"
+
+#: admin/classes/class-address-book-scripts.php:34
+#: admin/classes/class-address-book-scripts.php:38
+#: admin/classes/class-address-book-scripts.php:86
+#: admin/classes/class-address-book-scripts.php:90
+msgid "Error loading results"
+msgstr "Kesalahan memuat hasil"
+
+#: admin/classes/class-address-book-scripts.php:35
+#: admin/classes/class-address-book-scripts.php:87
+msgid "Loading more results"
+msgstr "Memuat lebih banyak hasil"
+
+#: admin/classes/class-address-book-scripts.php:36
+#: admin/classes/class-address-book-scripts.php:88
+msgid "No results found"
+msgstr "Tidak ada hasil yang ditemukan"
+
+#: admin/classes/class-address-book-scripts.php:37
+#: admin/classes/class-address-book-scripts.php:89
+msgid "Searching..."
+msgstr "Mencari..."
+
+#: admin/classes/class-address-book-scripts.php:58
+#: admin/classes/class-address-book-scripts.php:112
+msgid "Are you sure you want to delete this Book Address?"
+msgstr "Apakah Anda yakin ingin menghapus Alamat Buku ini?"
+
+#: admin/classes/class-address-book-scripts.php:105
+#: admin/classes/class-address-book-scripts.php:106
+msgid "Are you sure you want to Cancel Order?"
+msgstr "Apakah Anda yakin ingin Membatalkan Pesanan?"
+
+#: admin/classes/class-address-book-scripts.php:107
+msgid "Something went wrong cannot cancel Quotation, Please contact support."
+msgstr ""
+"Ada yang tidak beres tidak dapat membatalkan Kutipan, Silakan hubungi "
+"dukungan."
+
+#: admin/classes/class-address-book-scripts.php:108
+msgid "Something went wrong during the process. Please try again later."
+msgstr "Ada yang tidak beres selama proses tersebut. Silakan coba lagi nanti."
+
+#: admin/classes/class-address-book-scripts.php:109
+msgid "Edit Book Address"
+msgstr "Edit Alamat Buku"
+
+#: admin/classes/class-address-book-scripts.php:110
+#: admin/templates/book.tpl.php:4 admin/templates/user-book.tpl.php:4
+msgid "Add"
+msgstr "Tambah"
+
+#: admin/classes/class-address-book-scripts.php:110
+#: admin/templates/book.tpl.php:4 admin/templates/user-book.tpl.php:4
+#: templates/address-book.tpl.php:2
+msgid "Address"
+msgstr "Alamat"
+
+#: admin/classes/class-address-book-scripts.php:111
+msgid "Book List"
+msgstr "Daftar Buku"
+
+#: admin/classes/class-address-book-scripts.php:113
+msgid "Are you sure you want to set all in public?"
+msgstr "Apakah Anda yakin ingin mengatur semua di depan umum?"
+
+#: admin/classes/class-address-book-scripts.php:114
+msgid "Are you sure you want to remove all from public?"
+msgstr "Apakah Anda yakin ingin menghapus semua dari publik?"
+
+#: admin/classes/class-address-book-table.php:38
+#: admin/classes/class-import-export.php:46
+msgid "User Name"
+msgstr "Nama pengguna"
+
+#: admin/classes/class-address-book-table.php:39
+msgid "View Book Address"
+msgstr "Lihat Alamat Buku"
+
+#: admin/classes/class-address-book-table.php:40
+msgid "Role"
+msgstr "Peran"
+
+#: admin/classes/class-address-book-table.php:41
+msgid "No. Shipper Address"
+msgstr "Tidak. Alamat Pengirim"
+
+#: admin/classes/class-address-book-table.php:42
+msgid "No. Receiver Address"
+msgstr "Tidak. Alamat Penerima"
+
+#: admin/classes/class-import-export.php:13
+#: admin/classes/class-import-export.php:14
+msgid "Import/Export"
+msgstr "Import/Export"
+
+#: admin/classes/class-import-export.php:46
+#: admin/classes/class-import-export.php:104
+#: admin/classes/class-import-export.php:193
+msgid "userID"
+msgstr "ID pengguna"
+
+#: admin/classes/class-import-export.php:80
+msgid "Importing Address"
+msgstr "Alamat Impor"
+
+#: admin/classes/class-import-export.php:114
+msgid "Wrong File Format uploaded. It must be .CSV format."
+msgstr "Format File salah diunggah. Pasti . Format CSV."
+
+#: admin/classes/class-import-export.php:159
+msgid ""
+"Something went wrong! Please check your file header or Check Mac / "
+"International language settings compatibility issue"
+msgstr ""
+"Ada yang tidak beres! Silakan periksa header file Anda atau Periksa masalah "
+"kompatibilitas pengaturan bahasa Mac / Internasional"
+
+#: admin/classes/class-import-export.php:204
+msgid "Address Book Import/Export"
+msgstr "Buku Alamat Import/Export"
+
+#: admin/includes/functions.php:306
+msgid "There is no error, the file uploaded with success."
+msgstr "Tidak ada kesalahan, file diunggah dengan sukses."
+
+#: admin/includes/functions.php:307
+msgid "The uploaded file exceeds the upload_max_filesize directive in php.ini."
+msgstr ""
+"File yang diunggah melebihi direktif upload_max_filesize dalam php.ini."
+
+#: admin/includes/functions.php:308
+msgid ""
+"The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in "
+"the HTML form."
+msgstr ""
+"File yang diunggah melebihi direktif MAX_FILE_SIZE yang ditentukan dalam "
+"bentuk HTML."
+
+#: admin/includes/functions.php:309
+msgid "The uploaded file was only partially uploaded."
+msgstr "File yang diunggah hanya diunggah sebagian."
+
+#: admin/includes/functions.php:310
+msgid "No file was uploaded."
+msgstr "Tidak ada file yang diupload."
+
+#: admin/includes/functions.php:311
+msgid "Missing a temporary folder."
+msgstr "Folder sementara tidak ada."
+
+#: admin/includes/functions.php:312
+msgid "Failed to write file to disk."
+msgstr "Gagal menulis file ke disk."
+
+#: admin/includes/functions.php:313
+msgid "A PHP extension stopped the file upload."
+msgstr "Ekstensi PHP menghentikan unggahan file."
+
+#: admin/includes/functions.php:429 admin/includes/functions.php:520
+#: admin/includes/hooks.php:418
+msgid "Address Book"
+msgstr "Buku Alamat"
+
+#: admin/includes/functions.php:490
+msgid "Please activate your license key <a href=\""
+msgstr "Silakan aktifkan kunci lisensi Anda <a href=\""
+
+#: admin/includes/functions.php:493
+msgid ""
+"This user is not allowed to have Address Book, Please update user role with "
+"WPCargo user role."
+msgstr ""
+"Pengguna ini tidak diperbolehkan memiliki Buku Alamat, Harap perbarui peran "
+"pengguna dengan peran pengguna WPCargo."
+
+#: admin/includes/functions.php:496
+msgid "Sorry, You are not allowed to Access this page."
+msgstr "Maaf, Anda tidak diizinkan untuk Mengakses halaman ini."
+
+#: admin/includes/functions.php:499
+msgid ""
+"Page access restricted, This page need to setup template to WPCargo "
+"Dashboard to make it work."
+msgstr ""
+"Akses halaman dibatasi, Halaman ini perlu mengatur template ke WPCargo "
+"Dashboard untuk membuatnya berfungsi."
+
+#: admin/includes/functions.php:502
+msgid "Address Book List"
+msgstr "Daftar Buku Alamat"
+
+#: admin/includes/functions.php:505
+msgid "Shipper and Receiver Address Book is Disabled. Please Enable"
+msgstr "Buku Alamat Pengirim dan Penerima Dinonaktifkan. Harap Aktifkan"
+
+#: admin/includes/functions.php:508
+msgid "Receiver Address Book is Disabled. Please Enable"
+msgstr "Buku Alamat Penerima Dinonaktifkan. Harap Aktifkan"
+
+#: admin/includes/functions.php:511
+msgid "Shipper Address Book is Disabled. Please Enable"
+msgstr "Buku Alamat Pengirim Dinonaktifkan. Harap Aktifkan"
+
+#: admin/includes/functions.php:514
+msgid "here"
+msgstr "disini"
+
+#: admin/includes/functions.php:517
+msgid "Please setup Address Book settings"
+msgstr "Silakan atur pengaturan Buku Alamat"
+
+#: admin/includes/functions.php:523
+msgid "Address Book Description"
+msgstr "Deskripsi Buku Alamat"
+
+#: admin/includes/functions.php:526
+msgid "Book Archives"
+msgstr "Arsip Buku"
+
+#: admin/includes/functions.php:529
+msgid "Parent Book:"
+msgstr "Buku Induk:"
+
+#: admin/includes/functions.php:532
+msgid "All Books"
+msgstr "Semua Buku"
+
+#: admin/includes/functions.php:535
+msgid "Add New Address"
+msgstr "Tambahkan Alamat Baru"
+
+#: admin/includes/functions.php:538 admin/templates/book.tpl.php:110
+#: admin/templates/user-book.tpl.php:102 templates/default-modal.tpl.php:9
+msgid "Add Address"
+msgstr "Tambah alamat"
+
+#: admin/includes/functions.php:541
+msgid "New Address"
+msgstr "Alamat Baru"
+
+#: admin/includes/functions.php:544 admin/templates/book.tpl.php:4
+msgid "My Address Book"
+msgstr "Buku Alamat Saya"
+
+#: admin/includes/functions.php:547 templates/frontend-modal.tpl.php:36
+msgid "Edit Address"
+msgstr "Ubah Alamat"
+
+#: admin/includes/functions.php:550 admin/templates/book.tpl.php:128
+#: admin/templates/user-book.tpl.php:120 templates/default-modal.tpl.php:24
+#: templates/frontend-modal.tpl.php:50
+msgid "Update Address"
+msgstr "Perbarui Alamat"
+
+#: admin/includes/functions.php:553
+msgid "View Address"
+msgstr "Lihat Alamat"
+
+#: admin/includes/functions.php:559
+msgid "Not found"
+msgstr "Tidak ditemukan"
+
+#: admin/includes/functions.php:562
+msgid "Not found in Trash"
+msgstr "Tidak ditemukan di tong sampah"
+
+#: admin/includes/functions.php:565
+msgid "Featured Image"
+msgstr "Gambar Unggulan"
+
+#: admin/includes/functions.php:568
+msgid "Set featured image"
+msgstr "Jadikan gambar fitur"
+
+#: admin/includes/functions.php:571
+msgid "Remove featured image"
+msgstr "Hapus gambar yang ditampilkan"
+
+#: admin/includes/functions.php:574
+msgid "Use as featured image"
+msgstr "Gunakan sebagai gambar unggulan"
+
+#: admin/includes/functions.php:577
+msgid "Shipper Book Address Empty"
+msgstr "Alamat Buku Pengirim Kosong"
+
+#: admin/includes/functions.php:580
+msgid "Insert into Address"
+msgstr "Masukkan ke Alamat"
+
+#: admin/includes/functions.php:583
+msgid "Uploaded to this Address"
+msgstr "Diunggah ke Alamat ini"
+
+#: admin/includes/functions.php:586
+msgid "Address list"
+msgstr "Daftar alamat"
+
+#: admin/includes/functions.php:589
+msgid "Address list navigation"
+msgstr "Navigasi daftar alamat"
+
+#: admin/includes/functions.php:592
+msgid "Filter Books list"
+msgstr "Daftar Buku Filter"
+
+#: admin/includes/functions.php:595
+msgid "Receiver Book Address Empty"
+msgstr "Alamat Buku Penerima Kosong"
+
+#: admin/includes/functions.php:598 admin/templates/settings.tpl.php:1
+msgid "Address Book Settings"
+msgstr "Pengaturan Buku Alamat"
+
+#: admin/includes/functions.php:601
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\" target=\"_blank"
+"\">WPTaskForce License Helper</a> plugin to be active!"
+msgstr ""
+"Plugin ini membutuhkan <a href=\"http://wpcargo.com/\" target=\"_blank"
+"\">WPTaskForce License Helper</a> plugin untuk aktif!"
+
+#: admin/includes/functions.php:604
+msgid ""
+"This plugin requires <a href=\"https://wordpress.org/plugins/wpcargo/\" "
+"target=\"_blank\">WPCargo</a> plugin to be active!"
+msgstr ""
+"Plugin ini membutuhkan <a href=\"http://wpcargo.com/\" target=\"_blank"
+"\">WPTaskForce License Helper</a> plugin untuk aktif!"
+
+#: admin/includes/functions.php:607
+msgid ""
+"This plugin requires <strong>WPCargo Custom Field Add-ons</strong> plugin to "
+"be active!"
+msgstr ""
+"Plugin ini membutuhkan plugin <strong>WPCargo Custom Field Add-ons</strong> "
+"agar aktif!"
+
+#: admin/includes/functions.php:610
+msgid ""
+"This plugin requires <strong>WPCargo Frontend Manager</strong> plugin to be "
+"active!"
+msgstr ""
+"Plugin ini membutuhkan plugin <strong>WPCargo Frontend Manager</strong> "
+"untuk aktif!"
+
+#: admin/includes/functions.php:613
+msgid "Cheating, uh?"
+msgstr "Kecurangan, eh?"
+
+#: admin/includes/hooks.php:22 admin/includes/hooks.php:40
+msgid "Assigned To"
+msgstr "Ditugaskan untuk"
+
+#: admin/includes/hooks.php:42
+msgid "Select User"
+msgstr "Pilih Pengguna"
+
+#: admin/includes/hooks.php:71 admin/includes/hooks.php:91
+#, php-format
+msgid "Search %s"
+msgstr "Cari %s"
+
+#: admin/includes/hooks.php:71 admin/includes/hooks.php:91
+msgid "-- Select One --"
+msgstr "-- Pilih satu --"
+
+#: admin/includes/hooks.php:79 admin/includes/hooks.php:99
+msgid "Add to Address Book?"
+msgstr "Tambahkan ke Buku Alamat?"
+
+#: admin/includes/hooks.php:264
+msgid ""
+"Something went wrong while processing data, please reload the page and try "
+"again."
+msgstr ""
+"Ada yang tidak beres saat memproses data, silakan muat ulang halaman dan "
+"coba lagi."
+
+#: admin/includes/hooks.php:348
+msgid "Insert"
+msgstr "Sisipkan"
+
+#: admin/includes/hooks.php:353
+msgid "NO Book List Found!"
+msgstr "TIDAK ADA Daftar Buku yang Ditemukan!"
+
+#: admin/includes/hooks.php:391
+msgid "-- Select Address --"
+msgstr "-- Pilih Alamat --"
+
+#: admin/includes/hooks.php:396
+msgid " has no registered book address."
+msgstr " tidak memiliki alamat buku terdaftar."
+
+#: admin/includes/hooks.php:408 admin/templates/book.tpl.php:38
+#: admin/templates/book.tpl.php:107 admin/templates/book.tpl.php:124
+#: admin/templates/user-book.tpl.php:39 admin/templates/user-book.tpl.php:98
+#: admin/templates/user-book.tpl.php:116 templates/address-book.tpl.php:29
+#: templates/default-modal.tpl.php:7 templates/default-modal.tpl.php:21
+msgid "Default"
+msgstr "Default"
+
+#: admin/includes/hooks.php:485
+msgid "Settings"
+msgstr "Pengaturan"
+
+#: admin/includes/hooks.php:486
+msgid "License"
+msgstr "Lisensi"
+
+#: admin/templates/book.tpl.php:9 admin/templates/user-book.tpl.php:9
+msgid "Receiver Book"
+msgstr "Buku Penerima"
+
+#: admin/templates/book.tpl.php:12 admin/templates/user-book.tpl.php:12
+msgid "Shipper Book"
+msgstr "Buku Pengirim"
+
+#: admin/templates/book.tpl.php:23 admin/templates/user-book.tpl.php:24
+#: templates/address-book.tpl.php:8
+msgid "Search"
+msgstr "Cari"
+
+#: admin/templates/book.tpl.php:44 admin/templates/book.tpl.php:108
+#: admin/templates/book.tpl.php:125
+msgid "Public"
+msgstr "Publik"
+
+#: admin/templates/book.tpl.php:85 admin/templates/user-book.tpl.php:73
+msgid "Update"
+msgstr "Perbarui"
+
+#: admin/templates/book.tpl.php:88 admin/templates/user-book.tpl.php:75
+msgid "Delete"
+msgstr "Hapus"
+
+#: admin/templates/book.tpl.php:92 admin/templates/user-book.tpl.php:81
+#: templates/address-book.tpl.php:74
+msgid "No Book Address Found!"
+msgstr "Tidak Ada Alamat Buku yang Ditemukan!"
+
+#: admin/templates/import.tpl.php:3 admin/templates/import.tpl.php:42
+msgid "Export Address Book"
+msgstr "Ekspor Buku Alamat"
+
+#: admin/templates/import.tpl.php:13
+msgid "Select User Book to Export"
+msgstr "Pilih Buku Pengguna untuk Diekspor"
+
+#: admin/templates/import.tpl.php:19
+msgid "All User"
+msgstr "Semua Pengguna"
+
+#: admin/templates/import.tpl.php:32
+msgid "Select Book Type"
+msgstr "Pilih Jenis Buku"
+
+#: admin/templates/import.tpl.php:35 admin/templates/import.tpl.php:65
+msgid "Select Book"
+msgstr "Pilih Buku"
+
+#: admin/templates/import.tpl.php:36 admin/templates/import.tpl.php:66
+msgid "Receiver"
+msgstr "Penerima"
+
+#: admin/templates/import.tpl.php:37 admin/templates/import.tpl.php:67
+msgid "Shipper"
+msgstr "Pengirim"
+
+#: admin/templates/import.tpl.php:48 admin/templates/import.tpl.php:79
+msgid "Import Address Book"
+msgstr "Impor Buku Alamat"
+
+#: admin/templates/import.tpl.php:49
+msgid ""
+"Note: Please download .csv format in importing address book based on Book "
+"Type."
+msgstr ""
+"Catatan: Silakan unduh format .csv dalam mengimpor buku alamat berdasarkan "
+"Jenis Buku."
+
+#: admin/templates/import.tpl.php:51
+msgid "Download Shipper CSV template"
+msgstr "Unduh template Shipper CSV"
+
+#: admin/templates/import.tpl.php:52
+msgid "Download Receiver CSV template"
+msgstr "Unduh templat CSV Penerima"
+
+#: admin/templates/import.tpl.php:58
+msgid "Upload Book"
+msgstr "Unggah Buku"
+
+#: admin/templates/import.tpl.php:62
+msgid "Select Book Type to Import"
+msgstr "Pilih Jenis Buku untuk Diimpor"
+
+#: admin/templates/import.tpl.php:72
+msgid "Mac / International language settings compatibility"
+msgstr "Kompatibilitas pengaturan bahasa Mac / Internasional"
+
+#: admin/templates/import.tpl.php:75
+msgid ""
+"Please this checkbox if you're using Mac OS or you're having issue importing "
+"due to international language settings setup."
+msgstr ""
+"Silakan kotak centang ini jika Anda menggunakan Mac OS atau Anda mengalami "
+"masalah saat mengimpor karena pengaturan pengaturan bahasa internasional."
+
+#: admin/templates/settings.tpl.php:9
+msgid "Disable Search Shipper Address?"
+msgstr "Nonaktifkan Cari Alamat Pengirim?"
+
+#: admin/templates/settings.tpl.php:14
+msgid "Select Shipper Address Field Search Value"
+msgstr "Pilih Nilai Pencarian Bidang Alamat Pengirim"
+
+#: admin/templates/settings.tpl.php:18
+msgid "-- Select Shipper Search Value --"
+msgstr "-- Pilih Nilai Pencarian Pengirim --"
+
+#: admin/templates/settings.tpl.php:28
+msgid ""
+"The selected options will be the key value for the search Shipper Book "
+"Address list in the form."
+msgstr ""
+"Opsi yang dipilih akan menjadi nilai kunci untuk daftar Alamat Buku Pengirim "
+"pencarian dalam formulir."
+
+#: admin/templates/settings.tpl.php:33
+msgid "Select Fields to be display in Shipper Book Address List"
+msgstr "Pilih Bidang yang akan ditampilkan dalam Daftar Alamat Buku Pengirim"
+
+#: admin/templates/settings.tpl.php:48
+msgid ""
+"The selected options will display in the Shipper Book Address template list "
+"table."
+msgstr ""
+"Opsi yang dipilih akan ditampilkan dalam tabel daftar templat Alamat Buku "
+"Pengirim."
+
+#: admin/templates/settings.tpl.php:53
+msgid "Disable Search Receiver Address?"
+msgstr "Nonaktifkan Cari Alamat Penerima?"
+
+#: admin/templates/settings.tpl.php:58
+msgid "Select Receiver Address Field Search Value"
+msgstr "Pilih Nilai Pencarian Bidang Alamat Penerima"
+
+#: admin/templates/settings.tpl.php:62
+msgid "-- Select Receiver Search Value --"
+msgstr "-- Pilih Nilai Pencarian Penerima --"
+
+#: admin/templates/settings.tpl.php:72
+msgid ""
+"The selected options will be the key value for the search Receiver Book "
+"Address list in the form."
+msgstr ""
+"Opsi yang dipilih akan menjadi nilai kunci untuk daftar Alamat Buku Penerima "
+"pencarian dalam formulir."
+
+#: admin/templates/settings.tpl.php:77
+msgid "Select Fields to be display in Receiver Book Address List"
+msgstr "Pilih Bidang yang akan ditampilkan di Daftar Alamat Buku Penerima"
+
+#: admin/templates/settings.tpl.php:92
+msgid ""
+"The selected options will display in the Receiver Book Address template list "
+"table."
+msgstr ""
+"Opsi yang dipilih akan ditampilkan dalam tabel daftar templat Alamat Buku "
+"Penerima."
+
+#: admin/templates/settings.tpl.php:97
+msgid "Save Address Book Settings"
+msgstr "Simpan Pengaturan Buku Alamat"
+
+#: admin/templates/user-book.tpl.php:4
+msgid "User Address Book"
+msgstr "Buku Alamat Pengguna"
+
+#: templates/address-book.tpl.php:2 templates/frontend-modal.tpl.php:8
+msgid "Add New"
+msgstr "Tambah Baru"
+
+#: templates/address-book.tpl.php:13
+msgid "Shipper Book Address"
+msgstr "Alamat Buku Pengirim"
+
+#: templates/address-book.tpl.php:14
+msgid "Receiver Book Address"
+msgstr "Alamat Buku Penerima"
+
+#: templates/address-book.tpl.php:30
+msgid "Actions"
+msgstr "Tindakan"
+
+#: templates/frontend-modal.tpl.php:9 templates/frontend-modal.tpl.php:20
+#: templates/frontend-modal.tpl.php:37 templates/frontend-modal.tpl.php:49
+msgid "Close"
+msgstr "Tutup"
+
+#: templates/frontend-modal.tpl.php:21
+msgid "Save Address"
+msgstr "Simpan Alamat"
+
+#: wpcargo-address-book-add-ons.php:28
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\">WPCargo</a> Free "
+"Version to activate"
+msgstr ""
+"Plugin ini membutuhkan <a href=\"http://wpcargo.com/\">WPCargo</a> Free "
+"Version untuk mengaktifkan"
+
+#: wpcargo-address-book-add-ons.php:32
+msgid "This plugin requires WPCargo Custom Field Addons to activate"
+msgstr "Plugin ini membutuhkan WPCargo Custom Field Addons untuk diaktifkan"
+
+#: wpcargo-address-book-add-ons.php:45
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\">WPTaskForce License "
+"Helper</a> plugin to activate!"
+msgstr ""
+"Plugin ini membutuhkan plugin <a href=\"http://wpcargo.com/\">WPTaskForce "
+"License Helper</a> untuk diaktifkan!"
+
+#. Plugin Name of the plugin/theme
+msgid "WPCargo Address Book Add-ons"
+msgstr "Add-on Buku Alamat WPCargo"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wptaskforce.com/"
+msgstr "http://wptaskforce.com/"
+
+#. Description of the plugin/theme
+msgid ""
+"WPCargo Address Book Add-ons helps you manage shipper/receiver address. "
+"Availble shortcode [wpc-address-book]"
+msgstr ""
+"Add-on Buku Alamat WPCargo membantu Anda mengelola alamat pengirim / "
+"penerima. Kode pendek yang tersedia [wpc-address-book]"
+
+#. Author of the plugin/theme
+msgid "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"
+msgstr "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"

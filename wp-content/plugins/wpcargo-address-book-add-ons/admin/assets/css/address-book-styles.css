@@ -1,0 +1,241 @@
+.wpcabook-modal .form-group {
+  margin-bottom: 1rem !important;
+}
+.wpcabook-modal .modal-content{
+  width:50% !important;
+}
+.address-search {
+    position: relative;
+}
+.address-search img.wpc-spinner {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.address-search select{
+	width:100%;
+}
+#address-list #book thead th {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #e0e0e0;
+    padding: 10px;
+}
+#address-list #book tbody td {
+    background-color: #f7f7f7;
+    padding: 8px 10px;
+    font-size: 14px;
+}
+#address-list #book {
+    margin-top: 15px;
+}
+#address-list #book .update .edit-address.button.button-quotation,
+#address-list #book .delete a.wpc-delete-address,
+#address-list #edit-public, #address-list #update-public {
+    border: 0;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 0;
+    box-shadow: none;
+    height: 31px;
+    line-height: 31px;
+}
+#address-list #edit-public, #address-list #update-public {
+    background-color: #00A924 !important;
+    color: #fff;
+}
+#address-list #book .update .edit-address.button.button-quotation {
+    background-color: #00a924;
+}
+#address-list #book .delete a.wpc-delete-address {
+    background-color: #f93636;
+    display:inline-block;
+    padding: 0 10px 1px;
+    text-decoration: none;
+}
+
+#shipment-add-address-book label,
+#add-address-book-form label,
+#edit-address-book-form label {
+    display: inline-block;
+    width: 150px;
+    letter-spacing: 0px!important;
+    
+}
+#shipment-add-address-book input[type="email"],
+#add-address-book-form input[type="email"],
+#edit-address-book-form input[type="email"],
+#shipment-add-address-book input[type="text"],
+#add-address-book-form input[type="text"],
+#edit-address-book-form input[type="text"]{
+    line-height: 30px;
+    height: 30px;
+    width: 100% !important;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+#add-address-wrapper .form-group,
+#edit-address-book-form .form-group{
+    margin-bottom: 15px;
+}
+#shipment-add-address-book input[type="submit"],
+#add-address-book-form input[type="submit"],
+#edit-address-book-form input[type="submit"]{
+  margin: 0 12px !important;
+}
+#wpc-address-book-ie-wrapper {
+  display: block;
+  overflow: hidden;
+}
+#wpc-address-book-ie-wrapper .postbox {
+    float: left;
+}
+#wpc-address-book-ie-wrapper .postbox h2 {
+  border-bottom: 1px solid #000;
+  margin-bottom: 6px;
+}
+#wpc-address-book-ie-wrapper #export-section {
+  width: 33%;
+  margin-right: 2%;
+}
+#wpc-address-book-ie-wrapper #import-section {
+    width: 64%;
+}
+#import-result .data-error,
+#import-result .data-success{
+  padding: 4px;
+}
+#import-result .data-error {
+  background-color: #dc3545!important;
+  color: #fff!important;
+}
+#import-result .data-success {
+    color: #28a745!important;
+    border-bottom: 1px solid #eee;
+    margin: 0;  
+}
+@media screen and (max-width: 830px) {
+  #wpc-address-book-ie-wrapper #export-section,
+  #wpc-address-book-ie-wrapper #import-section{
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0; 
+  }
+  .wpcabook-modal .modal-content{
+    width:90% !important;
+  }
+}
+/* wpcargo Spinner */
+.wpc-loading {
+  position: fixed;
+  z-index: 999999;
+  height: 2em;
+  width: 2em;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+/* Transparent Overlay */
+.wpc-loading:before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+}
+/* :not(:required) hides these rules from IE9 and below */
+.wpc-loading:not(:required) {
+  /* hide "loading..." text */
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.wpc-loading:not(:required):after {
+  content: '';
+  display: block;
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  margin-top: -0.5em;
+  -webkit-animation: spinner 1500ms infinite linear;
+  -moz-animation: spinner 1500ms infinite linear;
+  -ms-animation: spinner 1500ms infinite linear;
+  -o-animation: spinner 1500ms infinite linear;
+  animation: spinner 1500ms infinite linear;
+  border-radius: 0.5em;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.5) -1.5em 0 0 0, rgba(0, 0, 0, 0.5) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+  box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) -1.5em 0 0 0, rgba(0, 0, 0, 0.75) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+}
+/* Animation */
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

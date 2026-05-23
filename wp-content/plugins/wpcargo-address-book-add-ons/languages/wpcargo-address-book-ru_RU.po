@@ -1,0 +1,698 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPCargo Address Book Add-ons\n"
+"POT-Creation-Date: 2022-02-23 17:05+0800\n"
+"PO-Revision-Date: 2022-02-23 17:05+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpcargo-address-book-add-ons.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: admin/classes/class-address-book-scripts.php:31
+#: admin/classes/class-address-book-scripts.php:82
+#: admin/includes/functions.php:556
+msgid "Search Address"
+msgstr "Поиск адреса"
+
+#: admin/classes/class-address-book-scripts.php:32
+#: admin/classes/class-address-book-scripts.php:83
+msgid "Please enter more characters"
+msgstr "Пожалуйста, введите больше символов"
+
+#: admin/classes/class-address-book-scripts.php:33
+#: admin/classes/class-address-book-scripts.php:84
+msgid "Please delete some character"
+msgstr "Пожалуйста, удалите некоторый символ"
+
+#: admin/classes/class-address-book-scripts.php:34
+#: admin/classes/class-address-book-scripts.php:38
+#: admin/classes/class-address-book-scripts.php:85
+#: admin/classes/class-address-book-scripts.php:89
+msgid "Error loading results"
+msgstr "Ошибка загрузки результатов"
+
+#: admin/classes/class-address-book-scripts.php:35
+#: admin/classes/class-address-book-scripts.php:86
+msgid "Loading more results"
+msgstr "Загрузка дополнительных результатов"
+
+#: admin/classes/class-address-book-scripts.php:36
+#: admin/classes/class-address-book-scripts.php:87
+msgid "No results found"
+msgstr "Результатов не найдено"
+
+#: admin/classes/class-address-book-scripts.php:37
+#: admin/classes/class-address-book-scripts.php:88
+msgid "Searching..."
+msgstr "Поиск..."
+
+#: admin/classes/class-address-book-scripts.php:58
+#: admin/classes/class-address-book-scripts.php:109
+msgid "Are you sure you want to delete this Book Address?"
+msgstr "Вы уверены, что хотите удалить этот книжный адрес?"
+
+#: admin/classes/class-address-book-scripts.php:102
+#: admin/classes/class-address-book-scripts.php:103
+msgid "Are you sure you want to Cancel Order?"
+msgstr "Вы уверены, что хотите отменить заказ?"
+
+#: admin/classes/class-address-book-scripts.php:104
+msgid "Something went wrong cannot cancel Quotation, Please contact support."
+msgstr ""
+"Что-то пошло не так не может отменить Предложение, пожалуйста, свяжитесь со "
+"службой поддержки."
+
+#: admin/classes/class-address-book-scripts.php:105
+msgid "Something went wrong during the process. Please try again later."
+msgstr "Что-то пошло не так во время процесса. Повторите попытку позже."
+
+#: admin/classes/class-address-book-scripts.php:106
+msgid "Edit Book Address"
+msgstr "Редактировать адрес книги"
+
+#: admin/classes/class-address-book-scripts.php:107
+#: admin/templates/book.tpl.php:4 admin/templates/user-book.tpl.php:4
+msgid "Add"
+msgstr "Добавить"
+
+#: admin/classes/class-address-book-scripts.php:107
+#: admin/templates/book.tpl.php:4 admin/templates/user-book.tpl.php:4
+#: templates/address-book.tpl.php:2
+msgid "Address"
+msgstr "Адрес"
+
+#: admin/classes/class-address-book-scripts.php:108
+msgid "Book List"
+msgstr "Список книг"
+
+#: admin/classes/class-address-book-scripts.php:110
+msgid "Are you sure you want to set all in public?"
+msgstr "Вы уверены, что хотите установить все на публике?"
+
+#: admin/classes/class-address-book-scripts.php:111
+msgid "Are you sure you want to remove all from public?"
+msgstr "Вы уверены, что хотите удалить все из общественности?"
+
+#: admin/classes/class-address-book-table.php:38
+#: admin/classes/class-import-export.php:46
+msgid "User Name"
+msgstr "Имя пользователя"
+
+#: admin/classes/class-address-book-table.php:39
+msgid "View Book Address"
+msgstr "Посмотреть адрес книги"
+
+#: admin/classes/class-address-book-table.php:40
+msgid "Role"
+msgstr "Редактор ролей"
+
+#: admin/classes/class-address-book-table.php:41
+msgid "No. Shipper Address"
+msgstr "Нет. Адрес грузоотправителя"
+
+#: admin/classes/class-address-book-table.php:42
+msgid "No. Receiver Address"
+msgstr "Нет. Адрес получателя"
+
+#: admin/classes/class-import-export.php:13
+#: admin/classes/class-import-export.php:14
+msgid "Import/Export"
+msgstr "Импорт/Экспорт"
+
+#: admin/classes/class-import-export.php:46
+#: admin/classes/class-import-export.php:104
+#: admin/classes/class-import-export.php:189
+msgid "userID"
+msgstr "идентификатор пользователя"
+
+#: admin/classes/class-import-export.php:80
+msgid "Importing Address"
+msgstr "Импорт адреса"
+
+#: admin/classes/class-import-export.php:112
+msgid "Wrong File Format uploaded. It must be .CSV format."
+msgstr "Загружен неправильный формат файла. Это должно быть . Формат CSV."
+
+#: admin/classes/class-import-export.php:155
+msgid ""
+"Something went wrong! Please check your file header or Check Mac / "
+"International language settings compatibility issue"
+msgstr ""
+"Что-то пошло не так! Пожалуйста, проверьте заголовок файла или проверьте "
+"Mac / Международные настройки языка вопрос совместимости"
+
+#: admin/classes/class-import-export.php:200
+msgid "Address Book Import/Export"
+msgstr "Импорт/экспорт адресной книги"
+
+#: admin/includes/functions.php:306
+msgid "There is no error, the file uploaded with success."
+msgstr "Ошибки нет, файл загружен успешно."
+
+#: admin/includes/functions.php:307
+msgid "The uploaded file exceeds the upload_max_filesize directive in php.ini."
+msgstr ""
+"Загруженный файл превысил разрешенный размер (upload_max_filesize в php.ini)."
+
+#: admin/includes/functions.php:308
+msgid ""
+"The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in "
+"the HTML form."
+msgstr ""
+"Загружаемый Вами файл превышает значение MAX_FILE_SIZE, указанный для данной "
+"HTML-формы."
+
+#: admin/includes/functions.php:309
+msgid "The uploaded file was only partially uploaded."
+msgstr "Файл был загружен частично"
+
+#: admin/includes/functions.php:310
+msgid "No file was uploaded."
+msgstr "Файл не был загружен."
+
+#: admin/includes/functions.php:311
+msgid "Missing a temporary folder."
+msgstr "Отсутствует временная папка."
+
+#: admin/includes/functions.php:312
+msgid "Failed to write file to disk."
+msgstr "Не удалось записать файл на диск."
+
+#: admin/includes/functions.php:313
+msgid "A PHP extension stopped the file upload."
+msgstr "Расширение PHP остановило загрузку файла"
+
+#: admin/includes/functions.php:429 admin/includes/functions.php:520
+#: admin/includes/hooks.php:418
+msgid "Address Book"
+msgstr "Адресная книга"
+
+#: admin/includes/functions.php:490
+msgid "Please activate your license key <a href=\""
+msgstr "Пожалуйста, активируйте лицензионный ключ <a href=\""
+
+#: admin/includes/functions.php:493
+msgid ""
+"This user is not allowed to have Address Book, Please update user role with "
+"WPCargo user role."
+msgstr ""
+"Этому пользователю не разрешается иметь адресную книгу, Пожалуйста, обновите "
+"роль пользователя с помощью роли пользователя WPCargo."
+
+#: admin/includes/functions.php:496
+msgid "Sorry, You are not allowed to Access this page."
+msgstr "К сожалению, Вы не можете получить доступ к этой странице."
+
+#: admin/includes/functions.php:499
+msgid ""
+"Page access restricted, This page need to setup template to WPCargo "
+"Dashboard to make it work."
+msgstr ""
+"Доступ к странице ограничен, Эта страница должна настроить шаблон для "
+"WPCargo Dashboard, чтобы заставить его работать."
+
+#: admin/includes/functions.php:502
+msgid "Address Book List"
+msgstr "Список адресных книг"
+
+#: admin/includes/functions.php:505
+msgid "Shipper and Receiver Address Book is Disabled. Please Enable"
+msgstr ""
+"Адресная книга грузоотправителя и получателя отключена. Пожалуйста, включите"
+
+#: admin/includes/functions.php:508
+msgid "Receiver Address Book is Disabled. Please Enable"
+msgstr "Адресная книга получателя отключена. Пожалуйста, включите"
+
+#: admin/includes/functions.php:511
+msgid "Shipper Address Book is Disabled. Please Enable"
+msgstr "Адресная книга грузоотправителя отключена. Пожалуйста, включите"
+
+#: admin/includes/functions.php:514
+msgid "here"
+msgstr "здесь"
+
+#: admin/includes/functions.php:517
+msgid "Please setup Address Book settings"
+msgstr "Пожалуйста, навеяте настройки адресной книги"
+
+#: admin/includes/functions.php:523
+msgid "Address Book Description"
+msgstr "Описание адресной книги"
+
+#: admin/includes/functions.php:526
+msgid "Book Archives"
+msgstr "Книжные архивы"
+
+#: admin/includes/functions.php:529
+msgid "Parent Book:"
+msgstr "Родительская книга:"
+
+#: admin/includes/functions.php:532
+msgid "All Books"
+msgstr "Все книги"
+
+#: admin/includes/functions.php:535
+msgid "Add New Address"
+msgstr "Добавить адрес"
+
+#: admin/includes/functions.php:538 admin/templates/book.tpl.php:110
+#: admin/templates/user-book.tpl.php:102 templates/default-modal.tpl.php:9
+msgid "Add Address"
+msgstr "Добавить адрес"
+
+#: admin/includes/functions.php:541
+msgid "New Address"
+msgstr "Новый адрес"
+
+#: admin/includes/functions.php:544 admin/templates/book.tpl.php:4
+msgid "My Address Book"
+msgstr "Моя адресная книга"
+
+#: admin/includes/functions.php:547 templates/frontend-modal.tpl.php:36
+msgid "Edit Address"
+msgstr "Изменить адрес"
+
+#: admin/includes/functions.php:550 admin/templates/book.tpl.php:128
+#: admin/templates/user-book.tpl.php:120 templates/default-modal.tpl.php:24
+#: templates/frontend-modal.tpl.php:50
+msgid "Update Address"
+msgstr "Адрес обновления"
+
+#: admin/includes/functions.php:553
+msgid "View Address"
+msgstr "Посмотреть адрес"
+
+#: admin/includes/functions.php:559
+msgid "Not found"
+msgstr "Не найдено"
+
+#: admin/includes/functions.php:562
+msgid "Not found in Trash"
+msgstr "Не найдено в корзине"
+
+#: admin/includes/functions.php:565
+msgid "Featured Image"
+msgstr "Популярные изображения"
+
+#: admin/includes/functions.php:568
+msgid "Set featured image"
+msgstr "Установить изображение"
+
+#: admin/includes/functions.php:571
+msgid "Remove featured image"
+msgstr "Удалить изображение"
+
+#: admin/includes/functions.php:574
+msgid "Use as featured image"
+msgstr "Использовать как изображение"
+
+#: admin/includes/functions.php:577
+msgid "Shipper Book Address Empty"
+msgstr "Адрес книги грузоотправителя пуст"
+
+#: admin/includes/functions.php:580
+msgid "Insert into Address"
+msgstr "Вставить в адрес"
+
+#: admin/includes/functions.php:583
+msgid "Uploaded to this Address"
+msgstr "Загружено на этот адрес"
+
+#: admin/includes/functions.php:586
+msgid "Address list"
+msgstr "Список адресов"
+
+#: admin/includes/functions.php:589
+msgid "Address list navigation"
+msgstr "Навигация по списку адресов"
+
+#: admin/includes/functions.php:592
+msgid "Filter Books list"
+msgstr "Список фильтров книг"
+
+#: admin/includes/functions.php:595
+msgid "Receiver Book Address Empty"
+msgstr "Адрес книги получателя пуст"
+
+#: admin/includes/functions.php:598 admin/templates/settings.tpl.php:1
+msgid "Address Book Settings"
+msgstr "Настройки адресной книги"
+
+#: admin/includes/functions.php:601
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\" target=\"_blank"
+"\">WPTaskForce License Helper</a> plugin to be active!"
+msgstr ""
+"Этот плагин требует, чтобы <a href=\"http://wpcargo.com/\" target=\"_blank"
+"\">WPTaskForce License Helper</a> был активен!"
+
+#: admin/includes/functions.php:604
+msgid ""
+"This plugin requires <a href=\"https://wordpress.org/plugins/wpcargo/\" "
+"target=\"_blank\">WPCargo</a> plugin to be active!"
+msgstr ""
+"Этот плагин требует, чтобы плагин <a href=\"https://wordpress.org/plugins/"
+"wpcargo/\" target=\"_blank\">WPCargo</a> был активным!"
+
+#: admin/includes/functions.php:607
+msgid ""
+"This plugin requires <strong>WPCargo Custom Field Add-ons</strong> plugin to "
+"be active!"
+msgstr ""
+"Этот плагин требует, <strong>чтобы плагин WPCargo Custom Field Add-ons</"
+"strong> был активным!"
+
+#: admin/includes/functions.php:610
+msgid ""
+"This plugin requires <strong>WPCargo Frontend Manager</strong> plugin to be "
+"active!"
+msgstr ""
+"Этот плагин требует, чтобы плагин <strong>WPCargo Frontend Manager</strong> "
+"был активным!"
+
+#: admin/includes/functions.php:613
+msgid "Cheating, uh?"
+msgstr "Обман, а?"
+
+#: admin/includes/hooks.php:22 admin/includes/hooks.php:40
+msgid "Assigned To"
+msgstr "Назначено"
+
+#: admin/includes/hooks.php:42
+msgid "Select User"
+msgstr "Выбрать пользователя"
+
+#: admin/includes/hooks.php:71 admin/includes/hooks.php:91
+#, php-format
+msgid "Search %s"
+msgstr "Поиск %s"
+
+#: admin/includes/hooks.php:71 admin/includes/hooks.php:91
+msgid "-- Select One --"
+msgstr "-- Выберите один --"
+
+#: admin/includes/hooks.php:79 admin/includes/hooks.php:99
+msgid "Add to Address Book?"
+msgstr "Добавить в адресную книгу?"
+
+#: admin/includes/hooks.php:264
+msgid ""
+"Something went wrong while processing data, please reload the page and try "
+"again."
+msgstr ""
+"Что-то пошло не так при обработке данных, пожалуйста, перезагрузите страницу "
+"и повторите попытку."
+
+#: admin/includes/hooks.php:348
+msgid "Insert"
+msgstr "Вставить"
+
+#: admin/includes/hooks.php:353
+msgid "NO Book List Found!"
+msgstr "Список книг не найден!"
+
+#: admin/includes/hooks.php:391
+msgid "-- Select Address --"
+msgstr "-- Выберите адрес --"
+
+#: admin/includes/hooks.php:396
+msgid " has no registered book address."
+msgstr " не имеет зарегистрированного адреса книги."
+
+#: admin/includes/hooks.php:408 admin/templates/book.tpl.php:38
+#: admin/templates/book.tpl.php:107 admin/templates/book.tpl.php:124
+#: admin/templates/user-book.tpl.php:39 admin/templates/user-book.tpl.php:98
+#: admin/templates/user-book.tpl.php:116 templates/address-book.tpl.php:29
+#: templates/default-modal.tpl.php:7 templates/default-modal.tpl.php:21
+msgid "Default"
+msgstr "Клиент по умолчанию"
+
+#: admin/includes/hooks.php:485
+msgid "Settings"
+msgstr "Настройки"
+
+#: admin/includes/hooks.php:486
+msgid "License"
+msgstr "Лицензия"
+
+#: admin/templates/book.tpl.php:9 admin/templates/user-book.tpl.php:9
+msgid "Receiver Book"
+msgstr "Приемник Книга"
+
+#: admin/templates/book.tpl.php:12 admin/templates/user-book.tpl.php:12
+msgid "Shipper Book"
+msgstr "Книга грузоотправителя"
+
+#: admin/templates/book.tpl.php:23 admin/templates/user-book.tpl.php:24
+#: templates/address-book.tpl.php:8
+msgid "Search"
+msgstr "Поиск"
+
+#: admin/templates/book.tpl.php:44 admin/templates/book.tpl.php:108
+#: admin/templates/book.tpl.php:125
+msgid "Public"
+msgstr "Публичный"
+
+#: admin/templates/book.tpl.php:85 admin/templates/user-book.tpl.php:73
+msgid "Update"
+msgstr "Обновить"
+
+#: admin/templates/book.tpl.php:88 admin/templates/user-book.tpl.php:75
+msgid "Delete"
+msgstr "Удалить"
+
+#: admin/templates/book.tpl.php:92 admin/templates/user-book.tpl.php:81
+#: templates/address-book.tpl.php:74
+msgid "No Book Address Found!"
+msgstr "Адрес книги не найден!"
+
+#: admin/templates/import.tpl.php:3 admin/templates/import.tpl.php:42
+msgid "Export Address Book"
+msgstr "Экспорт адресной книги"
+
+#: admin/templates/import.tpl.php:13
+msgid "Select User Book to Export"
+msgstr "Выберите книгу пользователей для экспорта"
+
+#: admin/templates/import.tpl.php:19
+msgid "All User"
+msgstr "Все пользователи"
+
+#: admin/templates/import.tpl.php:32
+msgid "Select Book Type"
+msgstr "Выберите тип книги"
+
+#: admin/templates/import.tpl.php:35 admin/templates/import.tpl.php:65
+msgid "Select Book"
+msgstr "Выбрать Книгу"
+
+#: admin/templates/import.tpl.php:36 admin/templates/import.tpl.php:66
+msgid "Receiver"
+msgstr "Получатель"
+
+#: admin/templates/import.tpl.php:37 admin/templates/import.tpl.php:67
+msgid "Shipper"
+msgstr "Грузоотправитель"
+
+#: admin/templates/import.tpl.php:48 admin/templates/import.tpl.php:79
+msgid "Import Address Book"
+msgstr "Импорт адресной книги"
+
+#: admin/templates/import.tpl.php:49
+msgid ""
+"Note: Please download .csv format in importing address book based on Book "
+"Type."
+msgstr ""
+"Примечание: Пожалуйста, загрузите .csv формат в импорт адресной книги на "
+"основе типа книги."
+
+#: admin/templates/import.tpl.php:51
+msgid "Download Shipper CSV template"
+msgstr "Скачать CSV-шаблон грузоотправителя"
+
+#: admin/templates/import.tpl.php:52
+msgid "Download Receiver CSV template"
+msgstr "Скачать CSV-шаблон приемника"
+
+#: admin/templates/import.tpl.php:58
+msgid "Upload Book"
+msgstr "Загрузить книгу"
+
+#: admin/templates/import.tpl.php:62
+msgid "Select Book Type to Import"
+msgstr "Выберите тип книги для импорта"
+
+#: admin/templates/import.tpl.php:72
+msgid "Mac / International language settings compatibility"
+msgstr "Совместимость с Mac / Международными языковыми настройками"
+
+#: admin/templates/import.tpl.php:75
+msgid ""
+"Please this checkbox if you're using Mac OS or you're having issue importing "
+"due to international language settings setup."
+msgstr ""
+"Установите этот флажок, если вы используете Mac OS или у вас возникли "
+"проблемы с импортом из-за настройки международных языковых настроек."
+
+#: admin/templates/settings.tpl.php:9
+msgid "Disable Search Shipper Address?"
+msgstr "Отключить поиск адреса грузоотправителя?"
+
+#: admin/templates/settings.tpl.php:14
+msgid "Select Shipper Address Field Search Value"
+msgstr "Выберите значение поиска поля адреса грузоотправителя"
+
+#: admin/templates/settings.tpl.php:18
+msgid "-- Select Shipper Search Value --"
+msgstr "-- Выберите значение поиска грузоотправителя --"
+
+#: admin/templates/settings.tpl.php:28
+msgid ""
+"The selected options will be the key value for the search Shipper Book "
+"Address list in the form."
+msgstr ""
+"Выбранные параметры будут ключевым значением для поиска в списке адресов "
+"книги грузоотправителя в форме."
+
+#: admin/templates/settings.tpl.php:33
+msgid "Select Fields to be display in Shipper Book Address List"
+msgstr "Выберите поля для отображения в списке адресов книги грузоотправителя"
+
+#: admin/templates/settings.tpl.php:48
+msgid ""
+"The selected options will display in the Shipper Book Address template list "
+"table."
+msgstr ""
+"Выбранные опции будут отображаться в таблице списка шаблонов Адреса книги "
+"грузоотправителя."
+
+#: admin/templates/settings.tpl.php:53
+msgid "Disable Search Receiver Address?"
+msgstr "Отключить адрес получателя поиска?"
+
+#: admin/templates/settings.tpl.php:58
+msgid "Select Receiver Address Field Search Value"
+msgstr "Выберите значение поиска поля адреса получателя"
+
+#: admin/templates/settings.tpl.php:62
+msgid "-- Select Receiver Search Value --"
+msgstr "-- Выберите значение поиска приемника --"
+
+#: admin/templates/settings.tpl.php:72
+msgid ""
+"The selected options will be the key value for the search Receiver Book "
+"Address list in the form."
+msgstr ""
+"Выбранные варианты будут ключевым значением для списка адресов поисковых "
+"запросов в форме."
+
+#: admin/templates/settings.tpl.php:77
+msgid "Select Fields to be display in Receiver Book Address List"
+msgstr "Выберите поля для отображения в списке адресов книги получателя"
+
+#: admin/templates/settings.tpl.php:92
+msgid ""
+"The selected options will display in the Receiver Book Address template list "
+"table."
+msgstr ""
+"Выбранные параметры отобразятся в таблице списка шаблонов адреса книги "
+"получателя."
+
+#: admin/templates/settings.tpl.php:97
+msgid "Save Address Book Settings"
+msgstr "Сохранение настроек адресной книги"
+
+#: admin/templates/user-book.tpl.php:4
+msgid "User Address Book"
+msgstr "Адресная книга пользователя"
+
+#: templates/address-book.tpl.php:2 templates/frontend-modal.tpl.php:8
+msgid "Add New"
+msgstr "Добавить новый"
+
+#: templates/address-book.tpl.php:13
+msgid "Shipper Book Address"
+msgstr "Адрес книги грузоотправителя"
+
+#: templates/address-book.tpl.php:14
+msgid "Receiver Book Address"
+msgstr "Адрес книги получателя"
+
+#: templates/address-book.tpl.php:30
+msgid "Actions"
+msgstr "Действия"
+
+#: templates/frontend-modal.tpl.php:9 templates/frontend-modal.tpl.php:20
+#: templates/frontend-modal.tpl.php:37 templates/frontend-modal.tpl.php:49
+msgid "Close"
+msgstr "Закрыть"
+
+#: templates/frontend-modal.tpl.php:21
+msgid "Save Address"
+msgstr "Сохранить адрес"
+
+#: wpcargo-address-book-add-ons.php:28
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\">WPCargo</a> Free "
+"Version to activate"
+msgstr ""
+"Этот плагин требует <a href=\"http://wpcargo.com/\">WPCargo</a> Бесплатная "
+"версия для активации"
+
+#: wpcargo-address-book-add-ons.php:32
+msgid "This plugin requires WPCargo Custom Field Addons to activate"
+msgstr ""
+"Этот плагин требует WPCargo Пользовательские полевые дополнения для активации"
+
+#: wpcargo-address-book-add-ons.php:45
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\">WPTaskForce License "
+"Helper</a> plugin to activate!"
+msgstr ""
+"Этот плагин требует <a href=\"http://wpcargo.com/\">WPTaskForce License "
+"Helper</a> плагин для активации!"
+
+#. Plugin Name of the plugin/theme
+msgid "WPCargo Address Book Add-ons"
+msgstr "Надстройки адресной книги WPCargo"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wptaskforce.com/"
+msgstr "http://wptaskforce.com/"
+
+#. Description of the plugin/theme
+msgid ""
+"WPCargo Address Book Add-ons helps you manage shipper/receiver address. "
+"Availble shortcode [wpc-address-book]"
+msgstr ""
+"Надстройки адресной книги WPCargo помогают управлять адресом "
+"грузоотправителя/получателя. Доступный шорткод [wpc-адресная книга]"
+
+#. Author of the plugin/theme
+msgid "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"
+msgstr "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"
+
+#~ msgid "Disable Autogenerate Address?"
+#~ msgstr "Отключить автосгенерировать адрес?"
+
+#~ msgid ""
+#~ "By default every create/update shipment it will generate new address if "
+#~ "it is not yet in the Address Book"
+#~ msgstr ""
+#~ "По умолчанию при каждом создании/обновлении посылки будет генерироваться "
+#~ "новый адрес, если его еще нет в адресной книге"

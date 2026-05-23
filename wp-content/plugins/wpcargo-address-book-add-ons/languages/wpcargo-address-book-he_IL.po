@@ -1,0 +1,677 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPCargo Address Book Add-ons\n"
+"POT-Creation-Date: 2022-02-23 17:03+0800\n"
+"PO-Revision-Date: 2022-02-23 17:03+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: he_IL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n==2 ? 1 : n>10 && n%10==0 ? "
+"2 : 3);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpcargo-address-book-add-ons.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: admin/classes/class-address-book-scripts.php:31
+#: admin/classes/class-address-book-scripts.php:82
+#: admin/includes/functions.php:556
+msgid "Search Address"
+msgstr "חיפוש כתובת"
+
+#: admin/classes/class-address-book-scripts.php:32
+#: admin/classes/class-address-book-scripts.php:83
+msgid "Please enter more characters"
+msgstr "נא הזן תווים נוספים"
+
+#: admin/classes/class-address-book-scripts.php:33
+#: admin/classes/class-address-book-scripts.php:84
+msgid "Please delete some character"
+msgstr "נא מחק תו מסוים"
+
+#: admin/classes/class-address-book-scripts.php:34
+#: admin/classes/class-address-book-scripts.php:38
+#: admin/classes/class-address-book-scripts.php:85
+#: admin/classes/class-address-book-scripts.php:89
+msgid "Error loading results"
+msgstr "שגיאה בטעינת תוצאות"
+
+#: admin/classes/class-address-book-scripts.php:35
+#: admin/classes/class-address-book-scripts.php:86
+msgid "Loading more results"
+msgstr "טוען תוצאות נוספות"
+
+#: admin/classes/class-address-book-scripts.php:36
+#: admin/classes/class-address-book-scripts.php:87
+msgid "No results found"
+msgstr "לא נמצאו תוצאות"
+
+#: admin/classes/class-address-book-scripts.php:37
+#: admin/classes/class-address-book-scripts.php:88
+msgid "Searching..."
+msgstr "מחפש..."
+
+#: admin/classes/class-address-book-scripts.php:58
+#: admin/classes/class-address-book-scripts.php:109
+msgid "Are you sure you want to delete this Book Address?"
+msgstr "האם אתה בטוח שברצונך למחוק כתובת ספר זו?"
+
+#: admin/classes/class-address-book-scripts.php:102
+#: admin/classes/class-address-book-scripts.php:103
+msgid "Are you sure you want to Cancel Order?"
+msgstr "האם אתה בטוח שברצונך לבטל הזמנה?"
+
+#: admin/classes/class-address-book-scripts.php:104
+msgid "Something went wrong cannot cancel Quotation, Please contact support."
+msgstr "משהו שהשתבש אין אפשרות לבטל הצעת מחיר, אנא פנה לתמיכה."
+
+#: admin/classes/class-address-book-scripts.php:105
+msgid "Something went wrong during the process. Please try again later."
+msgstr "משהו השתבש במהלך התהליך. נא נסה שוב מאוחר יותר."
+
+#: admin/classes/class-address-book-scripts.php:106
+msgid "Edit Book Address"
+msgstr "עריכת כתובת ספר"
+
+#: admin/classes/class-address-book-scripts.php:107
+#: admin/templates/book.tpl.php:4 admin/templates/user-book.tpl.php:4
+msgid "Add"
+msgstr "הוסף"
+
+#: admin/classes/class-address-book-scripts.php:107
+#: admin/templates/book.tpl.php:4 admin/templates/user-book.tpl.php:4
+#: templates/address-book.tpl.php:2
+msgid "Address"
+msgstr "כתובת"
+
+#: admin/classes/class-address-book-scripts.php:108
+msgid "Book List"
+msgstr "רשימת ספרים"
+
+#: admin/classes/class-address-book-scripts.php:110
+msgid "Are you sure you want to set all in public?"
+msgstr "האם אתה בטוח שברצונך להגדיר את הכל בציבור?"
+
+#: admin/classes/class-address-book-scripts.php:111
+msgid "Are you sure you want to remove all from public?"
+msgstr "האם אתה בטוח שברצונך להסיר את כל הציבור?"
+
+#: admin/classes/class-address-book-table.php:38
+#: admin/classes/class-import-export.php:46
+msgid "User Name"
+msgstr "שם משתמש"
+
+#: admin/classes/class-address-book-table.php:39
+msgid "View Book Address"
+msgstr "הצג כתובת ספר"
+
+#: admin/classes/class-address-book-table.php:40
+msgid "Role"
+msgstr "תפקיד"
+
+#: admin/classes/class-address-book-table.php:41
+msgid "No. Shipper Address"
+msgstr "לא. כתובת השולח"
+
+#: admin/classes/class-address-book-table.php:42
+msgid "No. Receiver Address"
+msgstr "לא. כתובת מקלט"
+
+#: admin/classes/class-import-export.php:13
+#: admin/classes/class-import-export.php:14
+msgid "Import/Export"
+msgstr "ייבוא/ייצוא"
+
+#: admin/classes/class-import-export.php:46
+#: admin/classes/class-import-export.php:104
+#: admin/classes/class-import-export.php:189
+msgid "userID"
+msgstr "מזהה משתמש"
+
+#: admin/classes/class-import-export.php:80
+msgid "Importing Address"
+msgstr "מייבא כתובת"
+
+#: admin/classes/class-import-export.php:112
+msgid "Wrong File Format uploaded. It must be .CSV format."
+msgstr "תבנית קובץ שגויה הועלתה. זה חייב להיות. תבנית CSV."
+
+#: admin/classes/class-import-export.php:155
+msgid ""
+"Something went wrong! Please check your file header or Check Mac / "
+"International language settings compatibility issue"
+msgstr ""
+"משהו השתבש! נא בדוק את כותרת הקובץ או בדוק את בעיית התאימות להגדרות השפה "
+"הבינלאומית של Mac / השפה הבינלאומית"
+
+#: admin/classes/class-import-export.php:200
+msgid "Address Book Import/Export"
+msgstr "ייבוא/ייצוא של פנקס כתובות"
+
+#: admin/includes/functions.php:306
+msgid "There is no error, the file uploaded with success."
+msgstr "אין שגיאה, הקובץ שהועלה בהצלחה."
+
+#: admin/includes/functions.php:307
+msgid "The uploaded file exceeds the upload_max_filesize directive in php.ini."
+msgstr "הקובץ שהועלה עולה על ההנחיה upload_max_filesize ב- php.ini."
+
+#: admin/includes/functions.php:308
+msgid ""
+"The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in "
+"the HTML form."
+msgstr "הקובץ שהועלה עולה על ההוראה MAX_FILE_SIZE שצוינה בטופס HTML."
+
+#: admin/includes/functions.php:309
+msgid "The uploaded file was only partially uploaded."
+msgstr "הקובץ לא עלה עד הסוף."
+
+#: admin/includes/functions.php:310
+msgid "No file was uploaded."
+msgstr "לא הועלה קובץ."
+
+#: admin/includes/functions.php:311
+msgid "Missing a temporary folder."
+msgstr "חסר הרשאות."
+
+#: admin/includes/functions.php:312
+msgid "Failed to write file to disk."
+msgstr "נכשלתי בכתיבת קובץ לדיסק."
+
+#: admin/includes/functions.php:313
+msgid "A PHP extension stopped the file upload."
+msgstr "סיומת PHP עצרה את העלאת הקובץ."
+
+#: admin/includes/functions.php:429 admin/includes/functions.php:520
+#: admin/includes/hooks.php:418
+msgid "Address Book"
+msgstr "פנקס כתובות"
+
+#: admin/includes/functions.php:490
+msgid "Please activate your license key <a href=\""
+msgstr "נא הפעל את מפתח הרישיון שלך <הי-רף=\""
+
+#: admin/includes/functions.php:493
+msgid ""
+"This user is not allowed to have Address Book, Please update user role with "
+"WPCargo user role."
+msgstr ""
+"משתמש זה אינו מורשה לכלול פנקס כתובות, נא עדכן את תפקיד המשתמש עם תפקיד "
+"המשתמש של WPCargo."
+
+#: admin/includes/functions.php:496
+msgid "Sorry, You are not allowed to Access this page."
+msgstr "מצטערים, אינך מורשה לגשת לדף זה."
+
+#: admin/includes/functions.php:499
+msgid ""
+"Page access restricted, This page need to setup template to WPCargo "
+"Dashboard to make it work."
+msgstr ""
+"הגישה לדף מוגבלת, דף זה צריך להגדיר תבנית ללוח המחוונים של WPCargo כדי לגרום "
+"לה לפעול."
+
+#: admin/includes/functions.php:502
+msgid "Address Book List"
+msgstr "רשימת פנקסי כתובות"
+
+#: admin/includes/functions.php:505
+msgid "Shipper and Receiver Address Book is Disabled. Please Enable"
+msgstr "פנקס הכתובות של השולח והמקבל אינו זמין. נא הפוך לזמין"
+
+#: admin/includes/functions.php:508
+msgid "Receiver Address Book is Disabled. Please Enable"
+msgstr "פנקס הכתובות של המקלט אינו זמין. אנא הפוך לזמין"
+
+#: admin/includes/functions.php:511
+msgid "Shipper Address Book is Disabled. Please Enable"
+msgstr "פנקס הכתובות של השולח אינו זמין. נא הפוך לזמין"
+
+#: admin/includes/functions.php:514
+msgid "here"
+msgstr "כאן"
+
+#: admin/includes/functions.php:517
+msgid "Please setup Address Book settings"
+msgstr "נא הגדר את הגדרות פנקס הכתובות"
+
+#: admin/includes/functions.php:523
+msgid "Address Book Description"
+msgstr "תיאור פנקס כתובות"
+
+#: admin/includes/functions.php:526
+msgid "Book Archives"
+msgstr "ארכיון ספרים"
+
+#: admin/includes/functions.php:529
+msgid "Parent Book:"
+msgstr "ספר האב:"
+
+#: admin/includes/functions.php:532
+msgid "All Books"
+msgstr "כל הספרים"
+
+#: admin/includes/functions.php:535
+msgid "Add New Address"
+msgstr "הוסף כתובת חדשה"
+
+#: admin/includes/functions.php:538 admin/templates/book.tpl.php:110
+#: admin/templates/user-book.tpl.php:102 templates/default-modal.tpl.php:9
+msgid "Add Address"
+msgstr "הוסף כתובת"
+
+#: admin/includes/functions.php:541
+msgid "New Address"
+msgstr "כתובת חדשה"
+
+#: admin/includes/functions.php:544 admin/templates/book.tpl.php:4
+msgid "My Address Book"
+msgstr "פנקס הכתובות שלי"
+
+#: admin/includes/functions.php:547 templates/frontend-modal.tpl.php:36
+msgid "Edit Address"
+msgstr "ערוך כתובת"
+
+#: admin/includes/functions.php:550 admin/templates/book.tpl.php:128
+#: admin/templates/user-book.tpl.php:120 templates/default-modal.tpl.php:24
+#: templates/frontend-modal.tpl.php:50
+msgid "Update Address"
+msgstr "עדכן כתובת"
+
+#: admin/includes/functions.php:553
+msgid "View Address"
+msgstr "הצג כתובת"
+
+#: admin/includes/functions.php:559
+msgid "Not found"
+msgstr "לא נמצא"
+
+#: admin/includes/functions.php:562
+msgid "Not found in Trash"
+msgstr "לא נמצא בפח זבל"
+
+#: admin/includes/functions.php:565
+msgid "Featured Image"
+msgstr "תמונה ראשית"
+
+#: admin/includes/functions.php:568
+msgid "Set featured image"
+msgstr "הגדר תמונה מייצגת"
+
+#: admin/includes/functions.php:571
+msgid "Remove featured image"
+msgstr "הסר תמונה מייצגת"
+
+#: admin/includes/functions.php:574
+msgid "Use as featured image"
+msgstr "השתמש כתמונה מייצגת"
+
+#: admin/includes/functions.php:577
+msgid "Shipper Book Address Empty"
+msgstr "כתובת פנקס השולחים ריקה"
+
+#: admin/includes/functions.php:580
+msgid "Insert into Address"
+msgstr "הוסף לכתובת"
+
+#: admin/includes/functions.php:583
+msgid "Uploaded to this Address"
+msgstr "הועלה לכתובת זו"
+
+#: admin/includes/functions.php:586
+msgid "Address list"
+msgstr "רשימת כתובות"
+
+#: admin/includes/functions.php:589
+msgid "Address list navigation"
+msgstr "ניווט ברשימת כתובות"
+
+#: admin/includes/functions.php:592
+msgid "Filter Books list"
+msgstr "רשימת ספרי סינון"
+
+#: admin/includes/functions.php:595
+msgid "Receiver Book Address Empty"
+msgstr "כתובת פנקס המקלטים ריקה"
+
+#: admin/includes/functions.php:598 admin/templates/settings.tpl.php:1
+msgid "Address Book Settings"
+msgstr "הגדרות פנקס כתובות"
+
+#: admin/includes/functions.php:601
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\" target=\"_blank"
+"\">WPTaskForce License Helper</a> plugin to be active!"
+msgstr ""
+"תוסף זה דורש תוסף <a href=\"http://wpcargo.com/\" target=\"_blank\">עוזר "
+"רישיון WPTaskForce</a> להיות פעיל!"
+
+#: admin/includes/functions.php:604
+msgid ""
+"This plugin requires <a href=\"https://wordpress.org/plugins/wpcargo/\" "
+"target=\"_blank\">WPCargo</a> plugin to be active!"
+msgstr ""
+"תוסף זה דורש תוסף <a href=\"https://wordpress.org/plugins/wpcargo/\" target="
+"\"_blank\">WPCargo</a> להיות פעיל!"
+
+#: admin/includes/functions.php:607
+msgid ""
+"This plugin requires <strong>WPCargo Custom Field Add-ons</strong> plugin to "
+"be active!"
+msgstr ""
+"תוסף זה דורש תוסף <strong>הרחבות שדה מותאם אישית WPCargo</strong> להיות פעיל!"
+
+#: admin/includes/functions.php:610
+msgid ""
+"This plugin requires <strong>WPCargo Frontend Manager</strong> plugin to be "
+"active!"
+msgstr "תוסף זה דורש תוסף <strong>מנהל חזית WPCargo</strong> להיות פעיל!"
+
+#: admin/includes/functions.php:613
+msgid "Cheating, uh?"
+msgstr "רמאות, אה?"
+
+#: admin/includes/hooks.php:22 admin/includes/hooks.php:40
+msgid "Assigned To"
+msgstr "הקצה ל"
+
+#: admin/includes/hooks.php:42
+msgid "Select User"
+msgstr "בחירת משתמש"
+
+#: admin/includes/hooks.php:71 admin/includes/hooks.php:91
+#, php-format
+msgid "Search %s"
+msgstr "לחפש ב%s"
+
+#: admin/includes/hooks.php:71 admin/includes/hooks.php:91
+msgid "-- Select One --"
+msgstr "--בחר אחד--"
+
+#: admin/includes/hooks.php:79 admin/includes/hooks.php:99
+msgid "Add to Address Book?"
+msgstr "האם להוסיף פנקס כתובות?"
+
+#: admin/includes/hooks.php:264
+msgid ""
+"Something went wrong while processing data, please reload the page and try "
+"again."
+msgstr "משהו השתבש בעת עיבוד נתונים, נא טען מחדש את הדף ונסה שוב."
+
+#: admin/includes/hooks.php:348
+msgid "Insert"
+msgstr "הוסף"
+
+#: admin/includes/hooks.php:353
+msgid "NO Book List Found!"
+msgstr "לא נמצאה רשימת ספרים!"
+
+#: admin/includes/hooks.php:391
+msgid "-- Select Address --"
+msgstr "-- בחר כתובת --"
+
+#: admin/includes/hooks.php:396
+msgid " has no registered book address."
+msgstr " אין כתובת ספר רשומה."
+
+#: admin/includes/hooks.php:408 admin/templates/book.tpl.php:38
+#: admin/templates/book.tpl.php:107 admin/templates/book.tpl.php:124
+#: admin/templates/user-book.tpl.php:39 admin/templates/user-book.tpl.php:98
+#: admin/templates/user-book.tpl.php:116 templates/address-book.tpl.php:29
+#: templates/default-modal.tpl.php:7 templates/default-modal.tpl.php:21
+msgid "Default"
+msgstr "ברירת מחדל"
+
+#: admin/includes/hooks.php:485
+msgid "Settings"
+msgstr "הגדרות"
+
+#: admin/includes/hooks.php:486
+msgid "License"
+msgstr "רישיון"
+
+#: admin/templates/book.tpl.php:9 admin/templates/user-book.tpl.php:9
+msgid "Receiver Book"
+msgstr "ספר מקלט"
+
+#: admin/templates/book.tpl.php:12 admin/templates/user-book.tpl.php:12
+msgid "Shipper Book"
+msgstr "ספר השולח"
+
+#: admin/templates/book.tpl.php:23 admin/templates/user-book.tpl.php:24
+#: templates/address-book.tpl.php:8
+msgid "Search"
+msgstr "חיפוש"
+
+#: admin/templates/book.tpl.php:44 admin/templates/book.tpl.php:108
+#: admin/templates/book.tpl.php:125
+msgid "Public"
+msgstr "ציבורי"
+
+#: admin/templates/book.tpl.php:85 admin/templates/user-book.tpl.php:73
+msgid "Update"
+msgstr "עדכון"
+
+#: admin/templates/book.tpl.php:88 admin/templates/user-book.tpl.php:75
+msgid "Delete"
+msgstr "מחק"
+
+#: admin/templates/book.tpl.php:92 admin/templates/user-book.tpl.php:81
+#: templates/address-book.tpl.php:74
+msgid "No Book Address Found!"
+msgstr "לא נמצאה כתובת ספר!"
+
+#: admin/templates/import.tpl.php:3 admin/templates/import.tpl.php:42
+msgid "Export Address Book"
+msgstr "יצא פנקס כתובות"
+
+#: admin/templates/import.tpl.php:13
+msgid "Select User Book to Export"
+msgstr "בחר פנקס משתמשים לייצוא"
+
+#: admin/templates/import.tpl.php:19
+msgid "All User"
+msgstr "כל משתמש"
+
+#: admin/templates/import.tpl.php:32
+msgid "Select Book Type"
+msgstr "בחר סוג ספר"
+
+#: admin/templates/import.tpl.php:35 admin/templates/import.tpl.php:65
+msgid "Select Book"
+msgstr "בחר ספר"
+
+#: admin/templates/import.tpl.php:36 admin/templates/import.tpl.php:66
+msgid "Receiver"
+msgstr "המקבל"
+
+#: admin/templates/import.tpl.php:37 admin/templates/import.tpl.php:67
+msgid "Shipper"
+msgstr "השולח"
+
+#: admin/templates/import.tpl.php:48 admin/templates/import.tpl.php:79
+msgid "Import Address Book"
+msgstr "יבא פנקס כתובות"
+
+#: admin/templates/import.tpl.php:49
+msgid ""
+"Note: Please download .csv format in importing address book based on Book "
+"Type."
+msgstr "הערה: אנא הורד את התבנית .csv בייבוא פנקס כתובות המבוסס על סוג הספר."
+
+#: admin/templates/import.tpl.php:51
+msgid "Download Shipper CSV template"
+msgstr "הורד תבנית CSV של השולח"
+
+#: admin/templates/import.tpl.php:52
+msgid "Download Receiver CSV template"
+msgstr "הורד תבנית CSV של מקלט"
+
+#: admin/templates/import.tpl.php:58
+msgid "Upload Book"
+msgstr "העלה ספר"
+
+#: admin/templates/import.tpl.php:62
+msgid "Select Book Type to Import"
+msgstr "בחר סוג ספר לייבוא"
+
+#: admin/templates/import.tpl.php:72
+msgid "Mac / International language settings compatibility"
+msgstr "תאימות הגדרות Mac / שפה בינלאומית"
+
+#: admin/templates/import.tpl.php:75
+msgid ""
+"Please this checkbox if you're using Mac OS or you're having issue importing "
+"due to international language settings setup."
+msgstr ""
+"נא תיבת סימון זו אם אתה משתמש ב-Mac OS או אם אתה נתקל בבעיה בייבוא עקב הגדרת "
+"הגדרות שפה בינלאומיות."
+
+#: admin/templates/settings.tpl.php:9
+msgid "Disable Search Shipper Address?"
+msgstr "האם להפוך את כתובת שולח החיפוש ללא זמינה?"
+
+#: admin/templates/settings.tpl.php:14
+msgid "Select Shipper Address Field Search Value"
+msgstr "בחר ערך חיפוש של שדה כתובת השולח"
+
+#: admin/templates/settings.tpl.php:18
+msgid "-- Select Shipper Search Value --"
+msgstr "-- בחר ערך חיפוש של השולח --"
+
+#: admin/templates/settings.tpl.php:28
+msgid ""
+"The selected options will be the key value for the search Shipper Book "
+"Address list in the form."
+msgstr ""
+"האפשרויות שנבחרו יהיו ערך המפתח עבור רשימת כתובות פנקס שולח החיפוש בטופס."
+
+#: admin/templates/settings.tpl.php:33
+msgid "Select Fields to be display in Shipper Book Address List"
+msgstr "בחר שדות שיוצגו ברשימת הכתובות של פנקס השולחים"
+
+#: admin/templates/settings.tpl.php:48
+msgid ""
+"The selected options will display in the Shipper Book Address template list "
+"table."
+msgstr "האפשרויות שנבחרו יוצגו בטבלת התבניות של תבנית כתובת הספר של השולח."
+
+#: admin/templates/settings.tpl.php:53
+msgid "Disable Search Receiver Address?"
+msgstr "האם להפוך את כתובת מקלט החיפוש ללא זמינה?"
+
+#: admin/templates/settings.tpl.php:58
+msgid "Select Receiver Address Field Search Value"
+msgstr "בחר ערך חיפוש של שדה כתובת מקלט"
+
+#: admin/templates/settings.tpl.php:62
+msgid "-- Select Receiver Search Value --"
+msgstr "-- בחר ערך חיפוש מקלט --"
+
+#: admin/templates/settings.tpl.php:72
+msgid ""
+"The selected options will be the key value for the search Receiver Book "
+"Address list in the form."
+msgstr ""
+"האפשרויות שנבחרו יהיו ערך המפתח עבור רשימת כתובות פנקס מקבל החיפוש בטופס."
+
+#: admin/templates/settings.tpl.php:77
+msgid "Select Fields to be display in Receiver Book Address List"
+msgstr "בחר שדות שיוצגו ברשימת הכתובות של פנקס המקבלים"
+
+#: admin/templates/settings.tpl.php:92
+msgid ""
+"The selected options will display in the Receiver Book Address template list "
+"table."
+msgstr "האפשרויות שנבחרו יוצגו בטבלת התבניות של תבנית כתובת פנקס המקבלים."
+
+#: admin/templates/settings.tpl.php:97
+msgid "Save Address Book Settings"
+msgstr "שמירת הגדרות פנקס כתובות"
+
+#: admin/templates/user-book.tpl.php:4
+msgid "User Address Book"
+msgstr "פנקס כתובות של משתמשים"
+
+#: templates/address-book.tpl.php:2 templates/frontend-modal.tpl.php:8
+msgid "Add New"
+msgstr "הוסף חדש"
+
+#: templates/address-book.tpl.php:13
+msgid "Shipper Book Address"
+msgstr "כתובת ספר השולח"
+
+#: templates/address-book.tpl.php:14
+msgid "Receiver Book Address"
+msgstr "כתובת פנקס מקלט"
+
+#: templates/address-book.tpl.php:30
+msgid "Actions"
+msgstr "פעולות"
+
+#: templates/frontend-modal.tpl.php:9 templates/frontend-modal.tpl.php:20
+#: templates/frontend-modal.tpl.php:37 templates/frontend-modal.tpl.php:49
+msgid "Close"
+msgstr "סגור"
+
+#: templates/frontend-modal.tpl.php:21
+msgid "Save Address"
+msgstr "שמור כתובת"
+
+#: wpcargo-address-book-add-ons.php:28
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\">WPCargo</a> Free "
+"Version to activate"
+msgstr ""
+"תוסף זה דורש <a href=\"http://wpcargo.com/\">WPCargo</a> גרסה חינם כדי להפעיל"
+
+#: wpcargo-address-book-add-ons.php:32
+msgid "This plugin requires WPCargo Custom Field Addons to activate"
+msgstr "תוסף זה דורש תוספות שדה מותאמות אישית של WPCargo כדי להפעיל"
+
+#: wpcargo-address-book-add-ons.php:45
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\">WPTaskForce License "
+"Helper</a> plugin to activate!"
+msgstr ""
+"תוסף זה דורש תוסף <a href=\"http://wpcargo.com/\">מסייע הרישיון של "
+"WPTaskForce</a> כדי להפעיל!"
+
+#. Plugin Name of the plugin/theme
+msgid "WPCargo Address Book Add-ons"
+msgstr "הרחבות פנקס כתובות של WPCargo"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wptaskforce.com/"
+msgstr "http://wptaskforce.com/"
+
+#. Description of the plugin/theme
+msgid ""
+"WPCargo Address Book Add-ons helps you manage shipper/receiver address. "
+"Availble shortcode [wpc-address-book]"
+msgstr ""
+"הרחבות פנקס כתובות של WPCargo מסייעות לך לנהל את כתובת השולח/המקבל. קוד קצר "
+"הועיל [wpc-פנקס כתובות]"
+
+#. Author of the plugin/theme
+msgid "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"
+msgstr "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"
+
+#~ msgid "Disable Autogenerate Address?"
+#~ msgstr "האם להפוך כתובת של הפעלה אוטומטית ללא זמינה?"
+
+#~ msgid ""
+#~ "By default every create/update shipment it will generate new address if "
+#~ "it is not yet in the Address Book"
+#~ msgstr ""
+#~ "כברירת מחדל, כל משלוח יצירה/עדכון הוא יפיק כתובת חדשה אם הוא עדיין לא "
+#~ "נמצא בפנקס הכתובות"

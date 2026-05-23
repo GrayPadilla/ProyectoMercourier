@@ -1,0 +1,703 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPCargo Address Book Add-ons\n"
+"POT-Creation-Date: 2022-02-23 17:05+0800\n"
+"PO-Revision-Date: 2022-02-23 17:05+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpcargo-address-book-add-ons.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: admin/classes/class-address-book-scripts.php:31
+#: admin/classes/class-address-book-scripts.php:82
+#: admin/includes/functions.php:556
+msgid "Search Address"
+msgstr "Dirección de búsqueda"
+
+#: admin/classes/class-address-book-scripts.php:32
+#: admin/classes/class-address-book-scripts.php:83
+msgid "Please enter more characters"
+msgstr "Por favor, introduzca más caracteres"
+
+#: admin/classes/class-address-book-scripts.php:33
+#: admin/classes/class-address-book-scripts.php:84
+msgid "Please delete some character"
+msgstr "Por favor, elimine algún carácter"
+
+#: admin/classes/class-address-book-scripts.php:34
+#: admin/classes/class-address-book-scripts.php:38
+#: admin/classes/class-address-book-scripts.php:85
+#: admin/classes/class-address-book-scripts.php:89
+msgid "Error loading results"
+msgstr "Error al cargar los resultados"
+
+#: admin/classes/class-address-book-scripts.php:35
+#: admin/classes/class-address-book-scripts.php:86
+msgid "Loading more results"
+msgstr "Cargando más resultados"
+
+#: admin/classes/class-address-book-scripts.php:36
+#: admin/classes/class-address-book-scripts.php:87
+msgid "No results found"
+msgstr "No se han encontrado resultados"
+
+#: admin/classes/class-address-book-scripts.php:37
+#: admin/classes/class-address-book-scripts.php:88
+msgid "Searching..."
+msgstr "Buscando..."
+
+#: admin/classes/class-address-book-scripts.php:58
+#: admin/classes/class-address-book-scripts.php:109
+msgid "Are you sure you want to delete this Book Address?"
+msgstr "¿Está seguro de que desea eliminar esta dirección del directorio?"
+
+#: admin/classes/class-address-book-scripts.php:102
+#: admin/classes/class-address-book-scripts.php:103
+msgid "Are you sure you want to Cancel Order?"
+msgstr "¿Está seguro de que desea cancelar el pedido?"
+
+#: admin/classes/class-address-book-scripts.php:104
+msgid "Something went wrong cannot cancel Quotation, Please contact support."
+msgstr ""
+"Algo salió mal no puede cancelar la cotización, póngase en contacto con el "
+"soporte técnico."
+
+#: admin/classes/class-address-book-scripts.php:105
+msgid "Something went wrong during the process. Please try again later."
+msgstr "Algo salió mal durante el proceso. Inténtelo de nuevo más tarde."
+
+#: admin/classes/class-address-book-scripts.php:106
+msgid "Edit Book Address"
+msgstr "Editar dirección del directorio"
+
+#: admin/classes/class-address-book-scripts.php:107
+#: admin/templates/book.tpl.php:4 admin/templates/user-book.tpl.php:4
+msgid "Add"
+msgstr "Añadir"
+
+#: admin/classes/class-address-book-scripts.php:107
+#: admin/templates/book.tpl.php:4 admin/templates/user-book.tpl.php:4
+#: templates/address-book.tpl.php:2
+msgid "Address"
+msgstr "Dirección"
+
+#: admin/classes/class-address-book-scripts.php:108
+msgid "Book List"
+msgstr "Lista de directorios"
+
+#: admin/classes/class-address-book-scripts.php:110
+msgid "Are you sure you want to set all in public?"
+msgstr "¿Estás seguro de que quieres poner todo en público?"
+
+#: admin/classes/class-address-book-scripts.php:111
+msgid "Are you sure you want to remove all from public?"
+msgstr "¿Está seguro de que desea eliminar todo del público?"
+
+#: admin/classes/class-address-book-table.php:38
+#: admin/classes/class-import-export.php:46
+msgid "User Name"
+msgstr "Nombre de usuario"
+
+#: admin/classes/class-address-book-table.php:39
+msgid "View Book Address"
+msgstr "Ver dirección del libro"
+
+#: admin/classes/class-address-book-table.php:40
+msgid "Role"
+msgstr "Rol"
+
+#: admin/classes/class-address-book-table.php:41
+msgid "No. Shipper Address"
+msgstr "No. Dirección del remitente"
+
+#: admin/classes/class-address-book-table.php:42
+msgid "No. Receiver Address"
+msgstr "No. Dirección del receptor"
+
+#: admin/classes/class-import-export.php:13
+#: admin/classes/class-import-export.php:14
+msgid "Import/Export"
+msgstr "Importar/Exportar"
+
+#: admin/classes/class-import-export.php:46
+#: admin/classes/class-import-export.php:104
+#: admin/classes/class-import-export.php:189
+msgid "userID"
+msgstr "Userid"
+
+#: admin/classes/class-import-export.php:80
+msgid "Importing Address"
+msgstr "Importación de dirección"
+
+#: admin/classes/class-import-export.php:112
+msgid "Wrong File Format uploaded. It must be .CSV format."
+msgstr "Formato de archivo incorrecto cargado. Debe ser . Formato CSV."
+
+#: admin/classes/class-import-export.php:155
+msgid ""
+"Something went wrong! Please check your file header or Check Mac / "
+"International language settings compatibility issue"
+msgstr ""
+"¡Algo salió mal! Verifique el encabezado de su archivo o verifique el "
+"problema de compatibilidad de la configuración de idioma mac / internacional"
+
+#: admin/classes/class-import-export.php:200
+msgid "Address Book Import/Export"
+msgstr "Importación/Exportación del directorio de direcciones"
+
+#: admin/includes/functions.php:306
+msgid "There is no error, the file uploaded with success."
+msgstr "No hay ningún error, el archivo cargado con éxito."
+
+#: admin/includes/functions.php:307
+msgid "The uploaded file exceeds the upload_max_filesize directive in php.ini."
+msgstr "El archivo subido excede la directiva upload_max_filesize en php.ini."
+
+#: admin/includes/functions.php:308
+msgid ""
+"The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in "
+"the HTML form."
+msgstr ""
+"El archivo cargado excede el MAX_FILE_SIZE especificado en el formulario "
+"HTML."
+
+#: admin/includes/functions.php:309
+msgid "The uploaded file was only partially uploaded."
+msgstr "El archivo cargado sólo fue parcialmente subido."
+
+#: admin/includes/functions.php:310
+msgid "No file was uploaded."
+msgstr "No se ha subido ningún archivo."
+
+#: admin/includes/functions.php:311
+msgid "Missing a temporary folder."
+msgstr "Falta una carpeta temporal."
+
+#: admin/includes/functions.php:312
+msgid "Failed to write file to disk."
+msgstr "Error al escribir el archivo en el disco."
+
+#: admin/includes/functions.php:313
+msgid "A PHP extension stopped the file upload."
+msgstr "Una extensión PHP detuvo la carga del archivo."
+
+#: admin/includes/functions.php:429 admin/includes/functions.php:520
+#: admin/includes/hooks.php:418
+msgid "Address Book"
+msgstr "Libreta de direcciones"
+
+#: admin/includes/functions.php:490
+msgid "Please activate your license key <a href=\""
+msgstr "Active su clave de licencia <a href=\""
+
+#: admin/includes/functions.php:493
+msgid ""
+"This user is not allowed to have Address Book, Please update user role with "
+"WPCargo user role."
+msgstr ""
+"Este usuario no puede tener libreta de direcciones, actualice el rol de "
+"usuario con el rol de usuario WPCargo."
+
+#: admin/includes/functions.php:496
+msgid "Sorry, You are not allowed to Access this page."
+msgstr "Lo sentimos, no se le permite acceder a esta página."
+
+#: admin/includes/functions.php:499
+msgid ""
+"Page access restricted, This page need to setup template to WPCargo "
+"Dashboard to make it work."
+msgstr ""
+"Acceso a la página restringido, Esta página necesita configurar la plantilla "
+"en WPCargo Dashboard para que funcione."
+
+#: admin/includes/functions.php:502
+msgid "Address Book List"
+msgstr "Directorio de direcciones"
+
+#: admin/includes/functions.php:505
+msgid "Shipper and Receiver Address Book is Disabled. Please Enable"
+msgstr ""
+"La libreta de direcciones del remitente y del receptor está deshabilitada. "
+"Por favor, habilite"
+
+#: admin/includes/functions.php:508
+msgid "Receiver Address Book is Disabled. Please Enable"
+msgstr ""
+"La libreta de direcciones de Receiver está deshabilitada. Por favor, habilite"
+
+#: admin/includes/functions.php:511
+msgid "Shipper Address Book is Disabled. Please Enable"
+msgstr ""
+"La libreta de direcciones del remitente está deshabilitada. Por favor, "
+"habilite"
+
+#: admin/includes/functions.php:514
+msgid "here"
+msgstr "aquí"
+
+#: admin/includes/functions.php:517
+msgid "Please setup Address Book settings"
+msgstr "Configure la configuración de la Libreta de direcciones"
+
+#: admin/includes/functions.php:523
+msgid "Address Book Description"
+msgstr "Descripción del directorio de direcciones"
+
+#: admin/includes/functions.php:526
+msgid "Book Archives"
+msgstr "Archivos de directorio"
+
+#: admin/includes/functions.php:529
+msgid "Parent Book:"
+msgstr "Libro para Padres:"
+
+#: admin/includes/functions.php:532
+msgid "All Books"
+msgstr "Todos los directorios"
+
+#: admin/includes/functions.php:535
+msgid "Add New Address"
+msgstr "Añadir nueva dirección"
+
+#: admin/includes/functions.php:538 admin/templates/book.tpl.php:110
+#: admin/templates/user-book.tpl.php:102 templates/default-modal.tpl.php:9
+msgid "Add Address"
+msgstr "Añadir Dirección"
+
+#: admin/includes/functions.php:541
+msgid "New Address"
+msgstr "Nueva Dirección"
+
+#: admin/includes/functions.php:544 admin/templates/book.tpl.php:4
+msgid "My Address Book"
+msgstr "Mi directorio de direcciones"
+
+#: admin/includes/functions.php:547 templates/frontend-modal.tpl.php:36
+msgid "Edit Address"
+msgstr "Editar dirección"
+
+#: admin/includes/functions.php:550 admin/templates/book.tpl.php:128
+#: admin/templates/user-book.tpl.php:120 templates/default-modal.tpl.php:24
+#: templates/frontend-modal.tpl.php:50
+msgid "Update Address"
+msgstr "Dirección de actualización"
+
+#: admin/includes/functions.php:553
+msgid "View Address"
+msgstr "Ver dirección"
+
+#: admin/includes/functions.php:559
+msgid "Not found"
+msgstr "No encontrado"
+
+#: admin/includes/functions.php:562
+msgid "Not found in Trash"
+msgstr "No encontrado en la papelera"
+
+#: admin/includes/functions.php:565
+msgid "Featured Image"
+msgstr "Imagen destacada"
+
+#: admin/includes/functions.php:568
+msgid "Set featured image"
+msgstr "Establecer imagen destacada"
+
+#: admin/includes/functions.php:571
+msgid "Remove featured image"
+msgstr "Eliminar la imagen destacada"
+
+#: admin/includes/functions.php:574
+msgid "Use as featured image"
+msgstr "Usar como imagen destacada"
+
+#: admin/includes/functions.php:577
+msgid "Shipper Book Address Empty"
+msgstr "Dirección del libro del remitente vacía"
+
+#: admin/includes/functions.php:580
+msgid "Insert into Address"
+msgstr "Insertar en la dirección"
+
+#: admin/includes/functions.php:583
+msgid "Uploaded to this Address"
+msgstr "Subido a esta dirección"
+
+#: admin/includes/functions.php:586
+msgid "Address list"
+msgstr "Lista de direcciones"
+
+#: admin/includes/functions.php:589
+msgid "Address list navigation"
+msgstr "Navegación de lista de direcciones"
+
+#: admin/includes/functions.php:592
+msgid "Filter Books list"
+msgstr "Filtrar lista del directorio"
+
+#: admin/includes/functions.php:595
+msgid "Receiver Book Address Empty"
+msgstr "Dirección de la libreta del receptor vacía"
+
+#: admin/includes/functions.php:598 admin/templates/settings.tpl.php:1
+msgid "Address Book Settings"
+msgstr "Configuración del directorio de direcciones"
+
+#: admin/includes/functions.php:601
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\" target=\"_blank"
+"\">WPTaskForce License Helper</a> plugin to be active!"
+msgstr ""
+"Este plugin requiere <a href=\"http://wpcargo.com/\" target=\"_blank"
+"\">WPTaskForce License Helper</a> plugin para estar activo!"
+
+#: admin/includes/functions.php:604
+msgid ""
+"This plugin requires <a href=\"https://wordpress.org/plugins/wpcargo/\" "
+"target=\"_blank\">WPCargo</a> plugin to be active!"
+msgstr ""
+"Este plugin requiere <a href=\"https://wordpress.org/plugins/wpcargo/\" "
+"target=\"_blank\">WPCargo</a> plugin para estar activo!"
+
+#: admin/includes/functions.php:607
+msgid ""
+"This plugin requires <strong>WPCargo Custom Field Add-ons</strong> plugin to "
+"be active!"
+msgstr ""
+"Este plugin requiere <strong>WPCargo Custom Field Add-ons</strong> plugin "
+"para estar activo!"
+
+#: admin/includes/functions.php:610
+msgid ""
+"This plugin requires <strong>WPCargo Frontend Manager</strong> plugin to be "
+"active!"
+msgstr ""
+"¡Este plugin requiere que el plugin <strong>WPCargo Frontend Manager</"
+"strong> esté activo!"
+
+#: admin/includes/functions.php:613
+msgid "Cheating, uh?"
+msgstr "Engañando, ¿eh?"
+
+#: admin/includes/hooks.php:22 admin/includes/hooks.php:40
+msgid "Assigned To"
+msgstr "Asignado a"
+
+#: admin/includes/hooks.php:42
+msgid "Select User"
+msgstr "Seleccionar usuario"
+
+#: admin/includes/hooks.php:71 admin/includes/hooks.php:91
+#, php-format
+msgid "Search %s"
+msgstr "Buscar %s"
+
+#: admin/includes/hooks.php:71 admin/includes/hooks.php:91
+msgid "-- Select One --"
+msgstr "-- Seleccione uno --"
+
+#: admin/includes/hooks.php:79 admin/includes/hooks.php:99
+msgid "Add to Address Book?"
+msgstr "¿Añadir a la libreta de direcciones?"
+
+#: admin/includes/hooks.php:264
+msgid ""
+"Something went wrong while processing data, please reload the page and try "
+"again."
+msgstr ""
+"Algo salió mal mientras procesaba los datos, vuelva a cargar la página e "
+"inténtelo de nuevo."
+
+#: admin/includes/hooks.php:348
+msgid "Insert"
+msgstr "Insertar en la dirección"
+
+#: admin/includes/hooks.php:353
+msgid "NO Book List Found!"
+msgstr "¡NO se ha encontrado una lista de libros!"
+
+#: admin/includes/hooks.php:391
+msgid "-- Select Address --"
+msgstr "-- Seleccione Dirección --"
+
+#: admin/includes/hooks.php:396
+msgid " has no registered book address."
+msgstr "no tiene una dirección registrada en el directorio."
+
+#: admin/includes/hooks.php:408 admin/templates/book.tpl.php:38
+#: admin/templates/book.tpl.php:107 admin/templates/book.tpl.php:124
+#: admin/templates/user-book.tpl.php:39 admin/templates/user-book.tpl.php:98
+#: admin/templates/user-book.tpl.php:116 templates/address-book.tpl.php:29
+#: templates/default-modal.tpl.php:7 templates/default-modal.tpl.php:21
+msgid "Default"
+msgstr "Por defecto"
+
+#: admin/includes/hooks.php:485
+msgid "Settings"
+msgstr "Ajustes"
+
+#: admin/includes/hooks.php:486
+msgid "License"
+msgstr "Licencia"
+
+#: admin/templates/book.tpl.php:9 admin/templates/user-book.tpl.php:9
+msgid "Receiver Book"
+msgstr "Libro del receptor"
+
+#: admin/templates/book.tpl.php:12 admin/templates/user-book.tpl.php:12
+msgid "Shipper Book"
+msgstr "Libro del remitente"
+
+#: admin/templates/book.tpl.php:23 admin/templates/user-book.tpl.php:24
+#: templates/address-book.tpl.php:8
+msgid "Search"
+msgstr "Buscar"
+
+#: admin/templates/book.tpl.php:44 admin/templates/book.tpl.php:108
+#: admin/templates/book.tpl.php:125
+msgid "Public"
+msgstr "Público"
+
+#: admin/templates/book.tpl.php:85 admin/templates/user-book.tpl.php:73
+msgid "Update"
+msgstr "Actualizar"
+
+#: admin/templates/book.tpl.php:88 admin/templates/user-book.tpl.php:75
+msgid "Delete"
+msgstr "Borrar"
+
+#: admin/templates/book.tpl.php:92 admin/templates/user-book.tpl.php:81
+#: templates/address-book.tpl.php:74
+msgid "No Book Address Found!"
+msgstr "¡No se ha encontrado ninguna dirección del directorio!"
+
+#: admin/templates/import.tpl.php:3 admin/templates/import.tpl.php:42
+msgid "Export Address Book"
+msgstr "Exportar directorio de direcciones"
+
+#: admin/templates/import.tpl.php:13
+msgid "Select User Book to Export"
+msgstr "Seleccione el libro de usuario para exportar"
+
+#: admin/templates/import.tpl.php:19
+msgid "All User"
+msgstr "Todos los usuarios"
+
+#: admin/templates/import.tpl.php:32
+msgid "Select Book Type"
+msgstr "Seleccione el tipo de libro"
+
+#: admin/templates/import.tpl.php:35 admin/templates/import.tpl.php:65
+msgid "Select Book"
+msgstr "Seleccionar libro"
+
+#: admin/templates/import.tpl.php:36 admin/templates/import.tpl.php:66
+msgid "Receiver"
+msgstr "Receptor"
+
+#: admin/templates/import.tpl.php:37 admin/templates/import.tpl.php:67
+msgid "Shipper"
+msgstr "ES Shipper"
+
+#: admin/templates/import.tpl.php:48 admin/templates/import.tpl.php:79
+msgid "Import Address Book"
+msgstr "Importar directorio de direcciones"
+
+#: admin/templates/import.tpl.php:49
+msgid ""
+"Note: Please download .csv format in importing address book based on Book "
+"Type."
+msgstr ""
+"Nota: Descargue .csv formato en la importación de la libreta de direcciones "
+"según el tipo de libro."
+
+#: admin/templates/import.tpl.php:51
+msgid "Download Shipper CSV template"
+msgstr "Descargar plantilla CSV remitente"
+
+#: admin/templates/import.tpl.php:52
+msgid "Download Receiver CSV template"
+msgstr "Descargar plantilla CSV del destinatario"
+
+#: admin/templates/import.tpl.php:58
+msgid "Upload Book"
+msgstr "Subir libro"
+
+#: admin/templates/import.tpl.php:62
+msgid "Select Book Type to Import"
+msgstr "Seleccione el tipo de libro que desea importar"
+
+#: admin/templates/import.tpl.php:72
+msgid "Mac / International language settings compatibility"
+msgstr "Compatibilidad con la configuración de idioma mac / internacional"
+
+#: admin/templates/import.tpl.php:75
+msgid ""
+"Please this checkbox if you're using Mac OS or you're having issue importing "
+"due to international language settings setup."
+msgstr ""
+"Esta casilla de verificación si está utilizando Mac OS o si tiene problemas "
+"para importar debido a la configuración de idioma internacional."
+
+#: admin/templates/settings.tpl.php:9
+msgid "Disable Search Shipper Address?"
+msgstr "¿Desactivar la dirección del remitente en la búsqueda?"
+
+#: admin/templates/settings.tpl.php:14
+msgid "Select Shipper Address Field Search Value"
+msgstr "Seleccione Valor de búsqueda de campo de dirección del remitente"
+
+#: admin/templates/settings.tpl.php:18
+msgid "-- Select Shipper Search Value --"
+msgstr "-- Seleccione un valor de búsqueda de remitente --"
+
+#: admin/templates/settings.tpl.php:28
+msgid ""
+"The selected options will be the key value for the search Shipper Book "
+"Address list in the form."
+msgstr ""
+"Las opciones seleccionadas serán el valor clave para la lista de direcciones "
+"del libro del remitente de búsqueda en el formulario."
+
+#: admin/templates/settings.tpl.php:33
+msgid "Select Fields to be display in Shipper Book Address List"
+msgstr ""
+"Seleccione los campos que se mostrarán en la lista de direcciones de la "
+"Libreta del remitente"
+
+#: admin/templates/settings.tpl.php:48
+msgid ""
+"The selected options will display in the Shipper Book Address template list "
+"table."
+msgstr ""
+"Las opciones seleccionadas se mostrarán en la tabla de lista de plantillas "
+"Dirección de la libreta de remitentes."
+
+#: admin/templates/settings.tpl.php:53
+msgid "Disable Search Receiver Address?"
+msgstr "¿Desactivar la dirección del destinatario en la búsqueda?"
+
+#: admin/templates/settings.tpl.php:58
+msgid "Select Receiver Address Field Search Value"
+msgstr "Seleccione el valor de búsqueda del campo de dirección del receptor"
+
+#: admin/templates/settings.tpl.php:62
+msgid "-- Select Receiver Search Value --"
+msgstr "-- Seleccione un valor de búsqueda de destinatario --"
+
+#: admin/templates/settings.tpl.php:72
+msgid ""
+"The selected options will be the key value for the search Receiver Book "
+"Address list in the form."
+msgstr ""
+"Las opciones seleccionadas serán el valor clave para la lista de direcciones "
+"de la Libreta del receptor de búsqueda en el formulario."
+
+#: admin/templates/settings.tpl.php:77
+msgid "Select Fields to be display in Receiver Book Address List"
+msgstr ""
+"Seleccione los campos que se mostrarán en la lista de direcciones de la "
+"Libreta del receptor"
+
+#: admin/templates/settings.tpl.php:92
+msgid ""
+"The selected options will display in the Receiver Book Address template list "
+"table."
+msgstr ""
+"Las opciones seleccionadas se mostrarán en la tabla de lista de plantillas "
+"de direcciones de la Libreta del receptor."
+
+#: admin/templates/settings.tpl.php:97
+msgid "Save Address Book Settings"
+msgstr "Guardar la configuración de la libreta de direcciones"
+
+#: admin/templates/user-book.tpl.php:4
+msgid "User Address Book"
+msgstr "Libreta de direcciones de usuario"
+
+#: templates/address-book.tpl.php:2 templates/frontend-modal.tpl.php:8
+msgid "Add New"
+msgstr "Añadir nuevo"
+
+#: templates/address-book.tpl.php:13
+msgid "Shipper Book Address"
+msgstr "Dirección de la libreta del remitente"
+
+#: templates/address-book.tpl.php:14
+msgid "Receiver Book Address"
+msgstr "Dirección de la libreta del receptor"
+
+#: templates/address-book.tpl.php:30
+msgid "Actions"
+msgstr "Acciones"
+
+#: templates/frontend-modal.tpl.php:9 templates/frontend-modal.tpl.php:20
+#: templates/frontend-modal.tpl.php:37 templates/frontend-modal.tpl.php:49
+msgid "Close"
+msgstr "Cerrar"
+
+#: templates/frontend-modal.tpl.php:21
+msgid "Save Address"
+msgstr "Guardar dirección"
+
+#: wpcargo-address-book-add-ons.php:28
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\">WPCargo</a> Free "
+"Version to activate"
+msgstr ""
+"Este plugin requiere <a href=\"http://wpcargo.com/\">WPCargo</a> Free "
+"Version para activarlo"
+
+#: wpcargo-address-book-add-ons.php:32
+msgid "This plugin requires WPCargo Custom Field Addons to activate"
+msgstr "Este plugin requiere WPCargo Custom Field Addons para activar"
+
+#: wpcargo-address-book-add-ons.php:45
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\">WPTaskForce License "
+"Helper</a> plugin to activate!"
+msgstr ""
+"¡Este plugin requiere <a href=\"http://wpcargo.com/\">wpTaskForce License "
+"Helper</a> plugin para activarlo!"
+
+#. Plugin Name of the plugin/theme
+msgid "WPCargo Address Book Add-ons"
+msgstr "Complementos de la libreta de direcciones de WPCargo"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wptaskforce.com/"
+msgstr "http://wptaskforce.com/"
+
+#. Description of the plugin/theme
+msgid ""
+"WPCargo Address Book Add-ons helps you manage shipper/receiver address. "
+"Availble shortcode [wpc-address-book]"
+msgstr ""
+"WpCargo Address Book Add-ons le ayuda a administrar la dirección del "
+"remitente/receptor. Código corto disponible [wpc-address-book]"
+
+#. Author of the plugin/theme
+msgid "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"
+msgstr "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"
+
+#~ msgid "Disable Autogenerate Address?"
+#~ msgstr "¿Deshabilitar la dirección de generación automática?"
+
+#~ msgid ""
+#~ "By default every create/update shipment it will generate new address if "
+#~ "it is not yet in the Address Book"
+#~ msgstr ""
+#~ "De forma predeterminada, cada envío de creación/actualización generará "
+#~ "una nueva dirección si aún no está en la Libreta de direcciones"

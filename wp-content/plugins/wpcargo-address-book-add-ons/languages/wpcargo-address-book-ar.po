@@ -1,0 +1,686 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPCargo Address Book Add-ons\n"
+"POT-Creation-Date: 2022-02-23 17:00+0800\n"
+"PO-Revision-Date: 2022-02-23 17:01+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpcargo-address-book-add-ons.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: admin/classes/class-address-book-scripts.php:31
+#: admin/classes/class-address-book-scripts.php:82
+#: admin/includes/functions.php:556
+msgid "Search Address"
+msgstr "عنوان البحث"
+
+#: admin/classes/class-address-book-scripts.php:32
+#: admin/classes/class-address-book-scripts.php:83
+msgid "Please enter more characters"
+msgstr "الرجاء إدخال المزيد من الأحرف"
+
+#: admin/classes/class-address-book-scripts.php:33
+#: admin/classes/class-address-book-scripts.php:84
+msgid "Please delete some character"
+msgstr "الرجاء حذف بعض الأحرف"
+
+#: admin/classes/class-address-book-scripts.php:34
+#: admin/classes/class-address-book-scripts.php:38
+#: admin/classes/class-address-book-scripts.php:85
+#: admin/classes/class-address-book-scripts.php:89
+msgid "Error loading results"
+msgstr "نتائج خطأ في تحميل"
+
+#: admin/classes/class-address-book-scripts.php:35
+#: admin/classes/class-address-book-scripts.php:86
+msgid "Loading more results"
+msgstr "تحميل المزيد من النتائج"
+
+#: admin/classes/class-address-book-scripts.php:36
+#: admin/classes/class-address-book-scripts.php:87
+msgid "No results found"
+msgstr "لا يوجد نتائج"
+
+#: admin/classes/class-address-book-scripts.php:37
+#: admin/classes/class-address-book-scripts.php:88
+msgid "Searching..."
+msgstr "جار البحث..."
+
+#: admin/classes/class-address-book-scripts.php:58
+#: admin/classes/class-address-book-scripts.php:109
+msgid "Are you sure you want to delete this Book Address?"
+msgstr "هل تريد بالتأكيد حذف عنوان الكتاب هذا؟"
+
+#: admin/classes/class-address-book-scripts.php:102
+#: admin/classes/class-address-book-scripts.php:103
+msgid "Are you sure you want to Cancel Order?"
+msgstr "هل تريد بالتأكيد إلغاء الأمر؟"
+
+#: admin/classes/class-address-book-scripts.php:104
+msgid "Something went wrong cannot cancel Quotation, Please contact support."
+msgstr "حدث خطأ ما لا يمكن إلغاء الاقتباس، الرجاء الاتصال بالدعم."
+
+#: admin/classes/class-address-book-scripts.php:105
+msgid "Something went wrong during the process. Please try again later."
+msgstr "حدث خطأ ما أثناء العملية. الرجاء المحاولة مرة أخرى لاحقا."
+
+#: admin/classes/class-address-book-scripts.php:106
+msgid "Edit Book Address"
+msgstr "تحرير عنوان دفتر"
+
+#: admin/classes/class-address-book-scripts.php:107
+#: admin/templates/book.tpl.php:4 admin/templates/user-book.tpl.php:4
+msgid "Add"
+msgstr "إضافة"
+
+#: admin/classes/class-address-book-scripts.php:107
+#: admin/templates/book.tpl.php:4 admin/templates/user-book.tpl.php:4
+#: templates/address-book.tpl.php:2
+msgid "Address"
+msgstr "العنوان"
+
+#: admin/classes/class-address-book-scripts.php:108
+msgid "Book List"
+msgstr "قائمه الحجز"
+
+#: admin/classes/class-address-book-scripts.php:110
+msgid "Are you sure you want to set all in public?"
+msgstr "هل أنت متأكد من أنك تريد تعيين كل شيء في الأماكن العامة؟"
+
+#: admin/classes/class-address-book-scripts.php:111
+msgid "Are you sure you want to remove all from public?"
+msgstr "هل تريد بالتأكيد إزالة الكل من الأماكن العامة؟"
+
+#: admin/classes/class-address-book-table.php:38
+#: admin/classes/class-import-export.php:46
+msgid "User Name"
+msgstr "اسم المستخدم"
+
+#: admin/classes/class-address-book-table.php:39
+msgid "View Book Address"
+msgstr "عرض عنوان دفتر"
+
+#: admin/classes/class-address-book-table.php:40
+msgid "Role"
+msgstr "دور"
+
+#: admin/classes/class-address-book-table.php:41
+msgid "No. Shipper Address"
+msgstr "لا. عنوان الشاحن"
+
+#: admin/classes/class-address-book-table.php:42
+msgid "No. Receiver Address"
+msgstr "لا. عنوان جهاز الاستقبال"
+
+#: admin/classes/class-import-export.php:13
+#: admin/classes/class-import-export.php:14
+msgid "Import/Export"
+msgstr "استيراد / تصدير"
+
+#: admin/classes/class-import-export.php:46
+#: admin/classes/class-import-export.php:104
+#: admin/classes/class-import-export.php:189
+msgid "userID"
+msgstr "معرف المستخدم"
+
+#: admin/classes/class-import-export.php:80
+msgid "Importing Address"
+msgstr "عنوان الاستيراد"
+
+#: admin/classes/class-import-export.php:112
+msgid "Wrong File Format uploaded. It must be .CSV format."
+msgstr "تم تحميل تنسيق ملف خاطئ. يجب أن يكون . تنسيق CSV."
+
+#: admin/classes/class-import-export.php:155
+msgid ""
+"Something went wrong! Please check your file header or Check Mac / "
+"International language settings compatibility issue"
+msgstr ""
+"حدث خطأ ما! الرجاء التحقق من رأس الملف أو التحقق من Mac / مشكلة توافق "
+"إعدادات اللغة الدولية"
+
+#: admin/classes/class-import-export.php:200
+msgid "Address Book Import/Export"
+msgstr "استيراد/تصدير دفتر العناوين"
+
+#: admin/includes/functions.php:306
+msgid "There is no error, the file uploaded with success."
+msgstr "لا يوجد خطأ، الملف الذي تم تحميله بنجاح."
+
+#: admin/includes/functions.php:307
+msgid "The uploaded file exceeds the upload_max_filesize directive in php.ini."
+msgstr "حجم الملف المرفوع اكبر من المسموح."
+
+#: admin/includes/functions.php:308
+msgid ""
+"The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in "
+"the HTML form."
+msgstr "حجم الملف المرفوع اكبر من المسموح."
+
+#: admin/includes/functions.php:309
+msgid "The uploaded file was only partially uploaded."
+msgstr "الملف الذي تم تحميله، تم تحميله بشكل جزئي فقط."
+
+#: admin/includes/functions.php:310
+msgid "No file was uploaded."
+msgstr "لم يتم تحميل أي ملف."
+
+#: admin/includes/functions.php:311
+msgid "Missing a temporary folder."
+msgstr "المجلد المؤقت مفقود."
+
+#: admin/includes/functions.php:312
+msgid "Failed to write file to disk."
+msgstr "فشل كتابة الملف إلى القرص."
+
+#: admin/includes/functions.php:313
+msgid "A PHP extension stopped the file upload."
+msgstr "توقف ملحق PHP عن تحميل الملف."
+
+#: admin/includes/functions.php:429 admin/includes/functions.php:520
+#: admin/includes/hooks.php:418
+msgid "Address Book"
+msgstr "دفتر العناوين"
+
+#: admin/includes/functions.php:490
+msgid "Please activate your license key <a href=\""
+msgstr "الرجاء تفعيل مفتاح الترخيص الخاص بك <a href =\""
+
+#: admin/includes/functions.php:493
+msgid ""
+"This user is not allowed to have Address Book, Please update user role with "
+"WPCargo user role."
+msgstr ""
+"لا يسمح لهذا المستخدم أن يكون دفتر العناوين، يرجى تحديث دور المستخدم مع دور "
+"المستخدم WPCargo."
+
+#: admin/includes/functions.php:496
+msgid "Sorry, You are not allowed to Access this page."
+msgstr "عذرا، لا يسمح لك بالوصول إلى هذه الصفحة."
+
+#: admin/includes/functions.php:499
+msgid ""
+"Page access restricted, This page need to setup template to WPCargo "
+"Dashboard to make it work."
+msgstr ""
+"تقييد الوصول إلى الصفحة، تحتاج هذه الصفحة إلى إعداد قالب إلى لوحة معلومات "
+"WPCargo لإنجاحه."
+
+#: admin/includes/functions.php:502
+msgid "Address Book List"
+msgstr "قائمة دفتر العناوين"
+
+#: admin/includes/functions.php:505
+msgid "Shipper and Receiver Address Book is Disabled. Please Enable"
+msgstr "الشاحن ودفتر عناوين المستقبل معطل. الرجاء تمكين"
+
+#: admin/includes/functions.php:508
+msgid "Receiver Address Book is Disabled. Please Enable"
+msgstr "تم تعطيل دفتر عناوين المستلمين. الرجاء تمكين"
+
+#: admin/includes/functions.php:511
+msgid "Shipper Address Book is Disabled. Please Enable"
+msgstr "دفتر عناوين الشاحن معطل. الرجاء تمكين"
+
+#: admin/includes/functions.php:514
+msgid "here"
+msgstr "هنا"
+
+#: admin/includes/functions.php:517
+msgid "Please setup Address Book settings"
+msgstr "الرجاء إعداد إعدادات دفتر العناوين"
+
+#: admin/includes/functions.php:523
+msgid "Address Book Description"
+msgstr "وصف دفتر العناوين"
+
+#: admin/includes/functions.php:526
+msgid "Book Archives"
+msgstr "أرشيف الكتب"
+
+#: admin/includes/functions.php:529
+msgid "Parent Book:"
+msgstr "الكتاب الأصل:"
+
+#: admin/includes/functions.php:532
+msgid "All Books"
+msgstr "جميع الكتب"
+
+#: admin/includes/functions.php:535
+msgid "Add New Address"
+msgstr "أضف عنواناً جديداً"
+
+#: admin/includes/functions.php:538 admin/templates/book.tpl.php:110
+#: admin/templates/user-book.tpl.php:102 templates/default-modal.tpl.php:9
+msgid "Add Address"
+msgstr "اضف عنوان"
+
+#: admin/includes/functions.php:541
+msgid "New Address"
+msgstr "عنوان جديد"
+
+#: admin/includes/functions.php:544 admin/templates/book.tpl.php:4
+msgid "My Address Book"
+msgstr "دفتر العناوين الخاص بي"
+
+#: admin/includes/functions.php:547 templates/frontend-modal.tpl.php:36
+msgid "Edit Address"
+msgstr "تعديل العنوان"
+
+#: admin/includes/functions.php:550 admin/templates/book.tpl.php:128
+#: admin/templates/user-book.tpl.php:120 templates/default-modal.tpl.php:24
+#: templates/frontend-modal.tpl.php:50
+msgid "Update Address"
+msgstr "تحديث العنوان"
+
+#: admin/includes/functions.php:553
+msgid "View Address"
+msgstr "عرض العنوان"
+
+#: admin/includes/functions.php:559
+msgid "Not found"
+msgstr "غير موجود"
+
+#: admin/includes/functions.php:562
+msgid "Not found in Trash"
+msgstr "غير موجود في سلة المهملات"
+
+#: admin/includes/functions.php:565
+msgid "Featured Image"
+msgstr "صورة مميزة"
+
+#: admin/includes/functions.php:568
+msgid "Set featured image"
+msgstr "حدد الصورة البارزة"
+
+#: admin/includes/functions.php:571
+msgid "Remove featured image"
+msgstr "احذف الصورة البارزة"
+
+#: admin/includes/functions.php:574
+msgid "Use as featured image"
+msgstr "استخدم كصورة مميزة"
+
+#: admin/includes/functions.php:577
+msgid "Shipper Book Address Empty"
+msgstr "عنوان دفتر الشاحن فارغ"
+
+#: admin/includes/functions.php:580
+msgid "Insert into Address"
+msgstr "إدراج في العنوان"
+
+#: admin/includes/functions.php:583
+msgid "Uploaded to this Address"
+msgstr "تم تحميله إلى هذا العنوان"
+
+#: admin/includes/functions.php:586
+msgid "Address list"
+msgstr "قائمة العناوين"
+
+#: admin/includes/functions.php:589
+msgid "Address list navigation"
+msgstr "التنقل في قائمة العناوين"
+
+#: admin/includes/functions.php:592
+msgid "Filter Books list"
+msgstr "قائمة تصفية الكتب"
+
+#: admin/includes/functions.php:595
+msgid "Receiver Book Address Empty"
+msgstr "عنوان دفتر الاستقبال فارغ"
+
+#: admin/includes/functions.php:598 admin/templates/settings.tpl.php:1
+msgid "Address Book Settings"
+msgstr "إعدادات دفتر العناوين"
+
+#: admin/includes/functions.php:601
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\" target=\"_blank"
+"\">WPTaskForce License Helper</a> plugin to be active!"
+msgstr ""
+"هذا البرنامج المساعد يتطلب <a href=\"http://wpcargo.com/\" target=\"_blank"
+"\">WPTaskForce رخصة المساعد</a> المساعد لتكون نشطة!"
+
+#: admin/includes/functions.php:604
+msgid ""
+"This plugin requires <a href=\"https://wordpress.org/plugins/wpcargo/\" "
+"target=\"_blank\">WPCargo</a> plugin to be active!"
+msgstr ""
+"هذا البرنامج المساعد يتطلب <a href=\"https://wordpress.org/plugins/wpcargo/"
+"\" target=\"_blank\">WPCargo</a> البرنامج المساعد لتكون نشطة!"
+
+#: admin/includes/functions.php:607
+msgid ""
+"This plugin requires <strong>WPCargo Custom Field Add-ons</strong> plugin to "
+"be active!"
+msgstr ""
+"هذا البرنامج المساعد يتطلب <strong>WPCargo مخصص الحقل إضافات</strong> "
+"البرنامج المساعد لتكون نشطة!"
+
+#: admin/includes/functions.php:610
+msgid ""
+"This plugin requires <strong>WPCargo Frontend Manager</strong> plugin to be "
+"active!"
+msgstr ""
+"هذا البرنامج المساعد يتطلب <strong>WPCargo Frontend مدير</strong> البرنامج "
+"المساعد لتكون نشطة!"
+
+#: admin/includes/functions.php:613
+msgid "Cheating, uh?"
+msgstr "الغش، اه؟"
+
+#: admin/includes/hooks.php:22 admin/includes/hooks.php:40
+msgid "Assigned To"
+msgstr "تم التعيين إلى"
+
+#: admin/includes/hooks.php:42
+msgid "Select User"
+msgstr "اختر المستخدم"
+
+#: admin/includes/hooks.php:71 admin/includes/hooks.php:91
+#, php-format
+msgid "Search %s"
+msgstr "بحث  %s"
+
+#: admin/includes/hooks.php:71 admin/includes/hooks.php:91
+msgid "-- Select One --"
+msgstr "-- اختر واحد --"
+
+#: admin/includes/hooks.php:79 admin/includes/hooks.php:99
+msgid "Add to Address Book?"
+msgstr "إضافة إلى دفتر العناوين؟"
+
+#: admin/includes/hooks.php:264
+msgid ""
+"Something went wrong while processing data, please reload the page and try "
+"again."
+msgstr ""
+"حدث خطأ ما أثناء معالجة البيانات، يرجى إعادة تحميل الصفحة والمحاولة مرة أخرى."
+
+#: admin/includes/hooks.php:348
+msgid "Insert"
+msgstr "إدراج"
+
+#: admin/includes/hooks.php:353
+msgid "NO Book List Found!"
+msgstr "لا توجد قائمة كتب!"
+
+#: admin/includes/hooks.php:391
+msgid "-- Select Address --"
+msgstr "-- حدد العنوان --"
+
+#: admin/includes/hooks.php:396
+msgid " has no registered book address."
+msgstr " ليس لديه عنوان دفتر مسجل."
+
+#: admin/includes/hooks.php:408 admin/templates/book.tpl.php:38
+#: admin/templates/book.tpl.php:107 admin/templates/book.tpl.php:124
+#: admin/templates/user-book.tpl.php:39 admin/templates/user-book.tpl.php:98
+#: admin/templates/user-book.tpl.php:116 templates/address-book.tpl.php:29
+#: templates/default-modal.tpl.php:7 templates/default-modal.tpl.php:21
+msgid "Default"
+msgstr "افتراضي"
+
+#: admin/includes/hooks.php:485
+msgid "Settings"
+msgstr "الإعدادات"
+
+#: admin/includes/hooks.php:486
+msgid "License"
+msgstr "الترخيص"
+
+#: admin/templates/book.tpl.php:9 admin/templates/user-book.tpl.php:9
+msgid "Receiver Book"
+msgstr "دفتر الاستقبال"
+
+#: admin/templates/book.tpl.php:12 admin/templates/user-book.tpl.php:12
+msgid "Shipper Book"
+msgstr "كتاب الشاحنين"
+
+#: admin/templates/book.tpl.php:23 admin/templates/user-book.tpl.php:24
+#: templates/address-book.tpl.php:8
+msgid "Search"
+msgstr "بحث"
+
+#: admin/templates/book.tpl.php:44 admin/templates/book.tpl.php:108
+#: admin/templates/book.tpl.php:125
+msgid "Public"
+msgstr "عام"
+
+#: admin/templates/book.tpl.php:85 admin/templates/user-book.tpl.php:73
+msgid "Update"
+msgstr "تحديث"
+
+#: admin/templates/book.tpl.php:88 admin/templates/user-book.tpl.php:75
+msgid "Delete"
+msgstr "حذف"
+
+#: admin/templates/book.tpl.php:92 admin/templates/user-book.tpl.php:81
+#: templates/address-book.tpl.php:74
+msgid "No Book Address Found!"
+msgstr "لم يتم العثور على عنوان كتاب!"
+
+#: admin/templates/import.tpl.php:3 admin/templates/import.tpl.php:42
+msgid "Export Address Book"
+msgstr "تصدير دفتر العناوين"
+
+#: admin/templates/import.tpl.php:13
+msgid "Select User Book to Export"
+msgstr "حدد دفتر المستخدم للتصدير"
+
+#: admin/templates/import.tpl.php:19
+msgid "All User"
+msgstr "كل المستخدمين"
+
+#: admin/templates/import.tpl.php:32
+msgid "Select Book Type"
+msgstr "تحديد نوع الكتاب"
+
+#: admin/templates/import.tpl.php:35 admin/templates/import.tpl.php:65
+msgid "Select Book"
+msgstr "إختر الكتاب"
+
+#: admin/templates/import.tpl.php:36 admin/templates/import.tpl.php:66
+msgid "Receiver"
+msgstr "مستلم"
+
+#: admin/templates/import.tpl.php:37 admin/templates/import.tpl.php:67
+msgid "Shipper"
+msgstr "اسم الشاحن"
+
+#: admin/templates/import.tpl.php:48 admin/templates/import.tpl.php:79
+msgid "Import Address Book"
+msgstr "استيراد دفتر العناوين"
+
+#: admin/templates/import.tpl.php:49
+msgid ""
+"Note: Please download .csv format in importing address book based on Book "
+"Type."
+msgstr ""
+"ملاحظة: يرجى تنزيل .csv التنسيق في استيراد دفتر العناوين استنادا إلى نوع "
+"الكتاب."
+
+#: admin/templates/import.tpl.php:51
+msgid "Download Shipper CSV template"
+msgstr "تحميل قالب CSV الشاحن"
+
+#: admin/templates/import.tpl.php:52
+msgid "Download Receiver CSV template"
+msgstr "تنزيل قالب CSV الاستقبال"
+
+#: admin/templates/import.tpl.php:58
+msgid "Upload Book"
+msgstr "تحميل كتاب"
+
+#: admin/templates/import.tpl.php:62
+msgid "Select Book Type to Import"
+msgstr "تحديد نوع الكتاب المطلوب استيراده"
+
+#: admin/templates/import.tpl.php:72
+msgid "Mac / International language settings compatibility"
+msgstr "ماك / التوافق إعدادات اللغة الدولية"
+
+#: admin/templates/import.tpl.php:75
+msgid ""
+"Please this checkbox if you're using Mac OS or you're having issue importing "
+"due to international language settings setup."
+msgstr ""
+"يرجى تحديد خانة الاختيار هذه إذا كنت تستخدم نظام التشغيل Mac OS أو كنت تواجه "
+"مشكلة في الاستيراد بسبب إعداد إعدادات اللغة الدولية."
+
+#: admin/templates/settings.tpl.php:9
+msgid "Disable Search Shipper Address?"
+msgstr "تعطيل عنوان شاحن البحث؟"
+
+#: admin/templates/settings.tpl.php:14
+msgid "Select Shipper Address Field Search Value"
+msgstr "تحديد قيمة البحث عن حقل عنوان الشاحن"
+
+#: admin/templates/settings.tpl.php:18
+msgid "-- Select Shipper Search Value --"
+msgstr "-- حدد قيمة بحث الشاحن --"
+
+#: admin/templates/settings.tpl.php:28
+msgid ""
+"The selected options will be the key value for the search Shipper Book "
+"Address list in the form."
+msgstr ""
+"ستكون الخيارات المحددة هي القيمة الرئيسية لقائمة عنوان دفتر الشاحنين في "
+"النموذج ."
+
+#: admin/templates/settings.tpl.php:33
+msgid "Select Fields to be display in Shipper Book Address List"
+msgstr "تحديد الحقول التي سيتم عرضها في قائمة عناوين دفتر الشاحنين"
+
+#: admin/templates/settings.tpl.php:48
+msgid ""
+"The selected options will display in the Shipper Book Address template list "
+"table."
+msgstr "سيتم عرض الخيارات المحددة في جدول قائمة قالب دفتر الشاحن."
+
+#: admin/templates/settings.tpl.php:53
+msgid "Disable Search Receiver Address?"
+msgstr "تعطيل عنوان مستقبل البحث؟"
+
+#: admin/templates/settings.tpl.php:58
+msgid "Select Receiver Address Field Search Value"
+msgstr "تحديد قيمة البحث عن حقل عنوان المتلقي"
+
+#: admin/templates/settings.tpl.php:62
+msgid "-- Select Receiver Search Value --"
+msgstr "-- حدد قيمة البحث المتلقي --"
+
+#: admin/templates/settings.tpl.php:72
+msgid ""
+"The selected options will be the key value for the search Receiver Book "
+"Address list in the form."
+msgstr ""
+"ستكون الخيارات المحددة هي القيمة الرئيسية لقائمة عنوان دفتر مستقبل البحث في "
+"النموذج ."
+
+#: admin/templates/settings.tpl.php:77
+msgid "Select Fields to be display in Receiver Book Address List"
+msgstr "تحديد الحقول التي سيتم عرضها في قائمة عناوين دفتر الاستقبال"
+
+#: admin/templates/settings.tpl.php:92
+msgid ""
+"The selected options will display in the Receiver Book Address template list "
+"table."
+msgstr "سيتم عرض الخيارات المحددة في جدول قائمة قالب \"عنوان دفتر الاستقبال\"."
+
+#: admin/templates/settings.tpl.php:97
+msgid "Save Address Book Settings"
+msgstr "حفظ إعدادات دفتر العناوين"
+
+#: admin/templates/user-book.tpl.php:4
+msgid "User Address Book"
+msgstr "دفتر عناوين المستخدم"
+
+#: templates/address-book.tpl.php:2 templates/frontend-modal.tpl.php:8
+msgid "Add New"
+msgstr "اضف جديد"
+
+#: templates/address-book.tpl.php:13
+msgid "Shipper Book Address"
+msgstr "عنوان دفتر الشاحنين"
+
+#: templates/address-book.tpl.php:14
+msgid "Receiver Book Address"
+msgstr "عنوان دفتر الاستقبال"
+
+#: templates/address-book.tpl.php:30
+msgid "Actions"
+msgstr "الإجراءات"
+
+#: templates/frontend-modal.tpl.php:9 templates/frontend-modal.tpl.php:20
+#: templates/frontend-modal.tpl.php:37 templates/frontend-modal.tpl.php:49
+msgid "Close"
+msgstr "إغلاق"
+
+#: templates/frontend-modal.tpl.php:21
+msgid "Save Address"
+msgstr "حفظ العنوان"
+
+#: wpcargo-address-book-add-ons.php:28
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\">WPCargo</a> Free "
+"Version to activate"
+msgstr ""
+"هذا البرنامج المساعد يتطلب <a href=\"http://wpcargo.com/\">WPCargo</a> نسخة "
+"مجانية لتنشيط"
+
+#: wpcargo-address-book-add-ons.php:32
+msgid "This plugin requires WPCargo Custom Field Addons to activate"
+msgstr "يتطلب هذا البرنامج المساعد WPCargo مخصص حقل إضافات لتنشيط"
+
+#: wpcargo-address-book-add-ons.php:45
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\">WPTaskForce License "
+"Helper</a> plugin to activate!"
+msgstr ""
+"هذا البرنامج المساعد يتطلب <a href=\"http://wpcargo.com/\">WPTaskForce رخصة "
+"المساعد</a> المساعد لتنشيط!"
+
+#. Plugin Name of the plugin/theme
+msgid "WPCargo Address Book Add-ons"
+msgstr "WPCargo دفتر العناوين إضافات"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wptaskforce.com/"
+msgstr "http://www.wptaskforce.com/"
+
+#. Description of the plugin/theme
+msgid ""
+"WPCargo Address Book Add-ons helps you manage shipper/receiver address. "
+"Availble shortcode [wpc-address-book]"
+msgstr ""
+"تساعدك الوظائف الإضافية لدفتر عناوين WPCargo على إدارة عنوان الشاحن/"
+"المستقبل. Availble الرمز القصير [wpc - عنوان الكتاب]"
+
+#. Author of the plugin/theme
+msgid "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"
+msgstr "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"
+
+#~ msgid "Disable Autogenerate Address?"
+#~ msgstr "تعطيل عنوان التجانس التلقائي؟"
+
+#~ msgid ""
+#~ "By default every create/update shipment it will generate new address if "
+#~ "it is not yet in the Address Book"
+#~ msgstr ""
+#~ "افتراضيا كل شحنة إنشاء/تحديث فإنه سيتم إنشاء عنوان جديد إذا لم يكن بعد في "
+#~ "دفتر العناوين"
