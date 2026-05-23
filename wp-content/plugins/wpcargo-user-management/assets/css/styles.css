@@ -1,0 +1,55 @@
+#wpcumanage-user-pagination ul.page-numbers{
+    padding:0;
+}
+#wpcumanage-user-pagination .page-numbers li{
+    display: inline-block;
+    font-size: .9rem;
+}
+#wpcumanage-user-pagination .page-numbers li .page-numbers{
+    transition: all .3s linear;
+    -webkit-border-radius: .125rem;
+    border-radius: .125rem;
+    background-color: #eee;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    color: #212529;
+}
+#wpcumanage-user-pagination .page-numbers li .page-numbers:hover,
+#wpcumanage-user-pagination .page-numbers li .page-numbers.current {
+    color:#fff !important;
+    background-color: #4285f4 !important;
+}
+#wpcumanage-avail_roles li {
+    border-right: 1px solid #dee2e6;
+    font-size: .8rem;
+}
+
+#wpcumanage-avail_roles li .count {
+    color: #8a8a8a;
+}
+#wpcumanage-avail_roles li:last-child {border-right: none;}
+#wpcumanage-optpage .wpcumanage-optpage-btn:hover,
+#wpcumanage-optpage .wpcumanage-optpage-btn.active {
+    background-color: #007bff !important;
+    border-color: #007bff !important;
+    color: #fff !important;
+}
+.error input {
+    border-color: #dc3545;
+}
+.error-feedback{
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+#wpcumanageAccessModal .select2.select2-container,
+#wpcumanageAccessModal .select2.select2-container .selection,
+#wpcumanageAccessModal .select2.select2-container .selection .select2-selection__rendered{
+    width: 240px !important;
+}
+.select2-list-full .select2-selection--multiple .select2-selection__rendered li{
+    float: none;
+}
+#addUserGroup-form .select2-container {
+    width: 100% !important;
+}

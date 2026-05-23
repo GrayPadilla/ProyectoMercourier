@@ -1,0 +1,399 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPCargo User Management\n"
+"POT-Creation-Date: 2022-04-08 15:50+0800\n"
+"PO-Revision-Date: 2022-04-08 15:51+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpcargo-user-management.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: admin/templates/users-group.php:2 includes/hooks.php:177
+msgid "User Group"
+msgstr "用户组"
+
+#: admin/templates/users-group.php:6
+msgid "Add a new user group"
+msgstr "添加新用户组"
+
+#: includes/ajax.php:166
+msgid "Branch not found"
+msgstr "未找到分支"
+
+#: includes/ajax.php:223
+msgid "Branch options found"
+msgstr "找到分支选项"
+
+#: includes/functions.php:45
+msgid "Default Client"
+msgstr "默认客户端"
+
+#: includes/functions.php:53
+msgid "Default Agent"
+msgstr "默认代理"
+
+#: includes/functions.php:61
+msgid "Default Employee"
+msgstr "默认员工"
+
+#: includes/functions.php:74
+msgid "Default Driver"
+msgstr "默认驱动程序"
+
+#: includes/functions.php:96
+msgid "Default Branch"
+msgstr "默认分支"
+
+#: includes/functions.php:104
+msgid "Default Branch Manager"
+msgstr "默认分支管理器"
+
+#: includes/functions.php:127
+msgid "-- Select User--"
+msgstr "--选择用户 -"
+
+#: includes/functions.php:302
+msgid "Add Shipment"
+msgstr "添加装运"
+
+#: includes/functions.php:303
+msgid "Update Shipment"
+msgstr "更新装运"
+
+#: includes/functions.php:304
+msgid "Delete Shipment"
+msgstr "删除装运"
+
+#: includes/functions.php:305
+msgid "Print Invoice"
+msgstr "打印发票"
+
+#: includes/functions.php:306
+msgid "Print Label"
+msgstr "打印标签"
+
+#: includes/functions.php:307
+msgid "Print Waybill"
+msgstr "打印路比尔"
+
+#: includes/functions.php:308
+msgid "Print BOL"
+msgstr "打印 BOL"
+
+#: includes/functions.php:309
+msgid "Assign Client"
+msgstr "分配客户端"
+
+#: includes/functions.php:310
+msgid "Assign Agent"
+msgstr "分配代理"
+
+#: includes/functions.php:311
+msgid "Assign Employee"
+msgstr "分配员工"
+
+#: includes/functions.php:334 includes/intl.php:21 includes/pages.php:15
+#: templates/dashboard.php:2
+msgid "Users"
+msgstr "用户"
+
+#: includes/hooks.php:6
+msgid "Username"
+msgstr "用户名"
+
+#: includes/hooks.php:12
+msgid "Name"
+msgstr "名称"
+
+#: includes/hooks.php:19
+msgid "Email"
+msgstr "邮箱"
+
+#: includes/hooks.php:25 templates/user-form.php:29
+msgid "Roles"
+msgstr "角色"
+
+#: includes/hooks.php:35 includes/hooks.php:263 includes/users.php:552
+#: includes/users.php:553 templates/user-form.php:42
+msgid "Groups"
+msgstr "群组"
+
+#: includes/hooks.php:54
+msgid "Status"
+msgstr "状态"
+
+#: includes/hooks.php:57
+msgid "Active"
+msgstr "积极"
+
+#: includes/hooks.php:59
+msgid "Approve"
+msgstr "批准"
+
+#: includes/hooks.php:64 includes/hooks.php:71
+msgid "Access"
+msgstr "访问"
+
+#: includes/hooks.php:74
+msgid "Default Users"
+msgstr "默认用户"
+
+#: includes/hooks.php:80
+msgid "Defaults"
+msgstr "默认"
+
+#: includes/hooks.php:109
+msgid "License"
+msgstr "许可证"
+
+#: includes/hooks.php:180
+msgid "Search"
+msgstr "搜索"
+
+#: includes/hooks.php:224 includes/hooks.php:248 templates/access-form.php:29
+#: templates/assignment-form.php:22 templates/role-editor.php:43
+msgid "Close"
+msgstr "关闭"
+
+#: includes/hooks.php:225
+msgid "Add"
+msgstr "添加"
+
+#: includes/hooks.php:261
+msgid "WPCargo User Group"
+msgstr "WP卡戈用户组"
+
+#: includes/intl.php:6
+msgid "Please activate your license key for WPCargo User Management Addon"
+msgstr "请激活您的许可证密钥为WP卡戈用户管理阿登"
+
+#: includes/intl.php:6
+msgid "Activate"
+msgstr "启用"
+
+#: includes/intl.php:9
+msgid "Deactivate user failed."
+msgstr "停用用户失败。"
+
+#: includes/intl.php:12
+msgid "Deactivate user success."
+msgstr "停用用户成功。"
+
+#: includes/intl.php:15
+msgid "New user successfully created."
+msgstr "新用户成功创建。"
+
+#: includes/intl.php:18
+msgid "User updated successfully."
+msgstr "用户已成功更新。"
+
+#: includes/intl.php:24
+msgid "Add New User"
+msgstr "添加新用户"
+
+#: includes/intl.php:27
+msgid "Group"
+msgstr "组"
+
+#: includes/intl.php:30 templates/role-editor.php:2
+msgid "Role Editor"
+msgstr "角色编辑器"
+
+#: includes/intl.php:33
+msgid "Page"
+msgstr "页面"
+
+#: includes/intl.php:36
+msgid "Group Name"
+msgstr "组名称"
+
+#: includes/intl.php:39
+msgid "Description"
+msgstr "描述"
+
+#: includes/intl.php:42
+msgid "Actions"
+msgstr "操作"
+
+#: includes/intl.php:45
+msgid "Update User Group"
+msgstr "更新用户组"
+
+#: includes/intl.php:48
+msgid "Add Group"
+msgstr "添加组"
+
+#: includes/intl.php:51 templates/dashboard.php:21
+msgid "Update"
+msgstr "更新"
+
+#: includes/intl.php:54
+msgid "Delete"
+msgstr "删除"
+
+#: includes/scripts.php:33
+msgid "Select User Roles"
+msgstr "选择用户角色"
+
+#: includes/scripts.php:34
+msgid "Select User Groups"
+msgstr "选择用户组"
+
+#: includes/scripts.php:35
+msgid "Select Access"
+msgstr "选择访问"
+
+#: includes/scripts.php:36
+msgid "Select Option"
+msgstr "选择选项"
+
+#: includes/scripts.php:37
+msgid ""
+"Are you sure you want to Delete user? You cannot restore a user account when "
+"deleted."
+msgstr "是否确实要删除用户？删除后无法还原用户帐户。"
+
+#: includes/users.php:23
+msgid "Add new User"
+msgstr "添加新用户"
+
+#: includes/users.php:23 templates/user-form.php:8
+msgid "Update User"
+msgstr "更新用户"
+
+#: includes/users.php:25
+msgid "Set Password"
+msgstr "设置密码"
+
+#: includes/users.php:25
+msgid "Generate Password"
+msgstr "生成密码"
+
+#: includes/users.php:112
+msgid "All"
+msgstr "所有"
+
+#: includes/users.php:133
+msgid "Sorry you are not allow to add or Update user."
+msgstr "对不起，您不允许添加或更新用户。"
+
+#: includes/users.php:145
+msgid "Sorry you are not allow to update user."
+msgstr "对不起，您不允许更新用户。"
+
+#: includes/users.php:156
+msgid "Email address not found!"
+msgstr "找不到电子邮件地址！"
+
+#: includes/users.php:169
+msgid "Sorry you are not allow to Add New User."
+msgstr "对不起，您不允许添加新用户。"
+
+#: includes/users.php:178
+msgid "Missing Email Address."
+msgstr "缺少电子邮件地址。"
+
+#: templates/access-form.php:6 templates/role-editor.php:26
+msgid "Access Form"
+msgstr "访问表格"
+
+#: templates/access-form.php:13
+msgid "Assign Access"
+msgstr "分配访问"
+
+#: templates/access-form.php:17
+msgid "Select All"
+msgstr "全选"
+
+#: templates/access-form.php:30 templates/assignment-form.php:23
+msgid "Assign"
+msgstr "分配"
+
+#: templates/assignment-form.php:6
+msgid "Assign Default Form"
+msgstr "分配默认表单"
+
+#: templates/dashboard.php:8
+msgid "Action"
+msgstr "动作"
+
+#: templates/dashboard.php:22
+msgid "Add Access"
+msgstr "添加访问"
+
+#: templates/dashboard.php:23
+msgid "Deactivate"
+msgstr "停用"
+
+#: templates/restriction.php:4
+msgid "Sorry your are not allowed to access this page!"
+msgstr "对不起，您不允许访问此页面！"
+
+#: templates/restriction.php:5
+msgid "Please contact administrator for your permission."
+msgstr "请联系管理员以获得您的许可。"
+
+#: templates/role-editor.php:32
+msgid "Assign Roles"
+msgstr "分配角色"
+
+#: templates/role-editor.php:44
+msgid "Save"
+msgstr "保存"
+
+#: templates/user-form.php:12
+msgid "Personal Information"
+msgstr "个人信息"
+
+#: templates/user-form.php:18
+msgid "Billing Information"
+msgstr "账单信息"
+
+#: templates/user-form.php:25
+msgid "User Role and Groups"
+msgstr "用户角色和组"
+
+#: templates/user-password.php:4 templates/user-password.php:11
+msgid "Password"
+msgstr "密码"
+
+#: templates/user-password.php:15
+msgid "Cancel"
+msgstr "取消"
+
+#: templates/user-search.php:4 templates/user-search.php:5
+msgid "Search User"
+msgstr "搜索用户"
+
+#: templates/user-search.php:6
+msgid "Search Users"
+msgstr "搜索用户"
+
+#. Plugin Name of the plugin/theme
+msgid "WPCargo User Management"
+msgstr "WP卡戈用户管理"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wptaskforce.com/"
+msgstr "http://wptaskforce.com/"
+
+#. Description of the plugin/theme
+msgid "Manage user access"
+msgstr "管理用户访问"
+
+#. Author of the plugin/theme
+msgid "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"
+msgstr "<a href=\"http://www.wptaskforce.com/\">瓦普塔斯克力量</a>"

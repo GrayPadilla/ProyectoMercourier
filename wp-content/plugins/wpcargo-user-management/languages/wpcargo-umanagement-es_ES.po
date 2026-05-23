@@ -1,0 +1,401 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPCargo User Management\n"
+"POT-Creation-Date: 2022-04-08 16:02+0800\n"
+"PO-Revision-Date: 2022-04-08 16:06+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpcargo-user-management.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: admin/templates/users-group.php:2 includes/hooks.php:177
+msgid "User Group"
+msgstr "Grupo de Usuarios"
+
+#: admin/templates/users-group.php:6
+msgid "Add a new user group"
+msgstr "Agregar un nuevo grupo de usuarios"
+
+#: includes/ajax.php:166
+msgid "Branch not found"
+msgstr "Sucursal no encontrada"
+
+#: includes/ajax.php:223
+msgid "Branch options found"
+msgstr "Opciones de sucursal encontradas"
+
+#: includes/functions.php:45
+msgid "Default Client"
+msgstr "Cliente predeterminado"
+
+#: includes/functions.php:53
+msgid "Default Agent"
+msgstr "Agente predeterminado"
+
+#: includes/functions.php:61
+msgid "Default Employee"
+msgstr "Empleado predeterminado"
+
+#: includes/functions.php:74
+msgid "Default Driver"
+msgstr "Controlador predeterminado"
+
+#: includes/functions.php:96
+msgid "Default Branch"
+msgstr "Rama predeterminada"
+
+#: includes/functions.php:104
+msgid "Default Branch Manager"
+msgstr "Administrador de sucursales predeterminado"
+
+#: includes/functions.php:127
+msgid "-- Select User--"
+msgstr "-- Seleccione Usuario--"
+
+#: includes/functions.php:302
+msgid "Add Shipment"
+msgstr "Añadir envío"
+
+#: includes/functions.php:303
+msgid "Update Shipment"
+msgstr "Actualizar envío"
+
+#: includes/functions.php:304
+msgid "Delete Shipment"
+msgstr "Eliminar envío"
+
+#: includes/functions.php:305
+msgid "Print Invoice"
+msgstr "Imprimir factura"
+
+#: includes/functions.php:306
+msgid "Print Label"
+msgstr "Imprimer etiqueta"
+
+#: includes/functions.php:307
+msgid "Print Waybill"
+msgstr "Imprimir carta de porte"
+
+#: includes/functions.php:308
+msgid "Print BOL"
+msgstr "IMPRIMIR BOL"
+
+#: includes/functions.php:309
+msgid "Assign Client"
+msgstr "Asignar cliente"
+
+#: includes/functions.php:310
+msgid "Assign Agent"
+msgstr "Asignar Agente"
+
+#: includes/functions.php:311
+msgid "Assign Employee"
+msgstr "Asignar empleado"
+
+#: includes/functions.php:334 includes/intl.php:21 includes/pages.php:15
+#: templates/dashboard.php:2
+msgid "Users"
+msgstr "Usuarios"
+
+#: includes/hooks.php:6
+msgid "Username"
+msgstr "Nombre de usuario"
+
+#: includes/hooks.php:12
+msgid "Name"
+msgstr "Nombre"
+
+#: includes/hooks.php:19
+msgid "Email"
+msgstr "Email"
+
+#: includes/hooks.php:25 templates/user-form.php:29
+msgid "Roles"
+msgstr "Roles"
+
+#: includes/hooks.php:35 includes/hooks.php:263 includes/users.php:552
+#: includes/users.php:553 templates/user-form.php:42
+msgid "Groups"
+msgstr "Grupos"
+
+#: includes/hooks.php:54
+msgid "Status"
+msgstr "Estado"
+
+#: includes/hooks.php:57
+msgid "Active"
+msgstr "Activo"
+
+#: includes/hooks.php:59
+msgid "Approve"
+msgstr "Aprobar"
+
+#: includes/hooks.php:64 includes/hooks.php:71
+msgid "Access"
+msgstr "Acceso"
+
+#: includes/hooks.php:74
+msgid "Default Users"
+msgstr "Usuarios predeterminados"
+
+#: includes/hooks.php:80
+msgid "Defaults"
+msgstr "Predeterminados"
+
+#: includes/hooks.php:109
+msgid "License"
+msgstr "Licencia"
+
+#: includes/hooks.php:180
+msgid "Search"
+msgstr "Buscar"
+
+#: includes/hooks.php:224 includes/hooks.php:248 templates/access-form.php:29
+#: templates/assignment-form.php:22 templates/role-editor.php:43
+msgid "Close"
+msgstr "Cerrar"
+
+#: includes/hooks.php:225
+msgid "Add"
+msgstr "Añadir"
+
+#: includes/hooks.php:261
+msgid "WPCargo User Group"
+msgstr "Grupo de usuarios de WPCargo"
+
+#: includes/intl.php:6
+msgid "Please activate your license key for WPCargo User Management Addon"
+msgstr "Active su clave de licencia para WPCargo User Management Addon"
+
+#: includes/intl.php:6
+msgid "Activate"
+msgstr "Activar"
+
+#: includes/intl.php:9
+msgid "Deactivate user failed."
+msgstr "Error al desactivar el usuario."
+
+#: includes/intl.php:12
+msgid "Deactivate user success."
+msgstr "Desactivar el éxito del usuario."
+
+#: includes/intl.php:15
+msgid "New user successfully created."
+msgstr "Nuevo usuario creado correctamente."
+
+#: includes/intl.php:18
+msgid "User updated successfully."
+msgstr "Usuario actualizado correctamente."
+
+#: includes/intl.php:24
+msgid "Add New User"
+msgstr "Añadir nuevo usuario"
+
+#: includes/intl.php:27
+msgid "Group"
+msgstr "Grupo"
+
+#: includes/intl.php:30 templates/role-editor.php:2
+msgid "Role Editor"
+msgstr "Editor de perfiles"
+
+#: includes/intl.php:33
+msgid "Page"
+msgstr "Página"
+
+#: includes/intl.php:36
+msgid "Group Name"
+msgstr "Nombre del Grupo"
+
+#: includes/intl.php:39
+msgid "Description"
+msgstr "Descripción"
+
+#: includes/intl.php:42
+msgid "Actions"
+msgstr "Acciones"
+
+#: includes/intl.php:45
+msgid "Update User Group"
+msgstr "Actualizar grupo de usuarios"
+
+#: includes/intl.php:48
+msgid "Add Group"
+msgstr "Añadir grupo"
+
+#: includes/intl.php:51 templates/dashboard.php:21
+msgid "Update"
+msgstr "Actualizar"
+
+#: includes/intl.php:54
+msgid "Delete"
+msgstr "Borrar"
+
+#: includes/scripts.php:33
+msgid "Select User Roles"
+msgstr "Elegir perfiles de usuario"
+
+#: includes/scripts.php:34
+msgid "Select User Groups"
+msgstr "Seleccionar grupos de usuarios"
+
+#: includes/scripts.php:35
+msgid "Select Access"
+msgstr "Seleccione Acceso"
+
+#: includes/scripts.php:36
+msgid "Select Option"
+msgstr "Seleccionar opción"
+
+#: includes/scripts.php:37
+msgid ""
+"Are you sure you want to Delete user? You cannot restore a user account when "
+"deleted."
+msgstr ""
+"¿Está seguro de que desea eliminar usuario? No puede restaurar una cuenta de "
+"usuario cuando se elimina."
+
+#: includes/users.php:23
+msgid "Add new User"
+msgstr "Crear Nuevo Usuario"
+
+#: includes/users.php:23 templates/user-form.php:8
+msgid "Update User"
+msgstr "Actualizar Usuario"
+
+#: includes/users.php:25
+msgid "Set Password"
+msgstr "Establecer Contraseña"
+
+#: includes/users.php:25
+msgid "Generate Password"
+msgstr "Generar contraseña"
+
+#: includes/users.php:112
+msgid "All"
+msgstr "Todo"
+
+#: includes/users.php:133
+msgid "Sorry you are not allow to add or Update user."
+msgstr "Lo sentimos, no se le permite agregar o actualizar usuario."
+
+#: includes/users.php:145
+msgid "Sorry you are not allow to update user."
+msgstr "Lo sentimos, no se le permite actualizar el usuario."
+
+#: includes/users.php:156
+msgid "Email address not found!"
+msgstr "Email no encontrado."
+
+#: includes/users.php:169
+msgid "Sorry you are not allow to Add New User."
+msgstr "Lo sentimos, no se le permite agregar nuevo usuario."
+
+#: includes/users.php:178
+msgid "Missing Email Address."
+msgstr "Falta la dirección de correo electrónico."
+
+#: templates/access-form.php:6 templates/role-editor.php:26
+msgid "Access Form"
+msgstr "Formulario de acceso"
+
+#: templates/access-form.php:13
+msgid "Assign Access"
+msgstr "Asignar acceso"
+
+#: templates/access-form.php:17
+msgid "Select All"
+msgstr "Seleccionar todo"
+
+#: templates/access-form.php:30 templates/assignment-form.php:23
+msgid "Assign"
+msgstr "Asignar"
+
+#: templates/assignment-form.php:6
+msgid "Assign Default Form"
+msgstr "Asignar formulario predeterminado"
+
+#: templates/dashboard.php:8
+msgid "Action"
+msgstr "Acción"
+
+#: templates/dashboard.php:22
+msgid "Add Access"
+msgstr "Agregar un acceso."
+
+#: templates/dashboard.php:23
+msgid "Deactivate"
+msgstr "Desactivar"
+
+#: templates/restriction.php:4
+msgid "Sorry your are not allowed to access this page!"
+msgstr "¡Lo sentimos, no se le permite acceder a esta página!"
+
+#: templates/restriction.php:5
+msgid "Please contact administrator for your permission."
+msgstr "Póngase en contacto con el administrador para obtener su permiso."
+
+#: templates/role-editor.php:32
+msgid "Assign Roles"
+msgstr "Asignar roles"
+
+#: templates/role-editor.php:44
+msgid "Save"
+msgstr "Guardar"
+
+#: templates/user-form.php:12
+msgid "Personal Information"
+msgstr "Información personal"
+
+#: templates/user-form.php:18
+msgid "Billing Information"
+msgstr "Datos de facturación"
+
+#: templates/user-form.php:25
+msgid "User Role and Groups"
+msgstr "Rol de usuario y grupos"
+
+#: templates/user-password.php:4 templates/user-password.php:11
+msgid "Password"
+msgstr "Contraseña"
+
+#: templates/user-password.php:15
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: templates/user-search.php:4 templates/user-search.php:5
+msgid "Search User"
+msgstr "Buscar Usuarios"
+
+#: templates/user-search.php:6
+msgid "Search Users"
+msgstr "Buscar usuarios"
+
+#. Plugin Name of the plugin/theme
+msgid "WPCargo User Management"
+msgstr "Gestión de usuarios de WPCargo"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wptaskforce.com/"
+msgstr "http://wptaskforce.com/"
+
+#. Description of the plugin/theme
+msgid "Manage user access"
+msgstr "Administrar el acceso de los usuarios"
+
+#. Author of the plugin/theme
+msgid "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"
+msgstr "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"

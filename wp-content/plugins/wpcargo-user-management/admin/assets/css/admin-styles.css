@@ -1,0 +1,73 @@
+.wpcumanage-form-section, .wpcumanage-table-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 24px;
+}
+.wpcumanage-table-section .wpcumanage-search-section {
+    text-align: right;
+    margin-bottom: 15px;
+}
+.wpcumanage-search-section .wpcumanage-search-button {
+    background-color: #00a925;
+    border: none;
+    color: #ffffff;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.wpcumanage-pagination {
+    float: right;
+    display: block;
+    margin: 18px 0;
+}
+.wpcumanage-bulk-delete {
+    background-color: #ca4a1f !important;
+    color: #fff !important;
+    border-color: #ca4a1f !important;
+}
+.wpcumanage-table.list-table {
+    margin-bottom: 15px;
+}
+.wpcumanage-table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+.wpcumanage-table th {
+    background-color: #00a925;
+    color: #ffffff;
+}
+.wpcumanage-table td, .wpcumanage-table th {
+    padding: 10px;
+    border: 1px solid #eeeeee;
+}
+.bulk-action {
+    cursor: pointer;
+}
+.wpcumanage-form-section h4 {
+    margin-top: 0;
+}
+.wpcumanage_update_table tr th, .wpcumanage_add_table tr th {
+    width: 120px;
+}
+.wpcumanage_add_table tr td, .wpcumanage_add_table tr th {
+    padding: 6px;
+}
+.wpcumanage_add_table tr td input[type="text"], 
+.wpcumanage_add_table tr td select, 
+.wpcumanage_add_table tr td textarea, 
+.wpcumanage_add_table tr td input[type="text"], 
+.wpcumanage_add_table tr td select, 
+.wpcumanage_add_table tr td textarea {
+    width: 100%;
+}
+.dashicons-edit {
+    color: #3977c3;
+    cursor: pointer;
+}
+.dashicons.wpcumanage-delete:before {
+    color: #ca4a1f;
+    cursor: pointer;
+}
+#wpcumanage_edit_group_table .select2-container {
+    min-width: 25em !important;
+}

@@ -1,0 +1,404 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPCargo User Management\n"
+"POT-Creation-Date: 2022-04-08 15:58+0800\n"
+"PO-Revision-Date: 2022-04-08 15:59+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ro_RO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n==0 || (n!=1 && n%100>=1 && n"
+"%100<=19) ? 1 : 2);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpcargo-user-management.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: admin/templates/users-group.php:2 includes/hooks.php:177
+msgid "User Group"
+msgstr "Grup de utilizatori"
+
+#: admin/templates/users-group.php:6
+msgid "Add a new user group"
+msgstr "Adăugarea unui nou grup de utilizatori"
+
+#: includes/ajax.php:166
+msgid "Branch not found"
+msgstr "Ramura nu a fost găsită"
+
+#: includes/ajax.php:223
+msgid "Branch options found"
+msgstr "Opțiuni de ramură găsite"
+
+#: includes/functions.php:45
+msgid "Default Client"
+msgstr "Client implicit"
+
+#: includes/functions.php:53
+msgid "Default Agent"
+msgstr "Agent implicit"
+
+#: includes/functions.php:61
+msgid "Default Employee"
+msgstr "Angajat implicit"
+
+#: includes/functions.php:74
+msgid "Default Driver"
+msgstr "Driver implicit"
+
+#: includes/functions.php:96
+msgid "Default Branch"
+msgstr "Ramură implicită"
+
+#: includes/functions.php:104
+msgid "Default Branch Manager"
+msgstr "Manager de ramură implicit"
+
+#: includes/functions.php:127
+msgid "-- Select User--"
+msgstr "-- Selectați utilizator--"
+
+#: includes/functions.php:302
+msgid "Add Shipment"
+msgstr "Adăugarea expedierii"
+
+#: includes/functions.php:303
+msgid "Update Shipment"
+msgstr "Actualizați expedierea"
+
+#: includes/functions.php:304
+msgid "Delete Shipment"
+msgstr "Ștergerea expedierii"
+
+#: includes/functions.php:305
+msgid "Print Invoice"
+msgstr "Imprimare factură"
+
+#: includes/functions.php:306
+msgid "Print Label"
+msgstr "Imprimare etichetă"
+
+#: includes/functions.php:307
+msgid "Print Waybill"
+msgstr "Foaie de parcurs pentru imprimare"
+
+#: includes/functions.php:308
+msgid "Print BOL"
+msgstr "Imprimare BOL"
+
+#: includes/functions.php:309
+msgid "Assign Client"
+msgstr "Atribuiți clientul"
+
+#: includes/functions.php:310
+msgid "Assign Agent"
+msgstr "Atribuire agent"
+
+#: includes/functions.php:311
+msgid "Assign Employee"
+msgstr "Atribuiți angajatul"
+
+#: includes/functions.php:334 includes/intl.php:21 includes/pages.php:15
+#: templates/dashboard.php:2
+msgid "Users"
+msgstr "Utilizatori"
+
+#: includes/hooks.php:6
+msgid "Username"
+msgstr "Utilizator"
+
+#: includes/hooks.php:12
+msgid "Name"
+msgstr "Nume"
+
+#: includes/hooks.php:19
+msgid "Email"
+msgstr "E-mail"
+
+#: includes/hooks.php:25 templates/user-form.php:29
+msgid "Roles"
+msgstr "Roluri"
+
+#: includes/hooks.php:35 includes/hooks.php:263 includes/users.php:552
+#: includes/users.php:553 templates/user-form.php:42
+msgid "Groups"
+msgstr "Grupuri"
+
+#: includes/hooks.php:54
+msgid "Status"
+msgstr "Stare"
+
+#: includes/hooks.php:57
+msgid "Active"
+msgstr "Activ"
+
+#: includes/hooks.php:59
+msgid "Approve"
+msgstr "Aprobă"
+
+#: includes/hooks.php:64 includes/hooks.php:71
+msgid "Access"
+msgstr "Accesează"
+
+#: includes/hooks.php:74
+msgid "Default Users"
+msgstr "Utilizatori impliciti"
+
+#: includes/hooks.php:80
+msgid "Defaults"
+msgstr "Implicite"
+
+#: includes/hooks.php:109
+msgid "License"
+msgstr "Licență"
+
+#: includes/hooks.php:180
+msgid "Search"
+msgstr "Caută"
+
+#: includes/hooks.php:224 includes/hooks.php:248 templates/access-form.php:29
+#: templates/assignment-form.php:22 templates/role-editor.php:43
+msgid "Close"
+msgstr "Închide"
+
+#: includes/hooks.php:225
+msgid "Add"
+msgstr "Adaugă"
+
+#: includes/hooks.php:261
+msgid "WPCargo User Group"
+msgstr "Grupul de utilizatori WPCargo"
+
+#: includes/intl.php:6
+msgid "Please activate your license key for WPCargo User Management Addon"
+msgstr ""
+"Vă rugăm să activați cheia de licență pentru WPCargo User Management Addon"
+
+#: includes/intl.php:6
+msgid "Activate"
+msgstr "Activează"
+
+#: includes/intl.php:9
+msgid "Deactivate user failed."
+msgstr "Dezactivați utilizatorul nu a reușit."
+
+#: includes/intl.php:12
+msgid "Deactivate user success."
+msgstr "Dezactivați succesul utilizatorului."
+
+#: includes/intl.php:15
+msgid "New user successfully created."
+msgstr "Utilizator nou creat cu succes."
+
+#: includes/intl.php:18
+msgid "User updated successfully."
+msgstr "Utilizator actualizat cu succes."
+
+#: includes/intl.php:24
+msgid "Add New User"
+msgstr "Adăugați user nou"
+
+#: includes/intl.php:27
+msgid "Group"
+msgstr "Grup"
+
+#: includes/intl.php:30 templates/role-editor.php:2
+msgid "Role Editor"
+msgstr "Editor roluri"
+
+#: includes/intl.php:33
+msgid "Page"
+msgstr "Pagină"
+
+#: includes/intl.php:36
+msgid "Group Name"
+msgstr "Numele Grupului"
+
+#: includes/intl.php:39
+msgid "Description"
+msgstr "Descriere"
+
+#: includes/intl.php:42
+msgid "Actions"
+msgstr "Acțiuni"
+
+#: includes/intl.php:45
+msgid "Update User Group"
+msgstr "Actualizați grupul de utilizatori"
+
+#: includes/intl.php:48
+msgid "Add Group"
+msgstr "Adaugă %s"
+
+#: includes/intl.php:51 templates/dashboard.php:21
+msgid "Update"
+msgstr "Actualizare"
+
+#: includes/intl.php:54
+msgid "Delete"
+msgstr "Șterge"
+
+#: includes/scripts.php:33
+msgid "Select User Roles"
+msgstr "Selectați rolurile utilizatorilor"
+
+#: includes/scripts.php:34
+msgid "Select User Groups"
+msgstr "Selectați Grupuri de utilizatori"
+
+#: includes/scripts.php:35
+msgid "Select Access"
+msgstr "Selectați Acces"
+
+#: includes/scripts.php:36
+msgid "Select Option"
+msgstr "Alege optiune"
+
+#: includes/scripts.php:37
+msgid ""
+"Are you sure you want to Delete user? You cannot restore a user account when "
+"deleted."
+msgstr ""
+"Sunteți sigur că doriți să ștergeți utilizatorul? Nu puteți restaura un cont "
+"de utilizator atunci când este șters."
+
+#: includes/users.php:23
+msgid "Add new User"
+msgstr "Adăugare utilizator nou"
+
+#: includes/users.php:23 templates/user-form.php:8
+msgid "Update User"
+msgstr "Actualizează Utilizator"
+
+#: includes/users.php:25
+msgid "Set Password"
+msgstr "Setare parolă"
+
+#: includes/users.php:25
+msgid "Generate Password"
+msgstr "Genereaza Parola"
+
+#: includes/users.php:112
+msgid "All"
+msgstr "Toate"
+
+#: includes/users.php:133
+msgid "Sorry you are not allow to add or Update user."
+msgstr ""
+"Ne pare rău că nu sunt permis să adăugați sau să actualizeze utilizator."
+
+#: includes/users.php:145
+msgid "Sorry you are not allow to update user."
+msgstr "Ne pare rău că nu sunt permise pentru a actualiza utilizator."
+
+#: includes/users.php:156
+msgid "Email address not found!"
+msgstr "Adresa de e-mail nu a fost găsită!"
+
+#: includes/users.php:169
+msgid "Sorry you are not allow to Add New User."
+msgstr "Ne pare rău că nu sunt permis să Adăugați utilizator nou."
+
+#: includes/users.php:178
+msgid "Missing Email Address."
+msgstr "Lipsă Adresa de e-mail."
+
+#: templates/access-form.php:6 templates/role-editor.php:26
+msgid "Access Form"
+msgstr "Formular de acces"
+
+#: templates/access-form.php:13
+msgid "Assign Access"
+msgstr "Atribuirea accesului"
+
+#: templates/access-form.php:17
+msgid "Select All"
+msgstr "Selectati tot"
+
+#: templates/access-form.php:30 templates/assignment-form.php:23
+msgid "Assign"
+msgstr "Atribuit"
+
+#: templates/assignment-form.php:6
+msgid "Assign Default Form"
+msgstr "Atribuirea formularului implicit"
+
+#: templates/dashboard.php:8
+msgid "Action"
+msgstr "Actiune"
+
+#: templates/dashboard.php:22
+msgid "Add Access"
+msgstr "Adăugare acces"
+
+#: templates/dashboard.php:23
+msgid "Deactivate"
+msgstr "Dezactivați"
+
+#: templates/restriction.php:4
+msgid "Sorry your are not allowed to access this page!"
+msgstr "Ne pare rău dumneavoastră nu au voie pentru a accesa această pagină!"
+
+#: templates/restriction.php:5
+msgid "Please contact administrator for your permission."
+msgstr "Vă rugăm să contactați administratorul pentru permisiunea dvs."
+
+#: templates/role-editor.php:32
+msgid "Assign Roles"
+msgstr "Atribuirea rolurilor"
+
+#: templates/role-editor.php:44
+msgid "Save"
+msgstr "Salvează"
+
+#: templates/user-form.php:12
+msgid "Personal Information"
+msgstr "Informaţii personale"
+
+#: templates/user-form.php:18
+msgid "Billing Information"
+msgstr "Informații de facturare"
+
+#: templates/user-form.php:25
+msgid "User Role and Groups"
+msgstr "Rolul utilizatorului și grupuri"
+
+#: templates/user-password.php:4 templates/user-password.php:11
+msgid "Password"
+msgstr "Parola"
+
+#: templates/user-password.php:15
+msgid "Cancel"
+msgstr "Anulează"
+
+#: templates/user-search.php:4 templates/user-search.php:5
+msgid "Search User"
+msgstr "Căutare utilizator"
+
+#: templates/user-search.php:6
+msgid "Search Users"
+msgstr "Căutați Utilizatori"
+
+#. Plugin Name of the plugin/theme
+msgid "WPCargo User Management"
+msgstr "Gestionarea utilizatorilor WPCargo"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wptaskforce.com/"
+msgstr "http://wptaskforce.com/"
+
+#. Description of the plugin/theme
+msgid "Manage user access"
+msgstr "Gestionarea accesului utilizatorilor"
+
+#. Author of the plugin/theme
+msgid "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"
+msgstr "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"

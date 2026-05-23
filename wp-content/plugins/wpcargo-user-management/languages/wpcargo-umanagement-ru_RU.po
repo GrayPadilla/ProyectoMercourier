@@ -1,0 +1,404 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPCargo User Management\n"
+"POT-Creation-Date: 2022-04-08 15:59+0800\n"
+"PO-Revision-Date: 2022-04-08 16:01+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpcargo-user-management.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: admin/templates/users-group.php:2 includes/hooks.php:177
+msgid "User Group"
+msgstr "Группа пользователей"
+
+#: admin/templates/users-group.php:6
+msgid "Add a new user group"
+msgstr "Добавление новой группы пользователей"
+
+#: includes/ajax.php:166
+msgid "Branch not found"
+msgstr "Филиал не найден"
+
+#: includes/ajax.php:223
+msgid "Branch options found"
+msgstr "Найдены варианты филиалов"
+
+#: includes/functions.php:45
+msgid "Default Client"
+msgstr "Клиент по умолчанию"
+
+#: includes/functions.php:53
+msgid "Default Agent"
+msgstr "Агент по умолчанию"
+
+#: includes/functions.php:61
+msgid "Default Employee"
+msgstr "Сотрудник по умолчанию"
+
+#: includes/functions.php:74
+msgid "Default Driver"
+msgstr "Драйвер по умолчанию"
+
+#: includes/functions.php:96
+msgid "Default Branch"
+msgstr "Ветвь по умолчанию"
+
+#: includes/functions.php:104
+msgid "Default Branch Manager"
+msgstr "Менеджер филиалов по умолчанию"
+
+#: includes/functions.php:127
+msgid "-- Select User--"
+msgstr "-- Выберите пользователя--"
+
+#: includes/functions.php:302
+msgid "Add Shipment"
+msgstr "Добавить отправление"
+
+#: includes/functions.php:303
+msgid "Update Shipment"
+msgstr "Обновление отгрузки"
+
+#: includes/functions.php:304
+msgid "Delete Shipment"
+msgstr "Удалить отправление"
+
+#: includes/functions.php:305
+msgid "Print Invoice"
+msgstr "Распечатать счёт"
+
+#: includes/functions.php:306
+msgid "Print Label"
+msgstr "Печать метки"
+
+#: includes/functions.php:307
+msgid "Print Waybill"
+msgstr "Распечатать накладную"
+
+#: includes/functions.php:308
+msgid "Print BOL"
+msgstr "Печать BOL"
+
+#: includes/functions.php:309
+msgid "Assign Client"
+msgstr "Назначить клиента"
+
+#: includes/functions.php:310
+msgid "Assign Agent"
+msgstr "Назначить агента"
+
+#: includes/functions.php:311
+msgid "Assign Employee"
+msgstr "Назначение сотрудника"
+
+#: includes/functions.php:334 includes/intl.php:21 includes/pages.php:15
+#: templates/dashboard.php:2
+msgid "Users"
+msgstr "Пользователи"
+
+#: includes/hooks.php:6
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: includes/hooks.php:12
+msgid "Name"
+msgstr "Имя"
+
+#: includes/hooks.php:19
+msgid "Email"
+msgstr "Email"
+
+#: includes/hooks.php:25 templates/user-form.php:29
+msgid "Roles"
+msgstr "Роли"
+
+#: includes/hooks.php:35 includes/hooks.php:263 includes/users.php:552
+#: includes/users.php:553 templates/user-form.php:42
+msgid "Groups"
+msgstr "Группы"
+
+#: includes/hooks.php:54
+msgid "Status"
+msgstr "Статус"
+
+#: includes/hooks.php:57
+msgid "Active"
+msgstr "Активный"
+
+#: includes/hooks.php:59
+msgid "Approve"
+msgstr "Одобрить"
+
+#: includes/hooks.php:64 includes/hooks.php:71
+msgid "Access"
+msgstr "Доступ"
+
+#: includes/hooks.php:74
+msgid "Default Users"
+msgstr "Пользователи по умолчанию"
+
+#: includes/hooks.php:80
+msgid "Defaults"
+msgstr "По умолчанию"
+
+#: includes/hooks.php:109
+msgid "License"
+msgstr "Лицензия"
+
+#: includes/hooks.php:180
+msgid "Search"
+msgstr "Поиск"
+
+#: includes/hooks.php:224 includes/hooks.php:248 templates/access-form.php:29
+#: templates/assignment-form.php:22 templates/role-editor.php:43
+msgid "Close"
+msgstr "Закрыть"
+
+#: includes/hooks.php:225
+msgid "Add"
+msgstr "Добавить"
+
+#: includes/hooks.php:261
+msgid "WPCargo User Group"
+msgstr "Группа пользователей WPCargo"
+
+#: includes/intl.php:6
+msgid "Please activate your license key for WPCargo User Management Addon"
+msgstr ""
+"Пожалуйста, активируйте лицензионный ключ для дополнения wpCargo User "
+"Management Addon"
+
+#: includes/intl.php:6
+msgid "Activate"
+msgstr "Активировать"
+
+#: includes/intl.php:9
+msgid "Deactivate user failed."
+msgstr "Не удалось деактивировать пользователя."
+
+#: includes/intl.php:12
+msgid "Deactivate user success."
+msgstr "Деактивируйте успех пользователя."
+
+#: includes/intl.php:15
+msgid "New user successfully created."
+msgstr "Новый пользователь успешно создан."
+
+#: includes/intl.php:18
+msgid "User updated successfully."
+msgstr "Пользователь успешно обновлен."
+
+#: includes/intl.php:24
+msgid "Add New User"
+msgstr "Добавить нового пользователя"
+
+#: includes/intl.php:27
+msgid "Group"
+msgstr "Группа"
+
+#: includes/intl.php:30 templates/role-editor.php:2
+msgid "Role Editor"
+msgstr "Редактор ролей"
+
+#: includes/intl.php:33
+msgid "Page"
+msgstr "Страница"
+
+#: includes/intl.php:36
+msgid "Group Name"
+msgstr "Имя группы"
+
+#: includes/intl.php:39
+msgid "Description"
+msgstr "Описание"
+
+#: includes/intl.php:42
+msgid "Actions"
+msgstr "Действия"
+
+#: includes/intl.php:45
+msgid "Update User Group"
+msgstr "Обновление группы пользователей"
+
+#: includes/intl.php:48
+msgid "Add Group"
+msgstr "Добавить группу"
+
+#: includes/intl.php:51 templates/dashboard.php:21
+msgid "Update"
+msgstr "Обновить"
+
+#: includes/intl.php:54
+msgid "Delete"
+msgstr "Удалить"
+
+#: includes/scripts.php:33
+msgid "Select User Roles"
+msgstr "Выбор ролей пользователя"
+
+#: includes/scripts.php:34
+msgid "Select User Groups"
+msgstr "Выберите группы пользователей"
+
+#: includes/scripts.php:35
+msgid "Select Access"
+msgstr "Выберите Доступ"
+
+#: includes/scripts.php:36
+msgid "Select Option"
+msgstr "Параметры выбора"
+
+#: includes/scripts.php:37
+msgid ""
+"Are you sure you want to Delete user? You cannot restore a user account when "
+"deleted."
+msgstr ""
+"Вы уверены, что хотите удалить пользователя? Вы не можете восстановить "
+"учетную запись пользователя при удалении."
+
+#: includes/users.php:23
+msgid "Add new User"
+msgstr "Добавить нового пользователя"
+
+#: includes/users.php:23 templates/user-form.php:8
+msgid "Update User"
+msgstr "Обновить пользователя"
+
+#: includes/users.php:25
+msgid "Set Password"
+msgstr "Установить Пароль"
+
+#: includes/users.php:25
+msgid "Generate Password"
+msgstr "Сгенерировать пароль"
+
+#: includes/users.php:112
+msgid "All"
+msgstr "Все"
+
+#: includes/users.php:133
+msgid "Sorry you are not allow to add or Update user."
+msgstr "К сожалению, вы не можете добавить или обновить пользователя."
+
+#: includes/users.php:145
+msgid "Sorry you are not allow to update user."
+msgstr "Извините, что вы не можете обновить пользователя."
+
+#: includes/users.php:156
+msgid "Email address not found!"
+msgstr "Такого адрес e-mail у нас не найдено!"
+
+#: includes/users.php:169
+msgid "Sorry you are not allow to Add New User."
+msgstr "К сожалению, вы не можете добавить нового пользователя."
+
+#: includes/users.php:178
+msgid "Missing Email Address."
+msgstr "Отсутствует адрес электронной почты."
+
+#: templates/access-form.php:6 templates/role-editor.php:26
+msgid "Access Form"
+msgstr "Форма доступа"
+
+#: templates/access-form.php:13
+msgid "Assign Access"
+msgstr "Назначение доступа"
+
+#: templates/access-form.php:17
+msgid "Select All"
+msgstr "Выбрать все"
+
+#: templates/access-form.php:30 templates/assignment-form.php:23
+msgid "Assign"
+msgstr "Назначить"
+
+#: templates/assignment-form.php:6
+msgid "Assign Default Form"
+msgstr "Назначить форму по умолчанию"
+
+#: templates/dashboard.php:8
+msgid "Action"
+msgstr "Действие"
+
+#: templates/dashboard.php:22
+msgid "Add Access"
+msgstr "Добавить доступ"
+
+#: templates/dashboard.php:23
+msgid "Deactivate"
+msgstr "Деактивировать"
+
+#: templates/restriction.php:4
+msgid "Sorry your are not allowed to access this page!"
+msgstr "Извините, что вам не разрешен доступ к этой странице!"
+
+#: templates/restriction.php:5
+msgid "Please contact administrator for your permission."
+msgstr "Пожалуйста, свяжитесь с администратором для получения разрешения."
+
+#: templates/role-editor.php:32
+msgid "Assign Roles"
+msgstr "Назначение ролей"
+
+#: templates/role-editor.php:44
+msgid "Save"
+msgstr "Сохранить"
+
+#: templates/user-form.php:12
+msgid "Personal Information"
+msgstr "Личная информация"
+
+#: templates/user-form.php:18
+msgid "Billing Information"
+msgstr "Платежная информация"
+
+#: templates/user-form.php:25
+msgid "User Role and Groups"
+msgstr "Роли и группы пользователей"
+
+#: templates/user-password.php:4 templates/user-password.php:11
+msgid "Password"
+msgstr "Пароль"
+
+#: templates/user-password.php:15
+msgid "Cancel"
+msgstr "Отмена"
+
+#: templates/user-search.php:4 templates/user-search.php:5
+msgid "Search User"
+msgstr "Найти пользователя"
+
+#: templates/user-search.php:6
+msgid "Search Users"
+msgstr "Поиск пользователей"
+
+#. Plugin Name of the plugin/theme
+msgid "WPCargo User Management"
+msgstr "Управление пользователями WPCargo"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wptaskforce.com/"
+msgstr "http://wptaskforce.com/"
+
+#. Description of the plugin/theme
+msgid "Manage user access"
+msgstr "Управление доступом пользователей"
+
+#. Author of the plugin/theme
+msgid "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"
+msgstr "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"

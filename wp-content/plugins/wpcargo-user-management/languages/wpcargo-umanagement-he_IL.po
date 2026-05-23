@@ -1,0 +1,401 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPCargo User Management\n"
+"POT-Creation-Date: 2022-04-08 15:54+0800\n"
+"PO-Revision-Date: 2022-04-08 15:55+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: he_IL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n==2 ? 1 : n>10 && n%10==0 ? "
+"2 : 3);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpcargo-user-management.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: admin/templates/users-group.php:2 includes/hooks.php:177
+msgid "User Group"
+msgstr "משתמש"
+
+#: admin/templates/users-group.php:6
+msgid "Add a new user group"
+msgstr "הוספת קבוצת משתמשים חדשה"
+
+#: includes/ajax.php:166
+msgid "Branch not found"
+msgstr "הענף לא נמצא"
+
+#: includes/ajax.php:223
+msgid "Branch options found"
+msgstr "נמצאו אפשרויות ענף"
+
+#: includes/functions.php:45
+msgid "Default Client"
+msgstr "לקוח ברירת מחדל"
+
+#: includes/functions.php:53
+msgid "Default Agent"
+msgstr "סוכן ברירת מחדל"
+
+#: includes/functions.php:61
+msgid "Default Employee"
+msgstr "עובד ברירת מחדל"
+
+#: includes/functions.php:74
+msgid "Default Driver"
+msgstr "מנהל התקן המהווה ברירת מחדל"
+
+#: includes/functions.php:96
+msgid "Default Branch"
+msgstr "ענף ברירת מחדל"
+
+#: includes/functions.php:104
+msgid "Default Branch Manager"
+msgstr "מנהל סניף המהווה ברירת מחדל"
+
+#: includes/functions.php:127
+msgid "-- Select User--"
+msgstr "-- בחר משתמש--"
+
+#: includes/functions.php:302
+msgid "Add Shipment"
+msgstr "הוסף משלוח"
+
+#: includes/functions.php:303
+msgid "Update Shipment"
+msgstr "עדכן משלוח"
+
+#: includes/functions.php:304
+msgid "Delete Shipment"
+msgstr "מחק משלוח"
+
+#: includes/functions.php:305
+msgid "Print Invoice"
+msgstr "הדפס מפרט"
+
+#: includes/functions.php:306
+msgid "Print Label"
+msgstr "הדפס"
+
+#: includes/functions.php:307
+msgid "Print Waybill"
+msgstr "הדפס שטר משוב"
+
+#: includes/functions.php:308
+msgid "Print BOL"
+msgstr "הדפס BOL"
+
+#: includes/functions.php:309
+msgid "Assign Client"
+msgstr "הקצאת לקוח"
+
+#: includes/functions.php:310
+msgid "Assign Agent"
+msgstr "הקצה סוכן"
+
+#: includes/functions.php:311
+msgid "Assign Employee"
+msgstr "הקצאת עובד"
+
+#: includes/functions.php:334 includes/intl.php:21 includes/pages.php:15
+#: templates/dashboard.php:2
+msgid "Users"
+msgstr "משתמשים"
+
+#: includes/hooks.php:6
+msgid "Username"
+msgstr "שם משתמש"
+
+#: includes/hooks.php:12
+msgid "Name"
+msgstr "שם"
+
+#: includes/hooks.php:19
+msgid "Email"
+msgstr "אימייל"
+
+#: includes/hooks.php:25 templates/user-form.php:29
+msgid "Roles"
+msgstr "תפקידים "
+
+#: includes/hooks.php:35 includes/hooks.php:263 includes/users.php:552
+#: includes/users.php:553 templates/user-form.php:42
+msgid "Groups"
+msgstr "קבוצות"
+
+#: includes/hooks.php:54
+msgid "Status"
+msgstr "סטטוס"
+
+#: includes/hooks.php:57
+msgid "Active"
+msgstr "פעיל"
+
+#: includes/hooks.php:59
+msgid "Approve"
+msgstr "אשר"
+
+#: includes/hooks.php:64 includes/hooks.php:71
+msgid "Access"
+msgstr "גישה"
+
+#: includes/hooks.php:74
+msgid "Default Users"
+msgstr "משתמשי ברירת מחדל"
+
+#: includes/hooks.php:80
+msgid "Defaults"
+msgstr "הגדרות (ברירת המחדל"
+
+#: includes/hooks.php:109
+msgid "License"
+msgstr "רישיון"
+
+#: includes/hooks.php:180
+msgid "Search"
+msgstr "חיפוש"
+
+#: includes/hooks.php:224 includes/hooks.php:248 templates/access-form.php:29
+#: templates/assignment-form.php:22 templates/role-editor.php:43
+msgid "Close"
+msgstr "סגור"
+
+#: includes/hooks.php:225
+msgid "Add"
+msgstr "הוסף"
+
+#: includes/hooks.php:261
+msgid "WPCargo User Group"
+msgstr "קבוצת משתמשים של WPCargo"
+
+#: includes/intl.php:6
+msgid "Please activate your license key for WPCargo User Management Addon"
+msgstr "נא הפעל את מפתח הרשיון שלך עבור WPCargo ניהול משתמש Addon"
+
+#: includes/intl.php:6
+msgid "Activate"
+msgstr "הפעל"
+
+#: includes/intl.php:9
+msgid "Deactivate user failed."
+msgstr "ביטול ההפעלה של המשתמש נכשל."
+
+#: includes/intl.php:12
+msgid "Deactivate user success."
+msgstr "בטל הפעלה של הצלחת המשתמש."
+
+#: includes/intl.php:15
+msgid "New user successfully created."
+msgstr "משתמש חדש נוצר בהצלחה."
+
+#: includes/intl.php:18
+msgid "User updated successfully."
+msgstr "המשתמש עודכן בהצלחה."
+
+#: includes/intl.php:24
+msgid "Add New User"
+msgstr "להוסיף משתמש חדש"
+
+#: includes/intl.php:27
+msgid "Group"
+msgstr "קבוצה"
+
+#: includes/intl.php:30 templates/role-editor.php:2
+msgid "Role Editor"
+msgstr "עורך התפקידים"
+
+#: includes/intl.php:33
+msgid "Page"
+msgstr "עמוד"
+
+#: includes/intl.php:36
+msgid "Group Name"
+msgstr "שם הקבוצה"
+
+#: includes/intl.php:39
+msgid "Description"
+msgstr "תיאור"
+
+#: includes/intl.php:42
+msgid "Actions"
+msgstr "פעולות"
+
+#: includes/intl.php:45
+msgid "Update User Group"
+msgstr "עדכן קבוצת משתמשים"
+
+#: includes/intl.php:48
+msgid "Add Group"
+msgstr "הוסף קבוצה"
+
+#: includes/intl.php:51 templates/dashboard.php:21
+msgid "Update"
+msgstr "עדכון"
+
+#: includes/intl.php:54
+msgid "Delete"
+msgstr "מחק"
+
+#: includes/scripts.php:33
+msgid "Select User Roles"
+msgstr "בחר תפקידי משתמש"
+
+#: includes/scripts.php:34
+msgid "Select User Groups"
+msgstr "בחר קבוצות משתמשים"
+
+#: includes/scripts.php:35
+msgid "Select Access"
+msgstr "בחר גישה"
+
+#: includes/scripts.php:36
+msgid "Select Option"
+msgstr "בחר אפשרות"
+
+#: includes/scripts.php:37
+msgid ""
+"Are you sure you want to Delete user? You cannot restore a user account when "
+"deleted."
+msgstr ""
+"האם אתה בטוח שברצונך למחוק משתמש? אין באפשרותך לשחזר חשבון משתמש בעת מחיקה."
+
+#: includes/users.php:23
+msgid "Add new User"
+msgstr "הוסף משתמש חדש"
+
+#: includes/users.php:23 templates/user-form.php:8
+msgid "Update User"
+msgstr "עדכון המשתמש"
+
+#: includes/users.php:25
+msgid "Set Password"
+msgstr "הגדירי סיסמה"
+
+#: includes/users.php:25
+msgid "Generate Password"
+msgstr "לחולל סיסמה"
+
+#: includes/users.php:112
+msgid "All"
+msgstr "הכל"
+
+#: includes/users.php:133
+msgid "Sorry you are not allow to add or Update user."
+msgstr "מצטערים שאינך רשאי להוסיף או לעדכן משתמש."
+
+#: includes/users.php:145
+msgid "Sorry you are not allow to update user."
+msgstr "מצטערים שאינך רשאי לעדכן את המשתמש."
+
+#: includes/users.php:156
+msgid "Email address not found!"
+msgstr "כתובת אימייל לא נמצאה."
+
+#: includes/users.php:169
+msgid "Sorry you are not allow to Add New User."
+msgstr "מצטערים שאינך רשאי להוסיף משתמש חדש."
+
+#: includes/users.php:178
+msgid "Missing Email Address."
+msgstr "כתובת דואר אלקטרוני חסרה."
+
+#: templates/access-form.php:6 templates/role-editor.php:26
+msgid "Access Form"
+msgstr "טופס גישה"
+
+#: templates/access-form.php:13
+msgid "Assign Access"
+msgstr "הקצאת גישה"
+
+#: templates/access-form.php:17
+msgid "Select All"
+msgstr "בחר הכל"
+
+#: templates/access-form.php:30 templates/assignment-form.php:23
+msgid "Assign"
+msgstr "לשייך"
+
+#: templates/assignment-form.php:6
+msgid "Assign Default Form"
+msgstr "הקצאת טופס ברירת מחדל"
+
+#: templates/dashboard.php:8
+msgid "Action"
+msgstr "פעולה"
+
+#: templates/dashboard.php:22
+msgid "Add Access"
+msgstr "הוספת גישה"
+
+#: templates/dashboard.php:23
+msgid "Deactivate"
+msgstr "בטל"
+
+#: templates/restriction.php:4
+msgid "Sorry your are not allowed to access this page!"
+msgstr "מצטערים שאסור לך לגשת לדף הזה!"
+
+#: templates/restriction.php:5
+msgid "Please contact administrator for your permission."
+msgstr "נא פנה למנהל המערכת לקבלת רשותך."
+
+#: templates/role-editor.php:32
+msgid "Assign Roles"
+msgstr "הקצאת תפקידים"
+
+#: templates/role-editor.php:44
+msgid "Save"
+msgstr "שמור"
+
+#: templates/user-form.php:12
+msgid "Personal Information"
+msgstr "מידע אישי"
+
+#: templates/user-form.php:18
+msgid "Billing Information"
+msgstr "פרטי חיוב"
+
+#: templates/user-form.php:25
+msgid "User Role and Groups"
+msgstr "תפקיד משתמש וקבוצות"
+
+#: templates/user-password.php:4 templates/user-password.php:11
+msgid "Password"
+msgstr "סיסמה"
+
+#: templates/user-password.php:15
+msgid "Cancel"
+msgstr "ביטול"
+
+#: templates/user-search.php:4 templates/user-search.php:5
+msgid "Search User"
+msgstr "חפש משתמש"
+
+#: templates/user-search.php:6
+msgid "Search Users"
+msgstr "חיפוש משתמשים"
+
+#. Plugin Name of the plugin/theme
+msgid "WPCargo User Management"
+msgstr "ניהול משתמשים של WPCargo"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wptaskforce.com/"
+msgstr "http://wptaskforce.com/"
+
+#. Description of the plugin/theme
+msgid "Manage user access"
+msgstr "ניהול גישת משתמש"
+
+#. Author of the plugin/theme
+msgid "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"
+msgstr "<a href=\"http://www.wptaskforce.com/\">WPTaskForce</a>"
