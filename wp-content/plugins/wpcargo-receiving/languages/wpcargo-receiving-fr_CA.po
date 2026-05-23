@@ -1,0 +1,263 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPCargo Receiving Add-ons\n"
+"POT-Creation-Date: 2021-07-16 10:33+0800\n"
+"PO-Revision-Date: 2021-07-16 10:34+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_CA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpcargo-receiving.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: admin/admin.php:9
+msgid "Empty Tracking Number!"
+msgstr "Numéro de suivi vide!"
+
+#: admin/admin.php:12
+msgid "Shipment Updated Succesfully!"
+msgstr "Expédition mise à jour Succesfully!"
+
+#: admin/admin.php:15
+msgid "Shipment Not Found!"
+msgstr "Expédition non trouvée!"
+
+#: admin/admin.php:18
+msgid "Shipment Added Succesfully!"
+msgstr "Expédition ajoutée avec succès!"
+
+#: admin/admin.php:23
+msgid "Please activate your license key"
+msgstr "S’il vous plaît activer votre clé de licence"
+
+#: admin/admin.php:24
+msgid "here"
+msgstr "ici"
+
+#: admin/admin.php:30 admin/admin.php:37 admin/admin.php:51
+msgid "This plugin requires"
+msgstr "Ce plugin nécessite"
+
+#: admin/admin.php:31 admin/admin.php:38 admin/admin.php:52
+msgid "plugin to be active!"
+msgstr "plugin pour être actif!"
+
+#: admin/admin.php:44
+msgid "Success!"
+msgstr "Succès!"
+
+#: admin/admin.php:45
+msgid "Following shipments were updated successfully."
+msgstr "Expédition mise à jour Succesfully!"
+
+#: admin/admin.php:56
+msgid "Cheating, uh?"
+msgstr "Tricher, e uh ?"
+
+#: admin/admin.php:59 admin/classes/wpc-receiving-loader.php:337
+#: admin/templates/wpc-receiving-submenu.tpl.php:17 includes/functions.php:41
+msgid "Receiving"
+msgstr "Recevoir"
+
+#: admin/admin.php:72
+msgid "Client"
+msgstr "Client"
+
+#: admin/admin.php:74
+msgid "Select Client"
+msgstr "Sélectionner le client"
+
+#: admin/admin.php:92
+msgid "Agent"
+msgstr "Le courtier"
+
+#: admin/admin.php:94
+msgid "Select Agent"
+msgstr "Sélectionnez Agent"
+
+#: admin/admin.php:112
+msgid "Employee"
+msgstr "Employé"
+
+#: admin/admin.php:114
+msgid "Select employee"
+msgstr "Sélectionnez l'organisateur"
+
+#: admin/admin.php:135
+msgid "Driver"
+msgstr "Pilote"
+
+#: admin/admin.php:137
+msgid "Select Driver"
+msgstr "-- Sélectionnez Pilote --"
+
+#: admin/classes/wpc-receiving-metabox.php:11
+msgid "Branch History"
+msgstr "Historique de branche"
+
+#: admin/classes/wpc-receiving-metabox.php:33
+msgid "Branch Name"
+msgstr "Nom de la branche"
+
+#: admin/classes/wpc-receiving-scripts.php:16
+msgid "No shipment selected, Please select atleast one Shipment."
+msgstr ""
+"Aucun envoi sélectionné, S’il vous plaît sélectionnez atleast un envoi."
+
+#: admin/classes/wpc-receiving-scripts.php:17
+msgid ""
+"Something went wrong while processing your request, please reload and try "
+"again."
+msgstr ""
+"Quelque chose s’est mal passé lors du traitement de votre demande, s’il "
+"vous plaît recharger et essayer à nouveau."
+
+#: admin/classes/wpc-receiving-settings.php:14
+#: admin/classes/wpc-receiving-settings.php:15
+#: admin/classes/wpc-receiving-settings.php:21
+#: admin/classes/wpc-receiving-settings.php:22
+#: admin/classes/wpc-receiving-settings.php:33
+#: admin/classes/wpc-receiving-settings.php:49
+msgid "Receiving Settings"
+msgstr "Paramètres de réception"
+
+#: admin/templates/wpc-receiving-settings.tpl.php:11
+msgid "Enable beep sound when scanning?"
+msgstr "Activer le bip sonore lors de la numérisation?"
+
+#: admin/templates/wpc-receiving-settings.tpl.php:16
+msgid "Would you like to auto update the user?"
+msgstr "Souhaitez-vous mettre à jour automatiquement l’utilisateur?"
+
+#: admin/templates/wpc-receiving-settings.tpl.php:18
+msgid ""
+"Please check if you want to auto update the user after it is updated "
+"successfully on receiving page"
+msgstr ""
+"S’il vous plaît vérifier si vous voulez mettre à jour automatiquement "
+"l’utilisateur après qu’il est mis à jour avec succès sur la page de "
+"réception"
+
+#: admin/templates/wpc-receiving-submenu.tpl.php:20
+msgid "Connect your scanner device"
+msgstr "Connectez votre appareil scanner"
+
+#: admin/templates/wpc-receiving-submenu.tpl.php:27
+#: templates/single-barcode.tpl.php:6
+msgid "Clear all fields after scanned."
+msgstr "Effacer tous les champs après avoir scanné."
+
+#: admin/templates/wpc-receiving-submenu.tpl.php:32
+#: templates/single-barcode.tpl.php:10
+msgid "Add when shipment is not found."
+msgstr "Ajouter lorsque l’expédition n’est pas trouvée."
+
+#: admin/templates/wpc-receiving-submenu.tpl.php:63
+#: templates/single-barcode.tpl.php:45
+msgid ""
+"Scan your shipment barcode to update or enter the tracking number and press "
+"ENTER"
+msgstr ""
+"Numérisez votre code-barres d’expédition pour mettre à jour ou entrer le "
+"numéro de suivi et appuyez sur ENTER"
+
+#: admin/templates/wpc-receiving-submenu.tpl.php:81
+#: templates/single-barcode.tpl.php:53
+msgid "Notes:"
+msgstr "Remarques:"
+
+#: admin/templates/wpc-receiving-submenu.tpl.php:83
+msgid ""
+"If you have connected your barcode scanner please scan directly to the "
+"barcode and it will automatic update the Shipment Status"
+msgstr ""
+"Si vous avez connecté votre scanner de code à barres s’il vous plaît "
+"scanner directement sur le code à barres et il mettra à jour "
+"automatiquement l’état d’expédition"
+
+#: admin/templates/wpc-receiving-submenu.tpl.php:84
+msgid ""
+"If you don't have a barcode scanner please input it to the tracking number "
+"field and press <i>Enter</i> on your keyboard"
+msgstr ""
+"Si vous n’avez pas de scanner de code à barres, veuillez l’entrer sur le "
+"champ de numéro de suivi et appuyez sur <i>Entrez</i> sur votre clavier"
+
+#: includes/functions.php:8
+msgid "Bulk Update"
+msgstr "Mise à jour en vrac"
+
+#: includes/functions.php:29
+msgid "Sorry you don't have enough permission to access this page."
+msgstr ""
+"Désolé de ne pas avoir assez d’autorisation pour accéder à cette page."
+
+#: includes/functions.php:32
+msgid "Please activate you license to use this functionality."
+msgstr ""
+"S’il vous plaît activer la licence pour utiliser cette fonctionnalité."
+
+#: templates/bulk-barcode.tpl.php:2 templates/bulk-barcode.tpl.php:8
+msgid "Receiver Bulk Update"
+msgstr "Mise à jour en vrac du récepteur"
+
+#: templates/bulk-barcode.tpl.php:9
+msgid "Close"
+msgstr "Fermer"
+
+#: templates/bulk-barcode.tpl.php:44
+msgid "Update"
+msgstr "Mettre à jour"
+
+#: templates/single-barcode.tpl.php:43
+msgid "Enter Shipment Number"
+msgstr "Entrez le numéro d’expédition"
+
+#: templates/single-barcode.tpl.php:55
+msgid ""
+"If you have connected your barcode scanner please scan directly to the "
+"barcode and it will automatically update the Shipment Status"
+msgstr ""
+"Si vous avez connecté votre scanner de codes à barres, veuillez scanner "
+"directement au code-barres et mettre à jour automatiquement l’état de "
+"l’expédition"
+
+#: templates/single-barcode.tpl.php:59
+msgid ""
+"If you don't have a barcode scanner please input the tracking number on the "
+"field and press <i>Enter</i> on your keyboard"
+msgstr ""
+"Si vous n’avez pas de scanner de code à barres, veuillez l’entrer sur le "
+"champ de numéro de suivi et appuyez sur <i>Entrez</i> sur votre clavier"
+
+#. Plugin Name of the plugin/theme
+msgid "WPCargo Receiving Add-ons"
+msgstr "WPCargo Recevoir des add-ons"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wpcargo.com/"
+msgstr "http://wpcargo.com/"
+
+#. Description of the plugin/theme
+msgid ""
+"This Add-ons will let you auto update the Shipment History by using the "
+"barcode scanner or entering the number on the input fields."
+msgstr ""
+"Ces modules vous permettront de mettre à jour automatiquement l’historique "
+"des expéditions en utilisant le scanner de code à barres ou en entrant le "
+"numéro sur les champs d’entrée."
+
+#. Author of the plugin/theme
+msgid "<a href=\"http://wptaskforce.com/\">WPTaskForce</a>"
+msgstr "<a href=\"http://wptaskforce.com/\">WPTaskForce</a>"

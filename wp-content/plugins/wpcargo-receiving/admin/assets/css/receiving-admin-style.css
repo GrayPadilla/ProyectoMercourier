@@ -1,0 +1,64 @@
+.wpc-receiving-tbl input {
+	width: 100%;
+	min-height: 45px;
+}
+.wpc-receiving-tbl select {
+	min-height: 45px;
+}
+.wpc-receiving-wrap {
+    margin: 20px 15px 15px 0;
+    padding: 0;
+    background: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+.wpc-receiver-notif {
+	position: absolute;
+	top: 20px;
+	width: 100%;
+	text-align: center;
+	margin: 10px auto;
+}
+.wpc-receiver-notif p.wpc-receiver-successful {
+	padding: 35px;
+	margin: 0 auto;
+	width: 52%;
+	background-color: #00a924;
+	color: #fff;
+	font-size: 20px;
+}
+.wpc-receiver-notif p.wpc-receiver-error {
+	padding: 35px;
+	margin: 0 auto;
+	width: 52%;
+	background-color: #f93636;
+	color: #fff;
+	font-size: 20px;
+}
+.wpc-receiving-wrap-inner {
+    padding: 30px;
+}
+.wpc-receiving-wrap-inner h3 {
+    margin-top: 0;
+}
+.wpc-receiving-tbl {
+    width: 100%;
+}
+.wpc-receiving-tbl td select, 
+.wpc-receiving-tbl td textarea {
+    width: 100%;
+}
+.wpc-receiving-tbl td textarea {
+    margin-top: 3px;
+    min-height: 45px;
+}
+@media only screen and (max-width: 600px) {
+	.wpc-receiving .wpc-receiving-form .wpc-receiving-tbl td {
+		width: 100%;
+		display: block;
+	}
+	.wpc-receiving .wpc-receiving-form .wpc-receiving-tbl td select, 
+	.wpc-receiving .wpc-receiving-form .wpc-receiving-tbl td input {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}

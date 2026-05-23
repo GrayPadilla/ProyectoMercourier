@@ -1,0 +1,257 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPCargo Receiving Add-ons\n"
+"POT-Creation-Date: 2021-07-16 10:37+0800\n"
+"PO-Revision-Date: 2021-07-16 10:37+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpcargo-receiving.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: admin/admin.php:9
+msgid "Empty Tracking Number!"
+msgstr "¡Número de seguimiento vacío!"
+
+#: admin/admin.php:12
+msgid "Shipment Updated Succesfully!"
+msgstr "Envío actualizado con éxito!"
+
+#: admin/admin.php:15
+msgid "Shipment Not Found!"
+msgstr "Envío no encontrado"
+
+#: admin/admin.php:18
+msgid "Shipment Added Succesfully!"
+msgstr "Envío Añadido Con éxito!"
+
+#: admin/admin.php:23
+msgid "Please activate your license key"
+msgstr "Active su clave de licencia"
+
+#: admin/admin.php:24
+msgid "here"
+msgstr "aquí"
+
+#: admin/admin.php:30 admin/admin.php:37 admin/admin.php:51
+msgid "This plugin requires"
+msgstr "Este plugin requiere"
+
+#: admin/admin.php:31 admin/admin.php:38 admin/admin.php:52
+msgid "plugin to be active!"
+msgstr "plugin para estar activo!"
+
+#: admin/admin.php:44
+msgid "Success!"
+msgstr "Correcto!"
+
+#: admin/admin.php:45
+msgid "Following shipments were updated successfully."
+msgstr "Envío actualizado con éxito!"
+
+#: admin/admin.php:56
+msgid "Cheating, uh?"
+msgstr "Engañando, ¿eh?"
+
+#: admin/admin.php:59 admin/classes/wpc-receiving-loader.php:337
+#: admin/templates/wpc-receiving-submenu.tpl.php:17 includes/functions.php:41
+msgid "Receiving"
+msgstr "Recibiendo"
+
+#: admin/admin.php:72
+msgid "Client"
+msgstr "Cliente"
+
+#: admin/admin.php:74
+msgid "Select Client"
+msgstr "Seleccionar Cliente"
+
+#: admin/admin.php:92
+msgid "Agent"
+msgstr "Agente"
+
+#: admin/admin.php:94
+msgid "Select Agent"
+msgstr "Eleigir agente"
+
+#: admin/admin.php:112
+msgid "Employee"
+msgstr "Empleado"
+
+#: admin/admin.php:114
+msgid "Select employee"
+msgstr "Seleccionar empleado"
+
+#: admin/admin.php:135
+msgid "Driver"
+msgstr "Conductor"
+
+#: admin/admin.php:137
+msgid "Select Driver"
+msgstr "-- Seleccione Trabajadores --"
+
+#: admin/classes/wpc-receiving-metabox.php:11
+msgid "Branch History"
+msgstr "Historia de la sucursal"
+
+#: admin/classes/wpc-receiving-metabox.php:33
+msgid "Branch Name"
+msgstr "Nombre de la sucursal"
+
+#: admin/classes/wpc-receiving-scripts.php:16
+msgid "No shipment selected, Please select atleast one Shipment."
+msgstr "No hay envío seleccionado, seleccione al menos un envío."
+
+#: admin/classes/wpc-receiving-scripts.php:17
+msgid ""
+"Something went wrong while processing your request, please reload and try "
+"again."
+msgstr ""
+"Algo salió mal mientras procesaba su solicitud, vuelva a cargar e inténtelo "
+"de nuevo."
+
+#: admin/classes/wpc-receiving-settings.php:14
+#: admin/classes/wpc-receiving-settings.php:15
+#: admin/classes/wpc-receiving-settings.php:21
+#: admin/classes/wpc-receiving-settings.php:22
+#: admin/classes/wpc-receiving-settings.php:33
+#: admin/classes/wpc-receiving-settings.php:49
+msgid "Receiving Settings"
+msgstr "Configuración de recepción"
+
+#: admin/templates/wpc-receiving-settings.tpl.php:11
+msgid "Enable beep sound when scanning?"
+msgstr "¿Habilitar el sonido del pitido al escanear?"
+
+#: admin/templates/wpc-receiving-settings.tpl.php:16
+msgid "Would you like to auto update the user?"
+msgstr "¿Desea actualizar automáticamente el usuario?"
+
+#: admin/templates/wpc-receiving-settings.tpl.php:18
+msgid ""
+"Please check if you want to auto update the user after it is updated "
+"successfully on receiving page"
+msgstr ""
+"Compruebe si desea actualizar automáticamente el usuario después de que se "
+"actualiza correctamente en la página de recepción"
+
+#: admin/templates/wpc-receiving-submenu.tpl.php:20
+msgid "Connect your scanner device"
+msgstr "Conecte el dispositivo del escáner"
+
+#: admin/templates/wpc-receiving-submenu.tpl.php:27
+#: templates/single-barcode.tpl.php:6
+msgid "Clear all fields after scanned."
+msgstr "Borre todos los campos después de escanearlos."
+
+#: admin/templates/wpc-receiving-submenu.tpl.php:32
+#: templates/single-barcode.tpl.php:10
+msgid "Add when shipment is not found."
+msgstr "Añadir cuando no se encuentra el envío."
+
+#: admin/templates/wpc-receiving-submenu.tpl.php:63
+#: templates/single-barcode.tpl.php:45
+msgid ""
+"Scan your shipment barcode to update or enter the tracking number and press "
+"ENTER"
+msgstr ""
+"Escanee su código de barras de envío para actualizar o introduzca el número "
+"de seguimiento y pulse ENTER"
+
+#: admin/templates/wpc-receiving-submenu.tpl.php:81
+#: templates/single-barcode.tpl.php:53
+msgid "Notes:"
+msgstr "Notas:"
+
+#: admin/templates/wpc-receiving-submenu.tpl.php:83
+msgid ""
+"If you have connected your barcode scanner please scan directly to the "
+"barcode and it will automatic update the Shipment Status"
+msgstr ""
+"Si ha conectado su escáner de código de barras, escanee directamente al "
+"código de barras y actualizará automáticamente el estado del envío"
+
+#: admin/templates/wpc-receiving-submenu.tpl.php:84
+msgid ""
+"If you don't have a barcode scanner please input it to the tracking number "
+"field and press <i>Enter</i> on your keyboard"
+msgstr ""
+"Si no tiene un escáner de código de barras, introdúzcalo en el campo de "
+"número de seguimiento y pulse <i>Intro</i> en el teclado"
+
+#: includes/functions.php:8
+msgid "Bulk Update"
+msgstr "Actualización masiva"
+
+#: includes/functions.php:29
+msgid "Sorry you don't have enough permission to access this page."
+msgstr "Lamento que no tengas suficiente permiso para acceder a esta página."
+
+#: includes/functions.php:32
+msgid "Please activate you license to use this functionality."
+msgstr "Active su licencia para utilizar esta funcionalidad."
+
+#: templates/bulk-barcode.tpl.php:2 templates/bulk-barcode.tpl.php:8
+msgid "Receiver Bulk Update"
+msgstr "Actualización masiva del receptor"
+
+#: templates/bulk-barcode.tpl.php:9
+msgid "Close"
+msgstr "Cerrar"
+
+#: templates/bulk-barcode.tpl.php:44
+msgid "Update"
+msgstr "Actualizar"
+
+#: templates/single-barcode.tpl.php:43
+msgid "Enter Shipment Number"
+msgstr "Introduzca el número de envío"
+
+#: templates/single-barcode.tpl.php:55
+msgid ""
+"If you have connected your barcode scanner please scan directly to the "
+"barcode and it will automatically update the Shipment Status"
+msgstr ""
+"Si ha conectado su escáner de código de barras, escanee directamente al "
+"código de barras y actualizará automáticamente el estado del envío"
+
+#: templates/single-barcode.tpl.php:59
+msgid ""
+"If you don't have a barcode scanner please input the tracking number on the "
+"field and press <i>Enter</i> on your keyboard"
+msgstr ""
+"Si no tiene un escáner de código de barras, introdúzcalo en el campo de "
+"número de seguimiento y pulse <i>Intro</i> en el teclado"
+
+#. Plugin Name of the plugin/theme
+msgid "WPCargo Receiving Add-ons"
+msgstr "WPCargo complementos destinatario"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wpcargo.com/"
+msgstr "http://wpcargo.com/"
+
+#. Description of the plugin/theme
+msgid ""
+"This Add-ons will let you auto update the Shipment History by using the "
+"barcode scanner or entering the number on the input fields."
+msgstr ""
+"Estos complementos le permitirán actualizar automáticamente el Historial de "
+"envíos utilizando el escáner de código de barras o introduciendo el número "
+"en los campos de entrada."
+
+#. Author of the plugin/theme
+msgid "<a href=\"http://wptaskforce.com/\">WPTaskForce</a>"
+msgstr "<a href=\"http://wptaskforce.com/\">WPTaskForce</a>"

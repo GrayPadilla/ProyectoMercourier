@@ -1,0 +1,260 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPCargo Receiving Add-ons\n"
+"POT-Creation-Date: 2022-11-25 15:40+0800\n"
+"PO-Revision-Date: 2022-11-25 15:41+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: id_ID\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpcargo-receiving.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: admin/admin.php:9
+msgid "Empty Tracking Number!"
+msgstr "Nomor Pelacakan Kosong!"
+
+#: admin/admin.php:12
+msgid "Shipment Updated Succesfully!"
+msgstr "Pengiriman Berhasil Diperbarui!"
+
+#: admin/admin.php:15
+msgid "Shipment Not Found!"
+msgstr "Pengiriman Tidak Ditemukan!"
+
+#: admin/admin.php:18
+msgid "Shipment Added Succesfully!"
+msgstr "Pengiriman ditambahkan dengan sukses!"
+
+#: admin/admin.php:23
+msgid "Please activate your license key"
+msgstr "Silakan aktifkan kunci lisensi Anda"
+
+#: admin/admin.php:24
+msgid "here"
+msgstr "disini"
+
+#: admin/admin.php:30 admin/admin.php:37 admin/admin.php:51
+msgid "This plugin requires"
+msgstr "Plugin ini membutuhkan"
+
+#: admin/admin.php:31 admin/admin.php:38 admin/admin.php:52
+msgid "plugin to be active!"
+msgstr "plugin untuk aktif!"
+
+#: admin/admin.php:44
+msgid "Success!"
+msgstr "Sukses!"
+
+#: admin/admin.php:45
+msgid "Following shipments were updated successfully."
+msgstr "Pengiriman berikut berhasil diperbarui."
+
+#: admin/admin.php:56
+msgid "Cheating, uh?"
+msgstr "Kecurangan, eh?"
+
+#: admin/admin.php:59 admin/classes/wpc-receiving-loader.php:338
+#: admin/templates/wpc-receiving-submenu.tpl.php:17 includes/functions.php:41
+msgid "Receiving"
+msgstr "Status Pengiriman"
+
+#: admin/admin.php:72
+msgid "Client"
+msgstr "Klien"
+
+#: admin/admin.php:74
+msgid "Select Client"
+msgstr "Pilih Klien"
+
+#: admin/admin.php:92
+msgid "Agent"
+msgstr "Agen"
+
+#: admin/admin.php:94
+msgid "Select Agent"
+msgstr "Pilih Agen"
+
+#: admin/admin.php:112
+msgid "Employee"
+msgstr "Karyawan"
+
+#: admin/admin.php:114
+msgid "Select employee"
+msgstr "Pilih karyawan"
+
+#: admin/admin.php:135
+msgid "Driver"
+msgstr "Driver"
+
+#: admin/admin.php:137
+msgid "Select Driver"
+msgstr "Pilih Driver"
+
+#: admin/classes/wpc-receiving-metabox.php:11
+msgid "Branch History"
+msgstr "Riwayat Cabang"
+
+#: admin/classes/wpc-receiving-metabox.php:33
+msgid "Branch Name"
+msgstr "Nama Cabang"
+
+#: admin/classes/wpc-receiving-scripts.php:16
+msgid "No shipment selected, Please select atleast one Shipment."
+msgstr ""
+"Tidak ada pengiriman yang dipilih, Silakan pilih setidaknya satu Pengiriman."
+
+#: admin/classes/wpc-receiving-scripts.php:17
+msgid ""
+"Something went wrong while processing your request, please reload and try "
+"again."
+msgstr ""
+"Ada yang tidak beres saat memproses permintaan Anda, silakan muat ulang dan "
+"coba lagi."
+
+#: admin/classes/wpc-receiving-settings.php:14
+#: admin/classes/wpc-receiving-settings.php:15
+#: admin/classes/wpc-receiving-settings.php:21
+#: admin/classes/wpc-receiving-settings.php:22
+#: admin/classes/wpc-receiving-settings.php:33
+#: admin/classes/wpc-receiving-settings.php:49
+msgid "Receiving Settings"
+msgstr "Pengaturan Status Pengiriman"
+
+#: admin/templates/wpc-receiving-settings.tpl.php:11
+msgid "Enable beep sound when scanning?"
+msgstr "Aktifkan suara bip saat memindai?"
+
+#: admin/templates/wpc-receiving-settings.tpl.php:16
+msgid "Would you like to auto update the user?"
+msgstr "Apakah Anda ingin memperbarui pengguna secara otomatis?"
+
+#: admin/templates/wpc-receiving-settings.tpl.php:18
+msgid ""
+"Please check if you want to auto update the user after it is updated "
+"successfully on receiving page"
+msgstr ""
+"Silakan periksa apakah Anda ingin memperbarui pengguna secara otomatis "
+"setelah berhasil diperbarui pada halaman penerima"
+
+#: admin/templates/wpc-receiving-submenu.tpl.php:20
+msgid "Connect your scanner device"
+msgstr "Hubungkan perangkat pemindai Anda"
+
+#: admin/templates/wpc-receiving-submenu.tpl.php:27
+#: templates/single-barcode.tpl.php:6
+msgid "Clear all fields after scanned."
+msgstr "Hapus semua bidang setelah dipindai."
+
+#: admin/templates/wpc-receiving-submenu.tpl.php:32
+#: templates/single-barcode.tpl.php:10
+msgid "Add when shipment is not found."
+msgstr "Tambahkan saat pengiriman tidak ditemukan."
+
+#: admin/templates/wpc-receiving-submenu.tpl.php:63
+#: templates/single-barcode.tpl.php:45
+msgid ""
+"Scan your shipment barcode to update or enter the tracking number and press "
+"ENTER"
+msgstr ""
+"Pindai kode batang pengiriman Anda untuk memperbarui atau memasukkan nomor "
+"pelacakan dan tekan ENTER"
+
+#: admin/templates/wpc-receiving-submenu.tpl.php:81
+#: templates/single-barcode.tpl.php:53
+msgid "Notes:"
+msgstr "Catatan:"
+
+#: admin/templates/wpc-receiving-submenu.tpl.php:83
+msgid ""
+"If you have connected your barcode scanner please scan directly to the "
+"barcode and it will automatic update the Shipment Status"
+msgstr ""
+"Jika Anda telah menghubungkan pemindai kode batang Anda, silakan pindai "
+"langsung ke kode batang dan itu akan secara otomatis memperbarui Status "
+"Pengiriman"
+
+#: admin/templates/wpc-receiving-submenu.tpl.php:84
+msgid ""
+"If you don't have a barcode scanner please input it to the tracking number "
+"field and press <i>Enter</i> on your keyboard"
+msgstr ""
+"Jika Anda tidak memiliki pemindai kode batang, masukkan ke bidang nomor "
+"pelacakan dan tekan <i>Enter</i> pada keyboard Anda"
+
+#: includes/functions.php:8
+msgid "Bulk Update"
+msgstr "Pembaruan Massal"
+
+#: includes/functions.php:29
+msgid "Sorry you don't have enough permission to access this page."
+msgstr "Maaf Anda tidak memiliki cukup izin untuk mengakses halaman ini."
+
+#: includes/functions.php:32
+msgid "Please activate you license to use this functionality."
+msgstr "Silakan aktifkan lisensi Anda untuk menggunakan fungsi ini."
+
+#: templates/bulk-barcode.tpl.php:2 templates/bulk-barcode.tpl.php:8
+msgid "Receiver Bulk Update"
+msgstr "Pembaruan Massal Penerima"
+
+#: templates/bulk-barcode.tpl.php:9
+msgid "Close"
+msgstr "Tutup"
+
+#: templates/bulk-barcode.tpl.php:44
+msgid "Update"
+msgstr "Perbarui"
+
+#: templates/single-barcode.tpl.php:43
+msgid "Enter Shipment Number"
+msgstr "Masukkan Nomor Pengiriman"
+
+#: templates/single-barcode.tpl.php:55
+msgid ""
+"If you have connected your barcode scanner please scan directly to the "
+"barcode and it will automatically update the Shipment Status"
+msgstr ""
+"Jika Anda telah menghubungkan pemindai kode batang Anda, silakan pindai "
+"langsung ke kode batang dan secara otomatis akan memperbarui Status "
+"Pengiriman"
+
+#: templates/single-barcode.tpl.php:59
+msgid ""
+"If you don't have a barcode scanner please input the tracking number on the "
+"field and press <i>Enter</i> on your keyboard"
+msgstr ""
+"Jika Anda tidak memiliki pemindai kode batang, masukkan nomor pelacakan di "
+"bidang dan tekan <i>Enter</i> pada keyboard Anda"
+
+#. Plugin Name of the plugin/theme
+msgid "WPCargo Receiving Add-ons"
+msgstr "WPCargo Receiving Add-ons"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wpcargo.com/"
+msgstr "http://wpcargo.com/"
+
+#. Description of the plugin/theme
+msgid ""
+"This Add-ons will let you auto update the Shipment History by using the "
+"barcode scanner or entering the number on the input fields."
+msgstr ""
+"Pengaya ini akan memungkinkan Anda memperbarui Riwayat Pengiriman secara "
+"otomatis dengan menggunakan pemindai kode batang atau memasukkan nomor pada "
+"bidang input."
+
+#. Author of the plugin/theme
+msgid "<a href=\"http://wptaskforce.com/\">WPTaskForce</a>"
+msgstr "<a href=\"http://wptaskforce.com/\">WPTaskForce</a>"
