@@ -1,0 +1,793 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPCargo Custom Field Add-ons\n"
+"POT-Creation-Date: 2021-09-28 13:05+0800\n"
+"PO-Revision-Date: 2021-09-28 13:09+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: mk_MK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n%10==1 && n%100!=11);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wpcargo-custom-field.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: admin/admin.php:107 admin/classes/wpccf-fields.php:251
+msgid "URL Label"
+msgstr "Ознака"
+
+#: admin/admin.php:109 admin/classes/wpccf-fields.php:252
+msgid "http://www.sample.com"
+msgstr "http://www.sample.com"
+
+#: admin/admin.php:111 admin/classes/wpccf-fields.php:253
+msgid "Open new window?"
+msgstr "Отвори во нов прозорец"
+
+#: admin/admin.php:193 admin/admin.php:223 admin/classes/wpccf-fields.php:190
+msgid "-- Select One --"
+msgstr "-- Избери едно --"
+
+#: admin/admin.php:203 admin/admin.php:257 admin/admin.php:288
+#: admin/admin.php:327
+msgid "No Selection setup, Please add selection"
+msgstr "Без подесување за избор, ве молиме додадете избор"
+
+#: admin/admin.php:203 admin/admin.php:233 admin/admin.php:257
+#: admin/admin.php:288 admin/admin.php:327
+msgid "Here"
+msgstr "Вот"
+
+#: admin/admin.php:233
+msgid "No WPCargo agents, Please add Agents"
+msgstr "Нема агенти на WPCargo, додајте агенти"
+
+#: admin/admin.php:233
+msgid "make sure the role assign is \"WPCargo Agent\"."
+msgstr "Осигурете се дека задачата за улоги е „WPCargo Agent“."
+
+#: admin/admin.php:353 admin/classes/wpccf-fields.php:298
+msgid " -- Select Country -- "
+msgstr "Изберете Земја"
+
+#: admin/admin.php:397
+msgid "Delete image"
+msgstr "Избриши слика"
+
+#: admin/admin.php:407 admin/classes/wpccf-fields.php:278
+msgid "Add Images / Upload Files"
+msgstr "Додади Слика"
+
+#: admin/classes/wpc-cf-check-installed-plugin.php:13
+msgid ""
+"WPCargo Custom Field Add-ons plugin requires <a href=\"http://wpcargo.com/"
+"\">WPCargo</a> Free Version to activate"
+msgstr ""
+"Приклучокот WPCargo Прилагодено поле за додатоци бара бесплатна верзија <a "
+"href=\"http://wpcargo.com/\">WPCargo за активирање</a>"
+
+#: admin/classes/wpc-cf-check-installed-plugin.php:21
+msgid ""
+"WPCargo Custom Field Add-ons plugin requires <a href=\"http://wpcargo.com/"
+"\">WPTaskForce License Helper</a> plugin to activate!"
+msgstr ""
+"Приклучокот WPCargo Прилагодено поле за додатоци бара додаток <a href="
+"\"http://wpcargo.com/\">WPTaskForce License Helper за</a> да се активира!"
+
+#: admin/classes/wpc-cf-form-builder.php:351
+msgid "You do not have permissions to view this data."
+msgstr "Немате дозволи да ги гледате овие податоци."
+
+#: admin/classes/wpc-cf-install-db.php:32
+msgid "Shipper Name"
+msgstr "Име на испраќачот"
+
+#: admin/classes/wpc-cf-install-db.php:44
+#: admin/classes/wpc-cf-install-db.php:91
+msgid "Phone Number"
+msgstr "Телефон"
+
+#: admin/classes/wpc-cf-install-db.php:55
+#: admin/classes/wpc-cf-install-db.php:102 admin/includes/functions.php:185
+#: admin/templates/label-settings.tpl.php:114
+msgid "Address"
+msgstr "Адреса"
+
+#: admin/classes/wpc-cf-install-db.php:66
+#: admin/classes/wpc-cf-install-db.php:113 admin/includes/functions.php:184
+#: admin/templates/label-settings.tpl.php:114
+#: admin/templates/label-settings.tpl.php:117
+msgid "Email"
+msgstr "Е-маил"
+
+#: admin/classes/wpc-cf-install-db.php:79
+msgid "Receiver Name"
+msgstr "Име на примачот"
+
+#: admin/classes/wpc-cf-install-db.php:135
+#: admin/templates/label-settings.tpl.php:125
+msgid "Type of Shipment"
+msgstr "Вид на пратка"
+
+#: admin/classes/wpc-cf-install-db.php:146
+#: admin/templates/label-settings.tpl.php:87
+msgid "Courier"
+msgstr "Курир"
+
+#: admin/classes/wpc-cf-install-db.php:166
+msgid "Mode"
+msgstr "Режим"
+
+#: admin/classes/wpc-cf-install-db.php:186
+msgid "Payment Mode"
+msgstr "Плаќање"
+
+#: admin/classes/wpc-cf-install-db.php:197
+msgid "Total Freight"
+msgstr "Тотална товар"
+
+#: admin/classes/wpc-cf-install-db.php:217
+#: admin/templates/label-settings.tpl.php:92
+msgid "Carrier"
+msgstr "Носител"
+
+#: admin/classes/wpc-cf-install-db.php:228
+#: admin/templates/label-settings.tpl.php:95
+msgid "Carrier Reference No."
+msgstr "Референтен број бр."
+
+#: admin/classes/wpc-cf-install-db.php:239
+#: admin/templates/label-settings.tpl.php:98
+msgid "Departure Time"
+msgstr "Време на поаѓање"
+
+#: admin/classes/wpc-cf-install-db.php:259
+#: admin/templates/label-settings.tpl.php:81
+msgid "Origin"
+msgstr "Потекло"
+
+#: admin/classes/wpc-cf-install-db.php:270
+#: admin/templates/label-settings.tpl.php:84
+msgid "Destination"
+msgstr "Дестинација"
+
+#: admin/classes/wpc-cf-install-db.php:281
+#: admin/templates/label-settings.tpl.php:70
+msgid "Pickup Date"
+msgstr "Датум на пикап"
+
+#: admin/classes/wpc-cf-install-db.php:292
+#: admin/templates/label-settings.tpl.php:73
+msgid "Pickup Time"
+msgstr "Време на пикап"
+
+#: admin/classes/wpc-cf-install-db.php:313
+msgid "Expected Delivery Date"
+msgstr "Очекуван датум на испорака"
+
+#: admin/classes/wpc-cf-install-db.php:324
+msgid "Comments"
+msgstr "Коментари "
+
+#: admin/classes/wpc-cf-settings.php:14 admin/classes/wpc-cf-settings.php:15
+msgid "Custom Field Setting"
+msgstr "Поставување на прилагодено поле"
+
+#: admin/classes/wpc-cf-settings.php:22 admin/classes/wpc-cf-settings.php:23
+msgid "CF Setting"
+msgstr "Поставувам"
+
+#: admin/classes/wpc-cf-settings.php:39 wpcargo-custom-field.php:47
+msgid "Custom Field Settings"
+msgstr "Поставки за прилагодено поле"
+
+#: admin/classes/wpccf-fields.php:151 admin/classes/wpccf-fields.php:173
+#: admin/classes/wpccf-fields.php:199 admin/classes/wpccf-fields.php:222
+msgid "No options available"
+msgstr "Нема достапни опции."
+
+#: admin/includes/functions.php:113 admin/includes/functions.php:223
+msgid "Shipment Information"
+msgstr "Информации за пратката"
+
+#: admin/includes/functions.php:172
+msgid "Street Address"
+msgstr "Адреса"
+
+#: admin/includes/functions.php:173
+msgid "City"
+msgstr "Град"
+
+#: admin/includes/functions.php:174
+msgid "State/Province/Region"
+msgstr "Назив на Држава/покраина/регион"
+
+#: admin/includes/functions.php:175
+msgid "Zip/PostCode"
+msgstr "Поштенски број:"
+
+#: admin/includes/functions.php:176
+msgid "Country"
+msgstr "Држава"
+
+#: admin/includes/functions.php:182
+msgid "Text"
+msgstr "Текст"
+
+#: admin/includes/functions.php:183
+msgid "Textarea"
+msgstr "Поле за текст"
+
+#: admin/includes/functions.php:186
+msgid "Number"
+msgstr "Кол-во"
+
+#: admin/includes/functions.php:187
+#: templates/wpc-cf-add-track-fields.tpl.php:48
+#: templates/wpc-cf-add-track-fields.tpl.php:70
+msgid "Select"
+msgstr "Изберете го испраќачот"
+
+#: admin/includes/functions.php:188
+msgid "Multiselect"
+msgstr "Мултиселект"
+
+#: admin/includes/functions.php:189
+msgid "Radio"
+msgstr "Радио"
+
+#: admin/includes/functions.php:190
+msgid "Checkbox"
+msgstr "Поле за избор"
+
+#: admin/includes/functions.php:191
+msgid "File"
+msgstr "Фаjл"
+
+#: admin/includes/functions.php:192
+msgid "Date"
+msgstr "Датум"
+
+#: admin/includes/functions.php:193
+msgid "Time"
+msgstr "Време"
+
+#: admin/includes/functions.php:194
+msgid "Date Time"
+msgstr "Датум и време"
+
+#: admin/includes/functions.php:195
+msgid "URL"
+msgstr "URL"
+
+#: admin/includes/functions.php:219 admin/templates/form-field-add.tpl.php:74
+#: admin/templates/form-field-edit.tpl.php:83
+msgid "Shipper Information"
+msgstr "Информации за испраќачот"
+
+#: admin/includes/functions.php:221 admin/templates/form-field-add.tpl.php:75
+#: admin/templates/form-field-edit.tpl.php:84
+msgid "Receiver Information"
+msgstr "Информации за примачот"
+
+#: admin/includes/functions.php:269
+msgid "Shipment Number"
+msgstr "Име на испраќачот"
+
+#: admin/includes/functions.php:270
+msgid "Status"
+msgstr "Статус"
+
+#: admin/includes/functions.php:271
+msgid "Location"
+msgstr "Локациjа"
+
+#: admin/includes/functions.php:272
+msgid "Admin Email"
+msgstr "Е-пошта на администраторот"
+
+#: admin/includes/functions.php:273
+msgid "Website Name"
+msgstr "Име на веб-страница"
+
+#: admin/includes/functions.php:274
+msgid "Website URL"
+msgstr "Вебстрана УРЛ"
+
+#: admin/includes/functions.php:275
+msgid "Registered Client Email"
+msgstr "Регистриран испраќач"
+
+#: admin/includes/functions.php:385
+msgid "Please activate your license key"
+msgstr "Активирајте го клучот за лиценца"
+
+#: admin/includes/functions.php:385
+msgid "here"
+msgstr "Вот"
+
+#: admin/includes/functions.php:388
+msgid "Manage Form Fields"
+msgstr "Управувајте со полињата за формулари"
+
+#: admin/includes/functions.php:391
+msgid "Print Waybill"
+msgstr "Верзија за печатење"
+
+#: admin/includes/functions.php:394
+msgid "CF Print Waybill"
+msgstr "Слаткарница за печатење CF"
+
+#: admin/includes/functions.php:397
+msgid "Field Successfully Added!"
+msgstr "Полето е успешно додадено!"
+
+#: admin/includes/functions.php:400
+msgid "Something went wrong in adding field!"
+msgstr "Нешто тргна наопаку при додавањето поле!"
+
+#: admin/includes/functions.php:403
+#, php-format
+msgid "Can't process your request, metakey '%s' is a reserved metakey."
+msgstr ""
+"Не може да се обработи вашето барање, metakey '%s' е резервирана метакеја."
+
+#: admin/includes/functions.php:406
+msgid ""
+"This plugin requires <a href=\"http://wpcargo.com/\" target=\"_blank"
+"\">WPTaskForce License Helper</a> plugin to be active!"
+msgstr ""
+"Овој приклучок бара додатокот <a href=\"http://wpcargo.com/\" target="
+"\"_blank\">WPTaskForce License Helper</a> да биде активен!"
+
+#: admin/includes/functions.php:409
+msgid ""
+"This plugin requires <a href=\"https://wordpress.org/plugins/wpcargo/\" "
+"target=\"_blank\">WPCargo</a> plugin to be active!"
+msgstr ""
+"Овој приклучок бара додатокот <a href=\"https://wordpress.org/plugins/"
+"wpcargo/\" target=\"_blank\">WPCargo</a> да биде активен!"
+
+#: admin/includes/functions.php:412
+msgid "Cheating, uh?"
+msgstr "Мамење, а?"
+
+#: admin/templates/form-field-add.tpl.php:3
+#: admin/templates/form-navigation.tpl.php:11
+msgid "Add Form Field"
+msgstr "Додадете поле за форма"
+
+#: admin/templates/form-field-add.tpl.php:9
+#: admin/templates/form-field-edit.tpl.php:19
+msgid "Field Type (required)"
+msgstr "Тип на поле (задолжително)"
+
+#: admin/templates/form-field-add.tpl.php:12
+#: admin/templates/form-field-add.tpl.php:45
+#: admin/templates/form-field-edit.tpl.php:22
+#: admin/templates/form-field-edit.tpl.php:54
+msgid "--Select One--"
+msgstr "-- Избери едно --"
+
+#: admin/templates/form-field-add.tpl.php:22
+#: admin/templates/form-field-edit.tpl.php:32
+msgid "Field Label (required)"
+msgstr "Тип на поле (задолжително)"
+
+#: admin/templates/form-field-add.tpl.php:26
+#: admin/templates/form-field-edit.tpl.php:36
+msgid "Field description (optional)"
+msgstr "Опис на полето (опционално)"
+
+#: admin/templates/form-field-add.tpl.php:30
+#: admin/templates/form-field-edit.tpl.php:41
+msgid "Field Options for select lists, radio buttons and checkboxes(required)"
+msgstr ""
+"Опции на полето за избор на списоци, радио копчиња и полиња за избор "
+"(задолжително)"
+
+#: admin/templates/form-field-add.tpl.php:33
+#: admin/templates/form-field-edit.tpl.php:44
+msgid "Comma (,) separated list of options"
+msgstr "Одделена листа со опции со запирка (,)"
+
+#: admin/templates/form-field-add.tpl.php:37
+#: admin/templates/form-field-edit.tpl.php:48
+msgid "Field meta key"
+msgstr "Мета клуч за поле"
+
+#: admin/templates/form-field-add.tpl.php:40
+#: admin/templates/form-field-edit.tpl.php:50
+msgid "Existing"
+msgstr "Постојна датотека"
+
+#: admin/templates/form-field-add.tpl.php:41
+#: admin/templates/form-field-edit.tpl.php:51
+msgid "New"
+msgstr "Ново"
+
+#: admin/templates/form-field-add.tpl.php:62
+#: admin/templates/form-field-edit.tpl.php:71
+msgid "Is Field required?"
+msgstr "Дали е потребно поле?"
+
+#: admin/templates/form-field-add.tpl.php:67
+#: admin/templates/form-field-edit.tpl.php:76
+msgid "Field display options"
+msgstr "Опции за прикажување"
+
+#: admin/templates/form-field-add.tpl.php:71
+#: admin/templates/form-field-edit.tpl.php:80
+msgid "What Section do you want to display?"
+msgstr "Кој дел сакате да го прикажете?"
+
+#: admin/templates/form-field-add.tpl.php:88
+#: admin/templates/form-field-edit.tpl.php:97
+msgid "Class"
+msgstr "Класа"
+
+#: admin/templates/form-field-add.tpl.php:91
+#: admin/templates/form-field-edit.tpl.php:100
+msgid "HTML class attribute"
+msgstr ""
+
+#: admin/templates/form-field-add.tpl.php:95
+#: admin/templates/form-field-edit.tpl.php:109
+msgid "Do you want to display on tracking page form?"
+msgstr "Дали сакате да се прикаже на страницата за следење форма?"
+
+#: admin/templates/form-field-add.tpl.php:99
+#: admin/templates/form-field-edit.tpl.php:113
+msgid "Is field required on tracking page form?"
+msgstr ""
+
+#: admin/templates/form-field-add.tpl.php:103
+#: admin/templates/form-field-edit.tpl.php:117
+msgid "Do you want to display it on result page?"
+msgstr "Дали сакате да го прикажете на страницата со резултати?"
+
+#: admin/templates/form-field-add.tpl.php:107
+msgid "Select user to NOT access this field"
+msgstr "Изберете корисник за НЕ да пристапите до ова поле"
+
+#: admin/templates/form-field-add.tpl.php:109
+#: admin/templates/form-field-edit.tpl.php:123
+msgid "Not Logged In"
+msgstr "најавени"
+
+#: admin/templates/form-field-add.tpl.php:113
+#: admin/templates/form-field-edit.tpl.php:127
+msgid ""
+"Note: This option applies only in the front end form using custom field "
+"manager."
+msgstr ""
+"Белешка: Оваа опција се применува само во формуларот од предната страна со "
+"користење на прилагодено управувачко поле."
+
+#: admin/templates/form-field-add.tpl.php:118
+msgid "Add Field"
+msgstr "Додај поле"
+
+#: admin/templates/form-field-edit.tpl.php:5
+msgid "Sorry you can't access this page directly."
+msgstr "Не ви е дозволено да ја видите оваа нишка."
+
+#: admin/templates/form-field-edit.tpl.php:13
+#: admin/templates/form-navigation.tpl.php:13
+msgid "Edit Form Field"
+msgstr "Додадете поле за форма"
+
+#: admin/templates/form-field-edit.tpl.php:121
+msgid "Select user NOT to access this field"
+msgstr "Изберете корисник за НЕ да пристапите до ова поле"
+
+#: admin/templates/form-field-edit.tpl.php:133
+msgid "Edit Field"
+msgstr "поле"
+
+#: admin/templates/form-field-settings.tpl.php:3
+msgid "Settings"
+msgstr "Поставки"
+
+#: admin/templates/form-field-settings.tpl.php:16
+msgid "Select Field to display in Shipper Name Column"
+msgstr "Изберете поле за да се прикаже во колоната со името на испраќачот"
+
+#: admin/templates/form-field-settings.tpl.php:19
+#: admin/templates/form-field-settings.tpl.php:34
+msgid "Select Field"
+msgstr "Ознака"
+
+#: admin/templates/form-field-settings.tpl.php:31
+msgid "Select Field to display in Receiver Name Column"
+msgstr "Изберете поле за да се прикаже во колоната со име на приемник"
+
+#: admin/templates/form-field-settings.tpl.php:46
+msgid "Save Settings"
+msgstr "Зачувај Промени"
+
+#: admin/templates/form-fields-list.tpl.php:2
+#: admin/templates/form-navigation.tpl.php:10
+msgid "Form Field List"
+msgstr "Дали е потребно поле на образецот за пребарување?"
+
+#: admin/templates/form-fields-list.tpl.php:7
+msgid "Label / Association"
+msgstr "Ознака"
+
+#: admin/templates/form-fields-list.tpl.php:8
+msgid "Field Key"
+msgstr "поле"
+
+#: admin/templates/form-fields-list.tpl.php:9
+msgid "Type"
+msgstr "Тип"
+
+#: admin/templates/form-fields-list.tpl.php:10
+msgid "Required"
+msgstr "Задолжително"
+
+#: admin/templates/form-fields-list.tpl.php:11
+msgid "Field Attributes"
+msgstr "Атрибути"
+
+#: admin/templates/form-fields-list.tpl.php:12
+msgid "Class Attributes"
+msgstr ""
+
+#: admin/templates/form-fields-list.tpl.php:19
+msgid "Edit"
+msgstr "Измени"
+
+#: admin/templates/form-fields-list.tpl.php:19
+msgid "Delete"
+msgstr "Избриши"
+
+#: admin/templates/form-navigation.tpl.php:9
+msgid "Field Settings"
+msgstr "Поставки за прилагодено поле"
+
+#: admin/templates/label-settings.tpl.php:54
+msgid "Print Label Settings"
+msgstr "Стринг"
+
+#: admin/templates/label-settings.tpl.php:67
+#: admin/templates/print-label.tpl.php:24
+msgid "Accounts Copy"
+msgstr "Копирање на сметки"
+
+#: admin/templates/label-settings.tpl.php:76
+msgid "Delivery Date"
+msgstr "Испорака Датум:"
+
+#: admin/templates/label-settings.tpl.php:106
+#: admin/templates/print-label.tpl.php:78
+msgid "Shipper"
+msgstr "Испорачувач"
+
+#: admin/templates/label-settings.tpl.php:108
+#: admin/templates/print-label.tpl.php:80
+msgid "Consignee"
+msgstr "Примач"
+
+#: admin/templates/label-settings.tpl.php:110
+msgid "Status: Pending"
+msgstr "Статус: Во очекување"
+
+#: admin/templates/label-settings.tpl.php:114
+#: admin/templates/label-settings.tpl.php:117
+msgid "Phone"
+msgstr "Телефон"
+
+#: admin/templates/label-settings.tpl.php:120
+msgid "Comment"
+msgstr "Коментар"
+
+#: admin/templates/label-settings.tpl.php:128
+msgid "Product"
+msgstr "Продукт"
+
+#: admin/templates/label-settings.tpl.php:133
+msgid "Save Label"
+msgstr "Ознака"
+
+#: admin/templates/label-settings.tpl.php:137
+msgid "Custom Field Code List"
+msgstr "Прилагоденото поле е ажурирано."
+
+#: admin/templates/label-settings.tpl.php:138
+msgid "Note: User Metakey Code to display dynamic data in print label."
+msgstr ""
+"Белешка: Корисник Metakey Code за прикажување динамички податоци во "
+"етикетата за печатење."
+
+#: admin/templates/label-settings.tpl.php:141
+msgid "Available Shipper Fields"
+msgstr "Нема достапни опции."
+
+#: admin/templates/label-settings.tpl.php:144
+#: admin/templates/label-settings.tpl.php:165
+#: admin/templates/label-settings.tpl.php:186
+msgid "Field Label"
+msgstr "Ознака"
+
+#: admin/templates/label-settings.tpl.php:144
+#: admin/templates/label-settings.tpl.php:165
+#: admin/templates/label-settings.tpl.php:186
+msgid "Metakey Code"
+msgstr "Код"
+
+#: admin/templates/label-settings.tpl.php:156
+msgid "No Field found for Shipper"
+msgstr "Цена на испорака"
+
+#: admin/templates/label-settings.tpl.php:162
+msgid "Available Receiver Fields"
+msgstr "Управувајте со полињата за формулари"
+
+#: admin/templates/label-settings.tpl.php:177
+msgid "No Field found for Receiver"
+msgstr "Цена на испорака"
+
+#: admin/templates/label-settings.tpl.php:183
+msgid "Available Shipment Information Fields"
+msgstr "Информации за пратката"
+
+#: admin/templates/label-settings.tpl.php:198
+msgid "No Field found for Shipment Information"
+msgstr "Пратката не е пронајдена"
+
+#: admin/templates/print-cf-shipper.tpl.php:10
+#: templates/wpc-cf-track-shipper.tpl.php:10
+msgid "Shipper Address"
+msgstr "Адреса на испраќачот"
+
+#: admin/templates/print-cf-shipper.tpl.php:39
+#: templates/wpc-cf-track-shipper.tpl.php:61
+msgid "Receiver Address"
+msgstr "Адреса на примачот"
+
+#: admin/templates/print-label.tpl.php:25
+msgid "Consignee Copy"
+msgstr "Примач"
+
+#: admin/templates/print-label.tpl.php:26
+msgid "Shippers Copy"
+msgstr "Копија на испраќачот"
+
+#: admin/templates/print-label.tpl.php:101
+msgid "Package Information"
+msgstr "Интеграција со Konqueror"
+
+#: admin/templates/print-label.tpl.php:105
+msgid "Description"
+msgstr "Опис"
+
+#: admin/templates/print-label.tpl.php:106
+msgid "Qty."
+msgstr "Кол-во"
+
+#: admin/templates/print-label.tpl.php:107
+msgid "Piece Type"
+msgstr "Тип на парче"
+
+#: admin/templates/print-label.tpl.php:109
+msgid "Length"
+msgstr "Должина"
+
+#: admin/templates/print-label.tpl.php:110
+msgid "Width"
+msgstr "Ширина"
+
+#: admin/templates/print-label.tpl.php:111
+msgid "Height"
+msgstr "Висина"
+
+#: admin/templates/print-label.tpl.php:113
+msgid "Weight"
+msgstr "Тежина"
+
+#: admin/templates/receiver-metabox.tpl.php:2
+msgid "Receiver Details"
+msgstr "Детали за примачот"
+
+#: admin/templates/shipper-metabox.tpl.php:2
+msgid "Shipper Details"
+msgstr "Детали за испраќачот"
+
+#: admin/templates/wpc-cf-settings.tpl.php:6
+msgid "Disable Shipper Details Section?"
+msgstr "Оневозможите го испраќачот на клиентот за пребарување?"
+
+#: admin/templates/wpc-cf-settings.tpl.php:9
+msgid "This settings will remove Shipper Details Section"
+msgstr "Овие поставки ќе го отстранат Делот за детали за испраќачот"
+
+#: admin/templates/wpc-cf-settings.tpl.php:13
+msgid "Disable Receiver Details Section?"
+msgstr "Оневозможувате приемник на клиент за пребарување?"
+
+#: admin/templates/wpc-cf-settings.tpl.php:16
+msgid "This settings will remove Receiver Details Section"
+msgstr "Овие поставки ќе го отстранат Делот за детали за испраќачот"
+
+#: admin/templates/wpc-cf-settings.tpl.php:20
+msgid "Disable Shipment Details Section?"
+msgstr "Детали за пратката"
+
+#: admin/templates/wpc-cf-settings.tpl.php:23
+msgid "This settings will remove Shipment Details Section"
+msgstr "Овие поставки ќе го отстранат Делот за детали за испраќачот"
+
+#: admin/templates/wpc-cf-settings.tpl.php:27
+msgid "Add Field display options"
+msgstr "Опции за прикажување"
+
+#: admin/templates/wpc-cf-settings.tpl.php:29
+msgid "Ex. Option 1, Option 2, Option 3"
+msgstr "Пр. Опција 1, опција 2, опција 3"
+
+#: admin/templates/wpc-cf-settings.tpl.php:30
+msgid ""
+"This settings will add additional section for \"Field display options\" in "
+"\"Add Form Field\" page. Must be comma separated"
+msgstr ""
+"Овие поставки ќе додадат дополнителен дел за „Опции за прикажување на "
+"полето“ на страницата „Додај поле за форма“. Мора да се оддели со запирка"
+
+#: includes/dropzone.php:30
+msgid "(remove)"
+msgstr "Отстранете"
+
+#: includes/dropzone.php:58
+msgid "Drop files here or click to upload."
+msgstr "Додај слики за поставување"
+
+#: includes/dropzone.php:59
+msgid "Accepted file type : "
+msgstr "Не е поставен ниту еден фајл."
+
+#: includes/dropzone.php:60
+msgid "Max Filesize: "
+msgstr "Макс датотека:"
+
+#: includes/dropzone.php:60
+msgid "MB."
+msgstr "MB"
+
+#: templates/script.tpl.php:18
+msgid "Upload File"
+msgstr "Прикачи"
+
+#: templates/script.tpl.php:20
+msgid "Select File"
+msgstr "Изберете фаjл"
+
+#. Plugin Name of the plugin/theme
+msgid "WPCargo Custom Field Add-ons"
+msgstr "Додатоци за прилагодено поле на WPCargo"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wpcargo.com/"
+msgstr "http://wptaskforce.com/"
+
+#. Description of the plugin/theme
+msgid ""
+"Allows you to customized the fields and your needs to display at the front-"
+"end. Requires WPCargo plugin to work."
+msgstr ""
+"Ви овозможува да ги прилагодувате полињата и вашите потреби да се "
+"прикажуваат на предната страна. Потребен е додаток WPCargo за работа."
+
+#. Author of the plugin/theme
+msgid "<a href=\"http://wptaskforce.com/\">WPTaskForce</a>"
+msgstr "<a href=\"http://wptaskforce.com/\">WPTaskForce</a>"

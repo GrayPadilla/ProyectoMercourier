@@ -1,64 +1,10 @@
-# Optimizaciones de timeout para uploads (POD múltiples imágenes)
-<IfModule mod_fcgid.c>
-    FcgidConnectTimeout 300
-    FcgidIOTimeout 300
-</IfModule>
-
-<IfModule mod_proxy_fcgi.c>
-    ProxySet timeout=300
-</IfModule>
-
-# BEGIN LSCACHE
-## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
-<IfModule LiteSpeed>
-RewriteEngine on
-CacheLookup on
-RewriteRule .* - [E=Cache-Control:no-autoflush]
-RewriteRule litespeed/debug/.*\.log$ - [F,L]
-RewriteRule \.litespeed_conf\.dat - [F,L]
-
-### marker ASYNC start ###
-RewriteCond %{REQUEST_URI} /wp-admin/admin-ajax\.php
-RewriteCond %{QUERY_STRING} action=async_litespeed
-RewriteRule .* - [E=noabort:1]
-### marker ASYNC end ###
-
-### marker MOBILE start ###
-RewriteCond %{HTTP_USER_AGENT} Mobile|Android|Silk/|Kindle|BlackBerry|Opera\ Mini|Opera\ Mobi [NC]
-RewriteRule .* - [E=Cache-Control:vary=%{ENV:LSCACHE_VARY_VALUE}+ismobile]
-### marker MOBILE end ###
-
-### marker NOCACHE COOKIES start ###
-RewriteCond %{HTTP_COOKIE} wordpress_logged_in_|wp\-postpass_|woocommerce_|wpcargo_|comment_author_|wordpress_test_cookie
-RewriteRule .* - [E=Cache-Control:no-cache]
-### marker NOCACHE COOKIES end ###
-
-### marker DROPQS start ###
-CacheKeyModify -qs:fbclid
-CacheKeyModify -qs:gclid
-CacheKeyModify -qs:utm*
-CacheKeyModify -qs:_ga
-### marker DROPQS end ###
-
-</IfModule>
-## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
-# END LSCACHE
-# BEGIN NON_LSCACHE
-## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
-## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
-# END NON_LSCACHE
 # BEGIN WordPress
-# Las directivas (líneas) entre «BEGIN WordPress» y «END WordPress» son
-# generadas dinámicamente y solo deberían ser modificadas mediante filtros de WordPress.
-# Cualquier cambio en las directivas que hay entre esos marcadores serán sobrescritas.
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 RewriteBase /
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 </IfModule>
-
 # END WordPress

@@ -1,0 +1,319 @@
+[25-May-2026 01:01:30 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 01:01:55 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 01:02:03 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 01:02:04 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 01:02:32 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 01:02:33 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[25-May-2026 01:02:33 UTC] 🔵 [FILTER] Usuario actual: 109
+[25-May-2026 01:02:33 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"date_query":[{"after":"2026-03-26","before":"2026-05-25","inclusive":true}]}
+[25-May-2026 01:02:33 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[25-May-2026 01:02:33 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-05-24
+[25-May-2026 01:02:33 UTC] 🔵 [FILTER] Fecha desde: '2026-05-24' | Fecha hasta: '2026-05-24'
+[25-May-2026 01:02:33 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[25-May-2026 01:02:33 UTC] 🔵 [FILTER] REMOVIENDO date_query para evitar conflicto
+[25-May-2026 01:02:33 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-05-24', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-05-24', '%Y-%m-%d'))
+        
+[25-May-2026 01:02:33 UTC] 🔵 [FILTER] IDs encontrados por fecha: 1
+[25-May-2026 01:02:33 UTC] 🔵 [FILTER] Primeros 10 IDs: 31835
+[25-May-2026 01:02:33 UTC] 🔵 [FILTER] post__in no existe, creando nuevo
+[25-May-2026 01:02:33 UTC] 🔵 [FILTER] post_status cambiado a array para incluir estados normales (EXCLUYENDO trash)
+[25-May-2026 01:02:33 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":["publish","draft","pending","private"],"posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"post__in":["31835"]}
+[25-May-2026 01:02:37 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 01:02:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 01:02:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 01:02:40 UTC] PHP Warning:  Undefined variable $tipo_vista in /var/www/html/wp-content/themes/blocksy-child/functions.php on line 8589
+[25-May-2026 01:02:41 UTC] MERC_ADMIN_RESUMEN - date_query="AND ( 
+        EXISTS( 
+            SELECT 1 FROM wp_postmeta pm_pickup 
+            WHERE pm_pickup.post_id = p.ID 
+              AND pm_pickup.meta_key IN ('wpcargo_pickup_date_picker','wpcargo_pickup_date','calendarenvio','wpcargo_fecha_envio')
+              AND (
+                    (STR_TO_DATE(pm_pickup.meta_value, '%%d/%%m/%%Y') >= STR_TO_DATE('2026-05-24', '%%Y-%%m-%%d') AND STR_TO_DATE(pm_pickup.meta_value, '%%d/%%m/%%Y') <= STR_TO_DATE('2026-05-24', '%%Y-%%m-%%d'))
+                 OR (STR_TO_DATE(pm_pickup.meta_value, '%%Y-%%m-%%d') >= STR_TO_DATE('2026-05-24', '%%Y-%%m-%%d') AND STR_TO_DATE(pm_pickup.meta_value, '%%Y-%%m-%%d') <= STR_TO_DATE('2026-05-24', '%%Y-%%m-%%d'))
+                 OR (pm_pickup.meta_value BETWEEN '2026-05-24' AND '2026-05-24')
+                 OR (pm_pickup.meta_value LIKE '2026-05-24%')
+              )
+        )
+        OR (p.post_date BETWEEN '2026-05-24 00:00:00' AND '2026-05-24 23:59:59')
+    )"
+[25-May-2026 01:02:41 UTC] MERC_ADMIN_RESUMEN - shipments_count=1
+[25-May-2026 01:02:41 UTC] ═══════════════════════════════════════════════════════════
+[25-May-2026 01:02:41 UTC] 🔍 MERC_ADMIN_DEBUG - INICIANDO CÁLCULOS DEL PANEL
+[25-May-2026 01:02:41 UTC] ═══════════════════════════════════════════════════════════
+[25-May-2026 01:02:41 UTC] 
+[25-May-2026 01:02:41 UTC] ────────────────────────────────────────────────────────
+[25-May-2026 01:02:41 UTC] 📦 SHIPMENT #31835
+[25-May-2026 01:02:41 UTC]    Costo Envío: S/. 10.00
+[25-May-2026 01:02:41 UTC]    Costo Producto: S/. 30.00
+[25-May-2026 01:02:41 UTC]    Estado Motorizado: liquidado
+[25-May-2026 01:02:41 UTC]    Estado Remitente (liquidado): VACÍO
+[25-May-2026 01:02:41 UTC]    Quién Paga: remitente
+[25-May-2026 01:02:41 UTC]    Estado Entrega: ENTREGADO
+[25-May-2026 01:02:41 UTC]    ✅ SUMADO A TOTAL ENTREGADOS: S/. 30.00 (producto=30.00, Total: S/. 30.00)
+[25-May-2026 01:02:41 UTC]    ¿Liquidado? NO
+[25-May-2026 01:02:41 UTC]    ❌ NO SUMADO a ingresos envíos (aún no liquidado)
+[25-May-2026 01:02:41 UTC]    Cliente 517 - ¿Liquidación verificada? NO
+[25-May-2026 01:02:41 UTC]    TOTALES ACUMULADOS: pago_merc=S/. 10.00, pos=S/. 9.50, pago_marca=S/. 10.00, servicio=S/. 10.00
+[25-May-2026 01:02:41 UTC]    GET_PAYMENT_TOTALS: efectivo=S/. 10.00, pago_merc=S/. 10.00, pos=S/. 9.50, pago_marca=S/. 10.00, total=S/. 39.50
+[25-May-2026 01:02:41 UTC]    Efectivo Total acumulado: S/. 10.00
+[25-May-2026 01:02:41 UTC]    ✅ SUMADO A RECAUDADO_MERC: S/. 10.00 (Total: S/. 10.00)
+[25-May-2026 01:02:41 UTC]    ✅ SUMADO A RECAUDADO_MARCA: S/. 10.00 (Total: S/. 10.00)
+[25-May-2026 01:02:41 UTC]    ✅ SUMADO A POS_RECAUDADO: S/. 9.50 (Total: S/. 9.50)
+[25-May-2026 01:02:41 UTC] 
+[25-May-2026 01:02:41 UTC] ═══════════════════════════════════════════════════════════
+[25-May-2026 01:02:41 UTC] 🔍 CÁLCULO DE SALDOS POR CLIENTE
+[25-May-2026 01:02:41 UTC] ═══════════════════════════════════════════════════════════
+[25-May-2026 01:02:41 UTC] 👤 Cliente 517
+[25-May-2026 01:02:41 UTC]    pago_merc: S/. 10.00
+[25-May-2026 01:02:41 UTC]    pos: S/. 9.50
+[25-May-2026 01:02:41 UTC]    pago_marca: S/. 10.00
+[25-May-2026 01:02:41 UTC]    servicio: S/. 10.00
+[25-May-2026 01:02:41 UTC]    balance = (pago_merc + pos) - servicio = (10.00 + 9.50) - 10.00 = S/. 9.50
+[25-May-2026 01:02:41 UTC]    ✅ SUMADO A POR_PAGAR_REM (Total: S/. 9.50)
+[25-May-2026 01:02:41 UTC] MERC_DEBUG_CLIENT_BALANCE_SUM - por_pagar_rem=9.50
+[25-May-2026 01:02:41 UTC] 
+[25-May-2026 01:02:41 UTC] ═══════════════════════════════════════════════════════════
+[25-May-2026 01:02:41 UTC] 📊 RESUMEN FINAL DE CÁLCULOS DEL PANEL ADMIN
+[25-May-2026 01:02:41 UTC] ═══════════════════════════════════════════════════════════
+[25-May-2026 01:02:41 UTC] Total Entregados: S/. 30.00 (TODOS los envíos entregados)
+[25-May-2026 01:02:41 UTC] Ingresos por Envíos: S/. 0.00 (solo liquidados)
+[25-May-2026 01:02:41 UTC] Efectivo Total: S/. 10.00
+[25-May-2026 01:02:41 UTC] Recaudado por MERC: S/. 10.00
+[25-May-2026 01:02:41 UTC] Recaudado por MARCA: S/. 10.00
+[25-May-2026 01:02:41 UTC] Recaudado por POS: S/. 9.50
+[25-May-2026 01:02:41 UTC] Por Pagar Remitentes: S/. 9.50
+[25-May-2026 01:02:41 UTC] Penalidades del día: S/. 0.00
+[25-May-2026 01:02:41 UTC] TOTAL GENERAL (Balance Neto): S/. 29.50
+[25-May-2026 01:02:41 UTC] ═══════════════════════════════════════════════════════════
+[25-May-2026 01:02:41 UTC] 
+[25-May-2026 01:02:41 UTC] 🔍 [MERC_ADMIN_CARDS] drivers_sql: SELECT COALESCE(pm_driver.meta_value, pm_driver_alt.meta_value) AS driver_id, COUNT(DISTINCT p.ID) AS total_entregas FROM wp_posts p LEFT JOIN wp_postmeta pm_driver ON p.ID = pm_driver.post_id AND pm_driver.meta_key = 'wpcargo_driver' LEFT JOIN wp_postmeta pm_driver_alt ON p.ID = pm_driver_alt.post_id AND pm_driver_alt.meta_key = 'wpcargo_motorizo_recojo' WHERE p.post_type = 'wpcargo_shipment' AND p.post_status = 'publish' AND (pm_driver.meta_value IS NOT NULL OR pm_driver_alt.meta_value IS NOT NULL) AND ( EXISTS( SELECT 1 FROM wp_postmeta pm_pickup WHERE pm_pickup.post_id = p.ID AND pm_pickup.meta_key IN ('wpcargo_pickup_date_picker','wpcargo_pickup_date','calendarenvio','wpcargo_fecha_envio') AND ( (STR_TO_DATE(pm_pickup.meta_value, '%%d/%%m/%%Y') >= STR_TO_DATE('2026-05-24', '%%Y-%%m-%%d') AND STR_TO_DATE(pm_pickup.meta_value, '%%d/%%m/%%Y') <= STR_TO_DATE('2026-05-24', '%%Y-%%m-%%d')) OR (STR_TO_DATE(pm_pickup.meta_value, '%%Y-%%m-%%d') >= STR_TO_DATE('2026-05-24', '%%Y-%%m-%%d') AND STR_TO_DATE(pm_pickup.meta_value, '%%Y-%%m-%%d') <= STR_TO_DATE('2026-05-24', '%%Y-%%m-%%d')) OR (pm_pickup.meta_value BETWEEN '2026-05-24' AND '2026-05-24') OR (pm_pickup.meta_value LIKE '2026-05-24%') ) ) OR (p.post_date BETWEEN '2026-05-24 00:00:00' AND '2026-05-24 23:59:59') ) GROUP BY COALESCE(pm_driver.meta_value, pm_driver_alt.meta_value) ORDER BY total_entregas DESC
+[25-May-2026 01:02:42 UTC] 🔍 [MERC_ADMIN_CARDS] sample_ids_count: 1
+[25-May-2026 01:02:42 UTC] 🔍 [MERC_ADMIN_CARDS] sample shipment_id=31835 wpcargo_driver='120' wpcargo_motorizo_recojo=''
+[25-May-2026 01:02:43 UTC] 🔍 [MERC_ADMIN_CARDS] drivers_count: 1
+[25-May-2026 01:02:45 UTC] 🔍 [MERC_ADMIN_CARDS] Motorizado ID: 120 | Envios encontrados: 1
+[25-May-2026 01:02:45 UTC]    Shipment #31835 | pod_payment_methods(raw)=[{"metodo":"efectivo","monto":10},{"metodo":"pago_marca","monto":10,"imagen_id":31837,"imagen_url":"http://localhost:8081/wp-content/uploads/2026/05/metodo-pago-31835-1-1779640690.jpeg"},{"metodo":"pago_merc","monto":10,"imagen_id":31838,"imagen_url":"http://localhost:8081/wp-content/uploads/2026/05/metodo-pago-31835-2-1779640691.jpeg"},{"metodo":"pos","monto":9.5,"imagen_id":31839,"imagen_url":"http://localhost:8081/wp-content/uploads/2026/05/metodo-pago-31835-3-1779640692.jpeg","monto_original":10}], wpcargo_total_cobrar='40.00', otros_meta={"monto":"40.00"}
+[25-May-2026 01:02:45 UTC]    Shipment #31835 | Totales: efectivo=10, pago_merc=10, pago_marca=10, pos=9.5, total=39.5
+[25-May-2026 01:02:45 UTC]    Totales del motorizado: Total=39.5, Efectivo=10, MERC=10, MARCA=10, POS=9.5
+[25-May-2026 01:02:45 UTC] 🔍 [MERC_ADMIN_CLIENTS] clients_sql: SELECT pm_sender.meta_value AS client_id, COUNT(DISTINCT p.ID) AS total_envios FROM wp_posts p LEFT JOIN wp_postmeta pm_sender ON p.ID = pm_sender.post_id AND pm_sender.meta_key = 'registered_shipper' WHERE p.post_type = 'wpcargo_shipment' AND p.post_status = 'publish' AND pm_sender.meta_value IS NOT NULL AND pm_sender.meta_value != '' AND ( EXISTS( SELECT 1 FROM wp_postmeta pm_pickup WHERE pm_pickup.post_id = p.ID AND pm_pickup.meta_key IN ('wpcargo_pickup_date_picker','wpcargo_pickup_date','calendarenvio','wpcargo_fecha_envio') AND ( (STR_TO_DATE(pm_pickup.meta_value, '%%d/%%m/%%Y') >= STR_TO_DATE('2026-05-24', '%%Y-%%m-%%d') AND STR_TO_DATE(pm_pickup.meta_value, '%%d/%%m/%%Y') <= STR_TO_DATE('2026-05-24', '%%Y-%%m-%%d')) OR (STR_TO_DATE(pm_pickup.meta_value, '%%Y-%%m-%%d') >= STR_TO_DATE('2026-05-24', '%%Y-%%m-%%d') AND STR_TO_DATE(pm_pickup.meta_value, '%%Y-%%m-%%d') <= STR_TO_DATE('2026-05-24', '%%Y-%%m-%%d')) OR (pm_pickup.meta_value BETWEEN '2026-05-24' AND '2026-05-24') OR (pm_pickup.meta_value LIKE '2026-05-24%') ) ) OR (p.post_date BETWEEN '2026-05-24 00:00:00' AND '2026-05-24 23:59:59') ) GROUP BY pm_sender.meta_value ORDER BY total_envios DESC
+[25-May-2026 01:02:47 UTC] 🔍 [MERC_ADMIN_CLIENTS] clients_count: 1
+[25-May-2026 01:02:48 UTC] 🔍 [MERC_ADMIN_CLIENTS] sample_ids_count: 1
+[25-May-2026 01:02:48 UTC] 🔍 [MERC_ADMIN_CLIENTS] sample shipment_id=31835 registered_shipper='517'
+[25-May-2026 01:03:21 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 01:04:21 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 01:05:22 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 01:07:23 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 01:09:29 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 01:11:28 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 11:56:14 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 11:56:18 UTC] 🌅 [RESETEO DIARIO AUTOMÁTICO] Ejecutado para 2026-05-25
+[25-May-2026 11:56:59 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 11:57:06 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 11:57:07 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 11:57:43 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 11:57:43 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 11:59:42 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 12:00:13 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 12:00:14 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[25-May-2026 12:00:14 UTC] 🔵 [FILTER] Usuario actual: 109
+[25-May-2026 12:00:14 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"date_query":[{"after":"2026-03-26","before":"2026-05-25","inclusive":true}]}
+[25-May-2026 12:00:14 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[25-May-2026 12:00:14 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-05-25
+[25-May-2026 12:00:14 UTC] 🔵 [FILTER] Fecha desde: '2026-05-25' | Fecha hasta: '2026-05-25'
+[25-May-2026 12:00:14 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[25-May-2026 12:00:14 UTC] 🔵 [FILTER] REMOVIENDO date_query para evitar conflicto
+[25-May-2026 12:00:14 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-05-25', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-05-25', '%Y-%m-%d'))
+        
+[25-May-2026 12:00:15 UTC] 🔵 [FILTER] IDs encontrados por fecha: 1
+[25-May-2026 12:00:15 UTC] 🔵 [FILTER] Primeros 10 IDs: 27491
+[25-May-2026 12:00:15 UTC] 🔵 [FILTER] post__in no existe, creando nuevo
+[25-May-2026 12:00:15 UTC] 🔵 [FILTER] post_status cambiado a array para incluir estados normales (EXCLUYENDO trash)
+[25-May-2026 12:00:15 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":["publish","draft","pending","private"],"posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"post__in":["27491"]}
+[25-May-2026 12:00:17 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 12:00:19 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 12:00:33 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 12:00:34 UTC] PHP Warning:  Undefined variable $tipo_vista in /var/www/html/wp-content/themes/blocksy-child/functions.php on line 8589
+[25-May-2026 12:00:35 UTC] MERC_ADMIN_RESUMEN - date_query="AND ( 
+        EXISTS( 
+            SELECT 1 FROM wp_postmeta pm_pickup 
+            WHERE pm_pickup.post_id = p.ID 
+              AND pm_pickup.meta_key IN ('wpcargo_pickup_date_picker','wpcargo_pickup_date','calendarenvio','wpcargo_fecha_envio')
+              AND (
+                    (STR_TO_DATE(pm_pickup.meta_value, '%%d/%%m/%%Y') >= STR_TO_DATE('2026-05-25', '%%Y-%%m-%%d') AND STR_TO_DATE(pm_pickup.meta_value, '%%d/%%m/%%Y') <= STR_TO_DATE('2026-05-25', '%%Y-%%m-%%d'))
+                 OR (STR_TO_DATE(pm_pickup.meta_value, '%%Y-%%m-%%d') >= STR_TO_DATE('2026-05-25', '%%Y-%%m-%%d') AND STR_TO_DATE(pm_pickup.meta_value, '%%Y-%%m-%%d') <= STR_TO_DATE('2026-05-25', '%%Y-%%m-%%d'))
+                 OR (pm_pickup.meta_value BETWEEN '2026-05-25' AND '2026-05-25')
+                 OR (pm_pickup.meta_value LIKE '2026-05-25%')
+              )
+        )
+        OR (p.post_date BETWEEN '2026-05-25 00:00:00' AND '2026-05-25 23:59:59')
+    )"
+[25-May-2026 12:00:35 UTC] MERC_ADMIN_RESUMEN - NO SHIPMENTS returned for date_query, attempting fallback by pickup meta
+[25-May-2026 12:00:36 UTC] MERC_ADMIN_RESUMEN - fallback shipments_count=1
+[25-May-2026 12:00:36 UTC] MERC_ADMIN_RESUMEN - shipments_count=1
+[25-May-2026 12:00:36 UTC] ═══════════════════════════════════════════════════════════
+[25-May-2026 12:00:36 UTC] 🔍 MERC_ADMIN_DEBUG - INICIANDO CÁLCULOS DEL PANEL
+[25-May-2026 12:00:36 UTC] ═══════════════════════════════════════════════════════════
+[25-May-2026 12:00:36 UTC] 
+[25-May-2026 12:00:36 UTC] ────────────────────────────────────────────────────────
+[25-May-2026 12:00:36 UTC] 📦 SHIPMENT #27491
+[25-May-2026 12:00:36 UTC]    Costo Envío: S/. 8.00
+[25-May-2026 12:00:36 UTC]    Costo Producto: S/. 87.00
+[25-May-2026 12:00:36 UTC]    Estado Motorizado: pendiente
+[25-May-2026 12:00:36 UTC]    Estado Remitente (liquidado): VACÍO
+[25-May-2026 12:00:36 UTC]    Quién Paga: remitente
+[25-May-2026 12:00:36 UTC]    Estado Entrega: RECEPCIONADO
+[25-May-2026 12:00:36 UTC]    ❌ NO ENTREGADO aún (estado: RECEPCIONADO)
+[25-May-2026 12:00:36 UTC]    ¿Liquidado? NO
+[25-May-2026 12:00:36 UTC]    ❌ NO SUMADO a ingresos envíos (aún no liquidado)
+[25-May-2026 12:00:36 UTC]    Cliente 303 - ¿Liquidación verificada? NO
+[25-May-2026 12:00:36 UTC]    TOTALES ACUMULADOS: pago_merc=S/. 0.00, pos=S/. 0.00, pago_marca=S/. 0.00, servicio=S/. 8.00
+[25-May-2026 12:00:36 UTC]    GET_PAYMENT_TOTALS: efectivo=S/. 0.00, pago_merc=S/. 0.00, pos=S/. 0.00, pago_marca=S/. 0.00, total=S/. 0.00
+[25-May-2026 12:00:36 UTC]    Efectivo Total acumulado: S/. 0.00
+[25-May-2026 12:00:36 UTC]    ✅ SUMADO A RECAUDADO_MERC: S/. 0.00 (Total: S/. 0.00)
+[25-May-2026 12:00:36 UTC]    ✅ SUMADO A RECAUDADO_MARCA: S/. 0.00 (Total: S/. 0.00)
+[25-May-2026 12:00:36 UTC]    ✅ SUMADO A POS_RECAUDADO: S/. 0.00 (Total: S/. 0.00)
+[25-May-2026 12:00:36 UTC] 
+[25-May-2026 12:00:36 UTC] ═══════════════════════════════════════════════════════════
+[25-May-2026 12:00:36 UTC] 🔍 CÁLCULO DE SALDOS POR CLIENTE
+[25-May-2026 12:00:36 UTC] ═══════════════════════════════════════════════════════════
+[25-May-2026 12:00:36 UTC] 👤 Cliente 303
+[25-May-2026 12:00:36 UTC]    pago_merc: S/. 0.00
+[25-May-2026 12:00:36 UTC]    pos: S/. 0.00
+[25-May-2026 12:00:36 UTC]    pago_marca: S/. 0.00
+[25-May-2026 12:00:36 UTC]    servicio: S/. 8.00
+[25-May-2026 12:00:36 UTC]    balance = (pago_merc + pos) - servicio = (0.00 + 0.00) - 8.00 = S/. -8.00
+[25-May-2026 12:00:36 UTC]    ❌ NO SUMADO (balance ≤ 0)
+[25-May-2026 12:00:36 UTC] MERC_DEBUG_CLIENT_BALANCE_SUM - por_pagar_rem=0.00
+[25-May-2026 12:00:36 UTC] 
+[25-May-2026 12:00:36 UTC] ═══════════════════════════════════════════════════════════
+[25-May-2026 12:00:36 UTC] 📊 RESUMEN FINAL DE CÁLCULOS DEL PANEL ADMIN
+[25-May-2026 12:00:36 UTC] ═══════════════════════════════════════════════════════════
+[25-May-2026 12:00:36 UTC] Total Entregados: S/. 0.00 (TODOS los envíos entregados)
+[25-May-2026 12:00:36 UTC] Ingresos por Envíos: S/. 0.00 (solo liquidados)
+[25-May-2026 12:00:36 UTC] Efectivo Total: S/. 0.00
+[25-May-2026 12:00:36 UTC] Recaudado por MERC: S/. 0.00
+[25-May-2026 12:00:36 UTC] Recaudado por MARCA: S/. 0.00
+[25-May-2026 12:00:36 UTC] Recaudado por POS: S/. 0.00
+[25-May-2026 12:00:36 UTC] Por Pagar Remitentes: S/. 0.00
+[25-May-2026 12:00:36 UTC] Penalidades del día: S/. 0.00
+[25-May-2026 12:00:36 UTC] TOTAL GENERAL (Balance Neto): S/. 0.00
+[25-May-2026 12:00:36 UTC] ═══════════════════════════════════════════════════════════
+[25-May-2026 12:00:36 UTC] 
+[25-May-2026 12:00:36 UTC] 🔍 [MERC_ADMIN_CARDS] drivers_sql: SELECT COALESCE(pm_driver.meta_value, pm_driver_alt.meta_value) AS driver_id, COUNT(DISTINCT p.ID) AS total_entregas FROM wp_posts p LEFT JOIN wp_postmeta pm_driver ON p.ID = pm_driver.post_id AND pm_driver.meta_key = 'wpcargo_driver' LEFT JOIN wp_postmeta pm_driver_alt ON p.ID = pm_driver_alt.post_id AND pm_driver_alt.meta_key = 'wpcargo_motorizo_recojo' WHERE p.post_type = 'wpcargo_shipment' AND p.post_status = 'publish' AND (pm_driver.meta_value IS NOT NULL OR pm_driver_alt.meta_value IS NOT NULL) AND ( EXISTS( SELECT 1 FROM wp_postmeta pm_pickup WHERE pm_pickup.post_id = p.ID AND pm_pickup.meta_key IN ('wpcargo_pickup_date_picker','wpcargo_pickup_date','calendarenvio','wpcargo_fecha_envio') AND ( (STR_TO_DATE(pm_pickup.meta_value, '%%d/%%m/%%Y') >= STR_TO_DATE('2026-05-25', '%%Y-%%m-%%d') AND STR_TO_DATE(pm_pickup.meta_value, '%%d/%%m/%%Y') <= STR_TO_DATE('2026-05-25', '%%Y-%%m-%%d')) OR (STR_TO_DATE(pm_pickup.meta_value, '%%Y-%%m-%%d') >= STR_TO_DATE('2026-05-25', '%%Y-%%m-%%d') AND STR_TO_DATE(pm_pickup.meta_value, '%%Y-%%m-%%d') <= STR_TO_DATE('2026-05-25', '%%Y-%%m-%%d')) OR (pm_pickup.meta_value BETWEEN '2026-05-25' AND '2026-05-25') OR (pm_pickup.meta_value LIKE '2026-05-25%') ) ) OR (p.post_date BETWEEN '2026-05-25 00:00:00' AND '2026-05-25 23:59:59') ) GROUP BY COALESCE(pm_driver.meta_value, pm_driver_alt.meta_value) ORDER BY total_entregas DESC
+[25-May-2026 12:00:37 UTC] 🔍 [MERC_ADMIN_CARDS] sample_ids_count: 0
+[25-May-2026 12:00:37 UTC] 🔍 [MERC_ADMIN_CARDS] sample_ids EMPTY for date_query
+[25-May-2026 12:00:38 UTC] 🔍 [MERC_ADMIN_CARDS] drivers_count: 0
+[25-May-2026 12:00:38 UTC] 🔍 [MERC_ADMIN_CLIENTS] clients_sql: SELECT pm_sender.meta_value AS client_id, COUNT(DISTINCT p.ID) AS total_envios FROM wp_posts p LEFT JOIN wp_postmeta pm_sender ON p.ID = pm_sender.post_id AND pm_sender.meta_key = 'registered_shipper' WHERE p.post_type = 'wpcargo_shipment' AND p.post_status = 'publish' AND pm_sender.meta_value IS NOT NULL AND pm_sender.meta_value != '' AND ( EXISTS( SELECT 1 FROM wp_postmeta pm_pickup WHERE pm_pickup.post_id = p.ID AND pm_pickup.meta_key IN ('wpcargo_pickup_date_picker','wpcargo_pickup_date','calendarenvio','wpcargo_fecha_envio') AND ( (STR_TO_DATE(pm_pickup.meta_value, '%%d/%%m/%%Y') >= STR_TO_DATE('2026-05-25', '%%Y-%%m-%%d') AND STR_TO_DATE(pm_pickup.meta_value, '%%d/%%m/%%Y') <= STR_TO_DATE('2026-05-25', '%%Y-%%m-%%d')) OR (STR_TO_DATE(pm_pickup.meta_value, '%%Y-%%m-%%d') >= STR_TO_DATE('2026-05-25', '%%Y-%%m-%%d') AND STR_TO_DATE(pm_pickup.meta_value, '%%Y-%%m-%%d') <= STR_TO_DATE('2026-05-25', '%%Y-%%m-%%d')) OR (pm_pickup.meta_value BETWEEN '2026-05-25' AND '2026-05-25') OR (pm_pickup.meta_value LIKE '2026-05-25%') ) ) OR (p.post_date BETWEEN '2026-05-25 00:00:00' AND '2026-05-25 23:59:59') ) GROUP BY pm_sender.meta_value ORDER BY total_envios DESC
+[25-May-2026 12:00:39 UTC] 🔍 [MERC_ADMIN_CLIENTS] clients_count: 0
+[25-May-2026 12:00:40 UTC] 🔍 [MERC_ADMIN_CLIENTS] sample_ids_count: 0
+[25-May-2026 12:00:40 UTC] 🔍 [MERC_ADMIN_CLIENTS] sample_ids EMPTY for date_query
+[25-May-2026 12:00:43 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 12:01:44 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 12:02:47 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 12:02:48 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[25-May-2026 12:02:48 UTC] 🔵 [FILTER] Usuario actual: 109
+[25-May-2026 12:02:48 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"date_query":[{"after":"2026-03-26","before":"2026-05-25","inclusive":true}]}
+[25-May-2026 12:02:48 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[25-May-2026 12:02:48 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-05-25
+[25-May-2026 12:02:48 UTC] 🔵 [FILTER] Fecha desde: '2026-05-25' | Fecha hasta: '2026-05-25'
+[25-May-2026 12:02:48 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[25-May-2026 12:02:48 UTC] 🔵 [FILTER] REMOVIENDO date_query para evitar conflicto
+[25-May-2026 12:02:48 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-05-25', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-05-25', '%Y-%m-%d'))
+        
+[25-May-2026 12:02:48 UTC] 🔵 [FILTER] IDs encontrados por fecha: 1
+[25-May-2026 12:02:48 UTC] 🔵 [FILTER] Primeros 10 IDs: 27491
+[25-May-2026 12:02:48 UTC] 🔵 [FILTER] post__in no existe, creando nuevo
+[25-May-2026 12:02:48 UTC] 🔵 [FILTER] post_status cambiado a array para incluir estados normales (EXCLUYENDO trash)
+[25-May-2026 12:02:48 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":["publish","draft","pending","private"],"posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"post__in":["27491"]}
+[25-May-2026 12:02:50 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 12:02:52 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 12:02:58 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 12:02:59 UTC] [merc_handle_shipment_deleted] limpiando referencias para envio 27491
+[25-May-2026 12:02:59 UTC] ✏️ [EDIT_DETECTED] Envío #27491 siendo editado | Tipo: express | Distrito: Los Olivos | Costo ANTES: 8.00
+[25-May-2026 12:02:59 UTC] 🔄 [guardar_tipo_envio_shipment] INICIADO - post_id: 27491
+[25-May-2026 12:02:59 UTC]    post_type: wpcargo_shipment
+[25-May-2026 12:02:59 UTC]    ✅ Es wpcargo_shipment, continuando...
+[25-May-2026 12:02:59 UTC] ⏭️  guardar_tipo_envio - No hay tipo_envio aún (normalizará en STEP 1 si es importación) - ID: 27491
+[25-May-2026 12:02:59 UTC] ✅ Iniciando guardado de producto para envío #27491
+[25-May-2026 12:02:59 UTC]    📝 Tipo obtenido desde meta: 
+[25-May-2026 12:02:59 UTC] 📦 Datos recibidos - Producto ID: 0, Cantidad: 1, Tipo: '', Es Full Fitment: NO
+[25-May-2026 12:02:59 UTC] 🔍 ASIGNACIÓN ESTADO - Iniciando para envío #27491
+[25-May-2026 12:02:59 UTC]    ✅ Tipo ya estaba en meta: express
+[25-May-2026 12:02:59 UTC]    Tipo normalizado: 'express'
+[25-May-2026 12:02:59 UTC] ⏭️ ESTADO PROTEGIDO - Envío ya tiene RECEPCIONADO, omitiendo sobrescritura
+[25-May-2026 12:02:59 UTC] 🔍 Full Fitment verificación #27491 - Tipo: '' -> Es full fitment: NO
+[25-May-2026 12:02:59 UTC] ⏭️ Full Fitment #27491 - NO es full fitment, saltando
+[25-May-2026 12:02:59 UTC] 💰 [SAVE_FINANCIAL] === GUARDANDO DATOS FINANCIEROS - Envío #27491 ===
+[25-May-2026 12:02:59 UTC] ⚠️ [SAVE_FINANCIAL] wpcargo_costo_envio NO está en POST
+[25-May-2026 12:02:59 UTC] 💰 [SAVE_FINANCIAL] === FIN GUARDADO DATOS FINANCIEROS ===
+[25-May-2026 12:02:59 UTC] 🔍 [SAVE_FINANCIAL] Verificación inmediata - Costo envío en DB: 8.00
+[25-May-2026 12:02:59 UTC] ✅ [MERC_FORCE_DECIMAL] Shipment #27491 wpcargo_total_cobrar forced to 95.00
+[25-May-2026 12:02:59 UTC] 🔍 AUTO-ASIGNACIÓN INICIADA - Envío #27491
+[25-May-2026 12:02:59 UTC] 📦 AUTO-ASIGNACIÓN - Tipo de envío: express
+[25-May-2026 12:02:59 UTC] 🎯 AUTO-ASIGNACIÓN - AGENCIA/FULL detectado, distrito destino: Los Olivos → contenedor de ENTREGA
+[25-May-2026 12:02:59 UTC] ⏭️ AUTO-ASIGNACIÓN - Envío ya tiene shipment_container_entrega #3707, omitiendo
+[25-May-2026 12:02:59 UTC] 🔚 [FINAL_VERIFICATION] Envío #27491 | Tipo: express | Distrito: Los Olivos | Costo FINAL: 8.00
+[25-May-2026 12:02:59 UTC] 🔄 [guardar_tipo_envio_shipment] INICIADO - post_id: 27491
+[25-May-2026 12:02:59 UTC]    post_type: wpcargo_shipment
+[25-May-2026 12:02:59 UTC]    ✅ Es wpcargo_shipment, continuando...
+[25-May-2026 12:02:59 UTC] ⏭️  guardar_tipo_envio - No hay tipo_envio aún (normalizará en STEP 1 si es importación) - ID: 27491
+[25-May-2026 12:02:59 UTC] 🔄 [guardar_tipo_envio_shipment] INICIADO - post_id: 31840
+[25-May-2026 12:02:59 UTC]    post_type: revision
+[25-May-2026 12:02:59 UTC]    ❌ No es wpcargo_shipment, abandonando
+[25-May-2026 12:02:59 UTC] [merc_handle_shipment_deleted] limpiando referencias para envio 27491
+[25-May-2026 12:03:03 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 12:03:05 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 12:03:06 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[25-May-2026 12:03:06 UTC] 🔵 [FILTER] Usuario actual: 109
+[25-May-2026 12:03:06 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"date_query":[{"after":"2026-03-26","before":"2026-05-25","inclusive":true}]}
+[25-May-2026 12:03:06 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[25-May-2026 12:03:06 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-05-25
+[25-May-2026 12:03:06 UTC] 🔵 [FILTER] Fecha desde: '2026-05-25' | Fecha hasta: '2026-05-25'
+[25-May-2026 12:03:06 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[25-May-2026 12:03:06 UTC] 🔵 [FILTER] REMOVIENDO date_query para evitar conflicto
+[25-May-2026 12:03:06 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-05-25', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-05-25', '%Y-%m-%d'))
+        
+[25-May-2026 12:03:06 UTC] 🔵 [FILTER] IDs encontrados por fecha: 1
+[25-May-2026 12:03:06 UTC] 🔵 [FILTER] Primeros 10 IDs: 27491
+[25-May-2026 12:03:06 UTC] 🔵 [FILTER] post__in no existe, creando nuevo
+[25-May-2026 12:03:06 UTC] 🔵 [FILTER] post_status cambiado a array para incluir estados normales (EXCLUYENDO trash)
+[25-May-2026 12:03:06 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":["publish","draft","pending","private"],"posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"post__in":["27491"]}
+[25-May-2026 12:03:10 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 12:03:10 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 12:03:13 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 12:03:13 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
