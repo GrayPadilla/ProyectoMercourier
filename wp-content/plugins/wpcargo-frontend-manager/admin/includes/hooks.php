@@ -425,6 +425,8 @@ function wpcfe_update_shipment(){
         return false;
     }
 }
+
+/*
 //  Remove Access Employee to enter wp-admin page
 add_action( 'admin_head','wpcfe_restrict_employee_to_wpadmin' );
 function wpcfe_restrict_employee_to_wpadmin(){
@@ -440,7 +442,9 @@ function wpcfe_restrict_employee_to_wpadmin(){
         exit;
     }
 }
-add_filter( 'login_redirect', 'wpcfe_custom_login_redirect', 10, 3 );
+*/
+
+// add_filter( 'login_redirect', 'wpcfe_custom_login_redirect', 10, 3 );
 function wpcfe_custom_login_redirect( $redirect_to, $request, $user ) {   
     $wpcargo_roles = wpcfe_access_dashboard_role();
     $wpcargo_roles = apply_filters( 'wpcfe_login_redirect_dashboard_role', $wpcargo_roles );

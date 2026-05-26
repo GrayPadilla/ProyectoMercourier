@@ -93,13 +93,12 @@ $table_prefix = 'wp_';
 // if ( ! defined( 'WP_DEBUG' ) ) {
 // 	define( 'WP_DEBUG', false );
 // }
-define( 'WP_DEBUG', false );
-define( 'WP_DEBUG_LOG', false );
+define( 'WP_DEBUG', true );
+define( 'WP_DEBUG_LOG', true );
 define( 'WP_DEBUG_DISPLAY', false );
 @ini_set( 'display_errors', 0 );
 
 define( 'FS_METHOD', 'direct' );
-define( 'COOKIEHASH', '052eadb8b53fe136dba7b0fe1eaa9fbd' );
 define( 'WP_AUTO_UPDATE_CORE', 'minor' );
 
 // Optimizaciones para upload de múltiples imágenes en POD (evitar 504 timeout)

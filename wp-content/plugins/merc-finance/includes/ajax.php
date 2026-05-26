@@ -133,5 +133,5 @@ function merc_finance_get_summary() {
     }
     wp_send_json_success(['summary' => []]);
 }
-?>
+
 

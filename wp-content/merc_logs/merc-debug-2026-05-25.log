@@ -317,3 +317,607 @@
 [25-May-2026 12:03:10 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
 [25-May-2026 12:03:13 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
 [25-May-2026 12:03:13 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:45:27 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:45:34 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:45:42 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:45:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 515
+[25-May-2026 21:45:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 531
+[25-May-2026 21:45:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7144
+[25-May-2026 21:45:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7168
+[25-May-2026 21:45:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-content/plugins/litespeed-cache/src/vary.cls.php on line 769
+[25-May-2026 21:45:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1108
+[25-May-2026 21:45:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1109
+[25-May-2026 21:45:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1110
+[25-May-2026 21:45:57 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:46:03 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:46:12 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:46:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 515
+[25-May-2026 21:46:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 531
+[25-May-2026 21:46:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7144
+[25-May-2026 21:46:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7168
+[25-May-2026 21:46:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-content/plugins/litespeed-cache/src/vary.cls.php on line 769
+[25-May-2026 21:46:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1108
+[25-May-2026 21:46:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1109
+[25-May-2026 21:46:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1110
+[25-May-2026 21:46:20 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:46:21 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 515
+[25-May-2026 21:46:21 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 531
+[25-May-2026 21:46:21 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7144
+[25-May-2026 21:46:21 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7168
+[25-May-2026 21:46:21 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-content/plugins/litespeed-cache/src/vary.cls.php on line 769
+[25-May-2026 21:46:21 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1108
+[25-May-2026 21:46:21 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1109
+[25-May-2026 21:46:21 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1110
+[25-May-2026 21:46:46 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:46:53 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:47:00 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:47:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 515
+[25-May-2026 21:47:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 531
+[25-May-2026 21:47:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7144
+[25-May-2026 21:47:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7168
+[25-May-2026 21:47:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-content/plugins/litespeed-cache/src/vary.cls.php on line 769
+[25-May-2026 21:47:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1108
+[25-May-2026 21:47:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1109
+[25-May-2026 21:47:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1110
+[25-May-2026 21:47:09 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:47:14 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:47:14 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:47:14 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:47:17 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:47:17 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:47:18 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:47:22 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:47:50 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:48:35 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:48:42 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:48:50 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:48:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 515
+[25-May-2026 21:48:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 531
+[25-May-2026 21:48:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7144
+[25-May-2026 21:48:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7168
+[25-May-2026 21:48:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-content/plugins/litespeed-cache/src/vary.cls.php on line 769
+[25-May-2026 21:48:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1108
+[25-May-2026 21:48:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1109
+[25-May-2026 21:48:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1110
+[25-May-2026 21:49:44 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:49:45 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 515
+[25-May-2026 21:49:45 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 531
+[25-May-2026 21:49:45 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7144
+[25-May-2026 21:49:45 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7168
+[25-May-2026 21:49:45 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-content/plugins/litespeed-cache/src/vary.cls.php on line 769
+[25-May-2026 21:49:45 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1108
+[25-May-2026 21:49:45 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1109
+[25-May-2026 21:49:45 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1110
+[25-May-2026 21:50:46 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:50:53 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:50:59 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:50:59 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 515
+[25-May-2026 21:50:59 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 531
+[25-May-2026 21:50:59 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7144
+[25-May-2026 21:50:59 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7168
+[25-May-2026 21:51:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-content/plugins/litespeed-cache/src/vary.cls.php on line 769
+[25-May-2026 21:51:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1108
+[25-May-2026 21:51:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1109
+[25-May-2026 21:51:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1110
+[25-May-2026 21:57:11 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:57:18 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:57:26 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:57:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 515
+[25-May-2026 21:57:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 531
+[25-May-2026 21:57:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7144
+[25-May-2026 21:57:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7168
+[25-May-2026 21:57:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-content/plugins/litespeed-cache/src/vary.cls.php on line 769
+[25-May-2026 21:57:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1108
+[25-May-2026 21:57:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1109
+[25-May-2026 21:57:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1110
+[25-May-2026 21:58:54 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:59:02 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:59:11 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 21:59:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 515
+[25-May-2026 21:59:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 531
+[25-May-2026 21:59:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7144
+[25-May-2026 21:59:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7168
+[25-May-2026 21:59:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-content/plugins/litespeed-cache/src/vary.cls.php on line 769
+[25-May-2026 21:59:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1108
+[25-May-2026 21:59:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1109
+[25-May-2026 21:59:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1110
+[25-May-2026 22:02:11 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 22:02:18 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 22:02:25 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 22:02:25 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 515
+[25-May-2026 22:02:25 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 531
+[25-May-2026 22:02:25 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7144
+[25-May-2026 22:02:25 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7168
+[25-May-2026 22:02:25 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-content/plugins/litespeed-cache/src/vary.cls.php on line 769
+[25-May-2026 22:02:25 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1108
+[25-May-2026 22:02:25 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1109
+[25-May-2026 22:02:25 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1110
+[25-May-2026 22:17:19 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 22:17:28 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 22:17:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 515
+[25-May-2026 22:17:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 531
+[25-May-2026 22:17:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7144
+[25-May-2026 22:17:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7168
+[25-May-2026 22:17:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-content/plugins/litespeed-cache/src/vary.cls.php on line 769
+[25-May-2026 22:17:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1108
+[25-May-2026 22:17:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1109
+[25-May-2026 22:17:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1110
+[25-May-2026 23:01:30 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:01:36 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:01:44 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:01:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 515
+[25-May-2026 23:01:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 531
+[25-May-2026 23:01:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7144
+[25-May-2026 23:01:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7168
+[25-May-2026 23:01:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-content/plugins/litespeed-cache/src/vary.cls.php on line 769
+[25-May-2026 23:01:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1108
+[25-May-2026 23:01:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1109
+[25-May-2026 23:01:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1110
+[25-May-2026 23:05:42 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:05:48 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:05:56 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:05:56 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 515
+[25-May-2026 23:05:56 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 531
+[25-May-2026 23:05:56 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7144
+[25-May-2026 23:05:56 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7168
+[25-May-2026 23:05:56 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-content/plugins/litespeed-cache/src/vary.cls.php on line 769
+[25-May-2026 23:05:56 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1108
+[25-May-2026 23:05:56 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1109
+[25-May-2026 23:05:56 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1110
+[25-May-2026 23:08:01 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:08:07 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:08:15 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:08:15 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 515
+[25-May-2026 23:08:15 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 531
+[25-May-2026 23:08:15 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7144
+[25-May-2026 23:08:15 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7168
+[25-May-2026 23:08:15 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1108
+[25-May-2026 23:08:15 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1109
+[25-May-2026 23:08:15 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1110
+[25-May-2026 23:08:39 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:09:48 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:09:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 515
+[25-May-2026 23:09:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 531
+[25-May-2026 23:09:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7144
+[25-May-2026 23:09:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7168
+[25-May-2026 23:09:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1108
+[25-May-2026 23:09:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1109
+[25-May-2026 23:09:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1110
+[25-May-2026 23:15:32 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:15:32 UTC] MERC_DEBUG - fallback merc_get_shipment_customer_id registered
+[25-May-2026 23:15:33 UTC] PHP Warning:  Attempt to read property "status" on null in /var/www/html/wp-content/themes/blocksy-child/functions.php on line 16063
+[25-May-2026 23:15:37 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:15:37 UTC] MERC_DEBUG - fallback merc_get_shipment_customer_id registered
+[25-May-2026 23:15:37 UTC] PHP Warning:  Attempt to read property "status" on null in /var/www/html/wp-content/themes/blocksy-child/functions.php on line 16063
+[25-May-2026 23:15:51 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:15:51 UTC] MERC_DEBUG - fallback merc_get_shipment_customer_id registered
+[25-May-2026 23:15:57 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:15:57 UTC] MERC_DEBUG - fallback merc_get_shipment_customer_id registered
+[25-May-2026 23:15:58 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:15:58 UTC] MERC_DEBUG - fallback merc_get_shipment_customer_id registered
+[25-May-2026 23:16:30 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:16:30 UTC] MERC_DEBUG - fallback merc_get_shipment_customer_id registered
+[25-May-2026 23:16:30 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:16:30 UTC] MERC_DEBUG - fallback merc_get_shipment_customer_id registered
+[25-May-2026 23:17:59 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:17:59 UTC] MERC_DEBUG - fallback merc_get_shipment_customer_id registered
+[25-May-2026 23:17:59 UTC] PHP Warning:  Attempt to read property "status" on null in /var/www/html/wp-content/themes/blocksy-child/functions.php on line 16063
+[25-May-2026 23:18:02 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:18:02 UTC] MERC_DEBUG - fallback merc_get_shipment_customer_id registered
+[25-May-2026 23:18:02 UTC] PHP Warning:  Attempt to read property "status" on null in /var/www/html/wp-content/themes/blocksy-child/functions.php on line 16063
+[25-May-2026 23:18:04 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:18:04 UTC] MERC_DEBUG - fallback merc_get_shipment_customer_id registered
+[25-May-2026 23:18:09 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:18:09 UTC] MERC_DEBUG - fallback merc_get_shipment_customer_id registered
+[25-May-2026 23:18:10 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:18:10 UTC] MERC_DEBUG - fallback merc_get_shipment_customer_id registered
+[25-May-2026 23:18:15 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:18:15 UTC] MERC_DEBUG - fallback merc_get_shipment_customer_id registered
+[25-May-2026 23:18:16 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:18:16 UTC] MERC_DEBUG - fallback merc_get_shipment_customer_id registered
+[25-May-2026 23:18:16 UTC] PHP Warning:  Undefined variable $tipo_vista in /var/www/html/wp-content/themes/blocksy-child/functions.php on line 7944
+[25-May-2026 23:18:17 UTC] MERC_ADMIN_RESUMEN - date_query="AND ( 
+        EXISTS( 
+            SELECT 1 FROM wp_postmeta pm_pickup 
+            WHERE pm_pickup.post_id = p.ID 
+              AND pm_pickup.meta_key IN ('wpcargo_pickup_date_picker','wpcargo_pickup_date','calendarenvio','wpcargo_fecha_envio')
+              AND (
+                    (STR_TO_DATE(pm_pickup.meta_value, '%%d/%%m/%%Y') >= STR_TO_DATE('2026-05-25', '%%Y-%%m-%%d') AND STR_TO_DATE(pm_pickup.meta_value, '%%d/%%m/%%Y') <= STR_TO_DATE('2026-05-25', '%%Y-%%m-%%d'))
+                 OR (STR_TO_DATE(pm_pickup.meta_value, '%%Y-%%m-%%d') >= STR_TO_DATE('2026-05-25', '%%Y-%%m-%%d') AND STR_TO_DATE(pm_pickup.meta_value, '%%Y-%%m-%%d') <= STR_TO_DATE('2026-05-25', '%%Y-%%m-%%d'))
+                 OR (pm_pickup.meta_value BETWEEN '2026-05-25' AND '2026-05-25')
+                 OR (pm_pickup.meta_value LIKE '2026-05-25%')
+              )
+        )
+        OR (p.post_date BETWEEN '2026-05-25 00:00:00' AND '2026-05-25 23:59:59')
+    )"
+[25-May-2026 23:18:17 UTC] MERC_ADMIN_RESUMEN - NO SHIPMENTS returned for date_query, attempting fallback by pickup meta
+[25-May-2026 23:18:18 UTC] MERC_ADMIN_RESUMEN - fallback also returned NO shipments; attempting fallback by post_date range
+[25-May-2026 23:18:18 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31835 post_date=2026-05-24 11:34:58 metas={"wpcargo_pickup_date_picker":"24\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-24 11:34:58"}
+[25-May-2026 23:18:18 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31834 post_date=2026-05-07 07:40:18 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 07:40:18"}
+[25-May-2026 23:18:18 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31833 post_date=2026-05-07 07:37:10 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 07:37:10"}
+[25-May-2026 23:18:18 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31832 post_date=2026-05-07 07:30:18 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 07:30:18"}
+[25-May-2026 23:18:18 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31831 post_date=2026-05-07 07:19:40 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 07:19:40"}
+[25-May-2026 23:18:18 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31830 post_date=2026-05-07 07:15:00 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 07:15:00"}
+[25-May-2026 23:18:18 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31829 post_date=2026-05-07 07:14:15 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 07:14:15"}
+[25-May-2026 23:18:18 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31828 post_date=2026-05-07 07:12:28 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 07:12:28"}
+[25-May-2026 23:18:18 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31827 post_date=2026-05-07 07:10:08 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 07:10:08"}
+[25-May-2026 23:18:18 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31826 post_date=2026-05-07 07:09:01 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 07:09:01"}
+[25-May-2026 23:18:18 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31825 post_date=2026-05-07 07:08:04 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 07:08:04"}
+[25-May-2026 23:18:18 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31824 post_date=2026-05-07 07:05:37 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 07:05:37"}
+[25-May-2026 23:18:18 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31823 post_date=2026-05-07 07:04:42 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 07:04:42"}
+[25-May-2026 23:18:18 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31822 post_date=2026-05-07 07:03:50 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 07:03:50"}
+[25-May-2026 23:18:18 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31821 post_date=2026-05-07 06:20:16 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 06:20:16"}
+[25-May-2026 23:18:18 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31820 post_date=2026-05-07 06:17:05 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 06:17:05"}
+[25-May-2026 23:18:18 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31819 post_date=2026-05-07 03:45:00 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 03:45:00"}
+[25-May-2026 23:18:18 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31818 post_date=2026-05-07 02:24:51 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 02:24:51"}
+[25-May-2026 23:18:18 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31817 post_date=2026-05-07 02:23:53 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 02:23:53"}
+[25-May-2026 23:18:18 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31816 post_date=2026-05-07 02:23:07 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 02:23:07"}
+[25-May-2026 23:18:18 UTC] MERC_ADMIN_RESUMEN - trying post_date fallback with start=2026-05-25 00:00:00 end=2026-05-25 23:59:59
+[25-May-2026 23:18:18 UTC] 🔍 [MERC_ADMIN_CARDS] drivers_sql: SELECT pm_entrega.meta_value AS driver_id, COUNT(DISTINCT p.ID) AS total_entregas FROM wp_posts p LEFT JOIN wp_postmeta pm_entrega ON p.ID = pm_entrega.post_id AND pm_entrega.meta_key = 'wpcargo_motorizo_entrega' WHERE p.post_type = 'wpcargo_shipment' AND p.post_status = 'publish' AND pm_entrega.meta_value IS NOT NULL AND EXISTS( SELECT 1 FROM wp_postmeta pm_pickup WHERE pm_pickup.post_id = p.ID AND pm_pickup.meta_key = 'wpcargo_pickup_date_picker' AND ( STR_TO_DATE(pm_pickup.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-05-25', '%Y-%m-%d') AND STR_TO_DATE(pm_pickup.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-05-25', '%Y-%m-%d') ) ) GROUP BY pm_entrega.meta_value ORDER BY total_entregas DESC
+[25-May-2026 23:18:18 UTC] 🔍 [MERC_ADMIN_CARDS] sample_ids_count: 0
+[25-May-2026 23:18:18 UTC] 🔍 [MERC_ADMIN_CARDS] sample_ids EMPTY for date_query
+[25-May-2026 23:18:18 UTC] 🔍 [MERC_ADMIN_CARDS] drivers_count: 0
+[25-May-2026 23:18:19 UTC] PHP Warning:  Attempt to read property "status" on null in /var/www/html/wp-content/themes/blocksy-child/functions.php on line 16063
+[25-May-2026 23:18:25 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:18:25 UTC] MERC_DEBUG - fallback merc_get_shipment_customer_id registered
+[25-May-2026 23:26:00 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:26:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1450
+[25-May-2026 23:26:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1453
+[25-May-2026 23:26:01 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:26:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1450
+[25-May-2026 23:26:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1453
+[25-May-2026 23:26:07 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:26:08 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[25-May-2026 23:26:08 UTC] 🔵 [FILTER] Usuario actual: 109
+[25-May-2026 23:26:08 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"date_query":[{"after":"2026-03-26","before":"2026-05-25","inclusive":true}]}
+[25-May-2026 23:26:08 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[25-May-2026 23:26:08 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-05-25
+[25-May-2026 23:26:08 UTC] 🔵 [FILTER] Fecha desde: '2026-05-25' | Fecha hasta: '2026-05-25'
+[25-May-2026 23:26:08 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[25-May-2026 23:26:08 UTC] 🔵 [FILTER] REMOVIENDO date_query para evitar conflicto
+[25-May-2026 23:26:08 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-05-25', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-05-25', '%Y-%m-%d'))
+        
+[25-May-2026 23:26:08 UTC] 🔵 [FILTER] IDs encontrados por fecha: 1
+[25-May-2026 23:26:08 UTC] 🔵 [FILTER] Primeros 10 IDs: 27491
+[25-May-2026 23:26:08 UTC] 🔵 [FILTER] post__in no existe, creando nuevo
+[25-May-2026 23:26:08 UTC] 🔵 [FILTER] post_status cambiado a array para incluir estados normales (EXCLUYENDO trash)
+[25-May-2026 23:26:08 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":["publish","draft","pending","private"],"posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"post__in":["27491"]}
+[25-May-2026 23:26:12 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:26:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 515
+[25-May-2026 23:26:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 531
+[25-May-2026 23:26:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7144
+[25-May-2026 23:26:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7168
+[25-May-2026 23:26:16 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:26:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 515
+[25-May-2026 23:26:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 531
+[25-May-2026 23:26:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7144
+[25-May-2026 23:26:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7168
+[25-May-2026 23:26:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1108
+[25-May-2026 23:26:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1109
+[25-May-2026 23:26:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1110
+[25-May-2026 23:26:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1450
+[25-May-2026 23:26:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1453
+[25-May-2026 23:26:17 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:26:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1450
+[25-May-2026 23:26:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1453
+[25-May-2026 23:26:20 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:26:20 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 515
+[25-May-2026 23:26:20 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 531
+[25-May-2026 23:26:20 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7144
+[25-May-2026 23:26:20 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7168
+[25-May-2026 23:27:06 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:27:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1450
+[25-May-2026 23:27:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1453
+[25-May-2026 23:27:07 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:27:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1450
+[25-May-2026 23:27:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1453
+[25-May-2026 23:27:09 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:27:10 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[25-May-2026 23:27:10 UTC] 🔵 [FILTER] Usuario actual: 109
+[25-May-2026 23:27:10 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"date_query":[{"after":"2026-03-26","before":"2026-05-25","inclusive":true}]}
+[25-May-2026 23:27:10 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[25-May-2026 23:27:10 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-05-25
+[25-May-2026 23:27:10 UTC] 🔵 [FILTER] Fecha desde: '2026-05-25' | Fecha hasta: '2026-05-25'
+[25-May-2026 23:27:10 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[25-May-2026 23:27:10 UTC] 🔵 [FILTER] REMOVIENDO date_query para evitar conflicto
+[25-May-2026 23:27:10 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-05-25', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-05-25', '%Y-%m-%d'))
+        
+[25-May-2026 23:27:10 UTC] 🔵 [FILTER] IDs encontrados por fecha: 1
+[25-May-2026 23:27:10 UTC] 🔵 [FILTER] Primeros 10 IDs: 27491
+[25-May-2026 23:27:10 UTC] 🔵 [FILTER] post__in no existe, creando nuevo
+[25-May-2026 23:27:10 UTC] 🔵 [FILTER] post_status cambiado a array para incluir estados normales (EXCLUYENDO trash)
+[25-May-2026 23:27:10 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":["publish","draft","pending","private"],"posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"post__in":["27491"]}
+[25-May-2026 23:27:12 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:27:13 UTC] PHP Warning:  Undefined variable $tipo_vista in /var/www/html/wp-content/themes/blocksy-child/functions.php on line 7944
+[25-May-2026 23:27:14 UTC] MERC_ADMIN_RESUMEN - date_query="AND ( 
+        EXISTS( 
+            SELECT 1 FROM wp_postmeta pm_pickup 
+            WHERE pm_pickup.post_id = p.ID 
+              AND pm_pickup.meta_key IN ('wpcargo_pickup_date_picker','wpcargo_pickup_date','calendarenvio','wpcargo_fecha_envio')
+              AND (
+                    (STR_TO_DATE(pm_pickup.meta_value, '%%d/%%m/%%Y') >= STR_TO_DATE('2026-05-25', '%%Y-%%m-%%d') AND STR_TO_DATE(pm_pickup.meta_value, '%%d/%%m/%%Y') <= STR_TO_DATE('2026-05-25', '%%Y-%%m-%%d'))
+                 OR (STR_TO_DATE(pm_pickup.meta_value, '%%Y-%%m-%%d') >= STR_TO_DATE('2026-05-25', '%%Y-%%m-%%d') AND STR_TO_DATE(pm_pickup.meta_value, '%%Y-%%m-%%d') <= STR_TO_DATE('2026-05-25', '%%Y-%%m-%%d'))
+                 OR (pm_pickup.meta_value BETWEEN '2026-05-25' AND '2026-05-25')
+                 OR (pm_pickup.meta_value LIKE '2026-05-25%')
+              )
+        )
+        OR (p.post_date BETWEEN '2026-05-25 00:00:00' AND '2026-05-25 23:59:59')
+    )"
+[25-May-2026 23:27:14 UTC] MERC_ADMIN_RESUMEN - NO SHIPMENTS returned for date_query, attempting fallback by pickup meta
+[25-May-2026 23:27:15 UTC] MERC_ADMIN_RESUMEN - fallback also returned NO shipments; attempting fallback by post_date range
+[25-May-2026 23:27:15 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31835 post_date=2026-05-24 11:34:58 metas={"wpcargo_pickup_date_picker":"24\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-24 11:34:58"}
+[25-May-2026 23:27:15 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31834 post_date=2026-05-07 07:40:18 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 07:40:18"}
+[25-May-2026 23:27:15 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31833 post_date=2026-05-07 07:37:10 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 07:37:10"}
+[25-May-2026 23:27:15 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31832 post_date=2026-05-07 07:30:18 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 07:30:18"}
+[25-May-2026 23:27:15 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31831 post_date=2026-05-07 07:19:40 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 07:19:40"}
+[25-May-2026 23:27:15 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31830 post_date=2026-05-07 07:15:00 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 07:15:00"}
+[25-May-2026 23:27:15 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31829 post_date=2026-05-07 07:14:15 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 07:14:15"}
+[25-May-2026 23:27:15 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31828 post_date=2026-05-07 07:12:28 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 07:12:28"}
+[25-May-2026 23:27:15 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31827 post_date=2026-05-07 07:10:08 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 07:10:08"}
+[25-May-2026 23:27:15 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31826 post_date=2026-05-07 07:09:01 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 07:09:01"}
+[25-May-2026 23:27:15 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31825 post_date=2026-05-07 07:08:04 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 07:08:04"}
+[25-May-2026 23:27:15 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31824 post_date=2026-05-07 07:05:37 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 07:05:37"}
+[25-May-2026 23:27:15 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31823 post_date=2026-05-07 07:04:42 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 07:04:42"}
+[25-May-2026 23:27:15 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31822 post_date=2026-05-07 07:03:50 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 07:03:50"}
+[25-May-2026 23:27:15 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31821 post_date=2026-05-07 06:20:16 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 06:20:16"}
+[25-May-2026 23:27:15 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31820 post_date=2026-05-07 06:17:05 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 06:17:05"}
+[25-May-2026 23:27:15 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31819 post_date=2026-05-07 03:45:00 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 03:45:00"}
+[25-May-2026 23:27:15 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31818 post_date=2026-05-07 02:24:51 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 02:24:51"}
+[25-May-2026 23:27:15 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31817 post_date=2026-05-07 02:23:53 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 02:23:53"}
+[25-May-2026 23:27:15 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31816 post_date=2026-05-07 02:23:07 metas={"wpcargo_pickup_date_picker":"07\/05\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-05-07 02:23:07"}
+[25-May-2026 23:27:15 UTC] MERC_ADMIN_RESUMEN - trying post_date fallback with start=2026-05-25 00:00:00 end=2026-05-25 23:59:59
+[25-May-2026 23:27:15 UTC] 🔍 [MERC_ADMIN_CARDS] drivers_sql: SELECT pm_entrega.meta_value AS driver_id, COUNT(DISTINCT p.ID) AS total_entregas FROM wp_posts p LEFT JOIN wp_postmeta pm_entrega ON p.ID = pm_entrega.post_id AND pm_entrega.meta_key = 'wpcargo_motorizo_entrega' WHERE p.post_type = 'wpcargo_shipment' AND p.post_status = 'publish' AND pm_entrega.meta_value IS NOT NULL AND EXISTS( SELECT 1 FROM wp_postmeta pm_pickup WHERE pm_pickup.post_id = p.ID AND pm_pickup.meta_key = 'wpcargo_pickup_date_picker' AND ( STR_TO_DATE(pm_pickup.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-05-25', '%Y-%m-%d') AND STR_TO_DATE(pm_pickup.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-05-25', '%Y-%m-%d') ) ) GROUP BY pm_entrega.meta_value ORDER BY total_entregas DESC
+[25-May-2026 23:27:15 UTC] 🔍 [MERC_ADMIN_CARDS] sample_ids_count: 0
+[25-May-2026 23:27:15 UTC] 🔍 [MERC_ADMIN_CARDS] sample_ids EMPTY for date_query
+[25-May-2026 23:27:15 UTC] 🔍 [MERC_ADMIN_CARDS] drivers_count: 0
+[25-May-2026 23:29:43 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:29:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 515
+[25-May-2026 23:29:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 531
+[25-May-2026 23:29:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7144
+[25-May-2026 23:29:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7168
+[25-May-2026 23:29:49 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:29:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 515
+[25-May-2026 23:29:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 531
+[25-May-2026 23:29:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7144
+[25-May-2026 23:29:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7168
+[25-May-2026 23:29:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1108
+[25-May-2026 23:29:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1109
+[25-May-2026 23:29:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1110
+[25-May-2026 23:29:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1450
+[25-May-2026 23:29:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1453
+[25-May-2026 23:29:50 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:29:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1450
+[25-May-2026 23:29:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1453
+[25-May-2026 23:30:10 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:30:10 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 515
+[25-May-2026 23:30:10 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 531
+[25-May-2026 23:30:10 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7144
+[25-May-2026 23:30:10 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7168
+[25-May-2026 23:30:54 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:30:54 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 515
+[25-May-2026 23:30:54 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 531
+[25-May-2026 23:30:54 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7144
+[25-May-2026 23:30:54 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7168
+[25-May-2026 23:30:55 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1108
+[25-May-2026 23:30:55 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1109
+[25-May-2026 23:30:55 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1110
+[25-May-2026 23:30:55 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1450
+[25-May-2026 23:30:55 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1453
+[25-May-2026 23:30:55 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:30:55 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1450
+[25-May-2026 23:30:55 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1453
+[25-May-2026 23:38:13 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:38:14 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1450
+[25-May-2026 23:38:14 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1453
+[25-May-2026 23:38:14 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:38:15 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1450
+[25-May-2026 23:38:15 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1453
+[25-May-2026 23:38:17 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:38:18 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[25-May-2026 23:38:18 UTC] 🔵 [FILTER] Usuario actual: 109
+[25-May-2026 23:38:18 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"date_query":[{"after":"2026-03-26","before":"2026-05-25","inclusive":true}]}
+[25-May-2026 23:38:18 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[25-May-2026 23:38:18 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-05-25
+[25-May-2026 23:38:18 UTC] 🔵 [FILTER] Fecha desde: '2026-05-25' | Fecha hasta: '2026-05-25'
+[25-May-2026 23:38:18 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[25-May-2026 23:38:18 UTC] 🔵 [FILTER] REMOVIENDO date_query para evitar conflicto
+[25-May-2026 23:38:18 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-05-25', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-05-25', '%Y-%m-%d'))
+        
+[25-May-2026 23:38:18 UTC] 🔵 [FILTER] IDs encontrados por fecha: 1
+[25-May-2026 23:38:18 UTC] 🔵 [FILTER] Primeros 10 IDs: 27491
+[25-May-2026 23:38:18 UTC] 🔵 [FILTER] post__in no existe, creando nuevo
+[25-May-2026 23:38:18 UTC] 🔵 [FILTER] post_status cambiado a array para incluir estados normales (EXCLUYENDO trash)
+[25-May-2026 23:38:18 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":["publish","draft","pending","private"],"posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"post__in":["27491"]}
+[25-May-2026 23:38:21 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:38:21 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 515
+[25-May-2026 23:38:21 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 531
+[25-May-2026 23:38:21 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7144
+[25-May-2026 23:38:21 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7168
+[25-May-2026 23:38:27 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:38:27 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 515
+[25-May-2026 23:38:27 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 531
+[25-May-2026 23:38:27 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7144
+[25-May-2026 23:38:27 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7168
+[25-May-2026 23:38:27 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1108
+[25-May-2026 23:38:27 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1109
+[25-May-2026 23:38:27 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1110
+[25-May-2026 23:38:27 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1450
+[25-May-2026 23:38:27 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1453
+[25-May-2026 23:38:28 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:38:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1450
+[25-May-2026 23:38:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1453
+[25-May-2026 23:42:37 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:42:37 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1450
+[25-May-2026 23:42:37 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1453
+[25-May-2026 23:42:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:42:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1450
+[25-May-2026 23:42:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1453
+[25-May-2026 23:42:40 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:42:41 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[25-May-2026 23:42:41 UTC] 🔵 [FILTER] Usuario actual: 109
+[25-May-2026 23:42:41 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"date_query":[{"after":"2026-03-26","before":"2026-05-25","inclusive":true}]}
+[25-May-2026 23:42:41 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[25-May-2026 23:42:41 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-05-25
+[25-May-2026 23:42:41 UTC] 🔵 [FILTER] Fecha desde: '2026-05-25' | Fecha hasta: '2026-05-25'
+[25-May-2026 23:42:41 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[25-May-2026 23:42:41 UTC] 🔵 [FILTER] REMOVIENDO date_query para evitar conflicto
+[25-May-2026 23:42:41 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-05-25', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-05-25', '%Y-%m-%d'))
+        
+[25-May-2026 23:42:42 UTC] 🔵 [FILTER] IDs encontrados por fecha: 1
+[25-May-2026 23:42:42 UTC] 🔵 [FILTER] Primeros 10 IDs: 27491
+[25-May-2026 23:42:42 UTC] 🔵 [FILTER] post__in no existe, creando nuevo
+[25-May-2026 23:42:42 UTC] 🔵 [FILTER] post_status cambiado a array para incluir estados normales (EXCLUYENDO trash)
+[25-May-2026 23:42:42 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":["publish","draft","pending","private"],"posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"post__in":["27491"]}
+[25-May-2026 23:42:44 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:42:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 515
+[25-May-2026 23:42:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 531
+[25-May-2026 23:42:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7144
+[25-May-2026 23:42:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7168
+[25-May-2026 23:42:49 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:42:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 515
+[25-May-2026 23:42:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 531
+[25-May-2026 23:42:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7144
+[25-May-2026 23:42:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7168
+[25-May-2026 23:42:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1108
+[25-May-2026 23:42:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1109
+[25-May-2026 23:42:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1110
+[25-May-2026 23:42:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1450
+[25-May-2026 23:42:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1453
+[25-May-2026 23:42:49 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:42:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1450
+[25-May-2026 23:42:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1453
+[25-May-2026 23:47:37 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:47:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1450
+[25-May-2026 23:47:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1453
+[25-May-2026 23:47:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:47:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1450
+[25-May-2026 23:47:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1453
+[25-May-2026 23:47:40 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:47:41 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[25-May-2026 23:47:41 UTC] 🔵 [FILTER] Usuario actual: 109
+[25-May-2026 23:47:41 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"date_query":[{"after":"2026-03-26","before":"2026-05-25","inclusive":true}]}
+[25-May-2026 23:47:41 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[25-May-2026 23:47:41 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-05-25
+[25-May-2026 23:47:41 UTC] 🔵 [FILTER] Fecha desde: '2026-05-25' | Fecha hasta: '2026-05-25'
+[25-May-2026 23:47:41 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[25-May-2026 23:47:41 UTC] 🔵 [FILTER] REMOVIENDO date_query para evitar conflicto
+[25-May-2026 23:47:41 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-05-25', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-05-25', '%Y-%m-%d'))
+        
+[25-May-2026 23:47:41 UTC] 🔵 [FILTER] IDs encontrados por fecha: 1
+[25-May-2026 23:47:41 UTC] 🔵 [FILTER] Primeros 10 IDs: 27491
+[25-May-2026 23:47:41 UTC] 🔵 [FILTER] post__in no existe, creando nuevo
+[25-May-2026 23:47:41 UTC] 🔵 [FILTER] post_status cambiado a array para incluir estados normales (EXCLUYENDO trash)
+[25-May-2026 23:47:41 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":["publish","draft","pending","private"],"posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"post__in":["27491"]}
+[25-May-2026 23:47:41 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:47:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 515
+[25-May-2026 23:47:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 531
+[25-May-2026 23:47:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7144
+[25-May-2026 23:47:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7168
+[25-May-2026 23:47:47 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:47:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 515
+[25-May-2026 23:47:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 531
+[25-May-2026 23:47:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7144
+[25-May-2026 23:47:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7168
+[25-May-2026 23:47:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1108
+[25-May-2026 23:47:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1109
+[25-May-2026 23:47:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1110
+[25-May-2026 23:47:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1450
+[25-May-2026 23:47:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1453
+[25-May-2026 23:47:48 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:47:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1450
+[25-May-2026 23:47:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1453
+[25-May-2026 23:52:53 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:52:55 UTC] PHP Notice:  La función as_next_scheduled_action ha sido llamada <strong>de forma incorrecta</strong>. as_next_scheduled_action() was called before the Action Scheduler data store was initialized Por favor, ve <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">depuración en WordPress</a> para más información. (Este mensaje fue añadido en la versión 3.1.6). in /var/www/html/wp-includes/functions.php on line 6121
+[25-May-2026 23:52:56 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1450
+[25-May-2026 23:52:56 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1453
+[25-May-2026 23:52:56 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:52:56 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1450
+[25-May-2026 23:52:56 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1453
+[25-May-2026 23:53:04 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:53:07 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[25-May-2026 23:53:07 UTC] 🔵 [FILTER] Usuario actual: 109
+[25-May-2026 23:53:07 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"date_query":[{"after":"2026-03-26","before":"2026-05-25","inclusive":true}]}
+[25-May-2026 23:53:07 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[25-May-2026 23:53:07 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-05-25
+[25-May-2026 23:53:07 UTC] 🔵 [FILTER] Fecha desde: '2026-05-25' | Fecha hasta: '2026-05-25'
+[25-May-2026 23:53:07 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[25-May-2026 23:53:07 UTC] 🔵 [FILTER] REMOVIENDO date_query para evitar conflicto
+[25-May-2026 23:53:07 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-05-25', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-05-25', '%Y-%m-%d'))
+        
+[25-May-2026 23:53:07 UTC] 🔵 [FILTER] IDs encontrados por fecha: 1
+[25-May-2026 23:53:07 UTC] 🔵 [FILTER] Primeros 10 IDs: 27491
+[25-May-2026 23:53:07 UTC] 🔵 [FILTER] post__in no existe, creando nuevo
+[25-May-2026 23:53:07 UTC] 🔵 [FILTER] post_status cambiado a array para incluir estados normales (EXCLUYENDO trash)
+[25-May-2026 23:53:07 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":["publish","draft","pending","private"],"posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"post__in":["27491"]}
+[25-May-2026 23:53:10 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:53:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 515
+[25-May-2026 23:53:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 531
+[25-May-2026 23:53:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7144
+[25-May-2026 23:53:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7168
+[25-May-2026 23:53:16 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:53:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 515
+[25-May-2026 23:53:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-login.php on line 531
+[25-May-2026 23:53:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7144
+[25-May-2026 23:53:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/functions.php on line 7168
+[25-May-2026 23:53:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1108
+[25-May-2026 23:53:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1109
+[25-May-2026 23:53:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1110
+[25-May-2026 23:53:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1450
+[25-May-2026 23:53:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1453
+[25-May-2026 23:53:17 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-05-25.log
+[25-May-2026 23:53:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1450
+[25-May-2026 23:53:17 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-content/plugins/merc-finance/includes/ajax.php:137) in /var/www/html/wp-includes/pluggable.php on line 1453

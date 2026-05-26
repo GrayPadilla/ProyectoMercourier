@@ -23,7 +23,7 @@ class WCROL_Rol_WPCargo {
         // Bloquear acceso a wp-admin para usuarios wpcargo_admin
         add_action('admin_init',   [__CLASS__, 'bloquear_wp_admin']);
         // Redirigir login al dashboard frontend
-        add_filter('login_redirect',[__CLASS__, 'redirigir_login'], 10, 3);
+        // add_filter('login_redirect',[__CLASS__, 'redirigir_login'], 10, 3);
         // Ocultar barra de admin en frontend para estos usuarios
         add_action('after_setup_theme', [__CLASS__, 'ocultar_admin_bar']);
     }
