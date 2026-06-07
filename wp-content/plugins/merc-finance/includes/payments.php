@@ -6,7 +6,7 @@ if (!defined('ABSPATH')) exit;
 /**
  * Obtener total de penalidades para un usuario (usado por sistemas de liquidación)
  */
-// add_action('merc_get_user_penalties_total_for_liquidation', 'merc_get_user_penalties_total_for_liquidation');
+add_action('merc_get_user_penalties_total_for_liquidation', 'merc_get_user_penalties_total_for_liquidation');
 function merc_get_user_penalties_total_for_liquidation($user_id) {
     $args = array(
         'post_type'      => 'merc_penalty',
