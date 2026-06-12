@@ -10,13 +10,36 @@
 		<div id="shipments-table-list" class="content">
 			<?php if ( $wpc_shipments->have_posts() ) : ?>
 			<div class="table-top form-group">
+
 				<div class="float-md-none float-lg-right">
-					<form action="<?php echo $page_url; ?>" method="get">
-						<select id="wpcfesort" name="wpcfesort" class="form-control browser-default">
+							<form action="<?php echo $page_url; ?>" method="get" class="d-flex align-items-center">
+								<?php
+								// Preserve existing GET params so changing sort/order doesn't wipe filters
+								foreach( $_GET as $gk => $gv ){
+									if( in_array( $gk, array( 'wpcfesort', 'wpcfe_order' ) ) ) continue;
+									if( $gk === '' ) continue;
+									if( is_array( $gv ) ){
+										foreach( $gv as $vitem ){
+											if( $vitem === '' ) continue;
+											echo '<input type="hidden" name="'.esc_attr( $gk ).'[]" value="'.esc_attr( $vitem ).'">';
+										}
+									}else{
+										if( $gv === '' ) continue;
+										echo '<input type="hidden" name="'.esc_attr( $gk ).'" value="'.esc_attr( $gv ).'">';
+									}
+								}
+								?>
+						<select id="wpcfesort" name="wpcfesort" class="form-control browser-default mr-2" onchange="this.form.submit()">
 							<option ><?php echo __('Show entries', 'wpcargo-frontend-manager' ); ?></option>
 							<?php foreach( $wpcfesort_list as $list ): ?>
 							<option value="<?php echo $list ?>" <?php echo $list == $wpcfesort ? 'selected' : '' ;?>><?php echo $list ?> <?php echo __('entries', 'wpcargo-frontend-manager' ); ?></option>
 							<?php endforeach; ?>
+						</select>
+						<select id="wpcfe_order" name="wpcfe_order" class="form-control browser-default" onchange="this.form.submit()">
+							<option value="alpha_asc" <?php echo empty($wpcfe_order) || $wpcfe_order == 'alpha_asc' ? 'selected' : ''; ?>><?php echo __('A → Z (Cliente)', 'wpcargo-frontend-manager' ); ?></option>
+							<option value="alpha_desc" <?php echo isset($wpcfe_order) && $wpcfe_order == 'alpha_desc' ? 'selected' : ''; ?>><?php echo __('Z → A (Cliente)', 'wpcargo-frontend-manager' ); ?></option>
+							<option value="count_desc" <?php echo isset($wpcfe_order) && $wpcfe_order == 'count_desc' ? 'selected' : ''; ?>><?php echo __('Mayor → Menor', 'wpcargo-frontend-manager' ); ?></option>
+							<option value="count_asc" <?php echo isset($wpcfe_order) && $wpcfe_order == 'count_asc' ? 'selected' : ''; ?>><?php echo __('Menor → Mayor', 'wpcargo-frontend-manager' ); ?></option>
 						</select>
 					</form>
 				</div>
@@ -61,8 +84,9 @@
 							while ( $wpc_shipments->have_posts() ) {
 								$wpc_shipments->the_post();
 								$status  		= get_post_meta( get_the_ID(), 'wpcargo_status', true );
+								$es_reprogramado = intval( get_post_meta( get_the_ID(), 'es_reprogramado', true ) );
 								?>
-								<tr id="shipment-<?php echo get_the_ID(); ?>" class="shipment-row <?php echo wpcfe_to_slug( $status ); ?>">
+								<tr id="shipment-<?php echo get_the_ID(); ?>" class="shipment-row <?php echo wpcfe_to_slug( $status ); ?>" <?php echo $es_reprogramado ? 'data-reprogramado="1"' : ''; ?>>
 									<td class="form-check">
 								  <input class="wpcfe-shipments form-check-input" id="shipment-checkbox-<?php echo get_the_ID(); ?>" type="checkbox" name="wpcfe-shipments[]" value="<?php echo get_the_ID(); ?>" data-number="<?php echo get_the_title(); ?>">
 								  <label class="form-check-label" for="shipment-checkbox-<?php echo get_the_ID(); ?>"></label>

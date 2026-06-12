@@ -3,8 +3,15 @@
 global $wpcargo, $WPCCF_Fields, $wpcargo_print_admin;
 $user_info          = wp_get_current_user();
 $class_not_logged   = 'not-logged';
-$wpcfesort_list     = array( 10, 25, 50, 100 );
-$wpcfesort          = get_user_meta( get_current_user_id(), 'user_wpcfesort', true ) ? : 10 ;
+ $wpcfesort_list     = array( 100, 200, 250, 350, 500 );
+ $wpcfesort          = get_user_meta( get_current_user_id(), 'user_wpcfesort', true ) ? : 100 ;
+ // Order options: alphabetical by shipper name or by shipment count per shipper
+ $wpcfe_order_list   = array( 'alpha_asc', 'alpha_desc', 'count_desc', 'count_asc' );
+ $wpcfe_order        = get_user_meta( get_current_user_id(), 'user_wpcfe_order', true ) ? : 'alpha_asc';
+ if( isset( $_GET['wpcfe_order'] ) && in_array( $_GET['wpcfe_order'], $wpcfe_order_list ) ){
+     update_user_meta( get_current_user_id(), 'user_wpcfe_order', $_GET['wpcfe_order'] );
+     $wpcfe_order = $_GET['wpcfe_order'];
+ }
 $page_url           = get_the_permalink( wpcfe_admin_page() );
 $date_range         = wpcfe_date_range_filter();
 $p0                 = '';
@@ -79,6 +86,36 @@ if( isset( $_GET['wpcfe'] ) && $_GET['wpcfe'] == 'update' ){
                     $date_start     = isset( $_GET['date_start'] ) ? $_GET['date_start'] : $date_start;
                     $date_end       = isset( $_GET['date_end'] ) ? $_GET['date_end'] : $date_end;
 
+                    // Count distinct users who created shipments today
+                    global $wpdb;
+                    $today_date = current_time('Y-m-d');
+                    $today_start = $today_date . ' 00:00:00';
+                    $today_end = $today_date . ' 23:59:59';
+                    $sql_count_users = $wpdb->prepare(
+                        "SELECT COUNT(DISTINCT post_author) FROM {$wpdb->posts} WHERE post_type=%s AND post_status='publish' AND post_date >= %s AND post_date <= %s",
+                        'wpcargo_shipment', $today_start, $today_end
+                    );
+                    $today_user_count = (int) $wpdb->get_var( $sql_count_users );
+
+                    // Count shipments with tipo_envio = 'normal' and combined (normal, agencia, fullfitment)
+                    $sql_count_normal = $wpdb->prepare(
+                        "SELECT COUNT(*) FROM {$wpdb->posts} p
+                        JOIN {$wpdb->postmeta} pm ON p.ID = pm.post_id
+                        WHERE p.post_type = %s AND p.post_status = 'publish' AND p.post_date >= %s AND p.post_date <= %s
+                        AND pm.meta_key = %s AND pm.meta_value = %s",
+                        'wpcargo_shipment', $today_start, $today_end, 'tipo_envio', 'normal'
+                    );
+                    $today_count_normal = (int) $wpdb->get_var( $sql_count_normal );
+
+                    $types = array( 'normal', 'agencia', 'fullfitment' );
+                    $placeholders = implode( ',', array_fill( 0, count( $types ), '%s' ) );
+                    $sql = "SELECT COUNT(*) FROM {$wpdb->posts} p JOIN {$wpdb->postmeta} pm ON p.ID = pm.post_id
+                        WHERE p.post_type = %s AND p.post_status = 'publish' AND p.post_date >= %s AND p.post_date <= %s
+                        AND pm.meta_key = %s AND pm.meta_value IN ( $placeholders )";
+                    $params = array_merge( array( 'wpcargo_shipment', $today_start, $today_end, 'tipo_envio' ), $types );
+                    $sql_count_combo = $wpdb->prepare( $sql, $params );
+                    $today_count_combo = (int) $wpdb->get_var( $sql_count_combo );
+
                     // Custom meta query
                     $meta_query   = array();
                     if( isset($_GET['status']) && !empty( $_GET['status'] ) ){
@@ -114,13 +151,72 @@ if( isset( $_GET['wpcfe'] ) && $_GET['wpcfe'] == 'update' ){
                             $meta_query
                         )
                     );
-                    $args = apply_filters( 'wpcfe_dashboard_arguments', $args );   
-                    
-                    $wpc_shipments  = new WP_Query( $args );
-                    $number_records = $wpc_shipments->found_posts;
-					$basis          = $paged * $wpcfesort;
-                    $record_end     = $number_records < $basis ? $number_records : $basis ;
-                    $record_start   = $basis - ( $wpcfesort - 1 );
+                    $args = apply_filters( 'wpcfe_dashboard_arguments', $args );
+
+                    // Apply ordering
+                    if( in_array( $wpcfe_order, array( 'alpha_asc', 'alpha_desc' ) ) ){
+                        $args['meta_key'] = $shipper_data['field_key'];
+                        $args['orderby']  = 'meta_value';
+                        $args['order']    = $wpcfe_order == 'alpha_asc' ? 'ASC' : 'DESC';
+                        $wpc_shipments  = new WP_Query( $args );
+                        $number_records = $wpc_shipments->found_posts;
+                        $basis          = $paged * $wpcfesort;
+                        $record_end     = $number_records < $basis ? $number_records : $basis ;
+                        $record_start   = $basis - ( $wpcfesort - 1 );
+                    }elseif( in_array( $wpcfe_order, array( 'count_desc', 'count_asc' ) ) ){
+                        // Count ordering: build full id list, compute shipments count per shipper, sort IDs by that count, then slice for pagination
+                        $count_args = $args;
+                        $count_args['posts_per_page'] = -1;
+                        $count_args['fields'] = 'ids';
+                        $all_ids = get_posts( $count_args );
+
+                        $counts = array();
+                        foreach( $all_ids as $pid ){
+                            $name = get_post_meta( $pid, $shipper_data['field_key'], true );
+                            $key = $name ? $name : '__empty__';
+                            if( ! isset( $counts[ $key ] ) ) $counts[ $key ] = 0;
+                            $counts[ $key ]++;
+                        }
+
+                        $scores = array();
+                        foreach( $all_ids as $pid ){
+                            $name = get_post_meta( $pid, $shipper_data['field_key'], true );
+                            $key = $name ? $name : '__empty__';
+                            $scores[ $pid ] = isset( $counts[ $key ] ) ? $counts[ $key ] : 0;
+                        }
+
+                        if( $wpcfe_order == 'count_desc' ){
+                            arsort( $scores );
+                        }else{
+                            asort( $scores );
+                        }
+
+                        $sorted_ids = array_keys( $scores );
+                        $number_records = count( $sorted_ids );
+                        $basis = $paged * $wpcfesort;
+                        $record_end = $number_records < $basis ? $number_records : $basis ;
+                        $record_start = $basis - ( $wpcfesort - 1 );
+
+                        $offset = ( $paged - 1 ) * $wpcfesort;
+                        $paged_slice = array_slice( $sorted_ids, $offset, $wpcfesort );
+
+                        if( ! empty( $paged_slice ) ){
+                            $args2 = $args;
+                            $args2['post__in'] = $paged_slice;
+                            $args2['orderby'] = 'post__in';
+                            $args2['posts_per_page'] = $wpcfesort;
+                            $wpc_shipments = new WP_Query( $args2 );
+                        }else{
+                            $wpc_shipments = new WP_Query( array( 'post__in' => array(0), 'posts_per_page' => 0 ) );
+                        }
+                    }else{
+                        // fallback
+                        $wpc_shipments  = new WP_Query( $args );
+                        $number_records = $wpc_shipments->found_posts;
+                        $basis          = $paged * $wpcfesort;
+                        $record_end     = $number_records < $basis ? $number_records : $basis ;
+                        $record_start   = $basis - ( $wpcfesort - 1 );
+                    }
 					$template       = wpcfe_include_template( 'shipments' );
 					require_once( $template );
                     wp_reset_postdata();

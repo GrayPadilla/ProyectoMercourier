@@ -1,0 +1,218 @@
+.merc-devoluciones-wrap {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.merc-filtros-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    align-items: end;
+}
+
+.merc-filtros-grid .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.merc-filtros-grid label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #23282d;
+    font-size: 13px;
+    display: block !important;
+}
+
+.merc-filtros-grid input[type="text"],
+.merc-filtros-grid input[type="date"],
+.merc-filtros-grid select {
+    padding: 8px 12px !important;
+    border: 1px solid #ddd !important;
+    border-radius: 4px !important;
+    font-size: 14px !important;
+    width: 100% !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    min-height: 38px !important;
+    background-color: #fff !important;
+    background-image: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+}
+
+.merc-filtros-grid select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 9L1 4h10z'/%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 10px center !important;
+    padding-right: 30px !important;
+}
+
+.merc-filtros-grid input:focus,
+.merc-filtros-grid select:focus {
+    border-color: #2271b1 !important;
+    outline: none !important;
+    box-shadow: 0 0 0 1px #2271b1 !important;
+}
+
+.merc-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.merc-stat-card {
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-left: 4px solid;
+}
+
+.merc-stat-label {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.merc-stat-value {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.merc-export-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.merc-export-buttons .button {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.merc-export-buttons .button-csv {
+    background: #10b981;
+    color: white;
+    border: none;
+}
+
+.merc-export-buttons .button-csv:hover {
+    background: #059669;
+}
+
+.merc-export-buttons .button-print {
+    background: #6366f1;
+    color: white;
+    border: none;
+}
+
+.merc-export-buttons .button-print:hover {
+    background: #4f46e5;
+}
+
+.merc-devoluciones-wrap .wp-list-table {
+    width: 100% !important;
+    border-collapse: collapse;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+
+.merc-devoluciones-wrap .wp-list-table thead th {
+    background: linear-gradient(to bottom, #f9f9f9, #f0f0f0);
+    font-weight: 600;
+    color: #23282d;
+    border-bottom: 2px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    font-size: 13px;
+}
+
+.merc-devoluciones-wrap .wp-list-table tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #e8e8e8;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.merc-devoluciones-wrap .wp-list-table tbody tr:hover {
+    filter: brightness(0.97);
+}
+
+.merc-estado-entrega-select {
+    padding: 6px 28px 6px 10px !important;
+    border-radius: 4px !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    width: 100% !important;
+    min-width: 140px !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    transition: background 0.2s, border-color 0.2s !important;
+}
+
+.merc-guardado-ok {
+    display: inline-block;
+    margin-left: 6px;
+    color: #28a745;
+    font-size: 16px;
+    animation: merc-fade-out 2s forwards;
+}
+
+@keyframes merc-fade-out {
+    0%   { opacity: 1; }
+    70%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@media print {
+    .no-print, .merc-stats-grid {
+        display: none !important;
+    }
+
+    body {
+        padding: 20px;
+    }
+
+    .merc-devoluciones-wrap .wp-list-table {
+        border: 1px solid #000;
+    }
+
+    .merc-devoluciones-wrap .wp-list-table thead th {
+        background: #f0f0f0 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .merc-estado-entrega-select {
+        display: none !important;
+    }
+
+    .merc-estado-entrega-text {
+        display: inline !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .merc-filtros-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .merc-stats-grid,
+    .merc-filtros-grid {
+        grid-template-columns: 1fr;
+    }
+}

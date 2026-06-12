@@ -1,0 +1,150 @@
+/* Merc Warehouse Styles */
+
+.almacen-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.almacen-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.almacen-header h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    color: #2c3e50;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background: #2980b9;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    border-left: 5px solid #3498db;
+}
+
+.stat-card.card-usuarios { border-left-color: #9b59b6; }
+.stat-card.card-total { border-left-color: #3498db; }
+.stat-card.card-asignados { border-left-color: #f39c12; }
+
+.stat-icon {
+    font-size: 32px;
+    line-height: 1;
+}
+
+.stat-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.stat-label {
+    font-size: 12px;
+    color: #7f8c8d;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-edit {
+    background: #f39c12;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.btn-edit:hover {
+    background: #e67e22;
+}
+
+.tabla-productos {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.tabla-productos th {
+    background: #f8f9fa;
+    font-weight: 700;
+    font-size: 13px;
+    color: #495057;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge-sin-asignar {
+    background: #e9ecef;
+    color: #495057;
+}
+
+.badge-asignado {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+.badge-entregado {
+    background: #d4edda;
+    color: #155724;
+}
+
+@media (max-width: 768px) {
+    .almacen-container {
+        padding: 10px;
+    }
+    
+    .almacen-header {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+    
+    .almacen-header h2 {
+        font-size: 22px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
+

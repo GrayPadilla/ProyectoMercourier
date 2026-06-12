@@ -1,0 +1,81 @@
+/**
+ * Estilos para Reprogramación de Envíos
+ * Pinta filas en NARANJA cuando es_reprogramado = 1
+ */
+
+/* Fila reprogramada en la tabla principal de Historial de Envíos */
+.merc-shipmentslist-row[data-reprogramado="1"],
+.merc-shipment-row[data-reprogramado="1"],
+tr[data-reprogramado="1"],
+tr[data-estado-reprogramado="1"] {
+    background-color: #fff3e0 !important;
+    border-left: 4px solid #ff9800 !important;
+}
+
+/* Hover para filas reprogramadas */
+.merc-shipmentslist-row[data-reprogramado="1"]:hover,
+.merc-shipment-row[data-reprogramado="1"]:hover,
+tr[data-reprogramado="1"]:hover,
+tr[data-estado-reprogramado="1"]:hover {
+    background-color: #ffe0b2 !important;
+}
+
+/* Badge/etiqueta para estado REPROGRAMADO */
+.merc-estado-reprogramado,
+.status-badge[data-status="REPROGRAMADO"],
+.badge.reprogramado {
+    background-color: #ff9800 !important;
+    color: white !important;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Icono visual para reprogramado */
+.reprogramado-indicator::before {
+    content: "📅 ";
+    margin-right: 4px;
+}
+
+/* Tabla específica en dashboard/historial */
+.merc-tienda-card-table tbody tr[data-reprogramado="1"] {
+    background-color: #fff3e0;
+}
+
+.merc-tienda-card-table tbody tr[data-reprogramado="1"] td {
+    border-color: #ff9800;
+}
+
+.merc-tienda-card-table tbody tr[data-reprogramado="1"]:hover {
+    background-color: #ffe0b2;
+    box-shadow: inset 3px 0 0 #ff9800;
+}
+
+/* Elemento de estado dentro de la fila */
+.merc-shipment-status[data-status="REPROGRAMADO"],
+td[data-estado="REPROGRAMADO"] {
+    color: #ff9800;
+    font-weight: bold;
+    background-color: #fff3e0;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+/* Animación sutil para destacar reprogramados */
+@keyframes reprogramadoPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 152, 0, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 8px rgba(255, 152, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 152, 0, 0);
+    }
+}
+
+.merc-shipmentslist-row[data-reprogramado="1"].pulse,
+tr[data-reprogramado="1"].pulse {
+    animation: reprogramadoPulse 2s infinite;
+}
