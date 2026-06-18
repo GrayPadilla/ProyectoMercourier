@@ -29,17 +29,14 @@
 			<div id="images-section">
                 <a href="#" id="wpcargo-pod-img-btn" class="wpcargo-btn wpcargo-btn-success"><?php esc_html_e( 'ADD IMAGES', 'wpcargo-pod' ); ?></a>	
                 <input type="file" id="wpcargo-pod-file-input" multiple accept="image/*" style="display:none;">
+                <input type="file" id="wpcargo-pod-camera-input" accept="image/*" capture="camera" style="display:none;">
                 <div id="wpcargo-pod-images">			
                     <?php
-                    // Obtener el valor de cambio_producto
                     $cambio_producto = get_post_meta($get_sid, 'cambio_producto', true);
-                    
-                    // Mostrar mensaje solo si cambio_producto es "Sí"
                     if (strtolower(trim($cambio_producto)) === 'sí' || strtolower(trim($cambio_producto)) === 'si') {
                         echo '<p class="header-pod-result" style="color: #d9534f; font-weight: bold; font-size: 16px;">⚠️ ESTE PEDIDO TIENE RECOJO, NO TE OLVIDES DE RECOGER EL PRODUCTO DEL CLIENTE</p>';
                     }
                     ?>
-                    
                     <?php
                     if(!empty($get_pod_img)) {
                         $explode_pod_img = array_filter( explode(",", $get_pod_img) );
@@ -61,7 +58,6 @@
 			<div class="pod-details row">
 				<?php foreach( $signature_fields as $metakey => $fieldinfo ): ?>
 				<?php
-                    // Saltar el campo generado por el plugin que se llama "Total a recibir"
                     if (isset($fieldinfo['label']) && strpos($fieldinfo['label'], 'Total a recibir') !== false) {
                         continue;
                     }
@@ -80,15 +76,12 @@
 				<?php
                     $shipment_id   = $get_sid;
                 
-                    // 1) Tomar el total a cobrar principal
                     $monto_total   = floatval( get_post_meta( $shipment_id, 'wpcargo_total_cobrar', true ) );
                 
-                    // 2) Fallback: si es 0, usar el campo de monto original (por si existe)
                     if ( $monto_total <= 0 ) {
                         $monto_total = floatval( get_post_meta( $shipment_id, 'wpcargo_monto', true ) );
                     }
                 
-                    // 3) Fallback extra: producto + envío si existen
                     if ( $monto_total <= 0 ) {
                         $costo_producto = floatval( get_post_meta( $shipment_id, 'wpcargo_costo_producto', true ) );
                         $costo_envio    = floatval( get_post_meta( $shipment_id, 'wpcargo_costo_envio', true ) );
@@ -97,45 +90,50 @@
                         }
                     }
                 
-                    // 4) Modo de pago
                     $modo_pago_raw = get_post_meta( $shipment_id, 'payment_wpcargo_mode_field', true );
                     $modo_pago     = strtolower( trim( $modo_pago_raw ) );
                     $es_no_cobrar  = ( $modo_pago === 'no cobrar' || $modo_pago === '1' );
 
-                    // Asegurar que tenemos el costo de envío disponible
                     $costo_envio = floatval( get_post_meta( $shipment_id, 'wpcargo_costo_envio', true ) );
-
-                    // Total que verá el motorizado: si es NO COBRAR mostramos el costo de envío
-                    // (NO COBRAR significa no cobrar el producto, pero el envío sí puede aplicarse).
                     $monto_display = $es_no_cobrar ? $costo_envio : $monto_total;
                 ?>
 
-                
+				<?php if ( $es_no_cobrar ) : ?>
+					<?php /* NO COBRAR: solo hidden inputs para que el servidor no falle, se oculta toda la sección de pago */ ?>
+                    <div class="col-md-12 mb-4">
+                        <div class="alert alert-info" style="background-color: #d9edf7; color: #31708f; padding: 15px; border-radius: 4px; border: 1px solid #bce8f1;">
+                            <strong>ℹ️ ESTE PEDIDO TIENE CERO COSTO, CIÉRRALO DIRECTAMENTE PARA QUE PASE AL ESTADO SELECCIONADO.</strong>
+                        </div>
+                    </div>
+					<input type="hidden" name="wpcargo_total_cobrar" id="hidden-wpcargo-total" value="0">
+					<input type="hidden" id="hidden-customer-payment" value="0">
+					<input type="hidden" name="pod_payment_methods" id="pod_payment_methods" value="[]">
+
+				<?php else : ?>
+
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <label><strong>📦 Costo Producto</strong></label>
+                        <input type="text" class="form-control" value="S/. <?php echo number_format( (float) get_post_meta( $shipment_id, 'wpcargo_costo_producto', true ), 2 ); ?>" readonly>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <label><strong>🚚 Costo Envío</strong></label>
+                        <input type="text" class="form-control" value="S/. <?php echo number_format( (float) get_post_meta( $shipment_id, 'wpcargo_costo_envio', true ), 2 ); ?>" readonly>
+                    </div>
+                </div>
+
                 <div class="col-md-12 mb-4">
                     <label><strong>💰 Total a recibir</strong></label>
                     <input type="text" id="monto_display_input" class="form-control" value="<?php echo number_format( $monto_display, 2 ); ?>" readonly>
                     <input type="hidden" id="hidden-customer-payment" value="<?php echo number_format( $monto_display, 2, '.', '' ); ?>">
-                    <!-- Enviar al servidor el total autoritativo (evita que el server use payload_sum) -->
                     <input type="hidden" name="wpcargo_total_cobrar" id="hidden-wpcargo-total" value="<?php echo number_format( $monto_display, 2, '.', '' ); ?>">
                 </div>
                 
                 <div class="col-md-12 mb-4" id="payment-area">
-
-                    <?php if ( $es_no_cobrar ): ?>
-
-                        <p style="color:red;font-weight:bold;">Este envío es NO COBRAR. El producto no será cobrado; registra aquí el pago del envío si corresponde.</p>
-
-                    <?php endif; ?>
-
                         <label><strong>Métodos de pago</strong></label>
 
                         <div id="payment-methods-list">
                         <?php
-                        /*
-                         * Precarga de métodos de pago: si existen datos previos en el
-                         * metadato `pod_payment_methods` del envío, reconstruimos las
-                         * filas dinámicas con el método y el monto correspondiente.
-                         */
                         $methods_json  = get_post_meta( $shipment_id, 'pod_payment_methods', true );
                         $methods_saved = json_decode( $methods_json, true );
                         if ( ! empty( $methods_saved ) && is_array( $methods_saved ) ) {
@@ -189,10 +187,11 @@
 
                         <p id="payment-error" style="color:red;font-weight:bold;display:none;"></p>
 
-                        <!-- Aquí guardamos el JSON final -->
                         <input type="hidden" name="pod_payment_methods" id="pod_payment_methods" value="[]">
-
                 </div>
+
+				<?php endif; ?>
+
 			</div>
 		</div>
 		<?php do_action( 'wpcpod_after_status_container', $get_sid ); ?>
@@ -205,13 +204,11 @@
 </form>
 <?php do_action( 'wpcpod_after_sign_popup_form' ); ?>
 <script>
-// Definir helper global de debug inmediatamente (disponible antes de DOM ready)
 const AJAXHANDLER_GLOBAL_POD = '<?php echo admin_url( 'admin-ajax.php' ); ?>';
 window.sendDebug = function(payload) {
     try {
         payload = payload || {};
         payload._merc_pod_client = 1;
-        // intentar obtener shipmentID desde DOM si no viene
         if (!payload.shipmentID) {
             var el = document.querySelector('[name="__pod_id"]');
             payload.shipmentID = el ? el.value : '';
@@ -248,23 +245,50 @@ jQuery(document).ready(function ($) {
 				}
 			});
 		});
-		// Upload directo de archivos sin exponer la biblioteca de medios
 		$( '#wpcargo-pod-img-btn' ).click(function(e) {
 			e.preventDefault();
-			// Abrir el input file oculto
-			$('#wpcargo-pod-file-input').click();
+
+			var swalAvailable = typeof window.Swal !== 'undefined' || typeof window.swal !== 'undefined';
+			var SwalLib = window.Swal || window.swal;
+
+			if (!swalAvailable || !SwalLib || typeof SwalLib.fire !== 'function') {
+				// Fallback: abrir selector de archivos directamente
+				$('#wpcargo-pod-file-input').click();
+				return;
+			}
+
+			SwalLib.fire({
+				title: 'Agregar imagen',
+				text: '¿Cómo deseas agregar la imagen?',
+				icon: 'question',
+				showCancelButton: true,
+				confirmButtonText: '📷 Tomar foto',
+				cancelButtonText: '🖼️ Subir imagen',
+				cancelButtonColor: '#3085d6',
+				confirmButtonColor: '#28a745',
+				reverseButtons: false,
+				footerHtml: '',
+				customClass: {
+					actions: 'merc-pod-swal-actions'
+				}
+			}).then(function(result) {
+				if (result.isConfirmed) {
+					// Tomar foto con la cámara
+					$('#wpcargo-pod-camera-input').val('').click();
+				} else if (result.dismiss === SwalLib.DismissReason.cancel) {
+					// Subir imagen desde archivos
+					$('#wpcargo-pod-file-input').val('').click();
+				}
+			});
 		});
 
-		// Procesar los archivos seleccionados
-		$('#wpcargo-pod-file-input').change(function(e) {
-			var files = this.files;
-			if (files.length === 0) return;
+		function mercPodSubirImagenes(files) {
+			if (!files || files.length === 0) return;
 
 			var formData = new FormData();
 			var validImages = 0;
 			var validExtensions = ['image/png', 'image/jpeg', 'image/jpg', 'image/gif', 'image/svg+xml'];
 
-			// Validar archivos
 			for (var i = 0; i < files.length; i++) {
 				if (validExtensions.indexOf(files[i].type) !== -1) {
 					formData.append('files[]', files[i]);
@@ -277,7 +301,6 @@ jQuery(document).ready(function ($) {
 				return;
 			}
 
-			// Mostrar indicador de carga
 			var originalText = $('#wpcargo-pod-img-btn').text();
 			$('#wpcargo-pod-img-btn').prop('disabled', true).css('opacity', '0.6').html('⏳ Procesando...');
 
@@ -291,7 +314,7 @@ jQuery(document).ready(function ($) {
 				data: formData,
 				processData: false,
 				contentType: false,
-				timeout: 120000, // 2 minutos de timeout
+				timeout: 120000,
 				success: function(response) {
 					$('#wpcargo-pod-img-btn').prop('disabled', false).css('opacity', '1').text(originalText);
 					if (response.success) {
@@ -310,10 +333,17 @@ jQuery(document).ready(function ($) {
 					}
 				}
 			});
+		}
 
-			// Limpiar el input para permitir subir los mismos archivos nuevamente si es necesario
-			$('#wpcargo-pod-file-input').val('');
-		});	
+		$('#wpcargo-pod-file-input').change(function() {
+			mercPodSubirImagenes(this.files);
+			$(this).val('');
+		});
+
+		$('#wpcargo-pod-camera-input').change(function() {
+			mercPodSubirImagenes(this.files);
+			$(this).val('');
+		});
 	});
 	// ---------------- MÉTODOS DE PAGO DINÁMICOS ------------------
     const paymentModes = <?php echo json_encode( get_option('wpcargo_payment_modes', []) ); ?>;

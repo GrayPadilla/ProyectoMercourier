@@ -40,34 +40,6 @@ function wpcfe_shipper_receiver_shipment_data_callback( $shipment_id ){
 	<td class="no-space"><?php echo $receiver_meta; ?></td>
     <?php
 }
-function wpcfe_shipment_number_header_callback(){
-    echo '<th>'.apply_filters( 'wpcfe_shipment_number_label', __('Tracking Number', 'wpcargo-frontend-manager' ) ).'</th>';
-}
-function wpcfe_shipment_number_data_callback( $shipment_id ){
-    $current_user   = wp_get_current_user();
-    $seen_metakey   = '_wpcfe_seen_'.$current_user->ID;
-    $page_url           = get_the_permalink( wpcfe_admin_page() );
-    $shipment_title     = get_the_title($shipment_id);
-    
-    if( wpcfe_disable_unseen() == false ){
-        $is_seen            = get_post_meta( $shipment_id, $seen_metakey, true );
-        $badge              = !$is_seen ? sprintf( '<span class="badge badge-pill bg-danger align-top">%s</span>', __('New', 'wpcargo-frontend-manager' ) )  : '';
-    }
-    $action_rows        = wpcfe_shipment_action_rows( $shipment_id );
-    $page_url           = !can_wpcfe_update_shipment() ? $page_url.'?wpcfe=track&num='.$shipment_title : $page_url.'?wpcfe=update&id='. (int)$shipment_id ;
-    ob_start();
-    ?>
-        <td>
-            <a href="<?php  echo esc_url( $page_url ); ?>" class="text-primary font-weight-bold"><?php echo esc_html($shipment_title) . $badge; ?></a>
-            <?php if( $action_rows ): ?>
-                <div class="wpcfe-action-row">
-                    <?php echo implode(" | ",$action_rows); ?>
-                </div>
-            <?php endif; ?>
-        </td>
-    <?php
-    echo ob_get_clean();
-}
 function wpcfe_shipment_table_header_status(){
     ?><th><?php _e('Status', 'wpcargo-frontend-manager' ); ?></th><?php
 }
@@ -129,10 +101,7 @@ function wpcfe_seen_shipment_callback(){
 
 // Update shipment hooks
 
-function wpcfe_initialize_table_hooks(){  
-    // Shipment table Hook
-    add_action( 'wpcfe_shipment_before_tracking_number_header', 'wpcfe_shipment_number_header_callback', 25 );
-    add_action( 'wpcfe_shipment_before_tracking_number_data', 'wpcfe_shipment_number_data_callback', 25 );
+function wpcfe_initialize_table_hooks(){
     // Shipment Shipper / Receiver Column
     add_action( 'wpcfe_shipment_after_tracking_number_header', 'wpcfe_shipper_receiver_shipment_header_callback', 25 );
     add_action( 'wpcfe_shipment_after_tracking_number_data', 'wpcfe_shipper_receiver_shipment_data_callback', 25 );

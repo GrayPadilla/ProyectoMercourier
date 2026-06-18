@@ -878,61 +878,6 @@ add_action('wp_footer', function() {
     <?php
 }, 20);
 
-// Escuchar actualizaciones de meta para detectar cambios de estado rápidos
-// Y TAMBIÉN para capturar estado anterior en actualizaciones masivas
-add_action('update_post_meta', 'merc_before_post_meta_update', 10, 4);
-function merc_before_post_meta_update($meta_id, $post_id, $meta_key, $meta_value) {
-    // Interceptar ANTES de que se actualice, para capturar el estado anterior
-    if ($meta_key !== 'wpcargo_status') {
-        return;
-    }
-    
-    $estado_actual = get_post_meta($post_id, 'wpcargo_status', true);
-    
-    // Si el nuevo estado es "LISTO PARA SALIR" y hay un estado anterior diferente
-    if (!empty($meta_value) && stripos($meta_value, 'LISTO PARA SALIR') !== false && !empty($estado_actual) && $estado_actual !== $meta_value) {
-        error_log("🔵 [BEFORE_META_UPDATE] Interceptando cambio de estado en Envío #" . $post_id);
-        error_log("   Estado Actual: '" . $estado_actual . "' -> Nuevo: '" . $meta_value . "'");
-        
-        // Guardar en meta específico ANTES de que se actualice
-        update_post_meta($post_id, 'wpcargo_status_anterior', $estado_actual);
-        error_log("   ✅ Meta 'wpcargo_status_anterior' establecido a: '" . $estado_actual . "'");
-        
-        // También agregar al historial - PERO SOLO si no existe un registro reciente igual
-        $historial = maybe_unserialize(get_post_meta($post_id, 'wpcargo_shipments_update', true));
-        if (!is_array($historial)) {
-            $historial = array();
-        }
-        
-        // Verificar si el primer registro ya es identical (evitar duplicados)
-        $crear_registro = true;
-        if (!empty($historial) && is_array($historial[0])) {
-            $first = $historial[0];
-            if ($first['status'] === $estado_actual && 
-                strpos($first['remarks'], 'Estado anterior') !== false) {
-                error_log("   ℹ️  Registro anterior ya existe, evitando duplicado");
-                $crear_registro = false;
-            }
-        }
-        
-        if ($crear_registro) {
-            // Crear registro del estado anterior
-            $previous_state_record = array(
-                'status' => $estado_actual,
-                'date' => date('Y-m-d'),
-                'time' => date('H:i:s'),
-                'updated-name' => wp_get_current_user()->display_name,
-                'location' => get_post_meta($post_id, 'location', true),
-                'remarks' => 'Estado anterior (cambio a LISTO PARA SALIR)'
-            );
-            
-            array_unshift($historial, $previous_state_record);
-            update_post_meta($post_id, 'wpcargo_shipments_update', $historial);
-            error_log("   ✅ Historial actualizado (total: " . count($historial) . " registros)");
-        }
-    }
-}
-
 if (! defined('WP_DEBUG')) {
 	die( 'Direct access forbidden.' );
 }
@@ -3008,222 +2953,85 @@ function agregar_campo_tipo_envio_formulario() {
     }
 }
 
-// AUTOCOMPLETAR REMITENTE
-function autocompletar_campos_formulario() {
-    if (isset($_GET['wpcfe']) && $_GET['wpcfe'] === 'add') {
-        $user = wp_get_current_user();
-        
-        // Obtener datos del usuario
-        $first_name = get_user_meta($user->ID, 'first_name', true);
-        $last_name = get_user_meta($user->ID, 'last_name', true);
-        $nombre_completo = trim($first_name . ' ' . $last_name);
-        $telefono = get_user_meta($user->ID, 'phone', true);
-        $distrito = get_user_meta($user->ID, 'distrito', true);
-        $direccion = get_user_meta($user->ID, 'billing_address_1', true);
-        $email = get_user_meta($user->ID, 'billing_email', true);
-        if(empty($email)) $email = $user->user_email;
-        $empresa = get_user_meta($user->ID, 'billing_company', true);
-        $link_maps_remitente = get_user_meta($user->ID, 'link_maps_remitente', true);
-        
-        ?>
-        <script>
-            console.log('=== AUTOCOMPLETAR REMITENTE ===');
-            
-            // Datos del usuario
-            var userData = {
-                nombre: '<?php echo esc_js($nombre_completo); ?>',
-                telefono: '<?php echo esc_js($telefono); ?>',
-                distrito: '<?php echo esc_js($distrito); ?>',
-                direccion: '<?php echo esc_js($direccion); ?>',
-                email: '<?php echo esc_js($email); ?>',
-                empresa: '<?php echo esc_js($empresa); ?>',
-                link_maps: '<?php echo esc_js($link_maps_remitente); ?>'
-            };
-            
-            console.log('Datos del usuario:', userData);
+// LIMPIEZA DEL FORMULARIO DE CREAR SERVICIO
+function merc_limpieza_formulario_crear_servicio() {
+    if ( ! isset( $_GET['wpcfe'] ) || $_GET['wpcfe'] !== 'add' ) {
+        return;
+    }
+    ?>
+    <script>
+    (function () {
+        'use strict';
 
-            // Función para autocompletar
-            function autocompletarRemitente() {
-                console.log('🔄 Autocompletando campos...');
-                
-                // Mapeo exacto de campos
-                var campos = {
-                    nombre: document.querySelector('[name="wpcargo_shipper_name"]'),
-                    telefono: document.querySelector('[name="wpcargo_shipper_phone"]'),
-                    distrito: document.querySelector('[name="wpcargo_distrito_recojo"]'),
-                    direccion: document.querySelector('[name="wpcargo_shipper_address"]'),
-                    email: document.querySelector('[name="wpcargo_shipper_email"]'),
-                    empresa: document.querySelector('[name="wpcargo_tiendaname"]'),
-                    link_maps: document.querySelector('[name="link_maps_remitente"]')
-                };
-                
-                var autocompletados = 0;
-                
-                // Autocompletar nombre
-                if (campos.nombre && userData.nombre) {
-                    campos.nombre.value = userData.nombre;
-                    triggerChange(campos.nombre);
-                    autocompletados++;
-                    console.log('✅ Nombre');
-                }
-                
-                // Autocompletar teléfono
-                if (campos.telefono && userData.telefono) {
-                    campos.telefono.value = userData.telefono;
-                    triggerChange(campos.telefono);
-                    autocompletados++;
-                    console.log('✅ Teléfono');
-                }
-                
-                // Autocompletar distrito
-                if (campos.distrito && userData.distrito) {
-                    var options = campos.distrito.options;
-                    for (var i = 0; i < options.length; i++) {
-                        if (options[i].value === userData.distrito || 
-                            options[i].text.trim() === userData.distrito) {
-                            campos.distrito.selectedIndex = i;
-                            triggerChange(campos.distrito);
-                            autocompletados++;
-                            console.log('✅ Distrito:', userData.distrito);
+        function triggerChange(element) {
+            if (!element) return;
+            var event = new Event('change', { bubbles: true });
+            element.dispatchEvent(event);
+            if (typeof jQuery !== 'undefined') {
+                jQuery(element).trigger('change');
+            }
+        }
+
+        function eliminarCampoUbicacion() {
+            var ubicacion = document.querySelector('#location, input[name="location"]');
+            if (ubicacion) {
+                var contenedor = ubicacion.closest('.form-group, .col-md-12, .col-md-6, div[class*="col"]');
+                if (contenedor) contenedor.remove();
+            }
+        }
+
+        function cambiarEstadoRecepcionado() {
+            var estadoSelect = document.querySelector(
+                'select.merc-estado-select, select[name="merc-estado-select"], select#merc-estado-select, select[name="status"], select[name="wpcargo_status"], select[name*="estado"], select[name*="status"]'
+            );
+
+            if (!estadoSelect) {
+                var allSelects = document.querySelectorAll('select');
+                for (var j = 0; j < allSelects.length; j++) {
+                    var options = allSelects[j].options;
+                    for (var k = 0; k < options.length; k++) {
+                        if (options[k].text.toUpperCase().includes('RECEPCIONADO')) {
+                            estadoSelect = allSelects[j];
                             break;
                         }
                     }
+                    if (estadoSelect) break;
                 }
-                
-                // Autocompletar dirección
-                if (campos.direccion && userData.direccion) {
-                    campos.direccion.value = userData.direccion;
-                    triggerChange(campos.direccion);
-                    autocompletados++;
-                    console.log('✅ Dirección');
-                }
-                
-                // Autocompletar email
-                if (campos.email && userData.email) {
-                    campos.email.value = userData.email;
-                    triggerChange(campos.email);
-                    autocompletados++;
-                    console.log('✅ Email');
-                }
-                
-                // Autocompletar empresa/tienda
-                if (campos.empresa && userData.empresa) {
-                    campos.empresa.value = userData.empresa;
-                    triggerChange(campos.empresa);
-                    autocompletados++;
-                    console.log('✅ Empresa/Tienda');
-                }
-                
-                // Autocompletar link maps remitente
-                if (campos.link_maps && userData.link_maps) {
-                    campos.link_maps.value = userData.link_maps;
-                    triggerChange(campos.link_maps);
-                    autocompletados++;
-                    console.log('✅ Link Google Maps');
-                }
-                
-                if (autocompletados > 0) {
-                    console.log('🎉 Autocompletados:', autocompletados, 'campos');
+            }
+
+            if (!estadoSelect) return false;
+
+            for (var i = 0; i < estadoSelect.options.length; i++) {
+                if (
+                    estadoSelect.options[i].text.trim().toUpperCase() === 'RECEPCIONADO' ||
+                    estadoSelect.options[i].value.trim().toUpperCase() === 'RECEPCIONADO'
+                ) {
+                    estadoSelect.selectedIndex = i;
+                    triggerChange(estadoSelect);
                     return true;
                 }
-                
-                return false;
             }
-            
-            function triggerChange(element) {
-                if (!element) return;
-                
-                var event = new Event('change', { bubbles: true });
-                element.dispatchEvent(event);
-                
-                if (typeof jQuery !== 'undefined') {
-                    jQuery(element).trigger('change');
-                }
+
+            return false;
+        }
+
+        var urlParams = new URLSearchParams(window.location.search);
+        var type = urlParams.get('type');
+
+        setTimeout(function () {
+            eliminarCampoUbicacion();
+
+            if (type === 'express') {
+                setTimeout(cambiarEstadoRecepcionado, 500);
+                setTimeout(cambiarEstadoRecepcionado, 1000);
+                setTimeout(cambiarEstadoRecepcionado, 1500);
             }
-            
-            // Eliminar campo ubicación si existe
-            function eliminarCampoUbicacion() {
-                var ubicacion = document.querySelector('#location, input[name="location"]');
-                if (ubicacion) {
-                    ubicacion.closest('.form-group, .col-md-12, .col-md-6, div[class*="col"]').remove();
-                    console.log('✂️ Campo ubicación eliminado');
-                }
-            }
-            
-            // Cambiar estado a RECEPCIONADO si es MERC AGENCIA
-            var urlParams = new URLSearchParams(window.location.search);
-            var type = urlParams.get('type');
-            
-            function cambiarEstadoRecepcionado() {
-                // Buscar el select de estado con múltiples estrategias
-                var estadoSelect = document.querySelector('select.merc-estado-select, select[name="merc-estado-select"], select#merc-estado-select, select[name="status"], select[name="wpcargo_status"], select[name*="estado"], select[name*="status"]');
-                
-                if (!estadoSelect) {
-                    // Si no lo encontró, buscar todos los selects y filtrar por opciones
-                    var allSelects = document.querySelectorAll('select');
-                    for (var j = 0; j < allSelects.length; j++) {
-                        var options = allSelects[j].options;
-                        for (var k = 0; k < options.length; k++) {
-                            if (options[k].text.toUpperCase().includes('RECEPCIONADO')) {
-                                estadoSelect = allSelects[j];
-                                break;
-                            }
-                        }
-                        if (estadoSelect) break;
-                    }
-                }
-                
-                if (!estadoSelect) {
-                    console.log('⚠️ Campo estado no encontrado. Selectores buscados: merc-estado-select, status, wpcargo_status');
-                    return false;
-                }
-                
-                var options = estadoSelect.options;
-                for (var i = 0; i < options.length; i++) {
-                    if (options[i].text.trim().toUpperCase() === 'RECEPCIONADO' || 
-                        options[i].value.trim().toUpperCase() === 'RECEPCIONADO') {
-                        estadoSelect.selectedIndex = i;
-                        triggerChange(estadoSelect);
-                        console.log('✅ Estado cambiado a RECEPCIONADO');
-                        return true;
-                    }
-                }
-                
-                return false;
-            }
-            
-            // Ejecutar autocompletado
-            setTimeout(function() {
-                eliminarCampoUbicacion();
-                autocompletarRemitente();
-                
-                // Si es express, cambiar estado
-                if (type === 'express') {
-                    console.log('🔹 Tipo: MERC AGENCIA - Cambiando estado...');
-                    setTimeout(cambiarEstadoRecepcionado, 500);
-                    setTimeout(cambiarEstadoRecepcionado, 1000);
-                    setTimeout(cambiarEstadoRecepcionado, 1500);
-                }
-            }, 1000);
-            
-            // Reintentar si es necesario
-            var intentos = 0;
-            var intervalo = setInterval(function() {
-                intentos++;
-                
-                if (autocompletarRemitente()) {
-                    clearInterval(intervalo);
-                    console.log('✅ Autocompletado exitoso');
-                } else if (intentos >= 10) {
-                    clearInterval(intervalo);
-                    console.log('⏹️ Máximo de intentos alcanzado');
-                }
-            }, 800);
-        </script>
-        <?php
-    }
+        }, 1000);
+    })();
+    </script>
+    <?php
 }
-add_action('wp_footer', 'autocompletar_campos_formulario');
+add_action('wp_footer', 'merc_limpieza_formulario_crear_servicio');
 
 // Filtrar visibilidad de opciones de estado según el tipo de envío (no afecta a motorizados)
 function merc_filter_statuses_by_tipo_envio() {
@@ -4059,787 +3867,6 @@ add_action('wp_logout', function() {
         LiteSpeed_Cache_API::purge_all('user logged out');
     }
 });
-
-// Calcular Envío con Desglose Automático
-function custom_shipment_multipackage_template() {
-    // Obtener el ID del envío en modo edición
-    $shipment_id = 0;
-    if (isset($_GET['id']) && !empty($_GET['id'])) {
-        $shipment_id = intval($_GET['id']);
-    } elseif (isset($_POST['shipment_id']) && !empty($_POST['shipment_id'])) {
-        $shipment_id = intval($_POST['shipment_id']);
-    } else {
-        global $post;
-        if (isset($post->ID)) {
-            $shipment_id = $post->ID;
-        }
-    }
-    
-    // Inicializar variables
-    $tipo_envio_actual = '';
-    $costo_envio_guardado = 0;
-    $costo_producto_guardado = 0;
-    $total_cobrar_guardado = 0;
-    $cargo_remitente_guardado = 0;
-    
-    // Si tenemos un ID válido, cargar datos desde la base de datos
-    if ($shipment_id > 0) {
-        $tipo_envio_actual = get_post_meta($shipment_id, 'tipo_envio', true);
-        $costo_envio_guardado = get_post_meta($shipment_id, 'wpcargo_costo_envio', true) ?: 0;
-        $costo_producto_guardado = get_post_meta($shipment_id, 'wpcargo_costo_producto', true) ?: 0;
-        $total_cobrar_guardado = get_post_meta($shipment_id, 'wpcargo_total_cobrar', true) ?: 0;
-        $cargo_remitente_guardado = get_post_meta($shipment_id, 'wpcargo_cargo_remitente', true) ?: 0;
-        error_log("📝 [EDIT_FORM_LOAD] Envío #{$shipment_id} | Tipo: {$tipo_envio_actual} | Costo envío: {$costo_envio_guardado}");
-    }
-    
-    // Si no hay tipo guardado, intentar desde URL (modo creación)
-    if (empty($tipo_envio_actual) && isset($_GET['type'])) {
-        $tipo_envio_actual = sanitize_text_field($_GET['type']);
-    }
-    ?>
-    <!-- Campos ocultos para guardar datos financieros -->
-    <input type="hidden" id="tipo-envio-actual" name="tipo_envio" value="<?php echo esc_attr($tipo_envio_actual); ?>">
-    <input type="hidden" id="hidden-product-cost" name="wpcargo_costo_producto" value="<?php echo esc_attr($costo_producto_guardado); ?>">
-    <input type="hidden" id="hidden-shipping-cost" name="wpcargo_costo_envio" value="<?php echo esc_attr($costo_envio_guardado); ?>">
-    <input type="hidden" id="hidden-customer-payment" name="wpcargo_total_cobrar" value="<?php echo esc_attr($total_cobrar_guardado); ?>">
-    <input type="hidden" id="hidden-sender-charge" name="wpcargo_cargo_remitente" value="<?php echo esc_attr($cargo_remitente_guardado); ?>">
-
-    <!-- Sección de costo de envío -->
-    <div class="col-md-12 mb-5" id="shipping-cost-section" data-tipo-envio="<?php echo esc_attr($tipo_envio_actual); ?>" data-costo-envio="<?php echo esc_attr($costo_envio_guardado); ?>">
-        <div class="card">
-            <div class="card-body">
-                <h5><b>💰 Desglose del envío:</b></h5>
-                
-                <!-- Desglose detallado -->
-                <div id="shipping-breakdown" style="font-size: 16px; margin-top: 15px;">
-                    <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #e0e0e0;">
-                        <span>Costo del producto:</span>
-                        <span style="font-weight: bold;">S/. <span id="product-cost">0.00</span></span>
-                    </div>
-                    <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #e0e0e0;">
-                        <span>Costo del envío:</span>
-                        <span style="font-weight: bold;">S/. <span id="shipping-cost">0.00</span></span>
-                    </div>
-                    <div style="display: flex; justify-content: space-between; padding: 12px 0; margin-top: 5px; background-color: #f8f9fa; padding: 10px; border-radius: 5px;">
-                        <span style="font-weight: bold; font-size: 18px;">Total a cobrar:</span>
-                        <span style="font-weight: bold; font-size: 18px; color: #1976D2;">S/. <span id="total-cost">0.00</span></span>
-                    </div>
-                </div>
-                
-                <!-- Mensaje de validación -->
-                <div id="validation-message" style="margin-top: 15px; padding: 10px; border-radius: 5px; display: none;"></div>
-                
-                <!-- Debug info (oculto en producción) -->
-                <div id="debug-info" style="font-size: 12px; margin-top: 10px; color: #666; display: none;"></div>
-            </div>
-        </div>
-    </div>
-    
-    <script type="text/javascript">
-    jQuery(document).ready(function($) {
-        // Tabla de precios por distrito para MERC AGENCIA (express)
-        const districtPricesExpress = {
-            "-- Seleccione uno --": 0.00,
-            "El Agustino": 8.00,
-            "San Juan de Lurigancho": 8.00,
-            "Santa Anita": 8.00,
-            "Ate - Salamanca - Vitarte": 10.00,
-            "La Molina": 8.00,
-            "Santa Clara": 10.00,
-            "Huaycan (Gloria Grande - Pariachi)": 12.00,
-            "Molina Alta (Musa - Portada del Sol - Planicie)": 10.00,
-            "Huachipa (Zoológico de Huachipa)": 10.00,
-            "Callao": 8.00,
-            "Bellavista": 8.00,
-            "La Punta - Callao": 10.00,
-            "La Perla": 8.00,
-            "Pueblo Libre": 8.00,
-            "Lima Cercado": 8.00,
-            "Breña": 8.00,
-            "San Miguel": 8.00,
-            "Magdalena": 8.00,
-            "Sarita Colonia (Comisaría Sarita Colonia)": 8.00,
-            "Carmen de la Legua": 8.00,
-            "Rímac": 8.00,
-            "Independencia": 8.00,
-            "Comas": 8.00,
-            "Carabayllo": 10.00,
-            "Puente Piedra": 10.00,
-            "Ventanilla": 10.00,
-            "Los Olivos": 8.00,
-            "San Martin de Porres": 8.00,
-            "Santiago de Surco": 8.00,
-            "San Juan de Miraflores": 8.00,
-            "Villa María del Triunfo": 10.00,
-            "Villa El Salvador": 10.00,
-            "Chorrillos": 8.00,
-            "Barranco": 8.00,
-            "Jesús María": 8.00,
-            "Lince": 8.00,
-            "La Victoria": 8.00,
-            "Miraflores": 8.00,
-            "San Isidro": 8.00,
-            "Surquillo": 8.00,
-            "San Borja": 8.00,
-            "San Luis": 8.00,
-            "Centro de Lima": 8.00
-        };
-
-        // Tabla de precios por distrito para MERC EMPRENDEDOR (normal)
-        const districtPricesNormal = {
-            "-- Seleccione uno --": 0.00,
-            "El Agustino": 10.00,
-            "San Juan de Lurigancho": 10.00,
-            "Santa Anita": 10.00,
-            "Ate - Salamanca - Vitarte": 10.00,
-            "La Molina": 10.00,
-            "Santa Clara": 12.00,
-            "Huaycan (Gloria Grande - Pariachi)": 14.00,
-            "Molina Alta (Musa - Portada del Sol - Planicie)": 12.00,
-            "Huachipa (Zoológico de Huachipa)": 12.00,
-            "Callao": 10.00,
-            "Bellavista": 10.00,
-            "La Punta - Callao": 12.00,
-            "La Perla": 10.00,
-            "Pueblo Libre": 10.00,
-            "Lima Cercado": 10.00,
-            "Breña": 10.00,
-            "San Miguel": 10.00,
-            "Magdalena": 10.00,
-            "Sarita Colonia (Comisaría Sarita Colonia)": 10.00,
-            "Carmen de la Legua": 10.00,
-            "Rímac": 10.00,
-            "Independencia": 10.00,
-            "Comas": 10.00,
-            "Carabayllo": 13.00,
-            "Puente Piedra": 13.00,
-            "Ventanilla": 13.00,
-            "Los Olivos": 10.00,
-            "San Martin de Porres": 10.00,
-            "Santiago de Surco": 10.00,
-            "San Juan de Miraflores": 10.00,
-            "Villa María del Triunfo": 12.00,
-            "Villa El Salvador": 12.00,
-            "Chorrillos": 10.00,
-            "Barranco": 10.00,
-            "Jesús María": 10.00,
-            "Lince": 10.00,
-            "La Victoria": 10.00,
-            "San Isidro": 10.00,
-            "Surquillo": 10.00,
-            "San Borja": 10.00,
-            "San Luis": 10.00,
-            "Centro de Lima": 10.00
-        };
-
-        // Variable global para cachear el tipo de envío
-        let cachedServiceType = null;
-        
-        // Función para obtener el tipo de servicio desde la URL o DB
-        function getServiceType() {
-            // Si ya obtuvimos el tipo, retornar del caché
-            if (cachedServiceType !== null) {
-                console.log('🔍 getServiceType - Usando tipo cacheado:', cachedServiceType);
-                return cachedServiceType;
-            }
-            
-            const urlParams = new URLSearchParams(window.location.search);
-            const type = urlParams.get('type');
-            const shipmentId = urlParams.get('id');
-            
-            console.log('🔍 getServiceType - URL params:', { type, id: shipmentId });
-            
-            // Si hay type en la URL (modo creación), usarlo
-            if (type === 'express') {
-                console.log('✅ Tipo detectado: EXPRESS (MERC AGENCIA)');
-                cachedServiceType = 'express';
-                return 'express';
-            }
-            if (type === 'full_fitment' || (type && type.toLowerCase().includes('full'))) {
-                console.log('✅ Tipo detectado: FULL FITMENT');
-                cachedServiceType = 'full_fitment';
-                return 'full_fitment';
-            }
-            
-            // Si hay shipment_id en la URL (modo edición), obtener tipo desde el servidor
-            if (shipmentId) {
-                console.log('🔍 getServiceType - Modo EDICIÓN detectado, consultando tipo desde data attributes...');
-                
-                // Intentar obtener desde data attribute
-                const shippingSection = $('#shipping-cost-section');
-                console.log('🔍 Elemento #shipping-cost-section encontrado:', shippingSection.length > 0);
-                
-                if (shippingSection.length > 0) {
-                    const tipoFromAttr = shippingSection.data('tipo-envio');
-                    console.log('🔍 Data attribute tipo-envio:', tipoFromAttr, '(tipo:', typeof tipoFromAttr, ')');
-                    
-                    if (tipoFromAttr && tipoFromAttr !== '') {
-                        const tipoLower = String(tipoFromAttr).toLowerCase().trim();
-                        console.log('✅ Tipo obtenido desde data attribute:', tipoFromAttr);
-                        
-                        if (tipoLower === 'express' || tipoLower.includes('agencia')) {
-                            cachedServiceType = 'express';
-                            return 'express';
-                        }
-                        if (tipoLower === 'full_fitment' || tipoLower.includes('full')) {
-                            cachedServiceType = 'full_fitment';
-                            return 'full_fitment';
-                        }
-                        cachedServiceType = 'normal';
-                        return 'normal';
-                    }
-                }
-            }
-            
-            // Verificar campo hidden como fallback
-            const tipoEnvioField = $('#tipo-envio-actual').val() || $('input[name="tipo_envio"]').val();
-            console.log('🔍 getServiceType - Campo hidden #tipo-envio-actual:', tipoEnvioField, '(existe:', $('#tipo-envio-actual').length > 0, ')');
-            
-            if (tipoEnvioField && tipoEnvioField.trim() !== '') {
-                const tipoLower = tipoEnvioField.toLowerCase().trim();
-                
-                if (tipoLower === 'express' || tipoLower.includes('agencia')) {
-                    console.log('✅ Tipo detectado desde campo hidden: EXPRESS');
-                    cachedServiceType = 'express';
-                    return 'express';
-                }
-                if (tipoLower === 'full_fitment' || tipoLower.includes('full')) {
-                    console.log('✅ Tipo detectado desde campo hidden: FULL FITMENT');
-                    cachedServiceType = 'full_fitment';
-                    return 'full_fitment';
-                }
-            }
-            
-            console.log('⚠️ Tipo no detectado - usando NORMAL por defecto');
-            cachedServiceType = 'normal';
-            return 'normal';
-        }
-
-        // Función para obtener la tabla de precios correcta
-        function getDistrictPrices() {
-            const serviceType = getServiceType();
-            const prices = serviceType === 'express' ? districtPricesExpress : districtPricesNormal;
-            console.log('💰 Tabla de precios seleccionada:', serviceType === 'express' ? 'EXPRESS' : 'NORMAL');
-            return prices;
-        }
-
-        // Función para encontrar coincidencias parciales
-        function findBestMatch(destination) {
-            const serviceType = getServiceType();
-            // Si es full_fitment, todas las tarifas por distrito son S/.10
-            if (serviceType === 'full_fitment') {
-                return 10.00;
-            }
-
-            const districtPrices = getDistrictPrices();
-            destination = destination.trim();
-            
-            // Comprobar coincidencia exacta primero
-            if (districtPrices[destination] !== undefined) {
-                return districtPrices[destination];
-            }
-            
-            // Comprobar si es un distrito principal
-            for (const district in districtPrices) {
-                const mainName = district.split('(')[0].split(',')[0].trim();
-                
-                if (mainName.toLowerCase() === destination.toLowerCase()) {
-                    return districtPrices[district];
-                }
-            }
-            
-            // Buscar coincidencias parciales
-            for (const district in districtPrices) {
-                if (district.toLowerCase().includes(destination.toLowerCase()) || 
-                    destination.toLowerCase().includes(district.toLowerCase())) {
-                    return districtPrices[district];
-                }
-            }
-            
-            return 0.00;
-        }
-
-        // Función para mostrar mensajes de validación
-        function showValidationMessage(message, type = 'warning') {
-            const messageDiv = $('#validation-message');
-            const colors = {
-                'warning': '#fff3cd',
-                'error': '#f8d7da',
-                'success': '#d4edda',
-                'info': '#d1ecf1'
-            };
-            const textColors = {
-                'warning': '#856404',
-                'error': '#721c24',
-                'success': '#155724',
-                'info': '#0c5460'
-            };
-            
-            messageDiv.css({
-                'background-color': colors[type],
-                'color': textColors[type],
-                'border': '1px solid ' + textColors[type]
-            }).html(message).show();
-        }
-
-        // Función para ocultar mensajes de validación
-        function hideValidationMessage() {
-            $('#validation-message').hide();
-        }
-        
-        // Función para actualizar el desglose del costo
-        function updateShippingBreakdown() {
-            // CORRECCIÓN: Usar wpcargo_distrito_destino
-            const destinationField = $('#wpcargo_distrito_destino');
-            let destination = '';
-            
-            if (destinationField.length > 0) {
-                // Si es un select
-                if (destinationField.is('select')) {
-                    destination = destinationField.find('option:selected').text() || destinationField.val() || '';
-                } else {
-                    destination = destinationField.val() || '';
-                }
-            }
-            
-            const montoInput = $('#wpcargo_monto');
-            let totalAmount = 0;
-            
-            // Buscar el campo de monto
-            if (montoInput.length > 0) {
-                totalAmount = parseFloat(montoInput.val()) || 0;
-            } else {
-                // Intentar con otros posibles nombres de campo
-                const altMontoInput = $('input[name*="monto"], input[id*="monto"]');
-                if (altMontoInput.length > 0) {
-                    totalAmount = parseFloat(altMontoInput.val()) || 0;
-                }
-            }
-            
-            console.log('Distrito de destino:', destination);
-            console.log('Monto total ingresado:', totalAmount);
-            console.log('Tipo de servicio:', getServiceType());
-            
-            // Verificar si estamos en modo edición y ya hay un costo de envío guardado
-            const hiddenShippingCostField = $('#hidden-shipping-cost');
-            const existingShippingCost = parseFloat(hiddenShippingCostField.val()) || 0;
-            const isEditMode = $('input[name="post_ID"]').length > 0 || $('input[name="shipment_id"]').length > 0;
-            
-            // Buscar el precio de envío para el distrito seleccionado
-            const shippingCost = findBestMatch(destination);
-            
-            console.log('🔍 Modo edición:', isEditMode, '| Costo guardado:', existingShippingCost, '| Costo calculado:', shippingCost);
-            
-            // Si estamos en modo edición y ya hay un costo guardado, usar ese en lugar de recalcular
-            // SOLO recalcular si el usuario cambia el distrito
-            let finalShippingCost = shippingCost;
-            if (isEditMode && existingShippingCost > 0 && !window.districtChanged) {
-                finalShippingCost = existingShippingCost;
-                console.log('✅ Usando costo guardado:', finalShippingCost);
-            } else {
-                console.log('🔄 Calculando nuevo costo:', finalShippingCost);
-            }
-            
-            // Calcular el costo del producto
-            let productCost = totalAmount - finalShippingCost;
-            
-            // Validaciones
-            if (totalAmount === 0) {
-                hideValidationMessage();
-                $('#product-cost').text('0.00');
-                $('#shipping-cost').text(finalShippingCost.toFixed(2));
-                $('#total-cost').text(finalShippingCost.toFixed(2));
-                return;
-            }
-            
-            if (totalAmount < finalShippingCost) {
-                showValidationMessage(
-                    '⚠️ Advertencia: El monto total (S/. ' + totalAmount.toFixed(2) + 
-                    ') es menor que el costo de envío (S/. ' + finalShippingCost.toFixed(2) + 
-                    '). El costo del producto será negativo.',
-                    'warning'
-                );
-            } else if (totalAmount === finalShippingCost) {
-                showValidationMessage(
-                    'ℹ️ El monto total coincide exactamente con el costo de envío. ' +
-                    'El costo del producto es S/. 0.00',
-                    'info'
-                );
-                productCost = 0;
-            } else {
-                hideValidationMessage();
-            }
-            
-            // Actualizar los valores mostrados
-            $('#product-cost').text(productCost.toFixed(2));
-            $('#shipping-cost').text(finalShippingCost.toFixed(2));
-            $('#total-cost').text(totalAmount.toFixed(2));
-
-            // ✅ ACTUALIZAR CAMPOS OCULTOS PARA SISTEMA FINANCIERO
-            $('#hidden-product-cost').val(productCost.toFixed(2));
-            $('#hidden-shipping-cost').val(finalShippingCost.toFixed(2));
-            $('#hidden-customer-payment').val(totalAmount.toFixed(2));
-
-            // Mostrar información de depuración (solo en desarrollo)
-            $('#debug-info').html(
-                'Servicio: ' + (getServiceType() === 'express' ? 'MERC AGENCIA' : 'MERC EMPRENDEDOR') +
-                ' | Distrito: "' + destination +
-                '" | Envío: S/. ' + finalShippingCost.toFixed(2) +
-                ' | Producto: S/. ' + productCost.toFixed(2) +
-                ' | Total: S/. ' + totalAmount.toFixed(2)
-            );
-        }
-
-        // CORRECCIÓN: Escuchar cambios en wpcargo_distrito_destino
-        $(document).on('change', '#wpcargo_distrito_destino', function() {
-            console.log('Cambio detectado en distrito destino');
-            window.districtChanged = true; // Marcar que el usuario cambió el distrito
-            updateShippingBreakdown();
-        });
-        
-        // Escuchar cambios en el campo de monto
-        $(document).on('input change', '#wpcargo_monto, input[name*="monto"], input[id*="monto"]', function() {
-            console.log('Cambio detectado en monto');
-            updateShippingBreakdown();
-        });
-        
-        // Escuchar cambios en el modo de pago (para actualizar cuando el campo monto aparece/desaparece)
-        $(document).on('change', 'select[name="payment_wpcargo_mode_field"]', function() {
-            console.log('Cambio detectado en modo de pago:', $(this).val());
-            // Esperar un momento a que el campo de monto se actualice o muestre/oculte
-            setTimeout(function() {
-                updateShippingBreakdown();
-            }, 300);
-        });
-        
-        // También escuchar con selectWoo/Select2 si está en uso
-        $(document).on('select2:select', '#wpcargo_distrito_destino', function() {
-            console.log('Select2 detectado en distrito destino');
-            updateShippingBreakdown();
-        });
-        
-        // Ejecutar inmediatamente para el valor inicial
-        setTimeout(function() {
-            console.log('Inicializando cálculo de envío...');
-            updateShippingBreakdown();
-        }, 500);
-        
-        // Verificar periódicamente si los campos aparecen (carga dinámica)
-        let checkInterval = setInterval(function() {
-            const distritoField = $('#wpcargo_distrito_destino');
-            const montoField = $('#wpcargo_monto, input[name*="monto"], input[id*="monto"]');
-            
-            if (distritoField.length > 0 && montoField.length > 0) {
-                console.log('Campos encontrados, ejecutando cálculo inicial');
-                updateShippingBreakdown();
-                clearInterval(checkInterval);
-            }
-        }, 500);
-        
-        // Detener el intervalo después de 10 segundos
-        setTimeout(function() {
-            clearInterval(checkInterval);
-        }, 10000);
-    });
-    </script>
-    
-    <style>
-        #shipping-breakdown {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        #validation-message {
-            animation: slideIn 0.3s ease-in-out;
-        }
-        
-        @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        /* Responsive */
-        @media (max-width: 576px) {
-            #shipping-breakdown {
-                font-size: 14px;
-            }
-            
-            #shipping-breakdown div:last-child {
-                font-size: 16px !important;
-            }
-        }
-    </style>
-    <?php
-}
-add_action('after_wpcfe_shipment_form_fields', 'custom_shipment_multipackage_template', 1, 1);
-
-// Selector de productos para envíos - VERSION OPTIMIZADA CON MÚLTIPLES HOOKS
-add_action('after_wpcfe_shipment_form_fields', 'merc_producto_selector_envio', 5, 1);
-add_action('wpcfe_after_shipment_form_fields', 'merc_producto_selector_envio', 5, 1);
-add_action('wpcfe_shipment_form_fields', 'merc_producto_selector_envio', 999, 1);
-function merc_producto_selector_envio($shipment_id) {
-    // SOLO mostrar si el tipo de envío es MERC FULL FITMENT
-    if (!isset($_GET['type']) || $_GET['type'] !== 'full_fitment') {
-        error_log("⚠️ Tipo de envío no es full_fitment, saltando selector de productos");
-        return;
-    }
-
-    // Evitar renderizado múltiple
-    static $ya_renderizado = false;
-    if ($ya_renderizado) {
-        error_log("⚠️ Selector ya renderizado, saltando");
-        return;
-    }
-    $ya_renderizado = true;
-    
-    error_log("📦 === INICIO SELECTOR PRODUCTOS ===");
-    error_log("Shipment ID: " . $shipment_id);
-    error_log("Hook actual: " . current_action());
-    
-    // Obtener usuario actual
-    $current_user_id = get_current_user_id();
-    $es_admin = current_user_can('manage_options') || current_user_can('edit_others_posts');
-    
-    // Construir meta_query para filtrar por cliente
-    $meta_query = array();
-    if (!$es_admin) {
-        // Clientes solo ven productos asignados específicamente a ellos
-        $meta_query = array(
-            array(
-                'key' => '_merc_producto_cliente_asignado',
-                'value' => $current_user_id,
-                'compare' => '='
-            )
-        );
-    }
-    
-    // Obtener productos disponibles filtrados por cliente
-    $productos = get_posts(array(
-        'post_type' => 'merc_producto',
-        'posts_per_page' => -1,
-        'post_status' => 'publish',
-        'orderby' => 'title',
-        'order' => 'ASC',
-        'meta_query' => $meta_query
-    ));
-    
-    error_log("Total productos encontrados para usuario #{$current_user_id}: " . count($productos));
-    
-    // Filtrar manualmente productos sin_asignar o sin estado (nuevos)
-    // IMPORTANTE: Incluir también productos "asignados" si tienen stock disponible sin asignar
-    $productos_disponibles = array();
-    foreach ($productos as $prod) {
-        $estado = get_post_meta($prod->ID, '_merc_producto_estado', true);
-        $cantidad = merc_get_product_stock($prod->ID);
-        
-        error_log("Producto ID {$prod->ID} - Título: {$prod->post_title} - Estado: '{$estado}' - Cantidad disponible: '{$cantidad}'");
-        
-        // Incluir si:
-        // 1. No tiene estado (nuevo) O está sin_asignar, O
-        // 2. Está asignado pero TIENE stock disponible sin asignar
-        if (empty($estado) || $estado === 'sin_asignar' || ($estado === 'asignado' && intval($cantidad) > 0)) {
-            $productos_disponibles[] = $prod;
-            error_log("  ✅ Producto ID {$prod->ID} INCLUIDO (estado: '{$estado}' | stock disponible: {$cantidad})");
-        } else {
-            error_log("  ❌ Producto ID {$prod->ID} EXCLUIDO (estado: '{$estado}' | stock disponible: {$cantidad})");
-        }
-    }
-    
-    error_log("Total productos disponibles después del filtro: " . count($productos_disponibles));
-    
-    // Obtener producto ya seleccionado (si existe)
-    $producto_seleccionado = get_post_meta($shipment_id, '_merc_producto_id', true);
-    $cantidad_seleccionada = get_post_meta($shipment_id, '_merc_producto_cantidad', true);
-    
-    error_log("Producto seleccionado: " . ($producto_seleccionado ? $producto_seleccionado : 'ninguno'));
-    
-    // Si hay producto seleccionado y no está en la lista, agregarlo
-    if ($producto_seleccionado) {
-        $producto_actual = get_post($producto_seleccionado);
-        if ($producto_actual) {
-            $ya_incluido = false;
-            foreach ($productos_disponibles as $p) {
-                if ($p->ID == $producto_seleccionado) {
-                    $ya_incluido = true;
-                    break;
-                }
-            }
-            if (!$ya_incluido) {
-                $productos_disponibles[] = $producto_actual;
-                error_log("Producto seleccionado agregado a la lista");
-            }
-        }
-    }
-    
-    if (empty($cantidad_seleccionada)) {
-        $cantidad_seleccionada = 1;
-    }
-    
-    error_log("⏳ Iniciando renderizado HTML...");
-    
-    // FORZAR salida inmediata
-    ob_start();
-    ?>
-    
-    <!-- INICIO SELECTOR PRODUCTOS MERC -->
-    <?php wp_nonce_field('merc_envio_producto_guardar', 'merc_envio_producto_nonce'); ?>
-    <div class="col-md-12 mb-4" id="merc_producto_wrapper" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
-        <div class="card">
-            <section class="card-header">
-                <strong>📦 Producto a Enviar</strong>
-            </section>
-            <section class="card-body">
-                <?php if (empty($productos_disponibles)): ?>
-                    <div class="alert alert-warning">
-                        <strong>⚠️ No hay productos disponibles</strong><br>
-                        Por favor, agrega productos al almacén desde el panel de administración.
-                    </div>
-                <?php else: ?>
-                <div class="row">
-                    <div class="col-md-8">
-                        <div class="form-group">
-                            <label for="merc_producto_id"><strong>Producto *</strong></label>
-                            <select id="merc_producto_id" name="merc_producto_id" class="form-control" required style="display: block !important; width: 100% !important;">
-                                <option value="">-- Selecciona un producto --</option>
-                                <?php foreach ($productos_disponibles as $prod): 
-                                    $stock = merc_get_product_stock($prod->ID);
-                                    $stock = !empty($stock) ? intval($stock) : 0;
-                                    $codigo = get_post_meta($prod->ID, '_merc_producto_codigo_barras', true);
-                                    $selected = ($prod->ID == $producto_seleccionado) ? 'selected' : '';
-                                    
-                                    error_log("Renderizando option para producto ID {$prod->ID}");
-                                ?>
-                                    <option value="<?php echo $prod->ID; ?>" 
-                                            data-stock="<?php echo $stock; ?>"
-                                            <?php echo $selected; ?>>
-                                        <?php echo esc_html($prod->post_title); ?> - Stock: <?php echo $stock; ?>
-                                        <?php if ($codigo): ?> [<?php echo esc_html($codigo); ?>]<?php endif; ?>
-                                    </option>
-                                <?php endforeach; ?>
-                            </select>
-                            <small class="text-muted">Solo se muestran productos disponibles (<?php echo count($productos_disponibles); ?> total)</small>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <label for="merc_producto_cantidad"><strong>Cantidad *</strong></label>
-                            <input type="number" 
-                                   id="merc_producto_cantidad" 
-                                   name="merc_producto_cantidad" 
-                                   class="form-control" 
-                                   value="<?php echo esc_attr($cantidad_seleccionada); ?>" 
-                                   min="1" 
-                                   max="999" 
-                                   required
-                                   style="display: block !important; width: 100% !important;">
-                            <small id="merc_stock_display" class="text-muted"></small>
-                        </div>
-                    </div>
-                </div>
-                <div id="merc_stock_warning" class="alert alert-warning" style="display: none;">
-                    <strong>⚠️</strong> <span id="merc_warning_text"></span>
-                </div>
-                <?php endif; ?>
-            </section>
-        </div>
-    </div>
-    <!-- FIN SELECTOR PRODUCTOS MERC -->
-    
-    <script>
-    console.log('🚀 SCRIPT SELECTOR PRODUCTOS CARGADO - TIMESTAMP:', new Date().toISOString());
-    
-    jQuery(document).ready(function($) {
-        console.log('📦 jQuery ready - Inicializando selector productos');
-        
-        const $wrapper = $('#merc_producto_wrapper');
-        console.log('Wrapper encontrado:', $wrapper.length > 0);
-        console.log('Wrapper visible:', $wrapper.is(':visible'));
-        
-        const $productoSelect = $('#merc_producto_id');
-        const $cantidadInput = $('#merc_producto_cantidad');
-        const $stockDisplay = $('#merc_stock_display');
-        const $warning = $('#merc_stock_warning');
-        const $warningText = $('#merc_warning_text');
-        
-        console.log('Select encontrado:', $productoSelect.length > 0);
-        console.log('Opciones en select:', $productoSelect.find('option').length);
-        
-        function actualizarStock() {
-            const $option = $productoSelect.find('option:selected');
-            const stock = parseInt($option.data('stock')) || 0;
-            const cantidad = parseInt($cantidadInput.val()) || 0;
-            
-            if (!$option.val()) {
-                $stockDisplay.text('');
-                $warning.hide();
-                return;
-            }
-            
-            $stockDisplay.html('📦 Disponible: <strong>' + stock + '</strong>');
-            $cantidadInput.attr('max', stock);
-            
-            if (cantidad > stock) {
-                $warning.show();
-                $warningText.text('Stock insuficiente. Solo hay ' + stock + ' unidades disponibles.');
-                $cantidadInput.val(stock);
-            } else {
-                $warning.hide();
-            }
-        }
-        
-        $productoSelect.on('change', actualizarStock);
-        $cantidadInput.on('input change', actualizarStock);
-        
-        // Validar antes de enviar
-        $('form.wpcfe-new-shipment-form, form[name="wpcfe-shipment-form"]').on('submit', function(e) {
-            const productoId = $productoSelect.val();
-            
-            if (!productoId) {
-                e.preventDefault();
-                alert('⚠️ Debes seleccionar un producto');
-                $productoSelect.focus();
-                return false;
-            }
-            
-            const stock = parseInt($productoSelect.find('option:selected').data('stock')) || 0;
-            const cantidad = parseInt($cantidadInput.val()) || 0;
-            
-            if (cantidad > stock) {
-                e.preventDefault();
-                alert('⚠️ Stock insuficiente. Solo hay ' + stock + ' unidades.');
-                $cantidadInput.focus();
-                return false;
-            }
-        });
-        
-        // Inicializar
-        actualizarStock();
-        
-        console.log('✅ Selector de productos inicializado correctamente');
-    });
-    </script>
-    
-    <style>
-    #merc_producto_wrapper {
-        display: block !important;
-        visibility: visible !important;
-        opacity: 1 !important;
-        position: relative !important;
-        z-index: 1 !important;
-    }
-    </style>
-    <?php
-    $html = ob_get_clean();
-    echo $html;
-    
-    error_log("✅ HTML renderizado - Longitud: " . strlen($html) . " caracteres");
-    error_log("=== FIN SELECTOR PRODUCTOS ===");
-}
 
 // CÓDIGO ANTIGUO DESACTIVADO
 /*
@@ -6497,6 +5524,10 @@ function merc_get_pago_marca_voucher_thumb_html( $shipment_id, $size = 24 ) {
  * Comprueba si un envío está vinculado a una liquidación y esa liquidación fue verificada.
  */
 function merc_is_shipment_liquidation_verified( $shipment_id ) {
+    if ( ! empty( get_post_meta( $shipment_id, 'merc_remitente_liquidated', true ) ) ) {
+        return true;
+    }
+
     $liq_id = get_post_meta( $shipment_id, 'wpcargo_included_in_liquidation', true );
     if ( empty( $liq_id ) ) return false;
 
@@ -6514,74 +5545,6 @@ function merc_is_shipment_liquidation_verified( $shipment_id ) {
     }
 
     return false;
-}
-
-// ---------------------------------------------------------------------------
-// SISTEMA FINANCIERO - GUARDADO DE DATOS (sin cambios)
-// ---------------------------------------------------------------------------
-
-add_action( 'wpcargo_after_save_shipment', 'merc_save_financial_data', 20, 1 );
-add_action( 'save_post_wpcargo_shipment', 'merc_save_financial_data', 20, 1 );
-function merc_save_financial_data( $post_id ) {
-    if ( get_post_type( $post_id ) !== 'wpcargo_shipment' ) {
-        return;
-    }
-
-    error_log("💰 [SAVE_FINANCIAL] === GUARDANDO DATOS FINANCIEROS - Envío #{$post_id} ===");
-    
-    if ( isset( $_POST['wpcargo_costo_producto'] ) ) {
-        $costo_producto = sanitize_text_field( $_POST['wpcargo_costo_producto'] );
-        error_log("💰 [SAVE_FINANCIAL] Costo producto desde POST: {$costo_producto}");
-        update_post_meta( $post_id, 'wpcargo_costo_producto', $costo_producto );
-    }
-    
-    if ( isset( $_POST['wpcargo_costo_envio'] ) ) {
-        $costo_envio = sanitize_text_field( $_POST['wpcargo_costo_envio'] );
-        error_log("💰 [SAVE_FINANCIAL] Costo envío desde POST: {$costo_envio}");
-        
-        // Verificar el distrito para debugging
-        $distrito = isset($_POST['wpcargo_distrito_destino']) ? sanitize_text_field($_POST['wpcargo_distrito_destino']) : 'N/A';
-        error_log("💰 [SAVE_FINANCIAL] Distrito destino: {$distrito}");
-        
-        update_post_meta( $post_id, 'wpcargo_costo_envio', $costo_envio );
-        error_log("💰 [SAVE_FINANCIAL] Costo envío GUARDADO en meta: {$costo_envio}");
-    } else {
-        error_log("⚠️ [SAVE_FINANCIAL] wpcargo_costo_envio NO está en POST");
-    }
-    
-    if ( isset( $_POST['wpcargo_cargo_remitente'] ) ) {
-        $cargo_remitente = sanitize_text_field( $_POST['wpcargo_cargo_remitente'] );
-        error_log("💰 [SAVE_FINANCIAL] Cargo remitente desde POST: {$cargo_remitente}");
-        update_post_meta( $post_id, 'wpcargo_cargo_remitente', $cargo_remitente );
-    }
-    
-    error_log("💰 [SAVE_FINANCIAL] === FIN GUARDADO DATOS FINANCIEROS ===");
-    
-    // Verificar el valor inmediatamente después de guardar
-    $costo_envio_verificado = get_post_meta($post_id, 'wpcargo_costo_envio', true);
-    error_log("🔍 [SAVE_FINANCIAL] Verificación inmediata - Costo envío en DB: {$costo_envio_verificado}");
-
-    $monto = get_post_meta( $post_id, 'wpcargo_monto', true );
-    $monto = floatval( $monto );
-
-    if ( $monto == 0 ) {
-        update_post_meta( $post_id, 'wpcargo_quien_paga', 'remitente' );
-        update_post_meta( $post_id, 'wpcargo_cobrado_por_motorizado', '0' );
-    } else {
-        // Preferimos que la marca (registered_shipper) asuma la responsabilidad
-        // en lugar de marcar al cliente final como pagador.
-        update_post_meta( $post_id, 'wpcargo_quien_paga', 'remitente' );
-        update_post_meta( $post_id, 'wpcargo_cobrado_por_motorizado', $monto );
-    }
-
-    if ( ! get_post_meta( $post_id, 'wpcargo_estado_pago_motorizado', true ) ) {
-        update_post_meta( $post_id, 'wpcargo_estado_pago_motorizado', 'pendiente' );
-    }
-    // El estado de liquidación del remitente ahora se maneja a nivel de usuario,
-    // no se almacena por envío. No setear meta 'wpcargo_estado_pago_remitente' aquí.
-    if ( ! get_post_meta( $post_id, 'wpcargo_cliente_pago_a', true ) ) {
-        update_post_meta( $post_id, 'wpcargo_cliente_pago_a', 'pendiente' );
-    }
 }
 
 // Hook adicional para verificar el valor FINAL después de todos los hooks
@@ -6787,13 +5750,15 @@ function merc_motorizado_resumen( $driver_id ) {
     foreach ( $shipments as $shipment ) {
         $estado  = $shipment->estado ? $shipment->estado : 'pendiente';
         $totales = get_payment_totals_by_method( $shipment->ID );
-        
-        if ( $estado === 'pendiente' ) {
+        $is_liquidated = ! empty( get_post_meta( $shipment->ID, 'merc_remitente_liquidated', true ) )
+            || ! empty( get_post_meta( $shipment->ID, 'wpcargo_included_in_liquidation', true ) );
+
+        if ( strtolower( $estado ) === 'entregado' && ! $is_liquidated ) {
             $entregas_pendientes++;
         }
-        
+
         $total_recaudado += $totales['total'];
-        $total_efectivo  += $totales['efectivo'];
+        $total_efectivo  += ( $is_liquidated ? 0 : $totales['efectivo'] );
         $total_merc      += get_recaudado_merc( $shipment->ID );
         $total_marca     += $totales['pago_marca'];
     }
@@ -6809,7 +5774,7 @@ function merc_motorizado_resumen( $driver_id ) {
             <span class="merc-summary-value" style="color: #e74c3c;">S/. <?php echo number_format( $total_efectivo, 2 ); ?></span>
         </div>
         <div class="merc-summary-item">
-            <span>Entregas pendientes de liquidación:</span>
+            <span>Entregas pendientes:</span>
             <span class="merc-summary-value"><?php echo $entregas_pendientes; ?></span>
         </div>
     </div>
@@ -6884,6 +5849,13 @@ function merc_motorizado_entregas( $driver_id ) {
                 $totales           = get_payment_totals_by_method( $shipment->ID );
                 // Mostrar POS: usar el monto que llega (sin distinción bruto/neto)
                 $pos_display = get_pos_net_for_shipment( $shipment->ID, $totales );
+                $tracking_number = $shipment->post_title;
+                $tracking_url    = 'https://mercourier.com/dashboard/?wpcfe=track&num=' . rawurlencode( $tracking_number );
+                $estado_envio    = ! empty( $shipment->estado_envio ) ? $shipment->estado_envio : 'SIN ESTADO';
+                $marca_nombre    = ! empty( $shipment->tienda_name ) ? $shipment->tienda_name : $shipment->shipper_name;
+                if ( empty( $marca_nombre ) ) {
+                    $marca_nombre = '-';
+                }
 
                 // Acumular totales
                 $total_efectivo_sum += $totales['efectivo'];
@@ -6893,8 +5865,10 @@ function merc_motorizado_entregas( $driver_id ) {
                 $total_general += $totales['total'];
                 ?>
                 <tr>
-                    <td><strong>#<?php echo esc_html( $shipment->post_title ); ?></strong></td>
+                    <td><strong><a href="<?php echo esc_url( $tracking_url ); ?>" target="_blank" rel="noopener noreferrer">#<?php echo esc_html( $tracking_number ); ?></a></strong></td>
                     <td><?php echo esc_html( $shipment->destino ); ?></td>
+                    <td><?php echo esc_html( $estado_envio ); ?></td>
+                    <td><?php echo esc_html( $marca_nombre ); ?></td>
                     <td>S/. <?php echo number_format( $totales['efectivo'], 2 ); ?></td>
                     <td>S/. <?php echo number_format( $totales['pago_merc'], 2 ); ?></td>
                     <td>S/. <?php echo number_format( $totales['pago_marca'], 2 ); ?></td>
@@ -6906,7 +5880,7 @@ function merc_motorizado_entregas( $driver_id ) {
         </tbody>
         <tfoot>
             <tr>
-                <td colspan="2" style="text-align: right;"><strong>TOTAL DEL DÍA:</strong></td>
+                <td colspan="4" style="text-align: right;"><strong>TOTAL DEL DÍA:</strong></td>
                 <td><strong>S/. <?php echo number_format( $total_efectivo_sum, 2 ); ?></strong></td>
                 <td><strong>S/. <?php echo number_format( $total_pago_merc_sum, 2 ); ?></strong></td>
                 <td><strong>S/. <?php echo number_format( $total_pago_marca_sum, 2 ); ?></strong></td>
@@ -7744,6 +6718,7 @@ function merc_admin_resumen_general( $fecha_inicio, $fecha_fin, $filtro_estado )
     $por_cobrar_mot   = 0.0;
     $por_pagar_rem    = 0.0;
     $pos_recaudado    = 0.0; // nuevo: recaudado por POS (para mostrar en panel)
+    $pos_recaudado_bruto = 0.0;
     $total_entregados = 0.0; // total de envíos ENTREGADOS (para Total General)
     $wpcargo_monto_total = 0.0; // total historic of shipment amount
     $has_remitente_liquidated = false; // detect if any shipment was liquidated for remitente
@@ -7806,7 +6781,7 @@ function merc_admin_resumen_general( $fecha_inicio, $fecha_fin, $filtro_estado )
         // Ingresos por envío: sumar el SERVICIO de los envíos del remitente
         // sin depender del botón de liquidación.
         // Replica la lógica de "Por Pagar (Envíos)" de las tarjetas de clientes.
-        if ( $quien_paga === 'remitente' && $envio > 0 ) {
+        if ( $quien_paga === 'remitente' && empty( $estado_remitente ) && $envio > 0 ) {
             $ingresos_envios += $envio;
             error_log(sprintf(
                 '   ✅ SUMADO A INGRESOS ENVÍOS: S/. %01.2f (Total: S/. %01.2f)',
@@ -7875,16 +6850,45 @@ function merc_admin_resumen_general( $fecha_inicio, $fecha_fin, $filtro_estado )
         error_log(sprintf('   Efectivo Total acumulado: S/. %01.2f', $efectivo_total));
         
         // Recaudado por MERC y por MARCA: sólo contar envíos NO liquidados aún
-        $recaudado_merc_shipment = get_recaudado_merc( $shipment->ID );
-        $recaudado_merc += $recaudado_merc_shipment;
-        $recaudado_marca += $totales['pago_marca'];
-        error_log(sprintf('   ✅ SUMADO A RECAUDADO_MERC: S/. %01.2f (Total: S/. %01.2f)', $recaudado_merc_shipment, $recaudado_merc));
-        error_log(sprintf('   ✅ SUMADO A RECAUDADO_MARCA: S/. %01.2f (Total: S/. %01.2f)', $totales['pago_marca'], $recaudado_marca));
+        if ( empty( $estado_remitente ) ) {
+            $recaudado_merc_shipment = get_recaudado_merc( $shipment->ID );
+            $recaudado_merc += $recaudado_merc_shipment;
+            $recaudado_marca += $totales['pago_marca'];
+            error_log(sprintf('   ✅ SUMADO A RECAUDADO_MERC: S/. %01.2f (Total: S/. %01.2f)', $recaudado_merc_shipment, $recaudado_merc));
+            error_log(sprintf('   ✅ SUMADO A RECAUDADO_MARCA: S/. %01.2f (Total: S/. %01.2f)', $totales['pago_marca'], $recaudado_marca));
+        } else {
+            error_log(sprintf('   ❌ NO SUMADO a recaudados (estado_remitente no vacío: %s)', $estado_remitente));
+        }
 
         // Recaudado por POS (nuevo): sumar POS de envíos no liquidados
-        $pos_display = get_pos_net_for_shipment( $shipment->ID, $totales );
-        $pos_recaudado += $pos_display;
-        error_log(sprintf('   ✅ SUMADO A POS_RECAUDADO: S/. %01.2f (Total: S/. %01.2f)', $pos_display, $pos_recaudado));
+            $pos_display = get_pos_net_for_shipment( $shipment->ID, $totales );
+
+            $pos_gross = 0.0;
+            $ppm = get_post_meta( $shipment->ID, 'pod_payment_methods', true );
+            if ( ! empty( $ppm ) ) {
+                $methods = json_decode( $ppm, true );
+                if ( is_array( $methods ) ) {
+                    foreach ( $methods as $m ) {
+                        if ( isset( $m['metodo'] ) && strtolower( $m['metodo'] ) === 'pos' ) {
+                            if ( isset( $m['monto_original'] ) && floatval( $m['monto_original'] ) > 0 ) {
+                                $pos_gross += floatval( $m['monto_original'] );
+                            } else {
+                                $pos_gross += floatval( $m['monto'] ?? 0 );
+                            }
+                        }
+                    }
+                }
+            }
+
+            if ( empty( $estado_remitente ) ) {
+                $pos_recaudado += $pos_display;
+                $pos_recaudado_bruto += $pos_gross;
+
+                error_log(sprintf('   ✅ SUMADO A POS_RECAUDADO: S/. %01.2f (Total: S/. %01.2f)', $pos_display, $pos_recaudado));
+                error_log(sprintf('   ✅ SUMADO A POS_RECAUDADO_BRUTO: S/. %01.2f (Total: S/. %01.2f)', $pos_gross, $pos_recaudado_bruto));
+            } else {
+                error_log(sprintf('   ❌ POS NO SUMADO (estado_remitente no vacío)'));
+            }
     }
 
     // Calcular "Por pagar remitentes" usando la fórmula TOTAL GENERAL:
@@ -7931,7 +6935,7 @@ function merc_admin_resumen_general( $fecha_inicio, $fecha_fin, $filtro_estado )
 
     if ( $has_remitente_liquidated ) {
         // Después de la liquidación: restar todos los montos ya recaudados.
-        $balance_neto = floatval($wpcargo_monto_total) - floatval($recaudado_marca) - floatval($pos_recaudado) - floatval($recaudado_merc) - floatval($efectivo_total);
+        $balance_neto = floatval($wpcargo_monto_total) - floatval($recaudado_marca) - floatval($pos_recaudado_bruto) - floatval($recaudado_merc) - floatval($efectivo_total);
     } else {
         // Antes de la liquidación: usar el monto de envío menos lo recaudado por marca.
         $balance_neto = floatval($wpcargo_monto_total) - floatval($recaudado_marca);
@@ -9661,7 +8665,7 @@ add_action('save_post_wpcargo_shipment', 'merc_asignar_estado_segun_tipo_servici
 add_action('wpcfe_after_save_add_shipment', 'merc_force_decimal_total_on_save', 1);
 add_action('save_post_wpcargo_shipment', 'merc_force_decimal_total_on_save_post', 20, 3);
 // Hook para asignar unidades de full fitment
-add_action('save_post_wpcargo_shipment', 'merc_asignar_unidades_full_fitment', 12, 2);
+add_action('save_post_wpcargo_shipment', 'merc_asignar_unidades_full_fitment', 21, 2);
 // Hook adicional para forzar el estado después de todo
 add_action('save_post_wpcargo_shipment', 'merc_forzar_estado_por_tipo', 13, 3);
 add_action('wp_footer', 'merc_cambiar_estado_en_frontend');
@@ -10853,7 +9857,10 @@ function merc_admin_clientes( $fecha_inicio, $fecha_fin, $filtro_estado, $filtro
 
             // Comprobar si está liquidado
             $included = get_post_meta( $shipment->ID, 'wpcargo_included_in_liquidation', true );
-            $is_included = ! empty( $included );
+            $remitente_liquidated = get_post_meta( $shipment->ID, 'merc_remitente_liquidated', true );
+
+            $is_included = ! empty( $included ) || ! empty( $remitente_liquidated );
+
             if ( ! $is_included ) {
                 $all_liquidated = false;
             }
@@ -11309,6 +10316,84 @@ function merc_admin_clientes( $fecha_inicio, $fecha_fin, $filtro_estado, $filtro
         </script>
         <?php
     }
+}
+
+// ---------------------------------------------------------------------------
+// AJAX: AÑADIR CARGO ADICIONAL
+// ---------------------------------------------------------------------------
+add_action( 'wp_ajax_merc_add_cargo_adicional', 'merc_add_cargo_adicional_ajax' );
+function merc_add_cargo_adicional_ajax() {
+    check_ajax_referer( 'merc_cargo_adicional', 'nonce' );
+
+    if ( ! current_user_can( 'administrator' ) ) {
+        wp_send_json_error( array( 'message' => 'No tienes permisos.' ) );
+    }
+
+    $shipment_id = isset( $_POST['shipment_id'] ) ? intval( $_POST['shipment_id'] ) : 0;
+    $descripcion = isset( $_POST['descripcion'] ) ? sanitize_text_field( $_POST['descripcion'] ) : '';
+    $monto       = isset( $_POST['monto'] ) ? floatval( $_POST['monto'] ) : 0;
+
+    if ( ! $shipment_id || ! $descripcion || $monto <= 0 ) {
+        wp_send_json_error( array( 'message' => 'Datos inválidos.' ) );
+    }
+
+    $cargos = get_post_meta( $shipment_id, 'merc_cargos_adicionales', true );
+    if ( ! is_array( $cargos ) ) {
+        $cargos = array();
+    }
+
+    $cargos[] = array(
+        'descripcion' => $descripcion,
+        'monto'       => $monto,
+        'fecha'       => current_time( 'mysql' ),
+        'usuario'     => get_current_user_id()
+    );
+
+    update_post_meta( $shipment_id, 'merc_cargos_adicionales', $cargos );
+    
+    // Si la función de sincronización está disponible, forzamos un recalculo
+    if ( function_exists('merc_sync_service_cost_by_status') ) {
+        merc_sync_service_cost_by_status( $shipment_id );
+    }
+
+    wp_send_json_success( array( 'message' => 'Cargo añadido con éxito.' ) );
+}
+
+add_action( "wp_ajax_merc_delete_cargo_adicional", "merc_delete_cargo_adicional_ajax" );
+function merc_delete_cargo_adicional_ajax() {
+    check_ajax_referer( "merc_cargo_adicional", "nonce" );
+
+    if ( ! current_user_can( "administrator" ) ) {
+        wp_send_json_error( array( "message" => "No tienes permisos." ) );
+    }
+
+    $shipment_id = isset( $_POST["shipment_id"] ) ? intval( $_POST["shipment_id"] ) : 0;
+    $cargo_index = isset( $_POST["cargo_index"] ) ? intval( $_POST["cargo_index"] ) : -1;
+
+    if ( ! $shipment_id || $cargo_index < 0 ) {
+        wp_send_json_error( array( "message" => "Datos inv�lidos." ) );
+    }
+
+    $cargos = get_post_meta( $shipment_id, "merc_cargos_adicionales", true );
+    if ( ! is_array( $cargos ) || ! isset( $cargos[$cargo_index] ) ) {
+        wp_send_json_error( array( "message" => "Cargo no encontrado." ) );
+    }
+
+    // Eliminar el cargo en el �ndice especificado
+    array_splice($cargos, $cargo_index, 1);
+
+    if (empty($cargos)) {
+        delete_post_meta( $shipment_id, "merc_cargos_adicionales" );
+    } else {
+        update_post_meta( $shipment_id, "merc_cargos_adicionales", $cargos );
+    }
+    
+    // Si la funci�n de sincronizaci�n est� disponible, forzamos un recalculo
+    if ( function_exists("merc_sync_service_cost_by_status") ) {
+        merc_sync_service_cost_by_status( $shipment_id );
+    }
+
+    wp_send_json_success( array( "message" => "Cargo eliminado con �xito." ) );
 }
 
 // ---------------------------------------------------------------------------
@@ -11877,10 +10962,14 @@ function merc_liquidar_todo_ajax() {
             LEFT JOIN {$wpdb->postmeta} pm_included 
                 ON p.ID = pm_included.post_id 
                 AND pm_included.meta_key = 'wpcargo_included_in_liquidation'
+            LEFT JOIN {$wpdb->postmeta} pm_remitente_liq
+                ON p.ID = pm_remitente_liq.post_id
+                AND pm_remitente_liq.meta_key = 'merc_remitente_liquidated'
             WHERE p.post_type = 'wpcargo_shipment'
             AND p.post_status = 'publish'
             AND pm_sender.meta_value = %s
             AND (pm_included.meta_value IS NULL)
+            AND (pm_remitente_liq.meta_value IS NULL)
         ", $user_id ) );
         // Filtrar sólo envíos del día actual (evitar incluir reprogramados)
         if ( is_array( $shipments ) && function_exists('merc_pickup_date_is_today') ) {
@@ -11908,7 +10997,7 @@ function merc_liquidar_todo_ajax() {
             $pago_marca_total += floatval( $totales['pago_marca'] );
 
             // Servicio entendido como costo de envío pendiente
-            $costo_envio = floatval( get_post_meta( $shipment_id, 'wpcargo_costo_envio', true ) );
+            $costo_envio = function_exists( 'merc_get_adjusted_service_cost' ) ? merc_get_adjusted_service_cost( $shipment_id ) : floatval( get_post_meta( $shipment_id, 'wpcargo_costo_envio', true ) );
             // Si el servicio ya fue marcado como cobrado, no contarlo
             $servicio_cobrado = get_post_meta( $shipment_id, 'wpcargo_servicio_cobrado', true );
             if ( ! $servicio_cobrado ) {
@@ -12017,22 +11106,9 @@ function merc_liquidar_todo_ajax() {
                 }
 
                 if ( $changed ) {
-                    // Guardar cambios en methods y metas totales del envío
-                    update_post_meta( $shipment_id, 'pod_payment_methods', json_encode( $methods ) );
-                    // Recalcular totales por método
-                    $tot_ef = $tot_pm = $tot_mm = $tot_pos = 0.0;
-                    foreach ( $methods as $m ) {
-                        $met = isset( $m['metodo'] ) ? $m['metodo'] : '';
-                        $mon = isset( $m['monto'] ) ? floatval( $m['monto'] ) : 0.0;
-                        if ( $met === 'efectivo' ) $tot_ef += $mon;
-                        elseif ( $met === 'pago_merc' ) $tot_pm += $mon;
-                        elseif ( $met === 'pago_marca' ) $tot_mm += $mon;
-                        elseif ( $met === 'pos' ) $tot_pos += $mon;
-                    }
-                    update_post_meta( $shipment_id, 'wpcargo_efectivo', $tot_ef );
-                    update_post_meta( $shipment_id, 'wpcargo_pago_merc', $tot_pm );
-                    update_post_meta( $shipment_id, 'wpcargo_pago_marca', $tot_mm );
-                    update_post_meta( $shipment_id, 'wpcargo_pos', $tot_pos );
+                    // No actualizamos los métodos de pago o las metas de envío aquí,
+                    // para que las tarjetas del panel sigan mostrando sus valores
+                    // originales incluso después de realizar la liquidación.
                 }
             }
 
@@ -12040,12 +11116,10 @@ function merc_liquidar_todo_ajax() {
             $liquidation['covered_by_recaudado'] = $to_cover;
         }
 
-        // Marcar servicios como cobrados y vincular envíos a esta liquidación
-        $liquidation_id = $liquidation['id'];
+        // Marcar envíos como procesados por la liquidación masiva sin alterar
+        // los campos que usan las tarjetas del panel.
         foreach ( $shipments as $shipment_id ) {
-            update_post_meta( $shipment_id, 'wpcargo_servicio_cobrado', 'si' );
-            update_post_meta( $shipment_id, 'wpcargo_included_in_liquidation', $liquidation_id );
-            update_post_meta( $shipment_id, 'wpcargo_fecha_liquidacion_remitente', current_time( 'mysql' ) );
+            update_post_meta( $shipment_id, 'merc_remitente_liquidated', '1' );
         }
 
         // Determinar actor e historial donde guardar la liquidación.
@@ -16600,164 +15674,6 @@ function merc_estado_editable_en_tabla() {
         // Ejecutar resaltado inmediatamente (antes de cualquier otra cosa)
         setTimeout(resaltarFilasReprogramadas, 100);
 
-        // Añadir columna "LISTO PARA SALIR" visual en tablas existentes para motorizados,
-        // pero EXCLUIR la tabla específica `.merc-entregas-table` (panel motorizado).
-        function addListoParaSalirColumn() {
-            // Solo procesar para motorizados
-            if (!esMotorizado) {
-                return;
-            }
-            
-            // SOLO procesar la tabla #shipment-list
-            var $table = $('#shipment-list');
-            if ($table.length === 0) {
-                return;
-            }
-
-            // Agregar columna "LISTO PARA SALIR" al header si no existe
-            var $thead = $table.find('thead');
-            if ($thead.length > 0 && $thead.find('th:contains("LISTO PARA SALIR")').length === 0) {
-                // Buscar el <th> de "ESTADO" para insertar DESPUÉS de él
-                var $estadoTh = $thead.find('tr').first().find('th').filter(function() {
-                    return $(this).text().toUpperCase().indexOf('ESTADO') !== -1;
-                }).first();
-                
-                var $newTh = $('<th style="text-align:center;">LISTO PARA SALIR</th>');
-                
-                if ($estadoTh.length > 0) {
-                    // Insertar después de la columna ESTADO
-                    $newTh.insertAfter($estadoTh);
-                } else {
-                    // Si no encuentra ESTADO, agregarlo al final
-                    $thead.find('tr').first().append($newTh);
-                }
-            }
-
-            // Procesar cada fila de la tabla
-            // Primero, encontrar el índice de la columna ESTADO en el header
-            var estadoIndex = -1;
-            $thead.find('tr').first().find('th').each(function(idx) {
-                if ($(this).text().toUpperCase().indexOf('ESTADO') !== -1) {
-                    estadoIndex = idx;
-                    return false;
-                }
-            });
-            
-            $table.find('tbody tr').each(function(index) {
-                var $row = $(this);
-                
-                // No agregar si ya está agregada
-                if ($row.find('td.listo-para-salir-cell').length > 0) {
-                    return;
-                }
-                
-                // Obtener el shipment ID de la fila
-                var shipmentId = null;
-                var rowId = $row.attr('id');
-                if (rowId && rowId.match(/shipment-(\d+)/)) {
-                    shipmentId = rowId.match(/shipment-(\d+)/)[1];
-                }
-                if (!shipmentId) {
-                    var $ds = $row.find('[data-shipment-id]').first();
-                    if ($ds.length) shipmentId = $ds.data('shipment-id');
-                }
-                if (!shipmentId) {
-                    var $a = $row.find('a[href]').first();
-                    if ($a.length) {
-                        var href = $a.attr('href');
-                        var m = href.match(/post=(\d+)/) || href.match(/shipment-(\d+)/) || href.match(/(\d{4,})/);
-                        if (m) shipmentId = m[1];
-                    }
-                }
-
-                // Encontrar la celda de ESTADO usando el índice encontrado en el header
-                var $estadoCell = estadoIndex >= 0 ? $row.find('td').eq(estadoIndex) : null;
-
-                // Agregar celda para "LISTO PARA SALIR" después de ESTADO
-                var $newCell = $('<td class="listo-para-salir-cell" style="text-align:center;">❓</td>');
-                if ($estadoCell && $estadoCell.length > 0) {
-                    $newCell.insertAfter($estadoCell);
-                } else {
-                    $row.append($newCell);
-                }
-
-                // Si tenemos un shipmentId, obtener el estado actual y anterior
-                if (shipmentId) {
-                    $.post(AJAX_URL, { action: 'merc_get_shipment_data', shipment_id: shipmentId }, function(resp) {
-                        if (!resp || !resp.success) {
-                            $newCell.text('❌').css('color', '#e74c3c');
-                            return;
-                        }
-                        
-                        var data = resp.data || {};
-                        var estado_actual = (data.estado_actual || '').toString().toUpperCase().trim();
-                        var estado_prev = (data.estado_prev || '').toString().trim();
-                        
-                        // Si es "LISTO PARA SALIR", mostrar checkmark en la columna y reemplazar estado con anterior
-                        var esListoParaSalir = estado_actual.indexOf('LISTO') !== -1 && estado_actual.indexOf('SALIR') !== -1;
-                        
-                        if (esListoParaSalir) {
-                            // Mostrar ✅ en la columna LISTO PARA SALIR
-                            $newCell.text('✅').css({'color': '#27ae60', 'font-weight': 'bold'});
-                            
-                            // Si hay estado anterior, reemplazar en la columna "ESTADO"
-                            if (estado_prev && estado_prev.length > 0) {
-                                var $estadoCells = $row.find('td').filter(function() {
-                                    var text = $(this).text().toUpperCase().trim();
-                                    return text.indexOf('LISTO') !== -1 && text.indexOf('SALIR') !== -1;
-                                }).not('.listo-para-salir-cell');
-                                
-                                $estadoCells.each(function() {
-                                    var $cell = $(this);
-                                    var $select = $cell.find('select');
-                                    if ($select.length > 0) {
-                                        // Primero intentar encontrar la opción en el SELECT
-                                        var encontrado = false;
-                                        $select.find('option').each(function() {
-                                            var optionText = $(this).text().toUpperCase().trim();
-                                            var searchText = estado_prev.toUpperCase().trim();
-                                            
-                                            if (optionText === searchText) {
-                                                $select.val($(this).val());
-                                                encontrado = true;
-                                                return false;
-                                            }
-                                        });
-                                        
-                                        // Si NO encontró la opción, no reemplazar el SELECT: agregar la opción previa
-                                        if (!encontrado) {
-                                            try {
-                                                // Agregar como opción al inicio y seleccionarla para mantener la fila editable
-                                                var $opPrev = $('<option>').val(estado_prev).text(estado_prev);
-                                                $select.prepend($opPrev);
-                                                $select.val(estado_prev);
-                                                console.log('ℹ️ Estado anterior agregado al SELECT en vez de reemplazar la celda:', estado_prev);
-                                            } catch (e) {
-                                                // Si algo falla, como fallback, reemplazar con texto (comportamiento antiguo)
-                                                console.warn('⚠️ No se pudo agregar opción previa al SELECT, usando fallback texto:', e);
-                                                $cell.html(estado_prev);
-                                            }
-                                        }
-                                    } else {
-                                        $cell.text(estado_prev);
-                                    }
-                                });
-                            }
-                        } else {
-                            $newCell.text('❌').css('color', '#e74c3c');
-                        }
-                    }, 'json').fail(function(jqXHR, textStatus, errorThrown) {
-                        $newCell.text('💥').css('color', '#e67e22');
-                    });
-                } else {
-                    $newCell.text('❌').css('color', '#e74c3c');
-                }
-            });
-        }
-
-        // Ejecutar al cargar
-        addListoParaSalirColumn();
-
         // Ejecutar al cargar
 
         // Reemplazar etiquetas temporales en inglés por español (p. ej. "ES SHIPMENT STATUS")
@@ -20692,11 +19608,20 @@ function wpcpod_get_single_shipment_data_handler() {
     $shipper_phone = get_post_meta($post_id, 'wpcargo_shipper_phone', true);
     $shipper_name = get_post_meta($post_id, 'wpcargo_shipper_name', true);
     $tienda_name = get_post_meta($post_id, 'wpcargo_tiendaname', true);
-    $monto = floatval(get_post_meta($post_id, 'wpcargo_shipment_amount', true));
+    $monto = get_post_meta($post_id, 'wpcargo_total_cobrar', true);
+    if ($monto === '' || $monto === null) {
+        $monto = get_post_meta($post_id, 'wpcargo_shipment_amount', true);
+    }
+    if ($monto === '' || $monto === null) {
+        $monto = get_post_meta($post_id, 'total', true);
+    }
+    $monto = floatval($monto);
     $link_maps = get_post_meta($post_id, 'link_maps', true);
     
-    $current_user = wp_get_current_user();
-    $motorizado_name = $current_user->display_name;
+	$current_user = wp_get_current_user();
+	$first_name = get_user_meta( $current_user->ID, 'first_name', true );
+	$last_name  = get_user_meta( $current_user->ID, 'last_name', true );
+	$motorizado_name = trim( $first_name . ' ' . $last_name ) ?: $current_user->display_name;
     
     error_log('Receiver phone: ' . $receiver_phone);
     error_log('Shipper phone: ' . $shipper_phone);

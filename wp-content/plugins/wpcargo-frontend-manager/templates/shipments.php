@@ -72,7 +72,6 @@
 								<input class="form-check-input" id="wpcfe-select-all" type="checkbox"/>
 								<label class="form-check-label" for="wpcfe-select-all"></label>
 								</th>
-								<?php do_action( 'wpcfe_shipment_before_tracking_number_header' ); ?>
 								<?php do_action( 'wpcfe_shipment_after_tracking_number_header' ); ?>
 								<?php do_action( 'wpcfe_shipment_table_header' ); ?>
 								<?php do_action( 'wpcfe_shipment_table_header_action' ); ?>
@@ -91,7 +90,6 @@
 								  <input class="wpcfe-shipments form-check-input" id="shipment-checkbox-<?php echo get_the_ID(); ?>" type="checkbox" name="wpcfe-shipments[]" value="<?php echo get_the_ID(); ?>" data-number="<?php echo get_the_title(); ?>">
 								  <label class="form-check-label" for="shipment-checkbox-<?php echo get_the_ID(); ?>"></label>
 									</td>
-									<?php do_action( 'wpcfe_shipment_before_tracking_number_data', get_the_ID() ); ?>
 									<?php do_action( 'wpcfe_shipment_after_tracking_number_data', get_the_ID() ); ?>
 									<?php do_action( 'wpcfe_shipment_table_data', get_the_ID() ); ?>
 									<?php do_action( 'wpcfe_shipment_table_data_action', get_the_ID() ); ?>				

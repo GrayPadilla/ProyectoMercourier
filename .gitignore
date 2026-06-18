@@ -2,6 +2,7 @@ wp-content/uploads/
 wp-content/cache/
 wp-content/litespeed/
 wp-content/debug.log
+wp-content/merc-logs/
 
 # backups/zips
 *.zip

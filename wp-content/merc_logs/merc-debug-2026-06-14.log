@@ -1,0 +1,753 @@
+[14-Jun-2026 21:03:27 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:03:27 UTC] 🌅 [RESETEO DIARIO AUTOMÁTICO] Ejecutado para 2026-06-14
+[14-Jun-2026 21:03:34 UTC] [Elementor Atomic Widgets] [WARNING] Migrations manifest not found | Context: {"path":"https://migrations.elementor.com/manifest.json"}
+[14-Jun-2026 21:03:44 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:03:44 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:03:54 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:03:54 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:03:55 UTC] PHP Notice:  La función as_next_scheduled_action ha sido llamada <strong>de forma incorrecta</strong>. as_next_scheduled_action() was called before the Action Scheduler data store was initialized Por favor, ve <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">depuración en WordPress</a> para más información. (Este mensaje fue añadido en la versión 3.1.6). in /var/www/html/wp-includes/functions.php on line 6121
+[14-Jun-2026 21:03:58 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[14-Jun-2026 21:03:58 UTC] 🔵 [FILTER] Usuario actual: 109
+[14-Jun-2026 21:03:58 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]}}
+[14-Jun-2026 21:03:58 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[14-Jun-2026 21:03:58 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-06-14
+[14-Jun-2026 21:03:58 UTC] 🔵 [FILTER] Fecha desde: '2026-06-14' | Fecha hasta: '2026-06-14'
+[14-Jun-2026 21:03:58 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[14-Jun-2026 21:03:58 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-06-14', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-06-14', '%Y-%m-%d'))
+        
+[14-Jun-2026 21:03:58 UTC] 🔵 [FILTER] IDs encontrados por fecha: 0
+[14-Jun-2026 21:03:58 UTC] 🔵 [FILTER] Sin resultados de fecha, forzando búsqueda vacía
+[14-Jun-2026 21:03:58 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"post__in":[0]}
+[14-Jun-2026 21:03:59 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:06:14 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:06:20 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:06:21 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:06:29 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:06:30 UTC] [Elementor Atomic Widgets] [WARNING] Migrations manifest not found | Context: {"path":"https://migrations.elementor.com/manifest.json"}
+[14-Jun-2026 21:06:34 UTC] [Elementor Atomic Widgets] [WARNING] Migrations manifest not found | Context: {"path":"https://migrations.elementor.com/manifest.json"}
+[14-Jun-2026 21:06:35 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:06:35 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:06:35 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:06:35 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:06:35 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:06:35 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:06:35 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:06:35 UTC] 🔍 [AJAX] Consultando desbloqueo parcial para NORMAL
+[14-Jun-2026 21:06:35 UTC]    Meta key: merc_desbloqueo_parcial_NORMAL
+[14-Jun-2026 21:06:35 UTC]    Unlock info: ""
+[14-Jun-2026 21:06:35 UTC]    Force date: 
+[14-Jun-2026 21:06:35 UTC] 🔄 [RESETEO DIARIO] Usuario 109 | Fecha: 2026-06-14
+[14-Jun-2026 21:06:37 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:06:37 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:06:37 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:06:37 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:06:37 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:06:37 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:06:37 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:06:37 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:06:37 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:06:37 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:06:37 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:06:37 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:06:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:06:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:06:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:06:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:06:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:06:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:06:38 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:06:38 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:06:38 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:06:38 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:06:38 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:06:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:06:38 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:06:56 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: 🔍 [INICIO] Buscando productos para usuario: haroldalvaradotineo@gmail.com (ID: 118)
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ✅ Query devolvió 49 productos para user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=30209 titulo=AROMATIZADOR meta_cliente=461 estado=sin_asignar stock=4
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=30209 - meta_cliente=461 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=26620 titulo=BANGOVER LEVANTATE LAZARO meta_cliente=481 estado=sin_asignar stock=2
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=26620 - meta_cliente=481 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=21990 titulo=BLOQUEADOR COLLAGE A meta_cliente=103 estado=asignado stock=2
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=21990 - meta_cliente=103 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=29959 titulo=BLOQUEADOR COLLAGE B meta_cliente=103 estado=sin_asignar stock=1
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=29959 - meta_cliente=103 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=21993 titulo=BLOQUEADOR CURCUMA A meta_cliente=103 estado=sin_asignar stock=2
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=21993 - meta_cliente=103 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=21994 titulo=BLOQUEADOR CURCUMA B meta_cliente=103 estado=sin_asignar stock=2
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=21994 - meta_cliente=103 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=30212 titulo=BRILLA MAS meta_cliente=461 estado=sin_asignar stock=2
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=30212 - meta_cliente=461 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=20301 titulo=CACAO EN POLVO meta_cliente=288 estado=asignado stock=6
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=20301 - meta_cliente=288 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=20313 titulo=CACAO EN POLVO meta_cliente=288 estado=sin_asignar stock=1
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=20313 - meta_cliente=288 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=20311 titulo=CAFE EN POLVO meta_cliente=288 estado=sin_asignar stock=8
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=20311 - meta_cliente=288 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=26593 titulo=CANDIDA CLEANSE meta_cliente=136 estado=sin_asignar stock=4
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=26593 - meta_cliente=136 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=24815 titulo=CREMA HIDRATANTE meta_cliente=136 estado=sin_asignar stock=2
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=24815 - meta_cliente=136 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=7959 titulo=CREMA RETINOL meta_cliente=136 estado=sin_asignar stock=3
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=7959 - meta_cliente=136 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=7958 titulo=CREMA ROREC meta_cliente=136 estado=sin_asignar stock=2
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=7958 - meta_cliente=136 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=7955 titulo=DESPIGMENTANTE DE LABIOS meta_cliente=136 estado=sin_asignar stock=1
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=7955 - meta_cliente=136 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=7949 titulo=EXFOLIANTE DE ARROZ meta_cliente=136 estado=sin_asignar stock=37
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=7949 - meta_cliente=136 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=7956 titulo=EXFOLIANTE GEL meta_cliente=136 estado=sin_asignar stock=1
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=7956 - meta_cliente=136 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=26630 titulo=HAIR GROWTH meta_cliente=270 estado=sin_asignar stock=188
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=26630 - meta_cliente=270 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=9095 titulo=HERBALS & HEALTH meta_cliente=270 estado=sin_asignar stock=2
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=9095 - meta_cliente=270 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=7960 titulo=HUMECTANTE SAKURA meta_cliente=136 estado=sin_asignar stock=8
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=7960 - meta_cliente=136 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=7981 titulo=INFLADORES meta_cliente=145 estado=sin_asignar stock=57
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=7981 - meta_cliente=145 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=21989 titulo=jjjjjjjjj meta_cliente=429 estado=sin_asignar stock=45
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=21989 - meta_cliente=429 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=21998 titulo=LABIAL MAGICO meta_cliente=103 estado=sin_asignar stock=1
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=21998 - meta_cliente=103 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=30316 titulo=LAMPARA BLACK LARGA meta_cliente=145 estado=sin_asignar stock=3
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=30316 - meta_cliente=145 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=7995 titulo=LAMPARA CORTA BLACK meta_cliente=145 estado=sin_asignar stock=59
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=7995 - meta_cliente=145 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=7996 titulo=LAMPARA CORTA WHITE meta_cliente=145 estado=asignado stock=0
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=7996 - meta_cliente=145 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=7982 titulo=LAMPARA GOLD LARGA meta_cliente=145 estado=asignado stock=0
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=7982 - meta_cliente=145 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=7991 titulo=LAMPARA LARGA SILVER meta_cliente=145 estado=asignado stock=0
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=7991 - meta_cliente=145 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=7992 titulo=LAMPARA LARGA WHITE meta_cliente=145 estado=asignado stock=1
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=7992 - meta_cliente=145 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=24829 titulo=LAMPARA ROSE GOLD LARGA meta_cliente=145 estado=asignado stock=0
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=24829 - meta_cliente=145 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=26598 titulo=MAGNET CUBE ZONE 100 PIEZAS meta_cliente=201 estado=asignado stock=0
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=26598 - meta_cliente=201 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=28802 titulo=MAGNET CUBE ZONE 80 PIEZAS meta_cliente=201 estado=asignado stock=0
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=28802 - meta_cliente=201 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=26588 titulo=MEDINAIL SPRAY meta_cliente=461 estado=sin_asignar stock=4
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=26588 - meta_cliente=461 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=9098 titulo=NAD RESVERATROL meta_cliente=270 estado=sin_asignar stock=50
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=9098 - meta_cliente=270 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=28745 titulo=NEGRO MAGICO meta_cliente=461 estado=sin_asignar stock=5
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=28745 - meta_cliente=461 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=28748 titulo=NOURKRIN meta_cliente=461 estado=sin_asignar stock=2
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=28748 - meta_cliente=461 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=26581 titulo=PAÑOS DE TELA meta_cliente=461 estado=sin_asignar stock=19
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=26581 - meta_cliente=461 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=23119 titulo=PARLANTE ALEXA meta_cliente=85 estado=sin_asignar stock=3
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=23119 - meta_cliente=85 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=6914 titulo=PARLANTE ALEXA meta_cliente=85 estado=sin_asignar stock=4
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=6914 - meta_cliente=85 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=24382 titulo=PARLANTE ALEXA meta_cliente=85 estado=sin_asignar stock=1
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=24382 - meta_cliente=85 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=24380 titulo=PARLANTE ALEXA meta_cliente=85 estado=asignado stock=2
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=24380 - meta_cliente=85 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=26583 titulo=PROTECTOR ULTRA WAX meta_cliente=461 estado=sin_asignar stock=6
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=26583 - meta_cliente=461 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=30217 titulo=PULIMAX meta_cliente=461 estado=sin_asignar stock=12
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=30217 - meta_cliente=461 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=6879 titulo=SHAMPOO meta_cliente=91 estado=sin_asignar stock=9
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=6879 - meta_cliente=91 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=24821 titulo=SPRAY DEPILATORIO meta_cliente=136 estado=sin_asignar stock=25
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=24821 - meta_cliente=136 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=28704 titulo=TAPIZ CLEAN meta_cliente=461 estado=sin_asignar stock=4
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=28704 - meta_cliente=461 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=9096 titulo=ULTRA PURE meta_cliente=270 estado=sin_asignar stock=1
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=9096 - meta_cliente=270 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=26589 titulo=WART REMOVER meta_cliente=461 estado=sin_asignar stock=4
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ⚠️ SALTANDO Producto ID=26589 - meta_cliente=461 !== user_id=118
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: Producto ID=26931 titulo=Zapatillas meta_cliente=118 estado=sin_asignar stock=30
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: ✓ INCLUIDO Producto ID=26931 en opciones
+[14-Jun-2026 21:06:56 UTC] MERC_DEBUG_PRODUCTOS: 🎯 [FIN] Retornando 1 opciones filtradas para user_id=118 (desde 49 totales)
+[14-Jun-2026 21:06:56 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:06:56 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:06:56 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:06:56 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:06:56 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:06:56 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:06:57 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:06:57 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:06:57 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:06:57 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:06:57 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:06:57 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:06:57 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:07:14 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:07:14 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:07:14 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:07:14 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:07:14 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:07:14 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:07:14 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:07:14 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:07:14 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:08:59 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:08:59 UTC] 🔒 [PRE-INSERT] Verificando unicidad de tracking: MERC-010463
+[14-Jun-2026 21:08:59 UTC] ✅ [PRE-INSERT] Tracking único: MERC-010463
+[14-Jun-2026 21:08:59 UTC] 🔄 [guardar_tipo_envio_shipment] INICIADO - post_id: 31904
+[14-Jun-2026 21:08:59 UTC]    post_type: wpcargo_shipment
+[14-Jun-2026 21:08:59 UTC]    ✅ Es wpcargo_shipment, continuando...
+[14-Jun-2026 21:08:59 UTC] 📌 guardar_tipo_envio - GET[type]: normal
+[14-Jun-2026 21:08:59 UTC] ✅ guardar_tipo_envio ÉXITO - ID: 31904 | Tipo: normal
+[14-Jun-2026 21:08:59 UTC] 🔍 VERIFICANDO DECREMENTO: Cliente #109 | Envío #31904 | Fecha desbloqueo: 2026-02-25 | Hoy: 2026-06-14 | Envíos permitidos: 9999
+[14-Jun-2026 21:08:59 UTC] ❌ NO SE DECREMENTA: Desbloqueo no activo o sin envíos permitidos
+[14-Jun-2026 21:08:59 UTC] ✅ Iniciando guardado de producto para envío #31904
+[14-Jun-2026 21:08:59 UTC]    📝 Tipo obtenido desde REQUEST[type]: normal
+[14-Jun-2026 21:08:59 UTC] 📦 Datos recibidos - Producto ID: 0, Cantidad: 1, Tipo: 'normal', Es Full Fitment: NO
+[14-Jun-2026 21:08:59 UTC] 🔍 ASIGNACIÓN ESTADO - Iniciando para envío #31904
+[14-Jun-2026 21:08:59 UTC]    ✅ Tipo ya estaba en meta: normal
+[14-Jun-2026 21:08:59 UTC]    Tipo normalizado: 'normal'
+[14-Jun-2026 21:08:59 UTC] 📦 MERC EMPRENDEDOR detectado
+[14-Jun-2026 21:08:59 UTC]    Estados de recojo configurados: 1
+[14-Jun-2026 21:08:59 UTC]    Primer estado de recojo: 'PENDIENTE'
+[14-Jun-2026 21:08:59 UTC] ✅ ASIGNACIÓN ESTADO - EMPRENDEDOR detectado: '' → 'PENDIENTE' (verificado: 'PENDIENTE')
+[14-Jun-2026 21:08:59 UTC] 🔔 [HOOK_TRIGGERED] save_financial_data() ejecutado para envío #31904
+[14-Jun-2026 21:08:59 UTC] 🔍 [MERC_SAVE_CHECK] Verificando si merc_producto_id existe en POST...
+[14-Jun-2026 21:08:59 UTC] 📮 [POST_DUMP] POST keys: ["wpcfe_add_form_fields","_wp_http_referer","wpcargo_tiendaname","wpcargo_shipper_phone","wpcargo_shipper_address","wpcargo_distrito_recojo","link_maps_remitente","wpcargo_receiver_name","wpcargo_receiver_phone","wpcargo_receiver_address","wpcargo_distrito_destino","link_maps","payment_wpcargo_mode_field","monto","wpcargo_pickup_date_picker","wpcargo_pickup_date_picker_submit","wpcargo_comments","cambio_producto","tipo_envio","wpcargo_costo_producto","wpcargo_costo_envio","wpcargo_total_cobrar","wpcargo_cargo_remitente","registered_shipper","agent_fields","wpcargo_employee","wpcargo_driver","wpcargo_motorizo_recojo","wpcargo_motorizo_entrega","date","date_submit","time","status","remarks"]
+[14-Jun-2026 21:08:59 UTC] ⚠️ [MERC_SAVE] Envío #31904 - merc_producto_id NO está en POST
+[14-Jun-2026 21:08:59 UTC] ✅ [MERC_FORCE_DECIMAL] Shipment #31904 wpcargo_total_cobrar forced to 40.00
+[14-Jun-2026 21:08:59 UTC] 🔍 Full Fitment verificación #31904 - Tipo: 'normal' -> Es full fitment: NO
+[14-Jun-2026 21:08:59 UTC] ⏭️ Full Fitment #31904 - NO es full fitment, saltando
+[14-Jun-2026 21:08:59 UTC] 🔍 AUTO-ASIGNACIÓN INICIADA - Envío #31904
+[14-Jun-2026 21:08:59 UTC] 📦 AUTO-ASIGNACIÓN - Tipo de envío: normal
+[14-Jun-2026 21:08:59 UTC] 🎯 AUTO-ASIGNACIÓN - EMPRENDEDOR detectado, distrito recojo: Puente Piedra → contenedor de RECOJO
+[14-Jun-2026 21:08:59 UTC] ✅ Auto-asignación - Envío #31904: shipment_container_recojo #3707 asignado
+[14-Jun-2026 21:08:59 UTC] 📍 Auto-asignación EMPRENDEDOR - Validando contenedores para RECOJO y ENTREGA...
+[14-Jun-2026 21:08:59 UTC] 📍 Auto-asignación EMPRENDEDOR - Asignando contenedor de ENTREGA para: Comas
+[14-Jun-2026 21:08:59 UTC] ✅ Auto-asignación EMPRENDEDOR - Envío #31904: shipment_container_entrega #3706 asignado para entrega en Comas
+[14-Jun-2026 21:08:59 UTC] 🔍 VERIFICACIÓN - shipment_container_entrega para envío #31904: ✅ Encontrado en BD: 3706
+[14-Jun-2026 21:08:59 UTC] 💾 [DUAL_MOTORIZADO_SAVE] Guardando motorizado dual para envío #31904
+[14-Jun-2026 21:08:59 UTC]    📬 POST keys disponibles: wpcfe_add_form_fields, _wp_http_referer, wpcargo_tiendaname, wpcargo_shipper_phone, wpcargo_shipper_address, wpcargo_distrito_recojo, link_maps_remitente, wpcargo_receiver_name, wpcargo_receiver_phone, wpcargo_receiver_address, wpcargo_distrito_destino, link_maps, payment_wpcargo_mode_field, monto, wpcargo_pickup_date_picker, wpcargo_pickup_date_picker_submit, wpcargo_comments, cambio_producto, tipo_envio, wpcargo_costo_producto, wpcargo_costo_envio, wpcargo_total_cobrar, wpcargo_cargo_remitente, registered_shipper, agent_fields, wpcargo_employee, wpcargo_driver, wpcargo_motorizo_recojo, wpcargo_motorizo_entrega, date, date_submit, time, status, remarks
+[14-Jun-2026 21:08:59 UTC]       ✔️  Guardado: wpcargo_motorizo_recojo = 190
+[14-Jun-2026 21:08:59 UTC]    ✅ wpcargo_motorizo_entrega = 120
+[14-Jun-2026 21:08:59 UTC]       ✔️  Guardado: wpcargo_motorizo_entrega = 120
+[14-Jun-2026 21:08:59 UTC]    🔍 Tipo: 'normal' | Estado actual del envío: 'PENDIENTE'
+[14-Jun-2026 21:08:59 UTC]    🔄 Sincronizado: wpcargo_driver = 190 (desde recojo - estado: PENDIENTE)
+[14-Jun-2026 21:08:59 UTC]    ✅ [DUAL_MOTORIZADO_SAVE] COMPLETADO
+[14-Jun-2026 21:08:59 UTC] 🔚 [FINAL_VERIFICATION] Envío #31904 | Tipo: normal | Distrito:  | Costo: 10.00
+[14-Jun-2026 21:08:59 UTC] 🔚 [FINAL_VERIFICATION] Envío #31904 | Tipo: normal | Distrito:  | Costo FINAL: 10.00
+[14-Jun-2026 21:09:02 UTC] 🔄 [guardar_tipo_envio_shipment] INICIADO - post_id: 31904
+[14-Jun-2026 21:09:02 UTC]    post_type: wpcargo_shipment
+[14-Jun-2026 21:09:02 UTC]    ✅ Es wpcargo_shipment, continuando...
+[14-Jun-2026 21:09:02 UTC] 📌 guardar_tipo_envio - GET[type]: normal
+[14-Jun-2026 21:09:02 UTC] ✅ guardar_tipo_envio ÉXITO - ID: 31904 | Tipo: normal
+[14-Jun-2026 21:09:02 UTC] PHP Warning:  Undefined array key "location" in /var/www/html/wp-content/plugins/wpcargo-frontend-manager/admin/includes/hooks.php on line 733
+[14-Jun-2026 21:09:03 UTC] 
+🎯 [HOOK: after_wpcfe_save_shipment] DISPARADO para envío #31904
+[14-Jun-2026 21:09:03 UTC] 
+🔧 [ASIGNAR ESTADO FINAL] Ejecutando para envío #31904
+[14-Jun-2026 21:09:03 UTC]    📦 Tipo de envío: normal
+[14-Jun-2026 21:09:03 UTC]    📌 Estado actual en BD: PENDIENTE
+[14-Jun-2026 21:09:03 UTC]    📦 Tipo NORMAL/EMPRENDEDOR - Verificando estado
+[14-Jun-2026 21:09:03 UTC] 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🆕 AUTO-ASIGNAR MOTORIZADO (Nuevo Envío)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[14-Jun-2026 21:09:03 UTC] 📝 Hook ejecutado para envío: #31904
+[14-Jun-2026 21:09:03 UTC] 👤 Usuario (registered_shipper): 118
+[14-Jun-2026 21:09:03 UTC] 🔍 Buscando 'merc_motorizo_recojo_default' para usuario #118...
+[14-Jun-2026 21:09:03 UTC]    Valor encontrado: VACÍO/NO EXISTE
+[14-Jun-2026 21:09:03 UTC] ℹ️ Usuario #118 NO tiene motorizado default configurado
+[14-Jun-2026 21:09:03 UTC] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[14-Jun-2026 21:09:08 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:09:08 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:09:08 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:09:08 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:09:08 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:09:08 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:09:08 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:09:08 UTC] 🔄 [RESETEO DIARIO] Usuario 109 | Fecha: 2026-06-14
+[14-Jun-2026 21:09:08 UTC] 🔍 [AJAX] Consultando desbloqueo parcial para NORMAL
+[14-Jun-2026 21:09:08 UTC]    Meta key: merc_desbloqueo_parcial_NORMAL
+[14-Jun-2026 21:09:08 UTC]    Unlock info: ""
+[14-Jun-2026 21:09:08 UTC]    Force date: 
+[14-Jun-2026 21:09:08 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:09:08 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:09:08 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:09:08 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:09:08 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:09:08 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:09:09 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:09:09 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:09:09 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:09:09 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:09:09 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:09:09 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:09:09 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:09:09 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:09:09 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:09:09 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:09:09 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:09:09 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:09:09 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:09:09 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:09:09 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:09:09 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:09:09 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:09:09 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:09:09 UTC] MERC_POD_DEBUG - shipmentID= context=syncMonto methods_count=0
+[14-Jun-2026 21:09:09 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:09:17 UTC] PHP Deprecated:  Automatic conversion of false to array is deprecated in /var/www/html/wp-content/plugins/elementor/includes/api.php on line 176
+[14-Jun-2026 21:09:21 UTC] [Elementor Atomic Widgets] [WARNING] Migrations manifest not found | Context: {"path":"https://migrations.elementor.com/manifest.json"}
+[14-Jun-2026 21:09:21 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[14-Jun-2026 21:09:21 UTC] 🔵 [FILTER] Usuario actual: 109
+[14-Jun-2026 21:09:21 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]}}
+[14-Jun-2026 21:09:21 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[14-Jun-2026 21:09:21 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-06-14
+[14-Jun-2026 21:09:21 UTC] 🔵 [FILTER] Fecha desde: '2026-06-14' | Fecha hasta: '2026-06-14'
+[14-Jun-2026 21:09:21 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[14-Jun-2026 21:09:21 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-06-14', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-06-14', '%Y-%m-%d'))
+        
+[14-Jun-2026 21:09:21 UTC] 🔵 [FILTER] IDs encontrados por fecha: 1
+[14-Jun-2026 21:09:21 UTC] 🔵 [FILTER] Primeros 10 IDs: 31904
+[14-Jun-2026 21:09:21 UTC] 🔵 [FILTER] post__in no existe, creando nuevo
+[14-Jun-2026 21:09:21 UTC] 🔵 [FILTER] post_status cambiado a array para incluir estados normales (EXCLUYENDO trash)
+[14-Jun-2026 21:09:21 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":["publish","draft","pending","private"],"posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"post__in":["31904"]}
+[14-Jun-2026 21:09:22 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:09:23 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:09:25 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:09:35 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:09:35 UTC] MERC_DEBUG_ENTRY - merc_maybe_create_penalty_for_shipment post_id=31904 post_type=wpcargo_shipment
+[14-Jun-2026 21:09:35 UTC] MERC_DEBUG_STATE - post_id=31904 estado_raw=EN BASE MERCOURIER
+[14-Jun-2026 21:09:35 UTC] MERC_DEBUG_ABORT - post_id=31904 estado no es NO RECOGIDO, abortando
+[14-Jun-2026 21:09:35 UTC] MERC_DEBUG_ENTRY - merc_maybe_create_penalty_for_shipment post_id=31904 post_type=wpcargo_shipment
+[14-Jun-2026 21:09:35 UTC] MERC_DEBUG_STATE - post_id=31904 estado_raw=EN BASE MERCOURIER
+[14-Jun-2026 21:09:35 UTC] MERC_DEBUG_ABORT - post_id=31904 estado no es NO RECOGIDO, abortando
+[14-Jun-2026 21:09:35 UTC] MERC_NO_RECIBIDO_DEBUG - post_id=31904 estado=EN BASE MERCOURIER NO es NO RECIBIDO
+[14-Jun-2026 21:09:35 UTC] 🔄 Reasignación EN BASE MERCOURIER INICIADA - Envío #31904
+[14-Jun-2026 21:09:35 UTC] ℹ️ Reasignación EN BASE - Envío #31904: Ya tiene contenedor de entrega #3706, solo actualizando motorizado...
+[14-Jun-2026 21:09:35 UTC] 📦 Reasignación EN BASE - Envío #31904: Contenedor de recojo: #3707
+[14-Jun-2026 21:09:35 UTC] 🚚 Reasignación EN BASE - Envío #31904: MOTORIZADO ENTREGA YA ASIGNADO: moto@gmail.com (ID:120)
+[14-Jun-2026 21:09:35 UTC] 📍 Reasignación EN BASE - Envío #31904: wpcargo_driver actualizado a #120
+[14-Jun-2026 21:09:35 UTC] ✅ Reasignación EN BASE - Envío #31904: Ya tiene contenedor de entrega #3706
+[14-Jun-2026 21:09:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:09:40 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:09:41 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[14-Jun-2026 21:09:41 UTC] 🔵 [FILTER] Usuario actual: 109
+[14-Jun-2026 21:09:41 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]}}
+[14-Jun-2026 21:09:41 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[14-Jun-2026 21:09:41 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-06-14
+[14-Jun-2026 21:09:41 UTC] 🔵 [FILTER] Fecha desde: '2026-06-14' | Fecha hasta: '2026-06-14'
+[14-Jun-2026 21:09:41 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[14-Jun-2026 21:09:41 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-06-14', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-06-14', '%Y-%m-%d'))
+        
+[14-Jun-2026 21:09:41 UTC] 🔵 [FILTER] IDs encontrados por fecha: 1
+[14-Jun-2026 21:09:41 UTC] 🔵 [FILTER] Primeros 10 IDs: 31904
+[14-Jun-2026 21:09:41 UTC] 🔵 [FILTER] post__in no existe, creando nuevo
+[14-Jun-2026 21:09:41 UTC] 🔵 [FILTER] post_status cambiado a array para incluir estados normales (EXCLUYENDO trash)
+[14-Jun-2026 21:09:41 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":["publish","draft","pending","private"],"posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"post__in":["31904"]}
+[14-Jun-2026 21:09:42 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:09:43 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:09:45 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:09:49 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:09:49 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:09:57 UTC] PHP Deprecated:  Automatic conversion of false to array is deprecated in /var/www/html/wp-content/plugins/elementor/includes/api.php on line 176
+[14-Jun-2026 21:10:00 UTC] [Elementor Atomic Widgets] [WARNING] Migrations manifest not found | Context: {"path":"https://migrations.elementor.com/manifest.json"}
+[14-Jun-2026 21:10:00 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[14-Jun-2026 21:10:00 UTC] 🔵 [FILTER] Usuario actual: 120
+[14-Jun-2026 21:10:00 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":100,"paged":1,"s":"","meta_query":{"relation":"AND","0":{"__assignment":{"key":"wpcargo_driver","value":120,"compare":"="}}}}
+[14-Jun-2026 21:10:00 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[14-Jun-2026 21:10:00 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-06-14
+[14-Jun-2026 21:10:00 UTC] 🔵 [FILTER] Fecha desde: '2026-06-14' | Fecha hasta: '2026-06-14'
+[14-Jun-2026 21:10:00 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[14-Jun-2026 21:10:00 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-06-14', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-06-14', '%Y-%m-%d'))
+        
+[14-Jun-2026 21:10:00 UTC] 🔵 [FILTER] IDs encontrados por fecha: 1
+[14-Jun-2026 21:10:00 UTC] 🔵 [FILTER] Primeros 10 IDs: 31904
+[14-Jun-2026 21:10:00 UTC] 🔵 [FILTER] post__in no existe, creando nuevo
+[14-Jun-2026 21:10:00 UTC] 🔵 [FILTER] post_status cambiado a array para incluir estados normales (EXCLUYENDO trash)
+[14-Jun-2026 21:10:00 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":["publish","draft","pending","private"],"posts_per_page":100,"paged":1,"s":"","meta_query":{"relation":"AND","0":{"__assignment":{"key":"wpcargo_driver","value":120,"compare":"="}}},"post__in":["31904"]}
+[14-Jun-2026 21:10:01 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:10:02 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:10:03 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:10:05 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:10:16 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:10:16 UTC] 🔵 [BEFORE_META_UPDATE] Interceptando cambio de estado en Envío #31904
+[14-Jun-2026 21:10:16 UTC]    Estado Actual: 'EN BASE MERCOURIER' -> Nuevo: 'LISTO PARA SALIR'
+[14-Jun-2026 21:10:16 UTC]    ✅ Meta 'wpcargo_status_anterior' establecido a: 'EN BASE MERCOURIER'
+[14-Jun-2026 21:10:16 UTC]    ✅ Historial actualizado (total: 3 registros)
+[14-Jun-2026 21:10:16 UTC] MERC_DEBUG_ENTRY - merc_maybe_create_penalty_for_shipment post_id=31904 post_type=wpcargo_shipment
+[14-Jun-2026 21:10:16 UTC] MERC_DEBUG_STATE - post_id=31904 estado_raw=LISTO PARA SALIR
+[14-Jun-2026 21:10:16 UTC] MERC_DEBUG_ABORT - post_id=31904 estado no es NO RECOGIDO, abortando
+[14-Jun-2026 21:10:16 UTC] MERC_DEBUG_ENTRY - merc_maybe_create_penalty_for_shipment post_id=31904 post_type=wpcargo_shipment
+[14-Jun-2026 21:10:16 UTC] MERC_DEBUG_STATE - post_id=31904 estado_raw=LISTO PARA SALIR
+[14-Jun-2026 21:10:16 UTC] MERC_DEBUG_ABORT - post_id=31904 estado no es NO RECOGIDO, abortando
+[14-Jun-2026 21:10:16 UTC] MERC_NO_RECIBIDO_DEBUG - post_id=31904 estado=LISTO PARA SALIR NO es NO RECIBIDO
+[14-Jun-2026 21:10:19 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:10:20 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[14-Jun-2026 21:10:20 UTC] 🔵 [FILTER] Usuario actual: 109
+[14-Jun-2026 21:10:20 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]}}
+[14-Jun-2026 21:10:20 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[14-Jun-2026 21:10:20 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-06-14
+[14-Jun-2026 21:10:20 UTC] 🔵 [FILTER] Fecha desde: '2026-06-14' | Fecha hasta: '2026-06-14'
+[14-Jun-2026 21:10:20 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[14-Jun-2026 21:10:20 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-06-14', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-06-14', '%Y-%m-%d'))
+        
+[14-Jun-2026 21:10:20 UTC] 🔵 [FILTER] IDs encontrados por fecha: 1
+[14-Jun-2026 21:10:20 UTC] 🔵 [FILTER] Primeros 10 IDs: 31904
+[14-Jun-2026 21:10:20 UTC] 🔵 [FILTER] post__in no existe, creando nuevo
+[14-Jun-2026 21:10:20 UTC] 🔵 [FILTER] post_status cambiado a array para incluir estados normales (EXCLUYENDO trash)
+[14-Jun-2026 21:10:20 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":["publish","draft","pending","private"],"posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"post__in":["31904"]}
+[14-Jun-2026 21:10:21 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:10:23 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:10:25 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:10:30 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:10:32 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[14-Jun-2026 21:10:32 UTC] 🔵 [FILTER] Usuario actual: 120
+[14-Jun-2026 21:10:32 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":100,"paged":1,"s":"","meta_query":{"relation":"AND","0":{"__assignment":{"key":"wpcargo_driver","value":120,"compare":"="}}}}
+[14-Jun-2026 21:10:32 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[14-Jun-2026 21:10:32 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-06-14
+[14-Jun-2026 21:10:32 UTC] 🔵 [FILTER] Fecha desde: '2026-06-14' | Fecha hasta: '2026-06-14'
+[14-Jun-2026 21:10:32 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[14-Jun-2026 21:10:32 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-06-14', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-06-14', '%Y-%m-%d'))
+        
+[14-Jun-2026 21:10:32 UTC] 🔵 [FILTER] IDs encontrados por fecha: 1
+[14-Jun-2026 21:10:32 UTC] 🔵 [FILTER] Primeros 10 IDs: 31904
+[14-Jun-2026 21:10:32 UTC] 🔵 [FILTER] post__in no existe, creando nuevo
+[14-Jun-2026 21:10:32 UTC] 🔵 [FILTER] post_status cambiado a array para incluir estados normales (EXCLUYENDO trash)
+[14-Jun-2026 21:10:32 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":["publish","draft","pending","private"],"posts_per_page":100,"paged":1,"s":"","meta_query":{"relation":"AND","0":{"__assignment":{"key":"wpcargo_driver","value":120,"compare":"="}}},"post__in":["31904"]}
+[14-Jun-2026 21:10:33 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:10:33 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:10:34 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:10:36 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:10:36 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:10:37 UTC] MERC_DEBUG_ENTRY - merc_maybe_create_penalty_for_shipment post_id=31904 post_type=wpcargo_shipment
+[14-Jun-2026 21:10:37 UTC] MERC_DEBUG_STATE - post_id=31904 estado_raw=EN RUTA
+[14-Jun-2026 21:10:37 UTC] MERC_DEBUG_ABORT - post_id=31904 estado no es NO RECOGIDO, abortando
+[14-Jun-2026 21:10:37 UTC] MERC_DEBUG_ENTRY - merc_maybe_create_penalty_for_shipment post_id=31904 post_type=wpcargo_shipment
+[14-Jun-2026 21:10:37 UTC] MERC_DEBUG_STATE - post_id=31904 estado_raw=EN RUTA
+[14-Jun-2026 21:10:37 UTC] MERC_DEBUG_ABORT - post_id=31904 estado no es NO RECOGIDO, abortando
+[14-Jun-2026 21:10:37 UTC] MERC_NO_RECIBIDO_DEBUG - post_id=31904 estado=EN RUTA NO es NO RECIBIDO
+[14-Jun-2026 21:10:40 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:10:42 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[14-Jun-2026 21:10:42 UTC] 🔵 [FILTER] Usuario actual: 120
+[14-Jun-2026 21:10:42 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":100,"paged":1,"s":"","meta_query":{"relation":"AND","0":{"__assignment":{"key":"wpcargo_driver","value":120,"compare":"="}}}}
+[14-Jun-2026 21:10:42 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[14-Jun-2026 21:10:42 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-06-14
+[14-Jun-2026 21:10:42 UTC] 🔵 [FILTER] Fecha desde: '2026-06-14' | Fecha hasta: '2026-06-14'
+[14-Jun-2026 21:10:42 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[14-Jun-2026 21:10:42 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-06-14', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-06-14', '%Y-%m-%d'))
+        
+[14-Jun-2026 21:10:42 UTC] 🔵 [FILTER] IDs encontrados por fecha: 1
+[14-Jun-2026 21:10:42 UTC] 🔵 [FILTER] Primeros 10 IDs: 31904
+[14-Jun-2026 21:10:42 UTC] 🔵 [FILTER] post__in no existe, creando nuevo
+[14-Jun-2026 21:10:42 UTC] 🔵 [FILTER] post_status cambiado a array para incluir estados normales (EXCLUYENDO trash)
+[14-Jun-2026 21:10:42 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":["publish","draft","pending","private"],"posts_per_page":100,"paged":1,"s":"","meta_query":{"relation":"AND","0":{"__assignment":{"key":"wpcargo_driver","value":120,"compare":"="}}},"post__in":["31904"]}
+[14-Jun-2026 21:10:42 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:10:42 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:10:43 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:10:45 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:10:46 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:10:46 UTC] === DEBUG: show_signaturepad_for_all_roles() INICIADO ===
+[14-Jun-2026 21:10:46 UTC] DEBUG: $wpcargo disponible: YES
+[14-Jun-2026 21:10:46 UTC] DEBUG: Usuario actual: moto@gmail.com | Roles: wpcargo_driver
+[14-Jun-2026 21:10:46 UTC] DEBUG: can_manage_options=NO | is_driver=YES
+[14-Jun-2026 21:10:46 UTC] DEBUG: shipment_id recibido: 31904
+[14-Jun-2026 21:10:46 UTC] DEBUG: pod_shipper recibido: EMPTY
+[14-Jun-2026 21:10:46 UTC] DEBUG: pod_receiver recibido: EMPTY
+[14-Jun-2026 21:10:46 UTC] DEBUG: Shipment encontrado: YES
+[14-Jun-2026 21:10:46 UTC] DEBUG: Shipment post_type: wpcargo_shipment
+[14-Jun-2026 21:10:46 UTC] DEBUG: Shipment title: MERC-010463
+[14-Jun-2026 21:10:46 UTC] DEBUG: WPCARGO_POD_PATH definido: YES
+[14-Jun-2026 21:10:46 UTC] DEBUG: WPCARGO_POD_PATH = /var/www/html/wp-content/plugins/wpcargo-pod-addons/
+[14-Jun-2026 21:10:46 UTC] --- DEBUG: Cargando funciones del plugin POD ---
+[14-Jun-2026 21:10:46 UTC] DEBUG: ✓ wpcpod_signature_field_list ya existe
+[14-Jun-2026 21:10:46 UTC] DEBUG: ✓ wpcargo_history_order ya existe
+[14-Jun-2026 21:10:46 UTC] --- DEBUG: Preparando variables para el template ---
+[14-Jun-2026 21:10:46 UTC] DEBUG: get_pod_img = EMPTY
+[14-Jun-2026 21:10:46 UTC] DEBUG: pod_signature = EMPTY
+[14-Jun-2026 21:10:46 UTC] DEBUG: shipment_update es array: YES
+[14-Jun-2026 21:10:46 UTC] DEBUG: wpcargo_history_order aplicada
+[14-Jun-2026 21:10:46 UTC] DEBUG: wpcargo_get_status = EN RUTA
+[14-Jun-2026 21:10:46 UTC] DEBUG: shipper_selected_option cargada: 4 campos
+[14-Jun-2026 21:10:46 UTC] DEBUG: receiver_selected_option cargada: 5 campos
+[14-Jun-2026 21:10:46 UTC] --- DEBUG: Cargando templates del plugin POD ---
+[14-Jun-2026 21:10:46 UTC] DEBUG: Custom Fields addon activo: YES
+[14-Jun-2026 21:10:46 UTC] DEBUG: Intentando cargar header CF: /var/www/html/wp-content/plugins/wpcargo-pod-addons/templates/wpc-pod-sign-header-cf.tpl.php
+[14-Jun-2026 21:10:46 UTC] DEBUG: ✓ Header incluido
+[14-Jun-2026 21:10:46 UTC] DEBUG: Intentando cargar signature form: /var/www/html/wp-content/plugins/wpcargo-pod-addons/templates/wpc-pod-signature-form.tpl.php
+[14-Jun-2026 21:10:46 UTC] DEBUG: ✓ Signature form incluido
+[14-Jun-2026 21:10:46 UTC] DEBUG: Intentando cargar sign template: /var/www/html/wp-content/plugins/wpcargo-pod-addons/templates/wpc-pod-sign.tpl.php
+[14-Jun-2026 21:10:46 UTC] DEBUG: ✓ Sign template incluido
+[14-Jun-2026 21:10:46 UTC] DEBUG: HTML final length: 39230
+[14-Jun-2026 21:10:46 UTC] === DEBUG: show_signaturepad_for_all_roles() COMPLETADO ===
+[14-Jun-2026 21:10:54 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:10:54 UTC] WPCPod: Starting upload for shipment 31904 with 1 file(s)
+[14-Jun-2026 21:10:54 UTC] WPCPod: Processing file 1/1: translated_image_es.png
+[14-Jun-2026 21:10:58 UTC] WPCPod Image uploaded success: Attachment ID 31905
+[14-Jun-2026 21:10:58 UTC] WPCPod: Successfully saved 1 images for shipment 31904
+[14-Jun-2026 21:11:35 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:11:35 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:11:35 UTC] MERC_POD_DETECT - shipmentID=31904 pod_payment_methods_len=190872 signature_present=no URI=/dashboard/
+[14-Jun-2026 21:11:35 UTC] MERC_POD_AUTO_SAVE - invocando merc_save_pod_payment_methods (final) para shipment 31904 has_signature=0 status=ENTREGADO
+[14-Jun-2026 21:11:35 UTC] MERC_DEBUG_ENTRY - merc_maybe_create_penalty_for_shipment post_id=31904 post_type=wpcargo_shipment
+[14-Jun-2026 21:11:35 UTC] MERC_DEBUG_STATE - post_id=31904 estado_raw=ENTREGADO
+[14-Jun-2026 21:11:35 UTC] MERC_DEBUG_ABORT - post_id=31904 estado no es NO RECOGIDO, abortando
+[14-Jun-2026 21:11:35 UTC] MERC_DEBUG_ENTRY - merc_maybe_create_penalty_for_shipment post_id=31904 post_type=wpcargo_shipment
+[14-Jun-2026 21:11:35 UTC] MERC_DEBUG_STATE - post_id=31904 estado_raw=ENTREGADO
+[14-Jun-2026 21:11:35 UTC] MERC_DEBUG_ABORT - post_id=31904 estado no es NO RECOGIDO, abortando
+[14-Jun-2026 21:11:35 UTC] MERC_NO_RECIBIDO_DEBUG - post_id=31904 estado=ENTREGADO NO es NO RECIBIDO
+[14-Jun-2026 21:11:35 UTC] 🔵 merc_save_pod_payment_methods ejecutado - Shipment ID: 31904
+[14-Jun-2026 21:11:35 UTC] 🔵 form_data keys: __pod_id,__pod_signature,wpcpod_nonce,remarks,wpcargo_total_cobrar,pod_payment_methods,status (count=7)
+[14-Jun-2026 21:11:35 UTC] 🔵 $_POST keys: action,nonce,formData
+[14-Jun-2026 21:11:35 UTC] 🔵 pod_payment_methods encontrado en form_data (len=190872) preview=[{\"metodo\":\"efectivo\",\"monto\":10},{\"metodo\":\"pos\",\"monto\":10,\"imagen\":\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAE...
+[14-Jun-2026 21:11:35 UTC] ✅ Procesando métodos de pago...
+[14-Jun-2026 21:11:35 UTC] ✅ Tamaño del JSON: 190872 bytes
+[14-Jun-2026 21:11:35 UTC] ✅ Primeros 500 caracteres del JSON: [{\"metodo\":\"efectivo\",\"monto\":10},{\"metodo\":\"pos\",\"monto\":10,\"imagen\":\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAA
+[14-Jun-2026 21:11:35 UTC] ✅ Últimos 100 caracteres del JSON: zSj6tdXUwIhy/PNLj9pXV1AH//2Q==\",\"imagen_nombre\":\"ChatGPT Image 5 jun 2026, 12_34_16 p.m..png\"}]
+[14-Jun-2026 21:11:35 UTC] ⚠️ Primer intento falló: Syntax error - Intentando con stripslashes...
+[14-Jun-2026 21:11:35 UTC] 🔵 merc_save_pod_payment_methods ejecutado - Shipment ID: 31904
+[14-Jun-2026 21:11:35 UTC] 🔵 form_data keys: __pod_id,__pod_signature,wpcpod_nonce,remarks,wpcargo_total_cobrar,pod_payment_methods,status (count=7)
+[14-Jun-2026 21:11:35 UTC] 🔵 $_POST keys: __pod_id,__pod_signature,wpcpod_nonce,remarks,wpcargo_total_cobrar,pod_payment_methods,status
+[14-Jun-2026 21:11:35 UTC] 🔵 pod_payment_methods_len=190872
+[14-Jun-2026 21:11:35 UTC] 🔵 pod_payment_methods encontrado en form_data (len=190872) preview=[{\"metodo\":\"efectivo\",\"monto\":10},{\"metodo\":\"pago_merc\",\"monto\":10,\"imagen\":\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4...
+[14-Jun-2026 21:11:35 UTC] ✅ Procesando métodos de pago...
+[14-Jun-2026 21:11:35 UTC] ✅ Tamaño del JSON: 190872 bytes
+[14-Jun-2026 21:11:35 UTC] ✅ Primeros 500 caracteres del JSON: [{\"metodo\":\"efectivo\",\"monto\":10},{\"metodo\":\"pago_merc\",\"monto\":10,\"imagen\":\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAA
+[14-Jun-2026 21:11:35 UTC] ✅ Últimos 100 caracteres del JSON: zSj6tdXUwIhy/PNLj9pXV1AH//2Q==\",\"imagen_nombre\":\"ChatGPT Image 5 jun 2026, 12_34_16 p.m..png\"}]
+[14-Jun-2026 21:11:35 UTC] ⚠️ Primer intento falló: Syntax error - Intentando con stripslashes...
+[14-Jun-2026 21:11:35 UTC] ✅ json_last_error después de stripslashes: No error
+[14-Jun-2026 21:11:35 UTC] ✅ Número de métodos decodificados: 4
+[14-Jun-2026 21:11:35 UTC] ✅ 4 métodos decodificados correctamente
+[14-Jun-2026 21:11:35 UTC] 🔍 Procesando método 0 - Método: efectivo
+[14-Jun-2026 21:11:35 UTC] 🔍 Procesando método 1 - Método: pos
+[14-Jun-2026 21:11:35 UTC] 📸 Método 1 contiene imagen
+[14-Jun-2026 21:11:35 UTC] ✅ json_last_error después de stripslashes: No error
+[14-Jun-2026 21:11:35 UTC] ✅ Número de métodos decodificados: 4
+[14-Jun-2026 21:11:35 UTC] ✅ 4 métodos decodificados correctamente
+[14-Jun-2026 21:11:35 UTC] ✅ Archivo guardado: metodo-pago-31904-1-1781471495.jpeg
+[14-Jun-2026 21:11:35 UTC] 🔍 Procesando método 0 - Método: efectivo
+[14-Jun-2026 21:11:35 UTC] 🔍 Procesando método 1 - Método: pago_merc
+[14-Jun-2026 21:11:35 UTC] 📸 Método 1 contiene imagen
+[14-Jun-2026 21:11:35 UTC] ✅ Archivo guardado: metodo-pago-31904-1-1781471495.jpeg
+[14-Jun-2026 21:11:35 UTC] ✅ Imagen guardada - ID: 31906
+[14-Jun-2026 21:11:35 UTC] 🔍 Procesando método 2 - Método: pago_merc
+[14-Jun-2026 21:11:35 UTC] 📸 Método 2 contiene imagen
+[14-Jun-2026 21:11:35 UTC] ✅ Archivo guardado: metodo-pago-31904-2-1781471495.jpeg
+[14-Jun-2026 21:11:35 UTC] ✅ Imagen guardada - ID: 31907
+[14-Jun-2026 21:11:35 UTC] 🔍 Procesando método 2 - Método: pos
+[14-Jun-2026 21:11:35 UTC] 📸 Método 2 contiene imagen
+[14-Jun-2026 21:11:35 UTC] ✅ Archivo guardado: metodo-pago-31904-2-1781471495.jpeg
+[14-Jun-2026 21:11:35 UTC] ✅ Imagen guardada - ID: 31908
+[14-Jun-2026 21:11:35 UTC] 🔍 Procesando método 3 - Método: pago_marca
+[14-Jun-2026 21:11:35 UTC] 📸 Método 3 contiene imagen
+[14-Jun-2026 21:11:35 UTC] ✅ Archivo guardado: metodo-pago-31904-3-1781471495.jpeg
+[14-Jun-2026 21:11:36 UTC] ✅ Imagen guardada - ID: 31909
+[14-Jun-2026 21:11:36 UTC] 🔍 Procesando método 3 - Método: pago_marca
+[14-Jun-2026 21:11:36 UTC] 📸 Método 3 contiene imagen
+[14-Jun-2026 21:11:36 UTC] ✅ Archivo guardado: metodo-pago-31904-3-1781471496.jpeg
+[14-Jun-2026 21:11:36 UTC] ✅ Imagen guardada - ID: 31910
+[14-Jun-2026 21:11:36 UTC] ✅ IDs de imágenes guardadas: 31907, 31908, 31910
+[14-Jun-2026 21:11:36 UTC] MERC_POD_DEBUG - commission calc: used_total_for_commission=40.00 source=meta:wpcargo_total_cobrar sum_no_pos=30.00 faltante=10.00 commission_total=0.50
+[14-Jun-2026 21:11:36 UTC] MERC_POD_DEBUG - pos_count=1
+[14-Jun-2026 21:11:36 UTC] MERC_POD_DEBUG - pos_recibido index=2 monto_bruto=10.00 commission=0.50 monto_neto=9.50
+[14-Jun-2026 21:11:36 UTC] ✅ Imagen guardada - ID: 31911
+[14-Jun-2026 21:11:36 UTC] ✅ Métodos de pago guardados en post meta (POS neteado en JSON)
+[14-Jun-2026 21:11:36 UTC] ✅ IDs de imágenes guardadas: 31907, 31908, 31910
+[14-Jun-2026 21:11:36 UTC] ✅ IDs de imágenes guardadas: 31906, 31909, 31911
+[14-Jun-2026 21:11:36 UTC] MERC_POD_DEBUG - commission calc: used_total_for_commission=40.00 source=meta:wpcargo_total_cobrar sum_no_pos=30.00 faltante=10.00 commission_total=0.50
+[14-Jun-2026 21:11:36 UTC] MERC_POD_DEBUG - pos_count=1
+[14-Jun-2026 21:11:36 UTC] MERC_POD_DEBUG - pos_recibido index=1 monto_bruto=10.00 commission=0.50 monto_neto=9.50
+[14-Jun-2026 21:11:36 UTC] ✅ Métodos de pago guardados en post meta (POS neteado en JSON)
+[14-Jun-2026 21:11:36 UTC] ✅ IDs de imágenes guardadas: 31906, 31909, 31911
+[14-Jun-2026 21:11:36 UTC] ✅ Totales guardados - Efectivo: 10, Marca: 10, MERC: 10, POS: 9.5
+[14-Jun-2026 21:11:36 UTC] ✅ Totales guardados - Efectivo: 10, Marca: 10, MERC: 10, POS: 9.5
+[14-Jun-2026 21:11:36 UTC] ✅ Estado actualizado a ENTREGADO por merc_save_pod_payment_methods para shipment 31904
+[14-Jun-2026 21:11:36 UTC] ✅ Estado actualizado a ENTREGADO por merc_save_pod_payment_methods para shipment 31904
+[14-Jun-2026 21:11:36 UTC] ✅ Formulario marcado como procesado para shipment 31904
+[14-Jun-2026 21:11:36 UTC] ✅ Formulario marcado como procesado para shipment 31904
+[14-Jun-2026 21:11:36 UTC] MERC_POD_AUTO_SAVE - completado para shipment 31904
+[14-Jun-2026 21:11:36 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:11:37 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[14-Jun-2026 21:11:37 UTC] 🔵 [FILTER] Usuario actual: 120
+[14-Jun-2026 21:11:37 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":100,"paged":1,"s":"","meta_query":{"relation":"AND","0":{"__assignment":{"key":"wpcargo_driver","value":120,"compare":"="}}}}
+[14-Jun-2026 21:11:37 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[14-Jun-2026 21:11:37 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-06-14
+[14-Jun-2026 21:11:37 UTC] 🔵 [FILTER] Fecha desde: '2026-06-14' | Fecha hasta: '2026-06-14'
+[14-Jun-2026 21:11:37 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[14-Jun-2026 21:11:37 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-06-14', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-06-14', '%Y-%m-%d'))
+        
+[14-Jun-2026 21:11:37 UTC] 🔵 [FILTER] IDs encontrados por fecha: 1
+[14-Jun-2026 21:11:37 UTC] 🔵 [FILTER] Primeros 10 IDs: 31904
+[14-Jun-2026 21:11:37 UTC] 🔵 [FILTER] post__in no existe, creando nuevo
+[14-Jun-2026 21:11:37 UTC] 🔵 [FILTER] post_status cambiado a array para incluir estados normales (EXCLUYENDO trash)
+[14-Jun-2026 21:11:37 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":["publish","draft","pending","private"],"posts_per_page":100,"paged":1,"s":"","meta_query":{"relation":"AND","0":{"__assignment":{"key":"wpcargo_driver","value":120,"compare":"="}}},"post__in":["31904"]}
+[14-Jun-2026 21:11:38 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[14-Jun-2026 21:11:38 UTC] 🔵 [FILTER] Usuario actual: 120
+[14-Jun-2026 21:11:38 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":100,"paged":1,"s":"","meta_query":{"relation":"AND","0":{"__assignment":{"key":"wpcargo_driver","value":120,"compare":"="}}}}
+[14-Jun-2026 21:11:38 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[14-Jun-2026 21:11:38 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-06-14
+[14-Jun-2026 21:11:38 UTC] 🔵 [FILTER] Fecha desde: '2026-06-14' | Fecha hasta: '2026-06-14'
+[14-Jun-2026 21:11:38 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[14-Jun-2026 21:11:38 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-06-14', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-06-14', '%Y-%m-%d'))
+        
+[14-Jun-2026 21:11:38 UTC] 🔵 [FILTER] IDs encontrados por fecha: 1
+[14-Jun-2026 21:11:38 UTC] 🔵 [FILTER] Primeros 10 IDs: 31904
+[14-Jun-2026 21:11:38 UTC] 🔵 [FILTER] post__in no existe, creando nuevo
+[14-Jun-2026 21:11:38 UTC] 🔵 [FILTER] post_status cambiado a array para incluir estados normales (EXCLUYENDO trash)
+[14-Jun-2026 21:11:38 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":["publish","draft","pending","private"],"posts_per_page":100,"paged":1,"s":"","meta_query":{"relation":"AND","0":{"__assignment":{"key":"wpcargo_driver","value":120,"compare":"="}}},"post__in":["31904"]}
+[14-Jun-2026 21:11:38 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:11:39 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:11:39 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:11:41 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:11:42 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:11:43 UTC] PHP Warning:  Undefined variable $tipo_vista in /var/www/html/wp-content/themes/blocksy-child/functions.php on line 6741
+[14-Jun-2026 21:11:43 UTC] MERC_ADMIN_RESUMEN - date_query="AND EXISTS(
+            SELECT 1 FROM wp_postmeta pm_pickup 
+            WHERE pm_pickup.post_id = p.ID 
+            AND pm_pickup.meta_key = 'wpcargo_pickup_date_picker'
+            AND (
+                STR_TO_DATE(pm_pickup.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-06-14', '%Y-%m-%d')
+                AND STR_TO_DATE(pm_pickup.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-06-14', '%Y-%m-%d')
+            )
+        )"
+[14-Jun-2026 21:11:43 UTC] MERC_ADMIN_RESUMEN - shipments_count=1
+[14-Jun-2026 21:11:43 UTC] ═══════════════════════════════════════════════════════════
+[14-Jun-2026 21:11:43 UTC] 🔍 MERC_ADMIN_DEBUG - INICIANDO CÁLCULOS DEL PANEL
+[14-Jun-2026 21:11:43 UTC] ═══════════════════════════════════════════════════════════
+[14-Jun-2026 21:11:43 UTC] 
+[14-Jun-2026 21:11:43 UTC] ────────────────────────────────────────────────────────
+[14-Jun-2026 21:11:43 UTC] 📦 SHIPMENT #31904
+[14-Jun-2026 21:11:43 UTC]    Costo Envío: S/. 10.00
+[14-Jun-2026 21:11:43 UTC]    Costo Producto: S/. 30.00
+[14-Jun-2026 21:11:43 UTC]    Estado Motorizado: liquidado
+[14-Jun-2026 21:11:43 UTC]    Estado Remitente (liquidado): VACÍO
+[14-Jun-2026 21:11:43 UTC]    Quién Paga: remitente
+[14-Jun-2026 21:11:43 UTC]    Estado Entrega: ENTREGADO
+[14-Jun-2026 21:11:43 UTC]    ✅ SUMADO A TOTAL ENTREGADOS: S/. 30.00 (producto=30.00, Total: S/. 30.00)
+[14-Jun-2026 21:11:43 UTC]    ✅ SUMADO A INGRESOS ENVÍOS: S/. 10.00 (Total: S/. 10.00)
+[14-Jun-2026 21:11:43 UTC]    Cliente 118 - ¿Liquidación verificada? NO
+[14-Jun-2026 21:11:43 UTC]    TOTALES ACUMULADOS: pago_merc=S/. 10.00, pos=S/. 9.50, pago_marca=S/. 10.00, servicio=S/. 10.00
+[14-Jun-2026 21:11:43 UTC]    GET_PAYMENT_TOTALS: efectivo=S/. 10.00, pago_merc=S/. 10.00, pos=S/. 9.50, pago_marca=S/. 10.00, total=S/. 39.50
+[14-Jun-2026 21:11:43 UTC]    Efectivo Total acumulado: S/. 10.00
+[14-Jun-2026 21:11:43 UTC]    ✅ SUMADO A RECAUDADO_MERC: S/. 10.00 (Total: S/. 10.00)
+[14-Jun-2026 21:11:43 UTC]    ✅ SUMADO A RECAUDADO_MARCA: S/. 10.00 (Total: S/. 10.00)
+[14-Jun-2026 21:11:43 UTC]    ✅ SUMADO A POS_RECAUDADO: S/. 9.50 (Total: S/. 9.50)
+[14-Jun-2026 21:11:43 UTC] 
+[14-Jun-2026 21:11:43 UTC] ═══════════════════════════════════════════════════════════
+[14-Jun-2026 21:11:43 UTC] 🔍 CÁLCULO DE "POR PAGAR REMITENTES" - FÓRMULA TOTAL GENERAL
+[14-Jun-2026 21:11:43 UTC] ═══════════════════════════════════════════════════════════
+[14-Jun-2026 21:11:43 UTC] RECAUDADO_MER (MER): S/. 10.00
+[14-Jun-2026 21:11:43 UTC] EFECTIVO_TOTAL (MOTO): S/. 10.00
+[14-Jun-2026 21:11:43 UTC] POS_RECAUDADO (POS): S/. 9.50
+[14-Jun-2026 21:11:43 UTC] RECAUDADO_MARCA (MARCA): S/. 10.00
+[14-Jun-2026 21:11:43 UTC] INGRESOS_ENVIOS (ENVIOS): S/. 10.00
+[14-Jun-2026 21:11:43 UTC] ─────────────────────────────────────────────────────
+[14-Jun-2026 21:11:43 UTC] por_pagar_rem = MER + MOTO + POS - MARCA - ENVIOS
+[14-Jun-2026 21:11:43 UTC] por_pagar_rem = (10.00 + 10.00 + 9.50) - 10.00 - 10.00
+[14-Jun-2026 21:11:43 UTC] por_pagar_rem = S/. 9.50
+[14-Jun-2026 21:11:43 UTC] 
+[14-Jun-2026 21:11:43 UTC] ═══════════════════════════════════════════════════════════
+[14-Jun-2026 21:11:43 UTC] 📊 RESUMEN FINAL DE CÁLCULOS DEL PANEL ADMIN
+[14-Jun-2026 21:11:43 UTC] ═══════════════════════════════════════════════════════════
+[14-Jun-2026 21:11:43 UTC] Total Entregados: S/. 30.00 (TODOS los envíos entregados)
+[14-Jun-2026 21:11:43 UTC] Ingresos por Envíos: S/. 10.00 (solo liquidados)
+[14-Jun-2026 21:11:43 UTC] Efectivo Total: S/. 10.00
+[14-Jun-2026 21:11:43 UTC] Recaudado por MERC: S/. 10.00
+[14-Jun-2026 21:11:43 UTC] Recaudado por MARCA: S/. 10.00
+[14-Jun-2026 21:11:43 UTC] Recaudado por POS: S/. 9.50
+[14-Jun-2026 21:11:43 UTC] Por Pagar Remitentes: S/. 9.50
+[14-Jun-2026 21:11:43 UTC] Penalidades del día: S/. 0.00
+[14-Jun-2026 21:11:43 UTC] TOTAL GENERAL (Balance Neto): S/. 30.00
+[14-Jun-2026 21:11:43 UTC] ═══════════════════════════════════════════════════════════
+[14-Jun-2026 21:11:43 UTC] 
+[14-Jun-2026 21:11:43 UTC] 🔍 [MERC_ADMIN_CARDS] drivers_sql: SELECT pm_entrega.meta_value AS driver_id, COUNT(DISTINCT p.ID) AS total_entregas FROM wp_posts p LEFT JOIN wp_postmeta pm_entrega ON p.ID = pm_entrega.post_id AND pm_entrega.meta_key = 'wpcargo_motorizo_entrega' WHERE p.post_type = 'wpcargo_shipment' AND p.post_status = 'publish' AND pm_entrega.meta_value IS NOT NULL AND EXISTS( SELECT 1 FROM wp_postmeta pm_pickup WHERE pm_pickup.post_id = p.ID AND pm_pickup.meta_key = 'wpcargo_pickup_date_picker' AND ( STR_TO_DATE(pm_pickup.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-06-14', '%Y-%m-%d') AND STR_TO_DATE(pm_pickup.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-06-14', '%Y-%m-%d') ) ) GROUP BY pm_entrega.meta_value ORDER BY total_entregas DESC
+[14-Jun-2026 21:11:43 UTC] 🔍 [MERC_ADMIN_CARDS] sample_ids_count: 1
+[14-Jun-2026 21:11:43 UTC] 🔍 [MERC_ADMIN_CARDS] sample shipment_id=31904 wpcargo_driver='120' wpcargo_motorizo_recojo='190'
+[14-Jun-2026 21:11:43 UTC] 🔍 [MERC_ADMIN_CARDS] drivers_count: 1
+[14-Jun-2026 21:11:43 UTC] 🔍 [MERC_ADMIN_CARDS] Motorizado ID: 120 | Envios encontrados: 1
+[14-Jun-2026 21:11:43 UTC]    Shipment #31904 | pod_payment_methods(raw)=[{"metodo":"efectivo","monto":10},{"metodo":"pos","monto":9.5,"imagen_id":31906,"imagen_url":"http://localhost:8081/wp-content/uploads/2026/06/metodo-pago-31904-1-1781471495.jpeg","monto_original":10},{"metodo":"pago_merc","monto":10,"imagen_id":31909,"imagen_url":"http://localhost:8081/wp-content/uploads/2026/06/metodo-pago-31904-2-1781471495.jpeg"},{"metodo":"pago_marca","monto":10,"imagen_id":31911,"imagen_url":"http://localhost:8081/wp-content/uploads/2026/06/metodo-pago-31904-3-1781471496.jpeg"}], wpcargo_total_cobrar='40.00', otros_meta={"monto":"40.00"}
+[14-Jun-2026 21:11:43 UTC]    Shipment #31904 | Totales: efectivo=10, pago_merc=10, pago_marca=10, pos=9.5, total=39.5
+[14-Jun-2026 21:11:43 UTC]    Totales del motorizado: Total=39.5, Efectivo=10, MERC=10, MARCA=10, POS=9.5
+[14-Jun-2026 21:11:44 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:11:48 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
+[14-Jun-2026 21:11:49 UTC] PHP Warning:  Undefined variable $extra_join in /var/www/html/wp-content/themes/blocksy-child/functions.php on line 7231
+[14-Jun-2026 21:11:49 UTC] PHP Warning:  Undefined variable $extra_where in /var/www/html/wp-content/themes/blocksy-child/functions.php on line 7235
+[14-Jun-2026 21:11:50 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-14.log
