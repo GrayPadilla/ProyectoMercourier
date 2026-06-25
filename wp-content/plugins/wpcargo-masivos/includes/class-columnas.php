@@ -1,55 +1,115 @@
 <?php
 if ( ! defined('ABSPATH') ) exit;
 
-/**
- * Meta keys confirmados del plugin oficial import/export de WPCargo:
- * wpcargo_receiver_name, wpcargo_receiver_phone, wpcargo_receiver_address,
- * wpcargo_receiver_email, wpcargo_weight, wpcargo_comments,
- * wpcargo_destination, wpcargo_origin_field, wpcargo_qty,
- * wpcargo_total_freight, wpcargo_type_of_shipment, etc.
- */
 class WCMAS_Columnas {
 
-    const OPTION_KEY = 'wcmas_columnas_v2';
+    public const OPTION_KEY = 'wcmas_columnas_v2';
 
     private static function defaults(): array {
         return [
+            'tipo_envio' => [
+                'id'=>'tipo_envio','label'=>'Tipo de Envío','meta_key'=>'wpcargo_type_of_shipment',
+                'tipo'=>'select_db','activa'=>true,'obligatorio'=>true,
+                'default_val'=>'','opciones'=>[],'placeholder'=>'','ancho'=>'md','orden'=>1,
+            ],
+            'tipo_programado' => [
+                'id'=>'tipo_programado','label'=>'Tipo Programado','meta_key'=>'tipo_programado',
+                'tipo'=>'select_db','activa'=>true,'obligatorio'=>false,
+                'default_val'=>'','opciones'=>[],'placeholder'=>'','ancho'=>'md','orden'=>2,
+            ],
+            'registered_shipper' => [
+                'id'=>'registered_shipper','label'=>'Remitente','meta_key'=>'registered_shipper',
+                'tipo'=>'shipper','activa'=>true,'obligatorio'=>false,
+                'default_val'=>'','opciones'=>[],'placeholder'=>'','ancho'=>'md','orden'=>3,
+            ],
             'dest_nombre' => [
                 'id'=>'dest_nombre','label'=>'Destinatario','meta_key'=>'wpcargo_receiver_name',
                 'tipo'=>'text','activa'=>true,'obligatorio'=>true,
-                'default_val'=>'','opciones'=>[],'placeholder'=>'Nombre completo','ancho'=>'lg','orden'=>1,
-            ],
-            'dest_telefono' => [
-                'id'=>'dest_telefono','label'=>'Teléfono','meta_key'=>'wpcargo_receiver_phone',
-                'tipo'=>'phone','activa'=>true,'obligatorio'=>true,
-                'default_val'=>'','opciones'=>[],'placeholder'=>'9XXXXXXXX','ancho'=>'md','orden'=>2,
+                'default_val'=>'','opciones'=>[],'placeholder'=>'Nombre completo','ancho'=>'lg','orden'=>5,
             ],
             'dest_direccion' => [
                 'id'=>'dest_direccion','label'=>'Dirección','meta_key'=>'wpcargo_receiver_address',
-                'tipo'=>'text','activa'=>true,'obligatorio'=>true,
-                'default_val'=>'','opciones'=>[],'placeholder'=>'Av. / Jr. / Calle...','ancho'=>'lg','orden'=>3,
-            ],
-            'dest_distrito' => [
-                'id'=>'dest_distrito','label'=>'Distrito','meta_key'=>'wpcargo_destination',
                 'tipo'=>'text','activa'=>true,'obligatorio'=>false,
-                'default_val'=>'','opciones'=>[],'placeholder'=>'Ej: Miraflores','ancho'=>'md','orden'=>4,
+                'default_val'=>'','opciones'=>[],'placeholder'=>'Av. / Jr. / Calle...','ancho'=>'lg','orden'=>6,
             ],
-            'monto' => [
-                'id'=>'monto','label'=>'Monto S/','meta_key'=>'wpcargo_total_freight',
+            'distrito_envio' => [
+                'id'=>'distrito_envio','label'=>'Distrito','meta_key'=>'distrito_envio',
+                'tipo'=>'select','activa'=>true,'obligatorio'=>false,
+                'default_val'=>'','opciones'=>self::get_distritos(),'placeholder'=>'','ancho'=>'md','orden'=>7,
+            ],
+            'dest_telefono' => [
+                'id'=>'dest_telefono','label'=>'Teléfono','meta_key'=>'wpcargo_receiver_phone',
+                'tipo'=>'phone','activa'=>true,'obligatorio'=>false,
+                'default_val'=>'','opciones'=>[],'placeholder'=>'9XXXXXXXX','ancho'=>'md','orden'=>8,
+            ],
+            'modo_de_pago' => [
+                'id'=>'modo_de_pago','label'=>'Modo de Pago','meta_key'=>'modo_de_pago',
+                'tipo'=>'select_db','activa'=>true,'obligatorio'=>false,
+                'default_val'=>'','opciones'=>[],'placeholder'=>'','ancho'=>'md','orden'=>9,
+            ],
+            'monto_envio' => [
+                'id'=>'monto_envio','label'=>'Monto Envío S/','meta_key'=>'monto_envio',
                 'tipo'=>'number','activa'=>true,'obligatorio'=>false,
-                'default_val'=>'','opciones'=>[],'placeholder'=>'0.00','ancho'=>'sm','orden'=>5,
+                'default_val'=>'','opciones'=>[],'placeholder'=>'0.00','ancho'=>'sm','orden'=>10,
             ],
-            'referencia' => [
-                'id'=>'referencia','label'=>'Referencia','meta_key'=>'wpcargo_carrier_ref_number',
+            'listo_cobrar_producto' => [
+                'id'=>'listo_cobrar_producto','label'=>'Cobrar Producto','meta_key'=>'listo_cobrar_producto',
+                'tipo'=>'select','activa'=>true,'obligatorio'=>false,
+                'default_val'=>'no','opciones'=>['no','si'],'placeholder'=>'','ancho'=>'sm','orden'=>11,
+            ],
+            'listo_monto_producto' => [
+                'id'=>'listo_monto_producto','label'=>'Monto Producto S/','meta_key'=>'listo_monto_producto',
+                'tipo'=>'number','activa'=>true,'obligatorio'=>false,
+                'default_val'=>'','opciones'=>[],'placeholder'=>'0.00','ancho'=>'sm','orden'=>12,
+            ],
+            'listo_monto_total' => [
+                'id'=>'listo_monto_total','label'=>'Monto Total S/','meta_key'=>'listo_monto_total',
+                'tipo'=>'number_readonly','activa'=>true,'obligatorio'=>false,
+                'default_val'=>'','opciones'=>[],'placeholder'=>'0.00','ancho'=>'sm','orden'=>13,
+            ],
+            'comentario_envio' => [
+                'id'=>'comentario_envio','label'=>'Comentario','meta_key'=>'comentario_envio',
                 'tipo'=>'text','activa'=>true,'obligatorio'=>false,
-                'default_val'=>'','opciones'=>[],'placeholder'=>'N° pedido, código...','ancho'=>'md','orden'=>6,
-            ],
-            'notas' => [
-                'id'=>'notas','label'=>'Notas','meta_key'=>'wpcargo_comments',
-                'tipo'=>'text','activa'=>false,'obligatorio'=>false,
-                'default_val'=>'','opciones'=>[],'placeholder'=>'Indicaciones de entrega','ancho'=>'lg','orden'=>7,
+                'default_val'=>'','opciones'=>[],'placeholder'=>'Indicaciones de entrega','ancho'=>'lg','orden'=>14,
             ],
         ];
+    }
+
+    public static function get_distritos(): array {
+        return [
+            'SAN MIGUEL','PUEBLO LIBRE','CERCADO DE LIMA','BREÑA','MAGDALENA DEL MAR',
+            'JESUS MARIA','SAN ISIDRO','LINCE','LA VICTORIA','SAN LUIS','RIMAC',
+            'SAN JUAN DE LURIGANCHO','EL AGUSTINO','SANTA ANITA','SALAMANCA / ATE',
+            'SAN BORJA','MIRAFLORES','SURQUILLO','SANTIAGO DE SURCO','BARRANCO',
+            'VILLA EL SALVADOR','SAN JUAN DE MIRAFLORES','COMAS','LOS OLIVOS',
+            'INDEPENDENCIA','SAN MARTIN DE PORRES','CALLAO','CHORRILLOS','ATE',
+            'LA MOLINA','SANTA CLARA - ATE','LA PUNTA / CALLAO','PUENTE PIEDRA',
+            'CARABAYLLO','COLLIQUE','VILLA MARIA DEL TRIUNFO','OQUENDO / MARQUEZ',
+            'VMT JOSE GALVEZ','JICAMARCA ANEXO 22','VENTANILLA','HUACHIPA','HUAYCAN',
+            'LURIN','CARAPONGO','CHACLACAYO / ÑAÑA','ANCON','PACHACAMAC','MANCHAY',
+            'CIENEGUILLA','JICAMARCA ANEXO 8','LURIGANCHO','CHOSICA','CAJAMARQUILLA',
+        ];
+    }
+
+    public static function get_tarifa_distrito( string $distrito ): int {
+        $tarifas = [
+            'SAN MIGUEL'=>8,'PUEBLO LIBRE'=>8,'CERCADO DE LIMA'=>8,'BREÑA'=>8,
+            'MAGDALENA DEL MAR'=>8,'JESUS MARIA'=>8,'SAN ISIDRO'=>8,'LINCE'=>8,
+            'LA VICTORIA'=>8,'SAN LUIS'=>8,'RIMAC'=>8,'SAN JUAN DE LURIGANCHO'=>8,
+            'EL AGUSTINO'=>8,'SANTA ANITA'=>8,'SALAMANCA / ATE'=>8,'SAN BORJA'=>8,
+            'MIRAFLORES'=>8,'SURQUILLO'=>8,'SANTIAGO DE SURCO'=>8,'BARRANCO'=>8,
+            'VILLA EL SALVADOR'=>10,'SAN JUAN DE MIRAFLORES'=>10,'COMAS'=>10,
+            'LOS OLIVOS'=>10,'INDEPENDENCIA'=>10,'SAN MARTIN DE PORRES'=>10,
+            'CALLAO'=>10,'CHORRILLOS'=>10,'ATE'=>10,'LA MOLINA'=>10,
+            'SANTA CLARA - ATE'=>12,'LA PUNTA / CALLAO'=>12,'PUENTE PIEDRA'=>12,
+            'CARABAYLLO'=>12,'COLLIQUE'=>12,'VILLA MARIA DEL TRIUNFO'=>12,
+            'OQUENDO / MARQUEZ'=>14,'VMT JOSE GALVEZ'=>14,'JICAMARCA ANEXO 22'=>14,
+            'VENTANILLA'=>14,'HUACHIPA'=>14,'HUAYCAN'=>14,'LURIN'=>15,'CARAPONGO'=>15,
+            'CHACLACAYO / ÑAÑA'=>16,'ANCON'=>18,'PACHACAMAC'=>18,'MANCHAY'=>18,
+            'CIENEGUILLA'=>18,'JICAMARCA ANEXO 8'=>18,'LURIGANCHO'=>18,'CHOSICA'=>18,
+            'CAJAMARQUILLA'=>20,
+        ];
+        return $tarifas[ strtoupper(trim($distrito)) ] ?? 0;
     }
 
     public static function instalar_defaults(): void {
@@ -81,11 +141,12 @@ class WCMAS_Columnas {
         $cols  = self::obtener_todas();
         if ( $id_original && $id_original !== $id ) unset($cols[$id_original]);
         $orden = isset($cols[$id]) ? ($cols[$id]['orden'] ?? 99) : (empty($cols) ? 1 : max(array_column($cols,'orden')) + 1);
+        $tipos_validos = ['text','number','phone','email','select','select_db','textarea','shipper','number_readonly'];
         $cols[$id] = [
             'id'          => $id,
             'label'       => sanitize_text_field($datos['label']),
             'meta_key'    => sanitize_text_field($datos['meta_key']),
-            'tipo'        => in_array($datos['tipo']??'text',['text','number','phone','email','select','textarea','date']) ? $datos['tipo'] : 'text',
+            'tipo'        => in_array($datos['tipo']??'text', $tipos_validos) ? $datos['tipo'] : 'text',
             'activa'      => !empty($datos['activa']),
             'obligatorio' => !empty($datos['obligatorio']),
             'default_val' => sanitize_text_field($datos['default_val'] ?? ''),
@@ -116,19 +177,121 @@ class WCMAS_Columnas {
         return array_filter(array_map('trim', explode("\n", $raw)));
     }
 
+    /** Opciones de modo_de_pago desde la BD de WPCargo */
+    public static function get_modos_de_pago(): array {
+        // Primero intentar desde postmeta
+        $rows = self::get_meta_values_distintos('modo_de_pago');
+        if ( ! empty($rows) ) return $rows;
+        
+        // Fallback: intentar leer desde wp_wpcargo_custom_fields
+        global $wpdb;
+        $custom = $wpdb->get_col($wpdb->prepare(
+            "SELECT field_data FROM {$wpdb->prefix}wpcargo_custom_fields WHERE field_key = %s LIMIT 1",
+            'payment_wpcargo_mode_field'
+        ));
+        if ( ! empty($custom) ) {
+            $data = maybe_unserialize($custom[0]);
+            if ( is_array($data) && ! empty($data) ) {
+                return array_values(array_filter(array_map('trim', $data)));
+            }
+        }
+        
+        return ['Efectivo','Yape','Transferencia'];
+    }
+
+    /** Opciones de tipo_envio desde la BD (solo "Envío Programado") */
+    public static function get_tipos_envio(): array {
+        $rows = self::get_meta_values_distintos('wpcargo_type_of_shipment', "AND meta_value = 'Envío Programado'");
+        if ( ! empty($rows) ) return $rows;
+        
+        // Fallback: intentar leer desde wp_wpcargo_custom_fields
+        global $wpdb;
+        $custom = $wpdb->get_col($wpdb->prepare(
+            "SELECT field_data FROM {$wpdb->prefix}wpcargo_custom_fields WHERE field_key = %s LIMIT 1",
+            'wpcargo_type_of_shipment'
+        ));
+        if ( ! empty($custom) ) {
+            $data = maybe_unserialize($custom[0]);
+            if ( is_array($data) && ! empty($data) ) {
+                return array_values(array_filter(array_map('trim', $data)));
+            }
+        }
+        
+        return ['Envío Programado'];
+    }
+
+    /** Opciones de tipo_programado desde la BD (excluye "Agencia") */
+    public static function get_tipos_programado(): array {
+        $rows = self::get_meta_values_distintos('tipo_programado', "AND meta_value <> 'Agencia'");
+        if ( ! empty($rows) ) return $rows;
+        
+        // Fallback: valores por defecto comunes
+        return ['Domicilio','Mercado Flex'];
+    }
+
+    private static function get_meta_values_distintos( string $meta_key, string $extra_where = '' ): array {
+        global $wpdb;
+        $query = $wpdb->prepare(
+            "SELECT DISTINCT meta_value
+             FROM {$wpdb->prefix}postmeta
+             WHERE meta_key = %s
+             AND meta_value != ''
+             {$extra_where}
+             ORDER BY meta_value ASC",
+            $meta_key
+        );
+        $rows = $wpdb->get_col($query);
+        return is_array($rows) ? array_values(array_filter(array_map('strval', $rows))) : [];
+    }
+
     public static function para_js( bool $solo_activas = true ): string {
         $cols = $solo_activas ? self::obtener_activas() : self::obtener_todas();
-        return wp_json_encode(array_values(array_map(fn($c) => [
-            'id'          => $c['id'],
-            'label'       => $c['label'],
-            'meta_key'    => $c['meta_key'],
-            'tipo'        => $c['tipo'],
-            'activa'      => (bool)$c['activa'],
-            'obligatorio' => (bool)$c['obligatorio'],
-            'default_val' => $c['default_val'] ?? '',
-            'opciones'    => $c['opciones'] ?? [],
-            'placeholder' => $c['placeholder'] ?? '',
-            'ancho'       => $c['ancho'] ?? 'md',
-        ], $cols)));
+        $modos_pago = null;
+        $tipos_envio = null;
+        $tipos_programado = null;
+        foreach ( $cols as &$c ) {
+            $col_id = $c['id'] ?? '';
+            $meta_key = $c['meta_key'] ?? '';
+
+            // Mantener estos campos clave siempre como select_db aunque la config haya sido alterada.
+            if ( in_array($col_id, ['tipo_envio','tipo_programado','modo_de_pago'], true) ) {
+                $c['tipo'] = 'select_db';
+            }
+
+            if ( $c['tipo'] !== 'select_db' ) continue;
+
+            if ( $meta_key === 'modo_de_pago' || $col_id === 'modo_de_pago' ) {
+                if ( $modos_pago === null ) $modos_pago = self::get_modos_de_pago();
+                $c['opciones'] = $modos_pago;
+                continue;
+            }
+
+            if ( $meta_key === 'wpcargo_type_of_shipment' || $col_id === 'tipo_envio' ) {
+                if ( $tipos_envio === null ) $tipos_envio = self::get_tipos_envio();
+                $c['opciones'] = $tipos_envio;
+                continue;
+            }
+
+            if ( $meta_key === 'tipo_programado' || $col_id === 'tipo_programado' ) {
+                if ( $tipos_programado === null ) $tipos_programado = self::get_tipos_programado();
+                $c['opciones'] = $tipos_programado;
+            }
+        }
+        unset($c);
+        return wp_json_encode(array_values(array_map(function($c) {
+            return [
+                'id'          => $c['id'],
+                'label'       => $c['label'],
+                'meta_key'    => $c['meta_key'],
+                'tipo'        => $c['tipo'],
+                'activa'      => (bool)$c['activa'],
+                'obligatorio' => (bool)$c['obligatorio'],
+                'default_val' => $c['default_val'] ?? '',
+                'opciones'    => $c['opciones'] ?? [],
+                'placeholder' => $c['placeholder'] ?? '',
+                'ancho'       => $c['ancho'] ?? 'md',
+            ];
+        }, $cols)));
     }
 }
+

@@ -296,8 +296,39 @@ class MERC_Table_UI {
         flex-wrap: wrap;
         gap: 10px;
         margin-top: 10px;
-        min-height: 100px;
+        min-height: 180px;
         align-items: flex-start;
+    }
+
+    .merc-modal-content .nr-no-image-box {
+        width: 140px;
+        height: 140px;
+        margin: 10px auto 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 140px;
+    }
+
+    .merc-modal-content .nr-no-image-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+    }
+
+    .merc-modal-content .nr-uploaded-images-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .merc-modal-content .nr-uploaded-images-wrapper .header-pod-result {
+        width: 100%;
+        flex: 0 0 100%;
+        margin: 0 0 10px 0;
     }
     .merc-modal-content .header-pod-result {
         font-size: 14px;
@@ -530,6 +561,18 @@ class MERC_Table_UI {
             '</div>');
             $('body').append($modal);
 
+            const NO_IMAGE_URL = '<?php echo esc_url( WPCARGO_POD_URL . "assets/img/no-image.jpg" ); ?>';
+
+            function renderNoImagePlaceholder() {
+                $modal.find('#nr-pod-images-admin').html(
+                    '<div class="nr-no-image-box">' +
+                        '<img src="' + NO_IMAGE_URL + '" alt="NO IMAGE">' +
+                    '</div>'
+                );
+            }
+
+            renderNoImagePlaceholder();
+
             // Obtener datos del shipment para el monto
             $.post(AJAX_URL, { action: 'merc_get_shipment_data', shipment_id: shipmentId, nonce: NONCE_ACTUALIZAR_ESTADO }, function(resp) {
                 if (resp && resp.success && resp.data) {
@@ -699,8 +742,29 @@ class MERC_Table_UI {
                         success:function(response){
                             $button.prop('disabled', false).text(originalText);
                             if (response.success) {
-                                $modal.find('#nr-pod-images-admin').html(response.html);
+                                const $tmp = $('<div>').html(response.html);
+                                const $title = $tmp.find('p').first().addClass('header-pod-result');
+                                const $thumbs = $tmp.find('.gallery-thumb');
+
+                                const $wrap = $('<div class="nr-uploaded-images-row"></div>');
+                                $thumbs.each(function () {
+                                    $wrap.append($(this));
+                                });
+
+                                const $box = $modal.find('#nr-pod-images-admin');
+                                $box.empty();
+
+                                if ($title.length) {
+                                    $box.append($title);
+                                }
+
+                                $box.append($wrap);
+
+                                if ($box.find('.gallery-thumb').length === 0) {
+                                    renderNoImagePlaceholder();
+                                }
                             } else {
+                                renderNoImagePlaceholder();
                                 alert('❌ Error al subir imágenes: ' + (response.message || 'Error desconocido'));
                             }
                         },
@@ -732,6 +796,9 @@ class MERC_Table_UI {
                         success:function(response){
                             if (response.status) {
                                 $thumb.remove();
+                                if ($modal.find('#nr-pod-images-admin .gallery-thumb').length === 0) {
+                                    renderNoImagePlaceholder();
+                                }
                             } else {
                                 $thumb.removeClass('d-none');
                                 alert('❌ No se pudo eliminar la imagen: ' + (response.message || 'Error desconocido'));

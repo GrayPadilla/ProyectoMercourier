@@ -6,7 +6,32 @@ $msgs_map = [
     'error_propio' => ['warning','No puedes modificar tu propio tipo de acceso.'],
 ];
 ?>
+<style>
+.wcrol-avatar-box{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex: 0 0 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f3f4f6;
+}
 
+.wcrol-avatar-box.wcrol-avatar-lg{
+    width: 52px;
+    height: 52px;
+    flex: 0 0 52px;
+}
+
+.wcrol-avatar-box img{
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    display: block;
+}
+</style>
 <div class="d-flex align-items-center mb-3 border-bottom pb-3">
     <h5 class="mb-0 mr-auto"><i class="fa fa-shield mr-2 text-primary"></i>Roles & Accesos</h5>
     <div>
@@ -34,7 +59,9 @@ $msgs_map = [
 
 <!-- Header del usuario -->
 <div style="background:#fff;border:1px solid #dee2e6;border-radius:6px;padding:16px 20px;margin-bottom:16px;display:flex;align-items:center;gap:16px">
-    <?php echo get_avatar($usuario->ID, 52, '', '', ['style'=>'border-radius:50%;flex-shrink:0']); ?>
+    <div class="wcrol-avatar-box wcrol-avatar-lg">
+        <?php echo get_avatar($usuario->ID, 52, '', '', ['class' => 'wcrol-avatar-img']); ?>
+    </div>
     <div style="flex:1">
         <h5 class="mb-0"><?php echo esc_html(wcrol_nombre_usuario($usuario)); ?>
             <?php if ($es_yo): ?>
@@ -249,7 +276,11 @@ $msgs_map = [
         $es_yo = ($u->ID === get_current_user_id());
     ?>
         <tr>
-            <td><?php echo get_avatar($u->ID, 32, '', '', ['style'=>'border-radius:50%;vertical-align:middle']); ?></td>
+            <td style="width:42px;text-align:center;vertical-align:middle;">
+                <div class="wcrol-avatar-box">
+                    <?php echo get_avatar($u->ID, 32, '', '', ['class' => 'wcrol-avatar-img']); ?>
+                </div>
+            </td>
             <td>
                 <strong><?php echo esc_html(wcrol_nombre_usuario($u)); ?></strong>
                 <?php if ($es_yo): ?><span style="background:#2271b1;color:#fff;font-size:10px;padding:1px 5px;border-radius:10px;margin-left:4px">Tú</span><?php endif; ?>

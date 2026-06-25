@@ -1,6 +1,32 @@
 <?php if ( ! defined( 'ABSPATH' ) ) exit;
 $fuentes_color=['wpcargo_core'=>'#2271b1','plugin'=>'#00a32a','pagina'=>'#6c757d','manual'=>'#b45309'];
 ?>
+<style>
+.wcrol-avatar-box{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex: 0 0 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f3f4f6;
+}
+
+.wcrol-avatar-box.wcrol-avatar-lg{
+    width: 52px;
+    height: 52px;
+    flex: 0 0 52px;
+}
+
+.wcrol-avatar-box img{
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    display: block;
+}
+</style>
 <div class="wrap">
 <h1 class="wp-heading-inline">Roles & Accesos</h1>
 <a href="<?php echo esc_url(wcrol_url('wcrol-modulos')); ?>" class="page-title-action">Módulos del sidebar</a>
@@ -13,7 +39,9 @@ $es_yo       = ($edit_uid === get_current_user_id());
 ?>
 <!-- ═══ EDITAR USUARIO ═══════════════════════════════════════════════ -->
 <h2 style="display:flex;align-items:center;gap:10px">
-    <?php echo get_avatar($usuario->ID,32); ?>
+    <div class="wcrol-avatar-box wcrol-avatar-lg">
+        <?php echo get_avatar($usuario->ID, 52, '', '', ['class' => 'wcrol-avatar-img']); ?>
+    </div>
     <?php echo esc_html(wcrol_nombre_usuario($usuario)); ?>
     <span style="font-size:13px;color:#666;font-weight:400">&lt;<?php echo esc_html($usuario->user_email); ?>&gt;</span>
     <?php if ($tipo_actual==='wpcargo_admin'): ?>
@@ -118,7 +146,11 @@ $es_yo       = ($edit_uid === get_current_user_id());
         $u=$entry['user']; $sin=$entry['sin_restriccion']; $num=$entry['num_modulos']; $tipo=$entry['tipo_acceso'];
     ?>
         <tr>
-            <td><?php echo get_avatar($u->ID,28,'','',['style'=>'border-radius:50%;vertical-align:middle']); ?></td>
+            <td style="width:42px;text-align:center;vertical-align:middle;">
+                <div class="wcrol-avatar-box">
+                    <?php echo get_avatar($u->ID, 32, '', '', ['class' => 'wcrol-avatar-img']); ?>
+                </div>
+            </td>
             <td>
                 <strong><?php echo esc_html(wcrol_nombre_usuario($u)); ?></strong>
                 <?php if($u->ID===get_current_user_id()): ?><span style="background:#d63638;color:#fff;font-size:10px;padding:1px 5px;border-radius:3px;margin-left:4px">Tú</span><?php endif; ?>

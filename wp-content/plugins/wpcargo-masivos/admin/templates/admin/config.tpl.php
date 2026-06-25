@@ -111,6 +111,23 @@ $wpc_detectado = ! empty($wpc['prefix']) || ! empty($wpc['preview']);
                     <p class="description">Filas vacías que verá el cliente al abrir la grilla. El cliente puede añadir más.</p>
                 </td>
             </tr>
+            <tr>
+                <th>Columnas por defecto</th>
+                <td>
+                    <form method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>"
+                          onsubmit="return confirm('¿Resetear columnas? Se perderán las columnas personalizadas.')">
+                        <?php wp_nonce_field('wcmas_config_nonce'); ?>
+                        <input type="hidden" name="action" value="wcmas_reset_columnas">
+                        <button type="submit" class="button button-secondary">
+                            🔄 Resetear columnas a los nuevos defaults
+                        </button>
+                        <p class="description" style="margin-top:4px">
+                            Aplica las columnas actualizadas: Distrito Recojo, Distrito Destino,
+                            Tipo de Servicio, Modo de Pago, Costo Producto, Costo Servicio, Monto.
+                        </p>
+                    </form>
+                </td>
+            </tr>
         </table>
         <p class="submit"><button type="submit" class="button button-primary">Guardar cambios</button></p>
     </form>
@@ -137,6 +154,89 @@ $wpc_detectado = ! empty($wpc['prefix']) || ! empty($wpc['preview']);
             </li>
             <?php endforeach; ?>
         </ul>
+    </div>
+</div>
+
+
+<!-- ═══ BLOQUE: Tabla de tarifas por distrito y tipo de servicio ══════ -->
+<div class="postbox" style="max-width:900px;margin-top:16px">
+    <div class="postbox-header"><h2 class="hndle">💰 Tarifas por Distrito y Tipo de Servicio</h2></div>
+    <div class="inside">
+        <p class="description" style="margin-bottom:12px">
+            Define el costo de envío por distrito y tipo de servicio. Al crear envíos masivos,
+            el <strong>Costo Servicio</strong> se autocompleta con este valor (editable).
+            Si no hay tarifa definida, el usuario ingresa el monto manualmente.
+        </p>
+
+        <?php if ( empty($distritos) ): ?>
+        <div class="notice notice-warning inline"><p>No se encontraron distritos en WPCargo. Asegúrate de tener el addon de Custom Fields activado.</p></div>
+        <?php else: ?>
+
+        <form method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
+            <?php wp_nonce_field('wcmas_config_nonce'); ?>
+            <input type="hidden" name="action" value="wcmas_guardar_tarifas">
+
+            <div style="overflow-x:auto">
+            <table class="widefat fixed striped" style="font-size:12px;min-width:500px">
+                <thead>
+                    <tr style="background:#2271b1;color:#fff">
+                        <th style="width:220px;color:#fff;padding:8px 10px">Distrito</th>
+                        <?php foreach($tipos_servicio as $label => $val): ?>
+                        <th style="text-align:center;color:#fff;padding:8px 10px">
+                            <?php echo esc_html($label); ?>
+                            <small style="display:block;opacity:.8;font-weight:normal"><?php echo esc_html($val); ?></small>
+                        </th>
+                        <?php endforeach; ?>
+                    </tr>
+                </thead>
+                <tbody>
+                <?php foreach($distritos as $distrito): ?>
+                <tr>
+                    <td style="padding:4px 10px;font-weight:600"><?php echo esc_html($distrito); ?></td>
+                    <?php foreach($tipos_servicio as $label => $tipo_val): ?>
+                    <td style="padding:4px 8px;text-align:center">
+                        <input
+                            type="number"
+                            step="0.50"
+                            min="0"
+                            name="tarifas[<?php echo esc_attr($distrito); ?>][<?php echo esc_attr($tipo_val); ?>]"
+                            value="<?php echo esc_attr($tarifas[$distrito][$tipo_val] ?? ''); ?>"
+                            placeholder="0.00"
+                            style="width:80px;text-align:center;padding:3px 5px;font-size:12px"
+                        >
+                    </td>
+                    <?php endforeach; ?>
+                </tr>
+                <?php endforeach; ?>
+                </tbody>
+            </table>
+            </div>
+
+            <p class="submit" style="margin-top:12px">
+                <button type="submit" class="button button-primary">💾 Guardar Tarifas</button>
+                <span class="description" style="margin-left:12px">Deja en blanco los distritos sin tarifa definida.</span>
+                &nbsp;
+                <button type="button" class="button button-secondary" style="margin-left:8px"
+                    onclick="if(confirm('¿Restaurar las tarifas por defecto de Mercourier?')) wcmasRestaurarTarifas()">
+                    🔄 Restaurar tarifas por defecto
+                </button>
+                <script>
+                function wcmasRestaurarTarifas() {
+                    fetch(ajaxurl, {
+                        method: 'POST',
+                        credentials: 'same-origin',
+                        headers: {'Content-Type':'application/x-www-form-urlencoded'},
+                        body: 'action=wcmas_restaurar_tarifas_default&nonce=<?php echo wp_create_nonce("wcmas_procesar_nonce"); ?>'
+                    }).then(r=>r.json()).then(function(r){
+                        if(r.success) { alert('Tarifas restauradas. Recarga la página.'); location.reload(); }
+                        else alert('Error: ' + (r.data&&r.data.msg||'desconocido'));
+                    });
+                }
+                </script>
+            </p>
+        </form>
+
+        <?php endif; ?>
     </div>
 </div>
 

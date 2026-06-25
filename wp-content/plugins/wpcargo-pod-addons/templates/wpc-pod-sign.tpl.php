@@ -10,7 +10,58 @@
 <form id="wpc_pod_signature-form" method="post" action="">
 	<input type="hidden" id="__pod_id" name="__pod_id" value="<?php echo $get_sid;?>">
 	<input type="hidden" id="__pod_signature" name="__pod_signature" value="<?php echo $pod_signature; ?>">
-	<input type="hidden" id="wpcpod_nonce" name="wpcpod_nonce" value="<?php echo wp_create_nonce('wpcpod_upload_image'); ?>">	
+	<input type="hidden" id="wpcpod_nonce" name="wpcpod_nonce" value="<?php echo wp_create_nonce('wpcpod_upload_image'); ?>">
+    <style>
+        #wpcargo-pod-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        #wpcargo-pod-images .gallery-thumb {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+            flex-shrink: 0;
+            background: #f9f9f9;
+        }
+        #wpcargo-pod-images .gallery-thumb .single-img {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #wpcargo-pod-images .gallery-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+            background: #fff;
+        }
+        #wpcargo-pod-images .gallery-thumb .single-img {
+            padding: 4px;
+            box-sizing: border-box;
+        }
+        #wpcargo-pod-images .gallery-thumb .delete-attachment {
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            background: rgba(255, 0, 0, 0.8);
+            color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            line-height: 18px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>	
 	<div id="pod-pop-up">
 		<?php do_action( 'wpcpod_before_popup_header' ); ?>
 		<?php	
@@ -220,31 +271,44 @@ window.sendDebug = function(payload) {
 jQuery(document).ready(function ($) {
     const shipmentID 	= $( '[name="__pod_id"]' ).val();
     const AJAXHANDLER 	= AJAXHANDLER_GLOBAL_POD;
+
+    const POD_NO_IMAGE = '<?php echo esc_js( WPCARGO_POD_URL . "assets/img/no-image.jpg" ); ?>';
+
+        function renderNoImagePlaceholder() {
+            $('#wpcargo-pod-images').html('<img src="' + POD_NO_IMAGE + '" alt="No image">');
+        }
+        
 		$('#pod-pop-up').on('click', '.delete-attachment', function(){
-			const parentElem = $(this).closest('.gallery-thumb');
-			const attchID 	 = parentElem.attr('data-id');
-			$.ajax({
-				type: "POST",
-				datatype: 'JSON',
-				url: AJAXHANDLER,
-				data:{
-					action: 'wpcpod_delete_image',
-					shipmentID : shipmentID,
-					attchID: attchID
-				},
-				beforeSend:function(){
+            const parentElem = $(this).closest('.gallery-thumb');
+            const attchID    = parentElem.attr('data-id');
+
+            $.ajax({
+                type: "POST",
+                datatype: 'JSON',
+                url: AJAXHANDLER,
+                data:{
+                    action: 'wpcpod_delete_image',
+                    shipmentID : shipmentID,
+                    attchID: attchID
+                },
+                beforeSend:function(){
                     parentElem.addClass('d-none');
                 },
-				success:function(response){
-					if(!response.status){
-						parentElem.removeClass('d-none');
-						alert( response.message );
-						return;
-					}
-					parentElem.remove();
-				}
-			});
-		});
+                success:function(response){
+                    if(!response.status){
+                        parentElem.removeClass('d-none');
+                        alert(response.message);
+                        return;
+                    }
+
+                    parentElem.remove();
+
+                    if ($('#wpcargo-pod-images .gallery-thumb').length === 0) {
+                        renderNoImagePlaceholder();
+                    }
+                }
+            });
+        });
 		$( '#wpcargo-pod-img-btn' ).click(function(e) {
 			e.preventDefault();
 

@@ -1,16 +1,16 @@
 <?php
 /**
  * Plugin Name: WPCargo Envíos Masivos
- * Plugin URI:  https://dhvcourier.com
+ * Plugin URI:  https://mercourier.com
  * Description: Carga masiva de envíos con grilla editable tipo Excel, borradores, historial y asignación de usuario.
- * Version:     2.0.0
- * Author:      DHV Courier
+ * Version:     2.3.5
+ * Author:      Mercourier
  * Text Domain: wpcargo-masivos
  * Requires PHP: 8.1
  */
 if ( ! defined('ABSPATH') ) exit;
 
-define('WCMAS_VERSION',  '2.0.0');
+define('WCMAS_VERSION',  '2.3.5');
 define('WCMAS_PATH',     plugin_dir_path(__FILE__));
 define('WCMAS_URL',      plugin_dir_url(__FILE__));
 define('WCMAS_BASENAME', plugin_basename(__FILE__));
@@ -28,4 +28,6 @@ function wcmas_activar(): void {
     WCMAS_Columnas::instalar_defaults();
     WCMAS_Historial::crear_tabla();
     wcmas_get_frontend_page_id();
+    wcmas_instalar_tarifas_default();
+    wcmas_instalar_mapa_contenedores(); // Instalar mapa distrito → contenedor
 }

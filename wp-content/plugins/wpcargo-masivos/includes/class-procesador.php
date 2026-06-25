@@ -68,8 +68,14 @@ class WCMAS_Procesador {
         // registered_shipper: vincula el envío al cliente (igual que WPCargo)
         update_post_meta($post_id, 'registered_shipper', $author);
 
-        // Estado inicial del envío (usa el default de WPCargo)
-        update_post_meta($post_id, 'wpcargo_status', wcmas_default_status());
+        // ── Estado inicial según tipo de envío ─────────────────────────────────
+        // EMPRENDEDOR (normal)  → PENDIENTE (default de WPCargo)
+        // AGENCIA (express)     → RECEPCIONADO (mismo comportamiento que el formulario frontend)
+        $tipo_envio_val = strtolower(trim($meta['tipo_envio'] ?? ''));
+        $status_inicial = ( $tipo_envio_val === 'express' )
+            ? 'RECEPCIONADO'
+            : wcmas_default_status(); // PENDIENTE
+        update_post_meta($post_id, 'wpcargo_status', $status_inicial);
 
         // Tracking number como meta adicional (WPCargo lo espera aquí también)
         update_post_meta($post_id, 'wpcargo_tracking_number', $tracking);
@@ -77,10 +83,116 @@ class WCMAS_Procesador {
         // Marca de creación para identificar envíos del módulo masivo
         update_post_meta($post_id, 'wpcargo_created_via', 'envios_masivos');
 
+        // ── Guardar datos del remitente (shipper) desde el perfil del cliente ─
+        // CONFIRMADO en BD: estos meta keys son los que WPCargo usa y muestra
+        // en el formulario de envío (wpcargo_tiendaname, wpcargo_shipper_phone, etc.)
+        // Si el envío se asigna a un cliente, copiar sus datos de remitente al post
+        // ── Datos del remitente desde perfil del cliente ────────────────────
+        // PUNTO 1: el distrito_recojo se autocompleta desde el perfil del remitente
+        // y NO aparece como columna editable — se extrae aquí directamente
+        if ( $author ) {
+            $remitente = wcmas_get_datos_remitente($author);
+
+            // Mapa: meta_key → valor del perfil. Solo guardar si no vino ya en $meta
+            // (la columna dist_recojo no existe en defaults, se extrae del cliente)
+            $map_remitente = [
+                'wpcargo_tiendaname'      => $remitente['nombre']    ?? '',
+                'wpcargo_shipper_phone'   => $remitente['telefono']  ?? '',
+                'wpcargo_shipper_address' => $remitente['direccion'] ?? '',
+                'wpcargo_distrito_recojo' => $remitente['distrito']  ?? '',
+                'link_maps_remitente'     => $remitente['link_maps'] ?? '',
+            ];
+            foreach ( $map_remitente as $key => $val ) {
+                // Solo guardar si hay valor Y no fue ya guardado como columna de la grilla
+                if ( $val !== '' && ! isset($meta[$key]) ) {
+                    update_post_meta($post_id, $key, $val);
+                } elseif ( $val !== '' && isset($meta[$key]) ) {
+                    // La columna de la grilla tiene prioridad — ya fue guardada arriba
+                    // No sobreescribir
+                }
+            }
+            // Si la columna dist_recojo vino en la grilla, usarla (prioridad sobre perfil)
+            if ( ! empty($meta['wpcargo_distrito_recojo']) ) {
+                update_post_meta($post_id, 'wpcargo_distrito_recojo', $meta['wpcargo_distrito_recojo']);
+            }
+        }
+
+        // ── Guardar historial inicial (wpcargo_shipments_update) ────────────
+        // CONFIRMADO en BD: WPCargo usa este meta para el dashboard de historial
+        // Formato exacto de la BD: a:1:{i:0;a:6:{s:4:"date";s:10:"23/04/2026";...}}
+        // Sin este meta, el envío no aparece en el historial del día en el dashboard
+        $fecha_hoy  = date('d/m/Y');   // DD/MM/YYYY — formato confirmado en BD
+        $hora_hoy   = date('h:i a');   // ej: "01:22 am"
+        $user_actual = wp_get_current_user();
+        $user_label  = $user_actual->user_email ?: $user_actual->display_name;
+        $historial_inicial = [
+            [
+                'date'         => $fecha_hoy,
+                'time'         => $hora_hoy,
+                'location'     => '',
+                'status'       => $status_inicial,
+                'updated-name' => $user_label,
+                'remarks'      => '',
+            ]
+        ];
+        update_post_meta($post_id, 'wpcargo_shipments_update', $historial_inicial);
+
+        // ── Calcular y guardar campos financieros derivados ─────────────────
+        // Confirmado en BD (Query G): campos reales que usa WPCargo
+        $modo_pago      = strtoupper(trim($meta['payment_wpcargo_mode_field'] ?? ''));
+        $costo_producto = floatval($meta['wpcargo_costo_producto'] ?? 0);
+        $costo_servicio = floatval($meta['wpcargo_costo_envio']    ?? 0);
+        $es_no_cobrar   = ( $modo_pago === 'NO COBRAR' );
+
+        // monto: lo envía la grilla (0.00 si NO COBRAR, total si otro modo)
+        $monto_grilla = floatval($meta['monto'] ?? 0);
+
+        // Si NO COBRAR: destinatario no paga nada, remitente paga el servicio
+        // Si otro modo: destinatario paga el monto total (costo_producto + costo_servicio)
+        if ( $es_no_cobrar ) {
+            $monto_final   = 0.00;
+            $total_cobrar  = $costo_servicio; // se le cobra al remitente en finanzas
+            $quien_paga    = 'remitente';
+        } else {
+            $monto_final   = $monto_grilla > 0 ? $monto_grilla : ($costo_producto + $costo_servicio);
+            $total_cobrar  = $monto_final;
+            $quien_paga    = 'destinatario';
+        }
+
+        // Actualizar el meta 'monto' con el valor final calculado
+        update_post_meta($post_id, 'monto',                   number_format($monto_final,     2, '.', ''));
+        update_post_meta($post_id, 'wpcargo_total_cobrar',    number_format($total_cobrar,    2, '.', ''));
+        update_post_meta($post_id, 'wpcargo_costo_producto',  number_format($costo_producto,  2, '.', ''));
+        update_post_meta($post_id, 'wpcargo_costo_envio',     number_format($costo_servicio,  2, '.', ''));
+        update_post_meta($post_id, 'wpcargo_quien_paga',      $quien_paga);
+        update_post_meta($post_id, 'wpcargo_cargo_remitente', '0');
+        update_post_meta($post_id, 'wpcargo_cobrado_por_motorizado', '0');
+        update_post_meta($post_id, 'wpcargo_estado_pago_motorizado', 'pendiente');
+        update_post_meta($post_id, 'wpcargo_cliente_pago_a',  'pendiente');
+
+        // ── PUNTO 5: Asignar contenedores ───────────────────────────────────────
+        // Lógica confirmada del análisis de hooks.php del plugin de contenedores:
+        //   shipment_container_recojo  → contenedor activo para el distrito de recojo
+        //   shipment_container_entrega → contenedor activo para el distrito de destino
+        // Se usa la misma función que usa el formulario de WPCargo
+        $distrito_recojo  = get_post_meta($post_id, 'wpcargo_distrito_recojo',  true);
+        $distrito_destino = get_post_meta($post_id, 'wpcargo_distrito_destino', true);
+
+        if ( $distrito_recojo ) {
+            $cont_recojo = wcmas_buscar_contenedor_activo($distrito_recojo, 'recojo');
+            if ( $cont_recojo ) {
+                update_post_meta($post_id, 'shipment_container_recojo', $cont_recojo);
+            }
+        }
+        if ( $distrito_destino ) {
+            $cont_entrega = wcmas_buscar_contenedor_activo($distrito_destino, 'entrega');
+            if ( $cont_entrega ) {
+                update_post_meta($post_id, 'shipment_container_entrega', $cont_entrega);
+            }
+        }
+
         // ── Disparar hooks de WPCargo ─────────────────────────────────────────
-        // WPCargo usa este hook para notificaciones, etc.
         do_action('wpcargo_after_create_shipment', $post_id, $meta);
-        // Hook adicional del frontend de WPCargo
         do_action('wpcfe_after_create_shipment', $post_id);
 
         return [
@@ -138,14 +250,14 @@ class WCMAS_Procesador {
                 }
                 return sanitize_email($valor);
             case 'date':
-                // El usuario ingresa DD/MM/YYYY (via Flatpickr)
-                // WPCargo guarda internamente en YYYY-MM-DD (confirmado en su documentación oficial)
-                // Aceptar ambos formatos por si viene pegado desde Excel
+                // CONFIRMADO en BD: WPCargo guarda la fecha en DD/MM/YYYY
+                // Ejemplo real en post_meta: wpcargo_pickup_date_picker = "23/04/2026"
+                // Aceptar también YYYY-MM-DD por si viene pegado desde Excel
                 if ( preg_match('/^\d{2}\/\d{2}\/\d{4}$/', $valor) ) {
-                    // DD/MM/YYYY → convertir
+                    // DD/MM/YYYY — formato nativo de WPCargo, guardar tal cual
                     [$d, $m, $y] = explode('/', $valor);
                 } elseif ( preg_match('/^\d{4}-\d{2}-\d{2}$/', $valor) ) {
-                    // Ya viene en YYYY-MM-DD
+                    // YYYY-MM-DD (pegado desde Excel) — convertir a DD/MM/YYYY
                     [$y, $m, $d] = explode('-', $valor);
                 } else {
                     return new \WP_Error('fmt', "'{$label}' debe tener el formato DD/MM/YYYY.");
@@ -157,8 +269,19 @@ class WCMAS_Procesador {
                 if ( date('N', $ts) === '7' ) {
                     return new \WP_Error('fmt', "'{$label}' no puede ser domingo (día no laborable).");
                 }
-                // Guardar en YYYY-MM-DD — formato interno que usa WPCargo en post_meta
-                return sprintf('%04d-%02d-%02d', (int)$y, (int)$m, (int)$d);
+                // Guardar en DD/MM/YYYY — formato confirmado en BD de WPCargo
+                return sprintf('%02d/%02d/%04d', (int)$d, (int)$m, (int)$y);
+            case 'tipo_servicio':
+                // EMPRENDEDOR→normal, AGENCIA→express, FULLFITMENT→full_fitment
+                $map_servicio = ['EMPRENDEDOR'=>'normal','AGENCIA'=>'express','FULLFITMENT'=>'full_fitment'];
+                // Aceptar tanto el label (EMPRENDEDOR) como el valor (normal)
+                if ( isset($map_servicio[$valor]) ) return $map_servicio[$valor];
+                if ( in_array($valor, $map_servicio, true) ) return $valor;
+                return new \WP_Error('fmt', "'{$label}' debe ser EMPRENDEDOR, AGENCIA o FULLFITMENT.");
+            case 'select_wpcf':
+            case 'monto':
+                // Guardar como texto/número limpio
+                return sanitize_text_field($valor);
             default:
                 return sanitize_text_field($valor);
         }

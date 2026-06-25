@@ -86,47 +86,53 @@ function wpcumanage_user_table_data_blocked($user)
 {
   $client_id = $user->ID;
   $esta_bloqueado = false;
-  
+  $bloqueo_total = ( get_user_meta($client_id, 'merc_bloqueo_total', true) === '1' );
+
   error_log("🔍 TABLA USUARIOS - Verificando bloqueo para User #{$client_id} ({$user->user_login})");
-  
-  // Verificar si es un cliente (rol WPCargo Client)
+
   if (in_array('wpcargo_client', $user->roles)) {
     error_log("   ✓ Es cliente WPCargo");
-    
-    // 1. Verificar bloqueo manual explícito
-    $bloqueado_manual = get_user_meta($client_id, 'merc_bloqueado_manual', true);
-    if ($bloqueado_manual == '1') {
-      error_log("   ✓ Tiene bloqueo manual explícito");
+
+    // 0. Verificar bloqueo total explícito
+    if ($bloqueo_total) {
+      error_log("   ✓ Tiene BLOQUEO TOTAL explícito");
       $esta_bloqueado = true;
     }
-    
-    // 2. Verificar bloqueo automático por tipo de envío (si existen estas metas)
+
+    // 1. Verificar bloqueo manual explícito
+    if (!$esta_bloqueado) {
+      $bloqueado_manual = get_user_meta($client_id, 'merc_bloqueado_manual', true);
+      if ($bloqueado_manual == '1') {
+        error_log("   ✓ Tiene bloqueo manual explícito");
+        $esta_bloqueado = true;
+      }
+    }
+
+    // 2. Verificar bloqueo automático por tipo de envío
     if (!$esta_bloqueado) {
       $tipo_normal_bloqueado = get_user_meta($client_id, 'merc_tipo_normal_bloqueado', true);
       $tipo_express_bloqueado = get_user_meta($client_id, 'merc_tipo_express_bloqueado', true);
       $tipo_full_fitment_bloqueado = get_user_meta($client_id, 'merc_tipo_full_fitment_bloqueado', true);
-      
-      // Si al menos uno está bloqueado, considerar como bloqueado
+
       if ($tipo_normal_bloqueado == '1' || $tipo_express_bloqueado == '1' || $tipo_full_fitment_bloqueado == '1') {
         error_log("   ✓ Al menos un tipo de envío está bloqueado (bloqueo automático)");
         $esta_bloqueado = true;
       }
     }
-    
+
     // 3. Verificar bloqueo automático por envíos pendientes
     if (!$esta_bloqueado && function_exists('merc_cliente_tiene_envios_pendientes_hoy')) {
       error_log("   ✓ Función de bloqueo por envíos pendientes existe, ejecutando...");
       $esta_bloqueado = merc_cliente_tiene_envios_pendientes_hoy($client_id);
       error_log("   📊 Bloqueo automático por envíos pendientes: " . ($esta_bloqueado ? "BLOQUEADO" : "NO BLOQUEADO"));
     }
-    
-    // 4. Verificar bloqueo automático por horario (es tarde)
-    // Revisar si el usuario está bloqueado para cualquiera de los tipos de envío por hora
+
+    // 4. Verificar bloqueo automático por horario
     if (!$esta_bloqueado) {
       $bloqueado_por_hora_normal = false;
       $bloqueado_por_hora_express = false;
       $bloqueado_por_hora_full = false;
-      
+
       if (function_exists('merc_check_tipo_normal_blocked')) {
         $bloqueado_por_hora_normal = merc_check_tipo_normal_blocked($client_id);
         if ($bloqueado_por_hora_normal) {
@@ -145,27 +151,27 @@ function wpcumanage_user_table_data_blocked($user)
           error_log("   ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT");
         }
       }
-      
-      // Si está bloqueado para al menos UN tipo, se considera bloqueado
+
       $esta_bloqueado = $bloqueado_por_hora_normal || $bloqueado_por_hora_express || $bloqueado_por_hora_full;
       if ($esta_bloqueado) {
         error_log("   📊 Bloqueo automático por horario: BLOQUEADO");
       }
     }
-    
+
     error_log("   📊 Resultado final: " . ($esta_bloqueado ? "BLOQUEADO" : "NO BLOQUEADO"));
   } else {
     error_log("   ℹ️ No es cliente WPCargo (roles: " . implode(', ', $user->roles) . ")");
   }
-  
+
   if ( in_array('wpcargo_client', $user->roles) ) {
+    $data_total = $bloqueo_total ? '1' : '0';
+
     if ($esta_bloqueado) {
-      echo '<td class="wpcumanage-blocked"><button class="btn btn-sm btn-danger wpcum-unblock-user px-2 m-0 text-white" data-id="' . $user->ID . '">' . __('Desbloquear', 'wpcargo-umanagement') . '</button></td>';
+      echo '<td class="wpcumanage-blocked" data-merc-bloqueo-total="' . esc_attr($data_total) . '"><button class="btn btn-sm btn-danger wpcum-unblock-user px-2 m-0 text-white" data-id="' . $user->ID . '">' . __('Desbloquear', 'wpcargo-umanagement') . '</button></td>';
     } else {
-      echo '<td class="wpcumanage-blocked"><button class="btn btn-sm btn-warning wpcum-block-user px-2 m-0 text-dark" data-id="' . $user->ID . '">' . __('Bloquear', 'wpcargo-umanagement') . '</button></td>';
+      echo '<td class="wpcumanage-blocked" data-merc-bloqueo-total="' . esc_attr($data_total) . '"><button class="btn btn-sm btn-warning wpcum-block-user px-2 m-0 text-dark" data-id="' . $user->ID . '">' . __('Bloquear', 'wpcargo-umanagement') . '</button></td>';
     }
   } else {
-    // No mostrar botones de bloqueo para usuarios que no son clientes
     echo '<td class="wpcumanage-blocked"><span class="text-muted">-</span></td>';
   }
 }

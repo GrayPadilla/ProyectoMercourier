@@ -50,27 +50,25 @@ class Merc_Bloqueos_User_Controls {
             function render_merc_controls() {
                 $('.wpcumanage-blocked').each(function() {
                     var td = $(this);
-                    
-                    // Extraer el ID del usuario del botón original
+
+                    // Evitar duplicados
+                    if (td.find('.merc-controls-container').length) return;
+
+                    // Botón original
                     var btn = td.find('button').first();
                     if (!btn.length) return;
-                    
+
                     var userId = btn.data('id');
                     if (!userId) return;
 
-                    // Si ya lo procesamos, saltar
-                    if (td.find('.merc-controls-container').length) return;
+                    var totalBlocked = td.attr('data-merc-bloqueo-total') === '1';
 
-                    // Consultar estado actual (en un caso ideal esto vendría en el HTML, 
-                    // pero para no alterar el otro plugin lo inyectamos visualmente).
                     var container = $('<div class="merc-controls-container" style="display:flex; flex-direction:column; gap:8px; align-items:flex-start;"></div>');
-                    
-                    // Determinar estado inicial (el botón original dirá "Desbloquear" si está bloqueado, o podemos sacar el data attr, pero para simplificar usamos el estilo)
-                    // Como no tenemos el estado exacto del bloqueo total a mano sin alterar la fila, asumimos que el usuario lo verá al hacer clic o podemos cargar el estado vía AJAX.
-                    // Por ahora mejoramos el diseño del botón.
-                    var btnTotal = $('<button class="btn btn-sm btn-danger merc-toggle-total" data-id="' + userId + '" style="width: 100%; text-align: left;"><i class="fa fa-ban" style="margin-right: 5px;"></i> Bloqueo Total</button>');
-                    
-                    // Botón Desbloqueo Temporal
+
+                    var btnTotal = totalBlocked
+                        ? $('<button class="btn btn-sm btn-success merc-toggle-total" data-id="' + userId + '" style="width: 100%; text-align: left;"><i class="fa fa-check-circle" style="margin-right: 5px;"></i> Quitar Bloqueo</button>')
+                        : $('<button class="btn btn-sm btn-danger merc-toggle-total" data-id="' + userId + '" style="width: 100%; text-align: left;"><i class="fa fa-ban" style="margin-right: 5px;"></i> Bloqueo Total</button>');
+
                     var btnTemp = $('<button class="btn btn-sm btn-info merc-temp-unlock" data-id="' + userId + '" style="width: 100%; text-align: left; background-color: #17a2b8; border-color: #17a2b8; color: white;"><i class="fa fa-clock-o" style="margin-right: 5px;"></i> Desbloqueo Temp.</button>');
 
                     container.append(btnTotal).append(btnTemp);
@@ -153,17 +151,24 @@ class Merc_Bloqueos_User_Controls {
             // Manejar click en Bloqueo Total
             $(document).on('click', '.merc-toggle-total', function(e) {
                 e.preventDefault();
-                var userId = $(this).data('id');
+
                 var btn = $(this);
+                var userId = btn.data('id');
+                var td = btn.closest('.wpcumanage-blocked');
+                var currentlyBlocked = btn.hasClass('btn-success') || btn.text().toLowerCase().indexOf('quitar bloqueo') !== -1;
 
                 Swal.fire({
-                    title: '<h3 style="margin:0; color:#dc3545;"><i class="fa fa-ban"></i> Bloqueo Total</h3>',
-                    text: '¿Deseas alternar el estado de Bloqueo Total para este cliente? Esto le impedirá crear cualquier tipo de pedido.',
+                    title: currentlyBlocked
+                        ? '<h3 style="margin:0; color:#28a745;"><i class="fa fa-check-circle"></i> Quitar Bloqueo Total</h3>'
+                        : '<h3 style="margin:0; color:#dc3545;"><i class="fa fa-ban"></i> Bloqueo Total</h3>',
+                    text: currentlyBlocked
+                        ? '¿Deseas quitar el Bloqueo Total para este cliente? Volverá a sus horarios regulares.'
+                        : '¿Deseas activar el Bloqueo Total para este cliente? Esto le impedirá crear cualquier tipo de pedido.',
                     icon: 'warning',
                     showCancelButton: true,
                     cancelButtonText: 'Cancelar',
-                    confirmButtonColor: '#dc3545',
-                    confirmButtonText: 'Sí, aplicar',
+                    confirmButtonColor: currentlyBlocked ? '#28a745' : '#dc3545',
+                    confirmButtonText: currentlyBlocked ? 'Sí, quitar' : 'Sí, aplicar',
                     customClass: {
                         confirmButton: 'btn btn-danger',
                         cancelButton: 'btn btn-secondary'
@@ -176,11 +181,17 @@ class Merc_Bloqueos_User_Controls {
                         }, function(res) {
                             if (res.success) {
                                 Swal.fire('Éxito', res.data.message, 'success');
-                                // Actualizar botón visualmente
+
                                 if (res.data.is_blocked) {
-                                    btn.html('<i class="fa fa-check-circle" style="margin-right: 5px;"></i> Quitar Bloqueo').removeClass('btn-danger').addClass('btn-success');
+                                    btn.html('<i class="fa fa-check-circle" style="margin-right: 5px;"></i> Quitar Bloqueo')
+                                    .removeClass('btn-danger')
+                                    .addClass('btn-success');
+                                    td.attr('data-merc-bloqueo-total', '1');
                                 } else {
-                                    btn.html('<i class="fa fa-ban" style="margin-right: 5px;"></i> Bloqueo Total').removeClass('btn-success').addClass('btn-danger');
+                                    btn.html('<i class="fa fa-ban" style="margin-right: 5px;"></i> Bloqueo Total')
+                                    .removeClass('btn-success')
+                                    .addClass('btn-danger');
+                                    td.attr('data-merc-bloqueo-total', '0');
                                 }
                             } else {
                                 Swal.fire('Error', res.data.message, 'error');

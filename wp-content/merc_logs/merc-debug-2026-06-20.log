@@ -1,0 +1,49 @@
+[20-Jun-2026 19:22:58 UTC] 🌅 [RESETEO DIARIO AUTOMÁTICO] Ejecutado para 2026-06-20
+[20-Jun-2026 19:23:04 UTC] [Elementor Atomic Widgets] [WARNING] Migrations manifest not found | Context: {"path":"https://migrations.elementor.com/manifest.json"}
+[20-Jun-2026 19:23:19 UTC] [Elementor Atomic Widgets] [WARNING] Migrations manifest not found | Context: {"path":"https://migrations.elementor.com/manifest.json"}
+[20-Jun-2026 19:23:38 UTC] Hostinger WP Amplitude package: cURL error 6: Could not resolve host: rest-hosting.hostinger.com
+[20-Jun-2026 19:23:43 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[20-Jun-2026 19:23:43 UTC] 🔵 [FILTER] Usuario actual: 109
+[20-Jun-2026 19:23:43 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]}}
+[20-Jun-2026 19:23:43 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[20-Jun-2026 19:23:43 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-06-20
+[20-Jun-2026 19:23:43 UTC] 🔵 [FILTER] Fecha desde: '2026-06-20' | Fecha hasta: '2026-06-20'
+[20-Jun-2026 19:23:43 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[20-Jun-2026 19:23:43 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-06-20', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-06-20', '%Y-%m-%d'))
+        
+[20-Jun-2026 19:23:43 UTC] 🔵 [FILTER] IDs encontrados por fecha: 0
+[20-Jun-2026 19:23:43 UTC] 🔵 [FILTER] Sin resultados de fecha, forzando búsqueda vacía
+[20-Jun-2026 19:23:43 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"post__in":[0]}
+[20-Jun-2026 19:23:46 UTC] PHP Notice:  La función as_next_scheduled_action ha sido llamada <strong>de forma incorrecta</strong>. as_next_scheduled_action() was called before the Action Scheduler data store was initialized Por favor, ve <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">depuración en WordPress</a> para más información. (Este mensaje fue añadido en la versión 3.1.6). in /var/www/html/wp-includes/functions.php on line 6121
+[20-Jun-2026 23:22:38 UTC] [Elementor Atomic Widgets] [WARNING] Migrations manifest not found | Context: {"path":"https://migrations.elementor.com/manifest.json"}
+[20-Jun-2026 23:22:58 UTC] PHP Notice:  La función as_next_scheduled_action ha sido llamada <strong>de forma incorrecta</strong>. as_next_scheduled_action() was called before the Action Scheduler data store was initialized Por favor, ve <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">depuración en WordPress</a> para más información. (Este mensaje fue añadido en la versión 3.1.6). in /var/www/html/wp-includes/functions.php on line 6121
+[20-Jun-2026 23:23:01 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[20-Jun-2026 23:23:01 UTC] 🔵 [FILTER] Usuario actual: 109
+[20-Jun-2026 23:23:01 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]}}
+[20-Jun-2026 23:23:01 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[20-Jun-2026 23:23:01 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-06-20
+[20-Jun-2026 23:23:01 UTC] 🔵 [FILTER] Fecha desde: '2026-06-20' | Fecha hasta: '2026-06-20'
+[20-Jun-2026 23:23:01 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[20-Jun-2026 23:23:01 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-06-20', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-06-20', '%Y-%m-%d'))
+        
+[20-Jun-2026 23:23:01 UTC] 🔵 [FILTER] IDs encontrados por fecha: 0
+[20-Jun-2026 23:23:01 UTC] 🔵 [FILTER] Sin resultados de fecha, forzando búsqueda vacía
+[20-Jun-2026 23:23:01 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"post__in":[0]}

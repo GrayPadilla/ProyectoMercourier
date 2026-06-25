@@ -49,8 +49,8 @@ class WCMAS_Frontend {
         $columnas  = WCMAS_Columnas::obtener_activas();
         $filas_init= max(5, intval(get_option('wcmas_filas_default', 10)));
         $nonce     = wp_create_nonce('wcmas_procesar_nonce');
-        // Select de usuarios: siempre vacío — el admin usa Select2 con AJAX
-        $usuarios  = [];
+        // Select de usuarios solo para admins
+        $usuarios  = $es_admin ? wcmas_get_usuarios_select() : [];
         $page_url  = wcmas_frontend_url();
         // Historial: admins ven todos, clientes solo los suyos
         $historial = $es_admin
@@ -62,3 +62,4 @@ class WCMAS_Frontend {
 }
 
 new WCMAS_Frontend();
+

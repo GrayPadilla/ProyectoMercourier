@@ -1,0 +1,2254 @@
+[19-Jun-2026 13:16:23 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-19.log
+[19-Jun-2026 13:16:24 UTC] 🌅 [RESETEO DIARIO AUTOMÁTICO] Ejecutado para 2026-06-19
+[19-Jun-2026 13:16:32 UTC] PHP Deprecated:  Automatic conversion of false to array is deprecated in /var/www/html/wp-content/plugins/elementor/includes/api.php on line 176
+[19-Jun-2026 13:16:35 UTC] [Elementor Atomic Widgets] [WARNING] Migrations manifest not found | Context: {"path":"https://migrations.elementor.com/manifest.json"}
+[19-Jun-2026 13:16:40 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-19.log
+[19-Jun-2026 13:16:49 UTC] [Elementor Atomic Widgets] [WARNING] Migrations manifest not found | Context: {"path":"https://migrations.elementor.com/manifest.json"}
+[19-Jun-2026 13:16:49 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-19.log
+[19-Jun-2026 13:16:58 UTC] [Elementor Atomic Widgets] [WARNING] Migrations manifest not found | Context: {"path":"https://migrations.elementor.com/manifest.json"}
+[19-Jun-2026 13:17:05 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-19.log
+[19-Jun-2026 13:17:06 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-19.log
+[19-Jun-2026 13:17:15 UTC] Hostinger WP Amplitude package: cURL error 6: Could not resolve host: rest-hosting.hostinger.com
+[19-Jun-2026 13:17:25 UTC] [Elementor Atomic Widgets] [WARNING] Migrations manifest not found | Context: {"path":"https://migrations.elementor.com/manifest.json"}
+[19-Jun-2026 13:17:25 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[19-Jun-2026 13:17:25 UTC] 🔵 [FILTER] Usuario actual: 109
+[19-Jun-2026 13:17:25 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]}}
+[19-Jun-2026 13:17:25 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[19-Jun-2026 13:17:25 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-06-19
+[19-Jun-2026 13:17:25 UTC] 🔵 [FILTER] Fecha desde: '2026-06-19' | Fecha hasta: '2026-06-19'
+[19-Jun-2026 13:17:25 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[19-Jun-2026 13:17:25 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-06-19', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-06-19', '%Y-%m-%d'))
+        
+[19-Jun-2026 13:17:26 UTC] 🔵 [FILTER] IDs encontrados por fecha: 0
+[19-Jun-2026 13:17:26 UTC] 🔵 [FILTER] Sin resultados de fecha, forzando búsqueda vacía
+[19-Jun-2026 13:17:26 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"post__in":[0]}
+[19-Jun-2026 13:17:27 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-19.log
+[19-Jun-2026 13:17:36 UTC] PHP Warning:  The URL https://wp-update.hostinger.io/?action=get_metadata&amp;slug=hostinger-easy-onboarding&amp;installed_version=2.1.17&amp;php=8.2.17&amp;locale=es_ES&amp;checking_for_updates=1 does not point to a valid metadata file. WP HTTP Error: cURL error 28: Resolving timed out after 3000 milliseconds in /var/www/html/wp-content/plugins/hostinger-ai-assistant/vendor/yahnis-elsts/plugin-update-checker/Puc/v5p6/UpdateChecker.php on line 533
+[19-Jun-2026 13:17:40 UTC] PHP Warning:  The URL https://wp-update.hostinger.io/?action=get_metadata&amp;slug=hostinger-ai-assistant&amp;installed_version=3.0.33&amp;php=8.2.17&amp;locale=es_ES&amp;checking_for_updates=1 does not point to a valid metadata file. WP HTTP Error: cURL error 28: Resolving timed out after 3000 milliseconds in /var/www/html/wp-content/plugins/hostinger-ai-assistant/vendor/yahnis-elsts/plugin-update-checker/Puc/v5p6/UpdateChecker.php on line 533
+[19-Jun-2026 13:17:45 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-19.log
+[19-Jun-2026 13:17:58 UTC] PHP Deprecated:  Automatic conversion of false to array is deprecated in /var/www/html/wp-content/plugins/elementor/includes/api.php on line 176
+[19-Jun-2026 13:18:01 UTC] [Elementor Atomic Widgets] [WARNING] Migrations manifest not found | Context: {"path":"https://migrations.elementor.com/manifest.json"}
+[19-Jun-2026 13:18:11 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-19.log
+[19-Jun-2026 18:25:46 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-19.log
+[19-Jun-2026 18:25:52 UTC] [Elementor Atomic Widgets] [WARNING] Migrations manifest not found | Context: {"path":"https://migrations.elementor.com/manifest.json"}
+[19-Jun-2026 18:25:59 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-19.log
+[19-Jun-2026 18:26:14 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-19.log
+[19-Jun-2026 18:26:14 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-19.log
+[19-Jun-2026 18:26:22 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[19-Jun-2026 18:26:22 UTC] 🔵 [FILTER] Usuario actual: 109
+[19-Jun-2026 18:26:22 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]}}
+[19-Jun-2026 18:26:22 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[19-Jun-2026 18:26:22 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-06-19
+[19-Jun-2026 18:26:22 UTC] 🔵 [FILTER] Fecha desde: '2026-06-19' | Fecha hasta: '2026-06-19'
+[19-Jun-2026 18:26:22 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[19-Jun-2026 18:26:22 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-06-19', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-06-19', '%Y-%m-%d'))
+        
+[19-Jun-2026 18:26:22 UTC] 🔵 [FILTER] IDs encontrados por fecha: 0
+[19-Jun-2026 18:26:22 UTC] 🔵 [FILTER] Sin resultados de fecha, forzando búsqueda vacía
+[19-Jun-2026 18:26:22 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"post__in":[0]}
+[19-Jun-2026 18:26:23 UTC] 🔔 [MERC_LOG] Inicializado logger diario: /var/www/html/wp-content/merc_logs/merc-debug-2026-06-19.log
+[19-Jun-2026 18:26:25 UTC] PHP Notice:  La función as_next_scheduled_action ha sido llamada <strong>de forma incorrecta</strong>. as_next_scheduled_action() was called before the Action Scheduler data store was initialized Por favor, ve <a href="https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/">depuración en WordPress</a> para más información. (Este mensaje fue añadido en la versión 3.1.6). in /var/www/html/wp-includes/functions.php on line 6121
+[19-Jun-2026 20:59:55 UTC] PHP Deprecated:  Automatic conversion of false to array is deprecated in /var/www/html/wp-content/plugins/elementor/includes/api.php on line 176
+[19-Jun-2026 20:59:58 UTC] [Elementor Atomic Widgets] [WARNING] Migrations manifest not found | Context: {"path":"https://migrations.elementor.com/manifest.json"}
+[19-Jun-2026 20:59:59 UTC] PHP Warning:  Undefined variable $tipo_vista in /var/www/html/wp-content/themes/blocksy-child/functions.php on line 6598
+[19-Jun-2026 20:59:59 UTC] MERC_ADMIN_RESUMEN - date_query="AND EXISTS(
+            SELECT 1 FROM wp_postmeta pm_pickup 
+            WHERE pm_pickup.post_id = p.ID 
+            AND pm_pickup.meta_key = 'wpcargo_pickup_date_picker'
+            AND (
+                STR_TO_DATE(pm_pickup.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-06-19', '%Y-%m-%d')
+                AND STR_TO_DATE(pm_pickup.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-06-19', '%Y-%m-%d')
+            )
+        )"
+[19-Jun-2026 20:59:59 UTC] MERC_ADMIN_RESUMEN - NO SHIPMENTS returned for date_query, attempting fallback by pickup meta
+[19-Jun-2026 20:59:59 UTC] MERC_ADMIN_RESUMEN - fallback also returned NO shipments; attempting fallback by post_date range
+[19-Jun-2026 20:59:59 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=32072 post_date=2026-06-18 16:32:42 metas={"wpcargo_pickup_date_picker":"18\/06\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-06-18 16:32:42"}
+[19-Jun-2026 20:59:59 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=32066 post_date=2026-06-18 16:27:57 metas={"wpcargo_pickup_date_picker":"18\/06\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-06-18 16:27:57"}
+[19-Jun-2026 20:59:59 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=32058 post_date=2026-06-18 14:49:39 metas={"wpcargo_pickup_date_picker":"18\/06\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-06-18 14:49:39"}
+[19-Jun-2026 20:59:59 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=32054 post_date=2026-06-18 10:58:06 metas={"wpcargo_pickup_date_picker":"25\/06\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-06-18 10:58:06"}
+[19-Jun-2026 20:59:59 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=32048 post_date=2026-06-18 10:51:55 metas={"wpcargo_pickup_date_picker":"18\/06\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-06-18 10:51:55"}
+[19-Jun-2026 20:59:59 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=32039 post_date=2026-06-18 10:47:39 metas={"wpcargo_pickup_date_picker":"18\/06\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-06-18 10:47:39"}
+[19-Jun-2026 20:59:59 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=32030 post_date=2026-06-18 10:41:38 metas={"wpcargo_pickup_date_picker":"18\/06\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-06-18 10:41:38"}
+[19-Jun-2026 20:59:59 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=32023 post_date=2026-06-18 10:30:56 metas={"wpcargo_pickup_date_picker":"18\/06\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-06-18 10:30:56"}
+[19-Jun-2026 20:59:59 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=32017 post_date=2026-06-18 10:24:01 metas={"wpcargo_pickup_date_picker":"18\/06\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-06-18 10:24:01"}
+[19-Jun-2026 20:59:59 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=32015 post_date=2026-06-18 10:14:07 metas={"wpcargo_pickup_date_picker":"18\/06\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-06-18 10:14:07"}
+[19-Jun-2026 20:59:59 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=32009 post_date=2026-06-18 08:46:38 metas={"wpcargo_pickup_date_picker":"18\/06\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-06-18 08:46:38"}
+[19-Jun-2026 20:59:59 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=32005 post_date=2026-06-18 08:45:27 metas={"wpcargo_pickup_date_picker":"18\/06\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-06-18 08:45:27"}
+[19-Jun-2026 20:59:59 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=32006 post_date=2026-06-18 08:45:27 metas={"wpcargo_pickup_date_picker":"18\/06\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-06-18 08:45:27"}
+[19-Jun-2026 20:59:59 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31998 post_date=2026-06-17 19:14:06 metas={"wpcargo_pickup_date_picker":"17\/06\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-06-17 19:14:06"}
+[19-Jun-2026 20:59:59 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31992 post_date=2026-06-17 16:43:16 metas={"wpcargo_pickup_date_picker":"17\/06\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-06-17 16:43:16"}
+[19-Jun-2026 20:59:59 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31986 post_date=2026-06-17 11:26:23 metas={"wpcargo_pickup_date_picker":"17\/06\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-06-17 11:26:23"}
+[19-Jun-2026 20:59:59 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31977 post_date=2026-06-17 10:12:04 metas={"wpcargo_pickup_date_picker":"17\/06\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-06-17 10:12:04"}
+[19-Jun-2026 20:59:59 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31969 post_date=2026-06-17 09:55:11 metas={"wpcargo_pickup_date_picker":"17\/06\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-06-17 09:55:11"}
+[19-Jun-2026 20:59:59 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31963 post_date=2026-06-17 09:15:06 metas={"wpcargo_pickup_date_picker":"17\/06\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-06-17 09:15:06"}
+[19-Jun-2026 20:59:59 UTC] MERC_ADMIN_RESUMEN_SAMPLE - id=31958 post_date=2026-06-16 12:02:12 metas={"wpcargo_pickup_date_picker":"16\/06\/2026","wpcargo_pickup_date":"","calendarenvio":"","wpcargo_fecha_envio":"","post_date":"2026-06-16 12:02:12"}
+[19-Jun-2026 20:59:59 UTC] MERC_ADMIN_RESUMEN - trying post_date fallback with start=2026-06-19 00:00:00 end=2026-06-19 23:59:59
+[19-Jun-2026 20:59:59 UTC] 🔍 [MERC_ADMIN_CARDS] drivers_sql: SELECT pm_entrega.meta_value AS driver_id, COUNT(DISTINCT p.ID) AS total_entregas FROM wp_posts p LEFT JOIN wp_postmeta pm_entrega ON p.ID = pm_entrega.post_id AND pm_entrega.meta_key = 'wpcargo_motorizo_entrega' WHERE p.post_type = 'wpcargo_shipment' AND p.post_status = 'publish' AND pm_entrega.meta_value IS NOT NULL AND EXISTS( SELECT 1 FROM wp_postmeta pm_pickup WHERE pm_pickup.post_id = p.ID AND pm_pickup.meta_key = 'wpcargo_pickup_date_picker' AND ( STR_TO_DATE(pm_pickup.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-06-19', '%Y-%m-%d') AND STR_TO_DATE(pm_pickup.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-06-19', '%Y-%m-%d') ) ) GROUP BY pm_entrega.meta_value ORDER BY total_entregas DESC
+[19-Jun-2026 20:59:59 UTC] 🔍 [MERC_ADMIN_CARDS] sample_ids_count: 0
+[19-Jun-2026 20:59:59 UTC] 🔍 [MERC_ADMIN_CARDS] sample_ids EMPTY for date_query
+[19-Jun-2026 20:59:59 UTC] 🔍 [MERC_ADMIN_CARDS] drivers_count: 0
+[19-Jun-2026 21:00:14 UTC] PHP Deprecated:  Automatic conversion of false to array is deprecated in /var/www/html/wp-content/plugins/elementor/includes/api.php on line 176
+[19-Jun-2026 21:00:17 UTC] [Elementor Atomic Widgets] [WARNING] Migrations manifest not found | Context: {"path":"https://migrations.elementor.com/manifest.json"}
+[19-Jun-2026 21:02:55 UTC] PHP Deprecated:  ¡La función WP_User-&gt;id ha sido llamada con un argumento que está <strong>obsoleto</strong> desde la versión 2.1.0! Utiliza <code>WP_User-&gt;ID</code> en su lugar. in /var/www/html/wp-includes/functions.php on line 6121
+[19-Jun-2026 21:02:55 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #517 (graypadilla6@gmail.com)
+[19-Jun-2026 21:02:55 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:02:55 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:02:55 UTC] =====================================
+[19-Jun-2026 21:02:55 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #517 | Fecha: 2026-06-19
+[19-Jun-2026 21:02:55 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:02:55 UTC] =====================================
+[19-Jun-2026 21:02:55 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '517'
+    
+[19-Jun-2026 21:02:55 UTC] 📊 Total envíos del cliente (sin filtrar): 7
+[19-Jun-2026 21:02:55 UTC]    📅 Envío #31835: post_date_raw='2026-05-24 11:34:58' | fecha_reprog_raw='24/05/2026' | fecha_efectiva='2026-05-24' | hoy='2026-06-19'
+[19-Jun-2026 21:02:55 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:02:55 UTC]    📅 Envío #31841: post_date_raw='2026-06-06 17:06:16' | fecha_reprog_raw='06/06/2026' | fecha_efectiva='2026-06-06' | hoy='2026-06-19'
+[19-Jun-2026 21:02:55 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:02:55 UTC]    📅 Envío #31842: post_date_raw='2026-06-06 17:12:14' | fecha_reprog_raw='06/06/2026' | fecha_efectiva='2026-06-06' | hoy='2026-06-19'
+[19-Jun-2026 21:02:55 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:02:55 UTC]    📅 Envío #31844: post_date_raw='2026-06-06 17:21:15' | fecha_reprog_raw='06/06/2026' | fecha_efectiva='2026-06-06' | hoy='2026-06-19'
+[19-Jun-2026 21:02:55 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:02:55 UTC]    📅 Envío #31861: post_date_raw='2026-06-07 15:42:35' | fecha_reprog_raw='07/06/2026' | fecha_efectiva='2026-06-07' | hoy='2026-06-19'
+[19-Jun-2026 21:02:55 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:02:55 UTC]    📅 Envío #31866: post_date_raw='2026-06-07 17:51:18' | fecha_reprog_raw='07/06/2026' | fecha_efectiva='2026-06-07' | hoy='2026-06-19'
+[19-Jun-2026 21:02:55 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:02:55 UTC]    📅 Envío #31872: post_date_raw='2026-06-11 07:56:31' | fecha_reprog_raw='11/06/2026' | fecha_efectiva='2026-06-11' | hoy='2026-06-19'
+[19-Jun-2026 21:02:55 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:02:55 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:02:55 UTC] ✅ PERMITIDO: Cliente #517 sin envíos hoy - Puede crear
+[19-Jun-2026 21:02:55 UTC] =====================================
+[19-Jun-2026 21:02:55 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:02:55 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #517 - Hora: 16:02
+[19-Jun-2026 21:02:55 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:02:55 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:02:55 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #517 - Hora: 16:02
+[19-Jun-2026 21:02:56 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:02:56 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:02:56 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #517 - Hora: 16:02
+[19-Jun-2026 21:02:56 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:02:56 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:02:56 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:02:56 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:02:56 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #516 (melany_thaisy@hotmail.com)
+[19-Jun-2026 21:02:56 UTC]    ℹ️ No es cliente WPCargo (roles: wpcargo_pending_client)
+[19-Jun-2026 21:02:56 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #515 (karenporrasrojas71@gmail.com)
+[19-Jun-2026 21:02:56 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:02:56 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:02:56 UTC] =====================================
+[19-Jun-2026 21:02:56 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #515 | Fecha: 2026-06-19
+[19-Jun-2026 21:02:56 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:02:56 UTC] =====================================
+[19-Jun-2026 21:02:56 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '515'
+    
+[19-Jun-2026 21:02:56 UTC] 📊 Total envíos del cliente (sin filtrar): 0
+[19-Jun-2026 21:02:56 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:02:56 UTC] ✅ PERMITIDO: Cliente #515 sin envíos hoy - Puede crear
+[19-Jun-2026 21:02:56 UTC] =====================================
+[19-Jun-2026 21:02:56 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:02:56 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #515 - Hora: 16:02
+[19-Jun-2026 21:02:56 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:02:56 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:02:56 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #515 - Hora: 16:02
+[19-Jun-2026 21:02:57 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:02:57 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:02:57 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #515 - Hora: 16:02
+[19-Jun-2026 21:02:57 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:02:57 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:02:57 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:02:57 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:02:57 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #514 (abnerleonelmezaortiz1@gmail.com)
+[19-Jun-2026 21:02:57 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:02:57 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:02:57 UTC] =====================================
+[19-Jun-2026 21:02:57 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #514 | Fecha: 2026-06-19
+[19-Jun-2026 21:02:57 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:02:57 UTC] =====================================
+[19-Jun-2026 21:02:57 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '514'
+    
+[19-Jun-2026 21:02:57 UTC] 📊 Total envíos del cliente (sin filtrar): 1
+[19-Jun-2026 21:02:57 UTC]    📅 Envío #31833: post_date_raw='2026-05-07 07:37:10' | fecha_reprog_raw='07/05/2026' | fecha_efectiva='2026-05-07' | hoy='2026-06-19'
+[19-Jun-2026 21:02:57 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:02:57 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:02:57 UTC] ✅ PERMITIDO: Cliente #514 sin envíos hoy - Puede crear
+[19-Jun-2026 21:02:57 UTC] =====================================
+[19-Jun-2026 21:02:57 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:02:57 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #514 - Hora: 16:02
+[19-Jun-2026 21:02:57 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:02:57 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:02:57 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #514 - Hora: 16:02
+[19-Jun-2026 21:02:57 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:02:57 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:02:57 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #514 - Hora: 16:02
+[19-Jun-2026 21:02:58 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:02:58 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:02:58 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:02:58 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:02:58 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #513 (kvn090603@gmail.com)
+[19-Jun-2026 21:02:58 UTC]    ℹ️ No es cliente WPCargo (roles: wpcargo_driver)
+[19-Jun-2026 21:02:58 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #512 (ronaldsa588@gmail.com)
+[19-Jun-2026 21:02:58 UTC]    ℹ️ No es cliente WPCargo (roles: wpcargo_driver)
+[19-Jun-2026 21:02:58 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #511 (valeria190519@gmail.com)
+[19-Jun-2026 21:02:58 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:02:58 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:02:58 UTC] =====================================
+[19-Jun-2026 21:02:58 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #511 | Fecha: 2026-06-19
+[19-Jun-2026 21:02:58 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:02:58 UTC] =====================================
+[19-Jun-2026 21:02:58 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '511'
+    
+[19-Jun-2026 21:02:58 UTC] 📊 Total envíos del cliente (sin filtrar): 12
+[19-Jun-2026 21:02:58 UTC]    📅 Envío #31800: post_date_raw='2026-05-07 00:32:23' | fecha_reprog_raw='07/05/2026' | fecha_efectiva='2026-05-07' | hoy='2026-06-19'
+[19-Jun-2026 21:02:58 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:02:58 UTC]    📅 Envío #31801: post_date_raw='2026-05-07 00:32:23' | fecha_reprog_raw='07/05/2026' | fecha_efectiva='2026-05-07' | hoy='2026-06-19'
+[19-Jun-2026 21:02:58 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:02:58 UTC]    📅 Envío #31802: post_date_raw='2026-05-07 00:32:23' | fecha_reprog_raw='07/05/2026' | fecha_efectiva='2026-05-07' | hoy='2026-06-19'
+[19-Jun-2026 21:02:58 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:02:58 UTC]    📅 Envío #31803: post_date_raw='2026-05-07 00:32:23' | fecha_reprog_raw='07/05/2026' | fecha_efectiva='2026-05-07' | hoy='2026-06-19'
+[19-Jun-2026 21:02:58 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:02:58 UTC]    📅 Envío #31804: post_date_raw='2026-05-07 00:32:34' | fecha_reprog_raw='07/05/2026' | fecha_efectiva='2026-05-07' | hoy='2026-06-19'
+[19-Jun-2026 21:02:58 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:02:58 UTC]    📅 Envío #31805: post_date_raw='2026-05-07 00:32:34' | fecha_reprog_raw='07/05/2026' | fecha_efectiva='2026-05-07' | hoy='2026-06-19'
+[19-Jun-2026 21:02:58 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:02:58 UTC]    📅 Envío #31806: post_date_raw='2026-05-07 00:32:35' | fecha_reprog_raw='07/05/2026' | fecha_efectiva='2026-05-07' | hoy='2026-06-19'
+[19-Jun-2026 21:02:58 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:02:58 UTC]    📅 Envío #31807: post_date_raw='2026-05-07 00:32:35' | fecha_reprog_raw='07/05/2026' | fecha_efectiva='2026-05-07' | hoy='2026-06-19'
+[19-Jun-2026 21:02:58 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:02:58 UTC]    📅 Envío #31808: post_date_raw='2026-05-07 00:32:48' | fecha_reprog_raw='07/05/2026' | fecha_efectiva='2026-05-07' | hoy='2026-06-19'
+[19-Jun-2026 21:02:58 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:02:58 UTC]    📅 Envío #31809: post_date_raw='2026-05-07 00:32:48' | fecha_reprog_raw='07/05/2026' | fecha_efectiva='2026-05-07' | hoy='2026-06-19'
+[19-Jun-2026 21:02:58 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:02:58 UTC]    📅 Envío #31810: post_date_raw='2026-05-07 00:32:48' | fecha_reprog_raw='07/05/2026' | fecha_efectiva='2026-05-07' | hoy='2026-06-19'
+[19-Jun-2026 21:02:58 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:02:58 UTC]    📅 Envío #31811: post_date_raw='2026-05-07 00:32:48' | fecha_reprog_raw='07/05/2026' | fecha_efectiva='2026-05-07' | hoy='2026-06-19'
+[19-Jun-2026 21:02:58 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:02:58 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:02:58 UTC] ✅ PERMITIDO: Cliente #511 sin envíos hoy - Puede crear
+[19-Jun-2026 21:02:58 UTC] =====================================
+[19-Jun-2026 21:02:58 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:02:58 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #511 - Hora: 16:02
+[19-Jun-2026 21:02:58 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:02:58 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:02:58 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #511 - Hora: 16:02
+[19-Jun-2026 21:02:58 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:02:58 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:02:58 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #511 - Hora: 16:02
+[19-Jun-2026 21:02:58 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:02:58 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:02:58 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:02:58 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:02:58 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #510 (jesicaros0307@gmail.com)
+[19-Jun-2026 21:02:58 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:02:58 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:02:58 UTC] =====================================
+[19-Jun-2026 21:02:58 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #510 | Fecha: 2026-06-19
+[19-Jun-2026 21:02:58 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:02:58 UTC] =====================================
+[19-Jun-2026 21:02:58 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '510'
+    
+[19-Jun-2026 21:02:58 UTC] 📊 Total envíos del cliente (sin filtrar): 1
+[19-Jun-2026 21:02:58 UTC]    📅 Envío #31832: post_date_raw='2026-05-07 07:30:18' | fecha_reprog_raw='07/05/2026' | fecha_efectiva='2026-05-07' | hoy='2026-06-19'
+[19-Jun-2026 21:02:58 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:02:58 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:02:58 UTC] ✅ PERMITIDO: Cliente #510 sin envíos hoy - Puede crear
+[19-Jun-2026 21:02:58 UTC] =====================================
+[19-Jun-2026 21:02:58 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:02:58 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #510 - Hora: 16:02
+[19-Jun-2026 21:02:59 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:02:59 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:02:59 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #510 - Hora: 16:02
+[19-Jun-2026 21:02:59 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:02:59 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:02:59 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #510 - Hora: 16:02
+[19-Jun-2026 21:02:59 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:02:59 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:02:59 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:02:59 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:02:59 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #509 (Moda tentazioni abigail eirl)
+[19-Jun-2026 21:02:59 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:02:59 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:02:59 UTC] =====================================
+[19-Jun-2026 21:02:59 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #509 | Fecha: 2026-06-19
+[19-Jun-2026 21:02:59 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:02:59 UTC] =====================================
+[19-Jun-2026 21:02:59 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '509'
+    
+[19-Jun-2026 21:02:59 UTC] 📊 Total envíos del cliente (sin filtrar): 1
+[19-Jun-2026 21:02:59 UTC]    📅 Envío #31341: post_date_raw='2026-05-06 12:13:18' | fecha_reprog_raw='06/05/2026' | fecha_efectiva='2026-05-06' | hoy='2026-06-19'
+[19-Jun-2026 21:02:59 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:02:59 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:02:59 UTC] ✅ PERMITIDO: Cliente #509 sin envíos hoy - Puede crear
+[19-Jun-2026 21:02:59 UTC] =====================================
+[19-Jun-2026 21:02:59 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:02:59 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #509 - Hora: 16:02
+[19-Jun-2026 21:02:59 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:02:59 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:02:59 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #509 - Hora: 16:02
+[19-Jun-2026 21:03:00 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:03:00 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:03:00 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #509 - Hora: 16:03
+[19-Jun-2026 21:03:00 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:03:00 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:03:00 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:03:00 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:03:00 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #508 (angelina.villena@gmail.com)
+[19-Jun-2026 21:03:00 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:03:00 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:03:00 UTC] =====================================
+[19-Jun-2026 21:03:00 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #508 | Fecha: 2026-06-19
+[19-Jun-2026 21:03:00 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:03:00 UTC] =====================================
+[19-Jun-2026 21:03:00 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '508'
+    
+[19-Jun-2026 21:03:00 UTC] 📊 Total envíos del cliente (sin filtrar): 1
+[19-Jun-2026 21:03:00 UTC]    📅 Envío #31090: post_date_raw='2026-05-06 09:04:57' | fecha_reprog_raw='06/05/2026' | fecha_efectiva='2026-05-06' | hoy='2026-06-19'
+[19-Jun-2026 21:03:00 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:03:00 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:03:00 UTC] ✅ PERMITIDO: Cliente #508 sin envíos hoy - Puede crear
+[19-Jun-2026 21:03:00 UTC] =====================================
+[19-Jun-2026 21:03:00 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:03:00 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #508 - Hora: 16:03
+[19-Jun-2026 21:03:00 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:03:00 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:03:00 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #508 - Hora: 16:03
+[19-Jun-2026 21:03:00 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:03:00 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:03:00 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #508 - Hora: 16:03
+[19-Jun-2026 21:03:00 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:03:00 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:03:00 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:03:00 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:03:00 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #507 (xaeimport@gmail.com)
+[19-Jun-2026 21:03:00 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:03:00 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:03:00 UTC] =====================================
+[19-Jun-2026 21:03:00 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #507 | Fecha: 2026-06-19
+[19-Jun-2026 21:03:00 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:03:00 UTC] =====================================
+[19-Jun-2026 21:03:00 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '507'
+    
+[19-Jun-2026 21:03:00 UTC] 📊 Total envíos del cliente (sin filtrar): 0
+[19-Jun-2026 21:03:00 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:03:00 UTC] ✅ PERMITIDO: Cliente #507 sin envíos hoy - Puede crear
+[19-Jun-2026 21:03:00 UTC] =====================================
+[19-Jun-2026 21:03:00 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:03:00 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #507 - Hora: 16:03
+[19-Jun-2026 21:03:01 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:03:01 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:03:01 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #507 - Hora: 16:03
+[19-Jun-2026 21:03:01 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:03:01 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:03:01 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #507 - Hora: 16:03
+[19-Jun-2026 21:03:01 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:03:01 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:03:01 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:03:01 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:03:01 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #506 (Distribuidora de Luces)
+[19-Jun-2026 21:03:01 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:03:01 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:03:01 UTC] =====================================
+[19-Jun-2026 21:03:01 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #506 | Fecha: 2026-06-19
+[19-Jun-2026 21:03:01 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:03:01 UTC] =====================================
+[19-Jun-2026 21:03:01 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '506'
+    
+[19-Jun-2026 21:03:01 UTC] 📊 Total envíos del cliente (sin filtrar): 1
+[19-Jun-2026 21:03:01 UTC]    📅 Envío #31309: post_date_raw='2026-05-06 11:29:20' | fecha_reprog_raw='06/05/2026' | fecha_efectiva='2026-05-06' | hoy='2026-06-19'
+[19-Jun-2026 21:03:01 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:03:01 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:03:01 UTC] ✅ PERMITIDO: Cliente #506 sin envíos hoy - Puede crear
+[19-Jun-2026 21:03:01 UTC] =====================================
+[19-Jun-2026 21:03:01 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:03:01 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #506 - Hora: 16:03
+[19-Jun-2026 21:03:01 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:03:01 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:03:01 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #506 - Hora: 16:03
+[19-Jun-2026 21:03:01 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:03:01 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:03:01 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #506 - Hora: 16:03
+[19-Jun-2026 21:03:02 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:03:02 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:03:02 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:03:02 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:03:02 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #505 (Cartera julys)
+[19-Jun-2026 21:03:02 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:03:02 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:03:02 UTC] =====================================
+[19-Jun-2026 21:03:02 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #505 | Fecha: 2026-06-19
+[19-Jun-2026 21:03:02 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:03:02 UTC] =====================================
+[19-Jun-2026 21:03:02 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '505'
+    
+[19-Jun-2026 21:03:02 UTC] 📊 Total envíos del cliente (sin filtrar): 0
+[19-Jun-2026 21:03:02 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:03:02 UTC] ✅ PERMITIDO: Cliente #505 sin envíos hoy - Puede crear
+[19-Jun-2026 21:03:02 UTC] =====================================
+[19-Jun-2026 21:03:02 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:03:02 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #505 - Hora: 16:03
+[19-Jun-2026 21:03:02 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:03:02 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:03:02 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #505 - Hora: 16:03
+[19-Jun-2026 21:03:02 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:03:02 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:03:02 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #505 - Hora: 16:03
+[19-Jun-2026 21:03:02 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:03:02 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:03:02 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:03:02 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:03:02 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #504 (import.asia.pacific@gmail.com)
+[19-Jun-2026 21:03:02 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:03:02 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:03:02 UTC] =====================================
+[19-Jun-2026 21:03:02 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #504 | Fecha: 2026-06-19
+[19-Jun-2026 21:03:02 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:03:02 UTC] =====================================
+[19-Jun-2026 21:03:02 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '504'
+    
+[19-Jun-2026 21:03:02 UTC] 📊 Total envíos del cliente (sin filtrar): 0
+[19-Jun-2026 21:03:02 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:03:02 UTC] ✅ PERMITIDO: Cliente #504 sin envíos hoy - Puede crear
+[19-Jun-2026 21:03:02 UTC] =====================================
+[19-Jun-2026 21:03:02 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:03:02 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #504 - Hora: 16:03
+[19-Jun-2026 21:03:02 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:03:02 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:03:02 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #504 - Hora: 16:03
+[19-Jun-2026 21:03:03 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:03:03 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:03:03 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #504 - Hora: 16:03
+[19-Jun-2026 21:03:03 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:03:03 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:03:03 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:03:03 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:03:03 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #503 (ksujeyvr@gmail.com)
+[19-Jun-2026 21:03:03 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:03:03 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:03:03 UTC] =====================================
+[19-Jun-2026 21:03:03 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #503 | Fecha: 2026-06-19
+[19-Jun-2026 21:03:03 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:03:03 UTC] =====================================
+[19-Jun-2026 21:03:03 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '503'
+    
+[19-Jun-2026 21:03:03 UTC] 📊 Total envíos del cliente (sin filtrar): 1
+[19-Jun-2026 21:03:03 UTC]    📅 Envío #30793: post_date_raw='2026-05-05 09:21:57' | fecha_reprog_raw='05/05/2026' | fecha_efectiva='2026-05-05' | hoy='2026-06-19'
+[19-Jun-2026 21:03:03 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:03:03 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:03:03 UTC] ✅ PERMITIDO: Cliente #503 sin envíos hoy - Puede crear
+[19-Jun-2026 21:03:03 UTC] =====================================
+[19-Jun-2026 21:03:03 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:03:03 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #503 - Hora: 16:03
+[19-Jun-2026 21:03:03 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:03:03 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:03:03 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #503 - Hora: 16:03
+[19-Jun-2026 21:03:03 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:03:03 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:03:03 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #503 - Hora: 16:03
+[19-Jun-2026 21:03:04 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:03:04 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:03:04 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:03:04 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:03:04 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #502 (varaulpianosheyla@gamil.com)
+[19-Jun-2026 21:03:04 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:03:04 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:03:04 UTC] =====================================
+[19-Jun-2026 21:03:04 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #502 | Fecha: 2026-06-19
+[19-Jun-2026 21:03:04 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:03:04 UTC] =====================================
+[19-Jun-2026 21:03:04 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '502'
+    
+[19-Jun-2026 21:03:04 UTC] 📊 Total envíos del cliente (sin filtrar): 1
+[19-Jun-2026 21:03:04 UTC]    📅 Envío #30738: post_date_raw='2026-05-04 22:57:41' | fecha_reprog_raw='05/05/2026' | fecha_efectiva='2026-05-05' | hoy='2026-06-19'
+[19-Jun-2026 21:03:04 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:03:04 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:03:04 UTC] ✅ PERMITIDO: Cliente #502 sin envíos hoy - Puede crear
+[19-Jun-2026 21:03:04 UTC] =====================================
+[19-Jun-2026 21:03:04 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:03:04 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #502 - Hora: 16:03
+[19-Jun-2026 21:03:04 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:03:04 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:03:04 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #502 - Hora: 16:03
+[19-Jun-2026 21:03:04 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:03:04 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:03:04 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #502 - Hora: 16:03
+[19-Jun-2026 21:03:04 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:03:04 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:03:04 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:03:04 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:03:04 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #501 (tryzha@hotmail.com)
+[19-Jun-2026 21:03:04 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:03:04 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:03:04 UTC] =====================================
+[19-Jun-2026 21:03:04 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #501 | Fecha: 2026-06-19
+[19-Jun-2026 21:03:04 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:03:04 UTC] =====================================
+[19-Jun-2026 21:03:04 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '501'
+    
+[19-Jun-2026 21:03:05 UTC] 📊 Total envíos del cliente (sin filtrar): 1
+[19-Jun-2026 21:03:05 UTC]    📅 Envío #30733: post_date_raw='2026-05-04 22:13:45' | fecha_reprog_raw='05/05/2026' | fecha_efectiva='2026-05-05' | hoy='2026-06-19'
+[19-Jun-2026 21:03:05 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:03:05 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:03:05 UTC] ✅ PERMITIDO: Cliente #501 sin envíos hoy - Puede crear
+[19-Jun-2026 21:03:05 UTC] =====================================
+[19-Jun-2026 21:03:05 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:03:05 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #501 - Hora: 16:03
+[19-Jun-2026 21:03:05 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:03:05 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:03:05 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #501 - Hora: 16:03
+[19-Jun-2026 21:03:05 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:03:05 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:03:05 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #501 - Hora: 16:03
+[19-Jun-2026 21:03:05 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:03:05 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:03:05 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:03:05 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:03:05 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #500 (xiio.trinidad@gmail.com)
+[19-Jun-2026 21:03:05 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:03:05 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:03:05 UTC] =====================================
+[19-Jun-2026 21:03:05 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #500 | Fecha: 2026-06-19
+[19-Jun-2026 21:03:05 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:03:05 UTC] =====================================
+[19-Jun-2026 21:03:05 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '500'
+    
+[19-Jun-2026 21:03:05 UTC] 📊 Total envíos del cliente (sin filtrar): 1
+[19-Jun-2026 21:03:05 UTC]    📅 Envío #30717: post_date_raw='2026-05-04 16:43:52' | fecha_reprog_raw='05/05/2026' | fecha_efectiva='2026-05-05' | hoy='2026-06-19'
+[19-Jun-2026 21:03:05 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:03:05 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:03:05 UTC] ✅ PERMITIDO: Cliente #500 sin envíos hoy - Puede crear
+[19-Jun-2026 21:03:05 UTC] =====================================
+[19-Jun-2026 21:03:05 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:03:05 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #500 - Hora: 16:03
+[19-Jun-2026 21:03:05 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:03:05 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:03:05 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #500 - Hora: 16:03
+[19-Jun-2026 21:03:06 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:03:06 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:03:06 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #500 - Hora: 16:03
+[19-Jun-2026 21:03:06 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:03:06 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:03:06 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:03:06 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:03:06 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #499 (luis_djh@hotmail.com)
+[19-Jun-2026 21:03:06 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:03:06 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:03:06 UTC] =====================================
+[19-Jun-2026 21:03:06 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #499 | Fecha: 2026-06-19
+[19-Jun-2026 21:03:06 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:03:06 UTC] =====================================
+[19-Jun-2026 21:03:06 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '499'
+    
+[19-Jun-2026 21:03:06 UTC] 📊 Total envíos del cliente (sin filtrar): 4
+[19-Jun-2026 21:03:06 UTC]    📅 Envío #30368: post_date_raw='2026-05-04 10:43:08' | fecha_reprog_raw='04/05/2026' | fecha_efectiva='2026-05-04' | hoy='2026-06-19'
+[19-Jun-2026 21:03:06 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:03:06 UTC]    📅 Envío #30712: post_date_raw='2026-05-04 14:53:59' | fecha_reprog_raw='04/05/2026' | fecha_efectiva='2026-05-04' | hoy='2026-06-19'
+[19-Jun-2026 21:03:06 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:03:06 UTC]    📅 Envío #30791: post_date_raw='2026-05-05 09:20:09' | fecha_reprog_raw='05/05/2026' | fecha_efectiva='2026-05-05' | hoy='2026-06-19'
+[19-Jun-2026 21:03:06 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:03:06 UTC]    📅 Envío #31045: post_date_raw='2026-05-05 15:45:56' | fecha_reprog_raw='05/05/2026' | fecha_efectiva='2026-05-05' | hoy='2026-06-19'
+[19-Jun-2026 21:03:06 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:03:06 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:03:06 UTC] ✅ PERMITIDO: Cliente #499 sin envíos hoy - Puede crear
+[19-Jun-2026 21:03:06 UTC] =====================================
+[19-Jun-2026 21:03:06 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:03:06 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #499 - Hora: 16:03
+[19-Jun-2026 21:03:06 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:03:06 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:03:06 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #499 - Hora: 16:03
+[19-Jun-2026 21:03:06 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:03:06 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:03:06 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #499 - Hora: 16:03
+[19-Jun-2026 21:03:07 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:03:07 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:03:07 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:03:07 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:03:07 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #497 (ruizcamachoramos75@gmail.com)
+[19-Jun-2026 21:03:07 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:03:07 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:03:07 UTC] =====================================
+[19-Jun-2026 21:03:07 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #497 | Fecha: 2026-06-19
+[19-Jun-2026 21:03:07 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:03:07 UTC] =====================================
+[19-Jun-2026 21:03:07 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '497'
+    
+[19-Jun-2026 21:03:07 UTC] 📊 Total envíos del cliente (sin filtrar): 1
+[19-Jun-2026 21:03:07 UTC]    📅 Envío #30431: post_date_raw='2026-05-04 11:50:10' | fecha_reprog_raw='04/05/2026' | fecha_efectiva='2026-05-04' | hoy='2026-06-19'
+[19-Jun-2026 21:03:07 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:03:07 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:03:07 UTC] ✅ PERMITIDO: Cliente #497 sin envíos hoy - Puede crear
+[19-Jun-2026 21:03:07 UTC] =====================================
+[19-Jun-2026 21:03:07 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:03:07 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #497 - Hora: 16:03
+[19-Jun-2026 21:03:07 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:03:07 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:03:07 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #497 - Hora: 16:03
+[19-Jun-2026 21:03:07 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:03:07 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:03:07 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #497 - Hora: 16:03
+[19-Jun-2026 21:03:08 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:03:08 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:03:08 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:03:08 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:03:08 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #496 (aastraia.pe@gmail.com)
+[19-Jun-2026 21:03:08 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:03:08 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:03:08 UTC] =====================================
+[19-Jun-2026 21:03:08 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #496 | Fecha: 2026-06-19
+[19-Jun-2026 21:03:08 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:03:08 UTC] =====================================
+[19-Jun-2026 21:03:08 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '496'
+    
+[19-Jun-2026 21:03:08 UTC] 📊 Total envíos del cliente (sin filtrar): 3
+[19-Jun-2026 21:03:08 UTC]    📅 Envío #29740: post_date_raw='2026-05-01 11:38:46' | fecha_reprog_raw='02/05/2026' | fecha_efectiva='2026-05-02' | hoy='2026-06-19'
+[19-Jun-2026 21:03:08 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:03:08 UTC]    📅 Envío #29741: post_date_raw='2026-05-01 12:32:07' | fecha_reprog_raw='02/05/2026' | fecha_efectiva='2026-05-02' | hoy='2026-06-19'
+[19-Jun-2026 21:03:08 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:03:08 UTC]    📅 Envío #32058: post_date_raw='2026-06-18 14:49:39' | fecha_reprog_raw='18/06/2026' | fecha_efectiva='2026-06-18' | hoy='2026-06-19'
+[19-Jun-2026 21:03:08 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:03:08 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:03:08 UTC] ✅ PERMITIDO: Cliente #496 sin envíos hoy - Puede crear
+[19-Jun-2026 21:03:08 UTC] =====================================
+[19-Jun-2026 21:03:08 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:03:08 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #496 - Hora: 16:03
+[19-Jun-2026 21:03:08 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:03:08 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:03:08 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #496 - Hora: 16:03
+[19-Jun-2026 21:03:08 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:03:08 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:03:08 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #496 - Hora: 16:03
+[19-Jun-2026 21:03:08 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:03:08 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:03:08 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:03:08 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:03:08 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #495 (carrionbuendia@gmail.com)
+[19-Jun-2026 21:03:08 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:03:08 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:03:08 UTC] =====================================
+[19-Jun-2026 21:03:08 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #495 | Fecha: 2026-06-19
+[19-Jun-2026 21:03:08 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:03:08 UTC] =====================================
+[19-Jun-2026 21:03:08 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '495'
+    
+[19-Jun-2026 21:03:08 UTC] 📊 Total envíos del cliente (sin filtrar): 1
+[19-Jun-2026 21:03:08 UTC]    📅 Envío #29172: post_date_raw='2026-04-30 09:26:37' | fecha_reprog_raw='30/04/2026' | fecha_efectiva='2026-04-30' | hoy='2026-06-19'
+[19-Jun-2026 21:03:08 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:03:08 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:03:08 UTC] ✅ PERMITIDO: Cliente #495 sin envíos hoy - Puede crear
+[19-Jun-2026 21:03:08 UTC] =====================================
+[19-Jun-2026 21:03:08 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:03:08 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #495 - Hora: 16:03
+[19-Jun-2026 21:03:09 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:03:09 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:03:09 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #495 - Hora: 16:03
+[19-Jun-2026 21:03:09 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:03:09 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:03:09 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #495 - Hora: 16:03
+[19-Jun-2026 21:03:09 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:03:09 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:03:09 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:03:09 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:03:09 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #494 (milenavaldiviasalinas@gmail.com)
+[19-Jun-2026 21:03:09 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:03:09 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:03:09 UTC] =====================================
+[19-Jun-2026 21:03:09 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #494 | Fecha: 2026-06-19
+[19-Jun-2026 21:03:09 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:03:09 UTC] =====================================
+[19-Jun-2026 21:03:09 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '494'
+    
+[19-Jun-2026 21:03:09 UTC] 📊 Total envíos del cliente (sin filtrar): 0
+[19-Jun-2026 21:03:09 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:03:09 UTC] ✅ PERMITIDO: Cliente #494 sin envíos hoy - Puede crear
+[19-Jun-2026 21:03:09 UTC] =====================================
+[19-Jun-2026 21:03:09 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:03:09 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #494 - Hora: 16:03
+[19-Jun-2026 21:03:09 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:03:09 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:03:09 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #494 - Hora: 16:03
+[19-Jun-2026 21:03:10 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:03:10 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:03:10 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #494 - Hora: 16:03
+[19-Jun-2026 21:03:10 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:03:10 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:03:10 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:03:10 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:03:10 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #493 (brandingperuu@gmail.com)
+[19-Jun-2026 21:03:10 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:03:10 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:03:10 UTC] =====================================
+[19-Jun-2026 21:03:10 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #493 | Fecha: 2026-06-19
+[19-Jun-2026 21:03:10 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:03:10 UTC] =====================================
+[19-Jun-2026 21:03:10 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '493'
+    
+[19-Jun-2026 21:03:10 UTC] 📊 Total envíos del cliente (sin filtrar): 2
+[19-Jun-2026 21:03:10 UTC]    📅 Envío #29174: post_date_raw='2026-04-30 09:29:02' | fecha_reprog_raw='' | fecha_efectiva='2026-04-30' | hoy='2026-06-19'
+[19-Jun-2026 21:03:10 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:03:10 UTC]    📅 Envío #29185: post_date_raw='2026-04-30 09:32:58' | fecha_reprog_raw='30/04/2026' | fecha_efectiva='2026-04-30' | hoy='2026-06-19'
+[19-Jun-2026 21:03:10 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:03:10 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:03:10 UTC] ✅ PERMITIDO: Cliente #493 sin envíos hoy - Puede crear
+[19-Jun-2026 21:03:10 UTC] =====================================
+[19-Jun-2026 21:03:10 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:03:10 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #493 - Hora: 16:03
+[19-Jun-2026 21:03:10 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:03:10 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:03:10 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #493 - Hora: 16:03
+[19-Jun-2026 21:03:10 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:03:10 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:03:10 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #493 - Hora: 16:03
+[19-Jun-2026 21:03:11 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:03:11 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:03:11 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:03:11 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:04:10 UTC] PHP Deprecated:  ¡La función WP_User-&gt;id ha sido llamada con un argumento que está <strong>obsoleto</strong> desde la versión 2.1.0! Utiliza <code>WP_User-&gt;ID</code> en su lugar. in /var/www/html/wp-includes/functions.php on line 6121
+[19-Jun-2026 21:04:10 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #517 (graypadilla6@gmail.com)
+[19-Jun-2026 21:04:10 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:04:10 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:04:10 UTC] =====================================
+[19-Jun-2026 21:04:10 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #517 | Fecha: 2026-06-19
+[19-Jun-2026 21:04:10 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:04:10 UTC] =====================================
+[19-Jun-2026 21:04:10 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '517'
+    
+[19-Jun-2026 21:04:10 UTC] 📊 Total envíos del cliente (sin filtrar): 7
+[19-Jun-2026 21:04:10 UTC]    📅 Envío #31835: post_date_raw='2026-05-24 11:34:58' | fecha_reprog_raw='24/05/2026' | fecha_efectiva='2026-05-24' | hoy='2026-06-19'
+[19-Jun-2026 21:04:10 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:10 UTC]    📅 Envío #31841: post_date_raw='2026-06-06 17:06:16' | fecha_reprog_raw='06/06/2026' | fecha_efectiva='2026-06-06' | hoy='2026-06-19'
+[19-Jun-2026 21:04:10 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:10 UTC]    📅 Envío #31842: post_date_raw='2026-06-06 17:12:14' | fecha_reprog_raw='06/06/2026' | fecha_efectiva='2026-06-06' | hoy='2026-06-19'
+[19-Jun-2026 21:04:10 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:10 UTC]    📅 Envío #31844: post_date_raw='2026-06-06 17:21:15' | fecha_reprog_raw='06/06/2026' | fecha_efectiva='2026-06-06' | hoy='2026-06-19'
+[19-Jun-2026 21:04:10 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:10 UTC]    📅 Envío #31861: post_date_raw='2026-06-07 15:42:35' | fecha_reprog_raw='07/06/2026' | fecha_efectiva='2026-06-07' | hoy='2026-06-19'
+[19-Jun-2026 21:04:10 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:10 UTC]    📅 Envío #31866: post_date_raw='2026-06-07 17:51:18' | fecha_reprog_raw='07/06/2026' | fecha_efectiva='2026-06-07' | hoy='2026-06-19'
+[19-Jun-2026 21:04:10 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:10 UTC]    📅 Envío #31872: post_date_raw='2026-06-11 07:56:31' | fecha_reprog_raw='11/06/2026' | fecha_efectiva='2026-06-11' | hoy='2026-06-19'
+[19-Jun-2026 21:04:10 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:10 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:04:10 UTC] ✅ PERMITIDO: Cliente #517 sin envíos hoy - Puede crear
+[19-Jun-2026 21:04:10 UTC] =====================================
+[19-Jun-2026 21:04:10 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:04:10 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #517 - Hora: 16:04
+[19-Jun-2026 21:04:10 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:04:10 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:04:10 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #517 - Hora: 16:04
+[19-Jun-2026 21:04:10 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:04:10 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:04:10 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #517 - Hora: 16:04
+[19-Jun-2026 21:04:11 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:04:11 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:04:11 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:04:11 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:04:11 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #516 (melany_thaisy@hotmail.com)
+[19-Jun-2026 21:04:11 UTC]    ℹ️ No es cliente WPCargo (roles: wpcargo_pending_client)
+[19-Jun-2026 21:04:11 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #515 (karenporrasrojas71@gmail.com)
+[19-Jun-2026 21:04:11 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:04:11 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:04:11 UTC] =====================================
+[19-Jun-2026 21:04:11 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #515 | Fecha: 2026-06-19
+[19-Jun-2026 21:04:11 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:04:11 UTC] =====================================
+[19-Jun-2026 21:04:11 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '515'
+    
+[19-Jun-2026 21:04:11 UTC] 📊 Total envíos del cliente (sin filtrar): 0
+[19-Jun-2026 21:04:11 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:04:11 UTC] ✅ PERMITIDO: Cliente #515 sin envíos hoy - Puede crear
+[19-Jun-2026 21:04:11 UTC] =====================================
+[19-Jun-2026 21:04:11 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:04:11 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #515 - Hora: 16:04
+[19-Jun-2026 21:04:11 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:04:11 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:04:11 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #515 - Hora: 16:04
+[19-Jun-2026 21:04:12 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:04:12 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:04:12 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #515 - Hora: 16:04
+[19-Jun-2026 21:04:12 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:04:12 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:04:12 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:04:12 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:04:12 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #514 (abnerleonelmezaortiz1@gmail.com)
+[19-Jun-2026 21:04:12 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:04:12 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:04:12 UTC] =====================================
+[19-Jun-2026 21:04:12 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #514 | Fecha: 2026-06-19
+[19-Jun-2026 21:04:12 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:04:12 UTC] =====================================
+[19-Jun-2026 21:04:12 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '514'
+    
+[19-Jun-2026 21:04:12 UTC] 📊 Total envíos del cliente (sin filtrar): 1
+[19-Jun-2026 21:04:12 UTC]    📅 Envío #31833: post_date_raw='2026-05-07 07:37:10' | fecha_reprog_raw='07/05/2026' | fecha_efectiva='2026-05-07' | hoy='2026-06-19'
+[19-Jun-2026 21:04:12 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:12 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:04:12 UTC] ✅ PERMITIDO: Cliente #514 sin envíos hoy - Puede crear
+[19-Jun-2026 21:04:12 UTC] =====================================
+[19-Jun-2026 21:04:12 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:04:12 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #514 - Hora: 16:04
+[19-Jun-2026 21:04:12 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:04:12 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:04:12 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #514 - Hora: 16:04
+[19-Jun-2026 21:04:12 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:04:12 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:04:12 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #514 - Hora: 16:04
+[19-Jun-2026 21:04:13 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:04:13 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:04:13 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:04:13 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:04:13 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #513 (kvn090603@gmail.com)
+[19-Jun-2026 21:04:13 UTC]    ℹ️ No es cliente WPCargo (roles: wpcargo_driver)
+[19-Jun-2026 21:04:13 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #512 (ronaldsa588@gmail.com)
+[19-Jun-2026 21:04:13 UTC]    ℹ️ No es cliente WPCargo (roles: wpcargo_driver)
+[19-Jun-2026 21:04:13 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #511 (valeria190519@gmail.com)
+[19-Jun-2026 21:04:13 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:04:13 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:04:13 UTC] =====================================
+[19-Jun-2026 21:04:13 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #511 | Fecha: 2026-06-19
+[19-Jun-2026 21:04:13 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:04:13 UTC] =====================================
+[19-Jun-2026 21:04:13 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '511'
+    
+[19-Jun-2026 21:04:13 UTC] 📊 Total envíos del cliente (sin filtrar): 12
+[19-Jun-2026 21:04:13 UTC]    📅 Envío #31800: post_date_raw='2026-05-07 00:32:23' | fecha_reprog_raw='07/05/2026' | fecha_efectiva='2026-05-07' | hoy='2026-06-19'
+[19-Jun-2026 21:04:13 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:13 UTC]    📅 Envío #31801: post_date_raw='2026-05-07 00:32:23' | fecha_reprog_raw='07/05/2026' | fecha_efectiva='2026-05-07' | hoy='2026-06-19'
+[19-Jun-2026 21:04:13 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:13 UTC]    📅 Envío #31802: post_date_raw='2026-05-07 00:32:23' | fecha_reprog_raw='07/05/2026' | fecha_efectiva='2026-05-07' | hoy='2026-06-19'
+[19-Jun-2026 21:04:13 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:13 UTC]    📅 Envío #31803: post_date_raw='2026-05-07 00:32:23' | fecha_reprog_raw='07/05/2026' | fecha_efectiva='2026-05-07' | hoy='2026-06-19'
+[19-Jun-2026 21:04:13 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:13 UTC]    📅 Envío #31804: post_date_raw='2026-05-07 00:32:34' | fecha_reprog_raw='07/05/2026' | fecha_efectiva='2026-05-07' | hoy='2026-06-19'
+[19-Jun-2026 21:04:13 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:13 UTC]    📅 Envío #31805: post_date_raw='2026-05-07 00:32:34' | fecha_reprog_raw='07/05/2026' | fecha_efectiva='2026-05-07' | hoy='2026-06-19'
+[19-Jun-2026 21:04:13 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:13 UTC]    📅 Envío #31806: post_date_raw='2026-05-07 00:32:35' | fecha_reprog_raw='07/05/2026' | fecha_efectiva='2026-05-07' | hoy='2026-06-19'
+[19-Jun-2026 21:04:13 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:13 UTC]    📅 Envío #31807: post_date_raw='2026-05-07 00:32:35' | fecha_reprog_raw='07/05/2026' | fecha_efectiva='2026-05-07' | hoy='2026-06-19'
+[19-Jun-2026 21:04:13 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:13 UTC]    📅 Envío #31808: post_date_raw='2026-05-07 00:32:48' | fecha_reprog_raw='07/05/2026' | fecha_efectiva='2026-05-07' | hoy='2026-06-19'
+[19-Jun-2026 21:04:13 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:13 UTC]    📅 Envío #31809: post_date_raw='2026-05-07 00:32:48' | fecha_reprog_raw='07/05/2026' | fecha_efectiva='2026-05-07' | hoy='2026-06-19'
+[19-Jun-2026 21:04:13 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:13 UTC]    📅 Envío #31810: post_date_raw='2026-05-07 00:32:48' | fecha_reprog_raw='07/05/2026' | fecha_efectiva='2026-05-07' | hoy='2026-06-19'
+[19-Jun-2026 21:04:13 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:13 UTC]    📅 Envío #31811: post_date_raw='2026-05-07 00:32:48' | fecha_reprog_raw='07/05/2026' | fecha_efectiva='2026-05-07' | hoy='2026-06-19'
+[19-Jun-2026 21:04:13 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:13 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:04:13 UTC] ✅ PERMITIDO: Cliente #511 sin envíos hoy - Puede crear
+[19-Jun-2026 21:04:13 UTC] =====================================
+[19-Jun-2026 21:04:13 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:04:13 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #511 - Hora: 16:04
+[19-Jun-2026 21:04:13 UTC] [Elementor Atomic Widgets] [WARNING] Migrations manifest not found | Context: {"path":"https://migrations.elementor.com/manifest.json"}
+[19-Jun-2026 21:04:13 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:04:13 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:04:13 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #511 - Hora: 16:04
+[19-Jun-2026 21:04:13 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:04:13 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:04:13 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #511 - Hora: 16:04
+[19-Jun-2026 21:04:13 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:04:13 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:04:13 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:04:13 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:04:13 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #510 (jesicaros0307@gmail.com)
+[19-Jun-2026 21:04:13 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:04:13 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:04:13 UTC] =====================================
+[19-Jun-2026 21:04:13 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #510 | Fecha: 2026-06-19
+[19-Jun-2026 21:04:13 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:04:13 UTC] =====================================
+[19-Jun-2026 21:04:13 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '510'
+    
+[19-Jun-2026 21:04:13 UTC] 📊 Total envíos del cliente (sin filtrar): 1
+[19-Jun-2026 21:04:13 UTC]    📅 Envío #31832: post_date_raw='2026-05-07 07:30:18' | fecha_reprog_raw='07/05/2026' | fecha_efectiva='2026-05-07' | hoy='2026-06-19'
+[19-Jun-2026 21:04:13 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:13 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:04:13 UTC] ✅ PERMITIDO: Cliente #510 sin envíos hoy - Puede crear
+[19-Jun-2026 21:04:13 UTC] =====================================
+[19-Jun-2026 21:04:13 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:04:13 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #510 - Hora: 16:04
+[19-Jun-2026 21:04:14 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:04:14 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:04:14 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #510 - Hora: 16:04
+[19-Jun-2026 21:04:14 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:04:14 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:04:14 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #510 - Hora: 16:04
+[19-Jun-2026 21:04:14 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:04:14 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:04:14 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:04:14 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:04:14 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #509 (Moda tentazioni abigail eirl)
+[19-Jun-2026 21:04:14 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:04:14 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:04:14 UTC] =====================================
+[19-Jun-2026 21:04:14 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #509 | Fecha: 2026-06-19
+[19-Jun-2026 21:04:14 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:04:14 UTC] =====================================
+[19-Jun-2026 21:04:14 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '509'
+    
+[19-Jun-2026 21:04:14 UTC] 📊 Total envíos del cliente (sin filtrar): 1
+[19-Jun-2026 21:04:14 UTC]    📅 Envío #31341: post_date_raw='2026-05-06 12:13:18' | fecha_reprog_raw='06/05/2026' | fecha_efectiva='2026-05-06' | hoy='2026-06-19'
+[19-Jun-2026 21:04:14 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:14 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:04:14 UTC] ✅ PERMITIDO: Cliente #509 sin envíos hoy - Puede crear
+[19-Jun-2026 21:04:14 UTC] =====================================
+[19-Jun-2026 21:04:14 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:04:14 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #509 - Hora: 16:04
+[19-Jun-2026 21:04:14 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:04:14 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:04:14 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #509 - Hora: 16:04
+[19-Jun-2026 21:04:15 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:04:15 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:04:15 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #509 - Hora: 16:04
+[19-Jun-2026 21:04:15 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:04:15 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:04:15 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:04:15 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:04:15 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #508 (angelina.villena@gmail.com)
+[19-Jun-2026 21:04:15 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:04:15 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:04:15 UTC] =====================================
+[19-Jun-2026 21:04:15 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #508 | Fecha: 2026-06-19
+[19-Jun-2026 21:04:15 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:04:15 UTC] =====================================
+[19-Jun-2026 21:04:15 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '508'
+    
+[19-Jun-2026 21:04:15 UTC] 📊 Total envíos del cliente (sin filtrar): 1
+[19-Jun-2026 21:04:15 UTC]    📅 Envío #31090: post_date_raw='2026-05-06 09:04:57' | fecha_reprog_raw='06/05/2026' | fecha_efectiva='2026-05-06' | hoy='2026-06-19'
+[19-Jun-2026 21:04:15 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:15 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:04:15 UTC] ✅ PERMITIDO: Cliente #508 sin envíos hoy - Puede crear
+[19-Jun-2026 21:04:15 UTC] =====================================
+[19-Jun-2026 21:04:15 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:04:15 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #508 - Hora: 16:04
+[19-Jun-2026 21:04:15 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:04:15 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:04:15 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #508 - Hora: 16:04
+[19-Jun-2026 21:04:15 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:04:15 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:04:15 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #508 - Hora: 16:04
+[19-Jun-2026 21:04:16 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:04:16 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:04:16 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:04:16 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:04:16 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #507 (xaeimport@gmail.com)
+[19-Jun-2026 21:04:16 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:04:16 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:04:16 UTC] =====================================
+[19-Jun-2026 21:04:16 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #507 | Fecha: 2026-06-19
+[19-Jun-2026 21:04:16 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:04:16 UTC] =====================================
+[19-Jun-2026 21:04:16 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '507'
+    
+[19-Jun-2026 21:04:16 UTC] 📊 Total envíos del cliente (sin filtrar): 0
+[19-Jun-2026 21:04:16 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:04:16 UTC] ✅ PERMITIDO: Cliente #507 sin envíos hoy - Puede crear
+[19-Jun-2026 21:04:16 UTC] =====================================
+[19-Jun-2026 21:04:16 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:04:16 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #507 - Hora: 16:04
+[19-Jun-2026 21:04:16 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:04:16 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:04:16 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #507 - Hora: 16:04
+[19-Jun-2026 21:04:16 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:04:16 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:04:16 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #507 - Hora: 16:04
+[19-Jun-2026 21:04:17 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:04:17 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:04:17 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:04:17 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:04:17 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #506 (Distribuidora de Luces)
+[19-Jun-2026 21:04:17 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:04:17 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:04:17 UTC] =====================================
+[19-Jun-2026 21:04:17 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #506 | Fecha: 2026-06-19
+[19-Jun-2026 21:04:17 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:04:17 UTC] =====================================
+[19-Jun-2026 21:04:17 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '506'
+    
+[19-Jun-2026 21:04:17 UTC] 📊 Total envíos del cliente (sin filtrar): 1
+[19-Jun-2026 21:04:17 UTC]    📅 Envío #31309: post_date_raw='2026-05-06 11:29:20' | fecha_reprog_raw='06/05/2026' | fecha_efectiva='2026-05-06' | hoy='2026-06-19'
+[19-Jun-2026 21:04:17 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:17 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:04:17 UTC] ✅ PERMITIDO: Cliente #506 sin envíos hoy - Puede crear
+[19-Jun-2026 21:04:17 UTC] =====================================
+[19-Jun-2026 21:04:17 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:04:17 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #506 - Hora: 16:04
+[19-Jun-2026 21:04:17 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:04:17 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:04:17 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #506 - Hora: 16:04
+[19-Jun-2026 21:04:17 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:04:17 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:04:17 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #506 - Hora: 16:04
+[19-Jun-2026 21:04:17 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:04:17 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:04:17 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:04:17 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:04:17 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #505 (Cartera julys)
+[19-Jun-2026 21:04:17 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:04:17 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:04:17 UTC] =====================================
+[19-Jun-2026 21:04:17 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #505 | Fecha: 2026-06-19
+[19-Jun-2026 21:04:17 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:04:17 UTC] =====================================
+[19-Jun-2026 21:04:17 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '505'
+    
+[19-Jun-2026 21:04:17 UTC] 📊 Total envíos del cliente (sin filtrar): 0
+[19-Jun-2026 21:04:17 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:04:17 UTC] ✅ PERMITIDO: Cliente #505 sin envíos hoy - Puede crear
+[19-Jun-2026 21:04:17 UTC] =====================================
+[19-Jun-2026 21:04:17 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:04:17 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #505 - Hora: 16:04
+[19-Jun-2026 21:04:18 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:04:18 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:04:18 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #505 - Hora: 16:04
+[19-Jun-2026 21:04:18 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:04:18 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:04:18 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #505 - Hora: 16:04
+[19-Jun-2026 21:04:18 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:04:18 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:04:18 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:04:18 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:04:18 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #504 (import.asia.pacific@gmail.com)
+[19-Jun-2026 21:04:18 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:04:18 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:04:18 UTC] =====================================
+[19-Jun-2026 21:04:18 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #504 | Fecha: 2026-06-19
+[19-Jun-2026 21:04:18 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:04:18 UTC] =====================================
+[19-Jun-2026 21:04:18 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '504'
+    
+[19-Jun-2026 21:04:18 UTC] 📊 Total envíos del cliente (sin filtrar): 0
+[19-Jun-2026 21:04:18 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:04:18 UTC] ✅ PERMITIDO: Cliente #504 sin envíos hoy - Puede crear
+[19-Jun-2026 21:04:18 UTC] =====================================
+[19-Jun-2026 21:04:18 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:04:18 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #504 - Hora: 16:04
+[19-Jun-2026 21:04:18 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:04:18 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:04:18 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #504 - Hora: 16:04
+[19-Jun-2026 21:04:19 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:04:19 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:04:19 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #504 - Hora: 16:04
+[19-Jun-2026 21:04:19 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:04:19 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:04:19 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:04:19 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:04:19 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #503 (ksujeyvr@gmail.com)
+[19-Jun-2026 21:04:19 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:04:19 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:04:19 UTC] =====================================
+[19-Jun-2026 21:04:19 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #503 | Fecha: 2026-06-19
+[19-Jun-2026 21:04:19 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:04:19 UTC] =====================================
+[19-Jun-2026 21:04:19 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '503'
+    
+[19-Jun-2026 21:04:19 UTC] 📊 Total envíos del cliente (sin filtrar): 1
+[19-Jun-2026 21:04:19 UTC]    📅 Envío #30793: post_date_raw='2026-05-05 09:21:57' | fecha_reprog_raw='05/05/2026' | fecha_efectiva='2026-05-05' | hoy='2026-06-19'
+[19-Jun-2026 21:04:19 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:19 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:04:19 UTC] ✅ PERMITIDO: Cliente #503 sin envíos hoy - Puede crear
+[19-Jun-2026 21:04:19 UTC] =====================================
+[19-Jun-2026 21:04:19 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:04:19 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #503 - Hora: 16:04
+[19-Jun-2026 21:04:19 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:04:19 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:04:19 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #503 - Hora: 16:04
+[19-Jun-2026 21:04:20 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:04:20 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:04:20 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #503 - Hora: 16:04
+[19-Jun-2026 21:04:20 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:04:20 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:04:20 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:04:20 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:04:20 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #502 (varaulpianosheyla@gamil.com)
+[19-Jun-2026 21:04:20 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:04:20 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:04:20 UTC] =====================================
+[19-Jun-2026 21:04:20 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #502 | Fecha: 2026-06-19
+[19-Jun-2026 21:04:20 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:04:20 UTC] =====================================
+[19-Jun-2026 21:04:20 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '502'
+    
+[19-Jun-2026 21:04:20 UTC] 📊 Total envíos del cliente (sin filtrar): 1
+[19-Jun-2026 21:04:20 UTC]    📅 Envío #30738: post_date_raw='2026-05-04 22:57:41' | fecha_reprog_raw='05/05/2026' | fecha_efectiva='2026-05-05' | hoy='2026-06-19'
+[19-Jun-2026 21:04:20 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:20 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:04:20 UTC] ✅ PERMITIDO: Cliente #502 sin envíos hoy - Puede crear
+[19-Jun-2026 21:04:20 UTC] =====================================
+[19-Jun-2026 21:04:20 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:04:20 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #502 - Hora: 16:04
+[19-Jun-2026 21:04:20 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:04:20 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:04:20 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #502 - Hora: 16:04
+[19-Jun-2026 21:04:20 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:04:20 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:04:20 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #502 - Hora: 16:04
+[19-Jun-2026 21:04:21 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:04:21 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:04:21 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:04:21 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:04:21 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #501 (tryzha@hotmail.com)
+[19-Jun-2026 21:04:21 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:04:21 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:04:21 UTC] =====================================
+[19-Jun-2026 21:04:21 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #501 | Fecha: 2026-06-19
+[19-Jun-2026 21:04:21 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:04:21 UTC] =====================================
+[19-Jun-2026 21:04:21 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '501'
+    
+[19-Jun-2026 21:04:21 UTC] 📊 Total envíos del cliente (sin filtrar): 1
+[19-Jun-2026 21:04:21 UTC]    📅 Envío #30733: post_date_raw='2026-05-04 22:13:45' | fecha_reprog_raw='05/05/2026' | fecha_efectiva='2026-05-05' | hoy='2026-06-19'
+[19-Jun-2026 21:04:21 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:21 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:04:21 UTC] ✅ PERMITIDO: Cliente #501 sin envíos hoy - Puede crear
+[19-Jun-2026 21:04:21 UTC] =====================================
+[19-Jun-2026 21:04:21 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:04:21 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #501 - Hora: 16:04
+[19-Jun-2026 21:04:21 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:04:21 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:04:21 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #501 - Hora: 16:04
+[19-Jun-2026 21:04:21 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:04:21 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:04:21 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #501 - Hora: 16:04
+[19-Jun-2026 21:04:21 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:04:21 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:04:21 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:04:21 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:04:21 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #500 (xiio.trinidad@gmail.com)
+[19-Jun-2026 21:04:21 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:04:21 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:04:21 UTC] =====================================
+[19-Jun-2026 21:04:21 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #500 | Fecha: 2026-06-19
+[19-Jun-2026 21:04:21 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:04:21 UTC] =====================================
+[19-Jun-2026 21:04:21 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '500'
+    
+[19-Jun-2026 21:04:21 UTC] 📊 Total envíos del cliente (sin filtrar): 1
+[19-Jun-2026 21:04:21 UTC]    📅 Envío #30717: post_date_raw='2026-05-04 16:43:52' | fecha_reprog_raw='05/05/2026' | fecha_efectiva='2026-05-05' | hoy='2026-06-19'
+[19-Jun-2026 21:04:21 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:21 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:04:21 UTC] ✅ PERMITIDO: Cliente #500 sin envíos hoy - Puede crear
+[19-Jun-2026 21:04:21 UTC] =====================================
+[19-Jun-2026 21:04:21 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:04:21 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #500 - Hora: 16:04
+[19-Jun-2026 21:04:22 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:04:22 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:04:22 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #500 - Hora: 16:04
+[19-Jun-2026 21:04:22 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:04:22 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:04:22 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #500 - Hora: 16:04
+[19-Jun-2026 21:04:22 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:04:22 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:04:22 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:04:22 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:04:22 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #499 (luis_djh@hotmail.com)
+[19-Jun-2026 21:04:22 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:04:22 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:04:22 UTC] =====================================
+[19-Jun-2026 21:04:22 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #499 | Fecha: 2026-06-19
+[19-Jun-2026 21:04:22 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:04:22 UTC] =====================================
+[19-Jun-2026 21:04:22 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '499'
+    
+[19-Jun-2026 21:04:22 UTC] 📊 Total envíos del cliente (sin filtrar): 4
+[19-Jun-2026 21:04:22 UTC]    📅 Envío #30368: post_date_raw='2026-05-04 10:43:08' | fecha_reprog_raw='04/05/2026' | fecha_efectiva='2026-05-04' | hoy='2026-06-19'
+[19-Jun-2026 21:04:22 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:22 UTC]    📅 Envío #30712: post_date_raw='2026-05-04 14:53:59' | fecha_reprog_raw='04/05/2026' | fecha_efectiva='2026-05-04' | hoy='2026-06-19'
+[19-Jun-2026 21:04:22 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:22 UTC]    📅 Envío #30791: post_date_raw='2026-05-05 09:20:09' | fecha_reprog_raw='05/05/2026' | fecha_efectiva='2026-05-05' | hoy='2026-06-19'
+[19-Jun-2026 21:04:22 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:22 UTC]    📅 Envío #31045: post_date_raw='2026-05-05 15:45:56' | fecha_reprog_raw='05/05/2026' | fecha_efectiva='2026-05-05' | hoy='2026-06-19'
+[19-Jun-2026 21:04:22 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:22 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:04:22 UTC] ✅ PERMITIDO: Cliente #499 sin envíos hoy - Puede crear
+[19-Jun-2026 21:04:22 UTC] =====================================
+[19-Jun-2026 21:04:22 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:04:22 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #499 - Hora: 16:04
+[19-Jun-2026 21:04:23 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:04:23 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:04:23 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #499 - Hora: 16:04
+[19-Jun-2026 21:04:23 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:04:23 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:04:23 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #499 - Hora: 16:04
+[19-Jun-2026 21:04:23 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:04:23 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:04:23 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:04:23 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:04:23 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #497 (ruizcamachoramos75@gmail.com)
+[19-Jun-2026 21:04:23 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:04:23 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:04:23 UTC] =====================================
+[19-Jun-2026 21:04:23 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #497 | Fecha: 2026-06-19
+[19-Jun-2026 21:04:23 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:04:23 UTC] =====================================
+[19-Jun-2026 21:04:23 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '497'
+    
+[19-Jun-2026 21:04:23 UTC] 📊 Total envíos del cliente (sin filtrar): 1
+[19-Jun-2026 21:04:23 UTC]    📅 Envío #30431: post_date_raw='2026-05-04 11:50:10' | fecha_reprog_raw='04/05/2026' | fecha_efectiva='2026-05-04' | hoy='2026-06-19'
+[19-Jun-2026 21:04:23 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:23 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:04:23 UTC] ✅ PERMITIDO: Cliente #497 sin envíos hoy - Puede crear
+[19-Jun-2026 21:04:23 UTC] =====================================
+[19-Jun-2026 21:04:23 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:04:23 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #497 - Hora: 16:04
+[19-Jun-2026 21:04:23 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:04:23 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:04:23 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #497 - Hora: 16:04
+[19-Jun-2026 21:04:24 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:04:24 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:04:24 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #497 - Hora: 16:04
+[19-Jun-2026 21:04:24 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:04:24 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:04:24 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:04:24 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:04:24 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #496 (aastraia.pe@gmail.com)
+[19-Jun-2026 21:04:24 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:04:24 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:04:24 UTC] =====================================
+[19-Jun-2026 21:04:24 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #496 | Fecha: 2026-06-19
+[19-Jun-2026 21:04:24 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:04:24 UTC] =====================================
+[19-Jun-2026 21:04:24 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '496'
+    
+[19-Jun-2026 21:04:24 UTC] 📊 Total envíos del cliente (sin filtrar): 3
+[19-Jun-2026 21:04:24 UTC]    📅 Envío #29740: post_date_raw='2026-05-01 11:38:46' | fecha_reprog_raw='02/05/2026' | fecha_efectiva='2026-05-02' | hoy='2026-06-19'
+[19-Jun-2026 21:04:24 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:24 UTC]    📅 Envío #29741: post_date_raw='2026-05-01 12:32:07' | fecha_reprog_raw='02/05/2026' | fecha_efectiva='2026-05-02' | hoy='2026-06-19'
+[19-Jun-2026 21:04:24 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:24 UTC]    📅 Envío #32058: post_date_raw='2026-06-18 14:49:39' | fecha_reprog_raw='18/06/2026' | fecha_efectiva='2026-06-18' | hoy='2026-06-19'
+[19-Jun-2026 21:04:24 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:24 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:04:24 UTC] ✅ PERMITIDO: Cliente #496 sin envíos hoy - Puede crear
+[19-Jun-2026 21:04:24 UTC] =====================================
+[19-Jun-2026 21:04:24 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:04:24 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #496 - Hora: 16:04
+[19-Jun-2026 21:04:24 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:04:24 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:04:24 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #496 - Hora: 16:04
+[19-Jun-2026 21:04:24 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:04:24 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:04:24 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #496 - Hora: 16:04
+[19-Jun-2026 21:04:25 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:04:25 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:04:25 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:04:25 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:04:25 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #495 (carrionbuendia@gmail.com)
+[19-Jun-2026 21:04:25 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:04:25 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:04:25 UTC] =====================================
+[19-Jun-2026 21:04:25 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #495 | Fecha: 2026-06-19
+[19-Jun-2026 21:04:25 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:04:25 UTC] =====================================
+[19-Jun-2026 21:04:25 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '495'
+    
+[19-Jun-2026 21:04:25 UTC] 📊 Total envíos del cliente (sin filtrar): 1
+[19-Jun-2026 21:04:25 UTC]    📅 Envío #29172: post_date_raw='2026-04-30 09:26:37' | fecha_reprog_raw='30/04/2026' | fecha_efectiva='2026-04-30' | hoy='2026-06-19'
+[19-Jun-2026 21:04:25 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:25 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:04:25 UTC] ✅ PERMITIDO: Cliente #495 sin envíos hoy - Puede crear
+[19-Jun-2026 21:04:25 UTC] =====================================
+[19-Jun-2026 21:04:25 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:04:25 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #495 - Hora: 16:04
+[19-Jun-2026 21:04:25 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:04:25 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:04:25 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #495 - Hora: 16:04
+[19-Jun-2026 21:04:25 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:04:25 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:04:25 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #495 - Hora: 16:04
+[19-Jun-2026 21:04:25 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:04:25 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:04:25 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:04:25 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:04:25 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #494 (milenavaldiviasalinas@gmail.com)
+[19-Jun-2026 21:04:25 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:04:25 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:04:25 UTC] =====================================
+[19-Jun-2026 21:04:25 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #494 | Fecha: 2026-06-19
+[19-Jun-2026 21:04:25 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:04:25 UTC] =====================================
+[19-Jun-2026 21:04:25 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '494'
+    
+[19-Jun-2026 21:04:25 UTC] 📊 Total envíos del cliente (sin filtrar): 0
+[19-Jun-2026 21:04:25 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:04:25 UTC] ✅ PERMITIDO: Cliente #494 sin envíos hoy - Puede crear
+[19-Jun-2026 21:04:25 UTC] =====================================
+[19-Jun-2026 21:04:25 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:04:25 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #494 - Hora: 16:04
+[19-Jun-2026 21:04:26 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:04:26 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:04:26 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #494 - Hora: 16:04
+[19-Jun-2026 21:04:26 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:04:26 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:04:26 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #494 - Hora: 16:04
+[19-Jun-2026 21:04:26 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:04:26 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:04:26 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:04:26 UTC]    📊 Resultado final: BLOQUEADO
+[19-Jun-2026 21:04:26 UTC] 🔍 TABLA USUARIOS - Verificando bloqueo para User #493 (brandingperuu@gmail.com)
+[19-Jun-2026 21:04:26 UTC]    ✓ Es cliente WPCargo
+[19-Jun-2026 21:04:26 UTC]    ✓ Función de bloqueo por envíos pendientes existe, ejecutando...
+[19-Jun-2026 21:04:26 UTC] =====================================
+[19-Jun-2026 21:04:26 UTC] 🔍 VERIFICANDO BLOQUEO - Cliente: #493 | Fecha: 2026-06-19
+[19-Jun-2026 21:04:26 UTC] URL actual: /wpcumanage-users/
+[19-Jun-2026 21:04:26 UTC] =====================================
+[19-Jun-2026 21:04:26 UTC] 🔎 SQL Query: 
+        SELECT 
+            p.ID, 
+            p.post_date,
+            pm_status.meta_value as estado,
+            pm_pago.meta_value as estado_pago,
+            pm_fecha_reprog.meta_value as fecha_reprogramada
+        FROM wp_posts p
+        LEFT JOIN wp_postmeta pm_shipper 
+            ON p.ID = pm_shipper.post_id 
+            AND pm_shipper.meta_key = 'registered_shipper'
+        LEFT JOIN wp_postmeta pm_status 
+            ON p.ID = pm_status.post_id 
+            AND pm_status.meta_key = 'wpcargo_status'
+        LEFT JOIN wp_postmeta pm_pago 
+            ON p.ID = pm_pago.post_id 
+            AND pm_pago.meta_key = 'wpcargo_estado_pago_remitente'
+        LEFT JOIN wp_postmeta pm_fecha_reprog 
+            ON p.ID = pm_fecha_reprog.post_id 
+            AND pm_fecha_reprog.meta_key = 'wpcargo_pickup_date_picker'
+        WHERE p.post_type = 'wpcargo_shipment'
+        AND p.post_status = 'publish'
+        AND pm_shipper.meta_value = '493'
+    
+[19-Jun-2026 21:04:26 UTC] 📊 Total envíos del cliente (sin filtrar): 2
+[19-Jun-2026 21:04:26 UTC]    📅 Envío #29174: post_date_raw='2026-04-30 09:29:02' | fecha_reprog_raw='' | fecha_efectiva='2026-04-30' | hoy='2026-06-19'
+[19-Jun-2026 21:04:26 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:26 UTC]    📅 Envío #29185: post_date_raw='2026-04-30 09:32:58' | fecha_reprog_raw='30/04/2026' | fecha_efectiva='2026-04-30' | hoy='2026-06-19'
+[19-Jun-2026 21:04:26 UTC]       ❌ NO incluido (fecha no coincide)
+[19-Jun-2026 21:04:26 UTC] 📦 Total envíos encontrados para HOY: 0
+[19-Jun-2026 21:04:26 UTC] ✅ PERMITIDO: Cliente #493 sin envíos hoy - Puede crear
+[19-Jun-2026 21:04:26 UTC] =====================================
+[19-Jun-2026 21:04:26 UTC]    📊 Bloqueo automático por envíos pendientes: NO BLOQUEADO
+[19-Jun-2026 21:04:26 UTC] 🔍 [NORMAL] Verificando bloqueo para cliente #493 - Hora: 16:04
+[19-Jun-2026 21:04:26 UTC] 🔴 [NORMAL] BLOQUEADO: Sin envíos y pasadas las 10:00 AM
+[19-Jun-2026 21:04:26 UTC]    ✓ BLOQUEADO: Es tarde para envíos NORMAL
+[19-Jun-2026 21:04:26 UTC] 🔍 [EXPRESS] Verificando bloqueo para cliente #493 - Hora: 16:04
+[19-Jun-2026 21:04:26 UTC] 🔴 [EXPRESS] BLOQUEADO: Sin envíos y pasadas las 12:30 PM
+[19-Jun-2026 21:04:26 UTC]    ✓ BLOQUEADO: Es tarde para envíos EXPRESS
+[19-Jun-2026 21:04:26 UTC] 🔍 [FULL_FITMENT] Verificando bloqueo para cliente #493 - Hora: 16:04
+[19-Jun-2026 21:04:27 UTC] 🔴 [FULL_FITMENT] BLOQUEADO: Sin envíos y pasadas las 11:30 AM
+[19-Jun-2026 21:04:27 UTC]    ✓ BLOQUEADO: Es tarde para envíos FULL FITMENT
+[19-Jun-2026 21:04:27 UTC]    📊 Bloqueo automático por horario: BLOQUEADO
+[19-Jun-2026 21:04:27 UTC]    📊 Resultado final: BLOQUEADO

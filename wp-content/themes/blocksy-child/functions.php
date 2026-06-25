@@ -1,5 +1,15 @@
 <?php
-// Centralizar logs diarios: redirigir error_log a wp-content/merc_logs/merc-debug-YYYY-MM-DD.log
+/**
+ * Blocksy Child Theme Functions
+ *
+ * Plugin: wpcargo-access-control
+ * ✅ Access control, permissions, and admin page functionality have been moved to:
+ *    wp-content/plugins/wpcargo-access-control/
+ * 
+ * If the plugin is not active, access control will not work. Ensure it is activated.
+ */
+
+// Setup logging directory for daily logs
 if (!defined('WP_CONTENT_DIR')) define('WP_CONTENT_DIR', ABSPATH . 'wp-content');
 $merc_log_dir = WP_CONTENT_DIR . '/merc_logs';
 if (!file_exists($merc_log_dir)) {
@@ -7,36 +17,14 @@ if (!file_exists($merc_log_dir)) {
 }
 $today_log = $merc_log_dir . '/merc-debug-' . date('Y-m-d') . '.log';
 @ini_set('error_log', $today_log);
-// Marcar inicio en el log diario
-if ( function_exists('error_log') ) {
-    error_log('🔔 [MERC_LOG] Inicializado logger diario: ' . $today_log);
+
+// Incluir historial de motorizados
+require_once(__DIR__ . '/merc-motorizado-historial.php');
+
+// Forzar visibilidad de contenedores antiguos en el dashboard (10 años en lugar de 120 días)
+if ( ! defined('WPCFE_DATE_FILTER_RANGE') ) {
+    define('WPCFE_DATE_FILTER_RANGE', 3650);
 }
-require_once get_stylesheet_directory() . '/merc-motorizado-historial.php';
-// Disparar acción pública cuando se crea una penalidad (para que otros módulos la integren)
-do_action('merc_penalty_module_loaded');
-// ── Ocultar barra de admin para todos excepto administradores ──
-add_filter('show_admin_bar', 'merc_ocultar_admin_bar');
-function merc_ocultar_admin_bar($show) {
-    if (current_user_can('manage_options')) return true;
-    return false;
-}
-
-// ── Redirigir a wpcargo_driver fuera del wp-admin ──
-add_action('admin_init', 'merc_redirigir_drivers_fuera_de_admin');
-function merc_redirigir_drivers_fuera_de_admin() {
-    if (current_user_can('manage_options')) return; // Admins pasan libre
-
-    // Permitir solicitudes AJAX (necesarias para WPCargo)
-    if (defined('DOING_AJAX') && DOING_AJAX) return;
-
-    // Redirigir al dashboard de Mercourier
-    wp_redirect(home_url('/dashboard/'));
-    exit;
-}
-
-// Remove native date filter
-remove_action( 'wpcfe_after_shipment_filters', 'wpcfe_shipment_created_date_filter_callback', 100 );
-remove_filter( 'wpcfe_dashboard_arguments', 'wpcfe_shipment_created_date_quuery_args_callback' );
 
 // ═══════════════════════════════════════════════════════════════════════════════════
 // CSS GLOBAL RESPONSIVE PARA MODALES (Bottom Sheet en Móvil)
@@ -1060,6 +1048,11 @@ function merc_cliente_pagar_a_merc_ajax() {
     // PASO 2: Asignar pago a envíos regular y NO RECIBIDO
     foreach ( $shipments as $shipment_id ) {
         if ( $remaining <= 0 ) break;
+
+        $estado_envio = strtolower( get_post_meta( $shipment_id, 'wpcargo_status', true ) );
+        if ( $estado_envio === 'reprogramado' ) {
+            continue;
+        }
         
         $costo_envio = function_exists( 'merc_get_adjusted_service_cost' ) ? merc_get_adjusted_service_cost( $shipment_id ) : floatval( get_post_meta( $shipment_id, 'wpcargo_costo_envio', true ) );
         if ( $costo_envio <= 0 ) continue;
@@ -3213,15 +3206,14 @@ function custom_rename_create_shipment_callback( $text ) {
 }
 add_filter( 'wpcfe_create_shipment', 'custom_rename_create_shipment_callback' );
 
-// AGREGAR ENVIOS MASIVOS debajo de CREAR SERVICIO
 function custom_render_envios_masivos_menu() {
-    ?>
-    <a href="<?php echo home_url('/import-export/?type=import'); ?>" class="list-group-item waves-effect dashboard-page-menu"> 
-        <i class="fa fa-upload mr-3"></i>Envios Masivos
-    </a>
-    <?php
+    $page = get_page_by_path('envios-masivos');
+    if ( $page ) {
+        echo '<a href="' . esc_url( get_permalink($page->ID) ) . '" class="list-group-item waves-effect dashboard-page-menu">
+                <i class="fa fa-upload mr-3"></i>Envios Masivos
+              </a>';
+    }
 }
-// Usar el hook que se ejecuta justo después de "Crear servicio"
 add_action( 'wpcfe_after_create_shipment', 'custom_render_envios_masivos_menu' );
 
 // CSS/JS para ocultar SOLO importar/exportar del wpcie-menu
@@ -5850,7 +5842,7 @@ function merc_motorizado_entregas( $driver_id ) {
                 // Mostrar POS: usar el monto que llega (sin distinción bruto/neto)
                 $pos_display = get_pos_net_for_shipment( $shipment->ID, $totales );
                 $tracking_number = $shipment->post_title;
-                $tracking_url    = 'https://mercourier.com/dashboard/?wpcfe=track&num=' . rawurlencode( $tracking_number );
+                $tracking_url    = 'http://localhost:8081/dashboard/?wpcfe=track&num=' . rawurlencode( $tracking_number );
                 $estado_envio    = ! empty( $shipment->estado_envio ) ? $shipment->estado_envio : 'SIN ESTADO';
                 $marca_nombre    = ! empty( $shipment->tienda_name ) ? $shipment->tienda_name : $shipment->shipper_name;
                 if ( empty( $marca_nombre ) ) {
@@ -6711,6 +6703,11 @@ function merc_admin_resumen_general( $fecha_inicio, $fecha_fin, $filtro_estado )
     error_log(sprintf('MERC_ADMIN_RESUMEN - shipments_count=%d', count($shipments)));
 
     $ingresos_envios  = 0.0;
+    $efectivo_total_hist   = 0.0;
+    $recaudado_merc_hist   = 0.0;
+    $recaudado_marca_hist  = 0.0;
+    $pos_recaudado_hist    = 0.0;
+    $ingresos_envios_hist  = 0.0;
     $efectivo_total   = 0.0;
     $pago_merc_total  = 0.0; // nuevo: acumular PAGO_MERC de todos los shipments
     $recaudado_merc   = 0.0;
@@ -6719,6 +6716,7 @@ function merc_admin_resumen_general( $fecha_inicio, $fecha_fin, $filtro_estado )
     $por_pagar_rem    = 0.0;
     $pos_recaudado    = 0.0; // nuevo: recaudado por POS (para mostrar en panel)
     $pos_recaudado_bruto = 0.0;
+    $pos_recaudado_bruto_hist = 0.0;
     $total_entregados = 0.0; // total de envíos ENTREGADOS (para Total General)
     $wpcargo_monto_total = 0.0; // total historic of shipment amount
     $has_remitente_liquidated = false; // detect if any shipment was liquidated for remitente
@@ -6847,6 +6845,14 @@ function merc_admin_resumen_general( $fecha_inicio, $fecha_fin, $filtro_estado )
         
         $efectivo_total  += $totales['efectivo'];
         $pago_merc_total += floatval( $totales['pago_merc'] );
+        $efectivo_total_hist  += floatval( $totales['efectivo'] );
+        $recaudado_merc_hist  += floatval( get_recaudado_merc( $shipment->ID ) );
+        $recaudado_marca_hist += floatval( $totales['pago_marca'] );
+        $pos_recaudado_hist   += get_pos_net_for_shipment( $shipment->ID, $totales );
+
+        if ( $quien_paga === 'remitente' && $envio > 0 ) {
+            $ingresos_envios_hist += $envio;
+        }
         error_log(sprintf('   Efectivo Total acumulado: S/. %01.2f', $efectivo_total));
         
         // Recaudado por MERC y por MARCA: sólo contar envíos NO liquidados aún
@@ -6889,6 +6895,9 @@ function merc_admin_resumen_general( $fecha_inicio, $fecha_fin, $filtro_estado )
             } else {
                 error_log(sprintf('   ❌ POS NO SUMADO (estado_remitente no vacío)'));
             }
+
+            $pos_recaudado_bruto_hist += $pos_gross;
+            error_log(sprintf('   ✅ SUMADO A POS_RECAUDADO_BRUTO_HIST: S/. %01.2f (Total: S/. %01.2f)', $pos_gross, $pos_recaudado_bruto_hist));
     }
 
     // Calcular "Por pagar remitentes" usando la fórmula TOTAL GENERAL:
@@ -6935,10 +6944,10 @@ function merc_admin_resumen_general( $fecha_inicio, $fecha_fin, $filtro_estado )
 
     if ( $has_remitente_liquidated ) {
         // Después de la liquidación: restar todos los montos ya recaudados.
-        $balance_neto = floatval($wpcargo_monto_total) - floatval($recaudado_marca) - floatval($pos_recaudado_bruto) - floatval($recaudado_merc) - floatval($efectivo_total);
+        $balance_neto = floatval($wpcargo_monto_total) - floatval($recaudado_marca_hist) - floatval($pos_recaudado_bruto_hist) - floatval($recaudado_merc_hist) - floatval($efectivo_total_hist);
     } else {
         // Antes de la liquidación: usar el monto de envío menos lo recaudado por marca.
-        $balance_neto = floatval($wpcargo_monto_total) - floatval($recaudado_marca);
+        $balance_neto = floatval($wpcargo_monto_total) - floatval($recaudado_marca_hist);
     }
     
     // DEBUG FINAL: resumen de todos los cálculos
@@ -6974,7 +6983,7 @@ function merc_admin_resumen_general( $fecha_inicio, $fecha_fin, $filtro_estado )
 		<div class="col-md-3">
 			<div class="merc-stat-box merc-stat-clickable" data-vista="efectivo_recaudado" style="background: #e67e22; cursor: pointer;">
 				<p>Recaudado por Motorizado</p>
-				<h2>S/. <?php echo number_format( $efectivo_total, 2 ); ?></h2>
+				<h2>S/. <?php echo number_format( $efectivo_total_hist, 2 ); ?></h2>
 				<small style="opacity: 0.8;">Click para ver detalles →</small>
 			</div>
 		</div>
@@ -6983,7 +6992,7 @@ function merc_admin_resumen_general( $fecha_inicio, $fecha_fin, $filtro_estado )
 		<div class="col-md-3">
 			<div class="merc-stat-box merc-stat-clickable" data-vista="recaudado_merc" style="background: #3498db; cursor: pointer;">
 				<p>Recaudado por MERC</p>
-				<h2>S/. <?php echo number_format( $recaudado_merc, 2 ); ?></h2>
+				<h2>S/. <?php echo number_format( $recaudado_merc_hist, 2 ); ?></h2>
 				<small style="opacity: 0.8;">Click para ver detalles →</small>
 			</div>
 		</div>
@@ -6992,7 +7001,7 @@ function merc_admin_resumen_general( $fecha_inicio, $fecha_fin, $filtro_estado )
 		<div class="col-md-3">
 			<div class="merc-stat-box merc-stat-clickable" data-vista="recaudado_marca" style="background: #27ae60; cursor: pointer;">
 				<p>Recaudado por MARCA</p>
-				<h2>S/. <?php echo number_format( $recaudado_marca, 2 ); ?></h2>
+				<h2>S/. <?php echo number_format( $recaudado_marca_hist, 2 ); ?></h2>
 				<small style="opacity: 0.8;">Click para ver detalles →</small>
 			</div>
 		</div>
@@ -7003,7 +7012,7 @@ function merc_admin_resumen_general( $fecha_inicio, $fecha_fin, $filtro_estado )
 		<div class="col-md-4">
 			<div class="merc-stat-box merc-stat-clickable" data-vista="pos_recaudado" style="background: #e74c3c; cursor: pointer;">
 				<p>Recaudado por POS</p>
-				<h2>S/. <?php echo number_format( $pos_recaudado, 2 ); ?></h2>
+				<h2>S/. <?php echo number_format( $pos_recaudado_hist, 2 ); ?></h2>
 				<small style="opacity: 0.8;">Click para ver detalles →</small>
 			</div>
 		</div>
@@ -7012,7 +7021,7 @@ function merc_admin_resumen_general( $fecha_inicio, $fecha_fin, $filtro_estado )
 		<div class="col-md-4">
 			<div class="merc-stat-box merc-stat-clickable" data-vista="ingresos_envios" style="background: #9b59b6; cursor: pointer;">
 				<p>Ingresos por Envíos</p>
-				<h2>S/. <?php echo number_format( $ingresos_envios, 2 ); ?></h2>
+				<h2>S/. <?php echo number_format( $ingresos_envios_hist, 2 ); ?></h2>
 				<small style="opacity: 0.8;">Click para ver detalles →</small>
 			</div>
 		</div>
@@ -9899,6 +9908,9 @@ function merc_admin_clientes( $fecha_inicio, $fecha_fin, $filtro_estado, $filtro
                 }
             }
 
+            $estado_envio_cli = get_post_meta( $shipment->ID, 'wpcargo_status', true ) ?: '—';
+            $is_reprogramado  = ( strtolower( $estado_envio_cli ) === 'reprogramado' );
+
             // Agregar a tabla de TODOS los envios
             $todos_envios[] = array(
                 'id'              => $shipment->ID,
@@ -9906,7 +9918,7 @@ function merc_admin_clientes( $fecha_inicio, $fecha_fin, $filtro_estado, $filtro
                 'monto'           => $envio,
                 'monto_concepto'  => $monto_total,
                 'tipo'            => ( $quien_paga === 'cliente_final' ? 'cobrar' : 'pagar' ),
-                'liquidado'       => $is_included
+                'liquidado'       => ( $is_included && ! $is_reprogramado )
             );
         }
         
@@ -10148,11 +10160,16 @@ function merc_admin_clientes( $fecha_inicio, $fecha_fin, $filtro_estado, $filtro
                                         }
                                         $subtotal_cargos_adicionales += $total_cargos_envio;
                                         
-                                        $is_liq = get_post_meta( $envio_item['id'], 'merc_remitente_liquidated', true );
-                                        $cargos_json = is_array($cargos) ? esc_attr(json_encode($cargos)) : '[]';
-                                        
-                                        // Desbloquear si está reprogramado, aunque haya sido liquidado antes
-                                        $is_blocked = ( $is_liq === '1' && stripos($estado_envio_cli, 'REPROGRAMADO') === false );
+                                        $liq_remitente = get_post_meta( $envio_item['id'], 'merc_remitente_liquidated', true );
+                                        $liq_general    = get_post_meta( $envio_item['id'], 'wpcargo_included_in_liquidation', true );
+                                        $cargos_json    = is_array($cargos) ? esc_attr(json_encode($cargos)) : '[]';
+
+                                        // Bloquear si ya está liquidado por cualquiera de los dos flujos,
+                                        // excepto si sigue siendo reprogramado
+                                        $is_blocked = (
+                                            ( ! empty( $liq_remitente ) || ! empty( $liq_general ) )
+                                            && stripos( $estado_envio_cli, 'REPROGRAMADO' ) === false
+                                        );
 
                                         if ( $total_cargos_envio > 0 ) : 
                                             if ( $is_blocked ) : ?>
@@ -18409,701 +18426,6 @@ function merc_envio_columna_producto_contenido($column, $post_id) {
             echo '<span style="color: #999;">Sin producto</span>';
         }
     }
-}
-
-// ===============================================
-// SHORTCODE: ALMACÉN DE PRODUCTOS (FRONTEND)
-// ===============================================
-
-add_shortcode('merc_almacen_productos', 'merc_almacen_frontend_shortcode');
-function merc_almacen_frontend_shortcode() {
-    $current_user = wp_get_current_user();
-    $is_admin = current_user_can('manage_options');
-    $is_client = in_array('wpcargo_client', $current_user->roles);
-    
-    // Permitir acceso a administradores y clientes
-    if (!is_user_logged_in() || (!$is_admin && !$is_client)) {
-        return '<div style="padding:40px;text-align:center;background:#fff3cd;border:2px solid #ffc107;border-radius:8px;"><h3 style="color:#856404;">⚠️ Acceso Restringido</h3><p>No tienes permisos para ver esta sección.</p></div>';
-    }
-    
-    ob_start();
-    ?>
-    <div class="almacen-container">
-        <div class="almacen-header">
-            <h2>📦 Almacén de Productos</h2>
-            <?php if ($is_admin): ?>
-            <button id="btn-nuevo" class="btn-primary">➕ Nuevo Producto</button>
-            <?php endif; ?>
-        </div>
-        
-        <div class="stats-grid">
-            <div class="stat-card card-total">
-                <div class="stat-icon">📊</div>
-                <div class="stat-content">
-                    <span class="stat-label">Total de Productos</span>
-                    <span class="stat-value" id="stat-total">0</span>
-                </div>
-            </div>
-            <div class="stat-card card-asignados">
-                <div class="stat-icon">🚚</div>
-                <div class="stat-content">
-                    <span class="stat-label">Productos Asignados</span>
-                    <span class="stat-value" id="stat-asignados">0</span>
-                </div>
-            </div>
-            <div class="stat-card card-sin-asignar">
-                <div class="stat-icon">📦</div>
-                <div class="stat-content">
-                    <span class="stat-label">Productos Sin Asignar</span>
-                    <span class="stat-value" id="stat-sin-asignar">0</span>
-                </div>
-            </div>
-            <div class="stat-card card-entregados">
-                <div class="stat-icon">✅</div>
-                <div class="stat-content">
-                    <span class="stat-label">Productos Entregados</span>
-                    <span class="stat-value" id="stat-entregados">0</span>
-                </div>
-            </div>
-        </div>
-        
-        <div class="filtros-bar">
-            <input type="text" id="input-buscar" placeholder="🔍 Buscar producto..." class="input-buscar">
-            <select id="select-filtro" class="select-filtro">
-                <option value="">Todos</option>
-                <option value="sin_asignar">Sin Asignar</option>
-                <option value="asignado">Asignados</option>
-                <option value="entregado">Entregados</option>
-            </select>
-        </div>
-        
-        <div id="lista-productos" class="lista-productos">
-            <div class="tabla-header">
-                <div>Producto</div>
-                <div>Stock</div>
-                <div>Creado</div>
-                <div>Modificado</div>
-                <div>Estado</div>
-                <div>Motorizado</div>
-                <div>Cliente</div>
-                <div>Acciones</div>
-            </div>
-            <div class="loading">Cargando...</div>
-        </div>
-    </div>
-    
-    <div id="modal" class="modal" style="display:none;">
-        <div class="modal-backdrop"></div>
-        <div class="modal-box">
-            <div class="modal-header">
-                <h3 id="modal-title">Nuevo Producto</h3>
-                <button class="modal-close">&times;</button>
-            </div>
-            <form id="form-producto">
-                <input type="hidden" id="prod-id">
-                <div class="form-group">
-                    <label>Nombre *</label>
-                    <input type="text" id="prod-nombre" required placeholder="Nombre del producto">
-                </div>
-                <div class="form-group">
-                    <label>Código de Barras <small>(opcional)</small></label>
-                    <input type="text" id="prod-codigo-barras" placeholder="Escanea o ingresa el código">
-                    <small style="color: #7f8c8d; font-size: 12px;">📦 Puedes dejar este campo vacío si el producto no tiene código de barras</small>
-                </div>
-                <div class="form-group">
-                    <label>Cliente Asignado *</label>
-                    <select id="prod-cliente-asignado" required style="width: 100% !important; padding: 10px !important; border: 1px solid #ddd !important; border-radius: 4px !important; font-size: 14px !important; display: block !important; visibility: visible !important; opacity: 1 !important;">
-                        <option value="">-- Selecciona un cliente --</option>
-                        <?php
-                        $clientes_frontend = get_users(array('role' => 'wpcargo_client'));
-                        foreach ($clientes_frontend as $cliente):
-                        $nombre_completo = trim($cliente->first_name . ' ' . $cliente->last_name);
-                        $nombre_mostrar = !empty($nombre_completo) ? $nombre_completo : $cliente->display_name;
-                        ?>
-                            <option value="<?php echo $cliente->ID; ?>">
-                                <?php echo esc_html($nombre_mostrar); ?>
-                            </option>
-                        <?php endforeach; ?>
-                    </select>
-                    <small style="color: #7f8c8d; font-size: 12px;">👤 Selecciona el cliente al que pertenece este producto</small>
-                </div>
-                <div class="form-group">
-                    <label>Cantidad *</label>
-                    <input type="number" id="prod-cantidad" min="0" required placeholder="0">
-                </div>
-                <div class="form-group">
-                    <label>Peso (kg) <small>(opcional)</small></label>
-                    <input type="number" id="prod-peso" min="0" step="0.01" placeholder="0.00">
-                    <small style="color: #7f8c8d; font-size: 12px;">⚖️ Peso del producto en kilogramos</small>
-                </div>
-                <div class="form-group">
-                    <label>Tipo de Medida <small>(opcional)</small></label>
-                    <select id="prod-tipo-medida" style="width: 100% !important; padding: 10px !important; border: 2px solid #dfe6e9 !important; border-radius: 6px !important; font-size: 15px !important; display: block !important; visibility: visible !important; opacity: 1 !important;">
-                        <option value="">-- Seleccionar --</option>
-                        <option value="talla">Talla</option>
-                        <option value="volumen">Volumen</option>
-                        <option value="dimensiones">Dimensiones</option>
-                        <option value="unidades">Unidades</option>
-                        <option value="otro">Otro</option>
-                    </select>
-                    <small style="color: #7f8c8d; font-size: 12px;">📏 Tipo de medida del producto</small>
-                </div>
-                <div class="form-group">
-                    <label>Valor de Medida <small>(opcional)</small></label>
-                    <input type="text" id="prod-valor-medida" placeholder="Ej: S, M, L, XL o 100ml">
-                    <small style="color: #7f8c8d; font-size: 12px;">📐 Valor específico de la medida (talla, volumen, etc.)</small>
-                </div>
-                <div class="form-group">
-                    <label>Dimensiones (cm) <small>(opcional)</small></label>
-                    <div style="display: flex; gap: 8px; align-items: center;">
-                        <input type="number" id="prod-largo" min="0" step="0.1" placeholder="Largo" style="flex: 1;">
-                        <span style="color: #7f8c8d;">×</span>
-                        <input type="number" id="prod-ancho" min="0" step="0.1" placeholder="Ancho" style="flex: 1;">
-                        <span style="color: #7f8c8d;">×</span>
-                        <input type="number" id="prod-alto" min="0" step="0.1" placeholder="Alto" style="flex: 1;">
-                    </div>
-                    <small style="color: #7f8c8d; font-size: 12px;">📦 Dimensiones: Largo × Ancho × Alto en centímetros</small>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn-secondary modal-close">Cancelar</button>
-                    <button type="submit" class="btn-primary">Guardar</button>
-                </div>
-            </form>
-        </div>
-    </div>
-    
-    <style>
-    .almacen-container { max-width: 1400px; margin: 0 auto; padding: 20px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
-    .almacen-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; flex-wrap: wrap; gap: 15px; }
-    .almacen-header h2 { margin: 0; font-size: 32px; color: #2c3e50; }
-    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 30px; }
-    .stat-card { background: white; padding: 25px; border-radius: 12px; display: flex; align-items: center; gap: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s; }
-    .stat-card:hover { transform: translateY(-5px); }
-    .card-total { border-left: 5px solid #3498db; }
-    .card-asignados { border-left: 5px solid #f39c12; }
-    .card-sin-asignar { border-left: 5px solid #95a5a6; }
-    .card-entregados { border-left: 5px solid #2ecc71; }
-    .stat-icon { font-size: 42px; }
-    .stat-content { display: flex; flex-direction: column; }
-    .stat-label { font-size: 14px; color: #7f8c8d; }
-    .stat-value { font-size: 32px; font-weight: bold; color: #2c3e50; }
-    .filtros-bar { display: flex; gap: 15px; margin-bottom: 25px; flex-wrap: wrap; }
-    .input-buscar { flex: 1; min-width: 300px; padding: 12px 20px; border: 2px solid #dfe6e9; border-radius: 8px; font-size: 15px; }
-    .input-buscar:focus { outline: none; border-color: #3498db; }
-    .select-filtro { padding: 12px 20px; border: 2px solid #dfe6e9; border-radius: 8px; font-size: 15px; background: white; }
-    .lista-productos { background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); overflow: hidden; }
-    .tabla-header { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 150px; gap: 15px; padding: 15px 25px; background: #f8f9fa; border-bottom: 2px solid #dee2e6; font-weight: 700; font-size: 13px; color: #495057; text-transform: uppercase; letter-spacing: 0.5px; }
-    .producto-item { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 150px; gap: 15px; padding: 20px 25px; border-bottom: 1px solid #ecf0f1; align-items: center; }
-    <?php if (!$is_admin): ?>
-    /* Vista de solo lectura para clientes */
-    .tabla-header { grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr; }
-    .producto-item { grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr; }
-    <?php endif; ?>
-    .producto-item:hover { background: #f8f9fa; }
-    .prod-nombre { font-size: 16px; font-weight: 600; color: #2c3e50; }
-    .prod-cantidad { text-align: center; }
-    span.badge.badge-bajo { display: inline-block; padding: 8px 20px; border-radius: 20px; font-weight: bold; font-size: 16px; }
-    .badge-disponible { background: #d4edda; color: #155724; }
-    .badge-bajo { background: #fff3cd; color: #856404 !important; }
-    .badge-sin { background: #f8d7da; color: #721c24; }
-    .badge-estado { display: inline-block; padding: 6px 12px; border-radius: 12px; font-size: 12px; font-weight: 600; text-transform: uppercase; }
-    .badge-sin-asignar { background: #e9ecef; color: #495057; }
-    .badge-asignado { background: #d1ecf1; color: #0c5460; }
-    .badge-entregado { background: #d4edda; color: #155724; }
-    .prod-fecha { font-size: 13px; color: #7f8c8d; }
-    .prod-acciones { display: flex; gap: 10px; }
-    .btn-primary, .btn-secondary, .btn-edit, .btn-delete { border: none; border-radius: 6px; font-weight: 600; cursor: pointer; transition: all 0.3s; }
-    .btn-primary { background: #3498db; color: white; box-shadow: 0 2px 6px rgba(52, 152, 219, 0.3); padding: 10px 24px; font-size: 14px; }
-    .btn-primary:hover { background: #2980b9; box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4); }
-    .btn-secondary { background: #6c757d; color: white; box-shadow: 0 2px 6px rgba(108, 117, 125, 0.3); padding: 10px 24px; font-size: 14px; }
-    .btn-secondary:hover { background: #5a6268; box-shadow: 0 4px 12px rgba(108, 117, 125, 0.4); }
-    .btn-edit { background: #f39c12; color: white; padding: 8px 16px; font-size: 13px; }
-    .btn-edit:hover { background: #e67e22; }
-    .btn-delete { background: #e74c3c; color: white; padding: 8px 16px; font-size: 13px; }
-    .btn-delete:hover { background: #c0392b; }
-    .modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 999999; display: flex; align-items: center; justify-content: center; }
-    .modal-backdrop { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); }
-    .modal-box { position: relative; background: white; border-radius: 12px; width: 90%; max-width: 500px; max-height: 90vh; display: flex; flex-direction: column; box-shadow: 0 10px 40px rgba(0,0,0,0.3); }
-    .modal-header { display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; border-bottom: 1px solid #ecf0f1; flex-shrink: 0; }
-    .modal-header h3 { margin: 0; font-size: 20px; color: #2c3e50; }
-    .modal-header .modal-close { background: none; border: none; font-size: 24px; color: #7f8c8d; cursor: pointer; padding: 0; line-height: 1; width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; }
-    .modal-header .modal-close:hover { color: #2c3e50; }
-    #form-producto { overflow-y: auto; flex: 1; }
-    .form-group { padding: 12px 20px; }
-    .form-group label { display: block; margin-bottom: 5px; font-weight: 600; color: #2c3e50; font-size: 14px; }
-    .form-group input { width: 100%; padding: 10px 12px; border: 2px solid #dfe6e9; border-radius: 6px; font-size: 14px; }
-    .form-group input:focus { outline: none; border-color: #3498db; }
-    .form-group small { display: block; margin-top: 3px; }
-    .modal-footer { display: flex; gap: 10px; justify-content: flex-end; padding: 15px 20px; border-top: 1px solid #ecf0f1; background: #f8f9fa; flex-shrink: 0; }
-    .loading { text-align: center; padding: 60px 20px; color: #7f8c8d; }
-    .empty { text-align: center; padding: 60px 20px; }
-    .empty-icon { font-size: 64px; margin-bottom: 20px; }
-    @media (max-width: 768px) { .producto-item { grid-template-columns: 1fr; gap: 10px; } }
-    </style>
-    
-    <script>
-    let usuariosCache = {};
-    jQuery(document).ready(function($) {
-        let productos = [];
-        const esAdmin = <?php echo $is_admin ? 'true' : 'false'; ?>;
-        
-        cargar();
-        if (esAdmin) {
-            $('#btn-nuevo').on('click', () => abrir());
-            $('.modal-close, .modal-backdrop').on('click', () => cerrar());
-            $('#form-producto').on('submit', guardar);
-        }
-        $('#input-buscar').on('input', filtrar);
-        $('#select-filtro').on('change', filtrar);
-        
-        function cargar() {
-            $.post('<?php echo admin_url("admin-ajax.php"); ?>', {
-                action: 'merc_listar_productos',
-                nonce: '<?php echo wp_create_nonce("merc_almacen"); ?>'
-            }, function(r) {
-                if (r.success) {
-                    productos = r.data;
-                    // Precargar usuarios únicos de los productos para mapear IDs a nombres
-                    const userIds = []; 
-                    productos.forEach(p => { if (p.cliente_asignado && !usuariosCache[p.cliente_asignado]) { userIds.push(p.cliente_asignado); } });
-                    if (userIds.length > 0) {
-                        $.ajax({
-                            url: '<?php echo admin_url("admin-ajax.php"); ?>',
-                            type: 'POST',
-                            data: { action: 'merc_get_usuarios_info', user_ids: userIds, nonce: '<?php echo wp_create_nonce("merc_almacen"); ?>' },
-                            success: function(resp) { if (resp.success) { usuariosCache = $.extend({}, usuariosCache, resp.data); } renderizar(); stats(); },
-                            error: function() { renderizar(); stats(); }
-                        });
-                    } else {
-                        renderizar();
-                        stats();
-                    }
-                }
-            });
-        }
-        
-        function renderizar(lista = null) {
-            const items = lista || productos;
-            const $l = $('#lista-productos');
-            
-            if (items.length === 0) {
-                $l.html('<div class="empty"><div class="empty-icon">📦</div><h3>No hay productos</h3></div>');
-                return;
-            }
-            
-            let html = '<div class="tabla-header">';
-            html += '<div>Producto</div>';
-            html += '<div style="text-align:center;">Cantidad</div>';
-            html += '<div>Fecha Creación</div>';
-            html += '<div>Última Modificación</div>';
-            html += '<div style="text-align:center;">Estado</div>';
-            html += '<div style="text-align:center;">Motorizado</div>';
-            html += '<div style="text-align:center;">Cliente</div>';
-            if (esAdmin) {
-                html += '<div style="text-align:center;">Acciones</div>';
-            }
-            html += '</div>';
-            
-            items.forEach(p => {
-                const c = parseInt(p.cantidad);
-                const b = c === 0 ? 'sin' : c < 10 ? 'bajo' : 'disponible';
-                
-                // Estado badge
-                let estadoBadge = '';
-                if (p.estado === 'asignado') {
-                    estadoBadge = '<span class="badge-estado badge-asignado">🚚 Asignado</span>';
-                } else if (p.estado === 'entregado') {
-                    estadoBadge = '<span class="badge-estado badge-entregado">✅ Entregado</span>';
-                } else {
-                    estadoBadge = '<span class="badge-estado badge-sin-asignar">📦 Sin Asignar</span>';
-                }
-                
-                // Motorizado
-                const motorizado = p.motorizado && p.motorizado !== '-' ? p.motorizado : '-';
-                
-                // Obtener nombre del cliente asignado
-                let clienteNombre = '-';
-                if (p.cliente_asignado && p.cliente_asignado > 0) {
-                    const usuario = usuariosCache && usuariosCache[p.cliente_asignado];
-                    clienteNombre = usuario ? usuario.display_name : 'Usuario #' + p.cliente_asignado;
-                }
-                
-                html += `<div class="producto-item">
-                    <div class="prod-nombre">📦 ${p.nombre}</div>
-                    <div class="prod-cantidad"><button class="btn-stock" data-product-id="${p.id}" title="Ver unidades"><span class="badge badge-${b}">${c}</span></button></div>
-                    <div class="prod-fecha">${p.fecha_creacion}</div>
-                    <div class="prod-fecha">${p.fecha_modificacion}</div>
-                    <div style="text-align:center;">${estadoBadge}</div>
-                    <div style="text-align:center; color: #2c3e50; font-weight: 600;">${motorizado}</div>
-                    <div style="text-align:center; color: #2c3e50; font-weight: 600;">${clienteNombre}</div>`;
-                
-                if (esAdmin) {
-                    html += `<div class="prod-acciones">
-                        <button class="btn-edit" onclick="editar(${p.id})">✏️</button>
-                        <button class="btn-delete" onclick="eliminar(${p.id},'${p.nombre}')">🗑️</button>
-                    </div>`;
-                }
-                
-                html += `</div>`;
-            });
-            $l.html(html);
-        }
-        
-        function stats() {
-            const t = productos.length;
-            const sin_asignar = productos.filter(p => !p.estado || p.estado === 'sin_asignar').length;
-            const asignados = productos.filter(p => p.estado === 'asignado').length;
-            const entregados = productos.filter(p => p.estado === 'entregado').length;
-            $('#stat-total').text(t);
-            $('#stat-sin-asignar').text(sin_asignar);
-            $('#stat-asignados').text(asignados);
-            $('#stat-entregados').text(entregados);
-        }
-        
-        function filtrar() {
-            const q = $('#input-buscar').val().toLowerCase();
-            const f = $('#select-filtro').val();
-            const r = productos.filter(p => {
-                const n = p.nombre.toLowerCase().includes(q);
-                let ok = true;
-                if (f === 'sin_asignar') ok = !p.estado || p.estado === 'sin_asignar';
-                else if (f === 'asignado') ok = p.estado === 'asignado';
-                else if (f === 'entregado') ok = p.estado === 'entregado';
-                return n && ok;
-            });
-            renderizar(r);
-        }
-        
-        window.editar = function(id) {
-            const p = productos.find(x => x.id == id);
-            if (!p) return;
-            // Precargar usuario si no está en cache
-            if (p.cliente_asignado && !usuariosCache[p.cliente_asignado]) {
-                $.ajax({
-                    url: '<?php echo admin_url("admin-ajax.php"); ?>',
-                    type: 'POST',
-                    data: { action: 'merc_get_usuarios_info', user_ids: [p.cliente_asignado], nonce: '<?php echo wp_create_nonce("merc_almacen"); ?>' },
-                    success: function(resp) { if (resp.success) { usuariosCache = $.extend({}, usuariosCache, resp.data); } completeFormulario(p); },
-                    error: function() { completeFormulario(p); }
-                });
-            } else {
-                completeFormulario(p);
-            }
-        };
-        
-        function completeFormulario(p) {
-            $('#prod-id').val(p.id);
-            $('#prod-nombre').val(p.nombre);
-            $('#prod-codigo-barras').val(p.codigo_barras || '');
-            $('#prod-cliente-asignado').val(p.cliente_asignado || '');
-            $('#prod-cantidad').val(p.cantidad);
-            $('#prod-peso').val(p.peso || '');
-            $('#prod-tipo-medida').val(p.tipo_medida || '');
-            $('#prod-valor-medida').val(p.valor_medida || '');
-            $('#prod-largo').val(p.largo || '');
-            $('#prod-ancho').val(p.ancho || '');
-            $('#prod-alto').val(p.alto || '');
-            $('#modal-title').text('Editar Producto');
-            $('#modal').fadeIn(200);
-        }
-        
-        window.eliminar = function(id, n) {
-            if (!confirm(`¿Eliminar "${n}"?`)) return;
-            $.post('<?php echo admin_url("admin-ajax.php"); ?>', {
-                action: 'merc_eliminar_producto',
-                id: id,
-                nonce: '<?php echo wp_create_nonce("merc_almacen"); ?>'
-            }, function(r) {
-                notif(r.success ? '✓ Eliminado' : '✗ ' + r.data, r.success ? 's' : 'e');
-                if (r.success) cargar();
-            });
-        };
-        
-        function abrir() {
-            $('#form-producto')[0].reset();
-            $('#prod-id').val('');
-            $('#modal-title').text('Nuevo Producto');
-            $('#modal').fadeIn(200);
-        }
-        
-        function cerrar() {
-            $('#modal').fadeOut(200);
-        }
-        
-        function guardar(e) {
-            e.preventDefault();
-            $.post('<?php echo admin_url("admin-ajax.php"); ?>', {
-                action: 'merc_guardar_producto',
-                id: $('#prod-id').val(),
-                nombre: $('#prod-nombre').val(),
-                codigo_barras: $('#prod-codigo-barras').val(),
-                cliente_asignado: $('#prod-cliente-asignado').val(),
-                cantidad: $('#prod-cantidad').val(),
-                peso: $('#prod-peso').val(),
-                tipo_medida: $('#prod-tipo-medida').val(),
-                valor_medida: $('#prod-valor-medida').val(),
-                largo: $('#prod-largo').val(),
-                ancho: $('#prod-ancho').val(),
-                alto: $('#prod-alto').val(),
-                nonce: '<?php echo wp_create_nonce("merc_almacen"); ?>'
-            }, function(r) {
-                notif(r.success ? '✓ Guardado' : '✗ ' + r.data, r.success ? 's' : 'e');
-                if (r.success) { cerrar(); cargar(); }
-            });
-        }
-        
-        function notif(m, t) {
-            const c = t === 's' ? '#2ecc71' : '#e74c3c';
-            const $n = $(`<div style="position:fixed;top:20px;right:20px;background:${c};color:white;padding:15px 25px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.3);z-index:9999999;">${m}</div>`);
-            $('body').append($n);
-            setTimeout(() => $n.fadeOut(300, function() { $(this).remove(); }), 3000);
-        }
-    });
-    </script>
-    <!-- Modal: Unidades de Stock -->
-    <div id="merc-units-modal" style="display:none; position:fixed; top:20px; left:50%; transform:translateX(-50%); width:90%; max-width:900px; z-index:999999;">
-        <div style="background:#fff; border-radius:8px; box-shadow:0 10px 30px rgba(0,0,0,0.2); overflow:hidden;">
-            <div style="padding:16px 20px; border-bottom:1px solid #eee; display:flex; justify-content:space-between; align-items:center;">
-                <h3 id="merc-units-modal-title" style="margin:0;font-size:18px;">Unidades</h3>
-                <button id="merc-units-modal-close" style="background:transparent;border:0;font-size:18px;">✕</button>
-            </div>
-            <div style="padding:12px 16px; max-height:60vh; overflow:auto;">
-                <table id="merc-units-table" style="width:100%; border-collapse:collapse;">
-                    <thead>
-                        <tr style="text-align:left; border-bottom:1px solid #eee;"><th>ID</th><th>SKU</th><th>Estado</th><th>Tracking</th><th>Motorizado</th><th>Creado</th><th>Actualizado</th></tr>
-                    </thead>
-                    <tbody></tbody>
-                </table>
-            </div>
-            <div style="padding:12px 16px; border-top:1px solid #eee; text-align:right; background:#fafafa;">
-                <button id="merc-units-modal-ok" style="padding:8px 14px;border-radius:6px;border:0;background:#1976D2;color:#fff;">Cerrar</button>
-            </div>
-        </div>
-    </div>
-
-    <script>
-    jQuery(document).ready(function($){
-        function openUnitsModal(productId, productName) {
-            $('#merc-units-modal-title').text('Unidades — ' + (productName||productId));
-            $('#merc-units-table tbody').html('<tr><td colspan="7" style="padding:20px;text-align:center;">Cargando...</td></tr>');
-            $('#merc-units-modal').fadeIn(150);
-
-            $.post('<?php echo admin_url("admin-ajax.php"); ?>', {
-                action: 'merc_get_product_units',
-                product_id: productId,
-                nonce: '<?php echo wp_create_nonce("merc_almacen"); ?>'
-            }, function(r){
-                if (!r.success) {
-                    $('#merc-units-table tbody').html('<tr><td colspan="7" style="padding:20px;text-align:center;color:#e74c3c;">'+(r.data||'Error')+'</td></tr>');
-                    return;
-                }
-                const rows = r.data;
-                if (!rows || rows.length === 0) {
-                    $('#merc-units-table tbody').html('<tr><td colspan="7" style="padding:20px;text-align:center;">No hay unidades</td></tr>');
-                    return;
-                }
-
-                let html = '';
-                rows.forEach(u => {
-                    const estado = u.status;
-                    const badge = estado === 'available' ? '📦 Disponible' : (estado === 'assigned' ? '🚚 Asignado' : (estado === 'delivered' ? '✅ Entregado' : estado));
-                    let accionesHtml = '';
-                    if (<?php echo $is_admin ? 'true' : 'false'; ?>) {
-                        if (u.status === 'assigned') {
-                            accionesHtml = `<div style="display:flex;gap:6px;">` +
-                                `<button class="btn-unit-unassign" data-unit-id="${u.id}" style="padding:6px 8px;border-radius:6px;border:0;background:#f39c12;color:#fff;">Desasignar</button>` +
-                                `<button class="btn-unit-delivered" data-unit-id="${u.id}" style="padding:6px 8px;border-radius:6px;border:0;background:#27ae60;color:#fff;">Marcar Entregado</button>` +
-                                `</div>`;
-                        }
-                    }
-                    html += `<tr style="border-bottom:1px solid #f1f1f1;"><td style="padding:8px;">${u.id}</td><td style="padding:8px;">${u.sku||'-'}</td><td style="padding:8px;">${badge}</td><td style="padding:8px;"><strong>${u.tracking||'-'}</strong></td><td style="padding:8px;">${u.motorizado||'-'}</td><td style="padding:8px;">${u.created_at||'-'}</td><td style="padding:8px;">${u.updated_at||'-'}</td></tr>`;
-                });
-                $('#merc-units-table tbody').html(html);
-            });
-        }
-
-        $(document).on('click', '.btn-stock', function(e){
-            const id = $(this).data('product-id');
-            const name = $(this).closest('.producto-item').find('.prod-nombre').text().trim();
-            openUnitsModal(id, name);
-        });
-
-        // Handlers for admin unit actions
-        $(document).on('click', '.btn-unit-unassign', function(e){
-            e.preventDefault();
-            const unitId = $(this).data('unit-id');
-            if (!confirm('Desasignar unidad #' + unitId + '?')) return;
-            $.post('<?php echo admin_url("admin-ajax.php"); ?>', { action: 'merc_unit_unassign', unit_id: unitId, nonce: '<?php echo wp_create_nonce("merc_almacen"); ?>' }, function(r){
-                if (r.success) { notif('✓ Unidad desasignada','s'); $('#merc-units-modal').find('button[data-unit-id="'+unitId+'"]').closest('tr').fadeOut(200, function(){ $(this).remove(); }); }
-                else notif('✗ '+(r.data||'Error'),'e');
-            });
-        });
-
-        $(document).on('click', '.btn-unit-delivered', function(e){
-            e.preventDefault();
-            const unitId = $(this).data('unit-id');
-            if (!confirm('Marcar unidad #' + unitId + ' como entregada?')) return;
-            $.post('<?php echo admin_url("admin-ajax.php"); ?>', { action: 'merc_unit_mark_delivered', unit_id: unitId, nonce: '<?php echo wp_create_nonce("merc_almacen"); ?>' }, function(r){
-                if (r.success) { notif('✓ Unidad marcada como entregada','s'); $('#merc-units-modal').fadeOut(150); }
-                else notif('✗ '+(r.data||'Error'),'e');
-            });
-        });
-
-        $('#merc-units-modal-close, #merc-units-modal-ok').on('click', function(){ $('#merc-units-modal').fadeOut(150); });
-        $(document).on('keyup', function(e){ if (e.key === 'Escape') $('#merc-units-modal').fadeOut(150); });
-    });
-    </script>
-    <?php
-    return ob_get_clean();
-}
-
-// AJAX: Obtener información de usuarios por IDs
-add_action('wp_ajax_merc_get_usuarios_info', 'merc_get_usuarios_info_ajax');
-function merc_get_usuarios_info_ajax() {
-    check_ajax_referer('merc_almacen', 'nonce');
-    
-    $user_ids = isset($_POST['user_ids']) ? array_map('intval', (array) $_POST['user_ids']) : array();
-    if (empty($user_ids)) wp_send_json_error('Sin IDs de usuario');
-    
-    $usuarios = array();
-    foreach ($user_ids as $uid) {
-        $user = get_userdata($uid);
-        if ($user) {
-            $usuarios[$uid] = array(
-                'ID' => $user->ID,
-                'display_name' => $user->display_name,
-                'user_login' => $user->user_login,
-                'user_email' => $user->user_email
-            );
-        }
-    }
-    wp_send_json_success($usuarios);
-}
-
-// AJAX: Listar productos
-add_action('wp_ajax_merc_listar_productos', 'merc_listar_productos_ajax');
-function merc_listar_productos_ajax() {
-    error_log('🔍 DEBUG: merc_listar_productos_ajax iniciada');
-    
-    check_ajax_referer('merc_almacen', 'nonce');
-    
-    // Permitir acceso a administradores y clientes
-    $current_user = wp_get_current_user();
-    $is_admin = current_user_can('manage_options');
-    $is_client = in_array('wpcargo_client', $current_user->roles);
-    
-    error_log('🔍 DEBUG: Usuario ID: ' . $current_user->ID . ' | Login: ' . $current_user->user_login);
-    error_log('🔍 DEBUG: Es Admin: ' . ($is_admin ? 'SÍ' : 'NO') . ' | Es Cliente: ' . ($is_client ? 'SÍ' : 'NO'));
-    error_log('🔍 DEBUG: Roles del usuario: ' . json_encode($current_user->roles));
-    
-    if (!$is_admin && !$is_client) {
-        error_log('🔍 DEBUG: Usuario sin permisos');
-        wp_send_json_error('Sin permisos');
-    }
-    
-    // Preparar query de productos
-    $args = array(
-        'post_type' => 'merc_producto',
-        'posts_per_page' => -1,
-        'post_status' => 'publish',
-        'orderby' => 'title',
-        'order' => 'ASC'
-    );
-    
-    // Si es cliente (no admin), filtrar solo productos asignados a él
-    if ($is_client && !$is_admin) {
-        $args['meta_query'] = array(
-            array(
-                'key' => '_merc_producto_cliente_asignado',
-                'value' => (string) $current_user->ID,
-                'compare' => '=',
-                'type' => 'CHAR'
-            )
-        );
-        error_log('🔍 DEBUG: Cliente - Filtrando por meta _merc_producto_cliente_asignado: ' . $current_user->ID . ' (como string)');
-    } else {
-        error_log('🔍 DEBUG: Admin - Mostrando todos los productos');
-    }
-    
-    error_log('🔍 DEBUG: Args de query: ' . json_encode($args));
-    
-    $ps = get_posts($args);
-    error_log('🔍 DEBUG: Productos encontrados por query: ' . count($ps));
-    
-    $lista = array();
-    foreach ($ps as $p) {
-        $cliente_meta = get_post_meta($p->ID, '_merc_producto_cliente_asignado', true);
-        error_log('🔍 DEBUG: Producto ID: ' . $p->ID . ' | Meta cliente_asignado: "' . $cliente_meta . '" (tipo: ' . gettype($cliente_meta) . ') | Buscando: "' . (string)$current_user->ID . '"');
-        
-        // Filtro manual para clientes (por si el meta_query no funciona)
-        if ($is_client && !$is_admin) {
-            if ((string)$cliente_meta !== (string)$current_user->ID) {
-                error_log('🔍 DEBUG: ⚠️ SALTANDO producto ' . $p->ID . ' - NO coincide el cliente');
-                continue;
-            }
-        }
-        
-        error_log('🔍 DEBUG: ✓ Procesando producto - ID: ' . $p->ID . ' | Título: ' . $p->post_title . ' | Author: ' . $p->post_author);
-        
-        $c = merc_get_product_stock($p->ID);
-        $estado = get_post_meta($p->ID, '_merc_producto_estado', true);
-        $motorizado = get_post_meta($p->ID, '_merc_producto_motorizado', true);
-        
-        // Asegurarse de que tengan valores por defecto
-        if (empty($estado)) {
-            $estado = 'sin_asignar';
-            update_post_meta($p->ID, '_merc_producto_estado', 'sin_asignar');
-        }
-        if (empty($motorizado)) {
-            $motorizado = '-';
-            update_post_meta($p->ID, '_merc_producto_motorizado', '-');
-        }
-        
-        $lista[] = array(
-            'id' => $p->ID,
-            'nombre' => $p->post_title,
-            'codigo_barras' => get_post_meta($p->ID, '_merc_producto_codigo_barras', true),
-            'cliente_asignado' => get_post_meta($p->ID, '_merc_producto_cliente_asignado', true),
-            'cantidad' => !empty($c) ? intval($c) : 0,
-            'fecha_creacion' => get_the_date('d/m/Y H:i', $p->ID),
-            'fecha_modificacion' => get_the_modified_date('d/m/Y H:i', $p->ID),
-            'estado' => $estado,
-            'motorizado' => $motorizado,
-            'peso' => get_post_meta($p->ID, '_merc_producto_peso', true),
-            'tipo_medida' => get_post_meta($p->ID, '_merc_producto_tipo_medida', true),
-            'valor_medida' => get_post_meta($p->ID, '_merc_producto_valor_medida', true),
-            'largo' => get_post_meta($p->ID, '_merc_producto_largo', true),
-            'ancho' => get_post_meta($p->ID, '_merc_producto_ancho', true),
-            'alto' => get_post_meta($p->ID, '_merc_producto_alto', true)
-        );
-    }
-    error_log('🔍 DEBUG: Total de productos en lista: ' . count($lista));
-    error_log('🔍 DEBUG: Enviando al cliente: ' . json_encode($lista));
-    wp_send_json_success($lista);
-}
-
-// AJAX: Unassign unit
-add_action('wp_ajax_merc_unit_unassign', 'merc_unit_unassign_ajax');
-function merc_unit_unassign_ajax() {
-    check_ajax_referer('merc_almacen', 'nonce');
-    if (!current_user_can('manage_options')) wp_send_json_error('Sin permisos');
-    $unit_id = isset($_POST['unit_id']) ? intval($_POST['unit_id']) : 0;
-    if (!$unit_id) wp_send_json_error('Unidad inválida');
-    $res = merc_unassign_stock_units(array($unit_id));
-    if ($res) wp_send_json_success();
-    wp_send_json_error('Error al desasignar');
-}
-
-// AJAX: Mark unit delivered
-add_action('wp_ajax_merc_unit_mark_delivered', 'merc_unit_mark_delivered_ajax');
-function merc_unit_mark_delivered_ajax() {
-    check_ajax_referer('merc_almacen', 'nonce');
-    if (!current_user_can('manage_options')) wp_send_json_error('Sin permisos');
-    $unit_id = isset($_POST['unit_id']) ? intval($_POST['unit_id']) : 0;
-    if (!$unit_id) wp_send_json_error('Unidad inválida');
-    $res = merc_mark_units_delivered(array($unit_id));
-    if ($res) wp_send_json_success();
-    wp_send_json_error('Error al marcar entregada');
 }
 
 // AJAX: Guardar producto

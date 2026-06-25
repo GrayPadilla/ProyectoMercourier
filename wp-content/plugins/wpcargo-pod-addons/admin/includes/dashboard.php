@@ -230,7 +230,7 @@ function wpcpod_direct_upload_image() {
 	$shipmentID = intval($_POST['shipmentID']);
 	$files = $_FILES['files'];
 	$uploaded_ids = array();
-	$valid_mime_types = array('image/png', 'image/jpeg', 'image/jpg', 'image/gif', 'image/svg+xml', 'image/webp', 'image/avif', 'image/bmp', 'image/x-png');
+	$valid_mime_types = array('image/png', 'image/jpeg', 'image/gif', 'image/svg+xml');
 
 	error_log('WPCPod: Starting upload for shipment ' . $shipmentID . ' with ' . (is_array($files['name']) ? count($files['name']) : 1) . ' file(s)');
 
@@ -294,7 +294,7 @@ function wpcpod_direct_upload_image() {
 	echo '<p class="header-pod-result">' . __('Your current captured images', 'wpcargo-pod') . ':</p>';
 	foreach ($set_attachments as $attachment) {
 		echo '<div class="gallery-thumb" data-id="' . esc_attr($attachment) . '"><div class="single-img">';
-		echo wp_get_attachment_image($attachment, 'wpcargo-pod-images');
+		echo wp_get_attachment_image($attachment, 'full', false, array('style' => 'max-width:100%;height:auto;'));
 		echo '</div><span class="delete-attachment" title="Remove">x</span></div>';
 	}
 	$html = ob_get_clean();
@@ -309,6 +309,7 @@ function wpcpod_direct_upload_image() {
 add_action('wp_ajax_wpcpod_direct_upload_image', 'wpcpod_direct_upload_image');
 add_action('wp_ajax_nopriv_wpcpod_direct_upload_image', 'wpcpod_direct_upload_image');
 
+// Función auxiliar para procesar un archivo individual
 function wpcpod_handle_single_file_upload($file_array, $valid_mime_types) {
 	// Validar errores del upload primero
 	if ($file_array['error'] !== UPLOAD_ERR_OK) {
@@ -316,53 +317,15 @@ function wpcpod_handle_single_file_upload($file_array, $valid_mime_types) {
 		return false;
 	}
 
-	// Validación más flexible: MIME real + MIME reportado + extensión
-	$allowed_mimes = array_unique(array_merge($valid_mime_types, array(
-		'image/jpg',
-		'image/jpeg',
-		'image/png',
-		'image/gif',
-		'image/svg+xml',
-		'image/webp',
-		'image/avif',
-		'image/bmp',
-		'image/x-png',
-	)));
-
-	$allowed_exts = array('jpg', 'jpeg', 'png', 'gif', 'svg', 'webp', 'avif', 'bmp');
-
-	$file_name = isset($file_array['name']) ? $file_array['name'] : '';
-	$file_ext  = strtolower(pathinfo($file_name, PATHINFO_EXTENSION));
-
-	$detected_mime = '';
-	if (!empty($file_array['tmp_name']) && file_exists($file_array['tmp_name'])) {
-		if (function_exists('mime_content_type')) {
-			$detected_mime = @mime_content_type($file_array['tmp_name']);
-		}
-
-		if (empty($detected_mime) && function_exists('finfo_open')) {
-			$finfo = @finfo_open(FILEINFO_MIME_TYPE);
-			if ($finfo) {
-				$detected_mime = @finfo_file($finfo, $file_array['tmp_name']);
-				@finfo_close($finfo);
-			}
-		}
-	}
-
-	$reported_mime = isset($file_array['type']) ? $file_array['type'] : '';
-
-	if (
-		!in_array($reported_mime, $allowed_mimes, true) &&
-		!in_array($detected_mime, $allowed_mimes, true) &&
-		!in_array($file_ext, $allowed_exts, true)
-	) {
-		error_log('WPCPod Invalid MIME: ' . $reported_mime . ' / DETECTED: ' . $detected_mime . ' / EXT: ' . $file_ext . ' para archivo ' . $file_name);
+	// Validar MIME type
+	if (!in_array($file_array['type'], $valid_mime_types)) {
+		error_log('WPCPod Invalid MIME: ' . $file_array['type'] . ' para archivo ' . $file_array['name']);
 		return false;
 	}
 
 	// Validar tamaño (máximo 10MB)
 	if ($file_array['size'] > 10 * 1024 * 1024) {
-		error_log('WPCPod File too large: ' . $file_array['size'] . ' bytes para archivo ' . $file_name);
+		error_log('WPCPod File too large: ' . $file_array['size'] . ' bytes para archivo ' . $file_array['name']);
 		return false;
 	}
 
@@ -377,19 +340,7 @@ function wpcpod_handle_single_file_upload($file_array, $valid_mime_types) {
 	require_once(ABSPATH . 'wp-admin/includes/image.php');
 	require_once(ABSPATH . 'wp-admin/includes/media.php');
 
-	$upload_overrides = array(
-		'test_form' => false,
-		'mimes' => array(
-			'jpg|jpeg|jpe' => 'image/jpeg',
-			'png'          => 'image/png',
-			'gif'          => 'image/gif',
-			'webp'         => 'image/webp',
-			'avif'         => 'image/avif',
-			'bmp'          => 'image/bmp',
-			'svg'          => 'image/svg+xml',
-		),
-	);
-
+	$upload_overrides = array('test_form' => false);
 	$uploaded_file = wp_handle_upload($file_array, $upload_overrides);
 
 	if (isset($uploaded_file['error'])) {
@@ -402,6 +353,7 @@ function wpcpod_handle_single_file_upload($file_array, $valid_mime_types) {
 		return false;
 	}
 
+	// Crear entry en la biblioteca de medios
 	$attachment = array(
 		'post_mime_type' => $uploaded_file['type'],
 		'post_title'     => preg_replace('/\.[^.]+$/', '', basename($uploaded_file['file'])),
@@ -416,6 +368,7 @@ function wpcpod_handle_single_file_upload($file_array, $valid_mime_types) {
 		return false;
 	}
 
+	// Generar metadatos
 	$attach_data = wp_generate_attachment_metadata($attach_id, $uploaded_file['file']);
 	wp_update_attachment_metadata($attach_id, $attach_data);
 
@@ -436,7 +389,7 @@ function wpcpod_save_attachment()
 		echo '<p class="header-pod-result">' . __('Your current captured images', 'wpcargo-pod') . ':</p>';
 		foreach ($set_attachments as $attachment) {
 			echo '<div class="gallery-thumb" data-id="' . $attachment . '"><div class="single-img">';
-			echo wp_get_attachment_image($attachment, 'wpcargo-pod-images');
+			echo wp_get_attachment_image($attachment, 'full', false, array('style' => 'max-width:100%;height:auto;'));
 			echo '</div><span class="delete-attachment" title="Remove">x</span></div>';
 		}
 	}

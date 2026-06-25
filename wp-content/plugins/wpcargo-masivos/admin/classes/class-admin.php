@@ -17,9 +17,17 @@ class WCMAS_Admin {
         add_action('wp_ajax_wcmas_procesar_lote',  [$this, 'ajax_procesar_lote']);
         add_action('wp_ajax_wcmas_validar_fila',   [$this, 'ajax_validar_fila']);
 
-        // AJAX exclusivos de admin — Select2 y datos de remitente
+        // AJAX exclusivos de admin — Select2, datos de remitente y tarifas
         add_action('wp_ajax_wcmas_buscar_clientes', [$this, 'ajax_buscar_clientes']);
         add_action('wp_ajax_wcmas_datos_remitente', [$this, 'ajax_datos_remitente']);
+        // Tarifas: accesible para cualquier usuario logueado (la grilla la usa en frontend)
+        add_action('wp_ajax_wcmas_get_tarifas',              [$this, 'ajax_get_tarifas']);
+        add_action('wp_ajax_wcmas_guardar_tarifas',          [$this, 'ajax_guardar_tarifas']);
+        add_action('wp_ajax_wcmas_guardar_contenedores',     [$this, 'ajax_guardar_contenedores']);
+        add_action('wp_ajax_wcmas_restaurar_tarifas_default', [$this, 'ajax_restaurar_tarifas_default']);
+        // Admin POST para guardar tarifas desde el panel de config
+        add_action('admin_post_wcmas_guardar_tarifas', [$this, 'handle_guardar_tarifas']);
+        add_action('admin_post_wcmas_reset_columnas',  [$this, 'handle_reset_columnas']);
     }
 
     /* ── Scripts y estilos de admin ───────────────────────────────── */
@@ -62,6 +70,10 @@ class WCMAS_Admin {
             'manage_options','wcmas-columnas',[$this,'pagina_columnas']);
         add_submenu_page('wcmas-grilla','Historial de Importaciones','📜 Historial',
             'manage_options','wcmas-historial',[$this,'pagina_historial']);
+        add_submenu_page('wcmas-grilla','Tarifas por Distrito','💲 Tarifas',
+            'manage_options','wcmas-tarifas',[$this,'pagina_tarifas']);
+        add_submenu_page('wcmas-grilla','Contenedores por Distrito','📦 Contenedores',
+            'manage_options','wcmas-contenedores',[$this,'pagina_contenedores']);
         add_submenu_page('wcmas-grilla','Configuración','Configuración',
             'manage_options','wcmas-config',[$this,'pagina_config']);
     }
@@ -102,9 +114,15 @@ class WCMAS_Admin {
         if ( ! current_user_can('manage_options') ) wp_die();
         $tracking_prefix  = get_option('wcmas_tracking_prefix', 'DHV');
         $filas_default    = intval(get_option('wcmas_filas_default', 10));
-        // Leer config real de WPCargo para mostrarla
         $wpcargo_tracking = wcmas_get_wpcargo_tracking_config();
-        wcmas_tpl('admin/config.tpl.php', compact('tracking_prefix','filas_default','wpcargo_tracking'));
+        // Tarifas y distritos para el panel de configuración
+        $tarifas          = wcmas_get_tarifas();
+        $distritos        = WCMAS_Columnas::get_opciones_wpcf('wpcargo_distrito_destino');
+        $tipos_servicio   = ['EMPRENDEDOR' => 'normal', 'AGENCIA' => 'express', 'FULLFITMENT' => 'full_fitment'];
+        wcmas_tpl('admin/config.tpl.php', compact(
+            'tracking_prefix','filas_default','wpcargo_tracking',
+            'tarifas','distritos','tipos_servicio'
+        ));
     }
 
     /* ── Handlers POST ─────────────────────────────────────────────── */
@@ -175,7 +193,7 @@ class WCMAS_Admin {
 
         $results = array_map(fn($c) => [
             'id'    => $c['id'],
-            'text'  => $c['label'] . ' — ' . $c['email'],
+            'text'  => $c['text'],   // ya incluye tiendaname/billing_company o nombre+apellido
             'email' => $c['email'],
         ], $clientes);
 
@@ -256,6 +274,95 @@ class WCMAS_Admin {
         $fila   = array_map(fn($v) => sanitize_text_field(wp_unslash($v)), $_POST['fila'] ?? []);
         $errors = WCMAS_Procesador::validar_fila($fila);
         wp_send_json_success(['errores' => $errors, 'valida' => empty($errors)]);
+    }
+
+    public function handle_guardar_tarifas(): void {
+        check_admin_referer('wcmas_config_nonce');
+        if ( ! current_user_can('manage_options') ) wp_die();
+        $raw = $_POST['tarifas'] ?? [];
+        if ( is_array($raw) ) {
+            wcmas_save_tarifas($raw);
+        }
+        wcmas_redirect('wcmas-config', 'guardado');
+    }
+
+    public function ajax_get_tarifas(): void {
+        check_ajax_referer('wcmas_procesar_nonce', 'nonce');
+        wp_send_json_success(wcmas_get_tarifas());
+    }
+
+    public function ajax_restaurar_tarifas_default(): void {
+        check_ajax_referer('wcmas_procesar_nonce', 'nonce');
+        if ( ! wcmas_es_admin() ) wp_send_json_error(['msg' => 'Sin permisos.'], 403);
+        // Forzar reinstalación borrando la opción primero
+        delete_option('wcmas_tarifas');
+        wcmas_instalar_tarifas_default();
+        wp_send_json_success(['msg' => 'Tarifas restauradas correctamente.']);
+    }
+
+    public function ajax_guardar_tarifas(): void {
+        check_ajax_referer('wcmas_procesar_nonce', 'nonce');
+        if ( ! wcmas_es_admin() ) wp_send_json_error(['msg' => 'Sin permisos.'], 403);
+        $raw = $_POST['tarifas'] ?? [];
+        if ( is_array($raw) ) {
+            wcmas_save_tarifas($raw);
+            wp_send_json_success(['msg' => 'Tarifas guardadas.']);
+        }
+        wp_send_json_error(['msg' => 'Formato inválido.']);
+    }
+
+    public function handle_reset_columnas(): void {
+        check_admin_referer('wcmas_config_nonce');
+        if ( ! current_user_can('manage_options') ) wp_die();
+        // Eliminar la opción para que instalar_defaults() la recree con los nuevos defaults
+        delete_option('wcmas_columnas_v2');
+        WCMAS_Columnas::instalar_defaults();
+        wcmas_redirect('wcmas-columnas', 'guardado');
+    }
+
+    public function pagina_tarifas(): void {
+        if ( ! current_user_can('manage_options') ) wp_die();
+        $distritos = WCMAS_Columnas::get_opciones_wpcf('wpcargo_distrito_destino');
+        $tarifas   = get_option('wcmas_tarifas', []);
+        if ( ! is_array($tarifas) ) $tarifas = [];
+        wcmas_tpl('admin/tarifas.tpl.php', compact('distritos', 'tarifas'));
+    }
+
+    public function pagina_contenedores(): void {
+        if ( ! current_user_can('manage_options') ) wp_die();
+        global $wpdb;
+        // Obtener contenedores desde BD
+        $contenedores = $wpdb->get_results(
+            "SELECT ID, post_title FROM {$wpdb->posts}
+             WHERE post_type = 'shipment_container' AND post_status = 'publish'
+             ORDER BY ID ASC",
+            ARRAY_A
+        );
+        // Distritos desde WPCargo
+        $distritos = WCMAS_Columnas::get_opciones_wpcf('wpcargo_distrito_destino');
+        // Mapa actual guardado
+        $mapa = get_option('wcmas_mapa_contenedores', []);
+        if ( ! is_array($mapa) || empty($mapa) ) {
+            $mapa = wcmas_get_mapa_contenedores_default();
+        }
+        wcmas_tpl('admin/contenedores.tpl.php', compact('contenedores', 'distritos', 'mapa'));
+    }
+
+    public function ajax_guardar_contenedores(): void {
+        check_ajax_referer('wcmas_procesar_nonce', 'nonce');
+        if ( ! current_user_can('manage_options') ) wp_send_json_error(['msg' => 'Sin permisos.'], 403);
+
+        $raw  = $_POST['mapa'] ?? [];
+        $mapa = [];
+        foreach ( $raw as $distrito => $cont_id ) {
+            $d = sanitize_text_field(wp_unslash($distrito));
+            $c = intval($cont_id);
+            if ( $d && $c > 0 ) {
+                $mapa[$d] = $c;
+            }
+        }
+        update_option('wcmas_mapa_contenedores', $mapa, false);
+        wp_send_json_success(['msg' => 'Mapa de contenedores guardado.', 'total' => count($mapa)]);
     }
 
     public function mostrar_notice(): void {

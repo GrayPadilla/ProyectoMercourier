@@ -232,119 +232,260 @@ function merc_render_table($estado, $marca, $motorizado, $desde, $hasta, $buscar
     $args  = merc_build_query($estado, $marca, $motorizado, $desde, $hasta, $buscar);
     $query = new WP_Query($args);
 
+    if (!$query->have_posts()) {
+        ob_start();
+        ?>
+        <div class="merc-empty-result">
+            <p>No se encontraron devoluciones con esos filtros.</p>
+        </div>
+        <?php
+        return ob_get_clean();
+    }
+
+    $grupos = array();
+
+    while ($query->have_posts()): $query->the_post();
+        $id = get_the_ID();
+
+        $fecha_raw = get_post_meta($id, 'wpcargo_pickup_date_picker', true);
+        if ($fecha_raw) {
+            if (preg_match('/^\d{2}\/\d{2}\/\d{4}$/', $fecha_raw)) {
+                $fecha = $fecha_raw;
+            } else {
+                $fecha = date_i18n('d/m/Y', strtotime($fecha_raw));
+            }
+        } else {
+            $fecha = '';
+        }
+
+        $tracking      = get_the_title($id);
+        $cliente       = trim(get_post_meta($id, 'wpcargo_receiver_name', true));
+        $estado_envio  = get_post_meta($id, 'wpcargo_status', true);
+        $marca_nombre  = get_post_meta($id, 'wpcargo_tiendaname', true);
+        $driver_id     = get_post_meta($id, 'wpcargo_driver', true);
+        $cambio_producto = get_post_meta($id, 'cambio_producto', true);
+        $estado_entrega  = get_post_meta($id, 'merc_estado_entrega', true);
+
+        if ($cliente === '') {
+            $cliente = 'Sin cliente';
+        }
+
+        if ($driver_id && get_userdata($driver_id)) {
+            $first = get_user_meta($driver_id, 'first_name', true);
+            $last  = get_user_meta($driver_id, 'last_name', true);
+            $motorizado_nombre = trim($first . ' ' . $last) ?: get_userdata($driver_id)->display_name;
+        } else {
+            $motorizado_nombre = 'No asignado';
+        }
+
+        $fila_bg = '';
+        if ($estado_entrega === 'Entregado') {
+            $fila_bg = 'background-color:#d4edda;';
+        } elseif ($estado_entrega === 'No Entregado') {
+            $fila_bg = 'background-color:#f8d7da;';
+        }
+
+        $estado_normalizado = merc_normalize_status($estado_envio);
+        $badge_colors = array(
+            'Reprogramado' => '#ff9800',
+            'Anulado'      => '#f44336',
+            'No recibido'  => '#9c27b0',
+            'Entregado'    => '#4caf50',
+            'En tránsito'  => '#2196f3',
+            'Pendiente'    => '#ff9800',
+            'Procesando'   => '#00bcd4',
+            'Cancelado'    => '#f44336'
+        );
+        $badge_color = isset($badge_colors[$estado_normalizado]) ? $badge_colors[$estado_normalizado] : '#666';
+
+        $dashboard_url = get_permalink(wpcfe_admin_page());
+        $detalle_url   = add_query_arg(array('wpcfe' => 'track', 'num' => $tracking), $dashboard_url);
+
+        $grupos[$marca_nombre][] = array(
+            'id'                => $id,
+            'fecha'             => $fecha,
+            'tracking'          => $tracking,
+            'cliente'           => $cliente,
+            'estado_envio'      => $estado_envio,
+            'badge_color'       => $badge_color,
+            'marca_nombre'      => $marca_nombre,
+            'motorizado_nombre' => $motorizado_nombre,
+            'cambio_producto'   => $cambio_producto,
+            'estado_entrega'    => $estado_entrega,
+            'fila_bg'           => $fila_bg,
+            'detalle_url'       => $detalle_url,
+        );
+    endwhile;
+
+    wp_reset_postdata();
+
     ob_start();
     ?>
-    <table class="wp-list-table widefat fixed striped">
-        <thead>
-            <tr>
-                <th style="width:10%;">Fecha</th>
-                <th style="width:11%;">Tracking</th>
-                <th style="width:15%;">Cliente</th>
-                <th style="width:12%;">Estado</th>
-                <th style="width:13%;">Marca</th>
-                <th style="width:12%;">Motorizado</th>
-                <th style="width:11%;">Cambio Producto</th>
-                <th style="width:16%;">Estado Entrega</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php if ($query->have_posts()):
-                while ($query->have_posts()): $query->the_post();
-                    $id = get_the_ID();
-                    $fecha_raw = get_post_meta($id, 'wpcargo_pickup_date_picker', true);
-                    
-                    if ($fecha_raw) {
-                        if (preg_match('/^\d{2}\/\d{2}\/\d{4}$/', $fecha_raw)) {
-                            $fecha = $fecha_raw;
-                        } else {
-                            $fecha = date_i18n('d/m/Y', strtotime($fecha_raw));
-                        }
-                    } else {
-                        $fecha = '';
-                    }
-                    
-                    $tracking         = get_the_title($id);
-                    $cliente          = get_post_meta($id, 'wpcargo_receiver_name', true);
-                    $estado_envio     = get_post_meta($id, 'wpcargo_status', true);
-                    $marca_nombre     = get_post_meta($id, 'wpcargo_tiendaname', true);
-                    $driver_id        = get_post_meta($id, 'wpcargo_driver', true);
-                    
-                    if ($driver_id && get_userdata($driver_id)) {
-                        $first = get_user_meta($driver_id, 'first_name', true);
-                        $last  = get_user_meta($driver_id, 'last_name', true);
-                        $motorizado_nombre = trim($first . ' ' . $last) ?: get_userdata($driver_id)->display_name;
-                    } else {
-                        $motorizado_nombre = 'No asignado';
-                    }
-                    
-                    $cambio_producto  = get_post_meta($id, 'cambio_producto', true);
-                    $estado_entrega   = get_post_meta($id, 'merc_estado_entrega', true);
+    <style>
+    .merc-return-group{
+        margin-bottom:16px;
+        border:1px solid #dfe3e8;
+        border-radius:10px;
+        overflow:hidden;
+        background:#fff;
+        box-shadow:0 1px 3px rgba(0,0,0,.06);
+    }
 
-                    $fila_bg = '';
-                    if ($estado_entrega === 'Entregado')    $fila_bg = 'background-color:#d4edda;';
-                    if ($estado_entrega === 'No Entregado') $fila_bg = 'background-color:#f8d7da;';
+    .merc-return-summary{
+        width:100%;
+        border:0;
+        background:linear-gradient(90deg,#2f4154,#3b5169);
+        color:#fff;
+        padding:14px 18px;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        gap:12px;
+        cursor:pointer;
+        text-align:left;
+        font:inherit;
+        font-weight:700;
+        box-sizing:border-box;
+    }
 
-                    $estado_normalizado = merc_normalize_status($estado_envio);
-                    $badge_colors = array(
-                        'Reprogramado' => '#ff9800',
-                        'Anulado'      => '#f44336',
-                        'No recibido'  => '#9c27b0',
-                        'Entregado'    => '#4caf50',
-                        'En tránsito'  => '#2196f3',
-                        'Pendiente'    => '#ff9800',
-                        'Procesando'   => '#00bcd4',
-                        'Cancelado'    => '#f44336'
-                    );
-                    $badge_color = isset($badge_colors[$estado_normalizado]) ? $badge_colors[$estado_normalizado] : '#666';
+    .merc-return-summary::-webkit-details-marker{
+        display:none;
+    }
 
-                    $dashboard_url = get_permalink(wpcfe_admin_page());
-                    $detalle_url   = add_query_arg(array('wpcfe' => 'track', 'num' => $tracking), $dashboard_url);
-                    ?>
-                    <tr style="<?php echo esc_attr($fila_bg); ?>">
-                        <td><?php echo esc_html($fecha); ?></td>
-                        <td>
-                            <a href="<?php echo esc_url($detalle_url); ?>" style="font-weight:600;color:#2271b1;text-decoration:none;">
-                                <?php echo esc_html($tracking); ?>
-                            </a>
-                        </td>
-                        <td><?php echo esc_html($cliente); ?></td>
-                        <td>
-                            <span style="display:inline-block;padding:6px 12px;border-radius:4px;background:<?php echo esc_attr($badge_color); ?>;color:#fff;font-weight:600;font-size:11px;">
-                                <?php echo esc_html($estado_envio); ?>
-                            </span>
-                        </td>
-                        <td><?php echo esc_html($marca_nombre); ?></td>
-                        <td><?php echo esc_html($motorizado_nombre); ?></td>
-                        <td>
-                            <?php if ($cambio_producto === 'Sí'): ?>
-                                <span style="display:inline-block;padding:6px 12px;border-radius:4px;background:#00796b;color:#fff;font-weight:600;font-size:11px;">SÍ</span>
-                            <?php endif; ?>
-                        </td>
-                        <td style="white-space:nowrap;">
-                            <select class="merc-estado-entrega-select" data-post-id="<?php echo esc_attr($id); ?>">
-                                <option value="" <?php selected($estado_entrega, ''); ?>>— Sin definir —</option>
-                                <option value="Entregado" <?php selected($estado_entrega, 'Entregado'); ?>>✅ Entregado</option>
-                                <option value="No Entregado" <?php selected($estado_entrega, 'No Entregado'); ?>>❌ No Entregado</option>
-                            </select>
-                        </td>
-                    </tr>
-                <?php endwhile;
-            else: ?>
-                <tr>
-                    <td colspan="8" style="text-align:center;padding:60px;">
-                        <div style="font-size:64px;margin-bottom:20px;">📭</div>
-                        <p style="color:#666;font-size:16px;margin:0;">No se encontraron devoluciones</p>
-                    </td>
-                </tr>
-            <?php endif; wp_reset_postdata(); ?>
-        </tbody>
-    </table>
+    .merc-return-summary::marker{
+        content:'';
+    }
 
-    <?php if ($query->found_posts > 0): ?>
-        <div style="margin-top:20px;padding:15px;background:#e8f4fd;border-left:4px solid #2271b1;border-radius:4px;">
-            <strong>📊 Total:</strong> <?php echo intval($query->found_posts); ?> devoluciones encontradas
-        </div>
-    <?php endif;
+    .merc-return-summary-left{
+        display:flex;
+        align-items:center;
+        gap:10px;
+        min-width:0;
+    }
 
+    .merc-return-summary-icon{
+        font-size:16px;
+        line-height:1;
+    }
+
+    .merc-return-summary-title{
+        color:#fff;
+        font-size:15px;
+        font-weight:700;
+        white-space:nowrap;
+    }
+
+    .merc-return-summary-count{
+        color:#fff;
+        font-weight:600;
+        white-space:nowrap;
+        opacity:.95;
+    }
+
+    .merc-return-summary-arrow{
+        color:#fff;
+        font-size:18px;
+        transition:transform .2s ease;
+        margin-left:auto;
+    }
+
+    .merc-return-group[open] .merc-return-summary-arrow{
+        transform:rotate(180deg);
+    }
+
+    .merc-return-group-body{
+        padding:0;
+        background:#fff;
+    }
+
+    .merc-return-table{
+        margin:0;
+        width:100%;
+        border-top:1px solid #e5e7eb;
+    }
+
+    .merc-return-table thead th{
+        background:#f8fafc;
+        font-weight:700;
+    }
+
+    .merc-return-empty{
+        padding:18px;
+        text-align:center;
+        color:#6b7280;
+        background:#fff;
+    }
+    </style>
+
+    <?php foreach ($grupos as $grupo => $rows): ?>
+        <details class="merc-return-group" <?php echo $primer_grupo ? 'open' : ''; ?>>
+            <summary class="merc-return-summary">
+                <span class="merc-return-summary-left">
+                    <span class="merc-return-summary-icon">🔄</span>
+                    <span class="merc-return-summary-title"><?php echo esc_html($grupo); ?></span>
+                </span>
+
+                <span class="merc-return-summary-count"><?php echo count($rows); ?> devolución(es)</span>
+                <span class="merc-return-summary-arrow">▾</span>
+            </summary>
+
+            <div class="merc-return-group-body">
+                <table class="wp-list-table widefat fixed striped merc-return-table">
+                    <thead>
+                        <tr>
+                            <th style="width:10%;">Fecha</th>
+                            <th style="width:11%;">Tracking</th>
+                            <th style="width:15%;">Cliente</th>
+                            <th style="width:12%;">Estado</th>
+                            <th style="width:13%;">Marca</th>
+                            <th style="width:12%;">Motorizado</th>
+                            <th style="width:11%;">Cambio Producto</th>
+                            <th style="width:16%;">Estado Entrega</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php if (!empty($rows)): ?>
+                            <?php foreach ($rows as $row): ?>
+                                <tr style="<?php echo esc_attr($row['fila_bg']); ?>">
+                                    <td><?php echo esc_html($row['fecha']); ?></td>
+                                    <td>
+                                        <a href="<?php echo esc_url($row['detalle_url']); ?>" style="font-weight:600;color:#2271b1;text-decoration:none;">
+                                            <?php echo esc_html($row['tracking']); ?>
+                                        </a>
+                                    </td>
+                                    <td><?php echo esc_html($row['cliente']); ?></td>
+                                    <td>
+                                        <span style="display:inline-block;padding:6px 12px;border-radius:4px;background:<?php echo esc_attr($row['badge_color']); ?>;color:#fff;font-weight:600;font-size:11px;">
+                                            <?php echo esc_html($row['estado_envio']); ?>
+                                        </span>
+                                    </td>
+                                    <td><?php echo esc_html($row['marca_nombre']); ?></td>
+                                    <td><?php echo esc_html($row['motorizado_nombre']); ?></td>
+                                    <td>
+                                        <?php if ($row['cambio_producto'] === 'Sí'): ?>
+                                            <span style="display:inline-block;padding:6px 12px;border-radius:4px;background:#00796b;color:#fff;font-weight:600;font-size:11px;">SÍ</span>
+                                        <?php endif; ?>
+                                    </td>
+                                    <td style="white-space:nowrap;">
+                                        <select class="merc-estado-entrega-select" data-post-id="<?php echo esc_attr($row['id']); ?>">
+                                            <option value="" <?php selected($row['estado_entrega'], ''); ?>>— Sin definir —</option>
+                                            <option value="Entregado" <?php selected($row['estado_entrega'], 'Entregado'); ?>>✅ Entregado</option>
+                                            <option value="No Entregado" <?php selected($row['estado_entrega'], 'No Entregado'); ?>>❌ No Entregado</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            <?php endforeach; ?>
+                        <?php else: ?>
+                            <tr>
+                                <td colspan="8" class="merc-return-empty">Sin devoluciones en este grupo.</td>
+                            </tr>
+                        <?php endif; ?>
+                    </tbody>
+                </table>
+            </div>
+        </details>
+    <?php endforeach; ?>
+
+    <?php
     return ob_get_clean();
 }

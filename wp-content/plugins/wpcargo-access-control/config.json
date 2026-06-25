@@ -1,0 +1,47 @@
+{
+  "plugin": {
+    "name": "WPCargo Access Control",
+    "version": "1.0.0",
+    "author": "Mercourier",
+    "description": "Gestión centralizada de permisos y acceso para WPCargo"
+  },
+  "super_admins": [
+    "mercourier2019@gmail.com",
+    "davidmorilloacuna@gmail.com"
+  ],
+  "available_paths": {
+    "dashboard": "/dashboard/",
+    "create_shipment": "/dashboard/?wpcfe=add",
+    "create_normal": "/dashboard/?wpcfe=add&type=normal",
+    "create_express": "/dashboard/?wpcfe=add&type=express",
+    "create_full_fitment": "/dashboard/?wpcfe=add&type=full_fitment",
+    "containers": "/containers/",
+    "receiving": "/receiving/",
+    "import": "/import-export/?type=import",
+    "warehouse": "/almacen-de-productos/",
+    "returns": "/devoluciones/",
+    "admin_panel": "/panel-admin/",
+    "user_management": "/wpcumanage-users/",
+    "pod_report": "/wpcpod-report-order/"
+  },
+  "always_allowed": [
+    "/wp-login.php",
+    "/wp-admin",
+    "/wp-json",
+    "/admin-post.php"
+  ],
+  "static_extensions": [
+    "css", "js", "png", "jpg", "jpeg", "gif", "svg",
+    "woff", "woff2", "map", "ico", "ttf", "eot", "otf"
+  ],
+  "logging": {
+    "enabled": true,
+    "directory": "wp-content/merc_logs",
+    "filename_pattern": "merc-debug-Y-m-d.log"
+  },
+  "bypass": {
+    "enabled": true,
+    "description": "Permitir desbloqueo manual diario de todos los clientes",
+    "reset_time": "00:00:00"
+  }
+}

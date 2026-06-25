@@ -236,3 +236,437 @@
 [2026-06-18 16:00:29] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
 [2026-06-18 16:01:12] [MERC DEBUG] Usuario: 190 | Tipo: normal | ISO: 2026-06-18 | DMY: 18/06/2026 | Encontrados: 0
 [2026-06-18 16:01:12] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-18 19:49:52] [MERC DEBUG] Usuario: 190 | Tipo: normal | ISO: 2026-06-18 | DMY: 18/06/2026 | Encontrados: 0
+[2026-06-18 19:49:52] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-18 19:51:07] [MERC DEBUG] Usuario: 190 | Tipo: normal | ISO: 2026-06-18 | DMY: 18/06/2026 | Encontrados: 0
+[2026-06-18 19:51:07] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-18 19:52:38] [MERC DEBUG] Usuario: 190 | Tipo: normal | ISO: 2026-06-18 | DMY: 18/06/2026 | Encontrados: 0
+[2026-06-18 19:52:38] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-18 21:29:17] [MERC DEBUG] Usuario: 190 | Tipo: normal | ISO: 2026-06-18 | DMY: 18/06/2026 | Encontrados: 0
+[2026-06-18 21:29:17] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-18 21:30:08] [MERC DEBUG] Usuario: 190 | Tipo: normal | ISO: 2026-06-18 | DMY: 18/06/2026 | Encontrados: 0
+[2026-06-18 21:30:08] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-18 21:33:45] [MERC DEBUG] Usuario: 190 | Tipo: normal | ISO: 2026-06-18 | DMY: 18/06/2026 | Encontrados: 0
+[2026-06-18 21:33:45] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-18 21:34:07] [MERC DEBUG] Usuario: 190 | Tipo: normal | ISO: 2026-06-18 | DMY: 18/06/2026 | Encontrados: 0
+[2026-06-18 21:34:07] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-18 21:35:01] [MERC DEBUG] Usuario: 190 | Tipo: normal | ISO: 2026-06-18 | DMY: 18/06/2026 | Encontrados: 0
+[2026-06-18 21:35:01] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-21 00:50:34] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-21 | DMY: 21/06/2026 | Encontrados: 0
+[2026-06-21 00:50:34] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-21 00:51:20] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-21 | DMY: 21/06/2026 | Encontrados: 0
+[2026-06-21 00:51:20] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-21 22:11:01] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-21 | DMY: 21/06/2026 | Encontrados: 0
+[2026-06-21 22:11:01] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-22 21:29:07] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-22 | DMY: 22/06/2026 | Encontrados: 0
+[2026-06-22 21:29:07] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-22 21:29:36] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-22 | DMY: 22/06/2026 | Encontrados: 0
+[2026-06-22 21:29:36] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-22 21:30:21] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-22 | DMY: 22/06/2026 | Encontrados: 0
+[2026-06-22 21:30:21] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-22 21:51:41] [MERC DEBUG] Usuario: 517 | Tipo: normal | ISO: 2026-06-22 | DMY: 22/06/2026 | Encontrados: 0
+[2026-06-22 21:51:41] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-22 21:55:17] [MERC DEBUG] Usuario: 118 | Tipo: normal | ISO: 2026-06-22 | DMY: 22/06/2026 | Encontrados: 1
+  - Pedido ID: 32269 | Estado: ENTREGADO | Tipo: 
+[2026-06-22 21:55:17] [MERC DEBUG] Resultado: BLOQUEAR (todos procesados)
+[2026-06-22 21:55:20] [MERC DEBUG] Usuario: 118 | Tipo: normal | ISO: 2026-06-22 | DMY: 22/06/2026 | Encontrados: 1
+  - Pedido ID: 32269 | Estado: ENTREGADO | Tipo: 
+[2026-06-22 21:55:20] [MERC DEBUG] Resultado: BLOQUEAR (todos procesados)
+[2026-06-22 21:55:22] [MERC DEBUG] Usuario: 118 | Tipo: express | ISO: 2026-06-22 | DMY: 22/06/2026 | Encontrados: 0
+[2026-06-22 21:55:22] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada tipo no-emprendedor)
+[2026-06-22 21:55:44] [MERC DEBUG] Usuario: 118 | Tipo: express | ISO: 2026-06-22 | DMY: 22/06/2026 | Encontrados: 0
+[2026-06-22 21:55:44] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada tipo no-emprendedor)
+[2026-06-22 21:55:49] [MERC DEBUG] Usuario: 118 | Tipo: normal | ISO: 2026-06-22 | DMY: 22/06/2026 | Encontrados: 1
+  - Pedido ID: 32269 | Estado: ENTREGADO | Tipo: 
+[2026-06-22 21:55:49] [MERC DEBUG] Resultado: BLOQUEAR (todos procesados)
+[2026-06-22 21:55:55] [MERC DEBUG] Usuario: 118 | Tipo: normal | ISO: 2026-06-22 | DMY: 22/06/2026 | Encontrados: 1
+  - Pedido ID: 32269 | Estado: ENTREGADO | Tipo: 
+[2026-06-22 21:55:55] [MERC DEBUG] Resultado: BLOQUEAR (todos procesados)
+[2026-06-22 21:55:57] [MERC DEBUG] Usuario: 118 | Tipo: full_fitment | ISO: 2026-06-22 | DMY: 22/06/2026 | Encontrados: 0
+[2026-06-22 21:55:57] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada tipo no-emprendedor)
+[2026-06-22 21:57:07] [MERC DEBUG] Usuario: 118 | Tipo: full_fitment | ISO: 2026-06-22 | DMY: 22/06/2026 | Encontrados: 0
+[2026-06-22 21:57:07] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada tipo no-emprendedor)
+[2026-06-22 21:57:10] [MERC DEBUG] Usuario: 118 | Tipo: full_fitment | ISO: 2026-06-22 | DMY: 22/06/2026 | Encontrados: 0
+[2026-06-22 21:57:10] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada tipo no-emprendedor)
+[2026-06-22 21:57:16] [MERC DEBUG] Usuario: 118 | Tipo: normal | ISO: 2026-06-22 | DMY: 22/06/2026 | Encontrados: 1
+  - Pedido ID: 32269 | Estado: ENTREGADO | Tipo: 
+[2026-06-22 21:57:16] [MERC DEBUG] Resultado: BLOQUEAR (todos procesados)
+[2026-06-22 21:57:24] [MERC DEBUG] Usuario: 118 | Tipo: normal | ISO: 2026-06-22 | DMY: 22/06/2026 | Encontrados: 1
+  - Pedido ID: 32269 | Estado: ENTREGADO | Tipo: 
+[2026-06-22 21:57:24] [MERC DEBUG] Resultado: BLOQUEAR (todos procesados)
+[2026-06-22 21:57:55] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-22 | DMY: 22/06/2026 | Encontrados: 0
+[2026-06-22 21:57:55] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-22 21:58:13] [MERC DEBUG] Usuario: 517 | Tipo: normal | ISO: 2026-06-22 | DMY: 22/06/2026 | Encontrados: 0
+[2026-06-22 21:58:13] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-22 21:58:16] [MERC DEBUG] Usuario: 517 | Tipo: normal | ISO: 2026-06-22 | DMY: 22/06/2026 | Encontrados: 0
+[2026-06-22 21:58:16] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-22 21:58:19] [MERC DEBUG] Usuario: 517 | Tipo: express | ISO: 2026-06-22 | DMY: 22/06/2026 | Encontrados: 0
+[2026-06-22 21:58:19] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada tipo no-emprendedor)
+[2026-06-22 21:58:43] [MERC DEBUG] Usuario: 517 | Tipo: express | ISO: 2026-06-22 | DMY: 22/06/2026 | Encontrados: 0
+[2026-06-22 21:58:43] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada tipo no-emprendedor)
+[2026-06-22 21:58:46] [MERC DEBUG] Usuario: 517 | Tipo: express | ISO: 2026-06-22 | DMY: 22/06/2026 | Encontrados: 0
+[2026-06-22 21:58:46] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada tipo no-emprendedor)
+[2026-06-22 21:58:50] [MERC DEBUG] Usuario: 517 | Tipo: normal | ISO: 2026-06-22 | DMY: 22/06/2026 | Encontrados: 0
+[2026-06-22 21:58:50] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-22 22:04:23] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-22 | DMY: 22/06/2026 | Encontrados: 0
+[2026-06-22 22:04:23] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-23 12:48:11] [MERC DEBUG] Usuario: 118 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 1
+  - Pedido ID: 32274 | Estado: RECEPCIONADO | Tipo: 
+[2026-06-23 12:48:11] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 12:48:16] [MERC DEBUG] Usuario: 118 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 1
+  - Pedido ID: 32274 | Estado: RECEPCIONADO | Tipo: 
+[2026-06-23 12:48:16] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 12:48:23] [MERC DEBUG] Usuario: 118 | Tipo: express | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 12:48:23] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 12:30)
+[2026-06-23 12:48:28] [MERC DEBUG] Usuario: 118 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 1
+  - Pedido ID: 32274 | Estado: RECEPCIONADO | Tipo: 
+[2026-06-23 12:48:28] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 12:50:19] [MERC DEBUG] Usuario: 118 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 1
+  - Pedido ID: 32274 | Estado: RECEPCIONADO | Tipo: 
+[2026-06-23 12:50:19] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 12:55:15] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 12:55:15] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 13:04:32] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 13:04:32] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 13:06:07] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 13:06:07] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 13:06:19] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 13:06:19] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 13:06:27] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 13:06:27] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 13:06:42] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 13:06:42] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 13:06:49] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 13:06:49] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 13:07:39] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 13:07:39] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 13:07:56] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 13:07:56] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 13:08:06] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 13:08:06] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 13:09:55] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 13:09:55] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 13:10:20] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 13:10:20] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 13:16:46] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 13:16:46] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 13:17:29] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 13:17:29] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 13:19:13] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 13:19:13] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 13:19:24] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 13:19:24] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 13:19:49] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 13:19:49] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 13:24:47] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 13:24:47] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 13:25:11] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 13:25:11] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 13:30:07] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 13:30:07] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 13:31:07] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 13:31:07] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 13:33:40] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 13:33:40] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 13:36:16] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 13:36:16] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 13:37:40] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 13:37:40] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 13:38:23] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 13:38:23] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 14:32:56] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 14:32:56] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 14:33:51] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 14:33:51] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 14:38:08] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 14:38:08] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 14:39:06] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 14:39:06] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 14:41:58] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 14:41:58] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 14:42:45] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 14:42:45] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 14:44:52] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 14:44:52] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-23 15:44:45] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 15:44:45] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-23 15:45:37] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 15:45:37] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-23 15:52:26] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 15:52:26] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-23 15:53:55] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 15:53:55] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-23 15:54:58] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 15:54:58] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-23 16:34:55] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 16:34:55] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-23 16:35:12] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 16:35:12] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-23 16:47:50] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 16:47:50] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-23 16:48:20] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 16:48:20] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-23 16:50:12] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 16:50:12] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-23 16:50:57] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 16:50:57] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-23 16:51:34] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 16:51:34] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-23 16:52:51] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 16:52:51] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-23 17:05:34] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 17:05:34] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-23 17:05:37] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 17:05:37] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-23 17:05:41] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 17:05:41] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-23 17:05:50] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 17:05:50] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-23 17:11:35] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 17:11:35] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-23 19:50:09] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 19:50:09] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-23 19:51:08] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 19:51:08] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-23 20:19:25] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 20:19:25] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-23 20:26:40] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 20:26:40] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-23 20:27:10] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 20:27:10] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-23 20:27:34] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 20:27:34] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-23 20:28:33] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 20:28:33] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-23 20:39:33] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 20:39:33] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-23 20:40:47] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 20:40:47] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-23 21:01:59] [MERC DEBUG] Usuario: 118 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 5
+  - Pedido ID: 32446 | Estado: ANULADO | Tipo: 
+  - Pedido ID: 32447 | Estado: REPROGRAMADO | Tipo: 
+  - Pedido ID: 32448 | Estado: NO RECIBIDO | Tipo: 
+  - Pedido ID: 32449 | Estado: ENTREGADO | Tipo: 
+  - Pedido ID: 32450 | Estado: NO CONTESTA | Tipo: 
+[2026-06-23 21:01:59] [MERC DEBUG] Resultado: NO BLOQUEAR (tiene pendientes)
+[2026-06-23 21:02:04] [MERC DEBUG] Usuario: 118 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 5
+  - Pedido ID: 32446 | Estado: ANULADO | Tipo: 
+  - Pedido ID: 32447 | Estado: REPROGRAMADO | Tipo: 
+  - Pedido ID: 32448 | Estado: NO RECIBIDO | Tipo: 
+  - Pedido ID: 32449 | Estado: ENTREGADO | Tipo: 
+  - Pedido ID: 32450 | Estado: NO CONTESTA | Tipo: 
+[2026-06-23 21:02:04] [MERC DEBUG] Resultado: NO BLOQUEAR (tiene pendientes)
+[2026-06-23 21:02:08] [MERC DEBUG] Usuario: 118 | Tipo: express | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 21:02:08] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada tipo no-emprendedor)
+[2026-06-23 21:03:17] [MERC DEBUG] Usuario: 118 | Tipo: express | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 21:03:17] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada tipo no-emprendedor)
+[2026-06-23 21:03:25] [MERC DEBUG] Usuario: 118 | Tipo: express | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 21:03:25] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada tipo no-emprendedor)
+[2026-06-23 21:03:29] [MERC DEBUG] Usuario: 118 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 5
+  - Pedido ID: 32446 | Estado: ANULADO | Tipo: 
+  - Pedido ID: 32447 | Estado: REPROGRAMADO | Tipo: 
+  - Pedido ID: 32448 | Estado: NO RECIBIDO | Tipo: 
+  - Pedido ID: 32449 | Estado: ENTREGADO | Tipo: 
+  - Pedido ID: 32450 | Estado: NO CONTESTA | Tipo: 
+[2026-06-23 21:03:29] [MERC DEBUG] Resultado: NO BLOQUEAR (tiene pendientes)
+[2026-06-23 21:03:33] [MERC DEBUG] Usuario: 118 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 5
+  - Pedido ID: 32446 | Estado: ANULADO | Tipo: 
+  - Pedido ID: 32447 | Estado: REPROGRAMADO | Tipo: 
+  - Pedido ID: 32448 | Estado: NO RECIBIDO | Tipo: 
+  - Pedido ID: 32449 | Estado: ENTREGADO | Tipo: 
+  - Pedido ID: 32450 | Estado: NO CONTESTA | Tipo: 
+[2026-06-23 21:03:33] [MERC DEBUG] Resultado: NO BLOQUEAR (tiene pendientes)
+[2026-06-23 21:03:42] [MERC DEBUG] Usuario: 118 | Tipo: express | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 21:03:42] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada tipo no-emprendedor)
+[2026-06-23 21:09:37] [MERC DEBUG] Usuario: 118 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 5
+  - Pedido ID: 32446 | Estado: ANULADO | Tipo: 
+  - Pedido ID: 32447 | Estado: REPROGRAMADO | Tipo: 
+  - Pedido ID: 32448 | Estado: NO RECIBIDO | Tipo: 
+  - Pedido ID: 32449 | Estado: ENTREGADO | Tipo: 
+  - Pedido ID: 32450 | Estado: NO CONTESTA | Tipo: 
+[2026-06-23 21:09:37] [MERC DEBUG] Resultado: NO BLOQUEAR (tiene pendientes)
+[2026-06-23 21:09:46] [MERC DEBUG] Usuario: 118 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 5
+  - Pedido ID: 32446 | Estado: ANULADO | Tipo: 
+  - Pedido ID: 32447 | Estado: REPROGRAMADO | Tipo: 
+  - Pedido ID: 32448 | Estado: NO RECIBIDO | Tipo: 
+  - Pedido ID: 32449 | Estado: ENTREGADO | Tipo: 
+  - Pedido ID: 32450 | Estado: NO CONTESTA | Tipo: 
+[2026-06-23 21:09:46] [MERC DEBUG] Resultado: NO BLOQUEAR (tiene pendientes)
+[2026-06-23 21:09:57] [MERC DEBUG] Usuario: 118 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 5
+  - Pedido ID: 32446 | Estado: ANULADO | Tipo: 
+  - Pedido ID: 32447 | Estado: REPROGRAMADO | Tipo: 
+  - Pedido ID: 32448 | Estado: NO RECIBIDO | Tipo: 
+  - Pedido ID: 32449 | Estado: ENTREGADO | Tipo: 
+  - Pedido ID: 32450 | Estado: NO CONTESTA | Tipo: 
+[2026-06-23 21:09:57] [MERC DEBUG] Resultado: NO BLOQUEAR (tiene pendientes)
+[2026-06-23 21:10:21] [MERC DEBUG] Usuario: 118 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 5
+  - Pedido ID: 32446 | Estado: ANULADO | Tipo: 
+  - Pedido ID: 32447 | Estado: REPROGRAMADO | Tipo: 
+  - Pedido ID: 32448 | Estado: NO RECIBIDO | Tipo: 
+  - Pedido ID: 32449 | Estado: ENTREGADO | Tipo: 
+  - Pedido ID: 32450 | Estado: NO CONTESTA | Tipo: 
+[2026-06-23 21:10:21] [MERC DEBUG] Resultado: NO BLOQUEAR (tiene pendientes)
+[2026-06-23 21:10:37] [MERC DEBUG] Usuario: 118 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 5
+  - Pedido ID: 32446 | Estado: ANULADO | Tipo: 
+  - Pedido ID: 32447 | Estado: REPROGRAMADO | Tipo: 
+  - Pedido ID: 32448 | Estado: NO RECIBIDO | Tipo: 
+  - Pedido ID: 32449 | Estado: ENTREGADO | Tipo: 
+  - Pedido ID: 32450 | Estado: NO CONTESTA | Tipo: 
+[2026-06-23 21:10:37] [MERC DEBUG] Resultado: NO BLOQUEAR (tiene pendientes)
+[2026-06-23 21:11:10] [MERC DEBUG] Usuario: 118 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 5
+  - Pedido ID: 32446 | Estado: ANULADO | Tipo: 
+  - Pedido ID: 32447 | Estado: REPROGRAMADO | Tipo: 
+  - Pedido ID: 32448 | Estado: NO RECIBIDO | Tipo: 
+  - Pedido ID: 32449 | Estado: ENTREGADO | Tipo: 
+  - Pedido ID: 32450 | Estado: NO CONTESTA | Tipo: 
+[2026-06-23 21:11:10] [MERC DEBUG] Resultado: NO BLOQUEAR (tiene pendientes)
+[2026-06-23 21:11:35] [MERC DEBUG] Usuario: 118 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 5
+  - Pedido ID: 32446 | Estado: ANULADO | Tipo: 
+  - Pedido ID: 32447 | Estado: REPROGRAMADO | Tipo: 
+  - Pedido ID: 32448 | Estado: NO RECIBIDO | Tipo: 
+  - Pedido ID: 32449 | Estado: ENTREGADO | Tipo: 
+  - Pedido ID: 32450 | Estado: NO CONTESTA | Tipo: 
+[2026-06-23 21:11:35] [MERC DEBUG] Resultado: NO BLOQUEAR (tiene pendientes)
+[2026-06-23 21:11:43] [MERC DEBUG] Usuario: 118 | Tipo: express | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 0
+[2026-06-23 21:11:43] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada tipo no-emprendedor)
+[2026-06-23 21:13:48] [MERC DEBUG] Usuario: 118 | Tipo: normal | ISO: 2026-06-23 | DMY: 23/06/2026 | Encontrados: 5
+  - Pedido ID: 32446 | Estado: ANULADO | Tipo: 
+  - Pedido ID: 32447 | Estado: REPROGRAMADO | Tipo: 
+  - Pedido ID: 32448 | Estado: NO RECIBIDO | Tipo: 
+  - Pedido ID: 32449 | Estado: ENTREGADO | Tipo: 
+  - Pedido ID: 32450 | Estado: NO CONTESTA | Tipo: 
+[2026-06-23 21:13:48] [MERC DEBUG] Resultado: NO BLOQUEAR (tiene pendientes)
+[2026-06-24 00:15:35] [MERC DEBUG] Usuario: 118 | Tipo: normal | ISO: 2026-06-24 | DMY: 24/06/2026 | Encontrados: 0
+[2026-06-24 00:15:35] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-24 00:39:39] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-24 | DMY: 24/06/2026 | Encontrados: 0
+[2026-06-24 00:39:39] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-24 00:40:31] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-24 | DMY: 24/06/2026 | Encontrados: 0
+[2026-06-24 00:40:31] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-24 00:47:01] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-24 | DMY: 24/06/2026 | Encontrados: 0
+[2026-06-24 00:47:01] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-24 00:49:34] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-24 | DMY: 24/06/2026 | Encontrados: 0
+[2026-06-24 00:49:34] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-24 21:39:27] [MERC DEBUG] Usuario: 190 | Tipo: normal | ISO: 2026-06-24 | DMY: 24/06/2026 | Encontrados: 0
+[2026-06-24 21:39:27] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-24 21:39:40] [MERC DEBUG] Usuario: 190 | Tipo: normal | ISO: 2026-06-24 | DMY: 24/06/2026 | Encontrados: 0
+[2026-06-24 21:39:40] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-24 21:39:54] [MERC DEBUG] Usuario: 190 | Tipo: normal | ISO: 2026-06-24 | DMY: 24/06/2026 | Encontrados: 0
+[2026-06-24 21:39:54] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-24 21:40:39] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-24 | DMY: 24/06/2026 | Encontrados: 0
+[2026-06-24 21:40:39] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-24 21:41:22] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-24 | DMY: 24/06/2026 | Encontrados: 0
+[2026-06-24 21:41:22] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-24 21:42:15] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-24 | DMY: 24/06/2026 | Encontrados: 0
+[2026-06-24 21:42:15] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-24 21:43:45] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-24 | DMY: 24/06/2026 | Encontrados: 0
+[2026-06-24 21:43:45] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-24 21:43:55] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-24 | DMY: 24/06/2026 | Encontrados: 0
+[2026-06-24 21:43:55] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-24 21:45:11] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-24 | DMY: 24/06/2026 | Encontrados: 0
+[2026-06-24 21:45:11] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-24 21:45:22] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-24 | DMY: 24/06/2026 | Encontrados: 0
+[2026-06-24 21:45:22] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-24 21:45:34] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-24 | DMY: 24/06/2026 | Encontrados: 0
+[2026-06-24 21:45:34] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-24 23:12:04] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-24 | DMY: 24/06/2026 | Encontrados: 0
+[2026-06-24 23:12:04] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-24 23:14:13] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-24 | DMY: 24/06/2026 | Encontrados: 0
+[2026-06-24 23:14:13] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-24 23:47:13] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-24 | DMY: 24/06/2026 | Encontrados: 0
+[2026-06-24 23:47:13] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-24 23:47:51] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-24 | DMY: 24/06/2026 | Encontrados: 0
+[2026-06-24 23:47:51] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-24 23:53:52] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-24 | DMY: 24/06/2026 | Encontrados: 0
+[2026-06-24 23:53:52] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-24 23:57:32] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-24 | DMY: 24/06/2026 | Encontrados: 0
+[2026-06-24 23:57:32] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-25 00:00:29] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 00:00:29] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-25 00:01:10] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 00:01:10] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-25 00:02:19] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 00:02:19] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-25 00:07:16] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 00:07:16] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-25 00:08:15] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 00:08:15] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-25 00:09:19] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 00:09:19] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-25 00:16:06] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 00:16:06] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-25 00:16:43] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 00:16:43] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-25 00:17:26] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 00:17:26] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-25 00:18:01] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 00:18:01] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-25 00:18:42] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 00:18:42] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-25 00:19:15] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 00:19:15] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-25 00:19:53] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 00:19:53] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-25 00:29:09] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 00:29:09] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-25 00:29:53] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 00:29:53] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-25 00:30:42] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 00:30:42] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-25 00:31:17] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 00:31:17] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-25 12:59:31] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 12:59:31] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-25 13:00:11] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 13:00:11] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-25 13:01:02] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 13:01:02] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-25 13:01:40] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 13:01:40] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-25 13:01:42] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 13:01:42] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-25 13:53:55] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 13:53:55] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-25 13:54:56] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 13:54:56] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-25 13:55:42] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 13:55:42] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-25 14:47:24] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 14:47:24] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-25 14:49:49] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 14:49:49] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-25 14:50:29] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 14:50:29] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-25 14:50:43] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 14:50:43] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-25 14:51:25] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 14:51:25] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-25 14:52:13] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 14:52:13] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-25 14:52:58] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 14:52:58] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-25 14:53:38] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 14:53:38] [MERC DEBUG] Resultado: NO BLOQUEAR (antes de hora 10:00)
+[2026-06-25 15:05:36] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 15:05:36] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-25 15:06:20] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 15:06:20] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-25 15:07:02] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 15:07:02] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-25 15:33:47] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 15:33:47] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-25 15:34:28] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 15:34:28] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-25 15:35:06] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 15:35:06] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-25 15:35:46] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 15:35:46] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-25 20:28:07] [MERC DEBUG] Usuario: 190 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 20:28:07] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-25 20:29:05] [MERC DEBUG] Usuario: 190 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 20:29:05] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-25 20:29:57] [MERC DEBUG] Usuario: 190 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 20:29:57] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-25 20:30:44] [MERC DEBUG] Usuario: 190 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 20:30:44] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-25 20:31:32] [MERC DEBUG] Usuario: 190 | Tipo: normal | ISO: 2026-06-25 | DMY: 25/06/2026 | Encontrados: 0
+[2026-06-25 20:31:32] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
