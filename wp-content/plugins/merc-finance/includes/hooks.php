@@ -99,22 +99,14 @@ add_action('updated_post_meta', function($meta_id, $post_id, $meta_key, $meta_va
     if ( defined('MERC_DEBUG') && MERC_DEBUG ) {
         error_log(sprintf('MERC_DEBUG_META_UPDATE - meta_id=%s post_id=%s meta_key=%s meta_value=%s', $meta_id, $post_id, $meta_key, is_scalar($meta_value) ? $meta_value : json_encode($meta_value)));
     }
+
     if ( $meta_key !== 'wpcargo_status' ) {
         if ( defined('MERC_DEBUG') && MERC_DEBUG ) {
             error_log('MERC_DEBUG_META_UPDATE - Ignorado (no es wpcargo_status)');
         }
         return;
     }
-    // Intentar crear penalidad al actualizar el estado
-    if ( defined('MERC_DEBUG') && MERC_DEBUG ) {
-        error_log(sprintf('MERC_DEBUG_META_UPDATE - Llamando a merc_maybe_create_penalty_for_shipment para post_id=%s', $post_id));
-    }
-    merc_maybe_create_penalty_for_shipment($post_id);
-    
-    // Detectar cambio a "NO RECIBIDO" y registrar cargo automáticamente
-    if ( defined('MERC_DEBUG') && MERC_DEBUG ) {
-        error_log(sprintf('MERC_DEBUG_META_UPDATE - Verificando si es NO RECIBIDO para post_id=%s', $post_id));
-    }
+
     merc_maybe_create_penalty_for_shipment($post_id);
     merc_auto_registrar_cargo_no_recibido($post_id, $meta_value);
     merc_sync_service_cost_by_status( $post_id );

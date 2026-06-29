@@ -554,6 +554,17 @@ function merc_auto_registrar_cargo_no_recibido($post_id, $nuevo_estado) {
     // Guardar en user_meta (merc_liquidations)
     $history = get_user_meta($customer_id, 'merc_liquidations', true);
     if ( ! is_array($history) ) $history = array();
+    foreach ( $history as $entry ) {
+        if (
+            isset( $entry['shipment_id'], $entry['tipo_liquidacion'] ) &&
+            intval( $entry['shipment_id'] ) === intval( $post_id ) &&
+            $entry['tipo_liquidacion'] === 'no_recibido_charge'
+        ) {
+            error_log(sprintf('MERC_NO_RECIBIDO_DEBUG - shipment=%s ya existe en historial, no duplicar', $post_id));
+            update_post_meta($post_id, 'wpcargo_cargo_no_recibido', 'si');
+            return false;
+        }
+    }
     $history[] = $liquidation;
     update_user_meta($customer_id, 'merc_liquidations', $history);
     

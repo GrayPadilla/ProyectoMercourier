@@ -548,7 +548,7 @@ class MERC_Table_UI {
                                 '<strong>Total ingresado: S/. <span id="nr-total-ingresado-admin">0.00</span></strong><br>' +
                                 '<span id="nr-missing-amount-admin" style="color: #d9534f; font-weight: 600;">Falta S/. 0.00</span>' +
                             '</div>' +
-                            '<div id="nr-payment-note-admin" style="margin-top: 8px; font-size: 13px; color: #555;">El botón se mantendrá habilitado. El pago puede quedar incompleto y el estado se actualizará igual.</div>' +
+                            '<div id="nr-payment-note-admin" style="margin-top: 8px; font-size: 13px; color: #555;">El botón se deshabilita si el monto ingresado supera lo requerido.</div>' +
                         '</div>' +
                         '<input type="hidden" id="nr-pod_payment_methods-admin" value="[]">' +
                         '<input type="hidden" id="nr-wpcargo_total_cobrar-admin" value="0.00">' +
@@ -595,6 +595,7 @@ class MERC_Table_UI {
                 const $totalIngresado = $modal.find('#nr-total-ingresado-admin');
                 const $missingAmount = $modal.find('#nr-missing-amount-admin');
                 const $podPaymentMethods = $modal.find('#nr-pod_payment_methods-admin');
+                const $confirmBtn = $modal.find('.merc-modal-btn-confirmar');
 
                 function formatAmount(value) {
                     return parseFloat(value || 0).toFixed(2);
@@ -608,12 +609,20 @@ class MERC_Table_UI {
                         total += monto;
                     });
                     $totalIngresado.text(formatAmount(total));
-                    const faltante = parseFloat(amountToReceive) - total;
-                    if (faltante <= 0) {
-                        $missingAmount.text(`No falta monto (${formatAmount(Math.abs(faltante))} de más)`).css('color', '#28a745');
+
+                    const diferencia = Math.round((parseFloat(amountToReceive) - total) * 100) / 100;
+
+                    if (diferencia > 0) {
+                        $missingAmount.text(`Falta S/. ${formatAmount(diferencia)}`).css('color', '#d9534f');
+                        $confirmBtn.prop('disabled', false).css({ opacity: 1, cursor: 'pointer' });
+                    } else if (diferencia === 0) {
+                        $missingAmount.text('Completo').css('color', '#007bff');
+                        $confirmBtn.prop('disabled', false).css({ opacity: 1, cursor: 'pointer' });
                     } else {
-                        $missingAmount.text(`Falta S/. ${formatAmount(faltante)}`).css('color', '#d9534f');
+                        $missingAmount.text(`No falta monto (${formatAmount(Math.abs(diferencia))} de más)`).css('color', '#d9534f');
+                        $confirmBtn.prop('disabled', true).css({ opacity: 0.55, cursor: 'not-allowed' });
                     }
+
                     updatePaymentMethodsInput();
                 }
 
@@ -879,12 +888,19 @@ class MERC_Table_UI {
 
                 $modal.find('.merc-modal-btn-confirmar').off('click').on('click', function() {
                     updatePaymentSummary();
+
+                    if ( $confirmBtn.prop('disabled') ) {
+                        return;
+                    }
+
                     const observaciones = $modal.find('#nr-obs-admin').val().trim();
                     const podPaymentMethods = $podPaymentMethods.val();
                     const wpcargoTotalCobrar = $('#nr-wpcargo_total_cobrar-admin').val();
+
                     $modal.remove();
                     console.log('✅ Confirmado NO RECIBIDO - Actualizando estado del pedido #' + numero);
                     $selectElement.prop('disabled', true);
+
                     $.ajax({
                         type: 'POST', url: AJAX_URL,
                         data: {
@@ -898,13 +914,8 @@ class MERC_Table_UI {
                                 console.log('✅ Estado actualizado exitosamente');
                                 location.reload();
                             } else {
-                                alert('❌ Error: ' + (response.data && response.data.message ? response.data.message : 'No se pudo actualizar el estado'));
-                                $selectElement.prop('disabled', false).val(estadoAnterior);
+                                alert('❌ Error: ' + (response.data?.message || 'Error desconocido'));
                             }
-                        },
-                        error: function(xhr, status, error) {
-                            alert('❌ Error de conexión: ' + error);
-                            $selectElement.prop('disabled', false).val(estadoAnterior);
                         }
                     });
                 });

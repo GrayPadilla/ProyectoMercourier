@@ -1,0 +1,705 @@
+[27-Jun-2026 00:00:03 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[27-Jun-2026 00:00:03 UTC] 🔵 [FILTER] Usuario actual: 109
+[27-Jun-2026 00:00:03 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]}}
+[27-Jun-2026 00:00:03 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[27-Jun-2026 00:00:03 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-06-26
+[27-Jun-2026 00:00:03 UTC] 🔵 [FILTER] Fecha desde: '2026-06-26' | Fecha hasta: '2026-06-26'
+[27-Jun-2026 00:00:03 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[27-Jun-2026 00:00:03 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-06-26', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-06-26', '%Y-%m-%d'))
+        
+[27-Jun-2026 00:00:03 UTC] 🔵 [FILTER] IDs encontrados por fecha: 24
+[27-Jun-2026 00:00:03 UTC] 🔵 [FILTER] Primeros 10 IDs: 32822, 32823, 32824, 32825, 32826, 32827, 32846, 32847, 32848, 32849
+[27-Jun-2026 00:00:03 UTC] 🔵 [FILTER] post__in no existe, creando nuevo
+[27-Jun-2026 00:00:03 UTC] 🔵 [FILTER] post_status cambiado a array para incluir estados normales (EXCLUYENDO trash)
+[27-Jun-2026 00:00:03 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":["publish","draft","pending","private"],"posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"post__in":["32822","32823","32824","32825","32826","32827","32846","32847","32848","32849","32850","32851","32863","32864","32867","32868","32871","32872","32873","32874","32875","32876","32877","32878"]}
+[27-Jun-2026 00:02:18 UTC] MERC_DEBUG_ENTRY - merc_maybe_create_penalty_for_shipment post_id=32878 post_type=wpcargo_shipment
+[27-Jun-2026 00:02:18 UTC] MERC_DEBUG_STATE - post_id=32878 estado_raw=PENDIENTE
+[27-Jun-2026 00:02:18 UTC] MERC_DEBUG_ABORT - post_id=32878 estado no es NO RECOGIDO, abortando
+[27-Jun-2026 00:02:18 UTC] MERC_DEBUG_ENTRY - merc_maybe_create_penalty_for_shipment post_id=32878 post_type=wpcargo_shipment
+[27-Jun-2026 00:02:18 UTC] MERC_DEBUG_STATE - post_id=32878 estado_raw=PENDIENTE
+[27-Jun-2026 00:02:18 UTC] MERC_DEBUG_ABORT - post_id=32878 estado no es NO RECOGIDO, abortando
+[27-Jun-2026 00:02:18 UTC] MERC_NO_RECIBIDO_DEBUG - post_id=32878 estado=PENDIENTE NO es NO RECIBIDO
+[27-Jun-2026 00:02:22 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[27-Jun-2026 00:02:22 UTC] 🔵 [FILTER] Usuario actual: 109
+[27-Jun-2026 00:02:22 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]}}
+[27-Jun-2026 00:02:22 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[27-Jun-2026 00:02:22 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-06-26
+[27-Jun-2026 00:02:22 UTC] 🔵 [FILTER] Fecha desde: '2026-06-26' | Fecha hasta: '2026-06-26'
+[27-Jun-2026 00:02:22 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[27-Jun-2026 00:02:22 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-06-26', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-06-26', '%Y-%m-%d'))
+        
+[27-Jun-2026 00:02:22 UTC] 🔵 [FILTER] IDs encontrados por fecha: 24
+[27-Jun-2026 00:02:22 UTC] 🔵 [FILTER] Primeros 10 IDs: 32822, 32823, 32824, 32825, 32826, 32827, 32846, 32847, 32848, 32849
+[27-Jun-2026 00:02:22 UTC] 🔵 [FILTER] post__in no existe, creando nuevo
+[27-Jun-2026 00:02:22 UTC] 🔵 [FILTER] post_status cambiado a array para incluir estados normales (EXCLUYENDO trash)
+[27-Jun-2026 00:02:22 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":["publish","draft","pending","private"],"posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"post__in":["32822","32823","32824","32825","32826","32827","32846","32847","32848","32849","32850","32851","32863","32864","32867","32868","32871","32872","32873","32874","32875","32876","32877","32878"]}
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_ENTRY - merc_maybe_create_penalty_for_shipment post_id=32878 post_type=wpcargo_shipment
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_STATE - post_id=32878 estado_raw=NO RECOGIDO
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_CUSTOMER - post_id=32878 customer_id=496
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_X8 sid=32878
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_X9 sid=32878 tipo=normal
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_X8 sid=32877
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_X9 sid=32877 tipo=normal
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_X8 sid=32876
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_X9 sid=32876 tipo=normal
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_X8 sid=32873
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_X9 sid=32873 tipo=normal
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_X8 sid=32058
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_X9 sid=32058 tipo=full_fitment
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_X8 sid=29741
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_X9 sid=29741 tipo=normal
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_X8 sid=29740
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_X9 sid=29740 tipo=normal
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_TYPE_FILTER - customer=496 total_found=7 normal_only=6
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_NORMAL_POSTS = [32878,32877,32876,32873,29741,29740]
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_PICKUPS - customer=496 normal_today_count=4
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_SHIPMENTS_TODAY = [32878,32877,32876,32873]
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_Y1
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_Y2 sid=32878 estado=NO RECOGIDO
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_Y2 sid=32877 estado=NO RECOGIDO
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_Y2 sid=32876 estado=NO RECOGIDO
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_Y2 sid=32873 estado=NO RECOGIDO
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_Y4
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_SALI_DEL_FOREACH
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_B
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_PASO_1
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_PASO_2
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_ENTRY - merc_maybe_create_penalty_for_shipment post_id=32878 post_type=wpcargo_shipment
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_STATE - post_id=32878 estado_raw=NO RECOGIDO
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_CUSTOMER - post_id=32878 customer_id=496
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_X8 sid=32878
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_X9 sid=32878 tipo=normal
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_X8 sid=32877
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_X9 sid=32877 tipo=normal
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_X8 sid=32876
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_X9 sid=32876 tipo=normal
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_X8 sid=32873
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_X9 sid=32873 tipo=normal
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_X8 sid=32058
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_X9 sid=32058 tipo=full_fitment
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_X8 sid=29741
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_X9 sid=29741 tipo=normal
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_X8 sid=29740
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_X9 sid=29740 tipo=normal
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_TYPE_FILTER - customer=496 total_found=7 normal_only=6
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_NORMAL_POSTS = [32878,32877,32876,32873,29741,29740]
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_PICKUPS - customer=496 normal_today_count=4
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_SHIPMENTS_TODAY = [32878,32877,32876,32873]
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_Y1
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_Y2 sid=32878 estado=NO RECOGIDO
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_Y2 sid=32877 estado=NO RECOGIDO
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_Y2 sid=32876 estado=NO RECOGIDO
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_Y2 sid=32873 estado=NO RECOGIDO
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_Y4
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_SALI_DEL_FOREACH
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_B
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_PASO_1
+[27-Jun-2026 00:02:28 UTC] MERC_DEBUG_PASO_2
+[27-Jun-2026 00:02:28 UTC] MERC_NO_RECIBIDO_DEBUG - post_id=32878 estado=NO RECOGIDO NO es NO RECIBIDO
+[27-Jun-2026 00:02:32 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[27-Jun-2026 00:02:32 UTC] 🔵 [FILTER] Usuario actual: 109
+[27-Jun-2026 00:02:32 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]}}
+[27-Jun-2026 00:02:32 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[27-Jun-2026 00:02:32 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-06-26
+[27-Jun-2026 00:02:32 UTC] 🔵 [FILTER] Fecha desde: '2026-06-26' | Fecha hasta: '2026-06-26'
+[27-Jun-2026 00:02:32 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[27-Jun-2026 00:02:32 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-06-26', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-06-26', '%Y-%m-%d'))
+        
+[27-Jun-2026 00:02:32 UTC] 🔵 [FILTER] IDs encontrados por fecha: 24
+[27-Jun-2026 00:02:32 UTC] 🔵 [FILTER] Primeros 10 IDs: 32822, 32823, 32824, 32825, 32826, 32827, 32846, 32847, 32848, 32849
+[27-Jun-2026 00:02:32 UTC] 🔵 [FILTER] post__in no existe, creando nuevo
+[27-Jun-2026 00:02:32 UTC] 🔵 [FILTER] post_status cambiado a array para incluir estados normales (EXCLUYENDO trash)
+[27-Jun-2026 00:02:32 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":["publish","draft","pending","private"],"posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"post__in":["32822","32823","32824","32825","32826","32827","32846","32847","32848","32849","32850","32851","32863","32864","32867","32868","32871","32872","32873","32874","32875","32876","32877","32878"]}
+[27-Jun-2026 00:03:11 UTC] PHP Warning:  Undefined variable $tipo_vista in /var/www/html/wp-content/themes/blocksy-child/functions.php on line 6602
+[27-Jun-2026 00:03:11 UTC] MERC_ADMIN_RESUMEN - date_query="AND EXISTS(
+            SELECT 1 FROM wp_postmeta pm_pickup 
+            WHERE pm_pickup.post_id = p.ID 
+            AND pm_pickup.meta_key = 'wpcargo_pickup_date_picker'
+            AND (
+                STR_TO_DATE(pm_pickup.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-06-26', '%Y-%m-%d')
+                AND STR_TO_DATE(pm_pickup.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-06-26', '%Y-%m-%d')
+            )
+        )"
+[27-Jun-2026 00:03:11 UTC] MERC_ADMIN_RESUMEN - shipments_count=14
+[27-Jun-2026 00:03:11 UTC] ═══════════════════════════════════════════════════════════
+[27-Jun-2026 00:03:11 UTC] 🔍 MERC_ADMIN_DEBUG - INICIANDO CÁLCULOS DEL PANEL
+[27-Jun-2026 00:03:11 UTC] ═══════════════════════════════════════════════════════════
+[27-Jun-2026 00:03:11 UTC] 
+[27-Jun-2026 00:03:11 UTC] ────────────────────────────────────────────────────────
+[27-Jun-2026 00:03:11 UTC] 📦 SHIPMENT #32846
+[27-Jun-2026 00:03:11 UTC]    Costo Envío: S/. 10.00
+[27-Jun-2026 00:03:11 UTC]    Costo Producto: S/. 30.00
+[27-Jun-2026 00:03:11 UTC]    Estado Motorizado: liquidado
+[27-Jun-2026 00:03:11 UTC]    Estado Remitente (liquidado): VACÍO
+[27-Jun-2026 00:03:11 UTC]    Quién Paga: remitente
+[27-Jun-2026 00:03:11 UTC]    Estado Entrega: ENTREGADO
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A TOTAL ENTREGADOS: S/. 30.00 (producto=30.00, Total: S/. 30.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A INGRESOS ENVÍOS: S/. 10.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    Cliente 118 - ¿Liquidación verificada? SÍ
+[27-Jun-2026 00:03:11 UTC]    GET_PAYMENT_TOTALS: efectivo=S/. 10.00, pago_merc=S/. 10.00, pos=S/. 9.50, pago_marca=S/. 10.00, total=S/. 39.50
+[27-Jun-2026 00:03:11 UTC]    Efectivo Total acumulado: S/. 10.00
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A RECAUDADO_MERC: S/. 10.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A RECAUDADO_MARCA: S/. 10.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO: S/. 9.50 (Total: S/. 9.50)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO_BRUTO: S/. 10.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO_BRUTO_HIST: S/. 10.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC] 
+[27-Jun-2026 00:03:11 UTC] ────────────────────────────────────────────────────────
+[27-Jun-2026 00:03:11 UTC] 📦 SHIPMENT #32847
+[27-Jun-2026 00:03:11 UTC]    Costo Envío: S/. 0.00
+[27-Jun-2026 00:03:11 UTC]    Costo Producto: S/. 30.00
+[27-Jun-2026 00:03:11 UTC]    Estado Motorizado: pendiente
+[27-Jun-2026 00:03:11 UTC]    Estado Remitente (liquidado): VACÍO
+[27-Jun-2026 00:03:11 UTC]    Quién Paga: remitente
+[27-Jun-2026 00:03:11 UTC]    Estado Entrega: REPROGRAMADO
+[27-Jun-2026 00:03:11 UTC]    ❌ NO ENTREGADO aún (estado: REPROGRAMADO)
+[27-Jun-2026 00:03:11 UTC]    ❌ NO SUMADO a ingresos envíos (quien_paga=remitente, estado_remitente=VACÍO)
+[27-Jun-2026 00:03:11 UTC]    Cliente 118 - ¿Liquidación verificada? SÍ
+[27-Jun-2026 00:03:11 UTC]    GET_PAYMENT_TOTALS: efectivo=S/. 0.00, pago_merc=S/. 0.00, pos=S/. 0.00, pago_marca=S/. 0.00, total=S/. 0.00
+[27-Jun-2026 00:03:11 UTC]    Efectivo Total acumulado: S/. 10.00
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A RECAUDADO_MERC: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A RECAUDADO_MARCA: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO: S/. 0.00 (Total: S/. 9.50)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO_BRUTO: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO_BRUTO_HIST: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC] 
+[27-Jun-2026 00:03:11 UTC] ────────────────────────────────────────────────────────
+[27-Jun-2026 00:03:11 UTC] 📦 SHIPMENT #32848
+[27-Jun-2026 00:03:11 UTC]    Costo Envío: S/. 0.00
+[27-Jun-2026 00:03:11 UTC]    Costo Producto: S/. 32.00
+[27-Jun-2026 00:03:11 UTC]    Estado Motorizado: pendiente
+[27-Jun-2026 00:03:11 UTC]    Estado Remitente (liquidado): VACÍO
+[27-Jun-2026 00:03:11 UTC]    Quién Paga: remitente
+[27-Jun-2026 00:03:11 UTC]    Estado Entrega: ANULADO
+[27-Jun-2026 00:03:11 UTC]    ❌ NO ENTREGADO aún (estado: ANULADO)
+[27-Jun-2026 00:03:11 UTC]    ❌ NO SUMADO a ingresos envíos (quien_paga=remitente, estado_remitente=VACÍO)
+[27-Jun-2026 00:03:11 UTC]    Cliente 118 - ¿Liquidación verificada? SÍ
+[27-Jun-2026 00:03:11 UTC]    GET_PAYMENT_TOTALS: efectivo=S/. 0.00, pago_merc=S/. 0.00, pos=S/. 0.00, pago_marca=S/. 0.00, total=S/. 0.00
+[27-Jun-2026 00:03:11 UTC]    Efectivo Total acumulado: S/. 10.00
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A RECAUDADO_MERC: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A RECAUDADO_MARCA: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO: S/. 0.00 (Total: S/. 9.50)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO_BRUTO: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO_BRUTO_HIST: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC] 
+[27-Jun-2026 00:03:11 UTC] ────────────────────────────────────────────────────────
+[27-Jun-2026 00:03:11 UTC] 📦 SHIPMENT #32849
+[27-Jun-2026 00:03:11 UTC]    Costo Envío: S/. 8.00
+[27-Jun-2026 00:03:11 UTC]    Costo Producto: S/. 32.00
+[27-Jun-2026 00:03:11 UTC]    Estado Motorizado: pendiente
+[27-Jun-2026 00:03:11 UTC]    Estado Remitente (liquidado): VACÍO
+[27-Jun-2026 00:03:11 UTC]    Quién Paga: remitente
+[27-Jun-2026 00:03:11 UTC]    Estado Entrega: NO CONTESTA
+[27-Jun-2026 00:03:11 UTC]    ❌ NO ENTREGADO aún (estado: NO CONTESTA)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A INGRESOS ENVÍOS: S/. 8.00 (Total: S/. 18.00)
+[27-Jun-2026 00:03:11 UTC]    Cliente 118 - ¿Liquidación verificada? SÍ
+[27-Jun-2026 00:03:11 UTC]    GET_PAYMENT_TOTALS: efectivo=S/. 0.00, pago_merc=S/. 0.00, pos=S/. 0.00, pago_marca=S/. 0.00, total=S/. 0.00
+[27-Jun-2026 00:03:11 UTC]    Efectivo Total acumulado: S/. 10.00
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A RECAUDADO_MERC: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A RECAUDADO_MARCA: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO: S/. 0.00 (Total: S/. 9.50)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO_BRUTO: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO_BRUTO_HIST: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC] 
+[27-Jun-2026 00:03:11 UTC] ────────────────────────────────────────────────────────
+[27-Jun-2026 00:03:11 UTC] 📦 SHIPMENT #32850
+[27-Jun-2026 00:03:11 UTC]    Costo Envío: S/. 10.00
+[27-Jun-2026 00:03:11 UTC]    Costo Producto: S/. 30.00
+[27-Jun-2026 00:03:11 UTC]    Estado Motorizado: liquidado
+[27-Jun-2026 00:03:11 UTC]    Estado Remitente (liquidado): pending_liq_no_recibido_6a3e98fdc41ff
+[27-Jun-2026 00:03:11 UTC]    Quién Paga: remitente
+[27-Jun-2026 00:03:11 UTC]    Estado Entrega: NO RECIBIDO
+[27-Jun-2026 00:03:11 UTC]    ❌ NO ENTREGADO aún (estado: NO RECIBIDO)
+[27-Jun-2026 00:03:11 UTC]    ❌ NO SUMADO a ingresos envíos (quien_paga=remitente, estado_remitente=pending_liq_no_recibido_6a3e98fdc41ff)
+[27-Jun-2026 00:03:11 UTC]    Cliente 118 - ¿Liquidación verificada? NO
+[27-Jun-2026 00:03:11 UTC]    TOTALES ACUMULADOS: pago_merc=S/. 10.00, pos=S/. 9.50, pago_marca=S/. 10.00, servicio=S/. 10.00
+[27-Jun-2026 00:03:11 UTC]    GET_PAYMENT_TOTALS: efectivo=S/. 10.00, pago_merc=S/. 10.00, pos=S/. 9.50, pago_marca=S/. 10.00, total=S/. 39.50
+[27-Jun-2026 00:03:11 UTC]    Efectivo Total acumulado: S/. 20.00
+[27-Jun-2026 00:03:11 UTC]    ❌ NO SUMADO a recaudados (estado_remitente no vacío: pending_liq_no_recibido_6a3e98fdc41ff)
+[27-Jun-2026 00:03:11 UTC]    ❌ POS NO SUMADO (estado_remitente no vacío)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO_BRUTO_HIST: S/. 10.00 (Total: S/. 20.00)
+[27-Jun-2026 00:03:11 UTC] 
+[27-Jun-2026 00:03:11 UTC] ────────────────────────────────────────────────────────
+[27-Jun-2026 00:03:11 UTC] 📦 SHIPMENT #32851
+[27-Jun-2026 00:03:11 UTC]    Costo Envío: S/. 10.00
+[27-Jun-2026 00:03:11 UTC]    Costo Producto: S/. 30.00
+[27-Jun-2026 00:03:11 UTC]    Estado Motorizado: pendiente
+[27-Jun-2026 00:03:11 UTC]    Estado Remitente (liquidado): pending_liq_no_recibido_6a3e992037a0c
+[27-Jun-2026 00:03:11 UTC]    Quién Paga: remitente
+[27-Jun-2026 00:03:11 UTC]    Estado Entrega: NO RECIBIDO
+[27-Jun-2026 00:03:11 UTC]    ❌ NO ENTREGADO aún (estado: NO RECIBIDO)
+[27-Jun-2026 00:03:11 UTC]    ❌ NO SUMADO a ingresos envíos (quien_paga=remitente, estado_remitente=pending_liq_no_recibido_6a3e992037a0c)
+[27-Jun-2026 00:03:11 UTC]    Cliente 118 - ¿Liquidación verificada? NO
+[27-Jun-2026 00:03:11 UTC]    TOTALES ACUMULADOS: pago_merc=S/. 10.00, pos=S/. 9.50, pago_marca=S/. 20.00, servicio=S/. 20.00
+[27-Jun-2026 00:03:11 UTC]    GET_PAYMENT_TOTALS: efectivo=S/. 10.00, pago_merc=S/. 0.00, pos=S/. 0.00, pago_marca=S/. 10.00, total=S/. 20.00
+[27-Jun-2026 00:03:11 UTC]    Efectivo Total acumulado: S/. 30.00
+[27-Jun-2026 00:03:11 UTC]    ❌ NO SUMADO a recaudados (estado_remitente no vacío: pending_liq_no_recibido_6a3e992037a0c)
+[27-Jun-2026 00:03:11 UTC]    ❌ POS NO SUMADO (estado_remitente no vacío)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO_BRUTO_HIST: S/. 0.00 (Total: S/. 20.00)
+[27-Jun-2026 00:03:11 UTC] 
+[27-Jun-2026 00:03:11 UTC] ────────────────────────────────────────────────────────
+[27-Jun-2026 00:03:11 UTC] 📦 SHIPMENT #32871
+[27-Jun-2026 00:03:11 UTC]    Costo Envío: S/. 10.00
+[27-Jun-2026 00:03:11 UTC]    Costo Producto: S/. 30.00
+[27-Jun-2026 00:03:11 UTC]    Estado Motorizado: pendiente
+[27-Jun-2026 00:03:11 UTC]    Estado Remitente (liquidado): VACÍO
+[27-Jun-2026 00:03:11 UTC]    Quién Paga: remitente
+[27-Jun-2026 00:03:11 UTC]    Estado Entrega: NO RECOGIDO
+[27-Jun-2026 00:03:11 UTC]    ❌ NO ENTREGADO aún (estado: NO RECOGIDO)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A INGRESOS ENVÍOS: S/. 10.00 (Total: S/. 28.00)
+[27-Jun-2026 00:03:11 UTC]    Cliente 478 - ¿Liquidación verificada? NO
+[27-Jun-2026 00:03:11 UTC]    TOTALES ACUMULADOS: pago_merc=S/. 0.00, pos=S/. 0.00, pago_marca=S/. 0.00, servicio=S/. 10.00
+[27-Jun-2026 00:03:11 UTC]    GET_PAYMENT_TOTALS: efectivo=S/. 0.00, pago_merc=S/. 0.00, pos=S/. 0.00, pago_marca=S/. 0.00, total=S/. 0.00
+[27-Jun-2026 00:03:11 UTC]    Efectivo Total acumulado: S/. 30.00
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A RECAUDADO_MERC: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A RECAUDADO_MARCA: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO: S/. 0.00 (Total: S/. 9.50)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO_BRUTO: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO_BRUTO_HIST: S/. 0.00 (Total: S/. 20.00)
+[27-Jun-2026 00:03:11 UTC] 
+[27-Jun-2026 00:03:11 UTC] ────────────────────────────────────────────────────────
+[27-Jun-2026 00:03:11 UTC] 📦 SHIPMENT #32872
+[27-Jun-2026 00:03:11 UTC]    Costo Envío: S/. 10.00
+[27-Jun-2026 00:03:11 UTC]    Costo Producto: S/. 30.00
+[27-Jun-2026 00:03:11 UTC]    Estado Motorizado: pendiente
+[27-Jun-2026 00:03:11 UTC]    Estado Remitente (liquidado): VACÍO
+[27-Jun-2026 00:03:11 UTC]    Quién Paga: remitente
+[27-Jun-2026 00:03:11 UTC]    Estado Entrega: NO RECOGIDO
+[27-Jun-2026 00:03:11 UTC]    ❌ NO ENTREGADO aún (estado: NO RECOGIDO)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A INGRESOS ENVÍOS: S/. 10.00 (Total: S/. 38.00)
+[27-Jun-2026 00:03:11 UTC]    Cliente 478 - ¿Liquidación verificada? NO
+[27-Jun-2026 00:03:11 UTC]    TOTALES ACUMULADOS: pago_merc=S/. 0.00, pos=S/. 0.00, pago_marca=S/. 0.00, servicio=S/. 20.00
+[27-Jun-2026 00:03:11 UTC]    GET_PAYMENT_TOTALS: efectivo=S/. 0.00, pago_merc=S/. 0.00, pos=S/. 0.00, pago_marca=S/. 0.00, total=S/. 0.00
+[27-Jun-2026 00:03:11 UTC]    Efectivo Total acumulado: S/. 30.00
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A RECAUDADO_MERC: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A RECAUDADO_MARCA: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO: S/. 0.00 (Total: S/. 9.50)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO_BRUTO: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO_BRUTO_HIST: S/. 0.00 (Total: S/. 20.00)
+[27-Jun-2026 00:03:11 UTC] 
+[27-Jun-2026 00:03:11 UTC] ────────────────────────────────────────────────────────
+[27-Jun-2026 00:03:11 UTC] 📦 SHIPMENT #32873
+[27-Jun-2026 00:03:11 UTC]    Costo Envío: S/. 10.00
+[27-Jun-2026 00:03:11 UTC]    Costo Producto: S/. 30.00
+[27-Jun-2026 00:03:11 UTC]    Estado Motorizado: pendiente
+[27-Jun-2026 00:03:11 UTC]    Estado Remitente (liquidado): VACÍO
+[27-Jun-2026 00:03:11 UTC]    Quién Paga: remitente
+[27-Jun-2026 00:03:11 UTC]    Estado Entrega: NO RECOGIDO
+[27-Jun-2026 00:03:11 UTC]    ❌ NO ENTREGADO aún (estado: NO RECOGIDO)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A INGRESOS ENVÍOS: S/. 10.00 (Total: S/. 48.00)
+[27-Jun-2026 00:03:11 UTC]    Cliente 496 - ¿Liquidación verificada? NO
+[27-Jun-2026 00:03:11 UTC]    TOTALES ACUMULADOS: pago_merc=S/. 0.00, pos=S/. 0.00, pago_marca=S/. 0.00, servicio=S/. 10.00
+[27-Jun-2026 00:03:11 UTC]    GET_PAYMENT_TOTALS: efectivo=S/. 0.00, pago_merc=S/. 0.00, pos=S/. 0.00, pago_marca=S/. 0.00, total=S/. 0.00
+[27-Jun-2026 00:03:11 UTC]    Efectivo Total acumulado: S/. 30.00
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A RECAUDADO_MERC: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A RECAUDADO_MARCA: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO: S/. 0.00 (Total: S/. 9.50)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO_BRUTO: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO_BRUTO_HIST: S/. 0.00 (Total: S/. 20.00)
+[27-Jun-2026 00:03:11 UTC] 
+[27-Jun-2026 00:03:11 UTC] ────────────────────────────────────────────────────────
+[27-Jun-2026 00:03:11 UTC] 📦 SHIPMENT #32874
+[27-Jun-2026 00:03:11 UTC]    Costo Envío: S/. 10.00
+[27-Jun-2026 00:03:11 UTC]    Costo Producto: S/. 30.00
+[27-Jun-2026 00:03:11 UTC]    Estado Motorizado: pendiente
+[27-Jun-2026 00:03:11 UTC]    Estado Remitente (liquidado): VACÍO
+[27-Jun-2026 00:03:11 UTC]    Quién Paga: remitente
+[27-Jun-2026 00:03:11 UTC]    Estado Entrega: NO RECOGIDO
+[27-Jun-2026 00:03:11 UTC]    ❌ NO ENTREGADO aún (estado: NO RECOGIDO)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A INGRESOS ENVÍOS: S/. 10.00 (Total: S/. 58.00)
+[27-Jun-2026 00:03:11 UTC]    Cliente 395 - ¿Liquidación verificada? NO
+[27-Jun-2026 00:03:11 UTC]    TOTALES ACUMULADOS: pago_merc=S/. 0.00, pos=S/. 0.00, pago_marca=S/. 0.00, servicio=S/. 10.00
+[27-Jun-2026 00:03:11 UTC]    GET_PAYMENT_TOTALS: efectivo=S/. 0.00, pago_merc=S/. 0.00, pos=S/. 0.00, pago_marca=S/. 0.00, total=S/. 0.00
+[27-Jun-2026 00:03:11 UTC]    Efectivo Total acumulado: S/. 30.00
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A RECAUDADO_MERC: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A RECAUDADO_MARCA: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO: S/. 0.00 (Total: S/. 9.50)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO_BRUTO: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO_BRUTO_HIST: S/. 0.00 (Total: S/. 20.00)
+[27-Jun-2026 00:03:11 UTC] 
+[27-Jun-2026 00:03:11 UTC] ────────────────────────────────────────────────────────
+[27-Jun-2026 00:03:11 UTC] 📦 SHIPMENT #32875
+[27-Jun-2026 00:03:11 UTC]    Costo Envío: S/. 10.00
+[27-Jun-2026 00:03:11 UTC]    Costo Producto: S/. 30.00
+[27-Jun-2026 00:03:11 UTC]    Estado Motorizado: pendiente
+[27-Jun-2026 00:03:11 UTC]    Estado Remitente (liquidado): VACÍO
+[27-Jun-2026 00:03:11 UTC]    Quién Paga: remitente
+[27-Jun-2026 00:03:11 UTC]    Estado Entrega: NO RECOGIDO
+[27-Jun-2026 00:03:11 UTC]    ❌ NO ENTREGADO aún (estado: NO RECOGIDO)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A INGRESOS ENVÍOS: S/. 10.00 (Total: S/. 68.00)
+[27-Jun-2026 00:03:11 UTC]    Cliente 259 - ¿Liquidación verificada? NO
+[27-Jun-2026 00:03:11 UTC]    TOTALES ACUMULADOS: pago_merc=S/. 0.00, pos=S/. 0.00, pago_marca=S/. 0.00, servicio=S/. 10.00
+[27-Jun-2026 00:03:11 UTC]    GET_PAYMENT_TOTALS: efectivo=S/. 0.00, pago_merc=S/. 0.00, pos=S/. 0.00, pago_marca=S/. 0.00, total=S/. 0.00
+[27-Jun-2026 00:03:11 UTC]    Efectivo Total acumulado: S/. 30.00
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A RECAUDADO_MERC: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A RECAUDADO_MARCA: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO: S/. 0.00 (Total: S/. 9.50)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO_BRUTO: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO_BRUTO_HIST: S/. 0.00 (Total: S/. 20.00)
+[27-Jun-2026 00:03:11 UTC] 
+[27-Jun-2026 00:03:11 UTC] ────────────────────────────────────────────────────────
+[27-Jun-2026 00:03:11 UTC] 📦 SHIPMENT #32876
+[27-Jun-2026 00:03:11 UTC]    Costo Envío: S/. 10.00
+[27-Jun-2026 00:03:11 UTC]    Costo Producto: S/. 30.00
+[27-Jun-2026 00:03:11 UTC]    Estado Motorizado: pendiente
+[27-Jun-2026 00:03:11 UTC]    Estado Remitente (liquidado): VACÍO
+[27-Jun-2026 00:03:11 UTC]    Quién Paga: remitente
+[27-Jun-2026 00:03:11 UTC]    Estado Entrega: NO RECOGIDO
+[27-Jun-2026 00:03:11 UTC]    ❌ NO ENTREGADO aún (estado: NO RECOGIDO)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A INGRESOS ENVÍOS: S/. 10.00 (Total: S/. 78.00)
+[27-Jun-2026 00:03:11 UTC]    Cliente 496 - ¿Liquidación verificada? NO
+[27-Jun-2026 00:03:11 UTC]    TOTALES ACUMULADOS: pago_merc=S/. 0.00, pos=S/. 0.00, pago_marca=S/. 0.00, servicio=S/. 20.00
+[27-Jun-2026 00:03:11 UTC]    GET_PAYMENT_TOTALS: efectivo=S/. 0.00, pago_merc=S/. 0.00, pos=S/. 0.00, pago_marca=S/. 0.00, total=S/. 0.00
+[27-Jun-2026 00:03:11 UTC]    Efectivo Total acumulado: S/. 30.00
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A RECAUDADO_MERC: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A RECAUDADO_MARCA: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO: S/. 0.00 (Total: S/. 9.50)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO_BRUTO: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO_BRUTO_HIST: S/. 0.00 (Total: S/. 20.00)
+[27-Jun-2026 00:03:11 UTC] 
+[27-Jun-2026 00:03:11 UTC] ────────────────────────────────────────────────────────
+[27-Jun-2026 00:03:11 UTC] 📦 SHIPMENT #32877
+[27-Jun-2026 00:03:11 UTC]    Costo Envío: S/. 10.00
+[27-Jun-2026 00:03:11 UTC]    Costo Producto: S/. 30.00
+[27-Jun-2026 00:03:11 UTC]    Estado Motorizado: pendiente
+[27-Jun-2026 00:03:11 UTC]    Estado Remitente (liquidado): VACÍO
+[27-Jun-2026 00:03:11 UTC]    Quién Paga: remitente
+[27-Jun-2026 00:03:11 UTC]    Estado Entrega: NO RECOGIDO
+[27-Jun-2026 00:03:11 UTC]    ❌ NO ENTREGADO aún (estado: NO RECOGIDO)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A INGRESOS ENVÍOS: S/. 10.00 (Total: S/. 88.00)
+[27-Jun-2026 00:03:11 UTC]    Cliente 496 - ¿Liquidación verificada? NO
+[27-Jun-2026 00:03:11 UTC]    TOTALES ACUMULADOS: pago_merc=S/. 0.00, pos=S/. 0.00, pago_marca=S/. 0.00, servicio=S/. 30.00
+[27-Jun-2026 00:03:11 UTC]    GET_PAYMENT_TOTALS: efectivo=S/. 0.00, pago_merc=S/. 0.00, pos=S/. 0.00, pago_marca=S/. 0.00, total=S/. 0.00
+[27-Jun-2026 00:03:11 UTC]    Efectivo Total acumulado: S/. 30.00
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A RECAUDADO_MERC: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A RECAUDADO_MARCA: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO: S/. 0.00 (Total: S/. 9.50)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO_BRUTO: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO_BRUTO_HIST: S/. 0.00 (Total: S/. 20.00)
+[27-Jun-2026 00:03:11 UTC] 
+[27-Jun-2026 00:03:11 UTC] ────────────────────────────────────────────────────────
+[27-Jun-2026 00:03:11 UTC] 📦 SHIPMENT #32878
+[27-Jun-2026 00:03:11 UTC]    Costo Envío: S/. 10.00
+[27-Jun-2026 00:03:11 UTC]    Costo Producto: S/. 30.00
+[27-Jun-2026 00:03:11 UTC]    Estado Motorizado: pendiente
+[27-Jun-2026 00:03:11 UTC]    Estado Remitente (liquidado): VACÍO
+[27-Jun-2026 00:03:11 UTC]    Quién Paga: remitente
+[27-Jun-2026 00:03:11 UTC]    Estado Entrega: NO RECOGIDO
+[27-Jun-2026 00:03:11 UTC]    ❌ NO ENTREGADO aún (estado: NO RECOGIDO)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A INGRESOS ENVÍOS: S/. 10.00 (Total: S/. 98.00)
+[27-Jun-2026 00:03:11 UTC]    Cliente 496 - ¿Liquidación verificada? NO
+[27-Jun-2026 00:03:11 UTC]    TOTALES ACUMULADOS: pago_merc=S/. 0.00, pos=S/. 0.00, pago_marca=S/. 0.00, servicio=S/. 40.00
+[27-Jun-2026 00:03:11 UTC]    GET_PAYMENT_TOTALS: efectivo=S/. 0.00, pago_merc=S/. 0.00, pos=S/. 0.00, pago_marca=S/. 0.00, total=S/. 0.00
+[27-Jun-2026 00:03:11 UTC]    Efectivo Total acumulado: S/. 30.00
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A RECAUDADO_MERC: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A RECAUDADO_MARCA: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO: S/. 0.00 (Total: S/. 9.50)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO_BRUTO: S/. 0.00 (Total: S/. 10.00)
+[27-Jun-2026 00:03:11 UTC]    ✅ SUMADO A POS_RECAUDADO_BRUTO_HIST: S/. 0.00 (Total: S/. 20.00)
+[27-Jun-2026 00:03:11 UTC] 
+[27-Jun-2026 00:03:11 UTC] ═══════════════════════════════════════════════════════════
+[27-Jun-2026 00:03:11 UTC] 🔍 CÁLCULO DE "POR PAGAR REMITENTES" - FÓRMULA TOTAL GENERAL
+[27-Jun-2026 00:03:11 UTC] ═══════════════════════════════════════════════════════════
+[27-Jun-2026 00:03:11 UTC] RECAUDADO_MER (MER): S/. 10.00
+[27-Jun-2026 00:03:11 UTC] EFECTIVO_TOTAL (MOTO): S/. 30.00
+[27-Jun-2026 00:03:11 UTC] POS_RECAUDADO (POS): S/. 9.50
+[27-Jun-2026 00:03:11 UTC] RECAUDADO_MARCA (MARCA): S/. 10.00
+[27-Jun-2026 00:03:11 UTC] INGRESOS_ENVIOS (ENVIOS): S/. 98.00
+[27-Jun-2026 00:03:11 UTC] ─────────────────────────────────────────────────────
+[27-Jun-2026 00:03:11 UTC] por_pagar_rem = MER + MOTO + POS - MARCA - ENVIOS
+[27-Jun-2026 00:03:11 UTC] por_pagar_rem = (10.00 + 30.00 + 9.50) - 10.00 - 98.00
+[27-Jun-2026 00:03:11 UTC] por_pagar_rem = S/. -58.50
+[27-Jun-2026 00:03:11 UTC] 
+[27-Jun-2026 00:03:11 UTC] ═══════════════════════════════════════════════════════════
+[27-Jun-2026 00:03:11 UTC] 📊 RESUMEN FINAL DE CÁLCULOS DEL PANEL ADMIN
+[27-Jun-2026 00:03:11 UTC] ═══════════════════════════════════════════════════════════
+[27-Jun-2026 00:03:11 UTC] Total Entregados: S/. 30.00 (TODOS los envíos entregados)
+[27-Jun-2026 00:03:11 UTC] Ingresos por Envíos: S/. 98.00 (solo liquidados)
+[27-Jun-2026 00:03:11 UTC] Efectivo Total: S/. 30.00
+[27-Jun-2026 00:03:11 UTC] Recaudado por MERC: S/. 10.00
+[27-Jun-2026 00:03:11 UTC] Recaudado por MARCA: S/. 10.00
+[27-Jun-2026 00:03:11 UTC] Recaudado por POS: S/. 9.50
+[27-Jun-2026 00:03:11 UTC] Por Pagar Remitentes: S/. -58.50
+[27-Jun-2026 00:03:11 UTC] Penalidades del día: S/. 0.00
+[27-Jun-2026 00:03:11 UTC] TOTAL GENERAL (Balance Neto): S/. 460.00
+[27-Jun-2026 00:03:11 UTC] ═══════════════════════════════════════════════════════════
+[27-Jun-2026 00:03:11 UTC] 
+[27-Jun-2026 00:03:11 UTC] 🔍 [MERC_ADMIN_CARDS] drivers_sql: SELECT pm_entrega.meta_value AS driver_id, COUNT(DISTINCT p.ID) AS total_entregas FROM wp_posts p LEFT JOIN wp_postmeta pm_entrega ON p.ID = pm_entrega.post_id AND pm_entrega.meta_key = 'wpcargo_motorizo_entrega' WHERE p.post_type = 'wpcargo_shipment' AND p.post_status = 'publish' AND pm_entrega.meta_value IS NOT NULL AND EXISTS( SELECT 1 FROM wp_postmeta pm_pickup WHERE pm_pickup.post_id = p.ID AND pm_pickup.meta_key = 'wpcargo_pickup_date_picker' AND ( STR_TO_DATE(pm_pickup.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-06-26', '%Y-%m-%d') AND STR_TO_DATE(pm_pickup.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-06-26', '%Y-%m-%d') ) ) GROUP BY pm_entrega.meta_value ORDER BY total_entregas DESC
+[27-Jun-2026 00:03:11 UTC] 🔍 [MERC_ADMIN_CARDS] sample_ids_count: 10
+[27-Jun-2026 00:03:11 UTC] 🔍 [MERC_ADMIN_CARDS] sample shipment_id=32846 wpcargo_driver='120' wpcargo_motorizo_recojo='190'
+[27-Jun-2026 00:03:11 UTC] 🔍 [MERC_ADMIN_CARDS] sample shipment_id=32847 wpcargo_driver='120' wpcargo_motorizo_recojo='190'
+[27-Jun-2026 00:03:11 UTC] 🔍 [MERC_ADMIN_CARDS] sample shipment_id=32848 wpcargo_driver='120' wpcargo_motorizo_recojo=''
+[27-Jun-2026 00:03:11 UTC] 🔍 [MERC_ADMIN_CARDS] sample shipment_id=32849 wpcargo_driver='120' wpcargo_motorizo_recojo=''
+[27-Jun-2026 00:03:11 UTC] 🔍 [MERC_ADMIN_CARDS] sample shipment_id=32850 wpcargo_driver='120' wpcargo_motorizo_recojo=''
+[27-Jun-2026 00:03:11 UTC] 🔍 [MERC_ADMIN_CARDS] sample shipment_id=32851 wpcargo_driver='120' wpcargo_motorizo_recojo=''
+[27-Jun-2026 00:03:11 UTC] 🔍 [MERC_ADMIN_CARDS] sample shipment_id=32871 wpcargo_driver='120' wpcargo_motorizo_recojo='120'
+[27-Jun-2026 00:03:11 UTC] 🔍 [MERC_ADMIN_CARDS] sample shipment_id=32872 wpcargo_driver='120' wpcargo_motorizo_recojo='120'
+[27-Jun-2026 00:03:11 UTC] 🔍 [MERC_ADMIN_CARDS] sample shipment_id=32873 wpcargo_driver='190' wpcargo_motorizo_recojo='190'
+[27-Jun-2026 00:03:11 UTC] 🔍 [MERC_ADMIN_CARDS] sample shipment_id=32874 wpcargo_driver='190' wpcargo_motorizo_recojo='190'
+[27-Jun-2026 00:03:11 UTC] 🔍 [MERC_ADMIN_CARDS] drivers_count: 2
+[27-Jun-2026 00:03:11 UTC] 🔍 [MERC_ADMIN_CARDS] Motorizado ID: 120 | Envios encontrados: 11
+[27-Jun-2026 00:03:11 UTC]    Shipment #32846 | pod_payment_methods(raw)=[{"metodo":"efectivo","monto":10},{"metodo":"pago_marca","monto":10,"imagen_id":32853,"imagen_url":"http://localhost:8081/wp-content/uploads/2026/06/metodo-pago-32846-1-1782487257.jpeg"},{"metodo":"pos","monto":9.5,"imagen_id":32854,"imagen_url":"http://localhost:8081/wp-content/uploads/2026/06/metodo-pago-32846-2-1782487258.jpeg","monto_original":10},{"metodo":"pago_merc","monto":10,"imagen_id":32855,"imagen_url":"http://localhost:8081/wp-content/uploads/2026/06/metodo-pago-32846-3-1782487258.jpeg"}], wpcargo_total_cobrar='40.00', otros_meta={"monto":"40.00"}
+[27-Jun-2026 00:03:11 UTC]    Shipment #32846 | Totales: efectivo=10, pago_merc=10, pago_marca=10, pos=9.5, total=39.5
+[27-Jun-2026 00:03:11 UTC]    Shipment #32847 | pod_payment_methods(raw)=, wpcargo_total_cobrar='40.00', otros_meta={"monto":"40.00"}
+[27-Jun-2026 00:03:11 UTC]    Shipment #32847 | Totales: efectivo=0, pago_merc=0, pago_marca=0, pos=0, total=0
+[27-Jun-2026 00:03:11 UTC]    Shipment #32848 | pod_payment_methods(raw)=, wpcargo_total_cobrar='40.00', otros_meta={"monto":"40.00"}
+[27-Jun-2026 00:03:11 UTC]    Shipment #32848 | Totales: efectivo=0, pago_merc=0, pago_marca=0, pos=0, total=0
+[27-Jun-2026 00:03:11 UTC]    Shipment #32849 | pod_payment_methods(raw)=, wpcargo_total_cobrar='40.00', otros_meta={"monto":"40.00"}
+[27-Jun-2026 00:03:11 UTC]    Shipment #32849 | Totales: efectivo=0, pago_merc=0, pago_marca=0, pos=0, total=0
+[27-Jun-2026 00:03:11 UTC]    Shipment #32850 | pod_payment_methods(raw)=[{"metodo":"efectivo","monto":10},{"metodo":"pago_marca","monto":10,"imagen_id":32857,"imagen_url":"http://localhost:8081/wp-content/uploads/2026/06/metodo-pago-32850-1-1782487293.jpeg"},{"metodo":"pago_merc","monto":10,"imagen_id":32858,"imagen_url":"http://localhost:8081/wp-content/uploads/2026/06/metodo-pago-32850-2-1782487294.png"},{"metodo":"pos","monto":9.5,"imagen_id":32859,"imagen_url":"http://localhost:8081/wp-content/uploads/2026/06/metodo-pago-32850-3-1782487296.png","monto_original":10}], wpcargo_total_cobrar='40.00', otros_meta={"monto":"40.00"}
+[27-Jun-2026 00:03:11 UTC]    Shipment #32850 | Totales: efectivo=10, pago_merc=10, pago_marca=10, pos=9.5, total=39.5
+[27-Jun-2026 00:03:11 UTC]    Shipment #32851 | pod_payment_methods(raw)=[{"metodo":"efectivo","monto":10},{"metodo":"pago_marca","monto":10,"imagen_id":32861,"imagen_url":"http://localhost:8081/wp-content/uploads/2026/06/metodo-pago-32851-1-1782487328.jpeg"}], wpcargo_total_cobrar='40.00', otros_meta={"monto":"40.00"}
+[27-Jun-2026 00:03:11 UTC]    Shipment #32851 | Totales: efectivo=10, pago_merc=0, pago_marca=10, pos=0, total=20
+[27-Jun-2026 00:03:11 UTC]    Shipment #32873 | pod_payment_methods(raw)=, wpcargo_total_cobrar='40.00', otros_meta={"monto":"40.00"}
+[27-Jun-2026 00:03:11 UTC]    Shipment #32873 | Totales: efectivo=0, pago_merc=0, pago_marca=0, pos=0, total=0
+[27-Jun-2026 00:03:11 UTC]    Shipment #32874 | pod_payment_methods(raw)=, wpcargo_total_cobrar='40.00', otros_meta={"monto":"40.00"}
+[27-Jun-2026 00:03:11 UTC]    Shipment #32874 | Totales: efectivo=0, pago_merc=0, pago_marca=0, pos=0, total=0
+[27-Jun-2026 00:03:11 UTC]    Shipment #32875 | pod_payment_methods(raw)=, wpcargo_total_cobrar='40.00', otros_meta={"monto":"40.00"}
+[27-Jun-2026 00:03:11 UTC]    Shipment #32875 | Totales: efectivo=0, pago_merc=0, pago_marca=0, pos=0, total=0
+[27-Jun-2026 00:03:11 UTC]    Shipment #32876 | pod_payment_methods(raw)=, wpcargo_total_cobrar='40.00', otros_meta={"monto":"40.00"}
+[27-Jun-2026 00:03:11 UTC]    Shipment #32876 | Totales: efectivo=0, pago_merc=0, pago_marca=0, pos=0, total=0
+[27-Jun-2026 00:03:11 UTC]    Shipment #32878 | pod_payment_methods(raw)=, wpcargo_total_cobrar='40.00', otros_meta={"monto":"40.00"}
+[27-Jun-2026 00:03:11 UTC]    Shipment #32878 | Totales: efectivo=0, pago_merc=0, pago_marca=0, pos=0, total=0
+[27-Jun-2026 00:03:11 UTC]    Totales del motorizado: Total=99, Efectivo=30, MERC=20, MARCA=30, POS=19
+[27-Jun-2026 00:03:11 UTC] 🔍 [MERC_ADMIN_CARDS] Motorizado ID: 190 | Envios encontrados: 3
+[27-Jun-2026 00:03:11 UTC]    Shipment #32871 | pod_payment_methods(raw)=, wpcargo_total_cobrar='40.00', otros_meta={"monto":"40.00"}
+[27-Jun-2026 00:03:11 UTC]    Shipment #32871 | Totales: efectivo=0, pago_merc=0, pago_marca=0, pos=0, total=0
+[27-Jun-2026 00:03:11 UTC]    Shipment #32872 | pod_payment_methods(raw)=, wpcargo_total_cobrar='40.00', otros_meta={"monto":"40.00"}
+[27-Jun-2026 00:03:11 UTC]    Shipment #32872 | Totales: efectivo=0, pago_merc=0, pago_marca=0, pos=0, total=0
+[27-Jun-2026 00:03:11 UTC]    Shipment #32877 | pod_payment_methods(raw)=, wpcargo_total_cobrar='40.00', otros_meta={"monto":"40.00"}
+[27-Jun-2026 00:03:11 UTC]    Shipment #32877 | Totales: efectivo=0, pago_merc=0, pago_marca=0, pos=0, total=0
+[27-Jun-2026 00:03:11 UTC]    Totales del motorizado: Total=0, Efectivo=0, MERC=0, MARCA=0, POS=0
+[27-Jun-2026 00:03:18 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[27-Jun-2026 00:03:18 UTC] 🔵 [FILTER] Usuario actual: 109
+[27-Jun-2026 00:03:18 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]}}
+[27-Jun-2026 00:03:18 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[27-Jun-2026 00:03:18 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-06-26
+[27-Jun-2026 00:03:18 UTC] 🔵 [FILTER] Fecha desde: '2026-06-26' | Fecha hasta: '2026-06-26'
+[27-Jun-2026 00:03:18 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[27-Jun-2026 00:03:18 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-06-26', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-06-26', '%Y-%m-%d'))
+        
+[27-Jun-2026 00:03:18 UTC] 🔵 [FILTER] IDs encontrados por fecha: 24
+[27-Jun-2026 00:03:18 UTC] 🔵 [FILTER] Primeros 10 IDs: 32822, 32823, 32824, 32825, 32826, 32827, 32846, 32847, 32848, 32849
+[27-Jun-2026 00:03:18 UTC] 🔵 [FILTER] post__in no existe, creando nuevo
+[27-Jun-2026 00:03:18 UTC] 🔵 [FILTER] post_status cambiado a array para incluir estados normales (EXCLUYENDO trash)
+[27-Jun-2026 00:03:18 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":["publish","draft","pending","private"],"posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"post__in":["32822","32823","32824","32825","32826","32827","32846","32847","32848","32849","32850","32851","32863","32864","32867","32868","32871","32872","32873","32874","32875","32876","32877","32878"]}
+[27-Jun-2026 00:05:54 UTC] MERC_DEBUG_ENTRY - merc_maybe_create_penalty_for_shipment post_id=32878 post_type=wpcargo_shipment
+[27-Jun-2026 00:05:54 UTC] MERC_DEBUG_STATE - post_id=32878 estado_raw=PENDIENTE
+[27-Jun-2026 00:05:54 UTC] MERC_DEBUG_ABORT - post_id=32878 estado no es NO RECOGIDO, abortando
+[27-Jun-2026 00:05:54 UTC] MERC_DEBUG_ENTRY - merc_maybe_create_penalty_for_shipment post_id=32878 post_type=wpcargo_shipment
+[27-Jun-2026 00:05:54 UTC] MERC_DEBUG_STATE - post_id=32878 estado_raw=PENDIENTE
+[27-Jun-2026 00:05:54 UTC] MERC_DEBUG_ABORT - post_id=32878 estado no es NO RECOGIDO, abortando
+[27-Jun-2026 00:05:54 UTC] MERC_NO_RECIBIDO_DEBUG - post_id=32878 estado=PENDIENTE NO es NO RECIBIDO
+[27-Jun-2026 00:05:59 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[27-Jun-2026 00:05:59 UTC] 🔵 [FILTER] Usuario actual: 109
+[27-Jun-2026 00:05:59 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]}}
+[27-Jun-2026 00:05:59 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[27-Jun-2026 00:05:59 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-06-26
+[27-Jun-2026 00:05:59 UTC] 🔵 [FILTER] Fecha desde: '2026-06-26' | Fecha hasta: '2026-06-26'
+[27-Jun-2026 00:05:59 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[27-Jun-2026 00:05:59 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-06-26', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-06-26', '%Y-%m-%d'))
+        
+[27-Jun-2026 00:05:59 UTC] 🔵 [FILTER] IDs encontrados por fecha: 24
+[27-Jun-2026 00:05:59 UTC] 🔵 [FILTER] Primeros 10 IDs: 32822, 32823, 32824, 32825, 32826, 32827, 32846, 32847, 32848, 32849
+[27-Jun-2026 00:05:59 UTC] 🔵 [FILTER] post__in no existe, creando nuevo
+[27-Jun-2026 00:05:59 UTC] 🔵 [FILTER] post_status cambiado a array para incluir estados normales (EXCLUYENDO trash)
+[27-Jun-2026 00:05:59 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":["publish","draft","pending","private"],"posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"post__in":["32822","32823","32824","32825","32826","32827","32846","32847","32848","32849","32850","32851","32863","32864","32867","32868","32871","32872","32873","32874","32875","32876","32877","32878"]}
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_ENTRY - merc_maybe_create_penalty_for_shipment post_id=32878 post_type=wpcargo_shipment
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_STATE - post_id=32878 estado_raw=NO RECOGIDO
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_CUSTOMER - post_id=32878 customer_id=496
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_X8 sid=32878
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_X9 sid=32878 tipo=normal
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_X8 sid=32877
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_X9 sid=32877 tipo=normal
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_X8 sid=32876
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_X9 sid=32876 tipo=normal
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_X8 sid=32873
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_X9 sid=32873 tipo=normal
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_X8 sid=32058
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_X9 sid=32058 tipo=full_fitment
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_X8 sid=29741
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_X9 sid=29741 tipo=normal
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_X8 sid=29740
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_X9 sid=29740 tipo=normal
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_TYPE_FILTER - customer=496 total_found=7 normal_only=6
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_NORMAL_POSTS = [32878,32877,32876,32873,29741,29740]
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_PICKUPS - customer=496 normal_today_count=4
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_SHIPMENTS_TODAY = [32878,32877,32876,32873]
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_Y1
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_Y2 sid=32878 estado=NO RECOGIDO
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_Y2 sid=32877 estado=NO RECOGIDO
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_Y2 sid=32876 estado=NO RECOGIDO
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_Y2 sid=32873 estado=NO RECOGIDO
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_Y4
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_Z1
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_SALI_DEL_FOREACH
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_B
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_PASO_1
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_PASO_2
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_EXISTE_PENALIDAD
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_ENTRY - merc_maybe_create_penalty_for_shipment post_id=32878 post_type=wpcargo_shipment
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_STATE - post_id=32878 estado_raw=NO RECOGIDO
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_CUSTOMER - post_id=32878 customer_id=496
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_X8 sid=32878
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_X9 sid=32878 tipo=normal
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_X8 sid=32877
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_X9 sid=32877 tipo=normal
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_X8 sid=32876
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_X9 sid=32876 tipo=normal
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_X8 sid=32873
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_X9 sid=32873 tipo=normal
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_X8 sid=32058
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_X9 sid=32058 tipo=full_fitment
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_X8 sid=29741
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_X9 sid=29741 tipo=normal
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_X8 sid=29740
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_X9 sid=29740 tipo=normal
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_TYPE_FILTER - customer=496 total_found=7 normal_only=6
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_NORMAL_POSTS = [32878,32877,32876,32873,29741,29740]
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_PICKUPS - customer=496 normal_today_count=4
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_SHIPMENTS_TODAY = [32878,32877,32876,32873]
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_Y1
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_Y2 sid=32878 estado=NO RECOGIDO
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_Y2 sid=32877 estado=NO RECOGIDO
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_Y2 sid=32876 estado=NO RECOGIDO
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_Y2 sid=32873 estado=NO RECOGIDO
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_Y4
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_Z1
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_SALI_DEL_FOREACH
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_B
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_PASO_1
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_PASO_2
+[27-Jun-2026 00:06:04 UTC] MERC_DEBUG_EXISTE_PENALIDAD
+[27-Jun-2026 00:06:04 UTC] MERC_NO_RECIBIDO_DEBUG - post_id=32878 estado=NO RECOGIDO NO es NO RECIBIDO
+[27-Jun-2026 00:06:07 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[27-Jun-2026 00:06:07 UTC] 🔵 [FILTER] Usuario actual: 109
+[27-Jun-2026 00:06:07 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]}}
+[27-Jun-2026 00:06:07 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[27-Jun-2026 00:06:07 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-06-26
+[27-Jun-2026 00:06:07 UTC] 🔵 [FILTER] Fecha desde: '2026-06-26' | Fecha hasta: '2026-06-26'
+[27-Jun-2026 00:06:07 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[27-Jun-2026 00:06:07 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-06-26', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-06-26', '%Y-%m-%d'))
+        
+[27-Jun-2026 00:06:07 UTC] 🔵 [FILTER] IDs encontrados por fecha: 24
+[27-Jun-2026 00:06:07 UTC] 🔵 [FILTER] Primeros 10 IDs: 32822, 32823, 32824, 32825, 32826, 32827, 32846, 32847, 32848, 32849
+[27-Jun-2026 00:06:07 UTC] 🔵 [FILTER] post__in no existe, creando nuevo
+[27-Jun-2026 00:06:07 UTC] 🔵 [FILTER] post_status cambiado a array para incluir estados normales (EXCLUYENDO trash)
+[27-Jun-2026 00:06:07 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":["publish","draft","pending","private"],"posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"post__in":["32822","32823","32824","32825","32826","32827","32846","32847","32848","32849","32850","32851","32863","32864","32867","32868","32871","32872","32873","32874","32875","32876","32877","32878"]}
+[27-Jun-2026 00:11:55 UTC] MERC_DEBUG_ENTRY - merc_maybe_create_penalty_for_shipment post_id=32878 post_type=wpcargo_shipment
+[27-Jun-2026 00:11:55 UTC] MERC_DEBUG_STATE - post_id=32878 estado_raw=PENDIENTE
+[27-Jun-2026 00:11:55 UTC] MERC_DEBUG_ABORT - post_id=32878 estado no es NO RECOGIDO, abortando
+[27-Jun-2026 00:11:55 UTC] MERC_DEBUG_ENTRY - merc_maybe_create_penalty_for_shipment post_id=32878 post_type=wpcargo_shipment
+[27-Jun-2026 00:11:55 UTC] MERC_DEBUG_STATE - post_id=32878 estado_raw=PENDIENTE
+[27-Jun-2026 00:11:55 UTC] MERC_DEBUG_ABORT - post_id=32878 estado no es NO RECOGIDO, abortando
+[27-Jun-2026 00:11:55 UTC] MERC_NO_RECIBIDO_DEBUG - post_id=32878 estado=PENDIENTE NO es NO RECIBIDO
+[27-Jun-2026 00:11:58 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[27-Jun-2026 00:11:58 UTC] 🔵 [FILTER] Usuario actual: 109
+[27-Jun-2026 00:11:58 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]}}
+[27-Jun-2026 00:11:58 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[27-Jun-2026 00:11:58 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-06-26
+[27-Jun-2026 00:11:58 UTC] 🔵 [FILTER] Fecha desde: '2026-06-26' | Fecha hasta: '2026-06-26'
+[27-Jun-2026 00:11:58 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[27-Jun-2026 00:11:58 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-06-26', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-06-26', '%Y-%m-%d'))
+        
+[27-Jun-2026 00:11:58 UTC] 🔵 [FILTER] IDs encontrados por fecha: 24
+[27-Jun-2026 00:11:58 UTC] 🔵 [FILTER] Primeros 10 IDs: 32822, 32823, 32824, 32825, 32826, 32827, 32846, 32847, 32848, 32849
+[27-Jun-2026 00:11:58 UTC] 🔵 [FILTER] post__in no existe, creando nuevo
+[27-Jun-2026 00:11:58 UTC] 🔵 [FILTER] post_status cambiado a array para incluir estados normales (EXCLUYENDO trash)
+[27-Jun-2026 00:11:58 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":["publish","draft","pending","private"],"posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"post__in":["32822","32823","32824","32825","32826","32827","32846","32847","32848","32849","32850","32851","32863","32864","32867","32868","32871","32872","32873","32874","32875","32876","32877","32878"]}
+[27-Jun-2026 00:12:04 UTC] MERC_DEBUG_ENTRY - merc_maybe_create_penalty_for_shipment post_id=32878 post_type=wpcargo_shipment
+[27-Jun-2026 00:12:04 UTC] MERC_DEBUG_STATE - post_id=32878 estado_raw=NO RECOGIDO
+[27-Jun-2026 00:12:04 UTC] MERC_DEBUG_CUSTOMER - post_id=32878 customer_id=496
+[27-Jun-2026 00:12:04 UTC] MERC_DEBUG_TYPE_FILTER - customer=496 total_found=7 normal_only=0
+[27-Jun-2026 00:12:04 UTC] MERC_DEBUG_ABORT - customer 496 no tiene envíos tipo NORMAL
+[27-Jun-2026 00:12:04 UTC] MERC_DEBUG_ENTRY - merc_maybe_create_penalty_for_shipment post_id=32878 post_type=wpcargo_shipment
+[27-Jun-2026 00:12:04 UTC] MERC_DEBUG_STATE - post_id=32878 estado_raw=NO RECOGIDO
+[27-Jun-2026 00:12:04 UTC] MERC_DEBUG_CUSTOMER - post_id=32878 customer_id=496
+[27-Jun-2026 00:12:04 UTC] MERC_DEBUG_TYPE_FILTER - customer=496 total_found=7 normal_only=0
+[27-Jun-2026 00:12:04 UTC] MERC_DEBUG_ABORT - customer 496 no tiene envíos tipo NORMAL
+[27-Jun-2026 00:12:04 UTC] MERC_NO_RECIBIDO_DEBUG - post_id=32878 estado=NO RECOGIDO NO es NO RECIBIDO
+[27-Jun-2026 00:12:10 UTC] 🔵 [FILTER] filter_shipment_by_date_and_tiendaname llamado
+[27-Jun-2026 00:12:10 UTC] 🔵 [FILTER] Usuario actual: 109
+[27-Jun-2026 00:12:10 UTC] 🔵 [FILTER] Args iniciales: {"post_type":"wpcargo_shipment","post_status":"publish","posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]}}
+[27-Jun-2026 00:12:10 UTC] 🔵 [FILTER] GET params: Array
+(
+)
+
+[27-Jun-2026 00:12:10 UTC] 🔵 [FILTER] Sin parámetros de fecha, aplicando HOY por defecto: 2026-06-26
+[27-Jun-2026 00:12:10 UTC] 🔵 [FILTER] Fecha desde: '2026-06-26' | Fecha hasta: '2026-06-26'
+[27-Jun-2026 00:12:10 UTC] 🔵 [FILTER] has_from: true | has_to: true
+[27-Jun-2026 00:12:10 UTC] 🔵 [FILTER] SQL Query: 
+            SELECT DISTINCT p.ID 
+            FROM wp_posts p
+            INNER JOIN wp_postmeta pm ON p.ID = pm.post_id
+            WHERE p.post_type = 'wpcargo_shipment'
+            AND pm.meta_key IN ('wpcargo_pickup_date_picker', 'wpcargo_pickup_date', 'calendarenvio', 'wpcargo_fecha_envio')
+            AND (STR_TO_DATE(pm.meta_value, '%d/%m/%Y') >= STR_TO_DATE('2026-06-26', '%Y-%m-%d') AND STR_TO_DATE(pm.meta_value, '%d/%m/%Y') <= STR_TO_DATE('2026-06-26', '%Y-%m-%d'))
+        
+[27-Jun-2026 00:12:10 UTC] 🔵 [FILTER] IDs encontrados por fecha: 24
+[27-Jun-2026 00:12:10 UTC] 🔵 [FILTER] Primeros 10 IDs: 32822, 32823, 32824, 32825, 32826, 32827, 32846, 32847, 32848, 32849
+[27-Jun-2026 00:12:10 UTC] 🔵 [FILTER] post__in no existe, creando nuevo
+[27-Jun-2026 00:12:10 UTC] 🔵 [FILTER] post_status cambiado a array para incluir estados normales (EXCLUYENDO trash)
+[27-Jun-2026 00:12:10 UTC] 🔵 [FILTER] Args finales: {"post_type":"wpcargo_shipment","post_status":["publish","draft","pending","private"],"posts_per_page":"500","paged":1,"s":"","meta_query":{"relation":"AND","0":[]},"post__in":["32822","32823","32824","32825","32826","32827","32846","32847","32848","32849","32850","32851","32863","32864","32867","32868","32871","32872","32873","32874","32875","32876","32877","32878"]}

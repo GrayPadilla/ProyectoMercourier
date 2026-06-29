@@ -82,16 +82,47 @@ class MERC_Table_Ajax {
         if ( ! empty( $observaciones ) ) {
             $form_data[] = [ 'name' => 'remarks', 'value' => $observaciones ];
         }
-        if ( isset( $_POST['pod_payment_methods'] ) && ! empty( $_POST['pod_payment_methods'] ) ) {
-            $form_data[] = [ 'name' => 'pod_payment_methods', 'value' => sanitize_text_field( $_POST['pod_payment_methods'] ) ];
+
+        $payment_methods_raw = isset( $_POST['pod_payment_methods'] ) ? wp_unslash( $_POST['pod_payment_methods'] ) : '[]';
+        $payment_methods     = json_decode( $payment_methods_raw, true );
+        if ( ! is_array( $payment_methods ) ) {
+            $payment_methods = [];
         }
-        if ( isset( $_POST['wpcargo_total_cobrar'] ) && ! empty( $_POST['wpcargo_total_cobrar'] ) ) {
-            $form_data[] = [ 'name' => 'wpcargo_total_cobrar', 'value' => sanitize_text_field( $_POST['wpcargo_total_cobrar'] ) ];
+
+        $total_ingresado = 0.0;
+        foreach ( $payment_methods as $item ) {
+            if ( is_array( $item ) && isset( $item['monto'] ) ) {
+                $total_ingresado += floatval( $item['monto'] );
+            }
         }
+
+        $total_cobrar_raw = isset( $_POST['wpcargo_total_cobrar'] ) ? wp_unslash( $_POST['wpcargo_total_cobrar'] ) : '0';
+        $total_cobrar     = floatval( preg_replace( '/[^0-9\.]/', '', $total_cobrar_raw ) );
+
+        if ( ! empty( $payment_methods ) ) {
+            $form_data[] = [ 'name' => 'pod_payment_methods', 'value' => wp_json_encode( $payment_methods ) ];
+        }
+        $form_data[] = [ 'name' => 'wpcargo_total_cobrar', 'value' => number_format( $total_cobrar, 2, '.', '' ) ];
 
         // Guardar observaciones en meta si existen
         if ( ! empty( $observaciones ) ) {
             update_post_meta( $shipment_id, 'wpcargo_pod_remarks', $observaciones );
+        }
+
+        // Si el estado es NO RECIBIDO, marcar como liquidado para que Mis Envíos deje de mostrarlo pendiente
+        if ( strtoupper( trim( $nuevo_estado ) ) === 'NO RECIBIDO' ) {
+            $liq_ref = get_post_meta( $shipment_id, 'wpcargo_included_in_liquidation', true );
+            if ( empty( $liq_ref ) ) {
+                $liq_ref = 'liq_no_recibido_' . $shipment_id . '_' . current_time( 'YmdHis' );
+            }
+
+            update_post_meta( $shipment_id, 'wpcargo_included_in_liquidation', $liq_ref );
+            update_post_meta( $shipment_id, 'merc_remitente_liquidated', '1' );
+            update_post_meta( $shipment_id, 'wpcargo_cliente_pago_a', 'liquidado' );
+            update_post_meta( $shipment_id, 'wpcargo_estado_pago_motorizado', 'liquidado' );
+            update_post_meta( $shipment_id, 'wpcargo_pod_total_ingresado', number_format( $total_ingresado, 2, '.', '' ) );
+            update_post_meta( $shipment_id, 'wpcargo_pod_total_cobrar', number_format( $total_cobrar, 2, '.', '' ) );
+            update_post_meta( $shipment_id, 'wpcargo_pod_payment_methods', wp_json_encode( $payment_methods ) );
         }
 
         // Disparar hook para guardar métodos de pago si hay datos

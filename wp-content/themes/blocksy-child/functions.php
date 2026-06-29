@@ -264,200 +264,6 @@ add_action('admin_init', function() {
     error_log("Migración completada. Usuarios actualizados: {$updated_users}");
 });
 
-add_action('wpcfe_after_shipment_filters', function(){
-    // Obtener valores de los parámetros GET si existen
-    $start_value = isset($_GET['shipping_date_start']) ? sanitize_text_field($_GET['shipping_date_start']) : '';
-    $end_value = isset($_GET['shipping_date_end']) ? sanitize_text_field($_GET['shipping_date_end']) : '';
-    
-    // Convertir de ISO a d/m/Y para mostrar
-    function iso_to_dmy($iso) {
-        if (empty($iso)) return '';
-        if (preg_match('/^(\d{4})-(\d{2})-(\d{2})$/', $iso, $m)) {
-            return $m[3] . '/' . $m[2] . '/' . $m[1];
-        }
-        return $iso;
-    }
-    
-    $start_display = iso_to_dmy($start_value);
-    $end_display = iso_to_dmy($end_value);
-    
-    // NOTA: JavaScript se encargará de establecer la fecha de hoy por defecto
-    // cuando los campos estén vacíos en la carga de página
-    ?>
-    <div class="form-group wpcfe-filter p-0 mx-1">
-        <label><strong><?php _e('Fecha de Envío', 'wpccustom-tu'); ?></strong></label><br>
-        
-        <!-- Campos visibles (formato dd/mm/yyyy) -->
-        <input type="text"
-               id="shipping_date_start_display"
-               class="form-control px-2 py-1 wpcfe-datepicker"
-               style="width:110px; display:inline-block; font-weight: 500;"
-               placeholder="DD/MM/YYYY"
-               value="<?php echo esc_attr($start_display); ?>" autocomplete="off">
-               
-        <input type="text"
-               id="shipping_date_end_display"
-               class="form-control px-2 py-1 mx-1 wpcfe-datepicker"
-               style="width:110px; display:inline-block; font-weight: 500;"
-               placeholder="DD/MM/YYYY"
-               value="<?php echo esc_attr($end_display); ?>"
-               autocomplete="off">
-        
-        <!-- Campos ocultos (formato ISO para el backend) -->
-        <input type="hidden" 
-               name="shipping_date_start" 
-               id="shipping_date_start" 
-               value="<?php echo esc_attr($start_value); ?>">
-               
-        <input type="hidden" 
-               name="shipping_date_end" 
-               id="shipping_date_end" 
-               value="<?php echo esc_attr($end_value); ?>">
-    </div>
-    
-    <!-- Cargar Flatpickr directamente -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.13/dist/flatpickr.min.js"></script>
-    
-    <style>
-        .flatpickr-month {
-            font-size: 18px;
-            font-weight: 600;
-            color: #333;
-            text-align: center;
-        }
-        .flatpickr-months {
-            padding: 15px 0;
-        }
-    </style>
-    
-    <script>
-    jQuery(document).ready(function($){
-        // Función para convertir dd/mm/yyyy a yyyy-mm-dd
-        function dmyToIso(dmy){
-            if(!dmy) return '';
-            var parts = dmy.match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
-            if(!parts) return '';
-            return parts[3] + '-' + parts[2] + '-' + parts[1];
-        }
-        
-        // Función para obtener hoy en formato dd/mm/yyyy
-        function getTodayDmy() {
-            var today = new Date();
-            var dd = String(today.getDate()).padStart(2, '0');
-            var mm = String(today.getMonth() + 1).padStart(2, '0');
-            var yyyy = today.getFullYear();
-            return dd + '/' + mm + '/' + yyyy;
-        }
-        
-        // Función para obtener hoy en formato yyyy-mm-dd
-        function getTodayIso() {
-            var today = new Date();
-            var yyyy = today.getFullYear();
-            var mm = String(today.getMonth() + 1).padStart(2, '0');
-            var dd = String(today.getDate()).padStart(2, '0');
-            return yyyy + '-' + mm + '-' + dd;
-        }
-        
-        // Esperar a que Flatpickr se cargue completamente
-        function initDatePickers() {
-            if (typeof flatpickr === 'undefined') {
-                console.warn('⏳ Esperando Flatpickr...');
-                setTimeout(initDatePickers, 200);
-                return;
-            }
-            
-            console.log('✅ Flatpickr disponible, inicializando campos...');
-            
-            var $startDisplay = $('#shipping_date_start_display');
-            var $startHidden = $('#shipping_date_start');
-            var $endDisplay = $('#shipping_date_end_display');
-            var $endHidden = $('#shipping_date_end');
-            
-            // Destruir instancias previas si existen
-            var startEl = document.getElementById('shipping_date_start_display');
-            var endEl = document.getElementById('shipping_date_end_display');
-            
-            if (startEl && startEl._flatpickr) startEl._flatpickr.destroy();
-            if (endEl && endEl._flatpickr) endEl._flatpickr.destroy();
-            
-            // Si los campos están vacíos, llenarlos con hoy
-            var todayDmy = getTodayDmy();
-            var todayIso = getTodayIso();
-            
-            if ($startDisplay.val() === '') {
-                $startDisplay.val(todayDmy);
-                $startHidden.val(todayIso);
-                console.log('📅 Campo INICIO establecido a hoy: ' + todayDmy + ' (hidden: ' + todayIso + ')');
-            }
-            
-            if ($endDisplay.val() === '') {
-                $endDisplay.val(todayDmy);
-                $endHidden.val(todayIso);
-                console.log('📅 Campo FIN establecido a hoy: ' + todayDmy + ' (hidden: ' + todayIso + ')');
-            }
-            
-            // Configuración en español
-            var config = {
-                dateFormat: 'd/m/Y',
-                allowInput: true,
-                monthSelectorType: 'static',
-                locale: {
-                    firstDayOfWeek: 1,
-                    weekdays: {
-                        shorthand: ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'],
-                        longhand: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado']
-                    },
-                    months: {
-                        shorthand: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
-                        longhand: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
-                    }
-                }
-            };
-            
-            // Inicializar campo de inicio
-            if (startEl) {
-                flatpickr(startEl, Object.assign({}, config, {
-                    onChange: function(selectedDates, dateStr) {
-                        $startHidden.val(dmyToIso(dateStr));
-                        console.log('🔄 Inicio cambiado a: ' + dateStr + ' → ' + dmyToIso(dateStr));
-                    }
-                }));
-                console.log('✅ Calendario INICIO inicializado');
-            }
-            
-            // Inicializar campo de fin
-            if (endEl) {
-                flatpickr(endEl, Object.assign({}, config, {
-                    onChange: function(selectedDates, dateStr) {
-                        $endHidden.val(dmyToIso(dateStr));
-                        console.log('🔄 Fin cambiado a: ' + dateStr + ' → ' + dmyToIso(dateStr));
-                    }
-                }));
-                console.log('✅ Calendario FIN inicializado');
-            }
-        }
-        
-        // Iniciar
-        initDatePickers();
-        
-        // También actualizar cuando se cambie manualmente
-        $('#shipping_date_start_display').on('change', function(){
-            var isoDate = dmyToIso($(this).val());
-            $('#shipping_date_start').val(isoDate);
-            console.log('✏️ INICIO manual: ' + $(this).val() + ' → ' + isoDate);
-        });
-        
-        $('#shipping_date_end_display').on('change', function(){
-            var isoDate = dmyToIso($(this).val());
-            $('#shipping_date_end').val(isoDate);
-            console.log('✏️ FIN manual: ' + $(this).val() + ' → ' + isoDate);
-        });
-    });
-    </script>
-    <?php
-});
-
 // Cargar el mismo script en el footer del admin para que esté disponible dentro del modal del backend
 add_action('admin_footer', function() {
     if ( ! is_user_logged_in() ) return;
@@ -906,99 +712,6 @@ function add_driver_filter_dropdown() {
     </div>
     <?php
 }
-// JS: handler para botón de pago del cliente a MERC (restaurado)
-add_action('wp_footer', function() {
-    if ( ! is_user_logged_in() ) return;
-    ?>
-    <script>
-    jQuery(function($){
-        $(document).on('click', '.merc-btn-pagar-merc', function(e){
-            e.preventDefault();
-            var $btn = $(this);
-            var user_id = $btn.data('user-id');
-            var amount = $btn.data('amount');
-            var nonce = $btn.data('nonce');
-
-            // Reutilizar modal de liquidación (igual que en administración)
-            if ($('#merc-liquidacion-modal').length === 0) {
-                // Agregar estilos del modal
-                if (!document.getElementById('merc-liquidacion-styles')) {
-                    var style = document.createElement('style');
-                    style.id = 'merc-liquidacion-styles';
-                    style.innerHTML = '@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } } ' +
-                        '@keyframes slideUp { from { transform: translateY(30px); opacity: 0; } to { transform: translateY(0); opacity: 1; } } ' +
-                        '#merc-liquidacion-modal h3 { color: #2c3e50; margin: 0 0 12px 0; font-size: 20px; font-weight: 600; } ' +
-                        '#merc-liquidacion-modal p { color: #555; margin: 0 0 20px 0; font-size: 14px; line-height: 1.5; } ' +
-                        '#merc-liquidacion-voucher { width: 100%; padding: 12px; border: 2px dashed #3498db; border-radius: 6px; margin-bottom: 24px; cursor: pointer; font-size: 14px; box-sizing: border-box; } ' +
-                        '#merc-liquidacion-voucher:hover { border-color: #2980b9; background: #ecf0f1; } ' +
-                        '#merc-liquidacion-modal .button { padding: 10px 20px; border-radius: 6px; font-weight: 500; border: none; cursor: pointer; transition: all 0.3s ease; background: #ecf0f1; color: #2c3e50; } ' +
-                        '#merc-liquidacion-modal .button:hover { background: #bdc3c7; } ' +
-                        '#merc-liquidacion-modal .button-primary { background: linear-gradient(135deg, #3498db, #2980b9); color: #fff; } ' +
-                        '#merc-liquidacion-modal .button-primary:hover { background: linear-gradient(135deg, #2980b9, #2471a3); box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4); }';
-                    document.head.appendChild(style);
-                }
-                
-                var modal = '<div id="merc-liquidacion-modal" style="position:fixed;left:0;top:0;width:100%;height:100%;z-index:100000;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.5);animation:fadeIn 0.3s ease;">'
-                    + '<div style="background:#fff;padding:32px;border-radius:12px;max-width:520px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,0.3);animation:slideUp 0.3s ease;overflow:hidden;">'
-                    + '<div style="background:#f8f9fa;padding:16px;border-radius:6px;margin-bottom:24px;border-left:4px solid #3498db;">'
-                    + '<small style="color:#7f8c8d;font-weight:600;">Monto a liquidar</small>'
-                    + '<p style="margin:6px 0 0 0;font-size:18px;color:#2c3e50;font-weight:700;">S/. ' + number_format(amount, 2) + '</p>'
-                    + '</div>'
-                    + '<h3>Subir comprobante de pago</h3>'
-                    + '<p>Adjunta la imagen del comprobante de pago para que se registre en el historial de liquidaciones.</p>'
-                    + '<input type="file" id="merc-liquidacion-voucher" accept="image/*" />'
-                    + '<div style="display:flex;gap:8px;justify-content:flex-end;margin-top:32px;">'
-                    + '<button id="merc-liquidacion-cancel" class="button">Cancelar</button>'
-                    + '<button id="merc-liquidacion-submit" class="button button-primary">Confirmar y Subir (S/. ' + amount + ')</button>'
-                    + '</div></div></div>';
-                $('body').append(modal);
-
-                $('#merc-liquidacion-cancel').on('click', function(){ $('#merc-liquidacion-modal').remove(); });
-                $('#merc-liquidacion-submit').on('click', function(){
-                    var fileInput = $('#merc-liquidacion-voucher')[0];
-                    if (!fileInput.files || fileInput.files.length === 0) {
-                        Swal.fire({icon:'warning',title:'Archivo requerido',text:'Debes adjuntar una imagen de comprobante.',confirmButtonColor:'#3498db'});
-                        return;
-                    }
-
-                    $btn.prop('disabled', true).text('Procesando...');
-
-                    var fd = new FormData();
-                    fd.append('action', 'merc_cliente_pagar_voucher');
-                    fd.append('user_id', user_id);
-                    fd.append('amount', amount);
-                    fd.append('nonce', nonce);
-                    fd.append('voucher', fileInput.files[0]);
-
-                    $.ajax({
-                        url: '<?php echo admin_url('admin-ajax.php'); ?>',
-                        type: 'POST',
-                        data: fd,
-                        processData: false,
-                        contentType: false,
-                        success: function(response) {
-                            if (response.success) {
-                                Swal.fire({icon:'success',title:'¡Éxito!',text:response.data.message,confirmButtonColor:'#27ae60'}).then(function(){location.reload();});
-                            } else {
-                                Swal.fire({icon:'error',title:'Error',text:(response.data && response.data.message ? response.data.message : response.data),confirmButtonColor:'#e74c3c'});
-                                $btn.prop('disabled', false).text('Cobrar del cliente S/. ' + amount);
-                                $('#merc-liquidacion-modal').remove();
-                            }
-                        },
-                        error: function() {
-                            Swal.fire({icon:'error',title:'Error de conexión',text:'No se pudo conectar con el servidor',confirmButtonColor:'#e74c3c'});
-                            $btn.prop('disabled', false).text('Cobrar del cliente S/. ' + amount);
-                            $('#merc-liquidacion-modal').remove();
-                        }
-                    });
-                });
-            }
-            return;
-        });
-    });
-    </script>
-    <?php
-});
 
 // AJAX: cliente marca pago a MERC (registra liquidación y marca envíos como cobrados) (restaurado)
 add_action('wp_ajax_merc_cliente_pagar_a_merc', 'merc_cliente_pagar_a_merc_ajax');
@@ -1086,8 +799,9 @@ function merc_cliente_pagar_a_merc_ajax() {
                 $cargos_pagados++;
                 
                 // Marcar en el shipment como liquidado
-                if ( ! empty($history[$i]['shipment_id']) ) {
+                if ( ! empty( $history[$i]['shipment_id'] ) ) {
                     update_post_meta( $history[$i]['shipment_id'], 'wpcargo_included_in_liquidation', $liquidation['id'] );
+                    update_post_meta( $history[$i]['shipment_id'], 'merc_remitente_liquidated', '1' );
                     error_log(sprintf('✅ PAGO_NO_RECIBIDO - shipment=%s marcado como liquidado (pago_ref=%s)', 
                         $history[$i]['shipment_id'], $liquidation['id']));
                 }
@@ -1105,112 +819,6 @@ function merc_cliente_pagar_a_merc_ajax() {
     }
     
     wp_send_json_success(array('message'=>$msg));
-}
-
-// AJAX: cliente sube voucher para registrar pago y guardar en historial de liquidaciones
-add_action('wp_ajax_merc_cliente_pagar_voucher', 'merc_cliente_pagar_voucher_ajax');
-function merc_cliente_pagar_voucher_ajax() {
-    if ( ! isset($_POST['nonce']) || ! wp_verify_nonce( $_POST['nonce'], 'merc_cliente_pagar' ) ) {
-        wp_send_json_error(array('message'=>'Nonce inválido'));
-    }
-    $user_id = isset($_POST['user_id']) ? intval($_POST['user_id']) : 0;
-    if ( $user_id <= 0 ) wp_send_json_error(array('message'=>'Usuario inválido'));
-    $current = wp_get_current_user();
-    if ( $current->ID !== $user_id && ! current_user_can('administrator') ) {
-        wp_send_json_error(array('message'=>'Sin permisos'));
-    }
-
-    $amount = isset($_POST['amount']) ? floatval( str_replace(',', '', $_POST['amount']) ) : 0;
-    if ( $amount <= 0 ) wp_send_json_error(array('message'=>'Monto inválido'));
-
-    if ( empty($_FILES) || empty($_FILES['voucher']) ) {
-        wp_send_json_error(array('message'=>'Debes adjuntar un comprobante (imagen).'));
-    }
-
-    require_once ABSPATH . 'wp-admin/includes/file.php';
-    require_once ABSPATH . 'wp-admin/includes/media.php';
-    require_once ABSPATH . 'wp-admin/includes/image.php';
-
-    $file = $_FILES['voucher'];
-    $overrides = array( 'test_form' => false );
-    $movefile = wp_handle_upload( $file, $overrides );
-    if ( isset( $movefile['error'] ) ) {
-        wp_send_json_error( array( 'message' => 'Error al subir comprobante: ' . $movefile['error'] ) );
-    }
-
-    $filename = $movefile['file'];
-    $filetype = wp_check_filetype( basename( $filename ), null );
-    $attachment = array(
-        'post_mime_type' => $filetype['type'],
-        'post_title'     => sanitize_file_name( basename( $filename ) ),
-        'post_content'   => '',
-        'post_status'    => 'inherit'
-    );
-    $attachment_id = wp_insert_attachment( $attachment, $filename );
-    if ( ! is_wp_error( $attachment_id ) ) {
-        $attach_data = wp_generate_attachment_metadata( $attachment_id, $filename );
-        wp_update_attachment_metadata( $attachment_id, $attach_data );
-    }
-
-    // Registrar liquidación en user meta
-    $liquidation = array(
-        'id' => uniqid('liq_cli_'),
-        'date' => current_time('mysql'),
-        'action' => 'cliente_pago_voucher',
-        'amount' => round($amount,2),
-        'attachment_id' => $attachment_id
-    );
-
-    // Obtener envíos pendientes del remitente
-    global $wpdb;
-    $shipments = $wpdb->get_col( $wpdb->prepare("SELECT p.ID FROM {$wpdb->posts} p
-        LEFT JOIN {$wpdb->postmeta} pm_sender ON p.ID = pm_sender.post_id AND pm_sender.meta_key = 'registered_shipper'
-        LEFT JOIN {$wpdb->postmeta} pm_included ON p.ID = pm_included.post_id AND pm_included.meta_key = 'wpcargo_included_in_liquidation'
-        WHERE p.post_type = 'wpcargo_shipment' AND p.post_status = 'publish' AND pm_sender.meta_value = %s AND (pm_included.meta_value IS NULL)", $user_id ) );
-
-    // Filtrar sólo envíos cuya fecha de pickup sea HOY (evita incluir reprogramados de otras fechas)
-    $filtered = array();
-    if ( is_array( $shipments ) && ! empty( $shipments ) ) {
-        foreach ( $shipments as $sid ) {
-            // usar helper existente que normaliza múltiples meta keys
-            if ( function_exists('merc_pickup_date_is_today') ) {
-                if ( merc_pickup_date_is_today( $sid ) ) {
-                    $filtered[] = $sid;
-                }
-            } else {
-                // Fallback: incluir si post_date es hoy
-                $post_date = get_post( $sid )->post_date;
-                if ( date('Y-m-d', strtotime( $post_date )) === current_time('Y-m-d') ) {
-                    $filtered[] = $sid;
-                }
-            }
-        }
-    }
-
-    // No marcamos los envíos todavía: la verificación la hace un administrador.
-    $liquidation['shipments'] = $filtered;
-
-    $history = get_user_meta( $user_id, 'merc_liquidations', true );
-    if ( ! is_array( $history ) ) $history = array();
-    $liquidation['verified'] = false;
-    error_log(sprintf("🔔 [CLIENTE_PAGO_VOUCHER] Preparando registro: user=%d liq_id=%s attachment=%s shipments=%d amount=%01.2f",
-        $user_id, $liquidation['id'], intval($attachment_id), count($filtered), $liquidation['amount']));
-
-    // Log detallado: por cada envío, mostrar id y monto de costo_envio
-    if ( is_array($filtered) && ! empty($filtered) ) {
-        foreach ( $filtered as $sid ) {
-            $costo = floatval( get_post_meta( $sid, 'wpcargo_costo_envio', true ) );
-            error_log(sprintf("🔎 [CLIENTE_PAGO_VOUCHER] shipment_id=%d costo_envio=%01.2f", $sid, $costo));
-        }
-    } else {
-        error_log(sprintf("🔎 [CLIENTE_PAGO_VOUCHER] No hay envíos filtrados para user=%d", $user_id));
-    }
-    $history[] = $liquidation;
-    update_user_meta( $user_id, 'merc_liquidations', $history );
-    error_log(sprintf("🔔 [CLIENTE_PAGO_VOUCHER] Registro guardado: user=%d liq_entries=%d",
-        $user_id, count($history)));
-
-    wp_send_json_success(array('message'=>'Comprobante subido. Esperando verificación administrativa.'));
 }
 
 // Filtrar shipments por tiendaname
@@ -3205,7 +2813,7 @@ function custom_rename_create_shipment_callback( $text ) {
     return 'Crear servicio';
 }
 add_filter( 'wpcfe_create_shipment', 'custom_rename_create_shipment_callback' );
-
+/*
 function custom_render_envios_masivos_menu() {
     $page = get_page_by_path('envios-masivos');
     if ( $page ) {
@@ -3215,7 +2823,7 @@ function custom_render_envios_masivos_menu() {
     }
 }
 add_action( 'wpcfe_after_create_shipment', 'custom_render_envios_masivos_menu' );
-
+*/
 // CSS/JS para ocultar SOLO importar/exportar del wpcie-menu
 add_action('wp_footer', 'merc_ocultar_solo_import_export', 1);
 function merc_ocultar_solo_import_export() {
@@ -5521,17 +5129,34 @@ function merc_is_shipment_liquidation_verified( $shipment_id ) {
     }
 
     $liq_id = get_post_meta( $shipment_id, 'wpcargo_included_in_liquidation', true );
-    if ( empty( $liq_id ) ) return false;
+    if ( empty( $liq_id ) ) {
+        return false;
+    }
 
     $users = get_users( array( 'meta_key' => 'merc_liquidations', 'number' => 0 ) );
-    if ( empty( $users ) ) return false;
+    if ( empty( $users ) ) {
+        return false;
+    }
 
     foreach ( $users as $user ) {
         $history = get_user_meta( $user->ID, 'merc_liquidations', true );
-        if ( ! is_array( $history ) ) continue;
+        if ( ! is_array( $history ) ) {
+            continue;
+        }
+
         foreach ( $history as $entry ) {
-            if ( isset( $entry['id'] ) && $entry['id'] == $liq_id ) {
-                return isset( $entry['verified'] ) && $entry['verified'];
+            if ( isset( $entry['id'] ) && $entry['id'] == $liq_id && ! empty( $entry['verified'] ) ) {
+                return true;
+            }
+
+            // Caso NO RECIBIDO: cargo pagado y enlazado a esta liquidación
+            if (
+                isset( $entry['shipment_id'], $entry['status'], $entry['payment_ref'] ) &&
+                intval( $entry['shipment_id'] ) === intval( $shipment_id ) &&
+                $entry['status'] === 'paid' &&
+                $entry['payment_ref'] === $liq_id
+            ) {
+                return true;
             }
         }
     }
@@ -9884,28 +9509,19 @@ function merc_admin_clientes( $fecha_inicio, $fecha_fin, $filtro_estado, $filtro
             $pago_marca_total_tot+= $totales_shipment['pago_marca'];
             $pos_total_tot       += $pos_display;
             
-            if ( $estado === 'pendiente' ) {
+            if ( ! $is_included ) {
                 if ( $quien_paga === 'cliente_final' && $producto > 0 ) {
                     $por_cobrar_tot += $producto;
+                    $por_cobrar      += $producto;
                 } elseif ( $quien_paga === 'remitente' && $envio > 0 ) {
                     $por_pagar_tot += $envio;
+                    $por_pagar      += $envio;
                 }
-            }
-            
-            // Acumular pendientes (no liquidados)
-            if ( ! $is_included ) {
+
                 $efectivo_total  += $totales_shipment['efectivo'];
                 $pago_merc_total += $totales_shipment['pago_merc'];
                 $pago_marca_total+= $totales_shipment['pago_marca'];
                 $pos_total       += $pos_display;
-
-                if ( $estado === 'pendiente' ) {
-                    if ( $quien_paga === 'cliente_final' && $producto > 0 ) {
-                        $por_cobrar += $producto;
-                    } elseif ( $quien_paga === 'remitente' && $envio > 0 ) {
-                        $por_pagar += $envio;
-                    }
-                }
             }
 
             $estado_envio_cli = get_post_meta( $shipment->ID, 'wpcargo_status', true ) ?: '—';
@@ -10164,12 +9780,12 @@ function merc_admin_clientes( $fecha_inicio, $fecha_fin, $filtro_estado, $filtro
                                         $liq_general    = get_post_meta( $envio_item['id'], 'wpcargo_included_in_liquidation', true );
                                         $cargos_json    = is_array($cargos) ? esc_attr(json_encode($cargos)) : '[]';
 
-                                        // Bloquear si ya está liquidado por cualquiera de los dos flujos,
-                                        // excepto si sigue siendo reprogramado
-                                        $is_blocked = (
-                                            ( ! empty( $liq_remitente ) || ! empty( $liq_general ) )
-                                            && stripos( $estado_envio_cli, 'REPROGRAMADO' ) === false
-                                        );
+                                        $estado_bloqueado_cargo = array( 'no recibido', 'reprogramado', 'anulado', 'entregado', 'no contesta' );
+                                        $estado_cli_lower = strtolower( trim( $estado_envio_cli ) );
+
+                                        $is_blocked = in_array( $estado_cli_lower, $estado_bloqueado_cargo, true )
+                                            || ! empty( $liq_remitente )
+                                            || ! empty( $liq_general );
 
                                         if ( $total_cargos_envio > 0 ) : 
                                             if ( $is_blocked ) : ?>
@@ -11136,6 +10752,10 @@ function merc_liquidar_todo_ajax() {
         // Marcar envíos como procesados por la liquidación masiva sin alterar
         // los campos que usan las tarjetas del panel.
         foreach ( $shipments as $shipment_id ) {
+            $estado_envio = strtolower( trim( get_post_meta( $shipment_id, 'wpcargo_status', true ) ) );
+            if ( $estado_envio === 'reprogramado' ) {
+                continue;
+            }
             update_post_meta( $shipment_id, 'merc_remitente_liquidated', '1' );
         }
 
@@ -12729,8 +12349,15 @@ function merc_panel_cliente_shortcode() {
     ob_start();
     
     // Obtener filtros de fecha
-    $fecha_inicio = isset($_GET['fecha_inicio']) ? sanitize_text_field($_GET['fecha_inicio']) : '';
-    $fecha_fin = isset($_GET['fecha_fin']) ? sanitize_text_field($_GET['fecha_fin']) : '';
+    $fecha_hoy = current_time('Y-m-d');
+
+    $fecha_inicio = ( isset($_GET['fecha_inicio']) && preg_match('/^\d{4}-\d{2}-\d{2}$/', $_GET['fecha_inicio']) )
+        ? sanitize_text_field($_GET['fecha_inicio'])
+        : $fecha_hoy;
+
+    $fecha_fin = ( isset($_GET['fecha_fin']) && preg_match('/^\d{4}-\d{2}-\d{2}$/', $_GET['fecha_fin']) )
+        ? sanitize_text_field($_GET['fecha_fin'])
+        : $fecha_hoy;
     
     // Verificar si hay envíos pendientes de hoy (bloqueo activo)
     $tiene_bloqueo = merc_cliente_tiene_envios_pendientes_hoy($current_user->ID);
@@ -12808,8 +12435,15 @@ function merc_cliente_balance( $client_id ) {
     global $wpdb;
 
     // Obtener fechas del filtro GET
-    $fecha_inicio = isset($_GET['fecha_inicio']) ? sanitize_text_field($_GET['fecha_inicio']) : '';
-    $fecha_fin = isset($_GET['fecha_fin']) ? sanitize_text_field($_GET['fecha_fin']) : '';
+    $fecha_hoy = current_time('Y-m-d');
+
+    $fecha_inicio = ( isset($_GET['fecha_inicio']) && preg_match('/^\d{4}-\d{2}-\d{2}$/', $_GET['fecha_inicio']) )
+        ? sanitize_text_field($_GET['fecha_inicio'])
+        : $fecha_hoy;
+
+    $fecha_fin = ( isset($_GET['fecha_fin']) && preg_match('/^\d{4}-\d{2}-\d{2}$/', $_GET['fecha_fin']) )
+        ? sanitize_text_field($_GET['fecha_fin'])
+        : $fecha_hoy;
     
     // DEBUG: Log fechas recibidas
     error_log('=== MERC_CLIENTE_BALANCE DEBUG ===');
@@ -12918,13 +12552,16 @@ function merc_cliente_balance( $client_id ) {
     $efectivo         = 0.0;
     $recaudado_merc   = 0.0;
     $recaudado_marca  = 0.0;
+    $total_servicios_general = 0.0;
 
     error_log('--- Procesando envíos para cálculo de totales ---');
     
     if ( ! empty( $shipments ) && is_array( $shipments ) ) {
         foreach ( $shipments as $shipment ) {
             $producto   = floatval( $shipment->costo_producto );
-            $envio      = floatval( $shipment->costo_envio );
+            $envio = function_exists('merc_get_adjusted_service_cost')
+                ? merc_get_adjusted_service_cost( $shipment->ID )
+                : floatval( $shipment->costo_envio );
             $quien_paga = $shipment->quien_paga;
             $estado     = $shipment->estado_pago_remitente ? $shipment->estado_pago_remitente : '';
             
@@ -12934,27 +12571,42 @@ function merc_cliente_balance( $client_id ) {
                       ' | Quién paga: ' . $quien_paga . 
                       ' | Estado: ' . $estado);
 
-        // Si el envío está ya vinculado a una liquidación verificada, ignorarlo en cálculos (ya fue procesado)
-        $is_verified = merc_is_shipment_liquidation_verified( $shipment->ID );
-        if ( ! $is_verified ) {
-            $is_pending = ( $estado === 'pendiente' || $estado === '' );
-            if ( $is_pending ) {
-                if ( $quien_paga === 'cliente_final' && $producto > 0 ) {
-                    $por_cobrar += $producto;
-                }
-                if ( $quien_paga === 'remitente' && $envio > 0 ) {
-                    $por_pagar += $envio;
+            // Si el envío está ya vinculado a una liquidación verificada, ignorarlo en cálculos (ya fue procesado)
+            $is_verified = merc_is_shipment_liquidation_verified( $shipment->ID );
+            if ( ! $is_verified ) {
+                $is_pending = ( $estado === 'pendiente' || $estado === '' );
+                if ( $is_pending ) {
+                    if ( $quien_paga === 'cliente_final' && $producto > 0 ) {
+                        $por_cobrar += $producto;
+                    }
+                    if ( $quien_paga === 'remitente' && $envio > 0 ) {
+                        $por_pagar += $envio;
+                    }
                 }
             }
-        }
+            $total_servicios_general += $envio;
 
-        // Si está verificado, no sumar sus montos al balance del cliente (ya fue liquidado)
-        $totales = get_payment_totals_by_method( $shipment->ID );
-        if ( ! $is_verified ) {
+            // Si está verificado, no sumar sus montos al balance del cliente (ya fue liquidado)
+            $totales = get_payment_totals_by_method( $shipment->ID );
             $efectivo       += $totales['efectivo'];
             $recaudado_merc += get_recaudado_merc( $shipment->ID );
-            $recaudado_marca+= $totales['pago_marca'];
+            $recaudado_marca += $totales['pago_marca'];
         }
+    }
+
+    $recaudado_merc_envios = 0.0;
+
+    if ( ! empty( $shipments ) && is_array( $shipments ) ) {
+        foreach ( $shipments as $shipment ) {
+            if ( merc_is_shipment_liquidation_verified( $shipment->ID ) ) {
+                continue;
+            }
+
+            $totales = get_payment_totals_by_method( $shipment->ID );
+
+            $recaudado_merc_envios += isset( $totales['efectivo'] ) ? floatval( $totales['efectivo'] ) : 0.0;
+            $recaudado_merc_envios += isset( $totales['pago_merc'] ) ? floatval( $totales['pago_merc'] ) : 0.0;
+            $recaudado_merc_envios += isset( $totales['pos'] ) ? floatval( $totales['pos'] ) : 0.0;
         }
     }
     
@@ -12966,7 +12618,6 @@ function merc_cliente_balance( $client_id ) {
     error_log('Recaudado MARCA: ' . $recaudado_marca);
     error_log('=== FIN DEBUG ===');
 
-    $balance_neto = $recaudado_merc + $efectivo - $por_pagar;
 
     // Si todos los envíos del cliente están liquidados/verificados, forzar balance 0
     $all_verified = true;
@@ -12976,6 +12627,14 @@ function merc_cliente_balance( $client_id ) {
         }
     }
     if ( $all_verified ) $balance_neto = 0.0;
+    $pos_total = 0.0;
+    if ( ! empty( $shipments ) && is_array( $shipments ) ) {
+        foreach ( $shipments as $s ) {
+            $tot = get_payment_totals_by_method( $s->ID );
+            $pos_total += isset( $tot['pos'] ) ? floatval( $tot['pos'] ) : 0.0;
+        }
+    }
+    $total_recaudado = $recaudado_merc + $efectivo + $recaudado_marca + $pos_total;
     ?>
     <div class="merc-summary-box">
 		<h3>💵 Balance Financiero</h3>
@@ -12984,7 +12643,7 @@ function merc_cliente_balance( $client_id ) {
 		<div class="merc-summary-item">
 			<span>Total recaudado:</span>
 			<span class="merc-summary-value">
-				S/. <?php echo number_format( $recaudado_merc + $efectivo + $recaudado_marca + $pos_total, 2 ); ?>
+				S/. <?php echo number_format( $total_recaudado, 2 ); ?>
 			</span>
 		</div>
 
@@ -13025,18 +12684,39 @@ function merc_cliente_balance( $client_id ) {
 			$historia = get_user_meta( $client_id, 'merc_liquidations', true );
 			$cargos_no_recibido = array();
 			$total_no_recibido = 0.0;
+			$shipments_ids = array();
+            if ( ! empty( $shipments ) && is_array( $shipments ) ) {
+                foreach ( $shipments as $s ) {
+                    $shipments_ids[] = intval( $s->ID );
+                }
+            }
+			if ( is_array( $historia ) ) {
+                foreach ( $historia as $entry ) {
+                    if (
+                        ! isset( $entry['tipo_liquidacion'] ) ||
+                        $entry['tipo_liquidacion'] !== 'no_recibido_charge' ||
+                        ( isset( $entry['status'] ) && $entry['status'] !== 'unpaid' )
+                    ) {
+                        continue;
+                    }
+
+                    $entry_shipment_id = isset( $entry['shipment_id'] ) ? intval( $entry['shipment_id'] ) : ( isset( $entry['post_id'] ) ? intval( $entry['post_id'] ) : 0 );
+
+                    if ( $entry_shipment_id <= 0 || ! in_array( $entry_shipment_id, $shipments_ids, true ) ) {
+                        continue;
+                    }
+
+                    $entry_date = isset( $entry['date'] ) ? substr( (string) $entry['date'], 0, 10 ) : '';
+                    if ( $entry_date < $fecha_inicio || $entry_date > $fecha_fin ) {
+                        continue;
+                    }
+
+                    $cargos_no_recibido[] = $entry;
+                    $total_no_recibido += floatval( $entry['amount'] );
+                }
+            }
 			
-			if ( is_array($historia) ) {
-				foreach ( $historia as $entry ) {
-					if ( isset($entry['tipo_liquidacion']) && $entry['tipo_liquidacion'] === 'no_recibido_charge' && 
-						 isset($entry['status']) && $entry['status'] === 'unpaid' ) {
-						$cargos_no_recibido[] = $entry;
-						$total_no_recibido += floatval($entry['amount']);
-					}
-				}
-			}
-			
-			$total_servicios_completo = $por_pagar + $total_no_recibido;
+			$total_servicios_completo = $total_servicios_general;
 		?>
 		<div class="merc-summary-item">
 			<span>Total de servicios:</span>
@@ -13044,225 +12724,20 @@ function merc_cliente_balance( $client_id ) {
 				S/. <?php echo number_format( $total_servicios_completo, 2 ); ?>
 			</span>
 		</div>
-		
-		<?php if ( ! empty($cargos_no_recibido) ) : ?>
-		<!-- Desglose: Cargos por NO RECIBIDO -->
-		<div class="merc-summary-item" style="background:#fff3cd;padding:12px;margin-top:8px;border-radius:6px;border-left:4px solid #ff9800;">
-			<div style="width:100%;">
-				<strong style="color:#ff6b00;">📦 Envíos No Recibidos (<?php echo count($cargos_no_recibido); ?>)</strong>
-				<div style="margin-top:8px;font-size:13px;">
-					<?php foreach ( $cargos_no_recibido as $cargo ) : 
-						$shipment_id = isset($cargo['shipment_id']) ? $cargo['shipment_id'] : 'N/A';
-						$monto = number_format(floatval($cargo['amount']), 2);
-					?>
-					<div style="display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid rgba(255,107,0,0.2);">
-						<span>Envío #<?php echo $shipment_id; ?></span>
-						<span style="font-weight:bold;color:#ff6b00;">S/. <?php echo $monto; ?></span>
-					</div>
-					<?php endforeach; ?>
-				</div>
-				<div style="margin-top:10px;padding-top:8px;border-top:2px solid #ff9800;display:flex;justify-content:space-between;font-weight:bold;color:#ff6b00;">
-					<span>Subtotal NO RECIBIDO:</span>
-					<span>S/. <?php echo number_format($total_no_recibido, 2); ?></span>
-				</div>
-				<?php if ( ! empty($por_pagar) ) : ?>
-				<div style="margin-top:4px;padding:4px 0;display:flex;justify-content:space-between;color:#666;">
-					<span>+ Otros servicios:</span>
-					<span>S/. <?php echo number_format($por_pagar, 2); ?></span>
-				</div>
-				<?php endif; ?>
-			</div>
-		</div>
-		<?php endif; ?>
 
 		<!-- BALANCE NETO -->
 		<?php 
 			// Recalcular balance neto incluyendo cargos NO RECIBIDO
-			$balance_neto = $recaudado_merc + $efectivo - $total_servicios_completo;
+			$pagar_cliente = round( $recaudado_merc_envios - $por_pagar, 2 );
+            $balance_neto  = $pagar_cliente;
 		?>
 		<div class="merc-summary-item" style="background:#f0f0f0;padding:15px;margin-top:10px;border-radius:6px;">
 			<span><strong>Balance Neto:</strong></span>
 			<span class="<?php echo $balance_neto >= 0 ? 'merc-balance-positive' : 'merc-balance-negative'; ?>">
 				S/. <?php echo number_format( $balance_neto, 2 ); ?>
 			</span>
-
-			<?php if ( $balance_neto < 0 ) : ?>
-				<?php $nonce_pagar = wp_create_nonce('merc_cliente_pagar'); ?>
-				<div style="margin-top:8px;">
-					<?php if ( ! empty($cargos_no_recibido) ) : ?>
-					<!-- Botón con desglose de NO RECIBIDO -->
-					<button class="merc-btn-pagar-merc-detalles"
-							data-user-id="<?php echo esc_attr( get_current_user_id() ); ?>"
-							data-amount="<?php echo esc_attr( number_format( abs( $balance_neto ), 2 ) ); ?>"
-							data-nonce="<?php echo esc_attr( $nonce_pagar ); ?>"
-							data-cargos-no-recibido='<?php echo esc_attr(json_encode($cargos_no_recibido)); ?>'
-							style="background:#ff6b00;color:#fff;border:none;padding:10px 16px;border-radius:4px;font-weight:600;cursor:pointer;transition:all 0.3s ease;">
-						🔍 Ver detalle y pagar S/. <?php echo number_format( abs( $balance_neto ), 2 ); ?>
-					</button>
-					<?php else : ?>
-					<!-- Botón simple si no hay NO RECIBIDO -->
-					<button class="merc-btn-pagar-merc"
-							data-user-id="<?php echo esc_attr( get_current_user_id() ); ?>"
-							data-amount="<?php echo esc_attr( number_format( abs( $balance_neto ), 2 ) ); ?>"
-							data-nonce="<?php echo esc_attr( $nonce_pagar ); ?>"
-							style="background:#e74c3c;color:#fff;border:none;padding:10px 16px;border-radius:4px;font-weight:600;cursor:pointer;transition:all 0.3s ease;">
-						Pagar S/. <?php echo number_format( abs( $balance_neto ), 2 ); ?>
-					</button>
-					<?php endif; ?>
-				</div>
-			<?php endif; ?>
-		</div>
-
-		<div class="alert alert-info mt-3 mb-0">
-			<strong>ℹ️ Nota:</strong>
-			Un balance positivo indica que MERC debe depositarte.
-			Un balance negativo indica que debes cubrir servicios pendientes.
 		</div>
 	</div>
-	
-	<!-- Modal: Detalles de Pago con desglose NO RECIBIDO -->
-	<script>
-	jQuery(function($){
-		var ajaxurl = '<?php echo esc_js(admin_url("admin-ajax.php")); ?>';
-		
-		// Crear modal reutilizable
-		if ($('#merc-detalles-pago-modal').length === 0) {
-			var modalHTML = `
-				<div id="merc-detalles-pago-modal" style="display:none;position:fixed;z-index:100001;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,0.7);overflow-y:auto;">
-					<div style="background:#fff;margin:40px auto;max-width:600px;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,0.3);padding:0;width:90%;">
-						<!-- Header -->
-						<div style="background:linear-gradient(135deg,#ff6b00,#ff8533);color:#fff;padding:24px;border-radius:12px 12px 0 0;display:flex;justify-content:space-between;align-items:center;">
-							<h2 style="margin:0;font-size:20px;">📦 Detalle de Pago</h2>
-							<button type="button" id="merc-modal-close" style="border:none;background:transparent;color:#fff;font-size:24px;cursor:pointer;">&times;</button>
-						</div>
-						
-						<!-- Body -->
-						<div style="padding:24px;">
-							<!-- Desglose -->
-							<div id="merc-desglose-container" style="background:#f9f9f9;padding:16px;border-radius:8px;margin-bottom:20px;border-left:4px solid #ff9800;">
-								<!-- Se llena dinámicamente -->
-							</div>
-							
-							<!-- Total -->
-							<div style="background:#e8f5e9;padding:16px;border-radius:8px;margin-bottom:20px;border-left:4px solid #4caf50;">
-								<div style="display:flex;justify-content:space-between;align-items:center;">
-									<span style="font-size:16px;font-weight:600;color:#2e7d32;">Total a pagar:</span>
-									<span style="font-size:28px;font-weight:700;color:#2e7d32;" id="merc-modal-total">S/. 0.00</span>
-								</div>
-							</div>
-							
-							<!-- Nota -->
-							<div style="background:#fff3e0;padding:12px;border-radius:6px;border-left:3px solid #ff9800;margin-bottom:20px;font-size:13px;color:#e65100;line-height:1.6;">
-								<strong>⚠️ Importante:</strong> Este pago cubrirá todos los servicios pendientes que se muestran arriba.
-							</div>
-						</div>
-						
-						<!-- Footer -->
-						<div style="padding:16px 24px;background:#f5f5f5;border-radius:0 0 12px 12px;display:flex;gap:12px;justify-content:flex-end;border-top:1px solid #e0e0e0;">
-							<button id="merc-modal-cancel" type="button" class="btn btn-secondary" style="padding:10px 20px;border-radius:6px;border:1px solid #ccc;background:#fff;color:#333;cursor:pointer;font-weight:500;transition:all 0.3s ease;">
-								Cancelar
-							</button>
-							<button id="merc-modal-confirm" type="button" class="btn btn-primary" style="padding:10px 20px;border-radius:6px;border:none;background:#ff6b00;color:#fff;cursor:pointer;font-weight:600;transition:all 0.3s ease;">
-								Continuar con el pago
-							</button>
-						</div>
-					</div>
-				</div>
-			`;
-			$('body').append(modalHTML);
-		}
-		
-		// Manejo del botón con detalles
-		$(document).on('click', '.merc-btn-pagar-merc-detalles', function(e){
-			e.preventDefault();
-			var $btn = $(this);
-			var amount = $btn.data('amount');
-			var cargosStr = $btn.attr('data-cargos-no-recibido');
-			var cargos = [];
-			
-			try {
-				cargos = JSON.parse(cargosStr);
-			} catch(err) {
-				console.error('Error parsing cargos:', err);
-				cargos = [];
-			}
-			
-			// Construir desglose
-			var desglose = '<div style="font-weight:600;color:#ff6b00;margin-bottom:12px;font-size:14px;">Cargos por entregas NO RECIBIDAS:</div>';
-			var totalRec = 0;
-			
-			if (Array.isArray(cargos) && cargos.length > 0) {
-				cargos.forEach(function(cargo, idx){
-					var shipId = cargo.shipment_id || 'N/A';
-					var montos = parseFloat(cargo.amount) || 0;
-					totalRec += montos;
-					desglose += `
-						<div style="display:flex;justify-content:space-between;padding:8px;border-bottom:1px solid rgba(255,107,0,0.15);">
-							<span style="color:#333;">Envío #${shipId}</span>
-							<span style="font-weight:600;color:#ff6b00;">S/. ${montos.toFixed(2)}</span>
-						</div>
-					`;
-				});
-			} else {
-				desglose += '<div style="color:#999;font-size:13px;">No hay detalles disponibles</div>';
-			}
-			
-			if (amount && amount > totalRec) {
-				var otros = (parseFloat(amount) - totalRec).toFixed(2);
-				if (otros > 0) {
-					desglose += `
-						<div style="display:flex;justify-content:space-between;padding:8px;margin-top:4px;font-weight:600;border-top:2px solid #ff9800;padding-top:12px;color:#666;">
-							<span>+ Otros servicios:</span>
-							<span>S/. ${otros}</span>
-						</div>
-					`;
-				}
-			}
-			
-			$('#merc-desglose-container').html(desglose);
-			$('#merc-modal-total').text('S/. ' + parseFloat(amount).toFixed(2));
-			
-			// Guardar datos para confirmación
-			$('#merc-modal-confirm').data({
-				'user-id': $btn.data('user-id'),
-				'amount': amount,
-				'nonce': $btn.data('nonce')
-			});
-			
-			$('#merc-detalles-pago-modal').fadeIn(200);
-		});
-		
-		// Cerrar modal
-		$(document).on('click', '#merc-modal-close, #merc-modal-cancel', function(){
-			$('#merc-detalles-pago-modal').fadeOut(150);
-		});
-		
-		// Confirmar pago
-		$(document).on('click', '#merc-modal-confirm', function(){
-			var data = $(this).data();
-			var $btn = $(this);
-			
-			if (!data['user-id'] || !data.amount || !data.nonce) {
-				alert('Datos incompletos. Por favor recarga la página.');
-				return;
-			}
-			
-			// Mostrar más opciones de pago (similar al flujo existente)
-			// Esto dispara el mismo flujo del botón merc-btn-pagar-merc
-			var $triggerBtn = $('<button class="merc-btn-pagar-merc" />').data({
-				'user-id': data['user-id'],
-				'amount': data.amount,
-				'nonce': data.nonce
-			});
-			
-			// Simular click en el botón normal
-			$triggerBtn.trigger('click');
-			
-			// Cerrar modal
-			$('#merc-detalles-pago-modal').fadeOut(150);
-		});
-	});
-	</script>
     <?php
 }
 
@@ -18719,9 +18194,11 @@ add_shortcode( 'merc_liquidations_history', 'merc_liquidations_history_shortcode
         $user = wp_get_current_user();
         
         // Procesar atributos de fecha
+        $fecha_hoy = current_time('Y-m-d');
+
         $atts = shortcode_atts( array(
-            'fecha_inicio' => '',
-            'fecha_fin' => ''
+            'fecha_inicio' => $fecha_hoy,
+            'fecha_fin' => $fecha_hoy,
         ), $atts );
     
         // Reusar el shortcode existente si está registrado
