@@ -9668,7 +9668,6 @@ function merc_admin_clientes( $fecha_inicio, $fecha_fin, $filtro_estado, $filtro
                         <thead>
                             <tr>
                                 <th>Pedido</th>
-                                <th>Estado Pago</th>
 								<th>Estado Envío</th>
                                 <th>Concepto</th>
                                 <th>Efectivo</th>
@@ -9694,8 +9693,6 @@ function merc_admin_clientes( $fecha_inicio, $fecha_fin, $filtro_estado, $filtro
 
                             foreach ( $todos_envios as $envio_item ) : 
                                 $totales_pendiente = get_payment_totals_by_method( $envio_item['id'] );
-                                $estado_texto = ( $envio_item['tipo'] === 'cobrar' ) ? 'Por cobrar' : 'Por pagar';
-                                $color_estado = ( $envio_item['tipo'] === 'cobrar' ) ? '#27ae60' : '#e74c3c';
                                 
                                 // Verificar si el servicio ya fue cobrado
                                 $servicio_cobrado = get_post_meta( $envio_item['id'], 'wpcargo_servicio_cobrado', true );
@@ -9723,7 +9720,6 @@ function merc_admin_clientes( $fecha_inicio, $fecha_fin, $filtro_estado, $filtro
                                             <span class="badge badge-success" style="font-size:10px;margin-left:5px;">Liquidado</span>
                                         <?php endif; ?>
 									</td>
-									<td><strong style="color: <?php echo $color_estado; ?>;"><?php echo $estado_texto; ?></strong></td>
 									<td>
 										<?php
 										$estado_cli_lower = strtolower( $estado_envio_cli );
@@ -9807,7 +9803,7 @@ function merc_admin_clientes( $fecha_inicio, $fecha_fin, $filtro_estado, $filtro
                         </tbody>
                         <tfoot>
                             <tr>
-                                <td colspan="3"><strong>TOTAL:</strong></td>
+                                <td colspan="2"><strong>TOTAL:</strong></td>
                                 <td><strong>S/. <?php echo number_format( $subtotal_concepto, 2 ); ?></strong></td>
                                 <td><strong>S/. <?php echo number_format( $subtotal_efectivo, 2 ); ?></strong></td>
                                 <td><strong>S/. <?php echo number_format( $subtotal_merc, 2 ); ?></strong></td>

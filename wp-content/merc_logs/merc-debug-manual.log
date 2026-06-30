@@ -1756,3 +1756,27 @@
   - Pedido ID: 33356 | Estado: NO RECIBIDO | Tipo: 
   - Pedido ID: 33357 | Estado: NO RECIBIDO | Tipo: 
 [2026-06-29 21:35:34] [MERC DEBUG] Resultado: NO BLOQUEAR (tiene pendientes)
+[2026-06-29 23:16:00] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-29 | DMY: 29/06/2026 | Encontrados: 0
+[2026-06-29 23:16:00] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-29 23:40:30] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-29 | DMY: 29/06/2026 | Encontrados: 0
+[2026-06-29 23:40:30] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-29 23:43:57] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-29 | DMY: 29/06/2026 | Encontrados: 0
+[2026-06-29 23:43:57] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-29 23:44:59] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-29 | DMY: 29/06/2026 | Encontrados: 0
+[2026-06-29 23:44:59] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-30 00:37:53] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-30 | DMY: 30/06/2026 | Encontrados: 0
+[2026-06-30 00:37:53] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-30 00:39:04] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-30 | DMY: 30/06/2026 | Encontrados: 0
+[2026-06-30 00:39:04] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-30 00:40:44] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-30 | DMY: 30/06/2026 | Encontrados: 0
+[2026-06-30 00:40:44] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-30 00:40:56] [MERC DEBUG] Usuario: 120 | Tipo: normal | ISO: 2026-06-30 | DMY: 30/06/2026 | Encontrados: 0
+[2026-06-30 00:40:56] [MERC DEBUG] Resultado: BLOQUEAR (hora pasada sin pedidos)
+[2026-06-30 00:43:36] [MERC DEBUG] Usuario: 118 | Tipo: normal | ISO: 2026-06-30 | DMY: 30/06/2026 | Encontrados: 2
+  - Pedido ID: 33241 | Estado: RECEPCIONADO | Tipo: 
+  - Pedido ID: 33286 | Estado: EN BASE MERCOURIER | Tipo: 
+[2026-06-30 00:43:36] [MERC DEBUG] Resultado: BLOQUEAR (todos procesados)
+[2026-06-30 00:43:41] [MERC DEBUG] Usuario: 118 | Tipo: normal | ISO: 2026-06-30 | DMY: 30/06/2026 | Encontrados: 2
+  - Pedido ID: 33241 | Estado: RECEPCIONADO | Tipo: 
+  - Pedido ID: 33286 | Estado: EN BASE MERCOURIER | Tipo: 
+[2026-06-30 00:43:41] [MERC DEBUG] Resultado: BLOQUEAR (todos procesados)
